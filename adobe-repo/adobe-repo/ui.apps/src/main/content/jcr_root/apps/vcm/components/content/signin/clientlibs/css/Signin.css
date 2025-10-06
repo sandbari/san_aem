@@ -1,0 +1,6 @@
+.signinBox, .signinBox p { padding: 15px 0; text-align: center; color: #49494A; }
+.signinBox p { padding: 15px 10px 0 10px; text-align: center; color: #49494A; }
+.signinBox p > a { font-family: benton-sans, sans-serif !important;font-weight: 900; }
+.signin { width: unset !important; padding: 15px 52px !important; }
+.dividerBorder { border: 1px solid #D2D2D2; opacity: 1; margin: 36px 0; }
+.txtSpl { font-family: benton-sans, sans-serif !important;font-size: 18px;font-weight: 900;}

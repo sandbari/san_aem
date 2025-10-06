@@ -1,0 +1,38 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "item0": {
+    "jcr:primaryType": "nt:unstructured",
+    "altText": "vcm facebook",
+    "linkUrl": "https://www.linkedin.com/company/victory-capital-management",
+    "socialIconImage": "/content/dam/vcm/common/social-share/footer-variation/Facebook-icon.png",
+    "tabSelect": "_self"
+  },
+  "item1": {
+    "jcr:primaryType": "nt:unstructured",
+    "altText": "vcm  Instagram",
+    "linkUrl": "https://www.instagram.com",
+    "socialIconImage": "/content/dam/vcm/common/social-share/footer-variation/Insta-icon.png",
+    "tabSelect": "_blank"
+  },
+  "item2": {
+    "jcr:primaryType": "nt:unstructured",
+    "altText": "vcm LinkedIn",
+    "linkUrl": "https://www.google.com/test",
+    "socialIconImage": "/content/dam/vcm/common/social-share/footer-variation/linkedin.png",
+    "tabSelect": "_blank"
+  },
+  "item3": {
+    "jcr:primaryType": "nt:unstructured",
+    "altText": "vcm  Twitter",
+    "linkUrl": "https://www.google.com",
+    "socialIconImage": "/content/dam/vcm/common/social-share/footer-variation/twitter.png",
+    "tabSelect": "_blank"
+  },
+  "item4": {
+    "jcr:primaryType": "nt:unstructured",
+    "altText": "vcm  Youtube",
+    "linkUrl": "https://twitter.com/vcmtweets",
+    "socialIconImage": "/content/dam/vcm/common/social-share/footer-variation/youtube-icon.png",
+    "tabSelect": "_blank"
+  }
+}

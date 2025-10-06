@@ -1,0 +1,32 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+Edit ${component.title} Component
+</sly>
+
+<sly data-sly-use.modelObj="com.vcm.core.models.ContactUsManagersModel">
+   <div class="st-contact-container IRM-manager-block d-sm-inline-block">
+	   <div class="IRM-bio">
+	   		<h3 data-sly-test="${modelObj.heading}" class="blueHdng-multiLine-greenBorder">${modelObj.heading}</h3>
+            <sly data-sly-list.primaryContact="${modelObj.primaryContactDetailsList}">
+                <div data-sly-test="${primaryContact.primaryContactName}" class="IRM-profile-bio ">
+                	<div class="image-block">
+                     	<img data-sly-test="${primaryContact.primaryContactProfilePhoto}" src="${primaryContact.primaryContactProfilePhoto}" alt="${primaryContact.primaryContactProfileAltText || true}" class="float-left " width="160" height="160">
+                    </div>
+                    <div class="content-block">
+                         <h3 data-sly-test="${primaryContact.primaryContactName}" class="title tit-pad">${primaryContact.primaryContactName} </h3>
+                         <p data-sly-test="${primaryContact.primaryContactDesignation}">${primaryContact.primaryContactDesignation}</p>
+                         <p data-sly-test="${primaryContact.primaryContactPhoneNo}" class="phoneno no-undrline">${primaryContact.primaryContactPhoneNo}</p>
+                         <p><a data-sly-test="${primaryContact.primaryContactMailId}" href="mailto:${primaryContact.primaryContactMailId}"><span class="sr-only">Send a mail to ${primaryContact.primaryContactName} at</span>${primaryContact.primaryContactMailId}</a></p>
+                    </div>
+               </div>
+           </sly>
+
+		   <sly data-sly-list.secContact="${modelObj.secondaryContactDetailsList}">
+			   <div data-sly-test="${secContact.secondaryContactName}" class="IRM-contct">
+				   <h3 data-sly-test="${secContact.secondaryContactName}" class="title">${secContact.secondaryContactName}</h3>
+				   <p data-sly-test="${secContact.secondaryContactPhoneNo}" class="phoneno">${secContact.secondaryContactPhoneNo}</p>
+				   <p><a data-sly-test="${secContact.secondaryContactUsMailId}" href="mailto:${secContact.secondaryContactUsMailId}"><span class="sr-only">Send a mail to ${secContact.secondaryContactName} at</span>${secContact.secondaryContactUsMailId}</a></p>
+			   </div>
+		   </sly>
+	   </div>
+  </div>
+</sly>

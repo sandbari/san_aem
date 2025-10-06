@@ -1,0 +1,220 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+    Edit ${component.title} Component
+</sly>
+<sly data-sly-use.fundListObj="com.vcm.core.models.FundListModel">
+    <input type="hidden" id="fundListEndpoint" value="${fundListObj.fundListEndpoint}"/>
+    <input type="hidden" id="fundApiKey" value="${fundListObj.fundListApiKey}"/>
+    <input type="hidden" id="dragScrollJS" value="/content/dam/vcm/configs/dragscroll.js"/>
+    <input type="hidden" id="mfLabels" value="${fundListObj.mfLabels}"/>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    	 data-sly-call="${clientlib.all @ categories='vcm.fundList'}"/>
+
+<!-- Risk info icon pop up start-->
+<div class="riskinfo-popup modal" id="riskinfo" role="dialog" aria-labelledby="Risk Definition">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <a href="#" class="close" data-dismiss="modal" role="button">
+                    <span class="vcm-listing-popup-btn-close"></span>
+                </a>
+                <a href="#" data-dismiss="modal" class="close-link" role="presentation" tabindex="-1">Close</a>-->
+                <a href="#" data-dismiss="modal" class="close-link" role="button">
+                <span class="vcm-listing-popup-btn-close"></span>
+                Close</a>
+            </div>
+            <div class="modal-title" tabindex="0">
+                ${fundListObj.riskContent}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Risk info icon pop up ends-->
+
+<sly data-sly-list.overlay="${fundListObj.overlayList}">
+
+    <!-- model popup for ratingtModal -->
+    <p class="popup-modal" id="${overlay.overlayId}Label" style="display: none;">${overlay.overlayTextPrefix}
+    <a href="javascript:void(0)" data-toggle="modal"  data-target="#${overlay.overlayId}Modal" class="popup-link"> ${overlay.overlayLinkText}</a></p>
+
+    <div class="riskinfo-popup modal" id="${overlay.overlayId}Modal" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <!--<a href="#" class="close" data-dismiss="modal">
+                        <span class="vcm-listing-popup-btn-close"></span>
+                    </a>
+                    <a href="#" data-dismiss="modal" class="close-link">Close</a>-->
+                    <a href="#" data-dismiss="modal" class="close-link">
+                        <span class="vcm-listing-popup-btn-close"></span>
+                        Close</a>
+                </div>
+                <div class="modal-title" tabindex="0">
+                    ${overlay.overlayContent}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- close model -->
+
+</sly>
+
+
+<div class="mutualfunds-container container">
+    <p id="listingData"></p>
+    <!-- Search box starts-->
+    <div class="searchfunds-container">
+        <p class="lblSearch"></p>
+        <input type="text" aria-describedby="searchMfListLabel" class="form-control searchfunds" id="searchFunds">
+        <span class="sr-only" id="searchMfListLabel">Search by Fund Name or Ticker</span>
+    </div>
+    <!-- Search box ends-->
+
+    <div class="funds-list">
+        <script type="application/json" id="fundListData">
+            ${fundListObj.fundList.toString @ context="unsafe"}
+        </script>
+        <!-- filter section starts-->
+        <div class="filter-sidebar-collapse">
+            <div class="arrow-container">
+                <p class="fund-title lblFilter" tabindex="0" role="button" aria-expanded="false"></p>
+                <span class="arrow-nav-left" aria-hidden="true"></span>
+            </div>
+        </div>
+        <!-- filter section ends-->
+        <div class="content pc-content-width">
+            <div class="fixedTabs">
+                <ul role="tablist" class="nav nav-tabs">
+                    <li class="nav-item col-sm-6 performancetab current">
+                        <a role="tab" class="fund-nav-link active" data-toggle="tab" tabindex="0" aria-controls="performance" aria-selected="true" aria-setsize="2" aria-posinset="1"><span class="lblTabfirst"></span></a>
+                    </li>
+                    <li class="nav-item col-sm-6 ratingtab">
+                        <a role="tab" class="fund-nav-link" id="rating-tab" data-toggle="tab" tabindex="-1" aria-controls="rating" aria-selected="false" aria-setsize="2" aria-posinset="2"><span class="lblTabsecond"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dynamic-loader">
+                <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+            </div>
+            <div class="error-message">
+                <p class="lblErrmsg"></p>
+            </div>
+            <div class="tab-content">
+                <div class="mobile-radiobuttons-section">
+                    <div class="grid-list-section">
+                        <p class="fundscount"></p>
+                        <div class="grid-list-icons-section">
+                            <span class="grid-icon toggle-icon active"></span>
+                            <span class="list-icon toggle-icon"></span>
+                        </div>
+                    </div>
+                    <div class="performance-scrollablesection">
+                        <p class="performance-text"><p id ="ptdM"></p></p>
+                        <div>
+                            <input type="radio" id="monthend-mobile" class="styled-radio" name="annualreport-mobile" value="monthend" checked />
+                            <label for="monthend-mobile" class="radio-label"><span class="lblOptMonthend"></span></label>
+                            <input type="radio" id="quarterend-mobile" class="styled-radio" name="annualreport-mobile" value="quarterend" />
+                            <label for="quarterend-mobile" class="radio-label"><span class="lblOptQuarterend"></span></label>
+                            <input type="radio" id="annualend-mobile" class="styled-radio" name="annualreport-mobile" value="annualend" />
+                            <label for="annualend-mobile" class="radio-label"><span class="lblOptAnnualend"></span></label>
+                        </div>
+                    </div>
+                    <div class="rating-scrollablesection hidden">
+                        <p class="rating-date"><span class="lblAsof"></span> <span class="ratingdate"></span></p>
+                        <p class="rating-text"><span class="lblRatingtext"></span></p>
+                    </div>
+                </div>
+                <div class="performance-rating-list-content">
+                    <table id="fundslistTable" class="fundslistTable" role="grid" aria-readonly="true">
+                        <caption class="sr-only"><span class="lblTblCaption"></span></caption>
+                        <span class="sr-only table-info"></span>
+                        <thead>
+                        <tr class="pc-radiobuttons-section">
+                            <td colspan="3" class="fundscount-width">
+                                <div class="fundscount"></div>
+                            </td>
+                            <td colspan="10" class="performance-scrollablesection">
+                                <div class="performance-text">
+                                    <div class="performanceOptionText"><div id ="ptd"></div></div>
+                                    <div class="performanceOption" role="radiogroup" aria-label="Select the option to view the data based on monthly quarterly and annually">
+                                        <input type="radio" role="radio" tabindex="0" aria-checked="true" id="monthend" class="styled-radio" name="annualreport" value="monthend"/>
+                                        <label for="monthend" class="radio-label"><span class="lblOptMonthend"></span></label>
+                                        <input type="radio" role="radio" tabindex="0" aria-checked="true" id="quarterend" class="styled-radio" name="annualreport" value="quarterend"/>
+                                        <label for="quarterend" class="radio-label"><span class="lblOptQuarterend"></span></label>
+                                        <input type="radio" role="radio" tabindex="0" aria-checked="true" id="annualend" class="styled-radio" name="annualreport" value="annualend"/>
+                                        <label for="annualend" class="radio-label" id="checkedAnual"><span class="lblOptAnnualend"></span></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td colspan="6" class="rating-scrollablesection">
+                                <p class="rating-date"><span class="lblAsof"></span> <span class="ratingdate"></span></p>
+                                <p class="rating-text"><span class="lblRatingtext"></span></p>
+                            </td>
+                        </tr>
+                        <tr class="fundslistTableHeading">
+                            <th scope="col"> <span class="lblTicker" role="button" tabindex="0"></span></th>
+                            <th scope="col"> <span class="lblFundname" role="button" tabindex="0"></span></th>
+                            <th scope="col"> <span class="lblAssetclass"></span></th>
+                            <th scope="col" class="performance-monthly-data performance-quarterly-data"> <span class="lblYtd" role="button" tabindex="0"></span></th>
+                            <th scope="col" class="performance-monthly-data performance-quarterly-data"> <span class="lblOneyr" role="button" tabindex="0"></span></th>
+                            <th scope="col" class="performance-monthly-data performance-quarterly-data"> <span class="lblThreeyr" role="button" tabindex="0"></span></th>
+                            <th scope="col" class="performance-monthly-data performance-quarterly-data"> <span class="lblFiveyr" role="button" tabindex="0"></span></th>
+                            <th scope="col" class="performance-monthly-data performance-quarterly-data"> <span class="lblTenyr" role="button" tabindex="0"></span></th>
+                            <th scope="col" class="performance-monthly-data performance-quarterly-data"> <span class="lblsinceinception" role="button" tabindex="0"></span></th>
+                            <th scope="col" class="performance-monthly-data performance-quarterly-data"> <span class="lblInceptiondate"></span></th>
+                            <th scope="col" class="performance-monthly-data performance-quarterly-data"> <span class="lblExpratgross"></span></th>
+                            <th scope="col" class="performance-monthly-data performance-quarterly-data"> <span class="lbExpratnet"></span></th>
+                            <th scope="col" class="performance-monthly-data performance-quarterly-data">
+                                <a href="javascript:void(0)" role="button" tabindex="0" class="popup-modal info-icon popup-link" data-toggle="modal" data-target="#riskinfo"><span class="sr-only">Risk definition opens a dialog</span></a><span class="lblRisk" role="button" tabindex="0"></span>
+                            </th>
+                            <th scope="col"> <span class="lblOverall" role="button" tabindex="0"></span></th>
+                            <th scope="col"> <span class="lblMSthreeyr" role="button" tabindex="0"></span></th>
+                            <th scope="col"> <span class="lblMSfiveyr" role="button" tabindex="0"></span></th>
+                            <th scope="col"> <span class="lblMStenyr" role="button" tabindex="0"></span></th>
+                            <th scope="col"> <span class="lblRatingcategory" role="button" tabindex="0"></span></th>
+                            <th scope="col"> <span class="lblFundfactsheet"></span></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="performance-content-grid-view hidden"></div>
+                <div class="rating-content-grid-view hidden"></div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="sticky-footer">
+            <div class="panel">
+                <p class="panel-header lblFilter"></p>
+            </div>
+            <div class="buttons-container">
+                <div class="footer-button">
+                    <p class="open-filter footer-button-text lblFilter"><span class="open-filter-icon"></span></p>
+                    <p class="close-filter footer-button-text hidden lblClose"><span class="close-filter-icon"></span></p>
+                </div>
+                <div class="to-top"><p class="top-up-icon"></p><span class="lblTotop"></span></div>
+                <div>       </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    /* Annual Coulmn Title creation */
+    var d = new Date();
+    var currYear = d.getFullYear();
+    var yearlist = '';
+    //var yearlistCardview = '';
+    var yearlistArr = [];
+
+    for(i=1; i<=8; i++){
+        yearlist+='<th class="performance-annual-data" scope="col" role="button">'+(currYear-i)+'</th>';
+        yearlistArr.push(yearlist);
+
+    }//console.log(yearlist);
+
+    $( ".fundslistTableHeading" ).append( yearlist );
+</script>

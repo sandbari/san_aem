@@ -1,0 +1,62 @@
+<sly data-sly-use.overlayModel="com.vcm.core.models.RightRailETF"/>
+<sly data-sly-test="${pageProperties.rightrailetf}">
+    <div class="product-details rightrail-etf">
+        <div class="fundyield-container">
+            <div id="etf" class="fund-information">
+                <h3 class="heading summary_header"><span class='align-right'><span class="ax_display">${overlayModel.summaryTextPrefix}</span> <span class="ax_display ax-ml-5"><span class="popup-modal popup-link"><a href="#" data-popup="${overlayModel.summaryoverlayId}"><span aria-hidden="true">${overlayModel.summaryLinkText}</span></a></span></h3>
+				<!--<p><span class="text-bold asof_label"></span><span class="align-right"><span class="as_of_summary"></span></span></p>-->               
+				<p><span class="text-bold incept_label"></span><span class="align-right"><span class="sumry_inception_date"></span></span></p>
+                <p><span class="text-bold ticker_label"></span><span class="align-right"><span class="sumry_ticker"></span></span></p>
+                <p><span class="text-bold opv_label"></span><span class="align-right"><span class="sumry_iopv_ticker"></span></span></p>
+                <p><span class="text-bold cusip_label"></span><span class="align-right"><span class="sumry_cusip"></span></span></p>
+                <p><span class="text-bold category_label"></span><span class="align-right"><span class="sumry_category"></span></span></p>
+                <p><span class="text-bold isin_label"></span><span class="align-right"><span class="sumry_isin"></span></span></p>
+                <p><span class="text-bold exchng_label"></span><span class="align-right"><span class="sumry_exchange"></span></span></p>
+                <p><span class="text-bold relatedInd_label"></span></p>
+                <p class="line-space-0"><span class="text-bold"><a href="${properties.relatedIndexUrl}" target="_blank"><span class="sumry_related_index">${properties.relatedIndexText}</span></a></span></p>
+                <div class="line-divider"></div>
+                <h3 class="heading fundDetails_header"><span class='align-right'><span class="ax_display">${overlayModel.funddetailsTextPrefix}</span> <span class="ax_display ax-ml-5"><span class="popup-modal popup-link"><a href="#" data-popup="${overlayModel.funddetailsoverlayId}"><span aria-hidden="true">${overlayModel.funddetailsLinkText}</span></a></span></h3>
+                <p><span class="text-bold asof_label"></span><span class="align-right"><span class="as_of_fund-details"></span></span></p>
+                <p><span class="text-bold latestNav_label"></span><span class="align-right"><span class="fd_nav"></span></span></p>
+                <p><span class="text-bold navChange_label"></span><span class="align-right"><span class="fd_nav_change"></span></span></p>
+                <p><span class="text-bold navPercentChange_label"></span><span class="align-right"><span class="fd_nav_percent_change"></span></span></p>
+                <!--<p><span class="text-bold">NAV % Change:</span><span class="align-right"><span class="fd_nav_percent_change"></span></span></p>-->
+                <p><span class="text-bold bidAsk_label"></span><span class="align-right"><span class="fd_bid_ask_midpoint"></span></span></p>
+                <p><span class="text-bold bidAsk_median_label"></span><span class="align-right"><span class="fd_bid_ask_median"></span></span></p>
+                <p><span class="text-bold marketClose_label"></span><span class="align-right"><span class="fd_market_price"></span></span></p>
+                <p><span class="text-bold premdisc_label"></span><span class="align-right"><span class="fd_premium_discount_percent"></span></span></p>
+                <p><span class="text-bold volume_label"></span><span class="align-right"><span class="fd_volume"></span></span></p>
+                <p><span class="text-bold share_label"></span><span class="align-right"><span class="fd_shares_outstanding"></span></span></p>
+                <p><span class="text-bold netasset_label"></span><span class="align-right"><span class="fd_net_assets"></span></span></p>
+                <p class="percent_longCash"><span class="text-bold longCash_label"></span><span class="align-right"><span class="fd_percent_long_cash_invested"></span></span></p>
+                <div class="line-divider"></div>
+                <h3 class="heading fundYield_header"><span class='align-right'><span class="ax_display">${overlayModel.fundyieldTextPrefix}</span> <span class="ax_display ax-ml-5"><span class="popup-modal popup-link"><a href="#" data-popup="${overlayModel.fundyieldoverlayId}"><span aria-hidden="true">${overlayModel.fundyieldLinkText}</span></a></span></h3>
+                <p><span class="text-bold yield_asof_label"></span><span class="align-right"><span class="as_of"></span></span></p>
+                <p><span class="text-bold secyild_label"></span><span class="align-right"><span class="thirty_day_sec_yield"></span></span></p>
+                <p><span class="text-bold unsbcb_label"></span><span class="align-right"><span class="thirty_day_sec_unsubscribed_yield"></span></span></p>
+                <p><span class="text-bold distrbn_label"></span><span class="align-right"><span class="twelve_month_distribution_rate"></span></span></p>
+                <p><span class="text-bold dividen_label"></span><span class="align-right"><span class="dividend_yield"></span></span></p>
+                <!--<p><span class="text-bold dayyield_label"></span><span class="align-right"><span class="seven_day_yield"></span></span></p>-->
+                <div class="line-divider"></div>
+                <h3 class="heading feedHeader"></h3>
+                <!--<p><span class="text-bold">As Of:</span><span class="align-right"><span class="as_of_fee"></span></span></p>-->
+                <p><span class="text-bold fee_label_asof"></span><span class="align-right"><span class="as_of_fee"></span></span></p>
+                <p><span class="text-bold feeNet_label"></span><span class="align-right"><span class="net_expense_ratio"></span></span></p>
+                <p><span class="text-bold feeGross_label"></span><span class="align-right"><span class="gross_expense_ratio"></span></span></p>
+                <p class="line-space"></p>
+            </div>
+            <sly data-sly-test="${model.tileContent}">
+                <div class="fund-literature">
+                    <a href="${properties.linkUrl @ extension='html'}" target="_blank"><h3>${properties.linkText}</h3><span class="sr-only">Opens a New Window</span></a>
+                    <p>${properties.linkDescription}</p>
+                </div>
+            </sly>
+        </div>
+    </div>
+    <div class="dynamic-loader-rightrailetf">
+	<img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+</div>
+<div class="product-details-error-message error-message-rightrailetf">
+	<p></p>
+</div>
+</sly>

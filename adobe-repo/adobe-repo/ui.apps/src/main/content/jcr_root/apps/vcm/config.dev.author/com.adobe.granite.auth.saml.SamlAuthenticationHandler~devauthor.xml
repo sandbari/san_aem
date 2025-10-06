@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    addGroupMemberships="{Boolean}true"
+    defaultRedirectUrl="/"
+    groupMembershipAttribute="groups"
+    handleLogout="{Boolean}true"
+    idpCertAlias="admin#1570712198698"
+    idpUrl="https://vcm.okta.com/app/victorycapitalmanagementinc_adobeaemvcmdev_1/exk58c5l5yFbU4INm2p7/sso/saml"
+    path="/"
+    serviceProviderEntityId="https://author-vcm-dev-aem65.adobecqms.net/enityid/"
+    synchronizeAttributes="[FirstName=profile/givenName,LastName=profile/familyName,Email=profile/email,Login=profile/login,OktaUserId=profile/id]"
+    useEncryption="{Boolean}false"
+    userIDAttribute="uid"/>

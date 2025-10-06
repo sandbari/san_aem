@@ -1,0 +1,24 @@
+#KJECommandButtons{
+    width:auto!important;
+}
+#KJECommandButtons input.KJECommandButton{
+    width:150px!important;
+}
+.KJETitle {
+    padding: 25px 40px 25px 61px!important;
+}
+
+@media screen and (max-width: 640px){
+    .KJEButtonIsFixed{
+        top: 71px !important;
+    }
+    .KJETitle {
+        padding: 25px 40px 25px 25px!important;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation:portrait){
+    .KJEButtonIsFixed{
+        top: 71px !important;
+    }
+}

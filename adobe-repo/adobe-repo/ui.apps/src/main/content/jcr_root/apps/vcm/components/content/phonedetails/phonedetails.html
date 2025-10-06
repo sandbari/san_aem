@@ -1,0 +1,42 @@
+<sly data-sly-test="${wcmmode.edit}">
+    Edit Phone Details Component.
+</sly>
+
+<sly data-sly-use.model="com.vcm.core.models.PhoneDetailsModel">
+    <div class="contactus-tollfree-wrapper">
+        <div class="section-wrapper">
+            <div class="contactus-details" data-sly-test="${model.displayMode == 'contact'}">
+                <div class="ctd">
+                    ${model.phoneConfig @context='html'}
+                </div>
+                <div class="view-tollfree-link">
+                    ${model.phoneLink @context='html'}
+                </div>
+                <hr>
+                <div data-sly-list.segments="${model.segments}" class="segments">
+                    <div data-sly-test="${segments}" class="ctd">${segments @context='html'}</div>
+                    <hr>
+                </div>
+            </div>
+            <div class="tollfree-wrapper" data-sly-test="${model.displayMode == 'tfn'}">
+               <div class="backto-contactus">${model.backToContactLink @context='html'}</div>
+                <div class="tf-search-wrapper">
+                    <h2>International Toll Free Numbers</h2>
+                    <p class="mblShow">Search Country</p>
+                    <div class="tf-search-input">
+                        <p class="mblhide">Search Country</p>
+                        <input type="text" id="tfSearchCountry" placeholder="">
+                        <input type="hidden" id="phonesJson" value="${model.phonesJson}" />
+                    </div>
+                    <span class="results"></span>
+                    <ul id="tfCountriesList" data-sly-list.phones="${model.phones}">
+                        <li class="${phonesList.first ? 'allOthers' : '' }">
+                            <p>${phones.staticOpenText}</p>
+                            <p>${phones.staticPhoneNumber}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

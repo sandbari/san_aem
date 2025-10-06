@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/vcm"/>
+    <filter root="/apps/sling"/>
+    <filter root="/apps/cq/xssprotection"/>
+    <filter root="/apps/dam/cfm"/>
+    <filter root="/apps/msm"/>
+    <filter root="/etc/notification/email/vcm"/>
+    <filter root="/oak:index/vcmPageLucene">
+    	<exclude pattern="/vcmPageLucene/seed" matchProperties="true"/>
+    	<exclude pattern="/vcmPageLucene/reindexCount" matchProperties="true"/>
+    </filter>
+</workspaceFilter>

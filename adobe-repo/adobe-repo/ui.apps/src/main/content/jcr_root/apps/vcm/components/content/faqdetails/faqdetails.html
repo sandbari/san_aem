@@ -1,0 +1,26 @@
+</br>
+<sly data-sly-test.author="${wcmmode.edit}"> FAQ Details component </sly>
+
+<sly data-sly-use.multifaqmodel="com.vcm.core.models.FaqDetailsModel"></sly>
+<div class="see-all-faq hidden"> ${multifaqmodel.seeAllFaq} </div>
+
+<div class="json-data">${multifaqmodel.faqDetailsContentListJson}</div>
+<div class="col-sm-12 col-md-12 col-lg-12 pl-0" id="accordion">
+   <div class="acc-content-s-h ">
+      <div class="col-xs-12 col-md-12 pl-0">
+         <div class="card-header collapsed acc-title mid-icon" role="menu" aria-label="Select FAQ category" tabindex="0"
+              data-toggle="collapse" href="#showallfaq" aria-haspopup="true" aria-expanded="false">
+            <div class="card-link" style="display: inline-block;">
+               <h2 class="blueHdng-greenBorder" id="showing">Showing all FAQs</h2>
+               <p class="underline-black-2 mt-1"></p>
+            </div>
+            <div class="accordionIconMain accordionPlusIcon" style="display: inline-block;"></div>
+         </div>
+         <div id="showallfaq" class="collapse allfaqs"
+              data-parent="#accordion">
+            <div class="card-body"></div>
+         </div>
+      </div>
+      <div class="col-xs-12 col-md-12 accordionContainer pl-0"></div>
+   </div>
+</div>

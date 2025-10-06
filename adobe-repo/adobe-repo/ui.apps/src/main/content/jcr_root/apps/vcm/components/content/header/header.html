@@ -1,0 +1,279 @@
+<sly data-sly-use.header="com.vcm.core.models.Header"/>
+<sly data-sly-test.notempty="${header.logoImage}"/>
+<sly data-sly-test="${wcmmode.edit && !notempty}">
+	<div class="cq-placeholder" data-emptyText="${component.title}"/>
+</sly>
+<sly data-sly-test="${notempty}">
+	<input id="insLogoPath" type="hidden" value="${header.logoImageInvestor}"/>
+	<input id="logoImagePath" type="hidden" value="${header.logoImage}"/>
+	<input id="logoLinkUrl" type="hidden" value="${header.logoLinkUrl}"/>
+	<a class="sr-only sr-only-focusable" href="#main-content" id="skipContentLink">skip to main content</a>
+	<div class="preLogin-header" style="display:block">
+		<header class="container">
+			<!--Navbar-->
+			<nav class="navbar navbar-expand-lg navbar-light" role="presentation">
+				<div class="logo">
+					<sly data-sly-test="${header.logoLinkUrl == ''? '#': header.logoLinkUrl}">
+						<a class="navbar-brand" href="${header.logoLinkUrl}">
+					</sly>
+					<img class="home-logo" alt=""></a>
+				</div>
+				<div class="mobileCls">
+					<div class='top_menu_cont'>
+						<ul class="showinDesktop toplinks">
+							<li class="linksDropdown">
+								<sly data-sly-test="${header.membersLinkUrl == ''? '#': header.membersLinkUrl}">
+									<!--<a href="${header.membersLinkUrl}">${header.membersLinkText}</a>-->
+									<a data-userType="" role="button" class="drop-icon" data-href="" href="javascript:void(0)" aria-label=""></a>
+								</sly>
+								<img class="drop-icon" src="/content/dam/vcm/basic/arrow-blue.svg" alt=""/>
+								<!--pop up for investment!-->
+								<div class="investment-popup" role="menu">
+									<ul role="menu">
+										<li><a role="menuitem" data-userType="usaa_member" href="${header.membersLinkUrl}">${header.membersLinkText @ context="html"} </a></li>
+										<li><a role="menuitem" data-userType="financial_professional" href="${header.financialLinkUrl}">${header.financialLinkText} </a></li>
+										<li><a role="menuitem" data-userType="institutional_investor" href="${header.institutionalLinkUrl}">${header.institutionalLinkText} </a></li>
+										<li><a role="menuitem" data-userType="" href="${header.corporateHomeLinkUrl}" target="_self"  rel="noreferrer">${header.corporateHomeLinkText} </a></li>
+									</ul>
+								</div>
+								<!--pop up for investments ends!-->
+							</li>
+							<li>
+								<sly data-sly-test="${header.investorLinkUrl == ''? '#': header.investorLinkUrl}">
+									<a href="${header.investorLinkUrl}" aria-label="${header.investorAriaLabel}" target="${header.investorLinkTarget}" rel="${header.investorLinkTarget == '_blank' ? 'noopener noreferrer' : ''}">${header.investorLinkText} </a>
+								</sly>
+							</li>
+							<li>
+								<sly data-sly-test.memberContactUs="${header.contactLinkUrl == ''? '#': header.contactLinkUrl}"></sly>
+								<sly data-sly-test.memberContactUsFinancial="${header.contactLinkUrlFinancial == ''? '#': header.contactLinkUrlFinancial}"></sly>
+								<sly data-sly-test.memberContactUsII="${header.contactLinkUrlII == ''? '#': header.contactLinkUrlII}"></sly>
+								<a
+										data-usaa_member-url="${memberContactUs}"
+										data-financial_professional-url="${memberContactUsFinancial}"
+										data-institutional_investor-url="${memberContactUsII}"
+										data-audiencepopup="true"
+										class="header_contact_us"
+										href="${header.contactLinkUrl}"
+										target="${header.contactLinkTarget}"
+										rel="${header.contactLinkTarget == '_blank' ? 'noopener noreferrer' : ''}">
+									<img class="call-image" src="${header.contactImage}" alt="">${header.contactLinkText}</a>
+							</li>
+							<li>
+								<sly data-sly-test="${header.registerLinkUrl == ''? '#': header.registerLinkUrl}">
+									<a href="${header.registerLinkUrl}" class="register" target="${header.signinLinkTarget}" rel="${header.signinLinkTarget == '_blank' ? 'noopener noreferrer' : ''}" aria-label="Sign In / Register"><span class="hide-desktop">${header.mobileSigninLinkText}</span><span class="showinDesktop">${header.registerLinkText}</span></a>
+								</sly>
+							</li>
+							<li>
+                     <span class="showinDesktop searchIcon" role="button" aria-label="Search" tabindex="0">
+                     <img class="call-image" src="/content/dam/vcm/basic/searchicon.svg" alt=""><span class="sr-only">Opens a Popup</span>
+                     </span>
+							</li>
+						</ul>
+						<div class='right_menu_cont hide-desktop'>
+							<sly data-sly-test="${header.registerLinkUrl == ''? '#': header.registerLinkUrl}">
+								<a href="${header.registerLinkUrl}" class="register" target="${header.signinLinkTarget}" rel="${header.signinLinkTarget == '_blank' ? 'noopener noreferrer' : ''}" aria-label="Sign In / Register">${header.mobileSigninLinkText}</span></a>
+							</sly>
+							<span class="showinDesktop searchIcon" role="button" aria-label="Search" tabindex="0">
+                  <img class="call-image" src="/content/dam/vcm/basic/searchicon.svg" alt="">
+                  </span>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Menu" aria-haspopup="true">
+								<span class="my-1 mx-2 close">&times;</span>
+								<span class="my-1 mx-2 close-btn">close</span>
+								<span class="navbar-toggler-icon hamburger-menu pull-left"><span class="icon-bar"></span><span class="icon-bar sec-bar"></span><span class="icon-bar thr-bar"></span><span class="mobile-menu-button">Menu</span></span>
+							</button>
+						</div>
+					</div>
+					<div class="collapse navbar-collapse btm-links" id="navbarToggleExternalContent" role="navigation">
+						<form class="hide-desktop form-inline my-lg-0">
+							<p class="searchLabel">Search</p>
+							<input class="form-control mr-sm-2" type="search" placeholder="${header.searchPlaceHolder}" aria-label="Search" onclick="javascript:sharedJS.openSearchNav()">
+							<button class="searchButton" type="button">
+								<i class="fa fa-search search-icon-green"></i>
+							</button>
+						</form>
+						<ul class="navbar-nav mr-auto listCont">
+							<sly data-sly-list.levelOnePage="${header.beanList}">
+								<li class="nav-item" data-show-this-menu-for="${levelOnePage.entityType}">
+									<a class="nav-link subnav" role="button" aria-haspopup="true" aria-expanded="false"  href="#">${levelOnePage.linkText}<img class="rightArrow" alt="" src="/content/dam/vcm/basic/right-arrow.svg" alt="dropdown"/></a>
+									<div class="myNav overlay">
+										<a href="javascript:void(0)" class="hide-desktop lft-arrow" aria-label="back">${header.backText}</a>
+										<div class="showinDesktop innerlogo">
+											<sly data-sly-test="${levelOnePageList.first}">
+												<h3 class="logo-content blueHdng-multiLine-greenBorder" role="heading" aria-level="2">${levelOnePage.linkText}</h3>
+											</sly>
+											<sly data-sly-test="${!levelOnePageList.first}">
+												<h3 class="logo-content blueHdng-multiLine-greenBorder d-none d-lg-block d-md-none d-sm-none">${levelOnePage.linkText}</h3>
+											</sly>
+										</div>
+										<sly data-sly-test.hasThirdLevel="false"/>
+										<sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+											<sly data-sly-test.size="${levelTwoPageList.count}"/>
+											<sly data-sly-test.index="${levelTwoPageList.index}"/>
+											<sly data-sly-test.image="${levelTwoPage.imagePath}"/>
+											<sly data-sly-list.thirdLevel="${levelTwoPage.ListBean}">
+												<sly data-sly-test="${thirdLevelList.count > 0}">
+													<sly data-sly-test.hasThirdLevel="true"/>
+												</sly>
+											</sly>
+										</sly>
+										<sly data-sly-test.childPageCount="${levelOnePage.childCount}"/>
+										<sly data-sly-test.secondLevelNavOnly="${levelOnePage.secondLevelOnly}"/>
+										<sly data-sly-test="${!image}">
+											<div class="overlay-content">
+												<sly data-sly-test= "${!hasThirdLevel && !secondLevelNavOnly}">
+													<div class="row overly-row">
+														<div class="col-6 col-12">
+															<ul>
+																<li> <a href="${levelOnePage.linkUrl}" class="text-rightArrow">${levelOnePage.navText}</a></li>
+																<sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+																	<sly data-sly-test="${levelTwoPageList.index < childPageCount}">
+																		<li><a href="${levelTwoPage.linkUrl}">${levelTwoPage.linkText}</a></li>
+																	</sly>
+																</sly>
+															</ul>
+														</div>
+													</div>
+													<div class="row overly-row">
+														<div class="col-6 col-12">
+															<ul>
+																<sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+																	<sly data-sly-test="${levelTwoPageList.index >= childPageCount}">
+																		<li><a href="${levelTwoPage.linkUrl}">${levelTwoPage.linkText}</a></li>
+																	</sly>
+																</sly>
+															</ul>
+														</div>
+													</div>
+												</sly>
+												<sly data-sly-test= "${!hasThirdLevel && secondLevelNavOnly}">
+													<ul class="splitul">
+														<sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+															<li><a href="${levelTwoPage.linkUrl}" class="text-rightArrow">${levelTwoPage.linkText}</a></li>
+														</sly>
+													</ul>
+												</sly>
+												<sly data-sly-test= "${hasThirdLevel}">
+													<ul class="splitul">
+														<sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+															<li><a href="${levelTwoPage.linkUrl}" class="text-rightArrow">${levelTwoPage.linkText}</a></li>
+															<sly data-sly-list.levelThreePage="${levelTwoPage.ListBean}">
+																<li><a class="nav-child" href="${levelThreePage.linkUrl}">${levelThreePage.linkText}</a></li>
+															</sly>
+														</sly>
+													</ul>
+												</sly>
+											</div>
+										</sly>
+										<sly data-sly-test="${image}">
+											<div class="overlay-content hide-desktop" role="list">
+												<div class="row overly-row">
+													<div class="col-6 col-12">
+														<ul>
+															<li> <a href="${levelOnePage.linkUrl}" class="text-rightArrow">${levelOnePage.navText}</a></li>
+															<sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+																<li><a href="${levelTwoPage.linkUrl}">${levelTwoPage.linkText}</a></li>
+															</sly>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="overlay-content investment-overlay showinDesktop" role="list">
+												<div class="investment container">
+													<sly data-sly-test="${levelOnePageList.first}">
+														<a href="${levelOnePage.linkUrl}" class="d-none d-lg-block d-md-none d-sm-none text-rightArrow">${levelOnePage.navText}</a>
+													</sly>
+													<sly data-sly-test="${!levelOnePageList.first}">
+														<a href="${levelOnePage.linkUrl}" class="text-rightArrow">${levelOnePage.navText}</a>
+													</sly>
+													<div class="row" role="list">
+														<sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+															<div class="col-sm-3" role="listitem">
+																<div class="image-wrapper paddingTop-30-Bottom-30">
+																	<a href="${levelTwoPage.linkUrl}">
+																		<img src="${levelTwoPage.imagePath}" class="img-responsive content-center" alt="${levelTwoPage.imageAlt} logo">
+																	</a>
+																</div>
+															</div>
+														</sly>
+													</div>
+												</div>
+											</div>
+										</sly>
+									</div>
+								</li>
+							</sly>
+							<li class="nav-item investor-type investor-selector hide-desktop">
+								<a class="nav-link" href="#"> <span class="subHead">Investor type</span> <span class="nav-main-head-text">${header.membersLinkText  @context='html'}</span><img class="rightArrow" alt="" src="/content/dam/vcm/basic/right-arrow.svg" /></a>
+								<div class="myNav overlay">
+									<!--<a href="javascript:void(0)" class="hide-desktop lft-arrow">USAA Member</a>-->
+									<a data-userType="" data-href="" href="javascript:void(0)" aria-label="" class="hide-desktop lft-arrow nav-main-head"></a>
+									<div class="overlay-content" role="list">
+										<ul role="presentation">
+											<li role="listitem"><a data-userType="usaa_member" href="${header.membersLinkUrl}" aria-label="${header.memberAriaLabel}" class="text-rightArrow">${header.membersLinkText  @context='html'}</a></li>
+											<li role="listitem"><a data-userType="financial_professional" href="${header.financialLinkUrl}" aria-label="${header.financialAriaLabel}" class="text-rightArrow">${header.financialLinkText}</a></li>
+											<li role="listitem"><a data-userType="institutional_investor"  href="${header.institutionalLinkUrl}" aria-label="${header.institutionalAriaLabel}" class="text-rightArrow">${header.institutionalLinkText}</a></li>
+											<li role="listitem"><a data-userType="" href="${header.corporateHomeLinkUrl}" target="_self"  rel="noreferrer" class="text-rightArrow">${header.corporateHomeLinkText} </a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item corporate-head hide-desktop">
+								<div class="investorLinks">
+									<p class="audience--type-text">${header.mobileInvestorText}</p>
+									<div class="navigationLinksButton">
+										<a data-userType="usaa_member" href="${header.membersLinkUrl}" aria-label="${header.memberAriaLabel}">${header.membersLinkText  @context='html'}</a>
+									</div>
+									<div class="navigationLinksButton">
+										<a data-userType="financial_professional" href="${header.financialLinkUrl}" aria-label="header.financialAriaLabel">${header.financialLinkText}</a>
+									</div>
+									<div class="navigationLinksButton thirdItem">
+										<a data-userType="institutional_investor" href="${header.institutionalLinkUrl}" aria-label="header.institutionalAriaLabel">${header.institutionalLinkText}</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item menubottom hide-desktop">
+								<a class="nav-link" href="${header.investorLinkUrl}" aria-label="${header.investorAriaLabel}" target="${header.investorLinkTarget}" rel="${header.investorLinkTarget == '_blank' ? 'noopener noreferrer' : ''}">${header.investorLinkText}</a>
+								<sly data-sly-test.memberContactUs="${header.contactLinkUrl == ''? '#': header.contactLinkUrl}"></sly>
+								<sly data-sly-test.memberContactUsFinancial="${header.contactLinkUrlFinancial == ''? '#': header.contactLinkUrlFinancial}"></sly>
+								<sly data-sly-test.memberContactUsII="${header.contactLinkUrlII == ''? '#': header.contactLinkUrlII}"></sly>
+								<a
+										data-usaa_member-url="${memberContactUs}"
+										data-financial_professional-url="${memberContactUsFinancial}"
+										data-institutional_investor-url="${memberContactUsII}"
+										data-audiencepopup="true"
+										class="nav-link header_contact_us"
+										href="${header.contactLinkUrl}"
+										aria-label="${header.contactAriaLabel}"
+										target="${header.contactLinkTarget}"
+										rel="${header.contactLinkTarget == '_blank' ? 'noopener noreferrer' : ''}">
+									<img class="call-image" src="/content/dam/vcm/basic/contact-icon.svg" alt="">${header.contactLinkText}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!--pop up for search!-->
+			<div class="search-pop">
+				<div class="popup-top">
+					<a class="popup-logo" href="${header.logoLinkUrl}">
+						<img class="logo" src="${header.logoImage}" alt=""></a>
+					<span class="popup-close">&times;</span>
+				</div>
+				<div class="popup-text">
+					<form class="form-inline form-search">
+						<i class="fa fa-search search-icon-green"></i>
+						<input class="form-control col-lg-10" type="search" placeholder="${header.searchPlaceHolder}" aria-label="Search">
+					</form>
+				</div>
+			</div>
+			<!--pop up for search ends!-->
+
+		</header>
+		<div class="mask">
+			<div class="greymask"></div>
+		</div>
+	</div>
+	<div class="postLogin-header" style="display:none">
+		<sly data-sly-include="postLogin-header.html"/>
+	</div>
+</sly>

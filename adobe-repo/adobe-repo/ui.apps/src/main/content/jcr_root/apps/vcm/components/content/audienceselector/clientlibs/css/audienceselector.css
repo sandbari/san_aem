@@ -1,0 +1,48 @@
+.investorLinks p.freetext--audienceSelector--popup,
+.individualInvestorSelectortext {
+    display: none;
+}
+.investorLinks.popup p.freetext--audienceSelector--popup {
+    display: block;
+}
+.victoryFundsInvestor,
+.bnr-content .individualInvestorSelector,
+.investorLinks.mobileShow .individualInvestorSelector,
+.investorLinks.mobileShow .memberInvestor,
+#audience-selector-popup .individualInvestorlink ,
+.banner-container .memberInvestor {
+    display: none;
+}
+.bnr-content .individualInvestorlink {
+    display: block;
+}
+.investorLinks.popup .investor-definition {
+	display: none;
+}
+.memberInvestor {
+	border-top: none !important;
+}
+#audience-selector-popup .navigationLinksButton {
+    padding: 15px 35px 15px 0;
+}
+#audience-selector-popup .navigationLinksButton a::after{
+	right: 0px;
+}
+.homepage-banner .investorLinks .investor-definition p {
+    font-size: 14px;
+    padding-right: 5px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 600;
+}
+
+.investor-definition .info-icon {
+    background-image: url(../resources/info-icon.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: 100% 100%;
+    margin: -5px 0;
+}

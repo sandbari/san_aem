@@ -1,0 +1,12 @@
+.fundstatistics span.date-text {
+	display: inline-block;
+}
+.fundstatistics .heading {
+     margin: 15px 0 0;
+}
+
+@media screen and (min-width:1024px) {
+    .fundstatistics .heading {
+    	margin: 0px 0 15px;
+	}
+}

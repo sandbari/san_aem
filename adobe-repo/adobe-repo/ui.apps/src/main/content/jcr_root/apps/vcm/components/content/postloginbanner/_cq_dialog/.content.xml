@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Postlogin Banner Dialog"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[vcm.widgets.restrictenabled]">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <enabled
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            checked="${not empty cqDesign.enabledBanner ? cqDesign.enabledBanner : false}"
+                            fieldDescription="If more than specified banners are enabled this field will be disabled"
+                            name="./enabledBanner"
+                            text="Enable"
+                            uncheckedValue="false"
+                            value="true"/>
+                    <banners
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="Please select type of Banner for old config : Popup banner, new Dashboard config : Dashboard Banner"
+                            fieldLabel="Banners"
+                            required="{Boolean}true"
+                            name="./banners">
+                        <items jcr:primaryType="nt:unstructured">
+                            <selecttype
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Select Banner Endpoint"
+                                    value=""/>
+                            <popupBanner
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Popup Banner"
+                                    value="Popup Banner"/>
+                            <dashboardBanner
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Dashboard Banner"
+                                    value="Dashboard Banner"/>
+                        </items>
+                    </banners>
+                    <make-startDate-string
+                            about="This causes eventStartDate to be saved as a String in JCR instead of Date"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/hidden"
+                            name="./startDate@TypeHint"
+                            value="String"/>
+                    <startdate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            displayedFormat="YYYY-MM-DD hh:mm A"
+                            fieldLabel="Start Date"
+                            valueFormat="YYYY-MM-DD hh:mm A"
+                            name="./startDate"
+                            type="datetime"/>
+                    <make-endDate-string
+                            about="This causes endDate to be saved as a String in JCR instead of Date"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/hidden"
+                            name="./endDate@TypeHint"
+                            value="String"/>
+                    <enddate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            displayedFormat="YYYY-MM-DD hh:mm A"
+                            fieldLabel="End Date"
+                            valueFormat="YYYY-MM-DD hh:mm A"
+                            name="./endDate"
+                            type="datetime"/>
+                    <caption
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Max 50 characters allowed for banner caption"
+                            fieldLabel="Banner Caption"
+                            maxlength="{Long}50"
+                            name="./caption"/>
+                    <message
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                            fieldLabel="Banner Message"
+                            name="./message"
+                            useFixedInlineToolbar="{Boolean}true">
+                        <rtePlugins
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                        <uiSettings
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                    </message>
+                    <type
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="Please select type of Banner"
+                            fieldLabel="Banner Type"
+                            name="./type">
+                        <items jcr:primaryType="nt:unstructured">
+                            <selecttype
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Select Type Here"
+                                    value=""/>
+                            <info
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Information"
+                                    value="Information"/>
+                            <question
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Alert"
+                                    value="Alert"/>
+                            <warning
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Warning"
+                                    value="Warning"/>
+                            <marketing
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Marketing"
+                                    value="Marketing"/>
+                        </items>
+                    </type>
+                    <usertype
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="Please select type of User"
+                            fieldLabel="User Type"
+                            name="./usertype"
+                            required="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <selecttype
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Select Type Here"
+                                    value=""/>
+                            <guest
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Guest user"
+                                    value="Guest user"/>
+                            <allaccountholders
+                                    jcr:primaryType="nt:unstructured"
+                                    text="All Account holders"
+                                    value="All Account holders"/>
+                            <ascensusaccountholders
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Ascensus account holders"
+                                    value="Ascensus account holders"/>
+                            <fisaccountholders
+                                    jcr:primaryType="nt:unstructured"
+                                    text="FIS account holders"
+                                    value="FIS account holders"/>
+                        </items>
+                    </usertype>
+                    <priority
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Mention the priority of the banner"
+                            fieldLabel="Banner Priority"
+                            name="./priority"/>
+                    <reason
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Mention the reason why this banner is created or updated"
+                            fieldLabel="Create/Update Reason"
+                            name="./bannerReason"/>
+                    <!-- <bgTextureImageURL
+                             jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                             fieldDescription="Mention background texture Image url"
+                             fieldLabel="Background Texture Image URL"
+                             name="./bgTextureImageURL"/>-->
+                    <bgTextureImageURL
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                            allowUpload="{Boolean}false"
+                            autoStart="{Boolean}false"
+                            class="cq-droptarget"
+                            fieldDescription="Mention background texture Image url"
+                            fieldLabel="Background Texture Image"
+                            fileReferenceParameter="./bgTextureImageURL"
+                            mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                            multiple="{Boolean}false"
+                            name="./backgroundTextureImageURL"
+                            uploadUrl="${suffix.path}"
+                            useHTML5="{Boolean}true"/>
+                    <!-- <bgImageURl
+                             jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                             fieldDescription="Mention background image url"
+                             fieldLabel="Background Image URL"
+                             name="./bgImageURl"/>-->
+                    <bgImageURl
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                            allowUpload="{Boolean}false"
+                            autoStart="{Boolean}false"
+                            class="cq-droptarget"
+                            fieldDescription="Mention background image url"
+                            fieldLabel="Background Image URL"
+                            fileReferenceParameter="./bgImageURl"
+                            mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                            multiple="{Boolean}false"
+                            name="./backgroundImageURl"
+                            uploadUrl="${suffix.path}"
+                            useHTML5="{Boolean}true"/>
+                    <!--<mobileBgTextureImageURL
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Mention mobile background texture Image url"
+                            fieldLabel="Mobile Background Texture Image URL"
+                            name="./mobileBgTextureImageURL"/>-->
+                    <mobileBgTextureImageURL
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                            allowUpload="{Boolean}false"
+                            autoStart="{Boolean}false"
+                            class="cq-droptarget"
+                            fieldDescription="Mention mobile background texture Image url"
+                            fieldLabel="Mobile Background Texture Image URL"
+                            fileReferenceParameter="./mobileBgTextureImageURL"
+                            mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                            multiple="{Boolean}false"
+                            name="./mobileBackgroundTextureImageURL"
+                            uploadUrl="${suffix.path}"
+                            useHTML5="{Boolean}true"/>
+                    <!--<mobileBgImageURl
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Mention mobile background image url"
+                            fieldLabel="Mobile Background Image URL"
+                            name="./mobileBgImageURl"/>-->
+                    <mobileBgImageURl
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                            allowUpload="{Boolean}false"
+                            autoStart="{Boolean}false"
+                            class="cq-droptarget"
+                            fieldDescription="Mention mobile background image url"
+                            fieldLabel="Mobile Background Image URL"
+                            fileReferenceParameter="./mobileBgImageURl"
+                            mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                            multiple="{Boolean}false"
+                            name="./mobileBackgroundImageURl"
+                            uploadUrl="${suffix.path}"
+                            useHTML5="{Boolean}true"/>
+                    <btnText
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Mention the button text"
+                            fieldLabel="Button text"
+                            name="./btnText"/>
+                    <btnActionLink
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Mention the button action link to redirect"
+                            fieldLabel="Button Action Link"
+                            name="./btnActionLink"/>
+                    <linkType
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="Please select type of Link"
+                            fieldLabel="Link Type"
+                            required="{Boolean}true"
+                            name="./linkType">
+                        <items jcr:primaryType="nt:unstructured">
+                            <selecttype
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Select Type Here"
+                                    value=""/>
+                            <externalLink
+                                    jcr:primaryType="nt:unstructured"
+                                    text="External Link"
+                                    value="External Link"/>
+                            <aemPublicLink
+                                    jcr:primaryType="nt:unstructured"
+                                    text="AEM Public Link"
+                                    value="AEM Public Link"/>
+                            <dashboardDeepLink
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Dashboard Deep Link"
+                                    value="Dashboard Deep Link"/>
+                        </items>
+                    </linkType>
+                    <mobileDashboardScreen
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="Please select Mobile Dashboard Screen"
+                            fieldLabel="Mobile Dashboard Screen"
+                            name="./mobileDashboardScreen">
+                        <items jcr:primaryType="nt:unstructured">
+                            <selecttype
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Select Type Here"
+                                    value=""/>
+                            <accountServices
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Account Services"
+                                    value="Account Services"/>
+                            <automaticInvestment
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Automatic Investment Plan"
+                                    value="Automatic Investment Plan"/>
+                            <automaticWithdrawal
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Automatic Withdrawal/Exchange Plan"
+                                    value="Automatic Withdrawal/Exchange Plan"/>
+                            <bankAccounts
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Bank Accounts"
+                                    value="Bank Accounts"/>
+                            <dividendAndCapitalGains
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Dividends and Capital Gains Preferences"
+                                    value="Dividends and Capital Gains Preferences"/>
+                            <openAccount
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Open an Account"
+                                    value="Open an Account"/>
+                            <buy
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Buy"
+                                    value="Buy"/>
+                            <sell
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Sell"
+                                    value="Sell"/>
+                            <exchange
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Exchange"
+                                    value="Exchange"/>
+                            <profile
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Profile"
+                                    value="Profile"/>
+                            <profileAndPreferences
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Profiles and Preferences"
+                                    value="Profiles and Preferences"/>
+                            <documentCenter
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Document Center"
+                                    value="Document Center"/>
+                            <messageCenter
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Message Center"
+                                    value="Message Center"/>
+                            <contactCenter
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Contact Center"
+                                    value="Contact Center"/>
+                        </items>
+                    </mobileDashboardScreen>
+                    <iconUrl
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Mention the icon image url"
+                            fieldLabel="Icon URL"
+                            name="./iconUrl"/>
+                    <desktopHeading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                            fieldDescription="Max 60 characters allowed including spaces"
+                            fieldLabel="Banner Desktop Heading"
+                            name="./desktopHeading"
+                            maxlength="60"
+                            useFixedInlineToolbar="{Boolean}true">
+                        <rtePlugins
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                        <uiSettings
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                    </desktopHeading>
+                    <desktopMessage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                            fieldDescription="Max 190 characters allowed including spaces"
+                            fieldLabel="Banner Desktop Message"
+                            name="./desktopMessage"
+                            maxlength="190"
+                            useFixedInlineToolbar="{Boolean}true">
+                        <rtePlugins
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                        <uiSettings
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                    </desktopMessage>
+                    <mobileHeading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                            fieldDescription="Max 30 characters allowed including spaces"
+                            fieldLabel="Banner Mobile Heading"
+                            name="./mobileHeading"
+                            maxlength="30"
+                            useFixedInlineToolbar="{Boolean}true">
+                        <rtePlugins
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                        <uiSettings
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                    </mobileHeading>
+                    <mobileMessage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                            fieldLabel="Banner Mobile Message"
+                            fieldDescription="Max 130 characters allowed including spaces"
+                            name="./mobileMessage"
+                            maxlength="130"
+                            useFixedInlineToolbar="{Boolean}true">
+                        <rtePlugins
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                        <uiSettings
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                    </mobileMessage>
+                    <mobileHeadingApp
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Max 30 characters allowed for mobile application heading"
+                            fieldLabel="Mobile App Banner Heading"
+                            validation="[mobileAppHeadingValidation]"
+                            name="./mobileHeadingApp"/>
+                    <mobileAppMessage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            fieldDescription="Max 130 characters allowed including spaces"
+                            fieldLabel="Mobile App Banner Message"
+                            validation="[mobileAppMessageValidation]"
+                            name="./mobileAppMessage"/>
+                    <timeDuration
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                            fieldDescription="Mention the time in seconds"
+                            fieldLabel="Time Duration"
+                            name="./timeDuration"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

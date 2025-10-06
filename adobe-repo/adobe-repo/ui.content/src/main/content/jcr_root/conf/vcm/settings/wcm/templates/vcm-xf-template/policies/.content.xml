@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-02-21T08:44:09.462Z"
+        cq:lastModifiedBy="vmohanam@vcm.com"
+        cq:lastReplicated="{Date}2020-04-19T07:17:01.718Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:policy="vcm/components/structure/page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:uuid="a5b551c1-5e46-49b9-96f8-070730dc67ba"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="wcm/foundation/components/responsivegrid/policy_97659680643347"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping"/>
+    </jcr:content>
+</jcr:root>

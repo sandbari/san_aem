@@ -1,0 +1,68 @@
+<sly data-sly-test="${wcmmode.edit}">VideoComponent </sly>
+<sly data-sly-use.video="com.vcm.core.models.VideoModel" />
+<div class="container">
+    <div class="content-wrapper">
+        <div class="video-block col-md-12 col-sm-12 col-12">
+		<sly data-sly-test.heading="${video.heading}">
+			<h3 class="blueHdng-greenBorder">${heading}</h3>
+		</sly>
+            <div class="row video--block__innercontainer">
+                <div class="col-sm-12 col-md-12 col-lg-7">
+                    <div class="video-wrapper">
+                        <sly data-sly-test="${video.youtubeVideoId}">
+                            <iframe
+                                src="${video.youtubeVideoId}"
+                                title="${video.videoTitle}"
+                                width="${video.youtubeWidth || '100%' @ context='scriptString'}"
+                                height="${video.youtubeHeight || 390 @ context='scriptString'}"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen> </iframe>
+                        </sly>
+                        <sly data-sly-test="${!video.youtubeVideoId}">
+                            <iframe
+                                src="${video.youtubeVideoId}"
+                                title="${video.videoTitle}"
+                                width="${video.youtubeWidth || '100%' @ context='scriptString'}"
+                                height="${video.youtubeHeight || 390 @ context='scriptString'}"
+                                frameborder="0"
+                                src="${'https://www.youtube.com/embed/{0}?rel=0&origin={1}://{2}' @ format=[video.youtubeVideoId, request.scheme, request.serverName]}"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen> </iframe>
+                        </sly>
+                    </div>
+                    <div class="accordian">
+                        <div class="col-sm-12 col-md-12 col-lg-12 faq-ver" id="accordion">
+                            <div class="acc-content-s-h">
+                                <div class="col-xs-12 col-md-12 accordionContainer pad0" >
+
+                                    <div class="card pad0">
+                                        <sly data-sly-test.transcript="${video.transcriptText}">
+                                             <div class="card-header collapsed pad0" data-toggle="collapse" role="button" tabindex="0" href="#collapseOne" aria-expanded="false">
+                                                <div class="card-link" style="display: inline-block;">
+                                                    <p class="blueHdng-greenBorder-view">${transcript}</p>
+                                                   <p class="underline-black-2 mt-1"></p>
+                                                </div>
+                                                <div class="accordionIconMain accordionPlusIcon" style="display: inline-block;">
+                                                </div>
+                                             </div>
+                                         <div id="collapseOne" class="collapse" data-parent="#accordion" style="">
+                                            <div class="card-body pad0">
+                                                ${video.transcriptDescription @context='html'}
+                                            </div>
+                                         </div>
+                                        </sly>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-5">
+                    ${video.description @context='html'}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

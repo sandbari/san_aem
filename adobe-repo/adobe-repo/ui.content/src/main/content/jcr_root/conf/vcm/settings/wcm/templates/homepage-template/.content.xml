@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2020-04-11T13:29:13.817Z"
+        cq:lastModifiedBy="ctsuser"
+        cq:lastReplicated="{Date}2020-04-19T07:17:00.239Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:templateType="/conf/vcm/settings/wcm/template-types/content-page"
+        jcr:description="Template for Corporate home and other home landing pages"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Homepage Template"
+        fileReference="/content/dam/vcm/templates/homepage-small.png"
+        status="enabled"/>
+</jcr:root>

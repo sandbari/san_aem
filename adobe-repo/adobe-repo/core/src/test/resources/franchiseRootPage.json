@@ -1,0 +1,152 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Tue Jan 21 2020 15:28:57 GMT+0530",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:createdBy": "admin",
+		"jcr:title": "Investment Franchise",
+		"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+		"jcr:created": "Tue Jan 21 2020 15:28:57 GMT+0530",
+		"cq:lastModified": "Sat Feb 08 2020 18:26:57 GMT+0530",
+		"sling:resourceType": "vcm/components/structure/page",
+		"cq:lastModifiedBy": "admin",
+		"root": {
+			"jcr:primaryType": "nt:unstructured",
+			"sling:resourceType": "wcm/foundation/components/responsivegrid",
+			"responsivegrid": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"investmentfranchises": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "admin",
+					"description": "<p>Our mission is to provide all of our clients with funds and strategies for their every investment goal. We empower our ten independently managed investment franchises to manage their funds according to their own expertise and unique perspectives on the market.</p>\r\n",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:created": "Tue Jan 21 2020 15:37:47 GMT+0530",
+					"rootPath": "/content/vcm/en/investment-franchise",
+					"linkUrl": "/content/we-retail",
+					"heading": "Our Investment Franchises",
+					"jcr:lastModified": "Sat Feb 08 2020 18:26:57 GMT+0530",
+					"sling:resourceType": "vcm/components/content/investmentfranchises",
+					"textIsRich": "true",
+					"displayStyle": "WhiteBackground",
+					"viewDetail": "More Information"
+				}
+			}
+		}
+	},
+	"incore": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Jan 21 2020 15:29:35 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:createdBy": "admin",
+			"jcr:title": "Incore",
+			"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+			"institutionalinvestorsType": "false",
+			"financialAdvisorsType": "false",
+			"jcr:created": "Tue Jan 21 2020 15:29:35 GMT+0530",
+			"cq:lastModified": "Mon Feb 10 2020 18:40:52 GMT+0530",
+			"jcr:description": "This is Incore description",
+			"useImageInHeaderNav": "false",
+			"sling:resourceType": "vcm/components/structure/page",
+			"membersType": "false",
+			"triangleColor": "#FF671D",
+		    "cq:lastModifiedBy": "admin",
+			"root": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"responsivegrid": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "wcm/foundation/components/responsivegrid",
+					"franchiseintro": {
+						"jcr:primaryType": "nt:unstructured",
+						"jcr:createdBy": "admin",
+						"jcr:lastModifiedBy": "admin",
+						"strategyShowButton": "true",
+						"strategyLinkUrl": "/content/we-retail/ca/en/experience",
+						"jcr:created": "Wed Jan 29 2020 13:54:42 GMT+0530",
+						"specialityDescription": "<p>Our strategies cover the entire risk spectrum from conservative capital preservation and income to short government to more aggressive total return and convertible bond strategies, all based upon the client’s needs and goals. Our strategies are managed by two teams, one led by CIO Ed Goard and the other led by CIO Heidi Adelman.</p>\r\n",
+						"strategyHeading": "Incore Strategy",
+						"specialityLinkURL": "/content/wknd-events",
+						"strategyViewDetail": "View strategy",
+						"jcr:lastModified": "Sat Feb 08 2020 14:20:18 GMT+0530",
+						"specialityViewDetail": "Speciality link",
+						"strategyDescription": "<p>INCORE Capital Management provides <b>independent, comprehensive</b>, and <b>repeatable</b> fixed income and convertible bond strategies</p>\r\n",
+						"sling:resourceType": "vcm/components/content/franchiseintro",
+						"specialityHeading": "Incore Speciality",
+						"textIsRich": [
+							"true",
+							"true"
+						]
+					}
+				}
+			},
+			"image": {
+				"jcr:primaryType": "nt:unstructured",
+				"fileReference": "/content/dam/vcm/investmentFranchise/Incore.Logo.svg"
+			}
+		}
+	},
+	"munder": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Jan 21 2020 15:29:57 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:createdBy": "admin",
+			"jcr:title": "Munder",
+			"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+			"institutionalinvestorsType": "false",
+			"financialAdvisorsType": "false",
+			"jcr:created": "Tue Jan 21 2020 15:29:57 GMT+0530",
+			"cq:lastModified": "Mon Feb 10 2020 18:41:19 GMT+0530",
+			"jcr:description": "This is munder description",
+			"useImageInHeaderNav": "false",
+			"sling:resourceType": "vcm/components/structure/page",
+			"membersType": "false",
+			"triangleColor": "#C4C4C4",
+			"cq:lastModifiedBy": "admin",
+			"root": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"responsivegrid": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "wcm/foundation/components/responsivegrid",
+					"franchiseintro": {
+						"jcr:primaryType": "nt:unstructured",
+						"jcr:createdBy": "admin",
+						"description": "<p>Munder strategy description</p>\r\n",
+						"jcr:lastModifiedBy": "admin",
+						"strategyShowButton": "true",
+						"strategyLinkUrl": "/content/wknd-events",
+						"jcr:created": "Tue Jan 28 2020 11:22:25 GMT+0530",
+						"specialityButtonStyle": "true",
+						"specialityDescription": "<p>We recognize that trust and enduring relationships are essential to our success. We treat our clients, associates and partners with dignity and respect and fulfill the commitments we make to each of them. We operate our business with the highest integrity, fostering open and honest communications within a supportive environment.</p>\r\n",
+						"strategyHeading": "Munder Strategy",
+						"linkUrl": "/content/we-retail/ch/de",
+						"showButton": "true",
+						"specialityLinkURL": "/content/wknd-events",
+						"heading": "Munder strategy heading",
+						"strategyViewDetail": "Munder Strategy link",
+						"jcr:lastModified": "Sat Feb 08 2020 14:39:53 GMT+0530",
+						"specialityViewDetail": "Munder speciality",
+						"strategyDescription": "<p>To provide exceptional stewardship of our clients’ capital through attentive matching of each client’s needs with the appropriate investments, careful measurement and control of risk, consistency of investment results and unsurpassed service.</p>\r\n",
+						"sling:resourceType": "vcm/components/content/franchiseintro",
+						"specialityHeading": "Munder speciality",
+						"textIsRich": [
+							"true",
+							"true"
+						],
+						"viewDetail": "Munder strategy link text"
+					}
+				}
+			},
+			"image": {
+				"jcr:primaryType": "nt:unstructured",
+				"fileReference": "/content/dam/vcm/investmentFranchise/Munder.logo.svg"
+			}
+		}
+	}
+}

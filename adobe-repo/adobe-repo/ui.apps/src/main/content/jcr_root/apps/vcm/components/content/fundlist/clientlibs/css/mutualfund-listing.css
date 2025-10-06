@@ -1,0 +1,1451 @@
+.funds-list .fixedTabs,
+.funds-list .filter-sidebar-collapse {
+    display: none;
+}
+
+.searchfunds-container {
+    margin: 30px 0;
+}
+
+.searchfunds-container p {
+    font-family: benton-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #49494A;
+    margin: 0 auto;
+    width: 81%;
+}
+
+.mutualfunds-container .searchfunds {
+    border-radius: 0;
+    width: 81%;
+    height: 48px;
+    margin: 0 auto;
+    background: url(../resources/searchIcon.svg) no-repeat scroll 11px 11px;
+    padding: 11px 11px 11px 45px;
+    border: 1px solid #D2D2D2;
+}
+
+.mutualfunds-container .searchfunds:focus {
+    box-shadow: none;
+}
+
+.mutualfunds-container .searchfunds::placeholder {
+    font-size: 14px;
+    font-family: benton-sans, sans-serif;
+    color: #49494A;
+    font-weight: bold;
+}
+
+.dynamic-loader {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 0;
+    opacity: 0.5;
+}
+
+.dynamic-loader img {
+    position: relative;
+    top: 20%;
+    left: 45%;
+}
+
+.error-message {
+    display: none;
+    padding: 200px;
+}
+
+.error-message p {
+    font-size: 24px;
+    font-family: benton-sans, sans-serif;
+    color: #004A98;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 32px;
+}
+
+.fund-title.lblFilter:focus{
+    outline: 2px solid #000 !important;
+    outline-offset: 0 !important;
+    transition: none;
+}
+
+/*global classes starts*/
+
+.hidden {
+    display: none;
+}
+
+
+/*global classes ends*/
+
+.mutualfunds-container.container {
+    max-width: 1366px!important;
+}
+
+
+/* tabs style starts*/
+
+.fixedTabs {
+    height: 50px;
+}
+
+.fundsList .tabsSection {
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.36);
+}
+
+.fixedTabs .nav-item {
+    width: 50%;
+    padding: 0 15px;
+    height: 50px;
+    text-align: center;
+    padding: 12px 8px;
+}
+
+.performancetab .fund-nav-link.active {
+    background: url(../resources/iconChartView.svg) 0 3px no-repeat;
+}
+
+.ratingtab .fund-nav-link.active {
+    background: url(../resources/morningstar-indicator.svg) 0 2px no-repeat;
+}
+
+.performancetab.nav-item {
+    border-right: 1px solid #E2E2E2;
+}
+
+.performancetab .fund-nav-link .chartIcon,
+.ratingtab .fund-nav-link .starIcon {
+    display: none;
+}
+
+.funds-list ul.nav-tabs .nav-item {
+    display: block;
+    margin-right: 0px;
+}
+
+.funds-list ul.nav.nav-tabs {
+    display: flex;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.66);
+}
+
+.funds-list .tab-content {
+    font-size: 16px;
+    padding: 0px;
+}
+
+.performancetab .fund-nav-link.active .chartIcon,
+.ratingtab .fund-nav-link.active .starIcon {
+    display: inline-block;
+}
+
+.fixedTabs .nav-tabs .fund-nav-link {
+    border: none;
+    font-size: 14px;
+    display: inline;
+    font-family: "yorkten-slab-normal";
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #486D90;
+    padding: 0;
+    cursor: pointer;
+}
+
+.fixedTabs .fund-nav-link.active,
+.fixedTabs .fund-nav-link:hover {
+    border: none;
+}
+
+.fixedTabs .nav-tabs .fund-nav-link.active {
+    color: #49494A;
+    border-bottom: 2px solid #8BC105;
+    padding-bottom: 4px;
+    padding-left: 22px;
+}
+
+.tabPerformance {
+    border-right: 1px solid #E2E2E2;
+}
+
+.nav.nav-tabs {
+    border: 0;
+}
+
+.funds-list .tab-content .DTFC_LeftHeadWrapper,
+.funds-list .tab-content .DTFC_LeftBodyWrapper {
+    box-shadow: rgba(0, 0, 0, 0.36) 9px 0px 6px -7px;
+}
+
+.funds-list .tab-content .DTFC_LeftBodyWrapper {
+    height: auto !important;
+}
+
+.funds-list .tab-content .DTFC_LeftBodyLiner {
+    height: unset !important;
+    max-height: unset !important;
+}
+
+.funds-list {
+    position: relative;
+}
+
+.nav-item.performancetab.current,
+.nav-item.ratingtab.current {
+    border: 1px solid #49494a;
+}
+
+.current::after {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    content: " ";
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    z-index: 1;
+}
+
+.performance-text {
+    font-size: 13px !important;
+    margin-right: 0px;
+    width: 100%;
+    display: flex;
+}
+
+.performanceOption {
+    width: 65%;
+}
+
+.performanceOptionText {
+    width: 35%;
+    padding: 10px 10px;
+}
+
+.funds-list .tab-content {
+    visibility: hidden;
+}
+
+.mutualfunds-container .dynamic-loader {
+    position: fixed;
+    top: 35%;
+}
+
+/*tabs style ends*/
+
+
+/*tablet and PC styles*/
+
+@media screen and (min-width:768px) {
+    .fixedTabs .nav-tabs .fund-fund-nav-link {
+        font-size: 18px;
+    }
+    .current::after {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #ffffff;
+        bottom: -14px;
+    }
+    .current::before {
+        width: 0;
+        height: 0;
+        content: " ";
+        position: absolute;
+        left: 50%;
+        z-index: 1;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #000000;
+        bottom: -15px;
+    }
+    .pc-radiobuttons-section .performance-text {
+        margin-right: 40px;
+    }
+    .riskinfo-popup .modal-dialog {
+        margin: 7% auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .riskinfo-popup .modal-dialog {
+        width: 90%;
+        margin: 20% auto;
+    }
+    .ytdlabel {
+        font-size: 11px !important;
+    }
+    table.dataTable.fundslistTable .ratingoverall>div,
+    table.dataTable.fundslistTable .ratingyearthree>div,
+    table.dataTable.fundslistTable .ratingyearfive>div,
+    table.dataTable.fundslistTable .ratingyearten>div {
+        font-size: 11px !important;
+    }
+}
+
+
+/* pc/mobile table above radio buttons section starts */
+
+.fundscount {
+    font-weight: 600;
+}
+
+
+/* radio buttons section starts*/
+
+.performance-scrollablesection,
+.rating-scrollablesection {
+    vertical-align: middle;
+    background: linear-gradient(to bottom, #00000066 -15%, #F7F7F7 25%);
+}
+
+.rating-date,
+.rating-text,
+.performance-text,
+.radio-label {
+    font-size: 12px;
+    font-family: benton-sans, sans-serif;
+    color: #49494A;
+}
+
+.rating-text {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.performance-text,
+.radio-label {
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.performance-text {
+    margin-right: 0;
+}
+
+.performance-scrollablesection .styled-radio,
+.performanceOption .styled-radio,
+.filter-sidebar-collapse #share_class .styled-radio{
+    display: inline;
+    opacity: 0;
+    -khtml-opacity: 0;
+}
+
+.performance-scrollablesection label,
+.performanceOption label,
+.filter-sidebar-collapse #share_class label {
+    background: url(../resources/radio-button-empty.svg) 0px 6px no-repeat;
+    padding: 10px 0 10px 25px;
+    margin-left:-13px;
+}
+
+.performance-scrollablesection input[type="radio"]:checked+label,
+.performanceOption input[type="radio"]:checked+label,
+.filter-sidebar-collapse #share_class input[type="radio"]:checked+label {
+    background: url(../resources/radio-button-filled.svg) 0px 6px no-repeat;
+}
+
+
+/* radio buttons section ends*/
+
+.grid-list-section {
+    height: 66px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #00000066 -15%, #F7F7F7 25%);
+}
+
+.mobile-radiobuttons-section .performance-scrollablesection,
+.mobile-radiobuttons-section .rating-scrollablesection {
+    background: #ffffff;
+    height: 66px;
+    /* padding: 10px 20px; */
+    padding: 10px 8px;
+}
+
+.toggle-icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+
+.list-icon {
+    background-image: url(../resources/list-icon.PNG);
+    background-position: 0 -1px;
+}
+
+.list-icon.active {
+    background-image: url(../resources/list-icon-active.PNG);
+    background-position: 0 -2px;
+}
+
+.grid-icon {
+    background-image: url(../resources/grid-icon.PNG);
+}
+
+.grid-icon.active {
+    background-image: url(../resources/grid-icon-active.PNG);
+}
+
+.mobile-radiobuttons-section .fundscount {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.grid-list-icons-section {
+    float: right;
+}
+
+
+/*pc/mobile table above radio buttons section ends*/
+
+
+/* Risk info icon pop up styles stars*/
+
+.popup-modal {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.popup-modal a {
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    border-bottom: 1px dotted;
+}
+
+.learn-more-link {
+    font-weight: 600;
+    font-style: normal;
+}
+
+.riskinfo-popup .modal-content {
+    border-radius: 0px;
+    border: none;
+    padding: 18px;
+}
+
+.popup-link {
+    color: #004A98;
+}
+
+.riskinfo-popup .modal-header .close-link {
+    top: 28px;
+    position: absolute;
+    right: 34px;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.image-left {
+    bottom: 5px;
+    left: 32px;
+    position: relative;
+}
+
+.image-right {
+    position: relative;
+    right: 8px;
+    bottom: 5px;
+}
+
+#riskinfo {
+    overflow: hidden;
+    height: auto;
+}
+
+.riskinfo-popup .modal-title {
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+
+}
+.riskinfo-popup .modal-title {
+    scrollbar-color: #486d90 #d2d2d2;
+    scrollbar-width: thin;
+
+}
+
+.riskinfo-popup .modal-title p b {
+    font-weight: 800;
+}
+
+
+/*.riskinfo-popup .modal-dialog {*/
+
+
+/*    width: 80%;*/
+
+
+/*    margin: auto;*/
+
+
+/*}*/
+
+.riskinfo-popup .modal-header {
+    display: block;
+    border: none;
+    padding: 1.7rem;
+}
+
+.riskinfo-popup .modal-header .close {
+    top: 28px;
+    position: absolute;
+    font-size: 65px;
+    right: 38px;
+    color: #8BC105;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.heading-text {
+    padding: 0;
+}
+
+.riskinfo-popup .modal-header h4 {
+    margin-top: 17px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.info-icon {
+    background-image: url(../resources/info-icon.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: 100% 100%;
+    margin: -3px 8px;
+}
+
+
+/* Works on Chrome/Edge/Safari */
+
+.riskinfo-popup .modal-title::-webkit-scrollbar {
+    width: 8px;
+}
+
+.riskinfo-popup .modal-title::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+    border: 2px solid #dfdfdf;
+}
+
+
+/* Risk info icon pop up styles ends*/
+
+
+/*table design starts*/
+
+.funds-list .DTFC_NoData,
+.funds-list .dataTables_filter,
+.funds-list .dataTables_info {
+    display: none;
+}
+
+
+/* table styles starts*/
+
+table.dataTable.fundslistTable thead th {
+    border-bottom: 2px solid #8BC105;
+    vertical-align: middle;
+}
+
+table#fundslistTable.fundslistTable.dataTable.no-footer thead {
+    display: none;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scroll .dataTables_scrollBody,
+table.dataTable.fundslistTable thead td {
+    border-bottom: none;
+}
+
+
+/* table.dataTable.fundslistTable thead .sorting {
+    background: transparent;
+} */
+
+
+/*
+table.dataTable.fundslistTable thead .sorting_desc {
+    background-image: url(../resources/sort-icon.svg);
+    background-position: right 42px;
+}
+
+table.dataTable.fundslistTable thead .sorting_asc {
+    background-image: url(../resources/sort-icon-asc.png);
+    background-position: right 42px;
+} */
+
+table.dataTable.fundslistTable thead .sorting_asc.ticker,
+table.dataTable.fundslistTable thead .sorting_desc.ticker,
+table.dataTable.fundslistTable thead .sorting_asc.fundname,
+table.dataTable.fundslistTable thead .sorting_desc.fundname,
+.dataTables_scrollBody.dragscroll table.dataTable.fundslistTable thead.sorting_asc.fundname,
+.dataTables_scrollBody.dragscroll table.dataTable.fundslistTable thead.sorting_desc.fundname,
+.dataTables_scrollBody.dragscroll table.dataTable.fundslistTable thead.sorting,
+.DTFC_LeftBodyWrapper .fundslistTable.dataTable.no-footer.DTFC_Cloned thead .sorting::after,
+.dataTables_scrollBody.dragscroll #fundslistTable th.sorting::after {
+    background: none;
+    content: none;
+}
+
+.DTFC_LeftHeadWrapper table.dataTable.fundslistTable thead th.sorting_desc::after {
+    background-image: url(../resources/sort-icon.svg);
+    background-position: right 42px;
+    margin-left: 5px;
+    content: "";
+    height: 6px;
+    width: 12px;
+    display: inline-block;
+}
+
+.dataTables_scrollHead table.dataTable.fundslistTable thead th.sorting_asc::after {
+    background-image: url(../resources/sort-icon-asc.png);
+    background-position: right 0px;
+    margin-left: 5px;
+    content: "";
+    height: 6px;
+    width: 12px;
+    display: inline-block;
+     background-repeat: no-repeat;
+}
+
+.dataTables_scrollHead table.dataTable.fundslistTable thead th.sorting_desc::after {
+    background-image: url(../resources/sort-icon.svg);
+    background-position: right 42px;
+    margin-left: 5px;
+    content: "";
+    height: 6px;
+    width: 12px;
+    display: inline-block;
+}
+
+.DTFC_LeftHeadWrapper table.dataTable.fundslistTable thead th.sorting_asc::after {
+    background-image: url(../resources/sort-icon-asc.png);
+    background-position: right 0px;
+    margin-left: 5px;
+    content: "";
+    height: 6px;
+    width: 12px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.fundslistTable.dataTable thead .sorting::after {
+    background-image: url(../resources/sort_both.png);
+    background-position: right 0px;
+    margin-left: 5px;
+    content: "";
+    height: 15px;
+    width: 12px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+table.dataTable .extra-heading-space {
+    display: block;
+    margin-right: 17px;
+}
+
+table.dataTable thead .sorting {
+    background-image: none !important;
+}
+
+.dataTables_scrollHead table.dataTable.fundslistTable thead th.fundname.sorting_desc::after {
+    background-image: url(../resources/sort-icon.svg);
+    background-position: right 42px;
+    margin-left: 5px;
+    content: "";
+    height: 6px;
+    width: 12px;
+    display: inline-block;
+}
+
+.dataTables_scrollHead table.dataTable.fundslistTable thead th.fundname.sorting_asc::after {
+    background-image: url(../resources/sort-icon-asc.png);
+    background-position: right 0px;
+    margin-left: 5px;
+    content: "";
+    height: 6px;
+    width: 12px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.ytdtext {
+    font-weight: 600;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.ytdvalue {
+    font-size: 13px;
+    text-align: right;
+    width: 100%;
+}
+
+.ytdlabel {
+    width: 46%;
+    padding: 0 0 0 5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.ytdSpace {
+    padding: 3px 0;
+}
+
+.fundslistTable thead th {
+    color: #004A98;
+    font-family: benton-sans, sans-serif;
+    text-align: right;
+}
+
+.fundslistTable thead th:focus {
+    outline: none;
+}
+
+.fundslistTable thead th,
+.fundslistTable tbody td {
+    text-align: right;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+
+.fundslistTable .ticker,
+.fundslistTable .fundname,
+.fundslistTable .assetclass {
+    text-align: left;
+}
+
+.fundslistTable .ticker p,
+.fundslistTable .fundname p,
+.fundslistTable .assetclass p {
+    text-align: left;
+}
+
+table.dataTable.fundslistTable tbody td p {
+    text-align: right;
+    font-size: 13px !important;
+    margin: 0;
+    line-height: 18px;
+}
+
+table.dataTable.fundslistTable tbody td p.ytdNav {
+    text-align: left;
+    font-size: 13px;
+    margin: 0;
+    line-height: 18px;
+    display: flex;
+}
+
+table.dataTable.fundslistTable tbody td p.ytdMop {
+    text-align: left;
+    font-size: 13px;
+    margin: 0;
+    line-height: 18px;
+    display: flex;
+}
+
+table.dataTable.fundslistTable tbody td p.fund-content-header {
+    font-size: 10px;
+}
+
+.fundslistTable tbody .ratingfundsheet {
+    /*background-image: url(../resources/icon__pdf.svg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 35px 15px;*/
+    color: #004A98;
+}
+
+.ratingfundsheet a.fundFactSheet {
+    font-size: 26px;
+    background: url(../resources/pdf_icon.png);
+    background-repeat: no-repeat;
+    color: #004A98;
+    padding-left: 26px;
+    cursor: pointer;
+}
+
+.ratingfundsheet p.fundFactSheet-null {
+    text-align: left !important;
+    font-size: 13px;
+    color: #49494A;
+    padding: 0 !important;
+}
+
+.ratingfundsheet a span {
+    font-size: 13px;
+    vertical-align: top;
+}
+
+table.dataTable thead .pc-radiobuttons-section td {
+    padding-left: 10px;
+}
+
+.fundslistTable tbody .tickertext {
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #004A98;
+    padding: 6px 6px;
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+.fundslistTable tbody .fundname a {
+    font-family: benton-sans, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.fundslistTable tbody .fundname p {
+    font-size: 13px;
+}
+
+.fundslistTable thead .assetclass,
+.fundslistTable thead .inceptdate,
+.fundslistTable thead .gross,
+.fundslistTable thead .net {
+    color: #49494A;
+}
+
+
+/*.fundslistTable thead tr td,*/
+
+
+/*.fundslistTable thead tr th {*/
+
+
+/*    height: 50px;*/
+
+
+/*}*/
+
+
+/*.fundslistTable tbody tr td {*/
+
+
+/*    height: 80px;*/
+
+
+/*}*/
+
+.fundslistTable tbody td {
+    font-family: benton-sans, sans-serif;
+    color: #49494A;
+    font-size: 13px !important;
+}
+
+.fundslistTable tbody tr:nth-child(even) {
+    background-color: #F7F7F7;
+}
+
+table.dataTable.fundslistTable thead th,
+table.dataTable.fundslistTable tbody td {
+    padding: 5px;
+}
+
+table.dataTable.fundslistTable tbody tr:last-child td {
+    padding-bottom: 12px;
+}
+
+.funds-list .tab-content .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody>table>tbody>tr>td {
+    vertical-align: top;
+}
+
+
+/*column widths*/
+
+table.dataTable.fundslistTable .ticker {
+    width: 100px;
+    min-width: 100px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+table.dataTable.fundslistTable .fundname {
+    width: 140px;
+    min-width: 140px;
+    box-sizing: border-box;
+}
+
+table.dataTable.fundslistTable .assetclass {
+    width: 100px;
+    min-width: 100px;
+    box-sizing: border-box;
+    padding-right: 15px;
+}
+table.dataTable.fundslistTable th.assetclass {
+    padding-left: 12px;
+    padding-right: 0 !important;
+    text-align: left;
+}
+table.dataTable.fundslistTable th.fundname {
+    padding-left: 10px;
+    padding-right: 0 !important;
+    text-align: left;
+}
+/* performance section*/
+
+table.dataTable.fundslistTable td,
+table.dataTable.fundslistTable th {
+    word-wrap: break-word;
+}
+
+table.dataTable.fundslistTable .ytd {
+    width: 90px;
+    min-width: 90px;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 0;
+    text-align: right;
+}
+
+table.dataTable.fundslistTable .yearone,
+table.dataTable.fundslistTable .yearthree,
+table.dataTable.fundslistTable .yearfive {
+    width: 55px;
+    min-width: 55px;
+    box-sizing: border-box;
+}
+
+table.dataTable.fundslistTable .yearten {
+    width: 62px;
+    min-width: 62px;
+    box-sizing: border-box;
+}
+
+table.dataTable.fundslistTable .inception {
+    width: 70px;
+    min-width: 70px;
+    box-sizing: border-box;
+}
+
+table.dataTable.fundslistTable .inceptdate,
+table.dataTable.fundslistTable .gross,
+table.dataTable.fundslistTable .net {
+    width: 60px;
+    min-width: 60px;
+    box-sizing: border-box;
+}
+
+table.dataTable.fundslistTable .risk {
+    width: 110px;
+    min-width: 110px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+
+/* annual*/
+
+table.dataTable.fundslistTable .prevyr,
+table.dataTable.fundslistTable .prevyrminus1,
+table.dataTable.fundslistTable .prevyrminus2,
+table.dataTable.fundslistTable .prevyrminus3,
+table.dataTable.fundslistTable .prevyrminus4,
+table.dataTable.fundslistTable .prevyrminus5,
+table.dataTable.fundslistTable .prevyrminus6,
+table.dataTable.fundslistTable .prevyrminus7 {
+    width: 70px;
+    min-width: 70px;
+    box-sizing: border-box;
+    padding-right: 18px;
+    padding-right:15px;
+}
+
+.prev-val {
+    padding-right: 10px;
+}
+
+
+/*rating section*/
+
+table.dataTable.fundslistTable thead .ratingcategory,
+table.dataTable.fundslistTable thead .ratingfundsheet {
+    color: #49494A;
+}
+
+table.dataTable.fundslistTable .ratingoverall {
+    text-align: left;
+    width: 125px;
+    min-width: 125px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+table.dataTable.fundslistTable .ratingyearthree {
+    text-align: left;
+    width: 115px;
+    min-width: 115px;
+    box-sizing: border-box;
+}
+
+table.dataTable.fundslistTable .ratingyearfive {
+    text-align: left;
+    width: 115px;
+    min-width: 115px;
+    box-sizing: border-box;
+}
+
+table.dataTable.fundslistTable .ratingyearten {
+    text-align: left;
+    width: 115px;
+    min-width: 115px;
+    box-sizing: border-box;
+}
+
+table.dataTable.fundslistTable .ratingcategory {
+    text-align: left;
+    width: 115px;
+    min-width: 115px;
+    box-sizing: border-box;
+}
+
+table.dataTable.fundslistTable .ratingfundsheet {
+    text-align: left;
+    width: 117px;
+    min-width: 117px;
+    padding: 5px 0 5px 15px;
+    box-sizing: border-box;
+}
+
+table.dataTable.fundslistTable .ratingoverall>div,
+table.dataTable.fundslistTable .ratingyearthree>div,
+table.dataTable.fundslistTable .ratingyearfive>div,
+table.dataTable.fundslistTable .ratingyearten>div {
+    font-size: 12px;
+}
+
+table.dataTable.fundslistTable thead tr th {
+    vertical-align: bottom;
+}
+
+
+/* table styles ends*/
+
+
+/* morning star rating section starts*/
+
+.rating-total {
+    font-family: benton-sans, sans-serif;
+    color: #49494A;
+    font-size: 12px;
+}
+
+.rating-star-icon {
+    background: url(../resources/Star-small.svg) 2px 3px no-repeat;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+
+.rating-star-icon-null {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+
+.rating-outof {
+    padding-top: 4px;
+}
+
+.rating-outof-overall {
+    padding-top: 2px;
+}
+
+.overall-rating .fa {
+    color: #00000066 !important;
+    height: 20px;
+    width: 20px;
+}
+
+.overall-rating .fa-star-o,
+.overall-rating .fa-star:before {
+    color: unset;
+}
+
+.overall-rating .fa-star-o,
+.overall-rating .fa.fa-star.active {
+    color: #c68600 !important;
+}
+
+
+/* morning star rating section ends*/
+
+
+/* Mobile styles for grid view*/
+
+
+/*Performance and Rating grid section starts*/
+
+.performance-content-grid-view,
+.rating-content-grid-view {
+    padding: 15px;
+}
+
+.performance-grid,
+.rating-grid {
+    border: 1px solid #D2D2D2;
+    margin-bottom: 20px;
+}
+
+.performance-grid .header,
+.rating-grid .header {
+    display: flex;
+    margin: 20px 20px 0 20px;
+    border-bottom: 2px solid #8BC105;
+    padding-bottom: 10px;
+    background: transparent;
+    width: auto;
+}
+
+.performance-grid .ticker,
+.rating-grid .ticker,
+.performance-grid .ticker a,
+.rating-grid .ticker a{
+    min-width: 70px;
+    height: 70px;
+    background-color: #004A98;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.performance-grid .fund-details,
+.rating-grid .fund-details {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.performance-grid .fund-details {
+    justify-content: flex-end;
+}
+
+.performance-grid .fund-content-header {
+    line-height: 14px;
+    font-size: 12px;
+    /*min-height: 30px;*/
+    min-height: 25px;
+}
+
+.performance-grid p,
+.rating-grid p {
+    margin: 5px 0;
+}
+
+.rating-section .overall-rating .star-rating i {
+    font-style: normal;
+}
+
+.rating-grid .fund-content-value {
+    line-height: 16px;
+    line-height: 14px;
+}
+
+.fund-details a.fund-name {
+    font-family: benton-sans, sans-serif;
+    color: #004A98;
+    font-size: 13px;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.performance-grid .fund-details a.fund-name {
+    margin-bottom: 7px;
+}
+
+.fund-details .share-class {
+    font-family: benton-sans, sans-serif;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.fund-details .asset-class {
+    font-family: benton-sans, sans-serif;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.fund-content-header,
+.fund-content-value {
+    font-size: 12px;
+    text-align: center;
+}
+
+.fund-content-header {
+    font-weight: 700;
+}
+
+.fund-content-row-one,
+.fund-content-row-two,
+.fund-content-row-three {
+    padding: 10px 18px;
+}
+
+.fund-content-row-one li:first-child p,
+.fund-content-row-two li:first-child p,
+.fund-content-row-three li:first-child p {
+    text-align: left;
+}
+
+.fund-content-row-one li:last-child p,
+.fund-content-row-two li:last-child p,
+.fund-content-row-three li:last-child p {
+    text-align: right;
+}
+
+.fund-content-row-one li {
+    width: 14.9%;
+    display: inline-block;
+}
+
+.performance-annual-data .fund-content-row-one li {
+    width: 10.9%;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: 1px;
+}
+
+.fund-content-row-two {
+    background-color: #F7F7F7;
+}
+
+.fund-content-row-two li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fund-content-row-two li:nth-child(1) {
+    width: 31%;
+}
+
+.fund-content-row-two li:nth-child(2) {
+    width: 23%;
+}
+
+.fund-content-row-two li:nth-child(2) p {
+    text-align: right;
+}
+
+.fund-content-row-two li:nth-child(3),
+.fund-content-row-two li:nth-child(4) {
+    width: 21%;
+}
+
+.fund-content-row-three li:nth-child(1) {
+    width: 60%;
+    display: inline-block;
+}
+
+.fund-content-row-three li:nth-child(2) {
+    width: 38%;
+    display: inline-block;
+}
+
+.fund-content-row-three .fund-content-value {
+    font-weight: normal;
+}
+
+.risk-field {
+    background-color: #8C8C8C;
+    margin: 2px;
+    padding: 2px 3px 2px 2px;
+    box-sizing: border-box;
+}
+
+.risk-field.active {
+    background-color: #004A98;
+}
+
+table.dataTable.fundslistTable tbody td p.risk-field-text {
+    font-size: 12px !important;
+    line-height: 14px;
+    margin: 5px 0;
+}
+
+.fund-content .rating-section {
+    padding: 20px 20px 10px 20px;
+}
+
+.rating-section .overall-rating {
+    width: 38%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rating-section .overall-rating p {
+    text-align: left;
+}
+
+.rating-section .years-rating {
+    width: 60%;
+    display: inline-block;
+}
+
+.rating-section .years-rating-star {
+    display: inline-block;
+    background: url(../resources/Star-small.svg) 0 0 no-repeat;
+    height: 10px;
+    width: 10px;
+}
+
+.rating-years-header {
+    width: 45px;
+    display: inline-block;
+}
+
+.pdf-section {
+    padding: 10px 20px 20px 20px;
+    background-color: #F7F7F7;
+}
+
+.pdf-section .rating-category {
+    width: 50%;
+    display: inline-block;
+}
+
+.pdf-section .rating-category p {
+    text-align: left;
+}
+
+.pdf-section .fund-sheet {
+    width: 48%;
+    display: inline-block;
+    vertical-align: super;
+}
+
+.pdf-section .fund-sheet a {
+    background: url(../resources/icon__pdf.svg) 0 3px no-repeat;
+    font-size: 12px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    padding-left: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+
+/* Performance and Rating gris section ends*/
+
+
+/* Product deatials on productdetaildatainfo page */
+
+.productdetaildatainfo .container.fund-list {
+    height: auto;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .performance-scrollablesection label, .performanceOption label, .filter-sidebar-collapse #share_class label {
+        margin-left: -5px;
+    }
+    .productdetaildatainfo .fund-data {
+        padding-bottom: 10px;
+    }
+    .productdetaildatainfo .fund-data .pr-5 {
+        padding-right: 1rem !important;
+    }
+    .productdetaildatainfo .fund-data .pr-5:nth-child(4) {
+        padding-right: 0!important;
+    }
+    .productdetaildatainfo .row .fund-buttons {
+        margin: 15px 0;
+    }
+    /* sticky header */
+    .searchfunds-container{
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 9;
+    }
+    .fixedTabs{
+        position: sticky;
+        top: 72px;
+        background-color: white;
+        z-index: 7;
+    }
+    .mobile-radiobuttons-section{
+        position: sticky;
+        top: 120px;
+        background-color: white;
+        z-index: 6;
+    }
+    .performance-scrollablesection .radio-label {
+        margin-right: 0;
+    }
+}
+
+table.dataTable.no-footer{
+    border-bottom: none !important;
+}
+.vcm-listing-popup-btn-close {
+    right: 22px;
+    top: 42px;
+    height: 25px;
+    width: 28px;
+    display: block;
+    cursor: pointer;
+    background-image: url(../resources/close-icon.png);
+    position: static;
+    background-position: 3px 0;
+    background-repeat: no-repeat;
+    margin-bottom: 3px;
+}
+.rating-overall {
+    font-size:6px;
+    color: #ffffff;
+}
+
+/* for loosing focus of radio */
+.checkedanuEND{
+    background: url(../resources/radio-button-filled.svg) 0px 6px no-repeat !important;
+    border: 2px solid #000 !important;
+}
+body.using-mouse .checkedanuEND {
+    border: 2px solid transparent !important;
+}
+
+@media screen and (max-width:320px) {
+    .fixedTabs .nav-tabs .fund-nav-link {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    .fixedTabs .nav-tabs .fund-nav-link.active {
+        border: 0;
+    }
+    .fixedTabs .nav-tabs .fund-nav-link.active:after {
+        position: absolute;
+        left: 8px;
+        bottom: 4px;
+        width: 85%;
+        height: 1px;
+        border-bottom: 2px solid #8bc105;
+        content: "";
+    }
+}

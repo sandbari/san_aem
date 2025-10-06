@@ -1,0 +1,137 @@
+div#audience-selector-popup, div#footer-blog-selector-popup {
+	display:none;
+	height: auto;
+}
+
+div#footer-blog-selector-popup p {
+    padding-top: 5px;
+	padding-right: 0px;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+
+div#audience-selector-popup .navigationLinksButton.hide {
+	display: none;
+}
+
+span.font-size-10 {
+	font-size: 10px;
+}
+span.font-size-11 {
+	font-size: 11px;
+}
+span.font-size-12 {
+	font-size: 12px;
+}
+span.font-size-13 {
+	font-size: 13px;
+}
+span.font-size-14 {
+	font-size: 14px;
+}
+span.font-size-15 {
+	font-size: 15px;
+}
+
+h2 span.blueHeading{
+    font: 30px/32px yorkten-slab-normal, sans-serif;
+    color: #486D90;
+    margin: 20px 0px 30px 0px;
+}
+
+p i{
+    font-style: italic !important;
+}
+
+
+/* Custom Popup override css */
+@media screen and (max-width:485px) {
+	div#footer-blog-selector-popup.footerPopup.mailing-a-check {
+	    height: 100%;
+	    overflow: scroll;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	div#footer-blog-selector-popup.footerPopup.footerPopup.mailing-a-check {
+	        top: 5%;
+	        left: 26%;
+	        width: 584px;
+	        padding: 30px 30px 30px 30px;
+    }
+}
+@media screen and (min-width: 992px){
+   div#footer-blog-selector-popup.footerPopup.footerPopup.mailing-a-check {
+        top: 5%;
+        left: 26%;
+        width: 584px;
+        padding: 30px 30px 30px 30px;
+    }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px){
+  div#footer-blog-selector-popup.footerPopup.footerPopup.mailing-a-check {
+                top: 20%;
+                left: 13%;
+                width: 584px !important;
+                padding: 30px 30px 30px 30px;
+            }
+ }
+
+ /* RTE text style */
+.st-policy-text {
+	font-size: 12px;
+    margin: 0 0 15px 0;
+    display: inline-block;
+}
+
+/* RTE pdf style */
+.st-policy-pdf-link {
+    margin-top: 20px;
+	color: #49494a;
+    font-size: 16px;
+    font-family: benton-sans,sans-serif;
+    font-weight: 400;
+}
+
+.st-policy-pdf-link a {
+    margin-top: 0px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+	color: #004a98;
+    font-family: yorkten-slab-normal,sans-serif;
+    cursor: pointer;
+	text-decoration:none;
+	background: url("/content/dam/vcm/basic/pdf-icon-red.png") no-repeat;
+	padding: 0 0 6px 36px;
+}
+
+.error-message {
+    display: none;
+    padding: 200px;
+}
+
+/* Style for social media icons in news page */
+
+.socialmedia__headers .st-cmp-social-media {
+	border: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px){
+    .socialmedia__headers .st-cmp-social-media {
+        margin-top : 40px;
+    }
+}
+@media screen and (max-width: 992px){
+    .socialmedia__headers .st-cmp-wrapper.st-cmp-social-media ul li {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .socialmedia__headers .st-cmp-wrapper.st-cmp-social-media ul {
+        text-align: right;
+    }
+}

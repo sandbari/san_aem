@@ -1,0 +1,45 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "ctsuser",
+  "jcr:lastModifiedBy": "ctsuser",
+  "placeHolderText": "Enter ticker, fund name, keyword.",
+  "jcr:created": "Tue Jun 09 2020 09:17:50 GMT+0000",
+  "tabVariant": "paneltab",
+  "jcr:lastModified": "Tue Jun 23 2020 15:15:24 GMT+0000",
+  "errorMessage": "No matches found",
+  "sling:resourceType": "vcm/components/content/productmenu",
+  "tabLinkItems": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "tabLink": "/content/vcm/us/en/products/mutual-funds.html",
+      "tabTitle": "Mutual Fund",
+      "tagPathList": [
+        "/content/cq:tags/vcm/product-menu-funds/mutual-funds/us-equity",
+        "/content/cq:tags/vcm/product-menu-funds/mutual-funds/non-us-equity",
+        "/content/cq:tags/vcm/product-menu-funds/mutual-funds/mixed-asset-class",
+        "/content/cq:tags/vcm/product-menu-funds/mutual-funds/fixed-income",
+        "/content/cq:tags/vcm/product-menu-funds/mutual-funds/alternatives"
+      ],
+      "buttonLink": "/content/vcm/us/en/products/mutual-funds/mutual-funds-list",
+      "buttonText": "View All Mutual Funds",
+      "rootPagePath": "/content/vcm/us/en/products/mutual-funds/mutual-funds-list"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "tabLink": "/content/vcm/us/en/products/victory-shares-etfs",
+      "tabTitle": "Victory Shares",
+      "tagPathList": [
+        "/content/cq:tags/vcm/product-menu-funds/victory-shares-etfs/core-broad-market",
+        "/content/cq:tags/vcm/product-menu-funds/victory-shares-etfs/divident-growth-&-income",
+        "/content/cq:tags/vcm/product-menu-funds/victory-shares-etfs/volatility",
+        "/content/cq:tags/vcm/product-menu-funds/victory-shares-etfs/bear-market",
+        "/content/cq:tags/vcm/product-menu-funds/victory-shares-etfs/multi-factor",
+        "/content/cq:tags/vcm/product-menu-funds/victory-shares-etfs/active-fixed-income"
+      ],
+      "buttonLink": "/content/vcm/us/en/products/victory-shares-etfs/victory-shares-etfs-list",
+      "buttonText": "learn more about Victory Shares",
+      "rootPagePath": "/content/vcm/us/en/products/victory-shares-etfs/victory-shares-etfs-list"
+    }
+  }
+}

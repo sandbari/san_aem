@@ -1,0 +1,25 @@
+.asset-allocation-table-data {
+    position: relative;
+}
+
+.product-details .asset-allocation-table-data {
+    display: block;
+}
+
+.product-details .table.asset-allocation-table th:first-child {
+    /* min-width: 150px; */
+    text-align: left;
+}
+
+.assetallocation .heading {
+    margin: 15px 0 0;
+}
+
+@media screen and (min-width:1024px) {
+    .product-details .asset-allocation-table-data {
+        display: block;
+    }
+    .assetallocation .heading {
+        margin: 0 0 15px;
+    }
+}

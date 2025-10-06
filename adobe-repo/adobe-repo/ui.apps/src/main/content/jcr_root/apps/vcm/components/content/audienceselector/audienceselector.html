@@ -1,0 +1,46 @@
+<sly data-sly-test="${wcmmode.edit}">
+    <div class="cq-placeholder" data-emptyText="${component.title}"></div>
+</sly>
+
+<sly data-sly-use.audselectmodel="com.vcm.core.models.AudienceSelectionModel">
+
+    <p class="audience--type-text" aria-modal="true"> ${audselectmodel.headingText}</p>
+    <p class="freetext--audienceSelector--popup">${audselectmodel.desc}</p>
+    <p class="individualInvestorSelectortext">${audselectmodel.individualInvestordesc}</p>
+
+    <sly data-sly-test="${audselectmodel.individualInvestorLinkText}">
+        <!--Individual investor popup content -->
+        <div class="navigationLinksButton selectorType individualInvestorlink">
+            <a data-userType="usaa_member" href="${audselectmodel.memPageLinkUrl}" target="_self">${audselectmodel.individualInvestorLinkText @ context="html"}</a>
+        </div>
+        <!--<div class="navigationLinksButton selectorType individualInvestorSelector">
+            <a data-userType="usaa_member" href="${audselectmodel.usaafundsInvestorLinkUrl}" target="_self">${audselectmodel.usaafundsInvestorLinkText @ context="html"}11</a>
+        </div>
+        <div class="navigationLinksButton selectorType individualInvestorSelector">
+            <a data-userType="financial_professional" href="${audselectmodel.victoryFinadvLinkUrl}" target="_self">${audselectmodel.victoryfundsInvestorLinkText @ context="html"}22</a>
+        </div>
+        <div class="navigationLinksButton selectorType individualInvestorSelector">
+            <a data-userType="financial_professional" href="${audselectmodel.victoryFinadvLinkUrl}" target="_self">${audselectmodel.finadvLinkText @ context="html"}33</a>
+        </div>-->
+        <!--Individual investor popup content -->
+    </sly>
+
+    <div data-sly-test="${audselectmodel.memPageLinkUrl && audselectmodel.memPageLinkText}" class="navigationLinksButton selectorType ${!audselectmodel.individualInvestorLinkText ? '' : 'memberInvestor'}">
+        <a data-userType="usaa_member" href="${audselectmodel.memPageLinkUrl}" target="${audselectmodel.tabSelect}">${audselectmodel.memPageLinkText  @ context="html"}1</a>
+    </div>
+    <div data-sly-test="${audselectmodel.finProfPageLinkText && audselectmodel.finProfPageLinkUrl}" class="navigationLinksButton selectorType victoryfinancial victoryFundsInvestor">
+        <a data-userType="financial_professional" href="${audselectmodel.finProfPageLinkUrl}" target="${audselectmodel.tabselectFinprof}">${audselectmodel.victoryFundLinkText  @ context="html"}2</a>
+    </div>
+    <div data-sly-test="${audselectmodel.finProfPageLinkText && audselectmodel.finProfPageLinkUrl}" class="navigationLinksButton selectorType">
+        <a data-userType="financial_professional" href="${audselectmodel.finProfPageLinkUrl}" target="${audselectmodel.tabselectFinprof}">${audselectmodel.finProfPageLinkText  @ context="html"}</a>
+    </div>
+    <div data-sly-test="${audselectmodel.instInvPageLinkText && audselectmodel.instInvPageLinkUrl }" class="navigationLinksButton selectorType">
+        <a data-userType="institutional_investor" href="${audselectmodel.instInvPageLinkUrl}" target="${audselectmodel.tabselectInstinv}">${audselectmodel.instInvPageLinkText  @ context="html"}</a>
+    </div>
+
+    <sly data-sly-test="${audselectmodel.overlayText}">
+        <div class="investor-definition">
+            <p>${audselectmodel.overlayText} <a href="#" role="button" tabindex="0" class="popup-modal info-icon popup-link" data-popup="${audselectmodel.overlayId}"> <span class="sr-only">opens a popup</span></a></p>
+        </div>
+    </sly>
+</sly>

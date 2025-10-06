@@ -1,0 +1,82 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Mar 23 2020 13:59:15 GMT+0530",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Popup Content Page",
+    "cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+    "institutionalinvestorsType": "false",
+    "financialAdvisorsType": "false",
+    "isCorpHomePage": "false",
+    "jcr:created": "Mon Mar 23 2020 13:59:15 GMT+0530",
+    "useImageInHeaderNav": "false",
+    "hideInNav": "true",
+    "sling:resourceType": "vcm/components/structure/page",
+    "membersType": "false",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "ctsuser",
+      "jcr:lastModified": "Fri Feb 21 2020 13:47:00 GMT+0000",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "ctsuser",
+        "jcr:lastModifiedBy": "ctsuser",
+        "jcr:created": "Fri Feb 21 2020 12:28:09 GMT+0000",
+        "jcr:lastModified": "Fri Feb 21 2020 13:47:20 GMT+0000",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "contentfragmentlist": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "modelPath": "/conf/vcm/settings/dam/cfm/models/popup-note",
+          "orderBy": "jcr:created",
+          "jcr:lastModifiedBy": "admin",
+          "elementNames": [
+            "popupId",
+            "popuptext",
+            "continueText"
+          ],
+          "jcr:created": "Tue Mar 17 2020 11:16:48 GMT+0530",
+          "parentPath": "/content/dam/vcm/popup-content-fragments",
+          "sortOrder": "asc",
+          "jcr:lastModified": "Tue Mar 17 2020 12:56:36 GMT+0530",
+          "sling:resourceType": "vcm/components/content/contentfragmentlist"
+        },
+        "popupmodel": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Tue Mar 17 2020 11:55:29 GMT+0530",
+          "jcr:lastModified": "Tue Mar 17 2020 11:55:29 GMT+0530",
+          "sling:resourceType": "vcm/components/content/popupmodel"
+        }
+      },
+      "experiencefragment": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "ctsuser",
+        "jcr:lastModifiedBy": "naggarwal@vcm.com",
+        "jcr:created": "Fri Feb 21 2020 12:28:04 GMT+0000",
+        "text": "USSA Member Investor relations Contact US SigninSignin/Register Signin × close Menu Member Back Member Member Financial Professional Back Financial Professional Financial Professional Institutional Investor Back Institutional Investor Institutional Investor Investment Franchise Back Investment Franchise Investment Franchise About Victory Capital Back About Victory Capital About Victory Capital Products Back Products Products Advice & Tools Back Advice & Tools Advice & Tools Insights Back Insights Insights Resources Back Resources Resources Solutions Back Solutions Solutions errors Back errors errors Contact US Back Contact US Contact US News Back News News Policies Back Policies Policies Careers Back Careers Careers User Agreement Back User Agreement User Agreement Events Back Events Events Blog Back Blog Blog Home Back Home Home Investor type USSA Member USAA Member Financial Professionals Institutional Investors What type of investor are you? USSA Member Financial Professionals Institutional Investors Investor relations Contact US × Financial Professionals Institutional Investors",
+        "jcr:lastModified": "Mon Feb 24 2020 05:49:25 GMT+0000",
+        "sling:resourceType": "cq/experience-fragments/editor/components/experiencefragment",
+        "fragmentPath": "/content/experience-fragments/vcm-experience-fragments/vcm-header/master"
+      },
+      "experiencefragment_1818277927": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "ctsuser",
+        "jcr:lastModifiedBy": "naggarwal@vcm.com",
+        "jcr:created": "Fri Feb 21 2020 12:28:14 GMT+0000",
+        "text": "Investing involves risk including loss of principal. Victory Mutual Funds and USAA Mutual Funds are distributed by Victory Capital Advisers, Inc. (VCA). VictoryShares ETFs and VictoryShares USAA ETFs are distributed by Foreside Fund Services, LLC (Foreside). VCA and Foreside are members of FINRA and SIPC. Victory Capital Management Inc. (VCM) is the investment adviser to the Victory Mutual Funds, USAA Mutual Funds, VictoryShares ETFs and VictoryShares USAA ETFs. VCA and VCM are not affiliated with Foreside. USAA is not affiliated with Foreside, VCM, or VCA. USAA and the USAA logos are registered trademarks and the USAA Mutual Funds and USAA Investments logos are trademarks of United Services Automobile Association and are being used by Victory Capital and its affiliates under license. Victory Capital means Victory Capital Management Inc., the investment manager of the USAA 529 College Savings Plan (Plan). The Plan is distributed by Victory Capital Advisers, Inc., a broker dealer registered with FINRA and an affiliate of Victory Capital. Victory Capital and its affiliates are not affiliated with United Services Automobile Association or its affiliates. USAA and the USAA logo are registered trademarks and the USAA 529 College Savings Plan logo is a trademark of United Services Automobile Association and are being used by Victory Capital and its affiliates under license. News Policies Careers User Agreement Events Fund Literature Blog Connect with us Copyright Victory Capital Management Inc. ©2020",
+        "jcr:lastModified": "Mon Feb 24 2020 05:49:52 GMT+0000",
+        "sling:resourceType": "cq/experience-fragments/editor/components/experiencefragment",
+        "fragmentPath": "/content/experience-fragments/vcm-experience-fragments/vcm-footer/master"
+      }
+    }
+  }
+}

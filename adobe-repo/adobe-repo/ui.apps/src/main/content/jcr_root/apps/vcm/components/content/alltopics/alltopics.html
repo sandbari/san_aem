@@ -1,0 +1,11 @@
+<sly data-sly-test.author="${wcmmode.edit}">Edit More Topics Component</sly>
+<sly data-sly-use.model="com.vcm.core.models.MoreTopicsModel"/>
+<div class="article-filter-list">
+   <h6>${model.heading}</h6>
+   <!-- for direct value -->
+   <ul class="list-group" id="articleFilters">
+      <sly data-sly-list.topicsList="${model.topicList}">
+		<li class="list-group-item"> <a href="javascript:void(0)" data-url="${model.blogListPath}">${topicsList}</a></li>
+      </sly>
+   </ul>
+</div>

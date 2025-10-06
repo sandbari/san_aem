@@ -1,0 +1,215 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+    Edit ${component.title} Component
+</sly>
+<sly data-sly-use.etfListObj="com.vcm.core.models.EtfListModel">
+    <input type="hidden" id="etfListEndpoint" value="${etfListObj.etfListEndpoint}"/>
+    <input type="hidden" id="etfListApiKey" value="${etfListObj.etfListApiKey}"/>
+    <input type="hidden" id="dragScrollJS" value="/content/dam/vcm/configs/dragscroll.js"/>
+    <input type="hidden" id="etfLabels" value="${etfListObj.etfLabels}"/>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    	 data-sly-call="${clientlib.all @ categories='vcm.etfList'}"/>
+<!-- Risk info icon pop up start-->
+<div class="riskinfo-popup modal" id="riskinfo">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button>
+				<a href="#" class="close" data-dismiss="modal"> <span class="vcm-listing-popup-btn-close"></span>
+				</a> <a href="#" data-dismiss="modal" class="close-link">Close</a>-->
+                <a href="#" data-dismiss="modal" class="close-link" role="button">
+                    <span class="vcm-listing-popup-btn-close"></span>
+                    Close</a>
+			</div>
+			<div class="modal-title">
+                ${etfListObj.riskContent}
+            </div>
+		</div>
+	</div>
+</div>
+<!-- Risk info icon pop up ends-->
+
+<sly data-sly-list.overlay="${etfListObj.overlayList}">
+    <p class="popup-modal" id="${overlay.overlayId}Label" style="display: none;">${overlay.overlayTextPrefix}
+    <a href="javascript:void(0)" data-toggle="modal" data-target="#${overlay.overlayId}Modal" class="popup-link"> ${overlay.overlayLinkText}</a></p>
+
+    <div class="riskinfo-popup modal" id="${overlay.overlayId}Modal" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="close-link">
+                        <span class="vcm-listing-popup-btn-close"></span>
+                        Close</a>
+                </div>
+                <div class="modal-title">
+                    ${overlay.overlayContent}
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>
+
+    <div class="mutualfunds-container container">
+        <p id="listingData"></p>
+        <!-- Search box starts-->
+        <div class="searchfunds-container">
+            <p class="etf-serch"></p>
+            <input type="text" aria-describedby="searchETFListLabel" class="form-control searchfunds" id="searchFunds">
+            <span class="sr-only" id="searchETFListLabel">Search by Fund Name or Ticker</span>
+        </div>
+        <!-- Search box ends-->
+
+        <div class="funds-list">
+			<script type="application/json" id="etfListData">
+            	${etfListObj.etfList.toString @ context="unsafe"}
+        	</script>
+            <!-- filter section starts-->
+            <div class="filter-sidebar-collapse">
+                <div class="arrow-container">
+                    <p class="fund-title etf-filters" tabindex="0" role="button" aria-expanded="false"></p>
+                    <span class="arrow-nav-left" aria-hidden="true"></span>
+                    <!--<span class="arrow-right"></span>
+                    <span class="angle--arrow"></span>-->
+
+                </div>
+            </div>
+            <!-- filter section ends-->
+            <div class="content pc-content-width">
+                <div class="fixedTabs">
+                    <ul role="tablist" class="nav nav-tabs">
+                        <li class="nav-item col-sm-6 performancetab current">
+                            <a class="fund-nav-link active" data-toggle="tab" role="tab" tabindex="0" aria-controls="performance"
+                                aria-selected="true" aria-setsize="2" aria-posinset="1">Performance</a>
+                        </li>
+                        <li class="nav-item col-sm-6 ratingtab">
+                            <a class="fund-nav-link" id="rating-tab" data-toggle="tab" role="tab" tabindex="-1" aria-controls="rating"
+                                aria-selected="false" aria-setsize="2" aria-posinset="2">Morningstar Rating</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dynamic-loader">
+                    <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+                </div>
+                <div class="error-message">
+                    <p class="etf-errormsg"></p>
+                </div>
+                <div class="tab-content">
+                    <div class="mobile-radiobuttons-section">
+                        <div class="grid-list-section">
+                            <div class="fundscount"></div>
+                            <div class="grid-list-icons-section">
+                                <span class="grid-icon toggle-icon active"></span>
+                                <span class="list-icon toggle-icon"></span>
+                            </div>
+                        </div>
+                        <div class="performance-scrollablesection">
+                            <p class="performance-text"><p id ="ptdM"></p></p>
+                            <div>
+                                <input type="radio" role="radio" tabindex="0" aria-checked="true" id="monthend-mobile" class="styled-radio" name="annualreport-mobile"
+                                    value="monthend" checked />
+                                <label for="monthend-mobile" class="radio-label"><span class="etf-monthend"></span></label>
+                                <input type="radio" role="radio" tabindex="0" aria-checked="true" id="quarterend-mobile" class="styled-radio" name="annualreport-mobile"
+                                    value="quarterend" />
+                                <label for="quarterend-mobile" class="radio-label"><span class="etf-quarterend"></span></label>
+                                <input type="radio" role="radio" tabindex="0" aria-checked="true" id="annualend-mobile" class="styled-radio" name="annualreport-mobile"
+                                    value="annualend" />
+                                <label for="annualend-mobile" class="radio-label"><span class="etf-annual"></span></label>
+                            </div>
+                        </div>
+                        <div class="rating-scrollablesection hidden">
+                            	<p class="rating-date"><span class="etf-asof"></span> <span class="ratingdate"></span></p>
+                            	<p class="rating-text etf-ratingtext"></p>
+                        </div>
+                    </div>
+                    <div class="performance-rating-list-content">
+                        <table id="fundslistTable" class="fundslistTable" role="grid" aria-readonly="true">
+                        <caption class="sr-only"><span class="etf-table-caption"></span></caption>
+                            <span class="sr-only table-info"></span>
+                            <thead>
+                                <tr class="pc-radiobuttons-section">
+                                    <td colspan="3" class="fundscount-width">
+                                        <p class="fundscount"></p>
+                                    </td>
+                                    <td colspan="11" class="performance-scrollablesection">
+                                        <div class="performance-text">
+                                            <div class="performanceOptionText">
+                                                <div id="ptd"></div>
+                                            </div>
+                                            <div class="performanceOption" role="radiogroup" aria-label="Select the option to view the data based on monthly quarterly and annually">
+                                                <input type="radio" id="monthend" class="styled-radio"
+                                                    name="annualreport" value="monthend" />
+                                                <label for="monthend" class="radio-label"><span class="etf-monthend"></span></label>
+                                                <input type="radio" id="quarterend" class="styled-radio"
+                                                    name="annualreport" value="quarterend" />
+                                                <label for="quarterend" class="radio-label"><span class="etf-quarterend"></span></label>
+                                                <input type="radio" id="annualend" class="styled-radio"
+                                                    name="annualreport" value="annualend" />
+                                                <label for="annualend" class="radio-label" id="checkedAnual"><span class="etf-annual"></span></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td colspan="6" class="rating-scrollablesection">
+                                        <p class="rating-date"><span class="etf-asof"></span> <span class="ratingdate"></span></p>
+                                        <p class="rating-text etf-ratingtext"></p>
+                                    </td>
+                                </tr>
+                                <tr class="fundslistTableHeading">
+                                    <th class="etf-ticker" scope="col" role="button"></th>
+                                    <th class="etf-fundname" scope="col" role="button"></th>
+                                    <th class="etf-assetclass" scope="col"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data etf-mtd" scope="col" role="button"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data etf-threemonth" scope="col" role="button"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data etf-ytd" scope="col" role="button"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data etf-oneyr" scope="col" role="button"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data etf-threeyr" scope="col" role="button"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data etf-fiveyr" scope="col" role="button"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data etf-sinceinception" scope="col" role="button"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data etf-inceptiondate" scope="col"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data etf-expratgross" scope="col"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data etf-expratnet" scope="col"></th>
+                                    <th class="performance-monthly-data performance-quarterly-data" scope="col" role="button"><a href="javascript:void(0)" role="button" class="popup-modal info-icon popup-link" data-toggle="modal" data-target="#riskinfo"><span class="sr-only">opens a dialog</span></a><span class="etf-risk"></span></th>
+                                    <th class="etf-overall" scope="col" role="button"></th>
+                                    <th class="etf-threeyr" scope="col" role="button"></th>
+                                    <th class="etf-fiveyr" scope="col" role="button"></th>
+                                    <th class="etf-tenyr" scope="col" role="button"></th>
+                                    <th class="etf-catagory" scope="col" role="button"></th>
+                                    <th class="etf-fundfactsheet" scope="col"></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="performance-content-grid-view hidden"></div>
+                    <div class="rating-content-grid-view hidden"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+            <div class="sticky-footer">
+                <div class="panel">
+                    <p class="panel-header etf-filters"></p>
+                </div>
+                <div class="buttons-container">
+                    <div class="footer-button">
+                        <p class="open-filter footer-button-text etf-filters"><span class="open-filter-icon"></span></p>
+                        <p class="close-filter footer-button-text hidden"><span class="etf-close"></span> <span class="close-filter-icon"></span></p>
+                    </div>
+                    <div class="to-top"><p class="top-up-icon"></p><span class="etf-totop"></span></div>
+                    <div> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+        /* Annual Coulmn Title creation */
+        var d = new Date();
+        var currYear = d.getFullYear();
+        var yearlist = '';
+        var yearlistArr = [];
+        for (i = 1; i <= 8; i++) {
+            yearlist += '<th class="performance-annual-data" scope="col" role="button">' + (currYear - i) + '</th>';
+            yearlistArr.push(yearlist);
+        }
+        $(".fundslistTableHeading").append(yearlist);
+</script>

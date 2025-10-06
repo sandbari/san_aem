@@ -1,0 +1,74 @@
+.yields_fixed-income_container,
+.yields_money-market_container {
+    /*margin-bottom: 50px;*/
+}
+.yields_taxable-equivalent_table {
+    margin-top: 20px;
+}
+.yields_taxable-equivalent_table-data {
+    position: relative;
+}
+.yields .heading {
+    margin: 15px 0 0;
+}
+.product-details .yields_money-market_table tbody tr td:first-child{
+    text-align: left;
+}
+
+
+/* Taxable equivalent variant */
+.taxbondstitlewrapper {
+    padding: 24px 0 0;
+}
+
+.taxTable h3.title {
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #49494A;
+    margin: 0 0 15px;
+}
+
+.taxTable h4.title-asof, .taxTable h3>span.title-asof {
+    font: normal 14px/22px benton-sans, sans-serif;
+}
+
+.taxTable .table tr.row {
+    margin: 0
+}
+
+.taxTable .table td {
+    color: #000;
+    border-top: 0px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.taxTable .table tr:first-child {
+    font-weight: bold;
+    border-bottom: 3px solid #8BC105;
+
+}
+.taxTable .table td:first-child {
+    text-align: left;
+}
+
+.taxTable .table-striped tbody tr:nth-of-type(even) {
+    background-color: unset;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+}
+
+.taxTable .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.yieldTableContainer {
+	position: relative;
+}
+
+@media screen and (min-width:1024px) {
+    .yields .heading {
+       margin: 0 0 15px;
+    }
+}

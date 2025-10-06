@@ -1,0 +1,39 @@
+<sly data-sly-test.author="${wcmmode.edit}">Edit Learning Resource Component</sly>
+<sly data-sly-use.model="com.vcm.core.models.LearningResourceModel"></sly>
+<div class="container">
+	<div class="content-wrapper">
+		<div class="advice-tool">
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-6 ">
+					<h3 data-sly-test="${model.heading}" class="blueHdng-greenBorder">${model.heading}</h3>
+					<p data-sly-test="${model.description}" class="advice--para">${model.description  @context='html'}</p>
+					<div class="navigation-right advice--anchor">
+						<a data-sly-test="${model.linkText}" href="${model.linkUrl}" target="${model.tabSelect}">${model.linkText}<span
+								class="right--arrow" aria-hidden="true"></span></a>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-6 ">
+					<div class="row">
+						<sly data-sly-test="${model.tileContent}">
+							<sly data-sly-list.tileContents="${model.tileContent}">
+								<div class="col-6 col-md-4">
+									<div class="card-image-hdng-small">
+										<p class="card__img__title" style="background:${tileContents.topicbackgroundcolor @context='html'}">
+
+											${tileContents.topic} <span class="shape-triangle" style="border-top-color:${tileContents.topicbackgroundcolor @context='html'}"></span>
+										</p>
+										<span class="shape-triangle-mid-lt" style="border-top-color: blue"></span>
+										<div class="card__img__wrapper"><img class=" img-fluid" src="${tileContents.bgimage}" alt="${tileContents.altText || true}" /></div>
+										<a data-sly-test="${tileContents.tileHeading}" href="${tileContents.tileLinkURL}" target="${tileContents.tiletabSelect}"><h3 role="presentation">${tileContents.tileHeading}</h3></a>
+										<div class="navigation-right"><a href="#">Next: Leadership Team<span class="right--arrow" aria-hidden="true"></span></a></div>
+										<button class="btn-primary">Watch Now <span class="btn-triangle-rt"></span></button>
+									</div>
+								</div>
+							</sly>
+						</sly>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

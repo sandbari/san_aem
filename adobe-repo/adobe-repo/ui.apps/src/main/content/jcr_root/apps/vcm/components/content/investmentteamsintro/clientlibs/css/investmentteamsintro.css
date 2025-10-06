@@ -1,0 +1,12 @@
+.lead-intro .lead-bio-block {
+    padding-bottom: 70px;
+}
+
+@media screen and (max-width: 600px) {
+    .lead-intro .lead-bio-block {
+        padding-bottom: 50px;
+    }
+    .investment-team-list.lead-intro {
+		padding-bottom: 20px;
+    }
+}

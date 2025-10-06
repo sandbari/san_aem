@@ -1,0 +1,211 @@
+#performance-tabs {
+    display: block;
+}
+
+#performance-tabs ul.tablist {
+    list-style: none;
+    display: flex;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+#performance-tabs ul.tablist li {
+    padding: 30px 10px;
+    position: relative;
+    border-right: 2px solid #D2D2D2;
+    width: 450px;
+    text-align: center;
+    flex-basis: 450px;
+    flex-grow: 1;
+}
+
+#performance-tabs li.active a {
+    border-bottom: 2px solid #486D90;
+    color: #49494A;
+}
+
+.tabCont {
+    display: none;
+}
+
+.tabCont.show {
+    display: block;
+    min-height: 500px;
+}
+
+.tablist li a {
+    font-size: 22px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #486D90
+}
+
+
+/* #performance-tabs li.active:after {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #fff;
+    border-width: 25px;
+    top: 100%;
+    transform: rotateZ(-180deg);
+    bottom: 0px;
+    left: calc(40% - 9px);
+} */
+
+#performance-tabs {
+    position: relative;
+    background: #fff;
+    /* border: 4px solid #c2e1f5; */
+    /*box-shadow: 0px 2px 12px #00000066;*/
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+#performance-tabs li.active:after,
+#performance-tabs li.active:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#performance-tabs li.active:after {
+    border-color: #88b7d500;
+    border-top-color: #ffffff;
+    border-width: 24px;
+    margin-left: -32px;
+}
+
+#performance-tabs li.active:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-top-color: #D2D2D2;
+    border-width: 27px;
+    margin-left: -35px;
+}
+
+.tab-content {
+    /*height: 100px;*/
+    padding: 30px 45px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.tabs .accordion {
+    display: none;
+}
+
+
+/* Accordian for mobile  */
+
+@media only screen and (max-width: 768px) {
+    #performance-tabs {
+        display: none;
+    }
+    .tabs .accordion {
+        display: block;
+    }
+    .accordion .tab-acrdion-hdng p:after {
+        content: '';
+        background: #8BC103 url("../resources/arrow.svg") 7px 10px no-repeat;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border-radius: 15px;
+        background-size: 15px;
+        right: 35px;
+    }
+    .accordion .tab-acrdion-hdng.collapsed p:after {
+        transform: scale(1.0) rotate(180deg);
+        content: '';
+        width: 30px;
+        height: 30px;
+        background: #8BC103 url("../resources/arrow.svg") 7px 10px no-repeat;
+        background-size: 15px;
+        border-radius: 15px;
+        right: 45px;
+    }
+    .tabs .accordion {
+        /* border: 1px solid #E2E2E2; */
+        /* margin-top: 30px; */
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
+    }
+    .tab-acrdion-hdng p {
+        font-weight: 600;
+        color: #004A98;
+        padding: 35px 18px;
+        border-top: 2px solid #D2D2D2;
+        border-bottom: none;
+        list-style: none;
+        /* box-shadow: 0px 0px 25px #00000019; */
+        font-family: yorkten-slab-normal, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 22px;
+        position: relative;
+    }
+    .tab-acrdion-hdng.collapsed {
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
+    }
+    /* .tab-acrdion-body:after {
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(194, 225, 245, 0);
+        border-bottom-color: #fff;
+        border-width: 13px;
+        transform: rotateZ(-180deg);
+        bottom: 76px;
+        left: calc(50% - 9px);
+    } */
+    .tab-acrdion-body {
+        position: relative;
+        display: none;
+        padding: 30px 15px;
+        font-family: benton-sans, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 22px;
+    }
+    .tab-acrdion-hdng.collapsed p:first-child() {
+        border-top: none;
+    }
+    .tab-acrdion-hdng a {
+        font-size: 22px;
+    }
+    .tab-acrdion-hdng.collapsed a {
+        border-bottom: 2px solid #8BC105;
+        color: #49494A;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    .fund-description p {
+        padding-bottom: 15px;
+    }
+    ul.tablist {
+        padding-left: 0px;
+    }
+    .tab-acrdion-hdng p {
+        padding-top: 35px;
+        padding-right: 30px;
+        padding-bottom: 35px;
+        padding-left: 50px;
+    }
+    .tabs .accordion .tab-acrdion-hdng p:after {
+        right: 46px;
+    }
+}

@@ -1,0 +1,28 @@
+{
+					"jcr:primaryType": "cq:Tag",
+					"jcr:createdBy": "admin",
+					"jcr:title": "vcm",
+					"jcr:created": "Mon Jan 18 2016 16:49:39 GMT+0100",
+					"sling:resourceType": "cq/tagging/components/tag",
+					"all-funds":{
+								"jcr:primaryType": "cq:Tag",
+								"jcr:createdBy": "admin",
+								"jcr:title": "all-funds",
+								"jcr:created": "Mon Jan 18 2016 16:49:39 GMT+0100",
+								"sling:resourceType": "cq/tagging/components/tag",
+								"mutual-funds":{
+												"jcr:primaryType": "cq:Tag",
+												"jcr:createdBy": "admin",
+												"jcr:title": "mutual-funds",
+												"jcr:created": "Mon Jan 18 2016 16:49:39 GMT+0100",
+												"sling:resourceType": "cq/tagging/components/tag",
+												"us-equity":{
+															"jcr:primaryType": "cq:Tag",
+															"jcr:createdBy": "admin",
+															"jcr:title": "us-equity",
+															"jcr:created": "Mon Jan 18 2016 16:49:39 GMT+0100",
+															"sling:resourceType": "cq/tagging/components/tag"
+															}
+												}
+						}
+				}	 

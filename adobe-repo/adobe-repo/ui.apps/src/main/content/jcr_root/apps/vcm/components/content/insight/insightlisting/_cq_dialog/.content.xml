@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Insight Listing Authoring Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <topicfilter
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                        fieldDescription="Add Topic Filter for Insights"
+                        fieldLabel="Add Topic Filter "
+                        multiple="{Boolean}true"
+                        name="./topicFilter"
+                        rootPath="/content/cq:tags/vcm/insights"/>
+                    <blogrootpath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="Add root path under which list of Insights pages available"
+                        fieldLabel="Root path of Insights List"
+                        name="./rootPath"
+                        required="{Boolean}true"
+                        rootPath="/content/vcm"/>
+                    <authorpagepath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="Add path which redirect user to author based Insights page"
+                        fieldLabel="Author Page Path"
+                        name="./authorPagePath"
+                        required="{Boolean}true"
+                        rootPath="/content/vcm"/>
+                    <searchLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Add label of the search box"
+                        fieldLabel="Search Label"
+                        name="./searchLabel"/>
+                    <searchplaceholdertext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Add default text to be displayed on the search box"
+                        fieldLabel="Search Place Holder Text"
+                        name="./searchBoxText"/>
+                    <hidesearchbox
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        fieldDescription="Checkbox to show/hide the search box"
+                        fieldLabel="Hide Search Box"
+                        name="./hideSearchBox"
+                        text="Hide Search Box"
+                        value="true"/>
+                    <topicfilterlabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Add label of the topic filter"
+                        fieldLabel="Topic Filter Label"
+                        name="./topicFilterLabel"/>
+                    <hideTopicFilter
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        fieldDescription="Checkbox to show/hide the topic filter"
+                        fieldLabel="Hide Topic Filter"
+                        name="./hideTopicFilter"
+                        text="Hide Topic Filter"
+                        value="true"/>
+                    <itemsonloadmore
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                        fieldDescription="Please add number items to be displayed on top of load more button"
+                        fieldLabel="Items display before load more button"
+                        name="./itemsOnLoadMore"/>
+                    <noresultsfound
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="No results found"
+                        fieldLabel="No results found text"
+                        name="./noResultFound"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

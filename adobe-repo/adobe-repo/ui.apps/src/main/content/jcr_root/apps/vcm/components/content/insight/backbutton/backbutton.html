@@ -1,0 +1,11 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='vcm.backbutton'}"/>
+<div class="wrapper-inner">
+    <div class="blog-post-arrow-link-wrapper">
+        <div>
+            <div class="float-left">
+                <a href="javascript: history.go(-1)" aria-label="Back" class="blog-post-arrow-link blog-post-arrow-left">${'Back' @i18n}</a>
+            </div>
+        </div>
+    </div>
+</div>

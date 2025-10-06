@@ -1,0 +1,3 @@
+#base=js
+//highcharts.min.js
+highstock.js

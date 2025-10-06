@@ -1,0 +1,474 @@
+/* FIlter Styles starts here*/
+.filter-wrapper{
+    -webkit-box-shadow: 0px 3px 6px #00000029;
+    -moz-box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+}
+h4.heading-filter, div.heading-filter  {
+    font: 800 22px/24px yorkten-slab-normal, sans-serif;
+    color: #49494A;
+    text-align: center;
+    color: #486D90;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.heading-filter::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-left: 14px;
+    margin-top: 4px;
+    transition: all 0.5s;
+    background: #8BC105 url(../resources/down-arrow.png) no-repeat center;
+}
+.panel-heading.active .heading-filter::after{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.container-checkbox {
+    display: inline-block;
+    position: relative;
+    /*padding-left: 38px;
+     padding-top: 5px; */
+    margin-bottom: 38px;
+    font: 16px/24px benton-sans, sans-serif;
+    color: #49494A;
+	margin-right: 50px;
+	border: 2px solid transparent;
+}
+.container-checkbox:last-child {
+	margin-right: 0;
+}
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+.container-checkbox .ax_inlinblock {
+    display: inline-block;
+}
+.container-checkbox .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border: 1px solid #004A98;
+}
+.container-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 11px;
+    top: 5px;
+    width: 7px;
+    height: 15px;
+    border: solid #004A98;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+.container-checkbox label{
+    cursor: pointer;
+	line-height: 30px;
+	padding: 5px 10px 5px 38px;
+}
+.wrapper-inner {
+    max-width: 1110px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.scrollable-content {
+	overflow-y: hidden;
+    overflow-x: auto;
+    width: 100%;
+}
+.default-block {
+	margin-top: 7px;
+}
+.col-lg-9.box-size-75 {
+    flex: unset;
+	width: 806px;
+}
+.col-lg-6.box-size-50 {
+    width: 528px;
+    max-width: unset;
+    flex: unset;
+	min-width: 310px;
+}
+.col-lg-3.box-size-25 {
+    flex: unset;
+	width: 250px;
+	max-width:250px;
+}
+.col-lg-4.box-size-33 {
+    flex: unset;
+    width: 330px;
+    max-width: 328px;
+}
+.scrollable-content .row {
+	margin-left: 0!important; 
+	margin-right: 0!important; 
+}
+.scrollable-content .row .col-lg-9,
+.scrollable-content .row .col-lg-6,
+.scrollable-content .row .col-lg-3, 
+.scrollable-content .row .col-lg-4 {
+	padding: 0 !important;
+	margin-right: 28px;
+}
+.scrollable-content .row .col-lg-9:last-child,
+.scrollable-content .row .col-lg-6:last-child,
+.scrollable-content .row .col-lg-3:last-child {
+	margin-right: auto;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+	visibility: hidden;
+}   
+.box-size-50 .card-calculator,
+.box-size-75 .card-calculator,
+.box-size-25 .rte-desc {
+	width: 100%;
+}
+.scrollable-content .card-calculator,
+.scrollable-content .card-calculator,
+.scrollable-content .rte-desc {
+	/* background: #ffffff; */
+}
+.card-calculator a.btn-primary:last-of-type {
+    margin-right: 0;
+}
+
+.see-all-row {
+    padding: 0 48px 1.5rem 0;
+    text-align: right;
+}
+
+.blue-arrow-link {
+    color: #004A98;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+	position: relative;
+	line-height: 30px;
+}
+.blue-arrow-link::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+	background: #8BC105 url(../resources/rightArrow.png) no-repeat 8px;
+    right: -40px;
+    background-size: 50%;
+	
+}
+.blue-arrow-link:hover {
+    color: #004A98;
+}
+.blue-arrow-link:hover::after {
+    background-color: #004A98;
+}
+
+.mCSB_container {
+	margin-bottom: 0 !important;
+}
+
+.hdng-on-img-topalign p.small-white-text {
+    font-size: 11px !important;
+    line-height: 13px;
+}
+.hdng-on-img-topalign .card__image__content h3.blueHdng-multiLine-greenBorder {
+	line-height: 25px !important;
+}
+.hdng-on-img-topalign .card__img__wrapper {
+	overflow: hidden;
+	height: 165px; 
+}
+.hdng-on-img-topalign .img-fluid { 
+	width: auto !important;
+	height: 100% !important;
+	min-width: 100%;
+	object-fit: cover;
+}
+.hdng-on-img-topalign .card__image__content {
+    left: 0;
+    padding-right: 15px;
+    bottom: 0;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-top: 100%;
+	-moz-box-shadow: 10px 10px 225px rgba(0, 0, 0, .7) inset;
+    -webkit-box-shadow: 10px 10px 225px rgba(0, 0, 0, .7) inset; 
+    box-shadow: 10px 10px 225px rgba(0, 0, 0, .7) inset;
+	width:100%;
+}
+.hdng-on-img-topalign .card__content {
+	padding-left: 20px;
+}
+.hdng-on-img-topalign .card__content p{
+	margin-top: 0;
+}
+.vcm-bg-wrapper h3.blueHdng-greenBorder {
+    margin-top: 40px;
+	margin-left: 8px;
+}
+.vcm-bg-wrapper .columncontrol>.row {
+    padding-left: 8px;
+}
+
+.learnmorefilter  .row .col-lg-4 .card-triangle-hdng-cont-cta span.shape-triangle-mid-lt{
+	display: none;
+}
+
+.learnmorefilter  .row .col-lg-4 .card-triangle-hdng-cont-cta img {
+	width: 100%;
+}
+.freeTextMobile.mobileShow{
+    display:none;
+}
+
+.filter-wrapper .accordion-filter .panel-heading {
+    width: 100%;
+    text-align: center;
+}
+
+.filter-wrapper .accordion-filter .panel-heading h4.heading-filter, .filter-wrapper .accordion-filter .panel-heading div.heading-filter {
+    display: inline-block;
+    min-width: 210px;
+    padding: 0 40px 0 5px;
+    text-align: left;
+}
+
+body.using-mouse .filter-wrapper .accordion-filter .panel-heading h4.heading-filter:focus,
+body.using-mouse .filter-wrapper .filter-checkbox .container-checkbox label:focus {
+    outline: none!important;
+}
+
+.filter-wrapper .accordion-filter .panel-heading h4.heading-filter:focus,
+.filter-wrapper .filter-checkbox .container-checkbox label:focus {
+    outline: 2px solid #000 !important;
+    outline-offset: 0 !important;
+    transition: 0;
+}
+
+@media screen and (max-width: 1200px)
+{
+	.wrapper-inner {
+		max-width: 1024px;
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width: 1024px)
+{
+	.wrapper-inner {
+		max-width: 992px;
+	}
+	.default-block .content-wrapper {
+		padding-right: 0;
+		padding-left: 15px;
+	}
+	.default-block .vcm-bg-wrapper.d-block .content-wrapper {
+		padding-right: 15px;
+	}
+	.mCustomScrollbar.scrollable-content .row .col-lg-9:last-child,
+	.mCustomScrollbar.scrollable-content .row .col-lg-6:last-child,
+	.mCustomScrollbar.scrollable-content .row .col-lg-3:last-child {
+		margin-right: 15px;
+	} 
+	.learnmorefilter .freeTextMobile.about-victory--hidden.mobileShow {
+    	display:none;
+	}
+}
+
+@media screen and (max-width: 991px)
+{
+	.wrapper-inner {
+		max-width: 690px;
+		padding: 0;
+	}
+	h4.heading-filter {
+		text-align: center;
+	}
+	.col-lg-9.box-size-75, 
+	.col-lg-6.box-size-50 {
+		width: 532px;
+	}
+	.default-block .content-wrapper {
+		width: auto;
+	}
+	
+}
+
+@media screen and (max-width: 767px)
+{
+	.wrapper-inner {
+		padding: 0 15px;
+	}
+	h4.heading-filter {
+		text-align: left;
+		font-size: 20px;
+		width: 90%;
+	}
+	.container-checkbox {
+        padding-top:0;
+		width: 50%;
+		margin-right: 0;
+    }
+	.filter-checkbox {
+		justify-content: left;
+	}
+	.heading-filter::after {
+		width: 30px;
+		height: 30px;
+		right: 16.2px;
+		border-radius: 50%;
+		margin-left: 0;
+		margin-top: -15px;
+	}
+	.scrollable-content .row .col-lg-9, 
+	.scrollable-content .row .col-lg-6, 
+	.scrollable-content .row .col-lg-3 {
+		margin: 0 auto;
+	}
+
+	.mCustomScrollbar.scrollable-content .row .col-lg-9, 
+	.mCustomScrollbar.scrollable-content .row .col-lg-6, 
+	.mCustomScrollbar.scrollable-content .row .col-lg-3 {
+		margin-right: 15px;
+		margin-left:0;
+	}
+	.default-block .about--block {
+		margin-right: 15px;
+	}
+	.default-block .mCustomScrollbar .about--block {
+		margin-right: 0;
+	}
+
+	.col-lg-3.box-size-25 {
+		width: 252px;
+	}
+	.box-size-50,
+	.box-size-75 {
+        width: 330px !important;
+	}
+	.detailed-blocks .content-wrapper {
+		padding-right: 15px;
+	}
+	.default-block .columncontrol>.row {
+		display: block;
+	}
+	.default-block .mCustomScrollbar .columncontrol>.row {
+		display: flex;
+	}
+	.see-all-row {
+		padding: 0 0 1.5rem 0;
+		text-align: left;
+	}
+	.vcm-bg-wrapper h3.blueHdng-greenBorder {
+		margin-left: 0;
+	}
+	.vcm-bg-wrapper .columncontrol>.row {
+		padding-left: 0;
+	}
+	.freeTextMobile.mobileShow{
+        display:block;
+    }
+	.mem-product-banner.filter-banner .freeTextMobile.mobileShow{
+        display:none;
+	}
+
+	.learnmorefilter .freeTextMobile.about-victory--hidden.mobileShow {
+        display:block;
+        padding-bottom : 0px
+	}
+
+	.scrollable-content.mCustomScrollbar .card-icon-mhdng-cta,
+    .scrollable-content.mCustomScrollbar .card-title-mhdng-cnt-cta,
+    .scrollable-content.mCustomScrollbar .card-mhdng-cnt-cta,
+    .scrollable-content.mCustomScrollbar .card-triangle-hdng-cont-cta,
+    .scrollable-content.mCustomScrollbar .card-triangle-hdng-cta,
+    .scrollable-content.mCustomScrollbar .card-no-triangle-hdng-cont-cta {
+        border:0;
+    }
+
+    .scrollable-content.mCustomScrollbar .row .col-lg-9,
+    .scrollable-content.mCustomScrollbar .row .col-lg-3,
+    .scrollable-content.mCustomScrollbar .row .col-lg-4{
+        border:1px solid #d2d2d2;
+        margin: 1.5rem 1.5rem 1.5rem 0 !important;
+    }
+    .scrollable-content.mCustomScrollbar .row .col-lg-6{
+        border:1px solid #d2d2d2;
+        margin: 1.5rem 1.5rem 1.5rem 0 !important;
+    }
+
+    .scrollable-content.mCustomScrollbar .row .col-lg-6 .card-mhdng-cnt-cta {
+        border: 1px solid #d2d2d2
+    }
+
+    .scrollable-content.mCustomScrollbar .about--block {
+        margin-top: 0;
+    }
+
+    .scrollable-content.mCustomScrollbar .row {
+        margin: 0 !important;
+    }
+    .scrollable-content.mCustomScrollbar .col-lg-6 .row.my-4 {
+        margin: 0!important;
+    }
+     .scrollable-content.mCustomScrollbar .col-lg-6 .row.mt-5 {
+        margin-top:1.5rem!important;
+    }
+    .scrollable-content.mCustomScrollbar .col-lg-6 .textimageCTA.noTopSpacingForCard .row.mt-5 {
+        margin: 0!important;
+    }
+
+    .scrollable-content.mCustomScrollbar .noTopSpacingForCard .about--block,
+    .scrollable-content.mCustomScrollbar .noTopSpacingForCard .about--block .card-triangle-hdng-cont-cta{
+        border:0;
+        margin-top:0;
+    }
+    .scrollable-content.mCustomScrollbar .row .col-lg-6 .card-doubleshade.card-triangle-hdng-cont-cta {
+        padding: 60px 15px 60px 15px !important;
+    }
+    .scrollable-content.mCustomScrollbar .row .col-lg-6 .textimageCTA,
+    .scrollable-content.mCustomScrollbar .row .col-lg-6 .textimageCTA .about--block,
+    .scrollable-content.mCustomScrollbar .row .col-lg-6 .textimageCTA .about--block .row,
+    .scrollable-content.mCustomScrollbar .row .col-lg-6 .textimageCTA .about--block .row .card-image-hdng-big{
+        height:100%
+    }
+}
+
+@media screen and (max-width:1023px) {
+	.default-block .mCSB_container {
+        overflow-y: scroll !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+   .default-block .mCSB_container {
+        overflow-y: scroll !important;
+    }
+}
+
+
+
+
+/*Filter styles ends here */
+

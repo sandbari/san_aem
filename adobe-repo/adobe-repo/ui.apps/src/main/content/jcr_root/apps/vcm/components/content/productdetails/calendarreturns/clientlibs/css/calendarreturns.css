@@ -1,0 +1,76 @@
+.calendar-list-data {
+    position: relative;
+}
+
+.product-details .calendar-chart-data {
+    display: none;
+}
+
+.product-details .calendar-list-data {
+    display: block !important;
+}
+
+.calendarreturns .product-details .pdg-24 .icon-content {
+		display: none;
+}
+
+.calendarreturns .calendar-popup .heading {
+	margin: 15px 0 0;
+}
+
+.calendarreturns {
+    position: relative;
+}
+
+.dynamic-loader-calenderreturns {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+@media screen and (min-width:768px) {
+    .product-details .product-icons {
+        display: block;
+    }
+    .product-details .calendar-chart-data {
+        display: block;
+    }
+    .product-details .calendar-list-data {
+        display: block;
+    }
+    .product-details .calendar-list-data.hidden {
+        display: none !important;
+    }
+    .product-details .calendar-chart-data.hidden {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    /*.calendarreturns .product-details .pdg-24 {
+        padding: 24px 0px;
+    }*/
+    .product-details .calendar-chart-data {
+        display: block !important;
+    }
+    .product-details .calendar-list-data {
+        display: block !important;
+    }
+    .product-details .calendar-list-data.hidden {
+        display: none !important;
+    }
+    .product-details .calendar-chart-data.hidden {
+        display: none !important;
+    }
+    .calendarreturns .product-details .pdg-24 .icon-content {
+		display: block;
+	}
+
+	.calendarreturns .overlay-text-content {
+	    margin: 15px 0;
+    }
+
+    .calendarreturns .icon-content {
+            margin: 9px 0;
+    }
+}

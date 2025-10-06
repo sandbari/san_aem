@@ -1,0 +1,142 @@
+.leadershipteam .leader-wrap {
+	flex-direction: row;
+}
+.leadershipteam .leader-box {
+	border: 1px solid #D2D2D2;
+    flex: 0 1 auto;
+    margin: 15px;
+    max-width: 22%;
+    padding: 0;
+	overflow: visible;
+}
+.leadershipteam .leader-box .st-cmp-wrapper,
+.leadershipteam .leader-box .st-link-box {
+	height: 100%;
+}
+.leadershipteam .leader-box .st-box-border-green-left{
+	border: 0;
+	position: static;
+}
+
+.leadershipteam .st-cmp-leader-img {
+    max-width: 100%;
+}
+
+.leadershipteam .st-cmp-leader-title {
+    display: inline-block;
+    padding: 16px 12px 0px 13px;
+    font: Bold 18px/24px benton-sans, sans-serif;
+    letter-spacing: 0;
+    color: #54565A;
+    opacity: 1;
+    width: 100%;
+}
+
+.leadershipteam .st-cmp-leadership {
+    margin-bottom: 49px;
+}
+
+.leadershipteam .st-link-box {
+    margin-bottom: 15px;
+}
+
+.leadershipteam .st-cmp-leader-desc-wrapper {
+    padding: 8px 12px 0px 13px;
+    width: 83%;
+    display: inline-block;
+}
+
+.leadershipteam .st-cmp-leader-desc {
+    display: inline-block;
+    font: 14px/20px benton-sans, sans-serif;
+    color: #49494A;
+}
+
+.leadershipteam .st-cmp-leader-arrow {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: #8BC105 url('../resources/rightArrow.png') 8px 8px no-repeat padding-box;
+    position: absolute;
+    right: 12px;
+    bottom: 15px;
+    border-radius: 50%;
+    background-size: 50%;
+}
+
+.leadershipteam .st-cmp-leader:hover .st-cmp-leader-arrow {
+    background-color: #004A98;
+}
+
+
+/***************** TABLET STYLES  ****************/
+
+@media screen and (max-width:1024px) {
+    .leadershipteam .leader-box {
+    	max-width: 30.3%;
+    }
+	.leadershipteam .st-cmp-leader-img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:991px) {
+    .leadershipteam .leader-box {
+    	max-width: 29%;
+    }
+    .leadershipteam .st-cmp-leader-desc-wrapper {
+    	width: 75%;
+    }
+    .leadershipteam .st-cmp-leader-title {
+        padding: 24px 3px 0px 13px;
+        font-size: 16px/24px;
+    }
+    .leadershipteam .st-cmp-leader-desc-wrapper {
+        padding: 8px 3px 0px 13px;
+    }
+    .leadershipteam .st-cmp-leader-desc {
+        font: 14px/20px benton-sans, sans-serif;
+    }
+    .leadershipteam .st-cmp-leader-arrow {
+        right: 22px;
+    }
+}
+
+
+/***************** MOBILE STYLES *****************/
+
+@media screen and (max-width:767px) {
+	.leadershipteam .leader-box {
+		max-width: unset;
+		width: 51%;
+		min-width: 254px;
+		margin: 0 auto 20px auto;
+	}
+    .leadershipteam .st-cmp-leader {
+        height: auto;
+        width: 100%;
+    }
+    .leadershipteam .st-cmp-leader-img {
+        max-height: unset;
+        width: 100%;
+    }
+    .leadershipteam .st-link-box {
+        display: block !important;
+        margin: 0 auto 15px auto;
+    }
+    .leadershipteam .st-cmp-leader-desc-wrapper {
+        width: 80%;
+    }
+    .leadershipteam .st-cmp-leader-title {
+        padding: 16px 3px 0px 13px;
+    }
+    .leadershipteam .st-cmp-leadership {
+        margin-bottom: 56px;
+    }
+    .leadershipteam .st-cmp-leader-arrow {
+        right: 15px;
+    }
+    .leadershipteam .m--0 {
+        margin: 0;
+    }
+}

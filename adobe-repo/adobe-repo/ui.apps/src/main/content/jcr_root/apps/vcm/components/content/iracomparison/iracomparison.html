@@ -1,0 +1,54 @@
+<sly data-sly-use.iracomparison="com.vcm.core.models.IRAComparisonModel"/>
+<sly data-sly-test.notempty="${iracomparison.iraTable}"/>
+<sly data-sly-test="${wcmmode.edit && !notempty}"><div class="cq-placeholder" data-emptyText="${component.title}"/></sly>
+<sly data-sly-test="${notempty}">
+    <div class="st-page-wrapper st-cmp-wrapper st-ira-wrapper st-grey-box">
+        <div class="st-ira-table-wrap">
+            <div class="st-text-center">
+                <sly data-sly-test="${iracomparison.sectionHeading}">
+                    <h3 class="st-section-heading st-heading-blue">${iracomparison.sectionHeading}</h3>
+                </sly>
+                <sly data-sly-test="${iracomparison.sectionDescription}">
+                    <p class="st-text-center st-ira-desc-text">${iracomparison.sectionDescription}</p>
+                </sly>
+                <sly data-sly-test="${iracomparison.iraComparisonText}">
+                    <p class="sr-only" >${iracomparison.iraComparisonText}</p>
+
+                </sly>
+            </div>
+            <table class="st-ira-table">
+                <thead>
+                <tr class="vs-row">
+                    <th scope="col"><h3>${iracomparison.iraTitleOne} </h3><span class="vs-text" aria-hidden="true">vs</span></th>
+                    <th scope="col"><h3>${iracomparison.iraTitleTwo}</h3></th>
+                </tr>
+                <sly data-sly-test="${iracomparison.iraComparisonText}">
+                    <tr aria-hidden="true">
+                        <th colspan="2"  ><p class="st-text-center st-ira-desc-text st-table-desc">${iracomparison.iraComparisonText}</p></th>
+                    </tr>
+                </sly>
+                </thead>
+                <tbody>
+                <sly data-sly-list.iraTable="${iracomparison.iraTable}">
+                    <tr>
+                        <td>
+                            <p>${iraTable.iraDetailOne}</p>
+                        </td>
+                        <td>
+                            <p>${iraTable.iraDetailsTwo}</p>
+                        </td>
+                    </tr>
+                </sly>
+                </tbody>
+            </table>
+
+            <sly data-sly-test="${iracomparison.buttonDescription}">
+                <div class="st-ira-text">${iracomparison.buttonDescription}</div>
+            </sly>
+            <!--<button class="st-button st-badge-btn st-green-badge-btn">Calculate now</button>-->
+            <sly data-sly-test="${iracomparison.linkText}">
+                <a class="st-button st-badge-btn st-green-badge-btn" href="${iracomparison.linkUrl}" aria-label="${iracomparison.linkAriaLabel}" target="${iracomparison.tabSelect}" rel="${iracomparison.tabSelect == '_blank' ? 'noopener noreferrer' : ''}"><span aria-hidden="true">${iracomparison.linkText}</span></a>
+            </sly>
+        </div>
+    </div>
+</sly>

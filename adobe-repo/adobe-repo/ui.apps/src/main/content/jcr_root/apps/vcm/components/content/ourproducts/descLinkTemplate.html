@@ -1,0 +1,48 @@
+<sly data-sly-template.model="${@ model}">
+<div class="productsBaner productsBaner-listbox">
+   <div class="product-list-container">
+      <div class="productHeading col-md-12">
+         <h3  aria-level="3" class="blueHdng-greenBorder">${model.title @context='html'}</h3>
+         <p class="st-text-center">${model.sectionDescription @context='html'}</p>
+      </div>
+      <div class="st-product-wrapper st-wrapper-inner position-relative">
+         <div class="row justify-content-center" role="list">
+            <sly data-sly-list.productItems="${model.productList}">
+               <sly data-sly-test.greyText="${productItems.productGreyText}">
+                  <div class="col-lg-4 col-sm-12 col-md-6 st-product-container" role="listitem">
+                     <div class="st-product-box st-box-border-green-left" data-bx-value="${productItems.overlayAttribute}" aria-label="${productItems.linkDescriptionType}" tabindex="0" role="button">
+                        <span role="list" class="st-product-grey-text">${productItems.productGreyText}</span><br>
+                        <span role="listitem" class="st-product-blue-text">${productItems.productBlueText}</span>
+                     </div>
+                  </div>
+               </sly>
+            </sly>
+         </div>
+         <!-- overlay popup retired-->
+         <sly data-sly-list.productItems="${model.productList}">
+            <div class="st-retirement-overlay st-box-border-green-left  position-absolute" data-bx-ol-value="${productItems.overlayAttribute}_overlay">
+               <div class="row">
+                  <div class="col-12"><span tabindex="0" role="button" aria-label="close" class="st-overlay-close position-relative">&times;</span></div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-8 col-sm-12">
+                     <div class="st-teaser-without-box st-overlay-left-content">
+                        <h3 class="st-section-heading st-heading-blue">${productItems.leftColumnTitle}<span class="sr-only">${productItems.productBlueText}</span></h3>
+                        <p class="st-teaser-desc">
+                           ${productItems.leftColumnDescription @context="html"}
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12">
+                     <div class="st-overlay-right-content">
+                        <h4 class="">${productItems.leftColumnTitle}</h4>
+                        ${productItems.rightColumnDescription @context="html"}
+                        <a href="${productItems.rightColumnLink}" aria-label="${productItems.overlayLinkDesc}" class="st-button st-badge-btn st-green-badge-btn">${productItems.rightColumnButtonText}</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </sly>
+      </div>
+   </div>
+</div>

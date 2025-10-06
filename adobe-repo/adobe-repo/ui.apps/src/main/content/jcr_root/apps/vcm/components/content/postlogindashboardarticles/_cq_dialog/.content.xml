@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Postlogin Dashboard Content"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[vcm.widgets.restrictenabled]">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Background Container Tabs"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <overview
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Overview"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <wealthAdvisorbgImageURl
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Mention Wealth Advisor background desktop image url"
+                                    fieldLabel="Wealth Advisor Background Desktop Image URL"
+                                    name="./welathAdvisorbgImageURl"/>
+                            <wealthAdvisorMobileBgImageURl
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Mention Wealth Advisor mobile background image url"
+                                    fieldLabel="Wealth Advisor Background Mobile Image URL"
+                                    name="./wealthAdvisorMobileBgImageURl"/>
+                            <wealthAdvisorTabBgImageURl
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Mention Wealth Advisor tab background image url"
+                                    fieldLabel="Wealth Advisor Background Tab Image URL"
+                                    name="./wealthAdvisorTabBgImageURl"/>
+                            <overviewleft
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Overview Left Content"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <columns
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                            margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <columns
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                                    margin="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                                    fieldDescription="Characters allowed including spaces"
+                                                                    fieldLabel="Overview Left Content Heading"
+                                                                    name="./overviewLeftTitle"
+                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                <rtePlugins
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                                <uiSettings
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                                            </title>
+                                                            <descroption
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                                    fieldDescription="Characters allowed including spaces"
+                                                                    fieldLabel="Overview Left Content Description"
+                                                                    name="./overviewLeftDescription"
+                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                <rtePlugins
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                                <uiSettings
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                                            </descroption>
+                                                        </items>
+                                                    </column>
+                                                </items>
+                                            </columns>
+                                        </items>
+                                    </columns>
+                                </items>
+                            </overviewleft>
+                            <overviewright
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Overview Right Content"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <columns
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                            margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <columns
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                                    margin="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                                    fieldDescription="Characters allowed including spaces"
+                                                                    fieldLabel="Overview Right Content Heading"
+                                                                    name="./overviewRightContentTitle"
+                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                <rtePlugins
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                                <uiSettings
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                                            </title>
+                                                            <descroption
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                                    fieldDescription="Characters allowed including spaces"
+                                                                    fieldLabel="Overview Right Content Description"
+                                                                    name="./overviewRightContentDescription"
+                                                                    useFixedInlineToolbar="{Boolean}true">
+                                                                <rtePlugins
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                                <uiSettings
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                                            </descroption>
+                                                            <btnText
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Mention the button text"
+                                                                    fieldLabel="Button text"
+                                                                    name="./btnText"/>
+                                                            <btnActionLink
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Mention the button action link to redirect"
+                                                                    fieldLabel="Button Action Link"
+                                                                    name="./btnActionLink"/>
+                                                            <bgImageURl
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Mention background desktop image url"
+                                                                    fieldLabel="Background Desktop Image URL"
+                                                                    name="./overviewRightContentBgImageURl"/>
+                                                            <mobileBgImageURl
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Mention mobile background image url"
+                                                                    fieldLabel="Background Mobile Image URL"
+                                                                    name="./overviewRightContentMobileBgImageURl"/>
+                                                            <tabBgImageURl
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Mention tab background image url"
+                                                                    fieldLabel="Background Tab Image URL"
+                                                                    name="./overviewRightContentTabBgImageURl"/>
+                                                        </items>
+                                                    </column>
+                                                </items>
+                                            </columns>
+                                        </items>
+                                    </columns>
+                                </items>
+                            </overviewright>
+                        </items>
+                    </overview>
+
+                    <fund
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Fund"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Fund Heading"
+                                                    name="./fundTitle"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </title>
+                                            <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Fund Description"
+                                                    name="./fundDescription"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </description>
+                                            <bgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention background image url"
+                                                    fieldLabel="Background Desktop Image URL"
+                                                    name="./fundBgImageURl"/>
+                                            <mobileBgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention mobile background image url"
+                                                    fieldLabel="Background Mobile Image URL"
+                                                    name="./fundMobileBgImageURl"/>
+                                            <tabBgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention tab background image url"
+                                                    fieldLabel="Background Tab Image URL"
+                                                    name="./fundTabBgImageURl"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </fund>
+                    <markets
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Market"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Market Heading"
+                                                    name="./marketTitle"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </title>
+                                            <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Market Description"
+                                                    name="./marketDescription"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </description>
+                                            <bgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention background image url"
+                                                    fieldLabel="Background Desktop Image URL"
+                                                    name="./marketBgImageURl"/>
+                                            <mobileBgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention mobile background image url"
+                                                    fieldLabel="Background Mobile Image URL"
+                                                    name="./marketMobileBgImageURl"/>
+                                            <tabBgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention tab background image url"
+                                                    fieldLabel="Background Tab Image URL"
+                                                    name="./marketTabBgImageURl"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </markets>
+                    <education
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Education"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Education Heading"
+                                                    name="./educationTitle"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </title>
+                                            <descroption
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Education Description"
+                                                    name="./educationDescription"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </descroption>
+                                            <bgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention background image url"
+                                                    fieldLabel="Background Desktop Image URL"
+                                                    name="./edBgImageURl"/>
+                                            <mobileBgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention mobile background image url"
+                                                    fieldLabel="Background Mobile Image URL"
+                                                    name="./edMobileBgImageURl"/>
+                                            <tabBgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention tab background image url"
+                                                    fieldLabel="Background Tab Image URL"
+                                                    name="./edTabBgImageURl"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </education>
+                    <marketbottomphotos
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Market Bottom Articles"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <orderone
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/field"
+                                                    fieldLabel="Order 1:"
+                                                    name="./orderOne"/>
+                                            <titleone
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Market Photo Heading"
+                                                    name="./marketPhotoOrderOneTitle"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </titleone>
+                                            <redirectLink
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention the link to redirect"
+                                                    fieldLabel="Redirect Link"
+                                                    name="./marketPhotoOrderOneRedirectLink"/>
+                                            <bgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention background image url"
+                                                    fieldLabel="Background Image URL"
+                                                    name="./marketPhotoOrderOneBgImageURl"/>
+                                            <mobileBgImageURlone
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention mobile background image url"
+                                                    fieldLabel="Background Mobile Image URL"
+                                                    name="./marketPhotoOrderOneMobileBgImageURl"/>
+                                            <tabBgImageURlone
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention tab background image url"
+                                                    fieldLabel="Background Tab Image URL"
+                                                    name="./marketPhotoOrderOneTabBgImageURl"/>
+                                            <descriptionOne
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldLabel="Description"
+                                                    name="./marketPhotoOrderOneDescription"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </descriptionOne>
+                                            <btnTextOne
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention the button text"
+                                                    fieldLabel="Button text"
+                                                    name="./marketPhotoOrderOneBtnText"/>
+
+                                            <ordertwo
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/field"
+                                                    fieldLabel="Order 2:"
+                                                    name="./orderTwo"/>
+                                            <titletwo
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Market Photo Heading"
+                                                    name="./marketPhotoOrderTwoTitle"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </titletwo>
+                                            <redirectLinktwo
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention the link to redirect"
+                                                    fieldLabel="Redirect Link"
+                                                    name="./marketPhotoOrderTwoRedirectLink"/>
+                                            <bgImageURltwo
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention background image url"
+                                                    fieldLabel="Background Image URL"
+                                                    name="./marketPhotoOrderTwoBgImageURl"/>
+                                            <mobileBgImageURltwo
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention mobile background image url"
+                                                    fieldLabel="Background Mobile Image URL"
+                                                    name="./marketPhotoOrderTwoMobileBgImageURl"/>
+                                            <tabBgImageURltwo
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention tab background image url"
+                                                    fieldLabel="Background Tab Image URL"
+                                                    name="./marketPhotoOrderTwoTabBgImageURl"/>
+                                            <descriptiontwo
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldLabel="Description"
+                                                    name="./marketPhotoOrderTwoDescription"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </descriptiontwo>
+                                            <btnTextTwo
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention the button text"
+                                                    fieldLabel="Button text"
+                                                    name="./marketPhotoOrderTwoBtnText"/>
+
+                                            <orderthree
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/field"
+                                                    fieldLabel="Order 3:"
+                                                    name="./orderThree"/>
+                                            <titlethree
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Market Photo Heading"
+                                                    name="./marketPhotoOrderThreeTitle"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </titlethree>
+                                            <redirectLinkthree
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention the link to redirect"
+                                                    fieldLabel="Redirect Link"
+                                                    name="./marketPhotoOrderThreeRedirectLink"/>
+                                            <bgImageURlthree
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention background image url"
+                                                    fieldLabel="Background Image URL"
+                                                    name="./marketPhotoOrderThreeBgImageURl"/>
+                                            <mobileBgImageURlthree
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention mobile background image url"
+                                                    fieldLabel="Background Mobile Image URL"
+                                                    name="./marketPhotoOrderThreeMobileBgImageURl"/>
+                                            <tabBgImageURlthree
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention tab background image url"
+                                                    fieldLabel="Background Tab Image URL"
+                                                    name="./marketPhotoOrderThreeTabBgImageURl"/>
+                                            <descriptionThree
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldLabel="Description"
+                                                    name="./marketPhotoOrderThreeDescription"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </descriptionThree>
+                                            <btnTextThree
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention the button text"
+                                                    fieldLabel="Button text"
+                                                    name="./marketPhotoOrderThreeBtnText"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </marketbottomphotos>
+                    <dynamicAdvisor
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Dynamic Advisor"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Dynamic Advisor Heading"
+                                                    name="./dynamicAdvisorTitle"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </title>
+                                            <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Characters allowed including spaces"
+                                                    fieldLabel="Dynamic Advisor Description"
+                                                    name="./dynamicAdvisorDescription"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </description>
+                                            <bgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention background image url"
+                                                    fieldLabel="Background Desktop Image URL"
+                                                    name="./dynamicAdvisorBgImageURl"/>
+                                            <mobileBgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention mobile background image url"
+                                                    fieldLabel="Background Mobile Image URL"
+                                                    name="./dynamicAdvisorMobileBgImageURl"/>
+                                            <tabBgImageURl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Mention tab background image url"
+                                                    fieldLabel="Background Tab Image URL"
+                                                    name="./dynamicAdvisorTabBgImageURl"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </dynamicAdvisor>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,25 @@
+<sly data-sly-use.siteConfig="com.vcm.core.models.SiteConfigModel">
+	<div class="content-wrapper mbl-container-w100-px15">
+		<div style="margin-top:20px;" class="st-section-heading st-heading-blue">
+			<h2>${siteConfig.title}</h2>
+		</div>
+		<table style="margin-top:20px;" class="table table-bordered">
+		  <thead>
+		    <tr>
+		      <th scope="col"><b>Key</b></th>
+		      <th scope="col"><b>Values</b></th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td><b>${siteConfig.key}</b></td>
+		      <td>
+		     	 <sly data-sly-list.genericValues="${siteConfig.valuesList}">
+		      		 <div style="margin:5px;">${genericValues}</div>
+		      	</sly>
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+</sly>

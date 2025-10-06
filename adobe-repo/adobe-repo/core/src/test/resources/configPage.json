@@ -1,0 +1,267 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Fri Jul 03 2020 17:33:48 GMT+0530",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:createdBy": "admin",
+		"jcr:title": "VCM Site Configurations",
+		"cq:lastReplicationAction": "Activate",
+		"jcr:versionHistory": "8957d6ed-6e8f-406a-b010-9735f727270b",
+		"triangleColor": "#0B3B60",
+		"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+		"cq:lastReplicatedBy": "admin",
+		"institutionalinvestorsType": "false",
+		"financialAdvisorsType": "false",
+		"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+		"jcr:predecessors": ["5980ae3f-f192-4d8e-a661-c2b48fa41920"],
+		"isCorpHomePage": "false",
+		"jcr:created": "Fri Jul 03 2020 17:33:48 GMT+0530",
+		"cq:lastReplicated": "Mon Jul 06 2020 15:22:44 GMT+0530",
+		"cq:lastModified": "Mon Jul 13 2020 11:09:22 GMT+0530",
+		"jcr:baseVersion": "5980ae3f-f192-4d8e-a661-c2b48fa41920",
+		"useImageInHeaderNav": "false",
+		"jcr:isCheckedOut": true,
+		"jcr:uuid": "1c3c919d-2938-4f9a-81c1-2662bf793eaf",
+		"secondLevelNavOnly": "false",
+		"sling:resourceType": "vcm/components/structure/page",
+		"membersType": "false",
+		"isHideinBreadCrumb": "false",
+		"cq:lastRolledoutBy": "admin",
+		"cq:lastModifiedBy": "admin",
+		"root": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:lastModifiedBy": "ctsuser",
+			"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+			"jcr:lastModified": "Mon Jul 13 2020 11:09:22 GMT+0530",
+			"sling:resourceType": "wcm/foundation/components/responsivegrid",
+			"cq:lastRolledoutBy": "admin",
+			"responsivegrid": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "ctsuser",
+				"jcr:lastModifiedBy": "ctsuser",
+				"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+				"jcr:created": "Fri Feb 21 2020 12:28:09 GMT+0000",
+				"jcr:lastModified": "Mon Jul 13 2020 11:09:22 GMT+0530",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"cq:lastRolledoutBy": "admin",
+				"siteconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "admin",
+					"jcr:lastModifiedBy": "admin",
+					"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+					"jcr:created": "Fri Jul 03 2020 17:58:36 GMT+0530",
+					"key": "etfLinks",
+					"title": "ETF Page Patterns",
+					"jcr:lastModified": "Mon Jul 13 2020 11:09:22 GMT+0530",
+					"sling:resourceType": "vcm/components/content/siteconfig",
+					"cq:lastRolledoutBy": "admin",
+					"values": {
+						"jcr:primaryType": "nt:unstructured",
+						"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+						"cq:lastRolledoutBy": "admin",
+						"item0": {
+							"jcr:primaryType": "nt:unstructured",
+							"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+							"value": "/products/victory-shares-etfs",
+							"childKey": "key",
+							"cq:lastRolledoutBy": "admin"
+						},
+						"item1": {
+							"jcr:primaryType": "nt:unstructured",
+							"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+							"value": "key12",
+							"childKey": "key1",
+							"cq:lastRolledoutBy": "admin"
+						}
+					}
+				},
+				"siteconfig_330671586": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "admin",
+					"jcr:lastModifiedBy": "admin",
+					"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+					"jcr:created": "Mon Jul 06 2020 15:17:49 GMT+0530",
+					"key": "etfThemeColors",
+					"title": "Product Detail Chart Color Codes",
+					"jcr:lastModified": "Mon Jul 13 2020 11:09:22 GMT+0530",
+					"sling:resourceType": "vcm/components/content/siteconfig",
+					"cq:lastRolledoutBy": "admin",
+					"values": {
+						"jcr:primaryType": "nt:unstructured",
+						"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+						"cq:lastRolledoutBy": "admin",
+						"item0": {
+							"jcr:primaryType": "nt:unstructured",
+							"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+							"value": "#282378",
+							"cq:lastRolledoutBy": "admin"
+						},
+						"item1": {
+							"jcr:primaryType": "nt:unstructured",
+							"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+							"value": "#1722762",
+							"cq:lastRolledoutBy": "admin"
+						},
+						"item2": {
+							"jcr:primaryType": "nt:unstructured",
+							"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+							"value": "#627672",
+							"cq:lastRolledoutBy": "admin"
+						}
+					}
+				},
+				"themeconfig": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "admin",
+					"jcr:lastModifiedBy": "admin",
+					"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+					"configKey": "Labels",
+					"jcr:created": "Fri Jul 10 2020 10:39:49 GMT+0530",
+					"title": "Product labels",
+					"jcr:lastModified": "Mon Jul 13 2020 11:09:22 GMT+0530",
+					"sling:resourceType": "vcm/components/content/themeconfig",
+					"cq:lastRolledoutBy": "admin",
+					"keyValueMap": {
+						"jcr:primaryType": "nt:unstructured",
+						"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+						"cq:lastRolledoutBy": "admin",
+						"item0": {
+							"jcr:primaryType": "nt:unstructured",
+							"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+							"key": "annualreturns",
+							"value": "Annualized Returns",
+							"cq:lastRolledoutBy": "admin"
+						},
+						"item1": {
+							"jcr:primaryType": "nt:unstructured",
+							"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+							"key": "sectordiversification",
+							"value": "Sector Diversification",
+							"cq:lastRolledoutBy": "admin"
+						},
+						"item2": {
+							"jcr:primaryType": "nt:unstructured",
+							"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+							"key": "countrydiversification",
+							"value": "Country Diversification",
+							"cq:lastRolledoutBy": "admin"
+						}
+					},
+					"labelKeyValueMap": {
+						"jcr:primaryType": "nt:unstructured",
+						"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+						"cq:lastRolledoutBy": "admin",
+						"item0": {
+							"jcr:primaryType": "nt:unstructured",
+							"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+							"key": "annualizedreturns",
+							"cq:lastRolledoutBy": "admin",
+							"labelValues": {
+								"jcr:primaryType": "nt:unstructured",
+								"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+								"cq:lastRolledoutBy": "admin",
+								"item0": {
+									"jcr:primaryType": "nt:unstructured",
+									"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+									"key": "yeartodate",
+									"value": "ytd",
+									"cq:lastRolledoutBy": "admin"
+								},
+								"item1": {
+									"jcr:primaryType": "nt:unstructured",
+									"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+									"key": "oneyearlabel",
+									"value": "1 Yr",
+									"cq:lastRolledoutBy": "admin"
+								},
+								"item2": {
+									"jcr:primaryType": "nt:unstructured",
+									"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+									"key": "threeyearlabel",
+									"value": "3 Yr",
+									"cq:lastRolledoutBy": "admin"
+								},
+								"item3": {
+									"jcr:primaryType": "nt:unstructured",
+									"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+									"key": "fiveyearlabel",
+									"value": "5 Yr",
+									"cq:lastRolledoutBy": "admin"
+								},
+								"item4": {
+									"jcr:primaryType": "nt:unstructured",
+									"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+									"key": "tenyearlabel",
+									"value": "10 Yr",
+									"cq:lastRolledoutBy": "admin"
+								},
+								"item5": {
+									"jcr:primaryType": "nt:unstructured",
+									"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+									"key": "inception",
+									"value": "Since Inception",
+									"cq:lastRolledoutBy": "admin"
+								}
+							}
+						},
+						"item1": {
+							"jcr:primaryType": "nt:unstructured",
+							"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+							"key": "CountryDiversification",
+							"cq:lastRolledoutBy": "admin",
+							"labelValues": {
+								"jcr:primaryType": "nt:unstructured",
+								"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+								"cq:lastRolledoutBy": "admin",
+								"item0": {
+									"jcr:primaryType": "nt:unstructured",
+									"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+									"key": "fund",
+									"value": "Fund",
+									"cq:lastRolledoutBy": "admin"
+								},
+								"item1": {
+									"jcr:primaryType": "nt:unstructured",
+									"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+									"key": "benchmark",
+									"value": "Benchmark",
+									"cq:lastRolledoutBy": "admin"
+								}
+							}
+						}
+					}
+				},
+		    "siteconfig_1800849180":{
+		               "jcr:primaryType":"nt:unstructured",
+		               "jcr:createdBy":"admin",
+		               "jcr:lastModifiedBy":"admin",
+		               "jcr:created":"Thu Jul 23 2020 17:05:01 GMT+0530",
+		               "key":"etfThemeColors",
+		               "title":"ETF Theme Color",
+		               "jcr:lastModified":"Thu Jul 23 2020 17:05:35 GMT+0530",
+		               "sling:resourceType":"vcm/components/content/siteconfig",
+		               "values":{
+		                  "jcr:primaryType":"nt:unstructured",
+		                  "item0":{
+		                     "jcr:primaryType":"nt:unstructured",
+		                     "value":"#00FFFF"
+		                  }
+		               }
+		            }
+			},
+			"experiencefragment_1818277927": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "ctsuser",
+				"jcr:lastModifiedBy": "ctsuser",
+				"cq:lastRolledout": "Mon Jul 13 2020 11:09:22 GMT+0530",
+				"jcr:created": "Fri Feb 21 2020 12:28:14 GMT+0000",
+				"text": "News Policies Careers User Agreement Mutual Fund Prospectuses ETF Prospectuses Blog Connect with us ©2020 Victory Capital Management Inc.",
+				"jcr:lastModified": "Mon Jul 13 2020 11:09:22 GMT+0530",
+				"sling:resourceType": "cq/experience-fragments/editor/components/experiencefragment",
+				"cq:lastRolledoutBy": "admin",
+				"fragmentPath": "/content/experience-fragments/vcm-experience-fragments/vcm-footer/master"
+			}
+		}
+	}
+}

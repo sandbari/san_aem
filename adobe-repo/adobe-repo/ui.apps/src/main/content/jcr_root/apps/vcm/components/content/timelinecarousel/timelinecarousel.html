@@ -1,0 +1,54 @@
+<sly data-sly-test="${wcmmode.edit}"><h4>Click here to Edit Timeline Carousel </h4></sly>
+<sly data-sly-use.timelineCarousel="com.vcm.core.models.Timeline"/>
+<div class="container timeline">
+   <div class="content-wrapper">
+      <div id="timelineWrapper">
+         <div id="datesContainer">
+            <h3>${timelineCarousel.heading}</h3>
+           ${timelineCarousel.description @context='html'}
+         </div>
+         <div id="timeline">
+            <div class="timeline--arrow"></div>
+            <ul id="dates">
+			<sly data-sly-list.multi="${timelineCarousel.yearData}">
+               <li><a role="button" href="#${multi.year}">${multi.year}<span></span></a></li>
+			</sly>
+            </ul>
+            <hr/>
+         </div>
+
+         <div  class="timeline--arrow"><span></span></div>
+         <div class="timeline--contentWrapper" >
+            <div class="timeline--contentBlock" >
+               <ul id="issues" role="presentation">
+               <sly data-sly-list.multi="${timelineCarousel.yearData}">
+                  <sly data-sly-test="${multiList.last}">
+                     <sly data-sly-test.multiLength="${multiList.count}"/>
+                  </sly>
+               </sly>
+				<sly data-sly-list.multi="${timelineCarousel.yearData}">
+                  <li id="${multi.year}" aria-hidden="true">
+                     <div class="left--leftImg md-lt-gr-triangle">
+                        <img src="${multi.eventImage}" alt="${multi.altText || true}">
+                     </div>
+                     <div class="right--content">
+                        <h3>${multi.eventTitle}</h3>
+                       ${multi.eventDescription @context='html'}
+                     </div>
+                  </li>
+                </sly>
+				 
+               </ul>
+               <div id="prev" class="navigationLinksButton">
+                  <a href="#" role="button" aria-label="Previous Year">Text button primary</a>
+               </div>
+               <div id="next" class="navigationLinksButton">
+                  <a href="#" role="button" aria-label="Next Year">Text button primary</a>
+               </div>
+               <div class="item-show sr-only" aria-live="polite" aria-atomic="true"></div>
+            </div>
+         </div>
+      </div>
+      <div class="timeline-navigation-btn navigation-right"><a href="${timelineCarousel.linkUrl}" target="${timelineCarousel.tabSelect}" rel="${timelineCarousel.tabSelect == '_blank' ? 'noopener noreferrer' : ''}">${timelineCarousel.linkText}<span class="right--arrow" aria-hidden="true"></span></a></div>
+   </div>
+</div>

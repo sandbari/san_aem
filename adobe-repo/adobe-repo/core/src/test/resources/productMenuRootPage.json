@@ -1,0 +1,563 @@
+{
+	"12": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:createdBy": "admin",
+			"jcr:title": "12",
+			"cq:template": "/conf/vcm/settings/wcm/templates/product-detail-template",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"cq:lastModified": "Thu Jan 02 2020 15:05:52 GMT+0530",
+			"sling:resourceType": "vcm/components/structure/page",
+			"cq:lastModifiedBy": "admin",
+			"root": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"productglance": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "admin",
+					"jcr:title": "At a Glance\n                        (As of 11/30/2019)\n                    ",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:created": "Fri Dec 13 2019 14:11:51 GMT+0530",
+					"jcr:lastModified": "Thu Jan 02 2020 15:05:52 GMT+0530",
+					"sling:resourceType": "vcm/components/content/productglance"
+				},
+				"productdetail": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "admin",
+					"jcr:title": "Product Detail Here..",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:created": "Fri Dec 13 2019 12:04:27 GMT+0530",
+					"type": "h1",
+					"jcr:lastModified": "Tue Dec 24 2019 14:44:52 GMT+0530",
+					"productclass": "Class Here ",
+					"producttitle": "Product Title ...",
+					"sling:resourceType": "vcm/components/content/productdetail",
+					"fundcode": "Fund Code Here",
+					"tickerid": "Ticker Id Here"
+				}
+			}
+		}
+	},
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:createdBy": "admin",
+		"jcr:title": "vcm content page template test",
+		"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+		"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+		"cq:lastModified": "Mon Nov 18 2019 11:12:11 GMT+0530",
+		"sling:resourceType": "vcm/components/structure/page",
+		"cq:lastModifiedBy": "admin",
+		"root": {
+			"jcr:primaryType": "nt:unstructured",
+			"sling:resourceType": "wcm/foundation/components/responsivegrid",
+			"responsivegrid": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid"
+			}
+		}
+	},
+	"mutual-fund": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:createdBy": "admin",
+			"jcr:title": "Mutual Funds",
+			"cq:template": "/conf/vcm/settings/wcm/templates/product-menu-pages",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"cq:lastModified": "Fri Jan 17 2020 15:01:14 GMT+0530",
+			"sling:resourceType": "vcm/components/structure/page",
+			"cq:lastModifiedBy": "admin",
+			"root": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"productmenu": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "admin",
+					"rootTagPath": "/content/cq:tags/vcm/all-funds/mutual-funds",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:created": "Fri Jan 17 2020 15:00:41 GMT+0530",
+					"buttonLink": "/content/vcm/en/vcm-content-page-template-test/victory-integrity-mid-cap-value-fund",
+					"buttonText": "View All Mutual Funds",
+					"jcr:lastModified": "Fri Jan 17 2020 15:01:14 GMT+0530",
+					"sling:resourceType": "vcm/components/content/productmenu",
+					"rootPagePath": "/content/vcm/en/vcm-content-page-template-test/product2-page"
+				}
+			}
+		}
+	},
+	"victory-shares-etfs": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:createdBy": "admin",
+			"jcr:title": "Victory Share ETFs",
+			"cq:template": "/conf/vcm/settings/wcm/templates/product-menu-pages",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"cq:lastModified": "Thu Jan 23 2020 12:16:39 GMT+0530",
+			"jcr:uuid": "d079b1d2-fce7-4c68-8837-bef51febd63a",
+			"sling:resourceType": "vcm/components/structure/page",
+			"cq:lastModifiedBy": "admin",
+			"root": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"productmenu": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "admin",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:created": "Thu Jan 23 2020 11:39:52 GMT+0530",
+					"jcr:lastModified": "Thu Jan 23 2020 12:16:39 GMT+0530",
+					"sling:resourceType": "vcm/components/content/productmenu",
+					"productMenuItems": {
+						"jcr:primaryType": "nt:unstructured",
+						"item0": {
+							"jcr:primaryType": "nt:unstructured",
+							"tabLink": "/content/vcm/en/vcm-content-page-template-test/product2-page",
+							"tabTitle": "Mutual Fund",
+							"tagPathList": [
+								"/content/cq:tags/vcm/all-funds/mutual-funds/mixed-asset-class",
+								"/content/cq:tags/vcm/all-funds/mutual-funds/non-us-equity",
+								"/content/cq:tags/vcm/all-funds/mutual-funds/us-equity"
+							],
+							"buttonLink": "/content/vcm/en/vcm-content-page-template-test/product2-page",
+							"buttonText": "View All Mutual Funds",
+							"rootPagePath": "/content/vcm/en/vcm-content-page-template-test/product-page"
+						},
+						"item1": {
+							"jcr:primaryType": "nt:unstructured",
+							"tabLink": "/content/vcm/en/vcm-content-page-template-test/product-page",
+							"tabTitle": "Victory Shares",
+							"tagPathList": [
+								"/content/cq:tags/vcm/all-funds/victory-shares-etfs/active-fixed-income",
+								"/content/cq:tags/vcm/all-funds/victory-shares-etfs/bear-market",
+								"/content/cq:tags/vcm/all-funds/victory-shares-etfs/core-broad-market",
+								"/content/cq:tags/vcm/all-funds/victory-shares-etfs/divident-growth-and-income",
+								"/content/cq:tags/vcm/all-funds/victory-shares-etfs/multi-factor",
+								"/content/cq:tags/vcm/all-funds/victory-shares-etfs/volatility-reduction"
+							],
+							"buttonLink": "/content/vcm/en/vcm-content-page-template-test/product-page",
+							"buttonText": "learn more about Victory Shares",
+							"rootPagePath": "/content/vcm/en/vcm-content-page-template-test/product-page"
+						}
+					}
+				}
+			}
+		},
+		"mega-menu": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Thu Jan 23 2020 12:59:16 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:createdBy": "admin",
+				"jcr:title": "Mega Menu Page",
+				"productCategory":"ETF",
+				"cq:template": "/apps/vcm/templates/page-content",
+				"jcr:created": "Thu Jan 23 2020 12:59:16 GMT+0530",
+				"cq:lastModified": "Thu Jan 23 2020 12:59:16 GMT+0530",
+				"cq:tags": [
+					"vcm:all-funds/mutual-funds/us-equity"
+				],
+				"sling:resourceType": "vcm/components/structure/page",
+				"cq:lastModifiedBy": "admin",
+				"logo": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "vcm/components/structure/logo"
+				},
+				"title": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "vcm/components/content/title"
+				},
+				"topnav": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "vcm/components/structure/topnav"
+				},
+				"par": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "wcm/foundation/components/parsys",
+					"text": {
+						"jcr:primaryType": "nt:unstructured",
+						"text": "<p>This is a content page</p>",
+						"sling:resourceType": "vcm/components/content/text",
+						"textIsRich": "true"
+					}
+				}
+			}
+		}
+	},
+	"product2-page": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:createdBy": "admin",
+			"jcr:title": "product2-page",
+			"productCategory":"ETF",
+			"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+			"institutionalinvestorsType": "false",
+			"financialAdvisorsType": "false",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"cq:lastModified": "Fri Jan 24 2020 17:08:24 GMT+0530",
+			"useImageInHeaderNav": "false",
+			"jcr:uuid": "fa428e27-3fac-4648-a68d-c3262002de94",
+			"sling:resourceType": "vcm/components/structure/page",
+			"solutionType": [
+				"vcm:all-funds/mutual-funds/us-equity"
+			],
+			"membersType": "false",
+			"cq:lastModifiedBy": "admin",
+			"root": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"responsivegrid": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": [],
+					"sling:resourceType": "wcm/foundation/components/responsivegrid",
+					"productmenu": {
+						"jcr:primaryType": "nt:unstructured",
+						"jcr:createdBy": "admin",
+						"rootTagPath": [
+							"/content/cq:tags/vcm/all-funds/mutual-funds/fixed-income",
+							"/content/cq:tags/vcm/all-funds/mutual-funds/non-us-equity",
+							"/content/cq:tags/vcm/all-funds/mutual-funds/us-equity"
+						],
+						"jcr:lastModifiedBy": "admin",
+						"jcr:created": "Thu Jan 16 2020 10:28:00 GMT+0530",
+						"buttonLink": "/content/vcm/en/vcm-content-page-template-test/victory-integrity-mid-cap-value-fund",
+						"buttonText": "View All Mutual Funds",
+						"jcr:lastModified": "Mon Jan 20 2020 18:02:05 GMT+0530",
+						"sling:resourceType": "vcm/components/content/productmenu",
+						"rootPagePath": "/content/vcm/en/vcm-content-page-template-test/product-page",
+						"productMenuItems": {
+							"jcr:primaryType": "nt:unstructured",
+							"item0": {
+								"jcr:primaryType": "nt:unstructured",
+								"rootTagPath": [
+									"/content/cq:tags/vcm/all-funds/mutual-funds/fixed-income",
+									"/content/cq:tags/vcm/all-funds/mutual-funds/non-us-equity",
+									"/content/cq:tags/vcm/all-funds/mutual-funds/us-equity"
+								],
+								"buttonLink": "/content/vcm/en/vcm-content-page-template-test/victory-integrity-mid-cap-value-fund.html",
+								"buttonText": "view",
+								"rootPagePath": "/content/vcm/en/vcm-content-page-template-test/product-page"
+							}
+						}
+					}
+				}
+			}
+		},
+		"mutual-fund": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Thu Jan 23 2020 11:36:32 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:createdBy": "admin",
+				"jcr:title": "Mutual Funds",
+				"cq:template": "/apps/vcm/templates/page-content",
+				"jcr:created": "Thu Jan 23 2020 11:36:32 GMT+0530",
+				"cq:lastModified": "Thu Jan 23 2020 11:36:32 GMT+0530",
+				"sling:resourceType": "vcm/components/structure/page",
+				"cq:lastModifiedBy": "admin",
+				"logo": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "vcm/components/structure/logo"
+				},
+				"title": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "vcm/components/content/title"
+				},
+				"topnav": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "vcm/components/structure/topnav"
+				},
+				"par": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "wcm/foundation/components/parsys",
+					"text": {
+						"jcr:primaryType": "nt:unstructured",
+						"text": "<p>This is a content page</p>",
+						"sling:resourceType": "vcm/components/content/text",
+						"textIsRich": "true"
+					}
+				}
+			}
+		}
+	},
+	"victory-integrity-mid-cap-value-fund": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:createdBy": "admin",
+			"productCategory":"MF",
+			"jcr:title": "Victory Integrity Mid-Cap Value Fund",
+			"cq:template": "/conf/vcm/settings/wcm/templates/product-detail-template",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"cq:lastModified": "Tue Dec 24 2019 14:50:40 GMT+0530",
+			"sling:resourceType": "vcm/components/structure/page",
+			"cq:lastModifiedBy": "admin",
+			"root": {
+				"jcr:primaryType": "nt:unstructured",
+				"productdetail": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:title": "Victory Integrity Mid-Cap Value Fund",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:lastModified": "Tue Dec 24 2019 14:50:40 GMT+0530",
+					"sling:resourceType": "vcm/components/content/productdetail"
+				}
+			}
+		}
+	},
+	"sharad": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:createdBy": "admin",
+			"jcr:title": "sharad",
+			"cq:template": "/conf/vcm/settings/wcm/templates/product-detail-template",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"cq:lastModified": "Thu Dec 26 2019 14:49:39 GMT+0530",
+			"sling:resourceType": "vcm/components/structure/page",
+			"cq:lastModifiedBy": "admin",
+			"root": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"productglance": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "admin",
+					"jcr:title": "At a Glance\n                        (As of 11/30/2019)\n                    ",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:created": "Fri Dec 13 2019 14:11:51 GMT+0530",
+					"jcr:lastModified": "Thu Dec 26 2019 14:49:39 GMT+0530",
+					"sling:resourceType": "vcm/components/content/productglance"
+				},
+				"productdetail": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "admin",
+					"jcr:title": "Product Detail Here..",
+					"jcr:lastModifiedBy": "admin",
+					"jcr:created": "Fri Dec 13 2019 12:04:27 GMT+0530",
+					"type": "h1",
+					"jcr:lastModified": "Tue Dec 24 2019 14:44:52 GMT+0530",
+					"productclass": "Class Here ",
+					"producttitle": "Product Title ...",
+					"sling:resourceType": "vcm/components/content/productdetail",
+					"fundcode": "Fund Code Here",
+					"tickerid": "Ticker Id Here"
+				}
+			}
+		}
+	},
+	"product-page": {
+		"jcr:primaryType": "cq:Page",
+		"jcr:createdBy": "admin",
+		"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+		"jcr:content": {
+			"jcr:primaryType": "cq:PageContent",
+			"jcr:mixinTypes": [
+				"mix:versionable"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Product Page",
+			"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"cq:lastModified": "Fri Jan 31 2020 15:33:43 GMT+0530",
+			"jcr:uuid": "d2e19516-5c78-4697-b733-6ea8ba7532ea",
+			"sling:resourceType": "vcm/components/structure/page",
+			"cq:lastModifiedBy": "admin",
+			"root": {
+				"jcr:primaryType": "nt:unstructured",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"responsivegrid": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "wcm/foundation/components/responsivegrid",
+					"ourproducts": {
+						"jcr:primaryType": "nt:unstructured",
+						"jcr:createdBy": "admin",
+						"mobileImage": "/content/dam/vcm/basic/productBaner.png",
+						"itemsInFirstRow": "3",
+						"jcr:lastModifiedBy": "admin",
+						"itemsPerRow": "1",
+						"contentType": "title",
+						"jcr:created": "Mon Jan 06 2020 15:00:33 GMT+0530",
+						"title": "Our Products",
+						"jcr:lastModified": "Fri Jan 31 2020 15:33:43 GMT+0530",
+						"desktopImage": "/content/dam/vcm/basic/corporateBaner.png",
+						"sling:resourceType": "vcm/components/content/ourproducts",
+						"productList": {
+							"jcr:primaryType": "nt:unstructured",
+							"item0": {
+								"jcr:primaryType": "nt:unstructured",
+								"productLink": "#",
+								"productTitle": "Mutual <br>Funds"
+							},
+							"item1": {
+								"jcr:primaryType": "nt:unstructured",
+								"productLink": "#",
+								"productTitle": "VictoryShares® <br>ETFs"
+							},
+							"item2": {
+								"jcr:primaryType": "nt:unstructured",
+								"productLink": "#",
+								"productTitle": "Retirement"
+							},
+							"item3": {
+								"jcr:primaryType": "nt:unstructured",
+								"productLink": "#",
+								"productTitle": "USAA 529 Education <br>Savings Plans"
+							},
+							"item4": {
+								"jcr:primaryType": "nt:unstructured",
+								"productLink": "#",
+								"productTitle": "Separately <br>Managed Accounts"
+							}
+						}
+					}
+				}
+			}
+		},
+		"victory-integrity-micro-cap-equity-fund": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": [
+					"mix:versionable"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Victory Integrity Discovery Fund",
+				"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+				"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+				"cq:lastModified": "Thu Jan 16 2020 12:35:30 GMT+0530",
+				"jcr:uuid": "9ee8226c-a61b-4366-bf55-262422026d6c",
+				"sling:resourceType": "vcm/components/structure/page",
+				"fundType": [
+					"vcm:all-funds/mutual-funds/non-us-equity"
+				],
+				"cq:lastModifiedBy": "admin",
+				"root": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "wcm/foundation/components/responsivegrid",
+					"responsivegrid": {
+						"jcr:primaryType": "nt:unstructured",
+						"sling:resourceType": "wcm/foundation/components/responsivegrid"
+					}
+				}
+			}
+		},
+		"victory-integrity-small-cap-value-fund": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": [
+					"mix:versionable"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Victory Integrity Small-Cap Value Fund",
+				"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+				"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+				"cq:lastModified": "Thu Jan 16 2020 12:36:02 GMT+0530",
+				"cq:tags": [
+					"vcm:all-funds/mutual-funds/us-equity"
+				],
+				"jcr:uuid": "158e053b-8a9a-47d1-a008-17e1c195372d",
+				"sling:resourceType": "vcm/components/structure/page",
+				"fundType": [
+					"vcm:all-funds/mutual-funds/us-equity"
+				],
+				"cq:lastModifiedBy": "admin",
+				"root": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "wcm/foundation/components/responsivegrid",
+					"responsivegrid": {
+						"jcr:primaryType": "nt:unstructured",
+						"sling:resourceType": "wcm/foundation/components/responsivegrid"
+					}
+				}
+			}
+		},
+		"victory-integrity-mid-cap-value-fund": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": [
+					"mix:versionable"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Victory Integrity Mid-Cap Value Fund",
+				"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+				"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+				"cq:lastModified": "Thu Jan 16 2020 12:36:28 GMT+0530",
+				"cq:tags": [
+					"vcm:all-funds/mutual-funds/us-equity"
+				],
+				"jcr:uuid": "69b1d305-bd34-484e-9de3-5d318641d3c4",
+				"sling:resourceType": "vcm/components/structure/page",
+				"fundType": [
+					"vcm:all-funds/mutual-funds/non-us-equity"
+				],
+				"cq:lastModifiedBy": "admin",
+				"root": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "wcm/foundation/components/responsivegrid",
+					"responsivegrid": {
+						"jcr:primaryType": "nt:unstructured",
+						"sling:resourceType": "wcm/foundation/components/responsivegrid"
+					}
+				}
+			}
+		},
+		"victory-rs-global-fund": {
+			"jcr:primaryType": "cq:Page",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+			"jcr:content": {
+				"jcr:primaryType": "cq:PageContent",
+				"jcr:mixinTypes": [
+					"mix:versionable"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Victory RS Global Fund",
+				"cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+				"jcr:created": "Tue Jan 21 2020 14:33:51 GMT+0530",
+				"cq:lastModified": "Thu Jan 16 2020 12:37:40 GMT+0530",
+				"cq:tags": [
+					"vcm:all-funds/mutual-funds/non-us-equity"
+				],
+				"jcr:uuid": "ff94d94c-fd22-4363-b184-cc324676cc4e",
+				"sling:resourceType": "vcm/components/structure/page",
+				"fundType": [
+					"vcm:all-funds/mutual-funds/us-equity"
+				],
+				"cq:lastModifiedBy": "admin",
+				"root": {
+					"jcr:primaryType": "nt:unstructured",
+					"sling:resourceType": "wcm/foundation/components/responsivegrid",
+					"responsivegrid": {
+						"jcr:primaryType": "nt:unstructured",
+						"sling:resourceType": "wcm/foundation/components/responsivegrid"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,178 @@
+/******fund-information*******/
+.rightrailstrategy .fund-information {
+    width: 100%;
+}
+.rightrailstrategy .fund-information {
+    /*width: auto;*/
+    border: 1px solid #D2D2D2;
+	margin-top : 30px;
+}
+
+.rightrailstrategy .fund-information .heading {
+    padding: 11px 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #8BC105;
+}
+
+.rightrailstrategy .fund-information p {
+    font-size: 14px;
+    padding: 8px 20px;
+    line-height: 1.5;
+    clear: both;
+}
+
+.rightrailstrategy .fund-information a {
+    font-family: benton-sans, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.rightrailstrategy .fund-information p.line-space {
+    padding-top: 8px !important;
+}
+
+.rightrailstrategy .fund-information p.line-space-0 {
+    padding-top: 0 !important;
+}
+
+.rightrailstrategy .fund-information p.line-space-6 {
+    padding: 3px 20px !important;
+}
+
+.rightrailstrategy .fund-information p.line-space-2 {
+    padding: 1px 20px !important;
+}
+
+.rightrailstrategy .fund-information .line-divider {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.rightrailstrategy .fund-information .popup-link {
+    cursor: pointer;
+    color: #004A98;
+    border-bottom: 1px dotted #004A98;
+}
+
+.rightrailstrategy .fund-information .text-bold {
+    font-weight: 600;
+}
+
+.rightrailstrategy .fund-information .align-right {
+    float: right;
+    clear: both;
+    font-size: 14px;
+    text-align: right;
+    padding-top:0px;
+	width: 49%;
+}
+.rightrailstrategy .heading .glance-header-label {
+	font-family: benton-sans,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #49494a;
+}
+
+.rightrailstrategy .fund-literature h3 {
+    background: url(../resources/icon__external-link.svg) no-repeat;
+    font-size: 16px;
+    padding-left: 30px;
+    background-position: left 100%;
+    margin: 15px 0px 5px 0;
+    line-height: 20px;
+}
+
+.rightrailstrategy .fund-literature p {
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+
+/******fund-information*******/
+
+
+/*popup*/
+
+.rightrailstrategy .explain-popup .modal-content {
+    border-radius: 0px;
+    border: none;
+    padding: 18px;
+}
+
+.rightrailstrategy .explain-popup .modal-header {
+    display: block;
+    border: none;
+    padding: 1.3rem;
+}
+
+.rightrailstrategy .explain-popup .modal-header .close {
+    top: 0px;
+    position: absolute;
+    font-size: 65px;
+    right: 30px;
+    color: #8BC105;
+    opacity: 1;
+}
+
+.rightrailstrategy .image-right {
+    position: relative;
+    right: 8px;
+    bottom: 5px;
+}
+
+.rightrailstrategy.image-left {
+    bottom: 5px;
+    left: 32px;
+    position: relative;
+}
+
+.rightrailstrategy .explain-popup .modal-header .close-link {
+    top: 56px;
+    position: absolute;
+    right: 34px;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.rightrailstrategy .risk-field {
+    background-color: #8C8C8C;
+    margin: 2px;
+    padding: 2px 3px 2px 2px;
+    box-sizing: border-box;
+}
+
+.rightrailstrategy .risk-field.active {
+    background-color: #004A98;
+}
+
+.rightrailstrategy .strategy_label_assets {
+    word-break: break-word;
+    max-width: 45%;
+    display: inline-block;
+}
+
+.rightrailstrategy span.text-bold.auto_invest_label.lbl_name {
+    font-weight: 600;
+    display: inline-block;
+    width: 60%;
+}
+
+@media screen and (min-width:1024px) {
+	.rightrailstrategy .fund-information .align-right {
+        padding-top: 0;
+    }
+    .rightrailstrategy .fund-information {
+      width: 325px;
+    }
+}
+@media screen and (max-width:1024px){
+	.mob-reverse .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

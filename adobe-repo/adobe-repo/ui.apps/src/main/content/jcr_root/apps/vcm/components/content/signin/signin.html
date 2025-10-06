@@ -1,0 +1,37 @@
+<div class="cq-placeholder" data-sly-test="${wcmmode.edit}" data-emptytext="Sign In Component"></div>
+<sly data-sly-use.SignInModel="com.vcm.core.models.SignInModel"/>
+
+<sly data-sly-test="false">
+<!-- For Day 2 release html start -->
+<!--<div class="usernameBlock">
+    <input id="username" tabindex="-1" type="text" value="" placeholder="${'username' @i18n}" aria-required="true" required name="username" class="form-field" alt="username">
+</div>
+<div class="pwdBlock">
+    <input id="password" tabindex="-1" type="password" value="" placeholder="${'password' @i18n}" aria-required="true" required name="password" class="form-field" alt="password">
+</div>
+<div class="submit-btn">
+    <button class="button button--secondary" id="sbmitBtn">${'signin' @i18n} </button>
+</div>
+<div class="form-links">
+    <div data-sly-test="${SignInModel.linkUrl && SignInModel.forgotUserName }" class="link">
+        <a href="${SignInModel.linkUrl @ extension='html'}" target="${SignInModel.tabSelect}">${SignInModel.forgotUserName}</a>
+    </div>
+
+    <div data-sly-test="${SignInModel.registerUrl && SignInModel.registerAccount }" class="link">
+        <a href="${SignInModel.registerUrl @ extension='html'}" target="${SignInModel.tabSelectRegister}">${SignInModel.registerAccount}</a>
+    </div>
+</div>-->
+<!-- For Day 2 release html end -->
+</sly>
+
+
+<!-- For Day 1 release html start -->
+<div class="signinBox">
+	<span class="close"></span>
+    <div class="txtSpl">${SignInModel.ussaMemberTitle @ context="html"}</div>
+    <a href="${SignInModel.signInUrl}" target="${SignInModel.tabSelect}" class="btn-primary signin">${SignInModel.signInButton}<span class="btn-triangle-rt"></span></a>				
+    <div class="dividerBorder"></div>
+    <div class="txtSpl">${SignInModel.newUserLabel}</div>
+    <p> ${SignInModel.signUpText @ context='html'} </p>
+</div>
+<!-- For Day 1 release html end -->

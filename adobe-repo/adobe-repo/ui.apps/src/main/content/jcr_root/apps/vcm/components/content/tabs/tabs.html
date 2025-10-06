@@ -1,0 +1,47 @@
+<sly data-sly-use.tabs="com.adobe.cq.wcm.core.components.models.Tabs"/>
+<sly data-sly-test.author="${wcmmode.edit}">
+   <sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+        class="cmp-tabs"
+        data-cmp-is="tabs">
+      <ol data-sly-test="${tabs.items && tabs.items.size > 0}"
+          data-sly-list.tab="${tabs.items}"
+          class="cmp-tabs__tablist"
+          aria-label="${tabs.accessibilityLabel}"
+          aria-multiselectable="false">
+         <sly data-sly-test.isActive="${tab.name == tabs.activeItem}"/>
+         <li class="cmp-tabs__tab${isActive ? ' cmp-tabs__tab--active' : ''}"
+             tabindex="${isActive ? '0' : '-1'}"
+             data-cmp-hook-tabs="tab">${tab.title}</li>
+      </ol>
+      <div data-sly-repeat.item="${tabs.items}"
+           data-sly-resource="${item.name @ decorationTagName='div'}"
+           role="tabpanel"
+           tabindex="0"
+           class="cmp-tabs__tabpanel${item.name == tabs.activeItem ? ' cmp-tabs__tabpanel--active' : ''}"
+           data-cmp-hook-tabs="tabpanel"></div>
+      <sly data-sly-resource="${resource.path @ resourceType='wcm/foundation/components/parsys/newpar', appendPath='/*', decorationTagName='div', cssClassName='new section aem-Grid-newComponent'}"
+           data-sly-test="${(wcmmode.edit || wcmmode.preview) && tabs.items.size < 1}"></sly>
+   </sly>
+</sly>
+<sly data-sly-test="${!author}" data-sly-use.customTabs="com.vcm.core.models.CustomTabsModel"
+      data-sly-use.tabTemplate="tab.html"
+      data-sly-use.stickyTabTemplate="stickytab.html">
+   <sly data-sly-test="${tabs.items && tabs.items.size > 0}"
+       data-sly-list.tab="${tabs.items}">
+      <sly data-sly-test.isActive="${tab.name == tabs.activeItem}"/>
+      <input type="hidden" value="${isActive ? tab.title : ''}" id="activeTab">
+   </sly>
+
+   <sly data-sly-test.res="${customTabs.tabResourceList}">
+      <sly data-sly-test="${!customTabs.tabType}">
+         <div class="tab-container">
+            <sly data-sly-call="${tabTemplate.tab @ customTabs=customTabs}"></sly>
+         </div>
+      </sly>
+      <sly data-sly-test="${customTabs.tabType}">
+         <div class="sticky-tab-container" data-stickyright="${customTabs.stickyRightRail ? 'sticky-right' : ''}">
+            <sly data-sly-call="${stickyTabTemplate.stickytab @ customTabs=customTabs}"></sly>
+         </div>
+      </sly>
+   </sly>
+</sly>

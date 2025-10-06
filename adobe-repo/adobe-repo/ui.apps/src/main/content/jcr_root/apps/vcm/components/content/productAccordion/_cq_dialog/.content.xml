@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Products Accordion Authoring Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                  <tabs
+	                jcr:primaryType="nt:unstructured"
+	                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+	                maximized="{Boolean}true">
+	                <items jcr:primaryType="nt:unstructured">  
+		                 <accordionConfigs
+	                        jcr:primaryType="nt:unstructured"
+	                        jcr:title="Product Accordion Configs"
+	                        sling:resourceType="granite/ui/components/coral/foundation/container"
+	                        margin="{Boolean}true"> 
+	                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+		                        <items jcr:primaryType="nt:unstructured">
+		                            <columns
+		                                jcr:primaryType="nt:unstructured"
+		                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns">
+		                                <items jcr:primaryType="nt:unstructured">
+		                                    <column
+		                                        jcr:primaryType="nt:unstructured"
+		                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+		                                        <items jcr:primaryType="nt:unstructured"> 
+								                    <heading
+								                        jcr:primaryType="nt:unstructured"
+								                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+								                        fieldDescription="To author heading text"
+								                        fieldLabel="Heading"
+								                        required="{Boolean}true"
+								                        name="./heading"/>
+								                    <productsLinks
+								                        jcr:primaryType="nt:unstructured"
+								                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+								                        composite="{Boolean}true"
+								                        eaem-min-items="1"
+								                        fieldLabel="Select Products Pages"
+								                        required="{Boolean}true">
+								                        <field
+								                            jcr:primaryType="nt:unstructured"
+								                            sling:resourceType="granite/ui/components/coral/foundation/container"
+								                            name="./productPages">
+								                            <items jcr:primaryType="nt:unstructured">
+								                                <column
+								                                    jcr:primaryType="nt:unstructured"
+								                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+								                                    <items jcr:primaryType="nt:unstructured">
+								                                        <title
+								                                           jcr:primaryType="nt:unstructured"
+								                                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+								                                           fieldDescription="A title to display as the headline, if left empty it will take page tile as title"
+								                                           fieldLabel="Link Title"
+								                                           name="./linkTitle"/> 
+								                                        <linkurl
+								                                            jcr:primaryType="nt:unstructured"
+								                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+								                                            fieldDescription="To author link of the prouct"
+								                                            fieldLabel="Product Page Link"
+								                                            rootPath="/content/vcm"
+								                                            name="./linkUrl"/> 
+								                                         <tabselect
+								                                               jcr:primaryType="nt:unstructured"
+								                                               sling:resourceType="granite/ui/components/coral/foundation/form/select"
+								                                               fieldDescription="To author target for link to be open in same tab or new tab"
+								                                               fieldLabel="Target"
+								                                               name="./tabSelect">
+								                                               <items jcr:primaryType="nt:unstructured">
+								                                                   <sametab
+								                                                       jcr:primaryType="nt:unstructured"
+								                                                       text="Same tab"
+								                                                       value="_self"/>
+								                                                   <newtab
+								                                                       jcr:primaryType="nt:unstructured"
+								                                                       text="New tab"
+								                                                       value="_blank"/>
+								                                               </items>
+								                        			 	</tabselect>                 
+								                                    </items>
+								                                </column>
+								                            </items>
+								                        </field>
+								                    </productsLinks>  
+								               </items>
+								           </column>
+								        </items>
+								     </columns>
+								 </items>
+						     </accordionConfigs>
+		                    <Audienceselector
+		                        jcr:primaryType="nt:unstructured"
+		                        jcr:title="Audience Selector"
+		                        sling:resourceType="granite/ui/components/coral/foundation/container"
+		                        margin="{Boolean}true">
+		                        <items jcr:primaryType="nt:unstructured">
+		                            <columns
+		                                jcr:primaryType="nt:unstructured"
+		                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+		                                margin="{Boolean}true">
+		                                <items jcr:primaryType="nt:unstructured">
+		                                    <column
+		                                        jcr:primaryType="nt:unstructured"
+		                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+		                                        <items jcr:primaryType="nt:unstructured">
+		                                            <usertype
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/foundation/include"
+		                                                path="vcm/components/content/common/audienceselector"/>
+		                                        </items>
+		                                    </column>
+		                                </items>
+		                            </columns>
+		                        </items>
+		                    </Audienceselector>
+		               </items>
+		            </tabs>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

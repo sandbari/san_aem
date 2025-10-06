@@ -1,0 +1,24 @@
+.cmp-text p img {
+    max-width: 100%;
+} 
+
+.insightsPages .cmp-text img {
+    width: auto;
+    float: left;
+    margin-right: 10px;
+} 
+
+.insightsPages .cmp-text {
+    margin-bottom: 10px;
+} 
+
+.insightsPages .col-lg-3, .insightsPages .col-lg-9 {
+    width: 100%;
+    max-width: 100%;
+    flex: unset;
+}
+
+.insightsPages .text {
+    width: 100%;
+    float: left;
+}

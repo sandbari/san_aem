@@ -1,0 +1,37 @@
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-test="${pageProperties.fundstatistics}">
+    <div class="product-details fund-stats-component">
+        <div class="row pdg-24">
+            <h3 class="heading col-lg-7">
+                <span class="fund-statistics header-label"></span>
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                        <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Fund Statistics" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                        <span class="sr-only tooltip-content" aria-live="polite"></span>
+                    </sly>
+                </sly>
+                <span class="date-text">(As of <span class="fund-statistics-asof"></span>)</span>
+            </h3>
+            <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                    <p class="align-right col-lg-5">
+                        <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+                    </p>
+                </sly>
+            </sly>
+        </div>
+        <div class="visual-container">
+            <div class="fund-stats-table-wrapper position-relative">
+                <div class="table-wrap">
+                    <table class="table fund-stats-table"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-fundstatistics">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message error-message-fundstatistics">
+        <p></p>
+    </div>
+</sly>

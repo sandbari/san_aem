@@ -1,0 +1,59 @@
+<sly data-sly-use.managementTeam="com.vcm.core.models.ProductManagementTeam"></sly>
+<sly data-sly-test="${wcmmode.edit}"><div class="cq-placeholder" data-emptyText="${component.title}"></div></sly>
+
+<sly data-sly-test="${pageProperties.management}">
+	<div class="container">
+		<div class="dummy-block__container px-0 pb-0 mx-0 mt-0 mb-0 position-relative">
+			<div class="investment-team-list">
+				<sly data-sly-test="${managementTeam.description}">
+					<div class="title-desc-default mb-30 mb-sm-40">
+						<p>${managementTeam.description  @ context ='html'}</p>
+					</div>
+				</sly>
+				<sly data-sly-test="${managementTeam.heading}">
+					<div class="title-desc-default mb-30 mb-sm-40">
+						<h3>${managementTeam.heading}</h3>
+					</div>
+				</sly>
+				<sly data-sly-list.leaderbio ="${managementTeam.list}">
+					<sly data-sly-test="${leaderbio.managementPicture}">
+						<div class="lead-bio-block mb-40">
+							<div class="image-content-block">
+								<sly data-sly-test="${leaderbio.bioPicture}">
+									<div class="image-block">
+										<img src="${leaderbio.bioPicture}" alt="${leaderbio.altText || true}">
+										<span class="img-triangle-left-corner" style="border-top-color: ${managementTeam.triangleColor @ context='styleToken'};"></span>
+									</div>
+								</sly>
+								<div class="content-block">
+									<div class="leadname-desg-block mb-20">
+										<h5>${leaderbio.fullname}</h5>
+										<p class="desc"><sly data-sly-test="${leaderbio.titleDescription}">${leaderbio.titleDescription}<sly data-sly-test="${leaderbio.designation}">,${leaderbio.designation}</sly></sly><sly data-sly-test="${!leaderbio.titleDescription && leaderbio.designation}">${leaderbio.designation}</sly></p>
+									</div>
+									<a class="navg-right-arw-link" aria-label="${leaderbio.pageLinkAriaLabel}" href="${leaderbio.pagePath @ extension='html'}">${managementTeam.linkText}</a>
+								</div>
+							</div>
+						</div>
+					</sly>
+				</sly>
+				<div class="row row-flex investment-list halfwidth">
+					<sly data-sly-list.leaderbio ="${managementTeam.list}">
+						<sly data-sly-test="${!leaderbio.managementPicture}">
+							<div class="col-lg-6 col-md-12 col-sm-12 mb-20 mb-sm-30">
+								<a class="link-card navg-arw-rv-center ui-link" href="${leaderbio.pagePath @ extension='html'}">
+									<span class="triangle-left-corner" style="border-top-color: ${managementTeam.triangleColor @ context='styleToken'};"></span>
+									<h4 class="txt-black vcm-leadershipname" role="presentation">${leaderbio.fullname}<sly data-sly-test="${leaderbio.titleAbbreviation}">, ${leaderbio.titleAbbreviation} </sly></h4>
+									<sly data-sly-test="${leaderbio.titleDescription}"><p class="desc">${leaderbio.titleDescription}</p></sly>
+									<sly data-sly-test="${leaderbio.designation}"><p class="desc">${leaderbio.designation}</p></sly>
+								</a>
+							</div>
+						</sly>
+					</sly>
+				</div>
+				<sly data-sly-test="${managementTeam.teamLinkText}">
+					<a class="navg-right-arw-link" href="${managementTeam.teamLinkUrl @ extension='html'}">${managementTeam.teamLinkText}</a>
+				</sly>
+			</div>
+		</div>
+	</div>
+</sly>

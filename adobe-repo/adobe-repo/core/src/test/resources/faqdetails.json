@@ -1,0 +1,1490 @@
+{
+   "jcr:primaryType":"sling:OrderedFolder",
+   "jcr:createdBy":"admin",
+   "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+   "jcr:content":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:title":"FAQdetails",
+      "cq:lastReplicationAction":"Activate",
+      "dam:noThumbnail":true,
+      "cq:lastReplicatedBy":"vmohanam",
+      "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+      "cq:conf":"/conf/vcm",
+      "sourcing":"false"
+   },
+   "customer-service":{
+      "jcr:primaryType":"sling:Folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+      "customer-work-hours":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+	         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"customer work hours",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"customer-work-hours",
+            "jcr:lastModified":"Wed Mar 11 2020 18:59:28 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 18:59:28 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/customer-service",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "faqnumber":"2",
+                  "answer@LastModified":"Wed Mar 11 2020 18:59:28 GMT+0530",
+                  "answer":"<p>Each of the members of the football club has a certain personality. The children's vestibule was a mass, but the mourning of the great estate and In Lacinia, the investment is made. Until the CNN high school as the gateway to the border. In fact, I am not worried about the protein, but the course. No employee from such a developer. For those who want to play football, the kids who don't, take the time. For easy access to real estate. It is not just said that the vehicle should be decorated with a decorative ornament. Yes, but for arrows. Phasellus mauris ipsum, pharetra ut hendrerit feugiat, imperdiet et nisi. In fact, to put the sauce on the clock, who cares about soccer football. Now the property, no eu rutrum ullamcorper, propagandize the bow to the bow, as the author of the land itself. As the ultricies of life before nor the vehicles. Morbi pass is the price of football. Even before now, it's always not ugly, but it's always fun.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 18:59:28 GMT+0530",
+                  "question":"What are the Customer Care working hours?",
+                  "tags@LastModified":"Wed Mar 11 2020 18:59:28 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/customer-service-care"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 18:59:28 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/customer-service-care"
+                  ]
+               }
+            }
+         }
+      },
+      "customer-personal-details":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:mixinTypes":[
+               "cq:ReplicationStatus"
+            ],
+            "jcr:title":"customer personal details",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"customer-personal-details",
+            "jcr:lastModified":"Wed Mar 11 2020 18:58:56 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 18:58:56 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/customer-service",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"",
+                  "answer@LastModified":"Wed Mar 11 2020 18:58:56 GMT+0530",
+                  "answer":"<p>My supervisor, the employee and the laoreet, were in the rutum. I don't know the price of the market. Everyone wants easy access, but the employee does not have a vehicle. I would like to have a smile on my face. A great deal of wine, and a great bed. There is no seasoning, no seasoning, no seasoning in the recipe. In fact, it is not an easy task. Tomorrow, for the sauce of the mass of life, it is time for that or unless. Live the story of the fear of death, sometimes with arrows It's a concern for the health of the family. Proin dignissim, mauris a faucibus pharetra, lacus sapien ornare nisl, imperdiet feugiat dolor ligula eget turpis. Mauris tempus tortor varius sem hendrerit, vel faucibus ipsum luctus.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 18:58:56 GMT+0530",
+                  "question":"Which portal has the customer's personal details updated?",
+                  "tags@LastModified":"Wed Mar 11 2020 18:58:56 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/customer-service-care"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 18:58:56 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/customer-service-care"
+                  ]
+               }
+            }
+         }
+      },
+      "customer-service-contact":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"customer service contact",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+            "jcr:description":"Customer service contact details",
+            "contentFragment":true,
+            "cq:name":"customer-service-contact",
+            "jcr:lastModified":"Wed Mar 11 2020 18:58:08 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 18:58:08 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/customer-service",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ],
+               "cq:tags":[
+
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "faqnumber":"0",
+                  "answer@LastModified":"Wed Mar 11 2020 18:58:07 GMT+0530",
+                  "answer":"<p>Now tincidunt metus eu risus convallis pharetra. Now football is a place of laughter, it flatters the pool or the mass of trucks. The fear of disease and the need for medical attention, it is necessary for developers to be successful. Some of the football lion trucks, the easy diam dignissim, the result of the fear. Duis Euismod et eros sed lacinia. However, it was expected that the eros would be useful. Even if it is, the policy and the vestibule are not, as it is now. The boat is followed by a pregnant woman, the door of the vestibule itself.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 18:58:07 GMT+0530",
+                  "question":"How do I contact VCM Customer Care",
+                  "tags@LastModified":"Wed Mar 11 2020 18:58:07 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/customer-service-care"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 18:58:07 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/customer-service-care"
+                  ]
+               }
+            }
+         }
+      },
+      "jcr:content":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:title":"customer service",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+         "sourcing":"false"
+      },
+      "customer-service-location":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:mixinTypes":[
+               "cq:ReplicationStatus"
+            ],
+            "jcr:title":"Customer service email id",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+            "jcr:description":"Customer service email id",
+            "contentFragment":true,
+            "cq:name":"customer-service-email-id",
+            "jcr:lastModified":"Wed Mar 11 2020 19:00:20 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:00:20 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/customer-service",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:tags":[
+
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"a",
+                  "answer@LastModified":"Wed Mar 11 2020 19:00:20 GMT+0530",
+                  "answer":"<p>He is said to have lived in this street. No, not just. As expected, the football club is the winner. Time for a smile and makeup. There is no real estate investment. The mass of football but the element of laughter. So that neither the tortor fringilla nor the ultricies do not propagate, always great.</p>\n<p>Every lake augues, the laoreet sed mi sed, luctus arcu. It's just elit, venenatis and venenatis in, feugiat and no. We live by the wisdom of protein, not by drinking. Complete and with great care, from Lacinia itself. Pain in the neck, no life nor laughter, fear of the future course. But he who is always wise, always spends money. It will be followed by fear or sadness, but there will be no result from it, but it will take the bow of life. To-morrow it is made diam. The class is suitable for the silent partners who turn to the shores through our marriages, through the Hymenaean projects. Fusce Lacinia is not a time for laughter, friends. There's no price tag, it's easy to use. Children's dignissim fringilla eros, nor the time of turpis easy either.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:00:20 GMT+0530",
+                  "question":"In what all locations, does the customer service center available?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:00:20 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/customer-service-care"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:00:20 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/customer-service-care"
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "customer-profile":{
+      "jcr:primaryType":"sling:Folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+      "customer-data-safety":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:mixinTypes":[
+               "cq:ReplicationStatus"
+            ],
+            "jcr:title":"customer data profile",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"customer-data-profile",
+            "jcr:lastModified":"Wed Mar 11 2020 19:02:26 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:02:26 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/customer-profile",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"2",
+                  "answer@LastModified":"Wed Mar 11 2020 19:02:26 GMT+0530",
+                  "answer":"<p> It is simply the history/log of actions customers did. What products did the customer buy earlier? Where did he use his credit card? When did he call customer service? Transaction data is useful for analytic models, real-time proactive actions, and better targeting at cross-sell activities.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:02:26 GMT+0530",
+                  "question":"Is the customer data safe?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:02:26 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/profiling"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:02:26 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/profiling"
+                  ]
+               }
+            }
+         }
+      },
+      "jcr:content":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:title":"customer profile",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+         "sourcing":"false"
+      },
+      "profile-enable":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:mixinTypes":[
+               "cq:ReplicationStatus"
+            ],
+            "jcr:title":"profileservices",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+            "jcr:description":"profile service related",
+            "contentFragment":true,
+            "cq:name":"profileservices",
+            "jcr:lastModified":"Wed Mar 11 2020 19:01:53 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:01:53 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/customer-profile",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ],
+               "cq:tags":[
+
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"0",
+                  "answer@LastModified":"Wed Mar 11 2020 19:01:53 GMT+0530",
+                  "answer":"<p>Until the gate of the hospital, but the mass flatters, neither running nor setting. To be an important macro developer. For the author before and nisl molestie, and sapien feugiat. Maecenas euismod free internet. Until he was not afraid. Maecenas as a mass of lacinia, but hendrerit great. Aenean sauce, but the two do not mourn. It was never targeted in advertising. Vivamus tincidunt ullamcorper quam, nor vehicular sapien to adorn and He wants to put it on the table, but it is always done. Some people said that the land was a layer of land, and a wise investment. It was a weekend.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:01:53 GMT+0530",
+                  "question":"How do I enable my profile on customer portal?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:01:53 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/profiling"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:01:53 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/profiling"
+                  ]
+               }
+            }
+         }
+      },
+      "customer-accounts":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:mixinTypes":[
+               "cq:ReplicationStatus"
+            ],
+            "jcr:title":"customer accounts",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"customer-accounts",
+            "jcr:lastModified":"Wed Mar 11 2020 19:01:19 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:01:19 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/customer-profile",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"1",
+                  "answer@LastModified":"Wed Mar 11 2020 19:01:19 GMT+0530",
+                  "answer":"<p>A microwave oven or a microwave oven. It's not even an orci tincidunt, it's a tortor result, but an accumsan nibh. Maecenas vestibulum to drink feugiat. Duis fringilla is now the chocolate of life. But it's my pain. He hates to eat breakfast. Now I hate life, but I don't care about gambling. The entire pillow is my element, and the microphone is placed in it. Everyone is expected from Let the children spread the word.</p>\n<p>In front of the vestibule, first of all, in the throats of the hospital, he placed the beds of care and crucifixion; It's about who wants me. The boat as ex nibh. But that's what the doctor wants. Sick people need to drink a lot of protein, or a lake of grief needs to be fermented. There is no mourning for the earth, there is no need now. Now it's football.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:01:19 GMT+0530",
+                  "question":"What are the various customer account details?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:01:19 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/profiling"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:01:19 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/profiling"
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "saving-money":{
+      "jcr:primaryType":"sling:Folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+      "retirement-saving":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"save us dollars",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"save-us-dollars",
+            "jcr:lastModified":"Wed Mar 11 2020 19:04:09 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:04:09 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/saving-money",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"1",
+                  "answer@LastModified":"Wed Mar 11 2020 19:04:09 GMT+0530",
+                  "answer":"<p>Each one of those urns is a football player. Until he flatters the doctor and the god flatters him. Some good yeast. For a short time the quiver of the ultricies. It was even pregnant or a pillow. We always live in pain at the end of arrows. I'm sorry and I'm sorry. Clinical bed developer, vehicles and financing not, vehicles not sem. For even the country of basketball, it is made fear and, protein diam. Complete at trucks from Vestibulum a sollicitudin orci, at feugiat nibh. Until then, it's not a real thing.</p>\n<p>Illness and ill health will follow, he needs a bed. This fear will be followed by the airline. But it's not the story of the lake, it's the most important of the fans. It was like a bed. This is a homework assignment. Until the investment, the diadem of the life of the male real estate, the lake was convenient, it was just to decorate the biggest lake of the hospital. In pure freedom, it flatters not the developer in, to decorate the lacinia region. No land, no land, molestie feugiat pregnant in, mourning as elit. Who is the most important player or player? I live in my eros, some or just in, the homework is done. I chatted but the cartoon laughs, and it is done before.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:04:09 GMT+0530",
+                  "question":"How to build a retirement corpus?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:04:09 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/save-money"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:04:09 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/save-money"
+                  ]
+               }
+            }
+         }
+      },
+      "save-for-future":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"save us dollars",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"save-ind-rupees",
+            "jcr:lastModified":"Wed Mar 11 2020 19:04:51 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:04:51 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/saving-money",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"1",
+                  "answer@LastModified":"Wed Mar 11 2020 19:04:51 GMT+0530",
+                  "answer":"<p>There was no such thing as trucks, a casino, a cartoon, or an urn. Some advantage, he wants not to drink pulvinar, he wants the earth to end what, he needs no result but the life of life. Whole members of the laughter before, not the members of God's time either. In order to put the boat in, it is necessary to invest in it. To place before him first in the throats of the hospital, the beds of care, Also, there is no football or medical equipment to be used in the field. For a pure bed, it needs time and time, it just needs a layer. Aliquam feugiat at ante vulputate, eget rhoncus purus. Aenean eu felis that bed dignissim varius as an eu urn. Until I hate someone who advertises Lacinia's mouth. Maecenas tincidunt dui nec feugiat pellentesque. Feugiat should be completely happy. As a makeup in front of the soft soil of the soil. Children as members of laughter.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:04:51 GMT+0530",
+                  "question":"How do I save money for meeting my future expenses?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:04:51 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/save-money"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:04:51 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/save-money"
+                  ]
+               }
+            }
+         }
+      },
+      "jcr:content":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:mixinTypes":[
+            "cq:ReplicationStatus"
+         ],
+         "jcr:title":"saving money",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+         "sourcing":"false"
+      },
+      "save-dollars":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"save us dollars",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"save-canada-dollars",
+            "jcr:lastModified":"Wed Mar 11 2020 19:03:32 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:03:32 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/saving-money",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"1",
+                  "answer@LastModified":"Wed Mar 11 2020 19:03:32 GMT+0530",
+                  "answer":"<p>To drink the beer of life and the land of the casino. But hendrerit tortor or porttitor. No lacinia a nibh in the deck. Integer urn mauris, accumsan tincidunt dui at, mollis mauris. He is said to have lived in this street. But let my law be followed, for not the law, but the course of time. Integer velit was, sollicitudin fringilla dignissim id, lobortis and mauris. Curabitur rutrum augue nor now sad feugiat. It was said that the trigger of the boat was a certain element of the layer. Some investment is not in the sad interest. Everyone should have a drinking urn and a pillow, the tincidunt needs to be decorated. Children are living with disease, old age and children, and they are suffering from hunger and poverty.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:03:32 GMT+0530",
+                  "question":"How do I save millions?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:03:32 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/save-money"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:03:32 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/save-money"
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "investing":{
+      "jcr:primaryType":"sling:Folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+      "investment-advice":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"investing",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"assetsinvesting",
+            "jcr:lastModified":"Wed Mar 11 2020 19:07:05 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:07:05 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/investing",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"2",
+                  "answer@LastModified":"Wed Mar 11 2020 19:07:05 GMT+0530",
+                  "answer":"<p>Our mission is to make sense of what the news means for you and your money. With our real-time data and analysis, MarketWatch has the tools you need to take action immediately, no matter your investing experience.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:07:05 GMT+0530",
+                  "question":"What are the best mutual funds investment advice",
+                  "tags@LastModified":"Wed Mar 11 2020 19:07:05 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/investing-work"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:07:05 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/investing-work"
+                  ]
+               }
+            }
+         }
+      },
+      "lump-sum-investment":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"investing",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"propertyinvesting",
+            "jcr:lastModified":"Wed Mar 11 2020 19:05:49 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:05:49 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/investing",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"0",
+                  "answer@LastModified":"Wed Mar 11 2020 19:05:49 GMT+0530",
+                  "answer":"<p>Highest online rates. Personalized results. Best rates overview. Annuity rates comparison. Earn 8.5% return and 40% more guaranteed lifetime income without any market risk today.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:05:49 GMT+0530",
+                  "question":"Where do I invest a lump sum of a million dollars?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:05:49 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/investing-work"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:05:49 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/investing-work"
+                  ]
+               }
+            }
+         }
+      },
+      "jcr:content":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:mixinTypes":[
+            "cq:ReplicationStatus"
+         ],
+         "jcr:title":"investing",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+         "sourcing":"false"
+      },
+      "debt-fund-investment":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"investing",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"investing",
+            "jcr:lastModified":"Wed Mar 11 2020 19:06:18 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:06:18 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/investing",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"0",
+                  "answer@LastModified":"Wed Mar 11 2020 19:06:18 GMT+0530",
+                  "answer":"<p>Just for the ends of children's lives, from the quiver. If the vestibule is easy, the bottom line in the dignissim is poisoned, unless there is an accumsan which, from the airline, the pain is not the same. Sed pellentesque euismod augue in the valley. Aenean adorns the felis itself, and shoots the turpis in it. Tomorrow as a big football hate cartoon on CNN. No euismod fringilla lacinia. And when the orcs were born, the mountains would give birth to feathers and great spurs, and a ridiculous mouse would be born. Even dignissim, nisl eu lacinia fringilla, if not pure convallis eros, that ultricies lake now needs it. Morbi viverra, sem at tincidunt is accomplished, wisdom purus wisdom. Until the target of the high school career, who is the asset of the arcu accumsan id. For what it is, protein on the border of football, sometimes chocolate salad. Until not even an urn of property, for members of life, dignistis ex. But the dignissim is sad, or if it is easy, it does not take up the vestibule. So that at least a god is pregnant with an element or not an arc. At the time, Euismod is a diesel airline. Massage targeted pain points to drink.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:06:18 GMT+0530",
+                  "question":"What is the best way of investing in debt funds",
+                  "tags@LastModified":"Wed Mar 11 2020 19:06:18 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/investing-work"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:06:18 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/investing-work"
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "retirement":{
+      "jcr:primaryType":"sling:Folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:title":"retirement",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+         "sourcing":"false"
+      },
+      "retirement-funds":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"retirement money",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"retirement-funds",
+            "jcr:lastModified":"Wed Mar 11 2020 19:09:32 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:09:32 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/retirement",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"2",
+                  "answer@LastModified":"Wed Mar 11 2020 19:09:32 GMT+0530",
+                  "answer":"<p>Fusce lobortis urna ex, sauce consequat dui mollis a. There is no such thing as an urn. Children's assets are a flattering element of life. Until the lacinia sem quis vulputate scelerisque. At the time, the developer did not start the development process, but it was always followed by the bed. The whole sad tortor should be ameet rumut. Two easy fermentation diam. For my children's investment, it is in the policy to be followed in time. No one is ever important. Some people need a good deal, and a good investment. We live and the urn, but the mass of the clothes is not even a bed. To-morrow at admonition, and before the heat of the day. The full price of the valley is convenient. Hendrerit Morbi Curses. But there were no vehicles. The employee does not want to spend time on the boat.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:09:32 GMT+0530",
+                  "question":"Which funds are best to build a solid retirement portfolio",
+                  "tags@LastModified":"Wed Mar 11 2020 19:09:32 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/retirement-plans"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:09:32 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/retirement-plans"
+                  ]
+               }
+            }
+         }
+      },
+      "retirement-money":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"retirement money",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"retirement-money",
+            "jcr:lastModified":"Wed Mar 11 2020 19:08:47 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:08:47 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/retirement",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"1",
+                  "answer@LastModified":"Wed Mar 11 2020 19:08:47 GMT+0530",
+                  "answer":"<p>Vestibulum will be pursued as eu just vulputate sollicitudinum. I need members tomorrow. There are no members, now there are no eleifend members. Now the members have no pure life, but the whole world is pregnant. Mauris flatters the fear that if not vulputate, or leaventum mauris ullamcorper. But the life cycle will follow. But the eros eu urn eleifend should be decorated with drink. It's a poison for my anxiety. Maecenas that tincidunt eros. Let the children be fond of basketball, but not of the ligula pillow, but of the mauris pillow. There is no flattery or shame, football is always a time of torture. It was a weekend. Maecenas mourned, but he was a vestibule molestie, for the ugly hatred of the accumsan, nor the fear of arrows but the free one. Morbi or for Euismod, the sauce of pain or, layer of fear. Home is pain.&nbsp;&nbsp;&nbsp;&nbsp;</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:08:47 GMT+0530",
+                  "question":"How much do I need to save now so that I can enjoy retirement at Maimi?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:08:47 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/retirement-plans"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:08:47 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/retirement-plans"
+                  ]
+               }
+            }
+         }
+      },
+      "retirement-pension":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"retirement money",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"retirement-pension",
+            "jcr:lastModified":"Wed Mar 11 2020 19:08:00 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:08:00 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/retirement",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"1",
+                  "answer@LastModified":"Wed Mar 11 2020 19:08:00 GMT+0530",
+                  "answer":"<p>It's a chocolate chip to take care of. The whole time of the valley. The boat will be chased by the arrows of the members of the urn of life. In fact, the recipe from, sometimes as a weekend or, it was Fusce dignissim enim at ultricies pellentesque. Lives were popular, sad and pregnant with life, tincidunt or eros. If you don't have a boat, you don't need to worry about it, sometimes you just need to worry about it. In fact, for the kids, it will be followed before, as it was just said. No throat, laughter from vehicles vehicles, laughter from easy hatred, and mass shootings from the world. Children are living with disease, old age and children, and they are suffering from hunger and poverty. For even the easy ligula, nor the valley of laughter, is made pure. Everyone needs a bed of life that wants to be followed by the kids or like me. The boat is to be decked out, a boat in diameter. It may be useful for medical purposes only, and sometimes the players are very powerful. The customer is very important, the customer will be followed by the customer. Maecenas ullamcorper invests more than ultrices.</p>\n<p>Fusce purus tortor, mattis sadis massa, lacinia nibh. But the cause of the ferment is indeed the valley, and the financing of the orc fringilla. Live life free. Morbi is always the real estate agent. But it's important to be aware of the importance of basketball. Maecenas nor vehicles from Maecenas is not a soft pain. Everyone in no vestibule was a eulogist.&nbsp;&nbsp;&nbsp;&nbsp;</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:08:00 GMT+0530",
+                  "question":"I want to earn a regular pension at retirement age. How do I achieve that?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:08:00 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/retirement-plans"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:08:00 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/retirement-plans"
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "enrollement":{
+      "jcr:primaryType":"sling:Folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:title":"enrollement",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+         "sourcing":"false"
+      },
+      "mutual-fund-enrollment":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:mixinTypes":[
+               "cq:ReplicationStatus"
+            ],
+            "jcr:title":"enroll card",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"enroll-card",
+            "jcr:lastModified":"Wed Mar 11 2020 19:10:15 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:10:15 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/enrollement",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"0",
+                  "answer@LastModified":"Wed Mar 11 2020 19:10:15 GMT+0530",
+                  "answer":"<p>In the wise, it was said that if not, porta. But the developers, but now it is realized, was the mourning of football life. I don't want to wear makeup, but I don't need to decorate it with hate. He invests the fleet, he hates or flatters the porter, the tortor felis malesuada fear, and the real estate pure in the urn. But it is hate, my basketball employee and, the element of politics. Children are living with disease, old age and children, and they are suffering from hunger and poverty. Now it's time to be free, it's time to start the arc. Until it warms up before it is soft, sometimes in vehicles. It is also a great place for life. To-morrow, as it is worth, let it be the time that flatters the lion. Even the vehicles of the earth's life, the urn of chocolate, will be followed by vulputate for ultrice. A few or a few lakes, but it will not be a consequence of the poison. There is no just the lake, the lake is not the urn, the porttitor is just targeted. For before the lion, venenatis fringilla mauris quis, eleifend to adorn the free. Until the quiver of my life.&nbsp;&nbsp;&nbsp;&nbsp;</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:10:15 GMT+0530",
+                  "question":"How to enroll in Mutual Funds",
+                  "tags@LastModified":"Wed Mar 11 2020 19:10:15 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/enrollment"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:10:15 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/enrollment"
+                  ]
+               }
+            }
+         }
+      },
+      "membership-enrollment":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "jcr:title":"enroll card",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "jcr:description":"",
+            "contentFragment":true,
+            "cq:name":"enroll-bankaccount",
+            "jcr:lastModified":"Wed Mar 11 2020 19:11:01 GMT+0530",
+            "lastFragmentSave":"Wed Mar 11 2020 19:11:01 GMT+0530",
+            "cq:parentPath":"/content/dam/vcm/faqdetails/enrollement",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530"
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ]
+            },
+            "data":{
+               "jcr:primaryType":"nt:unstructured",
+               "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+               "master":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:mixinTypes":[
+                     "cq:Taggable"
+                  ],
+                  "faqnumber":"1",
+                  "answer@LastModified":"Wed Mar 11 2020 19:11:01 GMT+0530",
+                  "answer":"<p>The price of the boat, no in the casino sometimes, no pot of rice, and a cartoon is just what I need. He wants the vehicles of the disease, but not the members of the hospital. Don't worry about the homework. In football, the biggest pool of basketball members. The servant of the house is not to be drunk of life. The customer is very important, the customer will be followed by the customer. It was said that he should drink the rice. Aenean, if not nibh, vehicles such as vulputate, but the gate should be a lot of hate. Until the price of the hospital and the free valley, but the grief and not the ullamcorper. The bed is comfortable and the time of the vestibule is not an element of time. The class is suitable for the silent partners who turn to the shores through our marriages, through the Hymenaean enterprises.</p>\n<p>Pellants or if not earth. The main flavor of the sauce is free, not the quiver of euismod or Until the pillow is poisoned. Therefore, the mass of the element is made up of some free ends. Vivamus ullamcorper hendrerit ligula eget sad. In the era of life, it is important to be just pregnant with arrows and not with arrows. I can't even talk to the employee in the vestibule. It is a matter of interest for the lake of the Hendrerit. There are no airlines targeting the area. Fusce is not free homework, nor is the Euismod network. The class is suitable for the silent partners who turn to the shores through our marriages, through the Hymenaean projects. The burden of life as a layer of earth vehicles. Maecenas takes up euismod investment. Even if it were easy, my or the rhonus ferment, now the trigger was called the urn, and Feugiat's pure laughter and the players.</p>\n",
+                  "faqnumber@LastModified":"Wed Mar 11 2020 19:11:01 GMT+0530",
+                  "question":"What is KYC? How do I enroll for membership programme?",
+                  "tags@LastModified":"Wed Mar 11 2020 19:11:01 GMT+0530",
+                  "answer@ContentType":"text/html",
+                  "tags":[
+                     "vcm:faq/enrollment"
+                  ],
+                  "question@LastModified":"Wed Mar 11 2020 19:11:01 GMT+0530",
+                  "cq:tags":[
+                     "vcm:faq/enrollment"
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "images":{
+      "jcr:primaryType":"sling:Folder",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:title":"Images",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+         "sourcing":"false",
+         "folderThumbnail":{
+            "jcr:primaryType":"nt:file",
+            "jcr:createdBy":"admin",
+            "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+            "jcr:content":{
+               "jcr:primaryType":"nt:unstructured",
+               "dam:folderThumbnailPaths":[
+                  "/content/dam/vcm/faqdetails/images/acc-open.svg",
+                  "/content/dam/vcm/faqdetails/images/seeall-ar.svg",
+                  "/content/dam/vcm/faqdetails/images/acc-closed.svg"
+               ],
+               "height":240,
+               "jcr:mimeType":"application/octet-stream",
+               "bgcolor":-1,
+               "width":280,
+               "jcr:lastModified":"Thu Apr 02 2020 14:11:06 GMT+0530",
+               ":jcr:data":5121
+            }
+         }
+      },
+      "acc-open.svg":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "dam:assetState":"processed",
+            "jcr:lastModified":"Thu Apr 02 2020 14:29:07 GMT+0530",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+               "cq5dam.thumbnail.48.48.png":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/png",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:28:57 GMT+0530",
+                     ":jcr:data":444
+                  }
+               },
+               "cq5dam.thumbnail.140.100.png":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/png",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:28:57 GMT+0530",
+                     ":jcr:data":444
+                  }
+               },
+               "cq5dam.web.1280.1280.jpeg":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/jpeg",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:28:57 GMT+0530",
+                     ":jcr:data":942
+                  }
+               },
+               "original":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"admin",
+                     "jcr:mimeType":"image/svg+xml",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                     ":jcr:data":423
+                  }
+               },
+               "cq5dam.web.1155.560.jpeg":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/jpeg",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                     ":jcr:data":775
+                  }
+               },
+               "cq5dam.thumbnail.319.319.png":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/png",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:28:57 GMT+0530",
+                     ":jcr:data":444
+                  }
+               }
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ],
+               "jcr:lastModifiedBy":"admin",
+               "dam:extracted":"Thu Apr 02 2020 14:28:57 GMT+0530",
+               "dc:format":"image/svg+xml",
+               "dc:modified":"Tue Mar 17 2020 16:47:07 GMT+0530",
+               "jcr:lastModified":"Thu Apr 02 2020 14:29:07 GMT+0530",
+               "dam:sha1":"db07c776f9a7a0a72a33e9c812749afa906183b6",
+               "dam:size":423
+            }
+         }
+      },
+      "seeall-ar.svg":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "dam:assetState":"processed",
+            "jcr:lastModified":"Thu Apr 02 2020 14:29:01 GMT+0530",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+               "cq5dam.thumbnail.48.48.png":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/png",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:29:01 GMT+0530",
+                     ":jcr:data":636
+                  }
+               },
+               "cq5dam.thumbnail.140.100.png":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/png",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:29:00 GMT+0530",
+                     ":jcr:data":636
+                  }
+               },
+               "cq5dam.web.1280.1280.jpeg":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/jpeg",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:29:01 GMT+0530",
+                     ":jcr:data":1212
+                  }
+               },
+               "original":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"admin",
+                     "jcr:mimeType":"image/svg+xml",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                     ":jcr:data":528
+                  }
+               },
+               "cq5dam.web.1155.560.jpeg":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/jpeg",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                     ":jcr:data":881
+                  }
+               },
+               "cq5dam.thumbnail.319.319.png":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/png",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:29:01 GMT+0530",
+                     ":jcr:data":636
+                  }
+               }
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ],
+               "jcr:lastModifiedBy":"admin",
+               "dam:extracted":"Thu Apr 02 2020 14:29:00 GMT+0530",
+               "dc:format":"image/svg+xml",
+               "dc:modified":"Tue Mar 17 2020 16:47:07 GMT+0530",
+               "jcr:lastModified":"Thu Apr 02 2020 14:28:58 GMT+0530",
+               "dam:sha1":"e36eb1400736ca52b314086bb9d6da34e2368e7a",
+               "dam:size":528
+            }
+         }
+      },
+      "acc-closed.svg":{
+         "jcr:primaryType":"dam:Asset",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:content":{
+            "jcr:primaryType":"dam:AssetContent",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"vmohanam",
+            "jcr:lastModifiedBy":"admin",
+            "cq:lastReplicated":"Mon Mar 30 2020 10:12:59 GMT+0000",
+            "dam:assetState":"processed",
+            "jcr:lastModified":"Thu Apr 02 2020 14:29:07 GMT+0530",
+            "renditions":{
+               "jcr:primaryType":"nt:folder",
+               "jcr:createdBy":"admin",
+               "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+               "cq5dam.thumbnail.48.48.png":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/png",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:29:07 GMT+0530",
+                     ":jcr:data":442
+                  }
+               },
+               "cq5dam.thumbnail.140.100.png":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/png",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:29:07 GMT+0530",
+                     ":jcr:data":442
+                  }
+               },
+               "cq5dam.web.1280.1280.jpeg":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/jpeg",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:29:07 GMT+0530",
+                     ":jcr:data":948
+                  }
+               },
+               "original":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"admin",
+                     "jcr:mimeType":"image/svg+xml",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                     ":jcr:data":479
+                  }
+               },
+               "cq5dam.web.1155.560.jpeg":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/jpeg",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                     ":jcr:data":779
+                  }
+               },
+               "cq5dam.thumbnail.319.319.png":{
+                  "jcr:primaryType":"nt:file",
+                  "jcr:createdBy":"admin",
+                  "jcr:created":"Thu Apr 02 2020 14:27:46 GMT+0530",
+                  "jcr:content":{
+                     "jcr:primaryType":"oak:Resource",
+                     "jcr:lastModifiedBy":"workflow-process-service",
+                     "jcr:mimeType":"image/png",
+                     "jcr:lastModified":"Thu Apr 02 2020 14:29:07 GMT+0530",
+                     ":jcr:data":442
+                  }
+               }
+            },
+            "related":{
+               "jcr:primaryType":"nt:unstructured"
+            },
+            "metadata":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:mixinTypes":[
+                  "cq:Taggable"
+               ],
+               "jcr:lastModifiedBy":"admin",
+               "dam:extracted":"Thu Apr 02 2020 14:29:07 GMT+0530",
+               "dc:format":"image/svg+xml",
+               "dc:modified":"Tue Mar 17 2020 16:47:07 GMT+0530",
+               "jcr:lastModified":"Thu Apr 02 2020 14:28:41 GMT+0530",
+               "dam:sha1":"ca1b9b550508842d1a3e02b0a2fc915942155ac9",
+               "dam:size":479
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,24 @@
+<sly data-sly-test.author="${wcmmode.edit}">Edit Related Articles Component</sly>
+<sly data-sly-use.model="com.vcm.core.models.RelatedArticlesModel"/>
+<div class="st-cmp-wrapper st-related-article-wrapper st-all-about-mutual-fund">
+    <span class="st-subheading">${model.heading}</span>
+    <div role="list">
+        <sly data-sly-test="${model.articlePoints}">
+            <sly data-sly-list.articlePoints="${model.articlePoints}">
+                <div class="article-link-border" role="listitem">
+                    <a class="st-link-box" href="${articlePoints.linkUrl}" target="${articlePoints.tabSelect}" rel="${articlePoints.tabSelect == '_blank' ? 'noopener noreferrer' : ''}">
+                        <section>
+                            <div class="st-boxModel">
+                                <img src="${articlePoints.thumbnailImage}" class="st-box-img"/>
+                                <div class="st-contentBox ${model.hideRightArrow? 'hide-right-arrow':''}">${articlePoints.articleText}</div>
+                                <sly data-sly-test.rightArrow="${!model.hideRightArrow}">
+                                    <span class="st-rightArrow" aria-hidden="true"></span>
+                                </sly>
+                            </div>
+                        </section>
+                    </a>
+                </div>
+            </sly>
+        </sly>
+    </div>
+</div>

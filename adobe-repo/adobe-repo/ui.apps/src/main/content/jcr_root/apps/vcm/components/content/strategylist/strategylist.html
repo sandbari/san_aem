@@ -1,0 +1,57 @@
+<sly data-sly-test.author="${wcmmode.edit}"> Edit
+${component.title} Component </sly>
+<sly data-sly-use.listModel="com.vcm.core.models.StrategyListModel">
+<script type="application/json" id="strategyListData">
+  		${listModel.strategyList.toString @ context="unsafe"}
+  </script> <input type="hidden" id="strategyListEndpoint"
+	value="${listModel.strategyListEndpoint}" /> <input type="hidden"
+	id="strategyApiKey" value="${listModel.strategyListApiKey}" />
+	<input type="hidden" id="apiFailureMessage" value="${listModel.apiCallFailureMessage || 'API Call Failed'}"/>
+	<input type="hidden" id="stLabels" value="${listModel.strategyListLabels}"/> </sly>
+  <div class="Strategy-container container">
+    <!-- Search box starts-->
+    <div class="search-strategies-container">
+      <label class="lblSearch d-block" id="strategic-search" for="searchStrategies">Search</label>
+      <input for="searchStrategies" type="text" class="form-control search-strategies" id="searchStrategies" placeholder="Search Strategies">
+    </div> 
+    <!-- Search box ends-->
+      <div class="dynamic-loader">
+    	 <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+      </div>
+    <div class="strategy-list active">
+      <!-- filter section starts-->
+      <div class="sidebar-collapse filter-width">
+        <div class="arrow-container">
+          <p class="fund-title strategy-filter-lbl" role="button" tabindex="0" aria-expanded="false"><span class="filter"></span></p>
+
+          <p class="fund-title accordian-close"><span class="str_close"></span></p>
+
+          <span class="angle--arrow"></span> 
+        </div>
+        <div id="accordion" class="accordion">
+        </div>      
+      </div>    
+    <!-- filter section ends-->
+
+    <!-- content starts here-->
+    <div class="content pc-content-width strategies-table-container">
+      <table id="strategiesTable" class="display" width="100%" aria-readonly="true">
+          <caption class="sr-only">Strategies</caption>
+          <thead>
+            <tr>
+              <th sccope="col"><span class="strategy_name" role="button" tabindex="0"></span></th>
+              <th sccope="col"><span class="asset_class" role="button" tabindex="0"></span></th>
+              <th sccope="col"><span class="category" role="button" tabindex="0"></span></th>
+            </tr>
+          </thead>
+        </table>
+      <span class="sr-only table-info" aria-live="polite"></span>
+      </div>
+    </div>
+    <!-- content ends here-->
+
+    <div class="scroll-top" id="scrollTop">
+      <span class="to_top"></span>
+    </div>
+
+  </div>

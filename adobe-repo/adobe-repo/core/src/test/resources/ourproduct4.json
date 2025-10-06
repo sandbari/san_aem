@@ -1,0 +1,51 @@
+{
+   "jcr:primaryType":"nt:unstructured",
+   "jcr:createdBy":"admin",
+   "jcr:lastModifiedBy":"admin",
+   "contentType":"descriptionlink",
+   "jcr:created":"Mon Apr 20 2020 19:13:40 GMT+0530",
+   "title":"Our Products",
+   "variant":"linktext",
+   "jcr:lastModified":"Mon Apr 20 2020 20:03:54 GMT+0530",
+   "sling:resourceType":"vcm/components/content/ourproducts",
+   "textIsRich":[
+      "true",
+      "true",
+      "true",
+      "true",
+      "true",
+      "true",
+      "true"
+   ],
+   "sectionDescription":"<p>This is description</p>\r\n",
+   "productList":{
+      "jcr:primaryType":"nt:unstructured",
+      "item0":{
+         "jcr:primaryType":"nt:unstructured",
+         "leftColumnDescription":"<p>This is fund details</p>\r\n",
+         "leftColumnTitle":"fund details",
+         "rightColumnTitle":"This is new test",
+         "rightColumnDescription":"<p>This is new test</p>\r\n",
+         "audienceType":"usaa_member, financial_professional, institutional_investor",
+         "rightColumnButtonText":"Button Text",
+         "productBlueText":"Retired",
+         "productLinkUrl":"/content/vcm/us/en/member/about-victory/corporate-responsibility",
+         "productGreyText":"I am ",
+         "rightColumnLink":"/content/vcm/us/en/member/about-victory",
+         "tabSelect":[
+            "_self",
+            "_self"
+         ],
+		"overlayLinkDesc": "Overlay Link",
+		"linkDescriptionType": "Link Desc Type"
+      },
+      "item1":{
+         "jcr:primaryType":"nt:unstructured",
+         "audienceType":"usaa_member, financial_professional, institutional_investor",
+         "tabSelect":[
+            "_self",
+            "_self"
+         ]
+      }
+   }
+}

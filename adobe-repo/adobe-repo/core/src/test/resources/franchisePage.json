@@ -1,0 +1,15 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "admin",
+	"description": "<p>Investment franchise description</p>\r\n",
+	"jcr:lastModifiedBy": "admin",
+	"jcr:created": "Mon Feb 03 2020 15:31:29 GMT+0530",
+	"rootPath": "/content/vcm/en/investment-franchise",
+	"linkUrl": "/content/we-retail/ca/en/user",
+	"heading": "Investment franchise heading",
+	"jcr:lastModified": "Fri Feb 07 2020 17:38:15 GMT+0530",
+	"sling:resourceType": "vcm/components/content/investmentfranchises",
+	"textIsRich": "true",
+	"displayStyle": "GreyBackground",
+	"viewDetail": "click for more"
+} 

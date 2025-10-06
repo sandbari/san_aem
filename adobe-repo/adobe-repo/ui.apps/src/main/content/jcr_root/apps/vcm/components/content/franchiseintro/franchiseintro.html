@@ -1,0 +1,27 @@
+<sly data-sly-test="${wcmmode.edit}"> Edit Franchise Intro Component.
+<sly data-sly-use.model="com.vcm.core.models.FranchiseIntroModel"/>
+<div class="container">
+<div class="content-wrapper">
+<div data-sly-test.heading="${model.strategyHeading}" class="investment-block">
+
+        <div class="threeColCmpnt-block" style='width:100%;'>
+        <div class="section-text">
+					<sly data-sly-test.heading="${model.strategyHeading}">
+						<h3 class="blueHdng-multiLine-greenBorder">${heading}</h3>
+					</sly>
+
+			<sly data-sly-test.introDesc="${model.strategyDescription}">
+			${model.strategyDescription @ context="html"}
+            </sly>
+            </div>
+
+			<sly data-sly-test.linkUrl="${model.strategyLinkUrl}">
+                <div class="bottom-txt">
+                       <a class="arrowtext-rightArrow blue-txt" href="${model.strategyLinkUrl}" aria-label="${model.linkAriaLabel}">${model.strategyViewDetail || 'View Strategy' @i18n}</a>
+                </div>
+            </sly>
+		</div>
+</div>
+</div>
+</div>
+</sly>

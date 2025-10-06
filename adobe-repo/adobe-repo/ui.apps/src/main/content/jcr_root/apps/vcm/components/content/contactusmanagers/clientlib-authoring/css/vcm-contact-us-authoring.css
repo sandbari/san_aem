@@ -1,0 +1,12 @@
+.coral3-Multifield-item:after{
+	content: '';
+    position: absolute;
+    bottom: -1.1925rem;
+    left: -0.7825rem;
+    right: -0.7825rem;
+    height: .04rem;
+    background: #bebebe;
+}
+.coral3-Multifield-item:last-of-type:after{
+	 height: 0;
+}

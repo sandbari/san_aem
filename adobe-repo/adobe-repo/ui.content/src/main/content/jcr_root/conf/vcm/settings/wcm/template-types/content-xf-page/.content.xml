@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastReplicated="{Date}2020-04-19T07:17:02.225Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        jcr:description="VCM generic template for xf page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="VCM template type for xf page"/>
+</jcr:root>

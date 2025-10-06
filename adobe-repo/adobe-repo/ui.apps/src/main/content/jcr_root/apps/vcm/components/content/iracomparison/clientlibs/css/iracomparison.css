@@ -1,0 +1,252 @@
+
+.st-ira-wrapper .st-section-heading {
+    font-size: 26px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+    line-height: 28px;
+}
+.st-ira-wrapper p {
+    color: rgb(73, 73, 74);
+    font-size: 16px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 400;
+}
+.st-ira-wrapper .st-heading-blue {
+    color: rgb(72, 109, 144);
+}
+.st-ira-wrapper .st-section-heading::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    border-width: 2px 2px 2px;
+    border-style: solid solid none;
+    border-color: rgb(139, 193, 5) rgb(139, 193, 5) rgb(139, 193, 5);
+    border-image: initial;
+}
+.st-ira-wrapper .st-ira-table-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 55px 0;
+    text-align: center;
+}
+
+.st-ira-table-wrap .st-button {
+    line-height: 20px;
+}
+.st-ira-desc-text{
+	margin: 15px 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.st-circle-text {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    color: #54565A;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 41px;
+    text-align: center;
+    font: 20px/41px bold benton-sans, sans-serif;
+}
+
+.st-ira-table-header h3 {
+    display: inline-block;
+    line-height: 28px;
+    font-weight: 700;
+	    color: #486D90;
+}
+
+.st-ira-text {
+    margin: 21px 0 27px 0;
+    color: #49494A;
+    font: 700 18px/22px benton-sans, sans-serif;
+    text-align: center;
+    padding: 0 8px;
+}
+
+.st-ira-table {
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.st-ira-table-header {
+    width: 100%;
+    margin-bottom: 10px;    
+    margin-top: 50px;
+}
+
+.st-ira-table tbody tr:nth-child(1) {
+    border-top: 2px solid #8BC105;
+}
+
+.st-ira-table tbody tr:nth-child(odd) {
+    background: #fff
+}
+
+.st-ira-table-header th {
+    background: #F7F7F7;
+    padding: 0 15px;
+}
+
+.st-ira-table-header th:nth-child(1) {
+    width: 47%;
+    text-align: right;
+}
+
+.st-ira-table-header th:nth-child(2) {
+    width: 6%;
+    padding: 0;
+}
+
+.st-ira-table-header th:last-child {
+    text-align: left;
+}
+
+.st-ira-table td {
+    padding: 18px 20px;
+    width: 50%;
+	    vertical-align: baseline;
+    text-align: left;
+}
+
+.st-ira-table p {
+    margin: 0;
+}
+
+.st-ira-table td:first-child {
+    border-right: 1px solid #D2D2D2;
+}
+.st-ira-table{position:relative;}
+
+tr.vs-row th {
+	line-height: 45px;
+    font-weight: 700;
+    color: #486d90;
+    padding:10px 0;
+}
+.vs-row th h3 {
+    text-align: left;
+    padding-left: 37px;
+}
+.st-table-desc {
+    padding:15px;
+}
+
+.vs-row th:first-child h3 {
+    text-align: right;
+    padding-right: 37px;
+}
+.vs-text{
+    position:absolute;
+    left:50%;
+    top:10px;
+    margin-left:-22px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    color: #54565a;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 41px;
+    text-align: center;
+    font: 20px/41px bold benton-sans,sans-serif;
+}
+
+/*Button Styles*/
+
+.iracomparison a.st-button {
+    border: 0;
+    font-size: 16px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background: #486D90;
+    padding: 15px 31px 15px 30px;
+    min-height: 50px;
+    color: #fff;
+}
+
+.iracomparison a.st-green-btn {
+    background: #8BC105;
+    color: #252527;
+}
+
+.iracomparison a.st-badge-btn {
+    position: relative;
+}
+
+.iracomparison a.st-badge-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+}
+
+.iracomparison a.st-green-badge-btn::after {
+    border-right-color: #8BC105;
+    border-top-color: #8BC105;
+}
+
+/***************** TABLET STYLES *****************/
+
+@media screen and (max-width:1024px) {
+
+}
+
+@media screen and (max-width:991px) {
+
+}
+
+/***************** MOBILE STYLES *****************/
+
+@media screen and (max-width:767px) {
+
+    .st-ira-table-header {
+        margin-bottom: 30px;
+    }
+    .st-ira-table-header h3 {
+        font-size: 20px;
+        text-align: center;
+        line-height: 22px;
+    }
+    .st-ira-wrapper .st-ira-table-wrap {
+        padding: 27px 0;
+    }
+    .st-ira-table p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .st-ira-table td {
+        padding: 15px 28px;
+    }
+    .st-circle-text {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .st-ira-table-header th:nth-child(2) {
+        vertical-align: middle;
+    }
+    .st-ira-table-header th:nth-child(1) h3 {
+        width: 105px;
+    }
+    .st-ira-table-header th:nth-child(3) h3 {
+        width: 50px;
+    }
+    .st-ira-text {
+        margin-bottom: 30px;
+    }
+
+}

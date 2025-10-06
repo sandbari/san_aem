@@ -1,0 +1,124 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Feb 14 2020 12:30:48 GMT+0530",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "USAA Investments",
+    "cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+    "jcr:created": "Fri Feb 14 2020 12:30:48 GMT+0530",
+    "cq:lastModified": "Mon Feb 17 2020 11:35:05 GMT+0530",
+    "sling:resourceType": "vcm/components/structure/page",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "investmentteam": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "admin",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Mon Feb 17 2020 11:33:53 GMT+0530",
+          "rootPath": "/content/vcm/us/en/investment-franchises/usaa-mutual-funds/usaa-investments",
+          "heading": "Investment Teams",
+          "teamDisplayStyle": "black",
+          "jcr:lastModified": "Mon Feb 17 2020 11:35:05 GMT+0530",
+          "linkText": "Learn More",
+          "sling:resourceType": "vcm/components/content/investmentteam"
+        }
+      }
+    }
+  },
+  "john-spear-cfa": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Feb 14 2020 12:31:40 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "john-spear-cfa",
+      "cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+      "jcr:created": "Fri Feb 14 2020 12:31:40 GMT+0530",
+      "cq:lastModified": "Mon Feb 17 2020 11:36:47 GMT+0530",
+      "sling:resourceType": "vcm/components/structure/page",
+      "cq:lastModifiedBy": "admin",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "leaderbio_copy": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "bioPicture": "/content/dam/we-retail/en/people/mens/men_5.jpg",
+            "jcr:lastModifiedBy": "admin",
+            "titleAbbreviation": "CFA",
+            "altText": "Men",
+            "profileDescription": "<p>Mannik S. Dhillon serves as president of VictoryShares and Solutions for Victory Capital. In this role, he leads and oversees the firm’s exchange-traded and solutions business. He is also responsible for setting the strategy and initiating the development and implementation of Victory’s strategic beta-based offerings. Additionally, he manages the solutions provided by our investment franchises, which includes product enhancements, extensions and innovations designed to best meet the needs of clients. Mr. Dhillon also contributes to the evaluation of capabilities of potential new franchises as part of the firm’s acquisition strategy.</p>\r\n<p>Prior to joining Victory Capital in 2015, Mr. Dhillon served as a managing director and head of manager research with Wilshire Associates. While there, he led the team responsible for evaluating asset managers for inclusion in Wilshire’s multi-manager portfolios. He was also in charge of leading strategic consulting engagements for Wilshire. Mr. Dhillon has a strong background on the institutional consulting side of the business, where he spent nine years as a manager research and defined contribution consultant with Hewitt before joining Wilshire in 2010.</p>\r\n<p>Mr. Dhillon earned his Bachelor of Business Administration degree in finance from the University of Georgia. He holds the Chartered Financial Analyst® and Chartered Alternative Investment Analyst designations.</p>\r\n",
+            "bioDisplayStyle": "leaderBio",
+            "jcr:created": "Fri Feb 14 2020 12:50:21 GMT+0530",
+            "titleDescription": "Victory Capital Chief Investment Officer - USAA Investments, a Victory Capital Investment Franchise",
+            "jcr:lastModified": "Mon Feb 17 2020 11:36:47 GMT+0530",
+            "linkText": "Back",
+            "sling:resourceType": "vcm/components/content/leaderbio",
+            "fullname": "John Spear",
+            "textIsRich": [
+              "true",
+              "true"
+            ],
+            "shortDescription": "Mannik S. Dhillon&nbsp;serves as president of VictoryShares and Solutions for Victory Capital. In this role, he leads and oversees the firm’s exchange-traded and solutions business"
+          }
+        }
+      }
+    }
+  },
+  "dan-banaszak-cfa": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Feb 14 2020 12:32:00 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "dan-banaszak-cfa",
+      "cq:template": "/conf/vcm/settings/wcm/templates/content-page",
+      "jcr:created": "Fri Feb 14 2020 12:32:00 GMT+0530",
+      "cq:lastModified": "Mon Feb 17 2020 11:40:17 GMT+0530",
+      "sling:resourceType": "vcm/components/structure/page",
+      "cq:lastModifiedBy": "admin",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "leaderbio_copy": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "bioPicture": "/content/dam/we-retail/en/people/mens/men_5.jpg",
+            "jcr:lastModifiedBy": "admin",
+            "titleAbbreviation": "CFA",
+            "altText": "Men",
+            "designation": "President, VictoryShares and Solutions",
+            "profileDescription": "<p>Mannik S. Dhillon serves as president of VictoryShares and Solutions for Victory Capital. In this role, he leads and oversees the firm’s exchange-traded and solutions business. He is also responsible for setting the strategy and initiating the development and implementation of Victory’s strategic beta-based offerings. Additionally, he manages the solutions provided by our investment franchises, which includes product enhancements, extensions and innovations designed to best meet the needs of clients. Mr. Dhillon also contributes to the evaluation of capabilities of potential new franchises as part of the firm’s acquisition strategy.</p>\r\n<p>Prior to joining Victory Capital in 2015, Mr. Dhillon served as a managing director and head of manager research with Wilshire Associates. While there, he led the team responsible for evaluating asset managers for inclusion in Wilshire’s multi-manager portfolios. He was also in charge of leading strategic consulting engagements for Wilshire. Mr. Dhillon has a strong background on the institutional consulting side of the business, where he spent nine years as a manager research and defined contribution consultant with Hewitt before joining Wilshire in 2010.</p>\r\n<p>Mr. Dhillon earned his Bachelor of Business Administration degree in finance from the University of Georgia. He holds the Chartered Financial Analyst® and Chartered Alternative Investment Analyst designations.</p>\r\n",
+            "bioDisplayStyle": "leaderBio",
+            "jcr:created": "Fri Feb 14 2020 12:50:21 GMT+0530",
+            "titleDescription": "Victory Capital Chief Investment Officer - USAA Investments, a Victory Capital Investment Franchise",
+            "jcr:lastModified": "Mon Feb 17 2020 11:40:17 GMT+0530",
+            "linkText": "Back",
+            "sling:resourceType": "vcm/components/content/leaderbio",
+            "fullname": "Dan Banaszak",
+            "textIsRich": [
+              "true",
+              "true"
+            ],
+            "shortDescription": "Prior to joining Victory Capital in 2015, Mr. Dhillon served as a managing director and head of manager research with Wilshire Associates. While there, he led the team responsible for evaluating asset managers for inclusion in Wilshire’s multi-manager portfolios. He was also in charge of leading strategic consulting engagements for Wilshire"
+          }
+        }
+      }
+    }
+  }
+}

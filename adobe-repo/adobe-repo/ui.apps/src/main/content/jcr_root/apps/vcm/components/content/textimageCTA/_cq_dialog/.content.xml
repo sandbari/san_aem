@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="TexImageCTA"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[variations.showhidefields]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <variation
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Variations"
+                                                name="./variation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <selectvariation
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Select Variation Here"
+                                                        value=""/>
+                                                    <CardImageWithBigHeading
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="CardImageWithBigHeading"
+                                                        value="cardImageWithBigHeading"/>
+                                                    <TextView
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Textview"
+                                                        value="textView"/>
+                                                    <CardWithTextView
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="CardWithTextView"
+                                                        value="cardWithTextView"/>
+                                                    <ColorCardWithGreenButton
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="ColorCardWithGreenButton"
+                                                        value="colorCardWithGreenButton"/>
+                                                    <CardWithTitleAndText
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="CardWithTitleAndText"
+                                                        value="cardWithTitleAndText"/>
+                                                    <CardWithTitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="CardWithTitle"
+                                                        value="cardWithTitle"/>
+                                                    <CardWithoutTitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="CardWithoutTitle"
+                                                        value="cardWithoutTitle"/>
+                                                    <CardWithIcon
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="CardWithIcon"
+                                                        value="cardWithIcon"/>
+                                                    <CardImageWithContent
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="CardImageWithContent"
+                                                        value="cardImageWithContent"/>
+                                                    <CardImageWithMidHeading
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="CardImageWithMidHeading"
+                                                        value="cardImageWithMidHeading"/>
+                                                    <CardWithoutImage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="CardWithoutImage"
+                                                        value="cardWithoutImage"/>
+                                                    <CardWithHeading
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="CardWithHeading"
+                                                        value="cardWithHeading"/>
+                                                    <FullPagetext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="FullPagetext"
+                                                        value="fullpagetext"/>
+                                                </items>
+                                            </variation>
+                                            <backgroundimage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="To author background image"
+                                                fieldLabel="BackgroundImage"
+                                                name="./backgroundImage">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardImageWithBigHeading-cardWithTitle-cardWithoutTitle-cardWithIcon-cardImageWithContent-cardImageWithMidHeading"/>
+                                            </backgroundimage>
+                                            <alttext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author alternate text background image"
+                                                fieldLabel="Alternate Text"
+                                                name="./altText">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardImageWithBigHeading-cardWithTitle-cardWithoutTitle-cardWithIcon-cardImageWithContent-cardImageWithMidHeading"/>
+                                            </alttext>
+                                            <sectiontitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author section title for the variations"
+                                                fieldLabel="Section Title"
+                                                name="./sectionTitle">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardImageWithBigHeading-cardWithTitle-cardWithIcon-cardImageWithMidHeading-cardWithTitleAndText"/>
+                                            </sectiontitle>
+                                            <sectionstyle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="To author background color to be applied on the section title"
+                                                fieldLabel="Section Style"
+                                                name="./sectionStyle">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <None
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="None"
+                                                        value="transparent"/>
+                                                    <LeftCornerGreenShadow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="LeftCornerGreenShadow"
+                                                        value="#8BC105"/>
+                                                    <BlueBGTitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="BlueBGTitle"
+                                                        value="#004A98"/>
+                                                    <LightBlueBGTitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="LightBlueBGTitle"
+                                                        value="#486D90"/>
+                                                    <BlackBGTitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="BlackBGTitle"
+                                                        value="#49494A"/>
+                                                    <PurpleBGTitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="PurpleBGTitle"
+                                                        value="#792C7A"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardImageWithBigHeading-cardWithTextView-cardWithTitle-cardWithIcon-cardImageWithContent-cardImageWithMidHeading-cardWithHeading-cardWithTitleAndText-colorCardWithGreenButton"/>
+                                            </sectionstyle>
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author heading for the variations"
+                                                fieldLabel="Heading"
+                                                name="./heading">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardImageWithBigHeading-textView-cardWithTextView-cardWithTitle-cardWithoutTitle-cardWithIcon-cardImageWithContent-cardImageWithMidHeading-cardWithoutImage-cardWithHeading-fullpagetext-cardWithTitleAndText-colorCardWithGreenButton"/>
+                                            </heading>
+                                            <greenUnderline
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <greenUnderline
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        fieldDescription="To author for enabling green underline for the heading"
+                                                        fieldLabel="Enable Heading with Underline?"
+                                                        name="./greenUnderline"
+                                                        text="Enable Heading with Underline?"
+                                                        value="true">
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cqDialogDropdownShowhideTarget="textView-cardWithTextView-cardWithTitle-cardWithoutTitle-cardWithIcon-cardWithoutImage-colorCardWithGreenButton"/>
+                                                    </greenUnderline>
+                                                </items>
+                                            </greenUnderline>
+											<headingalignment
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/container">
+												<items jcr:primaryType="nt:unstructured">
+													<headingalignment
+														jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+														fieldDescription="To Apply heading alignment up on the image"
+														fieldLabel="Enable Heading alignment for image?"
+														name="./headingAlignment"
+														text="Enable Heading alignment for image?"
+														value="true">
+														<granite:data
+															jcr:primaryType="nt:unstructured"
+															cqDialogDropdownShowhideTarget="cardWithTitle-cardWithoutTitle"/>
+													</headingalignment>
+												</items>
+											</headingalignment>
+                                            <note
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author simple note below the heading"
+                                                fieldLabel="Note"
+                                                name="./note">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardWithTitle-cardWithoutTitle-cardWithoutImage"/>
+                                            </note>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="Ritch Text field to author the description "
+                                                fieldLabel="Description"
+                                                name="./description"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="vcm/components/content/common/uiSettings"/>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="textView-cardWithTextView-cardWithTitle-cardWithoutTitle-colorCardWithGreenButton-cardImageWithContent-cardWithoutImage-fullpagetext-cardWithTitleAndText"/>
+                                            </description>
+                                            <nooflinks
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <nooflinks
+                                                        granite:class="cq-dialog-checkbox-showhide"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        fieldDescription="To author whether to enable two links"
+                                                        fieldLabel="Enable 2 links?"
+                                                        name="./noOfLinks"
+                                                        text="Enable 2 links?"
+                                                        uncheckedValue="false"
+                                                        value="true">
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq-dialog-checkbox-showhide-target=".togglefield"
+                                                            cqDialogDropdownShowhideTarget="textView-cardWithTitleAndText"/>
+                                                    </nooflinks>
+                                                </items>
+                                            </nooflinks>
+                                            <linktext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author text for the  urls"
+                                                fieldLabel="Link Text"
+                                                name="./linkText">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardImageWithBigHeading-textView-cardWithTextView-colorCardWithGreenButton-cardWithTitle-cardWithoutTitle-cardWithIcon-cardImageWithContent-cardImageWithMidHeading-cardWithoutImage-cardWithHeading-cardWithTitleAndText"/>
+                                            </linktext>
+                                            <linkurl
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="To author the link for redirecting on click of the link text"
+                                                fieldLabel="Link Url"
+                                                name="./linkUrl"
+                                                rootPath="/content">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardImageWithBigHeading-textView-cardWithTextView-cardWithTitle-colorCardWithGreenButton-cardWithoutTitle-cardWithIcon-cardImageWithContent-cardImageWithMidHeading-cardWithoutImage-cardWithHeading-cardWithTitleAndText"/>
+                                            </linkurl>
+                                            <linkdescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author detailed description for link text "
+                                                fieldLabel="Link Description"
+                                                name="./linkDescription">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardImageWithBigHeading-textView-cardWithTextView-cardWithTitle-cardWithoutTitle-cardWithIcon-cardImageWithContent-cardImageWithMidHeading-cardWithoutImage-cardWithHeading-cardWithTitleAndText"/>
+                                            </linkdescription>
+                                            <linkStyle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="To author either forward or backward link arrow to appear"
+                                                fieldLabel="Link Style"
+                                                name="./linkStyle">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <forwardArrow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="ForwardArrow"
+                                                        value="forwardArrow"/>
+                                                    <backwardArrow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="BackwardArrow"
+                                                        value="backwardArrow"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="textView"/>
+                                            </linkStyle>
+                                            <buttonstyle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <buttonstyle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        fieldDescription="To author whether to enable link text to appear as button"
+                                                        fieldLabel="Enable button?"
+                                                        name="./buttonStyle"
+                                                        text="Enable button?"
+                                                        value="true">
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cqDialogDropdownShowhideTarget="cardWithTextView-colorCardWithGreenButton-cardWithTitle-cardWithoutTitle-cardWithIcon-cardImageWithContent-cardWithoutImage-cardWithHeading-textView-cardWithTitleAndText"/>
+                                                    </buttonstyle>
+                                                </items>
+                                            </buttonstyle>
+                                            <tabselect
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="To author target for link to be open in or new tab"
+                                                fieldLabel="Target"
+                                                name="./tabSelect">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Same tab"
+                                                        value="_self"/>
+                                                    <newtab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="New tab"
+                                                        value="_blank"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardImageWithBigHeading-textView-cardWithTextView-colorCardWithGreenButton-cardWithTitle-cardWithoutTitle-cardWithIcon-cardImageWithContent-cardImageWithMidHeading-cardWithoutImage-cardWithHeading-cardWithTitleAndText"/>
+                                            </tabselect>
+                                            <popupoverlaycontent
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="To author popup overlay content"
+                                                fieldLabel="Attach Popup overlay content"
+                                                name="./popupOverlayContentPath">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cqDialogDropdownShowhideTarget="cardImageWithBigHeading-textView-cardWithTextView-colorCardWithGreenButton-cardWithTitle-cardWithoutTitle-cardWithIcon-cardImageWithContent-cardImageWithMidHeading-cardWithoutImage-cardWithHeading-cardWithTitleAndText"/>
+                                            </popupoverlaycontent>
+                                            <togglefields
+                                                granite:class="togglefield"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <secondlinktext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="To author text for the  urls"
+                                                        fieldLabel="Second Link Text"
+                                                        name="./secondLinkText"/>
+                                                    <secondlinkurl
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="To author the link for redirecting on click of the link text"
+                                                        fieldLabel="Second Link Url"
+                                                        name="./secondLinkUrl"
+                                                        rootPath="/content"/>
+                                                    <secondLinkdescription
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="To author detailed description for link text "
+                                                        fieldLabel="Second Link Description"
+                                                        name="./secondLinkDescription"/>
+                                                    <linkStyleForScndLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldDescription="To author either forward or backward link arrow to appear"
+                                                        fieldLabel="Link Style For Second Link"
+                                                        name="./linkStyleForScndLink">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <forwardArrow
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="ForwardArrow"
+                                                                value="forwardArrow"/>
+                                                            <backwardArrow
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="BackwardArrow"
+                                                                value="backwardArrow"/>
+                                                        </items>
+                                                    </linkStyleForScndLink>
+                                                    <buttonstyleForScndLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <buttonstyleForScndLink
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                fieldDescription="To author whether to enable link text to appear as button"
+                                                                fieldLabel="Enable button?"
+                                                                name="./buttonStyleForScndLink"
+                                                                text="Enable button For Second Link?"
+                                                                value="true"/>
+                                                        </items>
+                                                    </buttonstyleForScndLink>
+                                                    <tabselectForScndLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldDescription="To author target for second link to be open in or new tab"
+                                                        fieldLabel="Target For Second Link"
+                                                        name="./tabSelectForScndLink">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <sametab
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Same tab"
+                                                                value="_self"/>
+                                                            <newtab
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="New tab"
+                                                                value="_blank"/>
+                                                        </items>
+                                                    </tabselectForScndLink>
+                                                    <popupoverlaycontentForScndLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldDescription="To author popup overlay content for second link"
+                                                        fieldLabel="Attach Popup overlay content For Second Link"
+                                                        name="./popupOverlayContentPathForScndLink"
+                                                        rootPath="/content/dam/"/>
+                                                </items>
+                                            </togglefields>
+											<cardshadow
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/container">
+													<items jcr:primaryType="nt:unstructured">
+														<cardshadow
+															jcr:primaryType="nt:unstructured"
+															sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+															fieldDescription="To author whether shadowed card is required"
+															fieldLabel="Enable card with shadow?"
+															name="./cardShadow"
+															text="Enable card with shadow?"
+															value="true">
+															<granite:data
+																jcr:primaryType="nt:unstructured"
+																cqDialogDropdownShowhideTarget="cardImageWithBigHeading-cardWithTextView-colorCardWithGreenButton-cardWithTitle-cardWithoutTitle-cardWithIcon-cardImageWithContent-cardImageWithMidHeading-cardWithoutImage-cardWithHeading-cardWithTitleAndText"/>
+														</cardshadow>
+													</items>
+											</cardshadow>
+											<backgroundstyle
+                                                jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/form/select"
+												fieldDescription="Choose Background Style"
+												fieldLabel="Background Style"
+												name="./backgroundStyle">
+													<items jcr:primaryType="nt:unstructured">
+														<selectbackgroundstyle
+															jcr:primaryType="nt:unstructured"
+															text="Select Background Style"
+															value=""/>
+														<whitebackground
+															granite:hide="${cqDesign.disableChildren}"
+															jcr:primaryType="nt:unstructured"
+															text="White Background"
+															value="bg-white"/>
+														<greybackground
+															granite:hide="${cqDesign.disableSearch}"
+															jcr:primaryType="nt:unstructured"
+															text="Grey Background"
+															value="bg-grey"/>
+													</items>
+													<granite:data
+														jcr:primaryType="nt:unstructured"
+														cqDialogDropdownShowhideTarget="cardWithTextView-cardWithTitle-cardWithoutTitle-cardWithIcon-cardWithoutImage-cardWithHeading-cardWithTitleAndText"/>
+											</backgroundstyle>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <Audienceselector
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Audience Selector"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <usertype
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/include"
+                                                path="vcm/components/content/common/audienceselector"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </Audienceselector>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

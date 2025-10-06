@@ -1,0 +1,61 @@
+table.table.Annual-FundExpense-table {
+    margin-bottom: 0;
+}
+
+/*.product-details .pdg-24 {
+    padding: 24px 0px;
+}*/
+ tfoot td:first-child {
+  
+    text-align: left;
+}
+tfoot td {
+    text-align: right;
+}
+
+.product-details table th:first-child, .product-details table tbody tr td:first-child {
+    min-width: 50px;
+    text-align: left;
+}
+
+table.table.AnnualcalculateFund-Expense-table tfoot td {
+    padding: 10px;
+}
+
+.invalid_error {
+    color: #f00;
+    padding-top: 20px;
+}
+
+button.calculateBtn {
+    padding: 12px;
+    border: 0;
+    position: relative;
+    width: 150px;
+    background-color: #486d90;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    color: #fff !important;
+    border: 0;
+}
+input.foundCont {
+    border: 1px solid #ccc;
+	width: 135px;
+    padding: 8px;
+}
+p.lbl-txt {
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #49494A;
+    padding: 0px;
+}
+/* table style ends */
+
+@media screen and (min-width:1024px) {
+	.fundexpensecalculator .heading {
+    	margin: 5px 0 15px;
+	}
+}

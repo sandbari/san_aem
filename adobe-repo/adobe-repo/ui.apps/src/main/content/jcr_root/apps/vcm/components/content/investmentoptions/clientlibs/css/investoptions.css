@@ -1,0 +1,402 @@
+.st-intial-invest-box sup {
+	top: -6px;
+	font-size: 9px;
+}
+
+.st-wrapper-inner {
+	/*max-width: 1110px;*/
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.st-cmp-wrapper p {
+	color: #49494A;
+	font-size: 16px;
+	font-family: benton-sans, sans-serif;
+	font-weight: 400;
+}
+
+.st-cmp-wrapper a {
+	color: #004A98;
+	font-family: yorkten-slab-normal, sans-serif;
+	font-weight: 700;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.st-arrow-link {
+	line-height: 18px;
+}
+
+.st-cmp-wrapper .h1 {
+	color: #FFFFFF;
+	font: bold 42px/44px yorkten-slab-normal, sans-serif;
+	font-weight: 700;
+}
+
+.st-cmp-wrapper div {
+	box-sizing: border-box;
+}
+
+/* Caption Styles*/
+.st-investment-options-wrap .st-section-heading {
+	font-size: 26px;
+	font-family: yorkten-slab-normal, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	display: inline-block;
+	padding-bottom: 10px;
+	position: relative;
+	line-height: 28px;
+	margin-bottom: 0;
+	color: #486d90;
+	white-space: nowrap;
+	margin-top: 15px;
+}
+
+.st-investment-options-wrap .st-section-heading:after {
+	content: "";
+	position: absolute;
+	border: 2px solid #8BC105;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	border-bottom: none;
+}
+
+.st-investment-options-wrap .st-section-heading.st-border-custom:after {
+	content: none;
+}
+
+.st-investment-options-wrap .st-border-custom .underline:after {
+	content: "";
+	position: absolute;
+	border: 2px solid #8BC105;
+	width: 100%;
+	bottom: -12px;
+	left: 0;
+	border-bottom: none;
+}
+
+.st-investment-options-wrap span.underline {
+	position: relative;
+	display: inline-block;
+}
+
+.st-investment-options-wrap .st-custom-border-container {
+	width: 100%;
+}
+
+.st-investment-options-wrap .st-section-heading-margin {
+	margin: 10px 0 38px 0;
+}
+
+.st-investment-options-wrap .st-investment-link {
+	width: 100%;
+	margin-bottom: 42px;
+}
+
+/* link Styles */
+.st-arrow-link, .st-arrow-link:hover {
+	font-size: 16px;
+	font-family: yorkten-slab-normal, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	position: relative;
+	text-decoration: none;
+}
+
+.st-arrow-link::after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+a.st-arrow-link-white, a.st-arrow-link-white:hover {
+	color: #fff;
+}
+
+.st-arrow-link-blue, .st-arrow-link-blue:hover {
+	color: #004A98;
+}
+
+.investmentoptions .st-arrow-right::after {
+	background: #8BC105 url("../resources/rightArrow.png") no-repeat 8px;
+	right: -40px;
+	background-size: 50%;
+}
+
+.st-arrow-right:hover::after, .st-arrow-left:hover::after {
+	background-color: #004A98;
+}
+
+.st-investment-options-wrap .st-align-arrow {
+	right: 30px;
+}
+
+/* Paragraph Styles*/
+.st-investment-options-wrap .st-page-heading {
+	color: #486D90;
+	font: 700 42px/44px yorkten-slab-normal, sans-serif;
+	margin: 48px 0 30px 0;
+}
+
+.st-investment-options-wrap .st-investment-box div {
+	float: left;
+}
+
+.st-investment-options-wrap .st-or-divider {
+	text-align: center;
+	font-size: 14px;
+	margin: 0 39px;
+	height: 90px;
+	position: relative;
+	margin-top: 50px;
+}
+
+.st-investment-options-wrap .st-or-divider span {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #707070;
+	border-radius: 50%;
+	display: block;
+	margin-top: 30px;
+	background: #fff;
+	color: #54565A;
+	font: 600 14px/7px benton-sans, sans-serif;
+	padding-top: 10px;
+	position: relative;
+}
+
+.st-investment-options-wrap .st-or-divider::before {
+	content: "";
+	border: 1px solid #E3E3E3;
+	height: 45px;
+	position: absolute;
+	border-left: 0;
+	height: 100%;
+	/* z-index: -1; */
+}
+
+.st-investment-options-wrap .st-investment-box-right {
+	float: left;
+}
+
+.st-investment-options-wrap .st-investment-box-left.st-investment-box p
+	{
+	margin-top: 29px;
+	margin-bottom: 9px;
+}
+
+.st-investment-options-wrap .st-intial-invest-box:first-child {
+	margin-left: 30px;
+}
+
+.st-investment-options-wrap .st-intial-invest-img {
+	margin-top: 5px;
+}
+
+.st-investment-link {
+	width: 100%;
+	margin-bottom: 42px;
+}
+
+.st-investment-options-wrap .st-intial-invest-text span:first-child {
+	color: #54565A;
+	font-size: 18px;
+	display: inline-block;
+	margin-top: 7px;
+	line-height: 31px;
+}
+
+.st-investment-options-wrap .st-intial-invest-text {
+	width: 209px;
+	margin-left: 15px;
+	color: #49494A;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.st-investment-options-wrap .st-intial-invest-box {
+	margin-top: 61px;
+	font-family: benton-sans, sans-serif;
+}
+
+.st-page-mutual-funds-landing .st-investment-options-wrap {
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+/***************** TABLET STYLES  ****************/
+@media screen and (max-width:1024px) {
+	/*.st-wrapper-inner {
+max-width: 992px;
+padding: 0 15px;
+}*/
+	.st-investment-options-wrap .st-intial-invest-box:first-child {
+		margin-left: 0;
+	}
+	.st-investment-options-wrap .st-victorylanding-teaser .st-intial-invest-box
+		{
+		padding-left: 10px;
+	}
+	.st-investment-options-wrap .st-intial-invest-box {
+		margin-top: 41px;
+	}
+	.st-investment-options-wrap .st-or-divider {
+		margin-top: 30px;
+		margin-right: 11px;
+		margin-left: 11px;
+	}
+}
+
+@media screen and (max-width:991px) {
+	.st-wrapper-inner {
+		max-width: none!important;
+	}
+	.st-investment-options-wrap .st-intial-invest-box:first-child {
+		margin-left: 0;
+	}
+	.st-investment-options-wrap .st-intial-invest-box {
+		margin-top: 11px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.st-contact-banner-background {
+		width: 100%;
+	}
+	.st-investment-options-wrap .st-investment-box-right {
+		margin-top: 18px;
+	}
+	.st-page-mutual-funds-landing .st-investment-link {
+		position: absolute;
+		bottom: 27%;
+	}
+}
+
+@media screen and (min-width:768px) and (orientation: portrait) {
+	.row.st-investment-options-wrap, .row.st-investment-link {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width:640px) and (orientation: landscape) {
+	.st-investment-options-wrap .st-intial-invest-text {
+		width: 200px;
+	}
+}
+
+@media screen and (min-width:568px) and (orientation: landscape) {
+	.row.st-investment-options-wrap, .row.st-investment-link {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width:568px) and (orientation: landscape) {
+	.st-investment-options-wrap .st-intial-invest-text {
+		width: 165px;
+	}
+}
+
+.st-investment-options-wrap .st-intial-invest-text span:first-child {
+	line-height: 1;
+}
+
+/***************** MOBILE STYLES *****************/
+@media screen and (max-width:767px) and (orientation: portrait) {
+	.st-wrapper-inner {
+		padding: 0 15px;
+	}
+	.st-investment-options-wrap .st-intial-invest-box {
+		margin-top: 0;
+		padding: 0 15px;
+	}
+	.st-investment-options-wrap .st-intial-invest-box:first-child {
+		margin-left: 0;
+		margin-top: 7px;
+		padding: 0 15px;
+	}
+	.st-investment-options-wrap .st-or-divider {
+		width: 100%;
+		height: auto;
+		/* margin: 15px 0 10px 0; */
+		margin: 27px 0 10px 0;
+	}
+	.st-investment-options-wrap .st-or-divider span {
+		margin: 0 auto;
+	}
+	.st-investment-options-wrap .st-or-divider::before {
+		width: 100%;
+		height: auto;
+		border-top: 0;
+		left: 0;
+		top: 15px;
+	}
+	.st-page-mutual-funds-landing .st-investment-link {
+		position: absolute;
+		bottom: 49%;
+	}
+	.st-investment-options-wrap .st-investment-box-right {
+		margin-top: 40px;
+		margin-bottom: 2px;
+	}
+	.backgroundcontainer .st-investment-box-right.st-investment-box.col-lg-4.col-sm-12,
+		.backgroundcontainer .st-investment-box-left.st-investment-box.col-lg-4.col-sm-12
+		{
+		padding: 0;
+	}
+	.backgroundcontainer .investmentoptions {
+		margin-top: 30px;
+	}
+}
+
+@media screen and (orientation: landscape){
+.st-page-wrapper.st-cmp-wrapper.st-wrapper-inner.st-page-mutual-funds-landing {
+    padding: 0;
+}
+}
+@media screen and (max-width:768px) and (orientation: portrait){
+.st-page-wrapper.st-cmp-wrapper.st-wrapper-inner.st-page-mutual-funds-landing {
+    padding: 0 15px;
+}
+}
+@media screen and (min-width:1024px) and (max-width:1200px) and (orientation: portrait){
+.st-page-wrapper.st-cmp-wrapper.st-wrapper-inner.st-page-mutual-funds-landing {
+    padding: 0 0;
+}
+}
+
+@media screen and (orientation: landscape){
+.backgroundcontainer .content-wrapper .investmentoptions {
+    margin-left:-15px;
+    margin-right:-15px;
+}
+}
+.backgroundcontainer .content-wrapper .investmentoptions .st-page-wrapper.st-cmp-wrapper.st-wrapper-inner.st-page-mutual-funds-landing {
+    max-width:none!important;
+}
+
+@media screen and (min-width:768px) and (max-width:800px) and (orientation: portrait){
+.backgroundcontainer .content-wrapper .investmentoptions {
+    margin-left:-30px;
+    margin-right:-30px;
+}
+}
+
+@media screen and (min-width:1024px) {
+    .backgroundcontainer .content-wrapper .investmentoptions {
+    margin-left:-15px;
+    margin-right:-15px;
+}
+	.investmentoptions .st-cmp-wrapper a{
+		padding-bottom: 15px;
+}
+
+}

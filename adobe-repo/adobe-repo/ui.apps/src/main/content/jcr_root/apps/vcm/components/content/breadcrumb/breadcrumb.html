@@ -1,0 +1,18 @@
+<sly data-sly-use.breadcrumb="com.vcm.core.models.BreadCrumbModel"/>
+<div data-audiencetype="${breadcrumb.allowedAudience}" class="container">
+    <div class="content-wrapper">
+        <nav role ="navigation" aria-label="breadcrumb">
+            <ol class="cmp_breadcrumb px-sm-0" data-sly-list.navItem="${breadcrumb.navItems}">
+                <sly data-sly-test="${navItemList.first}">
+                    <li class="breadcrumb-item"><a data-memberurl="${navItem.memberUrl}" data-guesturl="${navItem.guestUrl}" href="${navItem.link}">${navItem.title}</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                </sly>
+                <sly data-sly-test="${!navItemList.first && !navItemList.last}">
+                    <li class="breadcrumb-item"><a data-memberurl="${navItem.memberUrl}" data-guesturl="${navItem.guestUrl}" href="${navItem.link}">${navItem.title}</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                </sly>
+                <sly data-sly-test="${navItemList.last}">
+                    <li class="breadcrumb-item active" aria-current="page"><a data-memberurl="${navItem.memberUrl}" data-guesturl="${navItem.guestUrl}" role="presentation" tabindex="-1">${navItem.title}</a></li>
+                </sly>
+            </ol>
+        </nav>
+    </div>
+</div>

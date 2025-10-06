@@ -1,0 +1,169 @@
+<sly data-sly-test="${wcmmode.edit}">
+   <div class="cq-placeholder section" data-emptytext="Edit Contact Details Component"></div>
+</sly>
+
+<input id="contactHoursJson" name="contactHoursJson" type="hidden" value="/content/vcm/en.genesys.findOpenCloseHours.json"/>
+<input id="chartJson" name="contactHoursJson" type="hidden" value="/content/dam/vcm/configs/chart-data.json"/>
+
+<sly data-sly-use.model="com.vcm.core.models.ContactDetailsModel"></sly>
+<span class="open-info-text hidden"> ${model.openInfoText} </span>
+<span class="closed-info-text hidden"> ${model.closedInfoText} </span>
+<span class="phone-num hidden"> ${model.phoneNumber} </span>
+<span class="mon-fri-hrs hidden">${model.mondayToFridayOpenHours}</span>
+<!-- Detail View -->
+<sly data-sly-test="${properties.viewType == 'full'}">
+   <div class="planTableLoader"></div>
+   <div class="error-message alert alert-danger" role="alert">
+      		Error while loading the contact details
+   </div>
+   <div style="display:none;" class="st-contact-container">
+   
+      <p class="st-phone-email-text">${model.phoneSectionHeading}:</p>
+      <div class="st-phone-contact-details">
+
+         <sly data-sly-test = "${model.phoneIconImage}">
+            <img src="${model.phoneIconImage}" class="st-phone-icon" alt="${model.altTextPhone || true}" />
+         </sly>
+         <div class="st-content">
+            <span class="st-phone-number"> ${model.phoneNumber}</span>
+            <sly data-sly-test="${model.internationalNumber}">
+            <p class="st-int-phone-number" aria-hidden="true"><b><sly data-sly-test="${model.internationalText}">${model.internationalText}: </sly>${model.internationalNumber}</b></p>
+            </sly>
+            <p class="${properties.hideChart == 'true' ? 'static-timing-field' :'hidden'}">${model.mondayToFridayText} : ${model.mondayToFridayOpenHours}</p>
+            <span class="${properties.hideChart == 'true' ? 'hidden' :''}">
+               <span class="st-open">${model.openInfoText}</span>
+               <p class="st-timing open-timing" aria-hidden="true"><span>${model.todayOpenHoursText}:</span> </p>
+               <p class="sr-only ax-open-timing"><strong>${model.todayOpenHoursText}:</strong> </p>
+               <p class="st-timing wait-timing"><span>${model.currentWaitTimeText}:</span> </p>
+            </span>
+         </div>
+      </div>
+      <div class="st-content-box ${properties.hideChart == 'true' ? 'hidden' :''}">
+         <div class="st-content-box-content">
+            <div class="st-content-box-day-time ">
+               <div class="st-content-box-heading">
+                  <p class="st-hours">${model.hoursText}:</p>
+               </div>
+               <div class="row m-0">
+                  <div class="st-content-left col-sm-12 col-lg-6">
+                     <p class="st-days" aria-hidden="true">${model.mondayToFridayText} </p>
+                     <p class="sr-only ax-st-days"></p>
+                     <p class="st-timing" aria-hidden="true">${model.mondayToFridayOpenHours}</p>
+                     <p class="sr-only ax-st-timing"></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="contactUs_chart" aria-hidden="true">
+            <div class="row chart_row">
+               <div class="col-md-7 time_header">
+                  <h5>Average wait times:</h5>
+               </div>
+               <div class="col-md-5 dropdown" tabindex="0">
+                  <span id="wt-time-selection" class="sr-only">Select Day to know the Average wai time</span>
+                  <a class="btn btn-default btn-lg dropdown-toggle" aria-labeledby="wt-time-selection" href="#" role="button" id="dropdwn"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-describedby="Updates the Average wait time content corresponding to the selection of day">
+                  <span></span>
+                  <i class="fa fa-chevron-circle-down py-1 pl-2" aria-hidden="true"></i>
+                  </a>
+                  <div role="listbox" id="days" class="dropdown-menu ul_list" aria-labelledby="wt-time-selection"></div>
+               </div>
+            </div>
+            <div id="contact_container"></div>
+         </div>
+      </div>
+      <div class="st-phone-email-text">${model.mailSectionHeading}:</div>
+      <sly data-sly-test = "${properties.emailIconImage}">
+         <img src="${properties.emailIconImage}" class="float-left mailPad" alt="${model.altTextEmail || true}" />
+      </sly>
+      <div class="st-content">
+         <a href="mailto:${properties.email}"> <span class="st-mail mailPad"><span class="sr-only"> Send Us a email at</span> ${properties.email} </span></a>
+      </div>
+      <sly data-sly-test="${model.faxNumber}">
+      <div class="st-phone-contact-details">
+         <i class="fa fa-fax icon-green" aria-hidden="true" style="float: left;"></i>
+         <div class="st-content">
+            <p class="st-address-header">${model.faxNumber}</p>
+         </div>
+      </div>
+      </sly>
+      <div class="st-phone-contact-details st-mail-details">
+         <sly data-sly-test = "${model.mailiconImage}">
+            <img src="${model.mailiconImage}" class="st-email-icon" alt="${model.altTextMail || true}" />
+         </sly>
+         <div class="st-content-email">
+            <p class="st-address-header">${model.mailingAddressHeading}:</p>
+            <div class="st-timing">
+               ${model.mailingAddress @context='html'}
+            </div>
+            <sly data-sly-test="${model.linkText && model.linkURL }" >
+               <a data-popup="${model.popupId}" href="${model.linkURL @ extension='html'}" class="st-faq" target="${model.tabSelect}"> ${model.linkText}</a>
+            </sly>
+         </div>
+      </div>
+   </div>
+</sly>
+<!-- Shorter View -->
+<sly data-sly-test="${properties.viewType == 'short'}">
+   <div class="planTableLoader"></div>
+   <div class="error-message alert alert-danger" role="alert">
+      		Error while loading the contact details
+   </div>
+   <div style="display:none;" class="st-contact-container-short-view st-box-border-green-left st-teaser-with-box">
+      <div class="content-box">
+         <h3 class="st-section-heading st-heading-blue">${model.phoneSectionHeading}</h3>
+         <div class="st-tf-content">
+            <sly data-sly-test = "${model.phoneIconImage}">
+               <img src="${model.phoneIconImage}" class="st-green-phone-icon" alt="${model.altTextPhone || true}" />
+            </sly>
+            <span class="st-tf-phone-number" aria-hidden="true">${model.phoneNumber}</span>
+            <span class="sr-only">${model.phoneNumber}</span>
+            <sly data-sly-test="${model.internationalNumber}">
+               <p class="st-tf-timing" aria-hidden="true"><strong><sly data-sly-test="${model.internationalText}">${model.internationalText}: </sly>${model.internationalNumber}</strong></p>
+            </sly>
+            <p class="st-tf-timing open-timing" aria-hidden="true"><strong>${model.todayOpenHoursText}:</strong> </p>
+            <p class="sr-only ax-open-timing"><strong>${model.todayOpenHoursText}:</strong> </p>
+           <p class="st-tf-open"></p>
+         </div>
+      </div>
+   </div>
+</sly>
+<!-- Static View -->
+<sly data-sly-test="${properties.viewType == 'staticView'}">
+	   <div class="staticView st-contact-container">
+	      <p class="st-phone-email-text">${model.phoneSectionHeading}:</p>
+	      <div class="st-phone-contact-details">
+	         <sly data-sly-test ="${model.staticPhoneIconImage}">
+	            <img  alt="${model.staticAltTextPhone || true}" src="${model.staticPhoneIconImage}" class="st-phone-icon" alt="${model.altTextPhone || true}" />
+	         </sly>
+	          <sly data-sly-test="${model.contactList}">
+	          	<sly data-sly-list.contactObj="${model.contactList}">
+		          	<div class="st-content">
+			            <span class="st-phone-number"> ${contactObj.staticPhoneNumber @ context='html'} </span>  
+			            <p class="st-timing open-timing" aria-hidden="true">${contactObj.staticOpenText @ context='html'}</p> 
+			         </div>
+			    </sly>
+		      </sly>
+	      </div>
+	 	<div data-sly-test="${model.mailSectionHeading}" class="st-phone-email-text">${model.mailSectionHeading}:</div>
+      	<sly data-sly-test = "${properties.emailIconImage}">
+            <img src="${properties.emailIconImage}" class="float-left mailPad" alt="${model.altTextEmail || true}" />
+        </sly>
+        <div data-sly-test="${properties.email}" class="st-content">
+            <a href="mailto:${properties.email}"> <span class="st-mail mailPad"><span class="sr-only"> Send Us a email at</span> ${properties.email} </span></a>
+        </div>
+      <div class="st-phone-contact-details st-mail-details">
+         <sly data-sly-test="${model.mailiconImage}">
+            <img src="${model.mailiconImage}" class="st-email-icon" alt="${model.altTextMail || true}" />
+         </sly>
+         <div class="st-content-email">
+            <p data-sly-test="${model.mailingAddressHeading}" class="st-address-header">${model.mailingAddressHeading}:</p>
+            <div data-sly-test="${model.mailingAddress}" class="st-timing">
+               ${model.mailingAddress @context='html'}
+            </div>
+            <sly data-sly-test="${model.linkText && model.linkURL }" >
+               <a data-popup="${model.popupId}" href="${model.linkURL @ extension='html'}" class="st-faq" target="${model.tabSelect}"> ${model.linkText}</a>
+            </sly>
+         </div>
+      </div>
+	 	</div>
+ </sly>

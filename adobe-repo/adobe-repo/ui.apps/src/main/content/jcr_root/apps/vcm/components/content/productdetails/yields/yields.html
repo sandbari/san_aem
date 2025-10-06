@@ -1,0 +1,88 @@
+<sly data-sly-test="${wcmmode.edit}">
+    <h4>Click here to Edit Yields Component....</h4>
+</sly>
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-test="${properties.type == 'yields_fixed-income' && pageProperties.yieldsfixedincome}">
+    <div class="product-details yields-fixed-income">
+        <div class="yields_fixed-income_container">
+            <div class="row pdg-24">
+                <h3 class="heading col-lg-8 header-label-fxdinc">
+                    <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                        <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                            <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Yields" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                            <span class="sr-only tooltip-content" aria-live="polite"></span>
+                        </sly>
+                    </sly>
+                    <span>(As of <span class="yields_fixed-income-asof"></span>)</span>
+                </h3>
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                        <p class="align-right col-lg-4">
+                            <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+                        </p>
+                    </sly>
+                </sly>
+            </div>
+            <div class="yields_fixed-income_table-data">
+                <div class="table-wrap">
+                    <table class="table yields_fixed-income_table"><caption class="sr-only">${component.title}</caption></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-yieldsfixdinc">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message  error-message-yieldsfixdinc">
+     <p></p>
+    </div>
+</sly>
+<sly data-sly-test="${properties.type == 'yields_money-market' && pageProperties.yieldsmoneymarket}">
+    <div class="product-details yields-money-market">
+        <div class="yields_money-market_container">
+            <div class="row pdg-24">
+                <h3 class="heading col-lg-8 header-label-monymarkt">
+                    <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                        <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                            <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Yields" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                            <span class="sr-only tooltip-content" aria-live="polite"></span>
+                        </sly>
+                    </sly>
+                    <span>(As of <span class="yields_money-market-asof"></span>)</span>
+                </h3>
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                        <p class="align-right col-lg-4">
+                            <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+                        </p>
+                    </sly>
+                </sly>
+            </div>
+            <div class="yields_money-market_table-data">
+                <div class="table-wrap">
+                    <table class="table yields_money-market_table"><caption class="sr-only">${component.title}</caption></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-yieldsmoneymkt">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message  error-message-yieldsmoneymkt">
+     <p></p>
+    </div>
+</sly>
+<sly data-sly-test="${properties.type == 'yields_taxable-equivalent' && pageProperties.yieldstaxableequivalent}">
+    <div class="product-details yields-taxable-equivalent">
+        <div class="yields_taxable-equivalent_table">
+            <div class="taxTable" data-fundid="${pageProperties.fundID}" data-yieldCustomJson="${properties.customJson}" data-jsonPath="${properties.jsonPath}">
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-yieldstaxeqv">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message  error-message-yieldstaxeqv">
+     <p></p>
+    </div>
+</sly>

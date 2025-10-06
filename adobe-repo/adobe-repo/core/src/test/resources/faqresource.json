@@ -1,0 +1,45 @@
+{
+   "jcr:primaryType":"nt:unstructured",
+   "item0":{
+      "jcr:primaryType":"nt:unstructured",
+      "faqTag":[
+         "vcm:faq/save-money"
+      ],
+      "tagGrpName":"Saving Money"
+   },
+   "item1":{
+      "jcr:primaryType":"nt:unstructured",
+      "faqTag":[
+         "vcm:faq/retirement-plans"
+      ],
+      "tagGrpName":"Retirement Plans"
+   },
+   "item2":{
+      "jcr:primaryType":"nt:unstructured",
+      "faqTag":[
+         "vcm:faq/investing-work"
+      ],
+      "tagGrpName":"How Investing Works"
+   },
+   "item3":{
+      "jcr:primaryType":"nt:unstructured",
+      "faqTag":[
+         "vcm:faq/profiling"
+      ],
+      "tagGrpName":"Profiling"
+   },
+   "item4":{
+      "jcr:primaryType":"nt:unstructured",
+      "faqTag":[
+         "vcm:faq/customer-service-care"
+      ],
+      "tagGrpName":"Customer Service Care"
+   },
+   "item5":{
+      "jcr:primaryType":"nt:unstructured",
+      "faqTag":[
+         "vcm:faq/enrollment"
+      ],
+      "tagGrpName":"Enrollment"
+   }
+}

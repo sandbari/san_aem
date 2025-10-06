@@ -1,0 +1,38 @@
+{
+    "jcr:primaryType":"dam:Asset",
+    "jcr:mixinTypes":["mix:referenceable",
+    "mix:versionable"],
+    "jcr:createdBy":"admin",
+    "jcr:created":"Tue Feb 11 2020 14:45:52 GMT+0530",
+    "jcr:uuid":"72211020-2353-4fd8-ab01-7de655b73b96",
+    "jcr:content": {
+        "jcr:primaryType":"dam:AssetContent",
+        "jcr:title":"faq1",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:description":"faq1 description",
+        "contentFragment":true,
+        "cq:name":"faq1",
+        "jcr:lastModified":"Tue Feb 11 2020 14:47:28 GMT+0530",
+        "lastFragmentSave":"Tue Feb 11 2020 14:47:28 GMT+0530",
+        "cq:parentPath":"/content/dam/vcm/faqlist",
+        "renditions": {
+            "jcr:primaryType": "nt:folder", "jcr:createdBy": "admin", "jcr:created": "Tue Feb 11 2020 14:45:52 GMT+0530"
+        }
+        ,
+        "related": {
+            "jcr:primaryType": "nt:unstructured"
+        }
+        ,
+        "metadata": {
+            "jcr:primaryType": "nt:unstructured", "jcr:mixinTypes": ["cq:Taggable"]
+        }
+        ,
+        "data": {
+            "jcr:primaryType":"nt:unstructured",
+            "cq:model":"/conf/vcm/settings/dam/cfm/models/faq",
+            "master": {
+                "jcr:primaryType": "nt:unstructured", "jcr:mixinTypes": ["cq:Taggable"], "faqnumber": "1", "answer@LastModified": "Tue Feb 11 2020 14:47:27 GMT+0530", "answer": "<p>Lorum ipsum answer1</p>\n", "faqnumber@LastModified": "Tue Feb 11 2020 14:47:27 GMT+0530", "question": "Lorum ipsum question1", "tags@LastModified": "Tue Feb 11 2020 14:47:27 GMT+0530", "answer@ContentType": "text/html", "question@LastModified": "Tue Feb 11 2020 14:47:27 GMT+0530"
+            }
+        }
+    }
+}

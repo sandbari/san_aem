@@ -1,0 +1,18 @@
+<sly data-sly-test.author="${wcmmode.edit}"> Edit ${component.title} Component </sly>
+
+<sly data-sly-use.genericContainerModel="com.vcm.core.models.GenericContainerModel">
+
+	<sly data-sly-test="${genericContainerModel.containerType == 'generic'}">
+		<div class="generic" data-audiencetype="${genericContainerModel.allowedAudience}">
+		 <sly data-sly-resource="${'generic' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>	
+		</div>			
+	</sly>
+	<sly data-sly-test="${genericContainerModel.containerType == 'productAccordion'}"> 
+			<div id="accordion-${genericContainerModel.id}" class="generic-accordion accordion mb-40" data-audiencetype="${genericContainerModel.allowedAudience}">
+				<div class="card mb-0">
+					<sly data-sly-resource="${'accordion' @ resourceType='wcm/foundation/components/responsivegrid'}"/>	
+				</div>
+			</div>
+	</sly>
+	
+</sly>

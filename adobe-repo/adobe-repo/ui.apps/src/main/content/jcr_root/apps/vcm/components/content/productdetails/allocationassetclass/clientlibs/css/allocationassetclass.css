@@ -1,0 +1,90 @@
+.product-details .allocation-asset-data,.highcharts-credits,.allocationassetclass .align-right {
+    display: none;
+}
+
+.product-details .allocation-asset-class-chart {
+    display: none;
+}
+
+.product-details .allocation-asset-class-table {
+    display: block !important;
+}
+
+.allocationassetclass .product-details .pdg-24 .icon-content {
+		display: none;
+}
+
+
+.dynamic-loader-assetallocationclass {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.dynamic-loader-assetallocationclass img {
+    position: relative;
+    top: 40%;
+    left: 50%;
+}
+
+.error-message-assetallocationclass {
+    display: none;
+}
+
+
+@media screen and (min-width:1024px) {
+    .allocationassetclass .product-details .pdg-24 .icon-content {
+        display: block;
+    }
+    .product-details .allocation-asset-class-chart {
+        display: block !important;
+    }
+    .product-details .allocation-asset-class-table {
+        display: block !important;
+    }
+    .product-details .allocation-asset-class-table.hidden {
+        display: none !important;
+    }
+    .product-details .allocation-asset-class-chart.hidden {
+        display: none !important;
+    }
+    .allocationassetclass .product-details .pdg-24 .icon-content {
+            display: block;
+    }
+    .allocationassetclass .overlay-text-content {
+        margin: 15px 0;
+    }
+    .allocationassetclass .icon-content {
+            margin: 9px 0;
+    }
+}
+@media screen and (min-width:768px) {
+    .product-details .allocation-asset-data,.assetClassHead,.allocationassetclass .align-right {
+        display: block;
+    }
+    .allocationassetclass .product-details .pdg-24 .icon-content {
+        display: block;
+    }
+    .product-details .allocation-asset-class-chart {
+        display: block;
+    }
+    .product-details .allocation-asset-class-table {
+        display: block;
+    }
+    .product-details .allocation-asset-class-table.hidden {
+        display: none !important;
+    }
+    .product-details .allocation-asset-class-chart.hidden {
+        display: none !important;
+    }
+    .allocationassetclass .product-details .pdg-24 {
+        padding: 24px 0 0;
+    }
+    .allocation-asset-class-table {
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+<sly data-sly-test="${wcmmode.edit}">Edit Subscription Component</sly>
+<sly data-sly-use.SubscriptionModel="com.vcm.core.models.SubscriptionModel"/>
+
+
+<div class="container">
+	<div class="subscribe-details">
+		<h3 data-sly-test="${SubscriptionModel.subscribeHeading}">${properties.subscribeHeading}:</h3>
+		<div class="input-text">
+			<form action="">
+				<label> ${SubscriptionModel.nameLabel}</label>
+				<input data-sly-test="${SubscriptionModel.nameLabel}" type="text" class="inner-text">
+				<label>${SubscriptionModel.emailLabel}</label>
+				<input data-sly-test="${SubscriptionModel.emailLabel}" type="text" class="inner-text">
+				<button data-sly-test="${SubscriptionModel.submitLabel}" class="btn-primary btn-bg ">${SubscriptionModel.submitLabel} <span class="btn-triangle-rt"></span></button>
+			</form>
+
+		</div>
+	</div>
+</div>

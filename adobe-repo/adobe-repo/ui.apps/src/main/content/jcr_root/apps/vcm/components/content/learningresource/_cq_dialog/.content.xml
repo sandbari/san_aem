@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Learning Resource"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <textContents
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Text Contents "
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author heading text of the section"
+                                                fieldLabel="Heading"
+                                                name="./heading"
+                                                required="{Boolean}true"/>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="To author description text "
+                                                fieldLabel="Description"
+                                                name="./description"
+                                                removeSingleParagraphContainer="{Boolean}true"
+                                                required="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="vcm/components/content/common/uiSettings"/>
+                                            </description>
+                                            <linktext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author link text for link "
+                                                fieldLabel="Link Text"
+                                                name="./linkText"
+                                                required="{Boolean}true"/>
+                                            <linkURL
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="To author link of the page "
+                                                fieldLabel="Link Url"
+                                                name="./linkUrl"
+                                                rootPath="/content"
+                                                wrapperClass="cmp-image--editor-link"/>
+                                            <tabselect
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="To author target for link to be open in same tab or new tab"
+                                                fieldLabel="Target"
+                                                name="./tabSelect">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Same tab"
+                                                        value="_self"/>
+                                                    <newtab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="New tab"
+                                                        value="_blank"/>
+                                                </items>
+                                            </tabselect>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </textContents>
+                    <tileContents
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tile contents "
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        maximized="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <tileContent
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Click '+' to add a new page"
+                                                fieldLabel="Tile Content">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./tileContent">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <topic
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="To author topic of content"
+                                                                    fieldLabel="Topic"
+                                                                    name="./topic"
+                                                                    required="{Boolean}true"/>
+                                                                <bgImage
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldDescription="To upload DAM image."
+                                                                    fieldLabel="Background Image"
+                                                                    name="./bgimage"
+                                                                    required="{Boolean}true"
+                                                                    rootPath="/content/dam/vcm"
+                                                                    wrapperClass="cmp-image__editor-link"/>
+                                                                <tileHeading
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="To author heading text of the section"
+                                                                    fieldLabel="Tile Heading"
+                                                                    name="./tileHeading"/>
+                                                                <tileLinkURL
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                    fieldDescription="To author link of the page "
+                                                                    fieldLabel="Tile Link Url"
+                                                                    name="./tileLinkURL"
+                                                                    rootPath="/content"
+                                                                    wrapperClass="cmp-image--editor-link"/>
+                                                                <altText
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="To author alt text for background image"
+                                                                    fieldLabel="Alt Text"
+                                                                    name="./altText"/>
+                                                                <tiletabselect
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                    fieldDescription="To author target for link to be open in same tab or new tab"
+                                                                    fieldLabel="Target"
+                                                                    name="./tiletabSelect">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <sametab
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Same tab"
+                                                                            value="_self"/>
+                                                                        <newtab
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="New tab"
+                                                                            value="_blank"/>
+                                                                    </items>
+                                                                </tiletabselect>
+                                                                <topicbackgroundcolor
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                    fieldDescription="To author topic background color"
+                                                                    fieldLabel="Topic Background Color"
+                                                                    name="./topicbackgroundcolor"
+                                                                    required="{Boolean}true">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <green
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Green"
+                                                                            value="Green"/>
+                                                                        <purple
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Purple"
+                                                                            value="Purple"/>
+                                                                        <red
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Red"
+                                                                            value="Red"/>
+                                                                        <blue
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Blue"
+                                                                            value="Blue"/>
+                                                                        <black
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Black"
+                                                                            value="Black"/>
+                                                                    </items>
+                                                                </topicbackgroundcolor>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </tileContent>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tileContents>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

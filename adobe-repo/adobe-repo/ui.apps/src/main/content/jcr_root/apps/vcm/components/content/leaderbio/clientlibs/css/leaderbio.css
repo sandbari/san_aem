@@ -1,0 +1,101 @@
+/*image and content block*/
+
+.lead-detail-block {
+    /*padding-bottom: 34px;
+    padding-top: 30px;*/
+    margin-top: 30px;
+}
+
+.lead-detail-block .image-content-block {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.lead-detail-block .image-content-block .image-block {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.lead-detail-block .image-content-block .content-block {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.lead-detail-block .image-content-block .image-block img {
+    margin-top: 5px;
+    width: 254px;
+}
+
+.lead-detail-block .image-content-block p:last-child,
+.lead-detail-block .image-content-block p:first-child {
+    margin-bottom: 20px;
+}
+
+.lead-detail-block .image-content-block .content-block.fullwidth-content-block {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/*tablet*/
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .lead-detail-block .image-content-block .image-block {
+        -ms-flex: 0 0 32%;
+        flex: 0 0 32%;
+        max-width: 32%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .lead-detail-block .image-content-block .content-block {
+        -ms-flex: 0 0 68%;
+        flex: 0 0 68%;
+        max-width: 68%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .lead-detail-block .image-content-block .image-block img {
+        padding-right: 0;
+        width:200px;
+    }
+}
+
+
+/*mobile only*/
+
+@media screen and (max-width: 767px) {
+
+    .lead-detail-block .image-content-block .image-block {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .lead-detail-block .image-content-block .content-block {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .lead-detail-block .image-content-block .image-block img {
+        margin-top: 0;
+        margin-bottom: 30px;
+        width: 190px;
+    }
+	.leaderbio .container {
+    	padding: 0 15px;
+	}
+}
+@media screen and (min-width: 1025px) {
+    .lead-detail-block {
+        margin-top: 50px;
+    }
+}

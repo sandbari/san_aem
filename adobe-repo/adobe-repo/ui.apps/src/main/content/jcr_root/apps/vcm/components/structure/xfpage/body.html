@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<sly data-sly-include="/apps/vcm/components/structure/page/customPageProperties.html"></sly>
+<div class="container">
+    <sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+         data-sly-repeat.child="${templatedContainer.structureResources}"
+         data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>
+</div>
+<sly data-sly-resource="${'cloudservices' @ resourceType='cq/cloudserviceconfigs/components/servicecomponents'}"></sly>
+<sly data-sly-include="footerlibs.html"></sly>

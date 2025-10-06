@@ -1,0 +1,94 @@
+.premium-discount-table {
+    position: relative;
+}
+
+.product-details .premium-discount-chart {
+    display: block;
+}
+
+.product-details .premium-discount-table {
+    display: block !important;
+}
+
+.premiumdiscount .product-details .pdg-24 .icon-content {
+		display: none;
+}
+
+.premiumdiscount .premium-popup .heading {
+	margin: 15px 0 0;
+}
+
+.premiumdiscount {
+    position: relative;
+}
+
+.dynamic-loader-premiumdiscount {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+.premiumdiscount .heading {
+    margin: 15px 0 0;
+}
+
+.premiumdiscount .heading.num-of-days {
+	padding-top: 20px;
+    margin:0px;
+}
+
+@media screen and (min-width:768px) {
+    .product-details .product-icons,
+    .premiumdiscount .product-details .pdg-24 .icon-content{
+        display: block;
+    }
+    .product-details .premium-discount-chart {
+        display: block;
+    }
+    .product-details .premium-discount-table {
+        display: block;
+    }
+    .product-details .premium-discount-table.hidden {
+        display: none !important;
+    }
+    .product-details .premium-discount-chart.hidden {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    /*.calendarreturns .product-details .pdg-24 {
+        padding: 24px 0px;
+    }*/
+    .product-details .premium-discount-chart {
+        display: block !important;
+    }
+    .product-details .premium-discount-table {
+        display: block !important;
+    }
+    .product-details .premium-discount-table.hidden {
+        display: none !important;
+    }
+    .product-details .premium-discount-chart.hidden {
+        display: none !important;
+    }
+    .premiumdiscount .product-details .pdg-24 .icon-content {
+		display: block;
+	}
+
+	.premiumdiscount .overlay-text-content {
+	    margin: 15px 0;
+    }
+
+    .premiumdiscount .icon-content {
+            margin: 9px 0;
+    }
+    .premiumdiscount .heading {
+        margin: 0 0 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+   .product-details table.premium-table th:first-child,
+   .product-details table.premium-table tbody tr td:first-child{
+       min-width:auto
+   }
+}
