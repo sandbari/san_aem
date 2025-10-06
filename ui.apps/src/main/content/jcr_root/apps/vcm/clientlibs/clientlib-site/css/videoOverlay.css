@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+    #vcm-exp-popup .content-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+	#vcm-exp-popup .video-block, #vcm-exp-popup  .video--block__innercontainer .col-sm-12.col-md-12.col-lg-7 {
+        max-width: 100%;
+        flex: unset;
+        background: none;
+        width: 100%;
+	}	
+
+}
+#vcm-exp-popup .accordian {
+        display:none;
+    }
+#vcm-exp-popup.vcm-popup  {
+    top: 45%;
+}
+
+#vcm-exp-popup .popup-header  {
+        padding: 2px;
+    }
+
+@media screen and (max-width: 767px) {
+    #vcm-exp-popup.vcm-popup {
+        width: 95%;
+    }
+}

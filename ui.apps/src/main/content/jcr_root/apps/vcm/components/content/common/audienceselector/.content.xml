@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:showOnCreate="{Boolean}true"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Audience Selector"
+    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+    <items jcr:primaryType="nt:unstructured">
+        <usertype
+            cq:showOnCreate="{Boolean}true"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/field"
+            fieldDescription="It is applicable for all audiences if none selected."
+            fieldLabel="Choose applicable audience type for this page "
+            name="./usertypeselect"
+            text="Choose applicable audience type for this page "/>
+        <members
+            cq:showOnCreate="{Boolean}true"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+            fieldLabel="Members"
+            name="./membersType"
+            text="Members"
+            uncheckedValue="false"
+            value="true"/>
+        <financialadvisors
+            cq:showOnCreate="{Boolean}true"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+            fieldLabel="Financial Advisors"
+            name="./financialAdvisorsType"
+            text="Financial Advisors"
+            uncheckedValue="false"
+            value="true"/>
+        <institutionalinvestors
+            cq:showOnCreate="{Boolean}true"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+            fieldLabel="Institutional Investors"
+            name="./institutionalinvestorsType"
+            text="Institutional Investors"
+            uncheckedValue="false"
+            value="true"/>
+    </items>
+</jcr:root>

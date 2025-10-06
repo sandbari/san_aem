@@ -1,0 +1,94 @@
+<sly data-sly-use.forms="com.vcm.core.models.FormsModel"/>
+<sly data-sly-test.notempty="${forms.rootPath}"/>
+<sly data-sly-test="${wcmmode.edit && !notempty}">
+    <div class="cq-placeholder" data-emptyText="${component.title}"/>
+</sly>
+<sly data-sly-test="${notempty}">
+
+    <input type="hidden" id="formsTag" value="${properties.formsTags}"/>
+    <input type="hidden" id="formsRootPath" value="${forms.rootPath}"/>
+    <input type="hidden" id="formID" value="${forms.formID}"/>
+    <input type="hidden" id="formsCategory" value="${forms.formCategory}"/>
+    <input type="hidden" id="download" value="${forms.download}"/>
+    <input type="hidden" id="form" value="${forms.form}"/>
+
+    <div class="content-wrapper mbl-container-w100-px15">
+        <div class="formPageTitle">
+            <h3 class="blueHdng-multiLine-greenBorder">${forms.heading}</h3>
+            <div class="mt-4">${forms.description @ context = 'html'}</div>
+        </div>
+
+        <div id="formsTable_wrapper" class="dataTables_wrapper no-footer">
+            <div id="formsTable_filter" class="dataTables_filter">
+                <label>Search:
+                    <input type="search" id="search" class="" placeholder="Search by Form name or ID" aria-controls="formsTable">
+                </label>
+            </div>
+            <div id="formCategory" class="form-category-list-wrapper btn-group formCategory" role="group" aria-label="Form Category">
+                <button type="button" class="btn btn-light mr-2 category-btn" role="button" id="AllCategories">All</button>
+                <button type="button" class="btn btn-light mr-2 category-btn" role="button" id="victoryFund">victory Funds</button>
+                <button type="button" class="btn btn-light mr-2 category-btn" role="button" id="educationSavings">education</button>
+                <button type="button" class="btn btn-light mr-2 category-btn" role="button" id="robo">dynamic advisor</button>
+                <button type="button" class="btn btn-light mr-2 category-btn" role="button" id="brokerage">Marketplace</button>
+            </div>
+            <div id="formRadioCategory" class="form-category-list-wrapper category-radio-btn " role="group" aria-label="Form Category">
+                <div class="row divformRadioCategory" id="divformRadioCategory">
+                    <h4 class="blueHdng-multiLine-greenBorder">Form Types:</h4>
+                    <input type="radio" class="category-radio-btn" id="radioBtn" name="category" checked>All</input>
+                </div>
+            </div>
+
+            <div id="victoryFund-fund">
+                <div class="formPageTitle" id="vitcoryFundHead">
+                    <h3 id="categoryVctHeading" class="category-table-heading">Victory Funds</h3>
+                    <div class="dt-more-container-vct-fund-error error" id="vctError" style="display:none">
+                        <h5>No Matching forms found for Victory Fund</h5>
+                    </div>
+                </div>
+                <table id="vct-formsTable" class="display table victory-fund" width="100%" style="display:none"></table>
+                <div class="dt-more-container-vct-fund">
+                    <button id="victoryFundBtn" class="victory-fund-btn" style="display:none">Show More Victory Fund Forms</button>
+                </div>
+            </div>
+
+            <div id="educationSaving-fund">
+                <div class="formPageTitle" id="educationHead">
+                    <h3 id="categoryEduHeading" class="category-table-heading">Education</h3>
+                    <div class="dt-more-container-edu-save-error error" id="eduError" style="display:none">
+                        <h5>No Matching forms found for Education</h5>
+                    </div>
+                </div>
+                <table id="edu-formsTable" class="display table 529-education-saving education-saving education educations" width="100%" style="display:none"></table>
+                <div class="dt-more-container-edu-save">
+                    <button id="educationSavingBtn" class="529-education-saving" style="display:none">Show More Education Forms</button>
+                </div>
+            </div>
+            <!--Robo name is changed to Dynamic Advisor -->
+            <div id="robo-fund">
+                <div class="formPageTitle" id="robHead">
+                    <h3 id="categoryRoboHeading" class="category-table-heading">Dynamic Advisor</h3>
+                    <div class="dt-more-container-robo-error error" id="roboError" style="display:none">
+                        <h5>No Matching forms found for Dynamic Advisor</h5>
+                    </div>
+                </div>
+                <table id="rob-formsTable" class="display table robo dynamic-advisor dynamicadvisor" width="100%" style="display:none"></table>
+                <div class="dt-more-container-robo">
+                    <button id="roboBtn" class="robo" style="display:none">Show More Dynamic Advisor Forms</button>
+                </div>
+            </div>
+
+            <div id="brokerage-fund">
+                <div class="formPageTitle" id="brokerageHead">
+                    <h3 id="categoryBrokerageHeading" class="category-table-heading">Marketplace</h3>
+                    <div class="dt-more-container-brokerage-error error" id="brokerageError" style="display:none">
+                        <h5>No Matching forms found for Marketplace</h5>
+                    </div>
+                </div>
+                <table id="bro-formsTable" class="display table brokerage marketplace" width="100%" style="display:none"></table>
+                <div class="dt-more-container-brokgerage">
+                    <button id="brokerageBtn" class="brokerage" style="display:none">Show More Marketplace forms</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

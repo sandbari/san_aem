@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2020-04-11T13:29:13.817Z"
+        cq:lastModifiedBy="ctsuser"
+        cq:lastReplicated="{Date}2020-04-19T07:17:00.239Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/vcm/settings/wcm/templates/homepage-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:uuid="10460d6f-7b85-44c2-8fb7-3b16724fff89"
+        sling:resourceType="vcm/components/structure/page">
+        <root
+            jcr:lastModified="{Date}2020-02-21T13:30:05.249Z"
+            jcr:lastModifiedBy="ctsuser"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <experiencefragment
+                jcr:created="{Date}2020-02-21T08:49:34.765Z"
+                jcr:createdBy="vmohanam@vcm.com"
+                jcr:lastModified="{Date}2020-02-21T13:29:22.722Z"
+                jcr:lastModifiedBy="ctsuser"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                editable="{Boolean}true"/>
+            <experiencefragment_233700458
+                jcr:created="{Date}2020-04-11T13:23:39.495Z"
+                jcr:createdBy="ctsuser"
+                jcr:lastModified="{Date}2020-04-11T13:23:55.916Z"
+                jcr:lastModifiedBy="ctsuser"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                fragmentPath="/content/experience-fragments/vcm-experience-fragments/searchOverlayFragment/master"
+                text="× Close Clear Search Recent Search"/>
+            <responsivegrid
+                jcr:created="{Date}2020-02-21T08:50:39.067Z"
+                jcr:createdBy="vmohanam@vcm.com"
+                jcr:lastModified="{Date}2020-02-21T08:50:39.067Z"
+                jcr:lastModifiedBy="vmohanam@vcm.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid>
+            <experiencefragment_90625225
+                jcr:created="{Date}2020-02-21T08:50:46.986Z"
+                jcr:createdBy="vmohanam@vcm.com"
+                jcr:lastModified="{Date}2020-02-24T07:14:58.408Z"
+                jcr:lastModifiedBy="naggarwal@vcm.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                editable="{Boolean}true"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}650"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,34 @@
+<sly data-sly-use.model="com.vcm.core.models.HighIndexValueModel">
+ <input type="hidden" id="indexEndpoint"
+	value="${model.highIndexEndpoint}" /> <input type="hidden"
+	id="indexApiKey" value="${model.highIndexApiKey}" />
+ <input type="hidden" id="apiFailureMessage" value="${model.apiCallFailureMessage || 'API Call Failed'}"/>
+ <input type="hidden" id="indexLabels" value="${model.highIndexLabels}"/>
+</sly>
+  <div class="container">
+    <div class="dynamic-loader">
+    	<img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="content vcm-datatable-container">
+      <div class="dhi-title my-3">
+        <h3>${currentPage.title}</h3>
+      </div>
+      <div class="table-shadowsLR-onScrollX-sm">
+	      <table id="dataHighIndexTable" class="display text-center" width="100%">
+	      	<caption class="sr-only">Daily Highest Index</caption>
+	        <thead>
+	          <tr> 
+				  <th scope="col"><span class="index"></span></th>
+				  <th scope="col"><span class="symbol"></span></th>
+				  <th scope="col"><span class="high_date"></span></th>
+				  <th scope="col"><span class="high_value"></span></th>
+				  <th scope="col"><span class="current_value"></span></th>
+				  <th scope="col"><span class="decline_percentage"></span></th>
+				  <th scope="col"><span class="long_cash_invested_percentage"></span></th>
+	          </tr>
+	        </thead>
+	      </table>
+		  <span class="sr-only table-info" aria-live="polite"></span>
+      </div>
+    </div>
+  </div>

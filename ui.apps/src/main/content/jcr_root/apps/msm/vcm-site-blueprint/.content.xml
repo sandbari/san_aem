@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-01-31T17:05:38.281+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-02-10T07:13:47.046Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:template="/libs/wcm/msm/templates/blueprint"
+        jcr:description="VCM Site Blueprint for creating multi sites"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="VCM Site Blueprint"
+        sling:resourceType="wcm/msm/components/blueprint"
+        sitePath="/content/vcm/language-masters">
+        <dialog/>
+    </jcr:content>
+</jcr:root>

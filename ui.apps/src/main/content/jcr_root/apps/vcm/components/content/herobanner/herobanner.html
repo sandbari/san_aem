@@ -1,0 +1,69 @@
+<sly data-sly-test="${wcmmode.edit}"> Herobanner</sly>
+<sly data-sly-use.HeroBannerModel="com.vcm.core.models.HeroBannerModel" />
+<div id="main-content" class="container">
+	<div data-sly-test="${HeroBannerModel.bannerType == 'franchise-banner'}" class="bannerWrapper ${HeroBannerModel.bannerType}" style="background-color:${HeroBannerModel.heroBackgroundColor @context ='styleToken'}">
+		<div class="banner-container-wrapper">
+			<div class="banner-container">
+				<img src="${HeroBannerModel.heroImage}"  alt="${HeroBannerModel.altText || true}">
+			</div>
+
+		</div>
+	</div>
+
+     <div data-sly-test="${HeroBannerModel.bannerType != 'franchise-banner'}" class="bannerWrapper ${HeroBannerModel.bannerType}">
+
+        <div class="banner-container ${HeroBannerModel.imageFocusArea}">
+            <img src="${HeroBannerModel.heroImage}"  alt="${HeroBannerModel.altText || true}">
+            <span class="${HeroBannerModel.addGreenTriangle == 'yes' ? 'bottom-triangle' : ''}"></span>
+			<div class="focusarea" style="background-image:url('${HeroBannerModel.heroBackgroundImage @context ='uri'}')"></div>
+			<div data-sly-test="${HeroBannerModel.requirementItems == 'loginBox'}" class="loginPopup"></div>
+			<div class="bnr-content">
+				<div class="content-wrapper">
+					<sly data-sly-test="${HeroBannerModel.requirementItems == 'imageBox'}">
+						<div class="imageBox">
+							<!--<div data-sly-resource="${'imageSection' @ resourceType='vcm/components/content/image'}"></div>	 -->
+							 <img data-sly-test="${HeroBannerModel.imagePath}"src="${HeroBannerModel.imagePath}" alt="${HeroBannerModel.imagePathAltText || true}">
+						</div>
+					</sly>
+					<sly data-sly-test="${HeroBannerModel.requirementItems == 'loginBox'}">
+                        <div class="loginBox desktopShow">
+                            <div data-sly-resource="${'signinNode' @ resourceType='vcm/components/content/signin'}"></div>
+                        </div>
+                    </sly>
+					<sly data-sly-test="${HeroBannerModel.requirementItems == 'userTypeSelection'}">
+						<div class="investorLinks investortype desktopShow">
+							<div data-sly-resource="${'columnone' @ resourceType='vcm/components/content/audienceselector'}"></div>
+						</div>
+					</sly>
+					<div class="banner-text">
+						<h1>${HeroBannerModel.heading @context='html'}</h1>
+                        <div class="${HeroBannerModel.bannerType == 'homepage-banner' ? 'freeText' : ''}">
+                            <div class="sub-hdng desktopShow">
+                                ${HeroBannerModel.description @context='html'}
+                            </div>
+                            <div data-sly-test="${HeroBannerModel.linkText && HeroBannerModel.linkUrl }" class="navigation-right desktopShow">
+								<a data-userType="member" href="${HeroBannerModel.linkUrl}" class="${HeroBannerModel.tabSelect == '_blank' ? 'external-link' : ''}" target="${HeroBannerModel.tabSelect}"><span class="sr-only"> ${HeroBannerModel.linkAriaLabel}</span><span aria-hidden="true"> ${HeroBannerModel.linkText}</span><sly data-sly-test="${HeroBannerModel.tabSelect == '_blank'}"><span class="sr-only">Opens a New Window</span><span class="external-icon"></span></sly><sly data-sly-test="${HeroBannerModel.tabSelect == '_self'}"><span aria-hidden="true" class="right--arrow"></span></sly></a>
+                            </div>
+                       	</div>
+					</div>
+				</div>
+			</div>
+        </div>
+		<div data-sly-test="${HeroBannerModel.requirementItems == 'userTypeSelection'}" id="audience-selector-popup" class="investorLinks popup">
+            <span class="close"></span>
+            <div data-sly-resource="${'columnone' @ resourceType='vcm/components/content/audienceselector'}"></div>
+        </div>
+        <div class="freeTextMobile mobileShow">
+            <div data-sly-test="${HeroBannerModel.description}" class="sub-hdng ">
+                ${HeroBannerModel.description @context='html'}
+            </div>
+			<div data-sly-test="${HeroBannerModel.linkText && HeroBannerModel.linkUrl }" class="navigation-right">
+				<a data-userType="member" href="${HeroBannerModel.linkUrl}" class="${HeroBannerModel.tabSelect == '_blank' ? 'external-link' : ''}" aria-label="${HeroBannerModel.linkAriaLabel}" target="${HeroBannerModel.tabSelect}"> ${HeroBannerModel.linkText}<sly data-sly-test="${HeroBannerModel.tabSelect == '_blank'}"><span class="sr-only">Opens a New Window</span><span class="external-icon"></span></sly><sly data-sly-test="${HeroBannerModel.tabSelect == '_self'}"><span aria-hidden="true" class="right--arrow"></span></sly></a>
+           	</div>
+       	</div>
+        <div data-sly-test="${HeroBannerModel.requirementItems == 'userTypeSelection' && !wcmmode.edit}" class="investorLinks investortype mobileShow">
+            <div data-sly-resource="${'columnone' @ resourceType='vcm/components/content/audienceselector'}"></div>
+        </div>
+		<div class="popup-mask"></div>
+    </div>
+</div>

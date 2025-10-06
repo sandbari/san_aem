@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Timeline Carousel Authoring Dialog "
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Reusable Footer Configuration Tabs"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Heading"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author Heading text of the section"
+                                                fieldLabel="Heading "
+                                                name="./heading"
+                                                required="{Boolean}true"/>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/vcm/components/content/common"
+                                                sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="To author description text below the heading"
+                                                fieldLabel="Description"
+                                                name="./description"
+                                                required="{Boolean}false"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <eventData
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Event Details">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./yearData">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <year
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="To author the year value"
+                                                                    fieldLabel="year"
+                                                                    name="./year"
+                                                                    required="{Boolean}true"/>
+                                                                <eventImage
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                    fieldDescription="To upload image from DAM assets for the event"
+                                                                    fieldLabel="Event Image"
+                                                                    name="./eventImage"
+                                                                    required="true"
+                                                                    rootPath="/content/dam/vcm"/>
+                                                                <alttext
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="To author the alt text for the event image"
+                                                                    fieldLabel="Alt Text"
+                                                                    name="./altText"/>
+                                                                <event_x0020_title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="To author the event title text"
+                                                                    fieldLabel="Event Title"
+                                                                    name="./eventTitle"
+                                                                    required="{Boolean}true"/>
+                                                                <eventDescription
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceSuperType="/apps/vcm/components/content/common"
+                                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                                    fieldDescription="To author the event description text "
+                                                                    fieldLabel="Event Description"
+                                                                    name="./eventDescription"
+                                                                    required="{Boolean}true"
+                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </eventData>
+                                            <linkText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author the link text to be shown at the bottom of the section "
+                                                fieldLabel="Link text"
+                                                name="./linkText"
+                                                required="{Boolean}false"/>
+                                            <linkUrl
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="To author the page url of the link"
+                                                fieldLabel="Link Url"
+                                                name="./linkUrl"
+                                                required="{Boolean}false"
+                                                rootPath="/content/vcm"/>
+                                            <linkdescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author the aria-label or link description of the link. "
+                                                fieldLabel="Link Description"
+                                                name="./linkDescription"/>
+                                            <tabselect
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="To author target for link to be open in same tab or new tab"
+                                                fieldLabel="Target"
+                                                name="./tabSelect">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Same tab"
+                                                        value="_self"/>
+                                                    <newtab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="New tab"
+                                                        value="_blank"/>
+                                                </items>
+                                            </tabselect>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

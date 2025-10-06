@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Forms Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author heading text"
+                        fieldLabel="Heading"
+                        name="./heading"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                        fieldLabel="Description"
+                        name="./description"
+                        useFixedInlineToolbar="{Boolean}true">
+                        <rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                        <uiSettings
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                    </description>
+                    <topicfilter
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                        fieldDescription="Add all the primary Category tags of the forms"
+                        fieldLabel="Category Tags"
+                        multiple="{Boolean}true"
+                        name="./formsTags"
+                        rootPath="/content/cq:tags/vcm"/>
+                    <pdfrootpath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="Add root path under which forms available"
+                        fieldLabel="Root path of Forms folder"
+                        name="./rootPath"
+                        required="{Boolean}true"
+                        rootPath="/content/dam/vcm"/>
+                    <loadmoretext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author Load More text"
+                        fieldLabel="Load More Text"
+                        name="./loadMoreText"
+                        value="Load More"/>
+                    <tableheader
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Table Header"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                        <items jcr:primaryType="nt:unstructured">
+                            <formid
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Form ID"
+                                name="./formID"
+                                value="Form ID"/>
+                            <form
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Form"
+                                name="./form"
+                                value="Form Name"/>
+                            <download
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Download"
+                                name="./download"
+                                value="Download"/>
+                        </items>
+                    </tableheader>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

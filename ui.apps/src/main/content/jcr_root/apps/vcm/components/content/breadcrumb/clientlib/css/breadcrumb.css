@@ -1,0 +1,65 @@
+/* Breacrumb Styles*/
+
+.breadcrumb {
+    background-color: #fff;
+    padding: 0;
+    margin: 21px 0 12px 0;
+}
+
+ol.cmp_breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}	
+
+.breadcrumb-item {
+    padding: 0 !important;
+    margin-bottom:10px;
+    display:inline;
+}
+
+.breadcrumb-item a {
+    color: #004A98;
+    font-size: 12px;
+    line-height: 14px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: benton-sans, sans-serif;
+}
+
+.breadcrumb-item i {
+    padding: 0 10px;
+    line-height: 14px;
+    color: #56565A;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "";
+    padding: 0;
+}
+
+.breadcrumb-item.active a {
+    color: #56565A;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+@media screen and (max-width:767px) {
+    .breadcrumb {
+        margin: 20px 0 13px 0;
+    }
+    .breadcrumb-item a {
+        font-size: 12px;
+    }
+    .breadcrumb-item.active a {
+        font-weight: 500;
+    }
+    .breadcrumb-item.active a {
+        font-weight: 500;
+    }
+	.breadcrumb .container {
+    	padding: 0 15px;
+	}
+}

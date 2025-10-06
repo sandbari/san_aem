@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    authTokenEndpointUrl="https://login.usw2.pure.cloud/oauth/token"
+	clientId="08551d14-9fcd-41fe-8252-78b928cb5e5a"
+	clientSecret="St5UHUySQbjJghtGr49UyxnOsJt04ketQnLjwFlmhho"/>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Column Control Center"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                jcr:title="ColumControl Tabs"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <columnlayout
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Choose a Column Layout"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <columnlayout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Column Layout"
+                                                name="./columnLayout">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <_x0032_-column-card-layout
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="2 Column - Card Layout"
+                                                        value="2-column-card-layout"/>
+                                                    <_x0032_-column-strategy-layout
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="2 Column - Strategy Layout"
+                                                        value="2-column-strategy-layout"/>
+                                                    <_x0032_-column-grid-8x4
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="2 Column Grid 8x4"
+                                                        value="2-column-grid-8x4"/>
+                                                    <_x0032_-column-grid-4x8
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="2 Column Grid 4x8"
+                                                        value="2-column-grid-4x8"/>
+                                                    <_x0032_-column-grid-7x5
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="2 Column Grid 7x5"
+                                                        value="2-column-grid-7x5"/>
+                                                    <_x0032_-column-grid-9x3
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="2 Column Grid 9x3"
+                                                        value="2-column-grid-9x3"/>
+                                                    <_x0032_-column-grid-3x9
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="2 Column Grid 3x9"
+                                                        value="2-column-grid-3x9"/>
+                                                    <_x0033_-column-grid-4x4x4
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="3 Column Grid 4x4x4"
+                                                        value="3-column-grid-4x4x4"/>
+                                                    <_x0033_-column-grid-3x3x6
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="3 Column Grid 3x3x6"
+                                                        value="3-column-grid-3x3x6"/>
+                                                    <_x0033_-column-grid-6x3x3
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="3 Column Grid 6x3x3"
+                                                        value="3-column-grid-6x3x3"/>
+                                                    <_x0034_-column-grid-3x3x3x3
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="4 Column Grid 3x3x3x3"
+                                                        value="4-column-grid-3x3x3x3"/>
+                                                </items>
+                                            </columnlayout>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </columnlayout>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

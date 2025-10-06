@@ -1,0 +1,20 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+   Edit Social Site Links Component
+</sly>
+<sly data-sly-use.socialmodel="com.vcm.core.models.SocialSiteLinksModel" />
+<div class="socialmedia__icons col-12 col-md-12 col-xl-4">
+   <sly data-sly-test="${socialmodel.heading}">
+      <p>${socialmodel.heading}</p>
+   </sly>
+   <sly data-sly-test="${socialmodel.socialLinks}">
+      <ul class="row col-12" role="list">
+         <sly data-sly-list.socialShareIcons="${socialmodel.updSocialShare}">
+            <sly data-sly-test.socLinkUrl="${socialShareIcons.linkUrl == ''? '#': socialShareIcons.linkUrl}">
+               <li role="listitem">
+                  <a href="${socLinkUrl}" aria-label="${socialShareIcons.altText}" target="${socialShareIcons.tabSelect}" rel="${socialShareIcons.tabSelect == '_blank' ? 'noopener noreferrer' : ''}"><i class="fa fa-${socialShareIcons.socialIcons @context='html'}" aria-hidden="true"></i></a>
+               </li>
+            </sly>
+         </sly>
+      </ul>
+   </sly>
+</div>

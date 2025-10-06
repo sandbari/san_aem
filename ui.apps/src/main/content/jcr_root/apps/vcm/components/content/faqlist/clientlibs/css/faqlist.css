@@ -1,0 +1,259 @@
+.faqlist .asteriskColor {
+	color: red;
+}
+
+.faqlist .displayInlineBlock {
+	display: inline-block;
+}
+
+@media ( max-width : 480px) {
+	.faqlist .mrgnBtm25 {
+		margin-bottom: 25px;
+	}
+}
+
+.faqlist .marginBottom10 {
+	margin-bottom: 10px;
+}
+
+.faqlist .marginBottom5 {
+	margin-bottom: 5px;
+}
+
+.faqlist .marginTop10 {
+	margin-top: 10px;
+}
+
+.faqlist .marginTop5 {
+	margin-top: 5px;
+}
+
+.faqlist .pdngleft35 {
+	padding-left: 40px !important;
+}
+
+.faqlist .accordian h2.blueHdng-greenBorder {
+	font-size: 22px;
+	color: #486D90;
+	border-bottom: 2px solid #8BC105;
+	display: inline-block;
+	padding-bottom: 10px;
+	font-family: yorkten-slab-normal, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	margin-left: 22px !important;
+}
+
+.faqlist h3.blueHdng-greenBorder {
+	padding-top: 40px;
+}
+
+.faqlist .mid-icon[aria-expanded='false']:first-child .accordionPlusIcon {
+	position: relative;
+	top: 4px;
+}
+
+.faqlist .mid-icon[aria-expanded='true']:first-child  .accordionPlusIcon {
+	position: relative;
+	top: 4px;
+}
+
+.faqlist .card-triangle-hdng-cont-cta p {
+	margin-top: 30px !IMPORTANT;
+}
+
+.faqlist .acc-padtp {
+	padding-top: 1.25rem !important;
+}
+
+.faqlist .acc-segregation {
+	margin-top: 50px;
+}
+
+.faq-wrapper .acc-segregation{
+	float: none;
+    clear: both;
+    overflow: hidden;
+}
+.faqlist .card-header:first-child {
+	border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+	border: none;
+}
+
+.faqlist .allfaqs {
+	background: #F7F7F7 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 25px #00000029;
+	padding-left: 11px;
+}
+
+.faqlist .allfaqs p:first-child {
+	padding: 2px 0 35px 0 !important;
+}
+
+.faqlist .allfaqs p {
+	padding: 0 0 35px 0 !important;
+}
+
+.faqlist .accordionContainer .card-link {
+	font-family: benton-sans, sans-serif;
+	font-size: 18px;
+	color: #54565A;
+	width: 96%;
+	font-weight: 600;
+}
+
+.faqlist .noContent {
+	color: #000 !important;
+	background-color: transparent !important;
+	pointer-events: none;
+}
+
+.faqlist .seeall-nocontent {
+	background: none !important;
+	width: 100% !important;
+	text-align: center;
+	font-family: yorkten-slab-normal, sans-serif;
+	font-size: 16px;
+}
+
+.faqlist .accordionContainer .card {
+	border-top: 1px solid #D8D8D8 !important;
+	border: none;
+	cursor: pointer;
+	width: auto !important;
+	height: auto !important;
+	display: block;
+}
+
+.faqlist .accordionContainer .card-body {
+	color: #54565A;
+	background: #fff;
+	padding-top: 0;
+	font-size: 16px;
+	font-family: benton-sans, sans-serif;
+	padding-bottom: 10px;
+}
+
+.faqlist .card-body p a {
+	font-family: benton-sans, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.faqlist .accordionContainer .card-header.collapsed, .faqlist .accordionContainer .card-header
+	{
+	background-color: #f7f7f7 !important;
+}
+
+.faqlist .accordionContainer .card-header {
+	border-bottom: none;
+    background: none;
+    box-shadow: none;
+}
+
+.faqlist .faq-ver {
+	background: #F7F7F7;
+	padding-bottom: 48px;
+}
+
+.faqlist .faq-ver .card {
+	padding: 13px 0px;
+    background-color: #f7f7f7;
+}
+
+.faqlist .viewall {
+	display: block;
+	font-weight: 800;
+	font-size: 16px;
+	font-family: yorkten-slab-normal, sans-serif;
+	background: url(/content/dam/vcm/faqdetails/images/seeall-ar.svg) 68px 0
+		no-repeat;
+	color: #004A98;
+	width: 98px;
+	height: 30px;
+	margin: 12px !important;
+	float: right;
+}
+
+.faqlist .seeall {
+	display: none;
+	font-weight: 800;
+	font-size: 16px;
+	font-family: yorkten-slab-normal, sans-serif;
+	background: url(/content/dam/vcm/faqdetails/images/seeall-ar.svg) 60px 0
+		no-repeat;
+	color: #004A98;
+	width: 98px;
+	height: 30px;
+	margin: 12px !important;
+}
+
+
+.faqlist .card-header[aria-expanded='true'] .accordionPlusIcon {
+	background: url(../resources/acc-closed.svg)
+		no-repeat !important;
+	width: 26px;
+	height: 20px;
+	float: right;
+	position: relative;
+	bottom: -5px;
+	/* transform: rotateZ(180deg) !important;
+    transition: all .25s;  */
+	/* Client request to remove this aniamtion */
+}
+
+.faqlist .card-header[aria-expanded='false'] .accordionPlusIcon {
+	background: url(../resources/acc-open.svg)
+		no-repeat;
+	width: 26px;
+	height: 20px;
+	position: relative;
+	bottom: -5px;
+	float: right;
+}
+
+.faqlist .acc-title {
+	padding: 23.5px 10px;
+	margin-top: 40px;
+	margin-bottom: 8px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	/* height: 85px; */
+	box-shadow: 0px 2px 16px #0000002B;
+}
+
+.faqlist #accordion .card-body {
+    border-bottom: none;
+    padding: 0.8em 1.5em;
+    margin-top: 6px;
+    background: none;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+	.faqlist .accordionContainer .card {
+		display: block;
+	}
+	.faqlist .accordionContainer .card-link {
+		width: 90%;
+	}
+	.faqlist .acc-segregation {
+		margin-top: 30px;
+	}
+	.faqlist h3.blueHdng-greenBorder {
+		font-size: 22px;
+	}
+	.faqlist .seeall {
+		display: block;
+		font-weight: 800;
+		font-size: 16px;
+		font-family: yorkten-slab-normal, sans-serif;
+		background: url(/content/dam/vcm/faqdetails/images/seeall-ar.svg) 60px 0
+			no-repeat !important;
+		color: #004A98;
+		width: 98px;
+		height: 30px;
+		margin: 12px 0 0 0 !important;
+	}
+}

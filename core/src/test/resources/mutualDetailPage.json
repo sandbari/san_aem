@@ -1,0 +1,88 @@
+{
+   "jcr:primaryType":"cq:Page",
+   "jcr:createdBy":"admin",
+   "jcr:created":"Wed Mar 18 2020 13:14:09 GMT+0530",
+   "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Mutual Funds List",
+      "jcr:versionHistory":"3c7ac505-1c52-43a8-89a8-fc8ad013fbc9",
+      "triangleColor":"#0B3B60",
+      "historicalInformationUrl":"/content/dam/vcm/vcm-content-fragments/test002",
+      "ticker":"USMIX",
+      "canonicalUrl":"https://www.vcm.com",
+      "ogImage":"/content/dam/vcm/vcm-content-fragments/test002.png",
+      "historicalInformationText":"Historical Information",
+      "prospectusText":"Prospectus",
+      "managerCommentaryUrl":"/content/dam/vcm/vcm-content-fragments/test002",
+      "isApiDataTitle":"false",
+      "gipsComplainceUrl":"/content/dam/vcm/vcm-content-fragments/test002",
+      "premiumDiscountReport":"/content/dam/vcm/vcm-content-fragments/test002",
+      "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+      "allHoldingsText":"New Holdings",
+      "institutionalinvestorsType":"false",
+      "financialAdvisorsType":"false",
+      "allHoldingsUrl":"/content/dam/vcm/vcm-content-fragments/test002",
+      "pageCategory":"Category",
+      "jcr:predecessors":[
+         "5e0bc9da-7541-4932-a63f-a7022be3e5a7"
+      ],
+      "isCorpHomePage":"false",
+      "jcr:created":"Wed Mar 18 2020 13:14:09 GMT+0530",
+      "cq:lastModified":"Wed Apr 01 2020 11:45:30 GMT+0530",
+      "factsheeturl":"/content/dam/vcm/vcm-content-fragments/pop-up/etf-site-message",
+      "purchaseFundText":"Purchase Fund",
+      "factSheetText":"Fact Sheet",
+      "jcr:baseVersion":"5e0bc9da-7541-4932-a63f-a7022be3e5a7",
+      "useImageInHeaderNav":"false",
+      "jcr:isCheckedOut":true,
+      "prospectusUrl":"https://www.google.com",
+      "advisorprospectusUrl":"https://www.google.com",
+      "hideInNav":"true",
+      "jcr:uuid":"aa4e722d-4bbc-4c90-9090-3e42c9e71e80",
+      "secondLevelNavOnly":"false",
+      "sling:resourceType":"vcm/components/structure/page",
+      "managerCommentaryText":"Manager Commentary",
+      "membersType":"false",
+      "cq:lastModifiedBy":"admin",
+      "isActiveFundPage":"false",
+      "root":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:lastModifiedBy":"admin",
+         "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+         "sling:resourceType":"wcm/foundation/components/responsivegrid",
+         "experiencefragment":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"naggarwal@vcm.com",
+            "text":"USAA Member Investor relations Contact US SigninSignin/Register Signin � close Menu About Victory Capital Back About Victory Capital About Victory Capital Leadership Team Corporate Responsibility Products Back Products Mutual Funds California Bond Fund Capital Growth Fund Cornerstone Aggressive Fund Cornerstone Conservative Fund Cornerstone Equity Fund Cornerstone Moderately Aggressive Fund Cornerstone Moderately Conservative Fund Emerging Markets Fund Extended Market Index Fund Global Equity Income Fund Global Managed Volatility Fund Government Securities Fund Growth & Income Fund Growth Fund Growth and Tax Strategy Fund High Income Fund Income Fund Income Stock Fund Intermediate-Term Bond Fund International Fund Money Market Fund Nasdaq-100 Index Fund New York Bond Fund Precious Metals and Minerals Fund Science & Technology Fund Short-Term Bond Fund Small Cap Stock Fund Target Retirement 2020 Fund Target Retirement 2030 Fund Target Retirement 2040 Fund Target Retirement 2050 Fund Target Retirement 2060 Fund Target Retirement Income Fund Tax Exempt Intermediate-Term Fund Tax Exempt Long-Term Fund Tax Exempt Money Market Fund Tax Exempt Short-Term Fund Treasury Money Market Trust USAA 500 Index Fund Member Shares USAA 500 Index Fund Reward Shares Ultra Short-Term Bond Fund Virginia Bond Fund World Growth Fund Cornerstone Moderate Fund Victory Shares ETFs USAA 529 Education Savings Plan Retirement Investment Franchise Back Investment Franchise Investment Franchise Integrity Asset Management Munder NewBridge Asset Management RS Investments Sophus Capital Sycamore Capital Trivalent Investments USAA Mutual Funds Munder Investment Franchise Advice & Tools Back Advice & Tools Investor Learning Center All About Mutual Funds All About ETFs All About College Savings Plans Planning For Retirement Military Financial Readiness Investment Planning Tools Investment Goals FAQ Insights Back Insights Insights Insight FAQ Investor type USAA Member USAA Member Financial Professionals Institutional Investors What type of investor are you? USAA Member Financial Professionals Institutional Investors Investor relations Contact US � Financial Professionals Institutional Investors",
+            "jcr:lastModified":"Mon Feb 24 2020 08:47:28 GMT+0000",
+            "sling:resourceType":"cq/experience-fragments/editor/components/experiencefragment",
+            "fragmentPath":"/content/experience-fragments/vcm-experience-fragments/vcm-header/master"
+         },
+         "breadcrumb":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:createdBy":"admin",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:created":"Wed Apr 01 2020 11:45:25 GMT+0530",
+            "jcr:lastModified":"Wed Apr 01 2020 11:45:25 GMT+0530",
+            "sling:resourceType":"vcm/components/content/breadcrumb"
+         },
+         "productdetaildatainf":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:createdBy":"admin",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:created":"Mon Mar 30 2020 15:56:26 GMT+0530",
+            "jcr:lastModified":"Mon Mar 30 2020 15:56:26 GMT+0530",
+            "sling:resourceType":"vcm/components/content/productdetaildatainfo"
+         },
+         "experiencefragment_1818277927":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"naggarwal@vcm.com",
+            "text":"News Policies Careers User Agreement Events Fund Literature Blog Connect with us �2020 Victory Capital Management Inc.",
+            "jcr:lastModified":"Mon Feb 24 2020 08:47:40 GMT+0000",
+            "sling:resourceType":"cq/experience-fragments/editor/components/experiencefragment",
+            "fragmentPath":"/content/experience-fragments/vcm-experience-fragments/vcm-footer/master"
+         }
+      }
+   }
+}

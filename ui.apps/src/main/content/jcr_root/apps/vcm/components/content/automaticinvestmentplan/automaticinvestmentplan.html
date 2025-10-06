@@ -1,0 +1,12 @@
+<sly data-sly-test="${wcmmode.edit && !properties.webContent}"><div class="cq-placeholder" data-emptyText="${component.title}"/></sly>
+<sly data-sly-test="${wcmmode.edit && properties.webContent}">
+    <div>Automatic Investment Plan (AIP) : </div></br>
+    <div>Web Content : </div></br></br>
+    <div>${properties.webContent}</div></br>
+
+    <div>Mobile Content : </div></br></br>
+    <div>${properties.mobContent}</div></br>
+
+    <div>Mobile Link : ${properties.mobLink}</br></div>
+
+</sly>

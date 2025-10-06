@@ -1,0 +1,19 @@
+##Rewrite rules for all the old legacy URL to new platform
+## THB_HOSTNAME="thbinc.com"
+
+## BNB start here
+
+RewriteRule ^/the-firm$ https://${VCM_INSTITUTIONAL_HOSTNAME}/investment-franchises/thb-asset-management [L,R=301]
+RewriteRule ^/the-firm/esg-investment-policy-statement$ https://${VCM_INSTITUTIONAL_HOSTNAME}/investment-franchises/thb-asset-management [L,R=301]
+RewriteRule ^/strategies-micro-cap$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/thb-micro-cap-strategy [L,R=301]
+RewriteRule ^/strategies-mid-cap$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/thb-mid-cap-strategy [L,R=301]
+RewriteRule ^/strategies-small-cap-core$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/thb-small-cap-strategy [L,R=301]
+RewriteRule ^/strategies-international$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/thb-international-opportunities [L,R=301]
+RewriteRule ^/research$ https://${VCM_INSTITUTIONAL_HOSTNAME}/blog-and-insights/insights [L,R=301]
+RewriteRule ^/category/news-and-insights$ https://${VCM_INSTITUTIONAL_HOSTNAME}/news [L,R=301]
+RewriteRule ^/contact-us$ https://${VCM_INSTITUTIONAL_HOSTNAME}/institutional-investor/contact-us [L,R=301]
+RewriteRule ^/strategies-mutual-fund$ https://${VCM_ADVISOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-thb-us-small-opportunities-fund [L,R=301]
+RewriteRule ^/?$ https://${VCM_ADVISOR_HOSTNAME}/investment-franchises/thb-asset-management [L,R=301]
+
+## BNB end here
+

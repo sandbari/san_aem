@@ -1,0 +1,30 @@
+<sly data-sly-template.model="${@ model}">
+   <div class="productsBaner productsBaner-listbox">
+   <div class="product-list-container ">
+      <div class="productHeading col-md-12">
+         <h3  aria-level="3" class="blueHdng-greenBorder">${model.title @context='html'}</h3>
+      </div>
+      <div class="content-wrapper mbl-container-w100-px15">
+         <div class="row" role="list">
+            <sly data-sly-list.productItems="${model.productList}">
+                <sly data-sly-test="${productItems.productIcon}">
+                <div class="${model.columnVariant} list-item-flex" role="listitem">
+                  <div class="card-hdng-cnt-link">
+                     <div class="cta-imgtxt">
+                        <sly data-sly-test="${properties.titleVariant=='withtitle'}">
+                        <h4 aria-level="4">${productItems.productIconTitle @context='html'}</h4>
+                        </sly>
+                        <img src="${productItems.productIcon}" alt="" class="cta-box-img"/>
+                     </div>
+                     <div class="${properties.titleVariant=='withtitle'?'cta-txt' : 'cta-fundtxt'}">
+                        ${productItems.productTextArea @context="html"}
+                     </div>
+                  </div>
+               </div>
+               </sly>
+            </sly>
+         </div>
+      </div>
+   </div>
+   </div>
+</sly>

@@ -1,0 +1,127 @@
+{
+   "jcr:primaryType":"cq:Tag",
+   "jcr:createdBy":"admin",
+   "jcr:title":"VCM",
+   "jcr:created":"Fri Feb 28 2020 16:08:30 GMT+0530",
+   "jcr:description":"",
+   "sling:resourceType":"cq/tagging/components/tag",
+   "search-tabs":{
+      "jcr:primaryType":"cq:Tag",
+      "jcr:mixinTypes":[
+         "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy":"admin",
+      "jcr:title":"Search Tabs",
+      "cq:lastReplicationAction":"Activate",
+      "cq:lastReplicatedBy":"ctsuser",
+      "jcr:created":"Thu Apr 02 2020 14:04:04 GMT+0530",
+      "cq:lastReplicated":"Thu Mar 19 2020 06:13:50 GMT+0000",
+      "jcr:description":"",
+      "sling:resourceType":"cq/tagging/components/tag",
+      "products":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:mixinTypes":[
+            "cq:ReplicationStatus"
+         ],
+         "jcr:createdBy":"admin",
+         "jcr:title":"Products",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"ctsuser",
+         "jcr:lastModifiedBy":"ctsuser",
+         "jcr:created":"Thu Apr 02 2020 14:04:04 GMT+0530",
+         "cq:lastReplicated":"Thu Mar 19 2020 06:13:58 GMT+0000",
+         "jcr:lastModified":"Thu Mar 19 2020 06:12:15 GMT+0000",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "general":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:mixinTypes":[
+            "cq:ReplicationStatus"
+         ],
+         "jcr:createdBy":"admin",
+         "jcr:title":"General",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"ctsuser",
+         "jcr:lastModifiedBy":"ctsuser",
+         "jcr:created":"Thu Apr 02 2020 14:04:04 GMT+0530",
+         "cq:lastReplicated":"Thu Mar 19 2020 06:13:58 GMT+0000",
+         "jcr:lastModified":"Thu Mar 19 2020 06:12:34 GMT+0000",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "advicetools":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:mixinTypes":[
+            "cq:ReplicationStatus"
+         ],
+         "jcr:createdBy":"admin",
+         "jcr:title":"Advice  & Tools",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"ctsuser",
+         "jcr:lastModifiedBy":"ctsuser",
+         "jcr:created":"Thu Apr 02 2020 14:04:04 GMT+0530",
+         "cq:lastReplicated":"Thu Mar 19 2020 06:13:58 GMT+0000",
+         "jcr:lastModified":"Thu Mar 19 2020 06:12:49 GMT+0000",
+         "sling:resourceType":"cq/tagging/components/tag"
+      }
+   },
+   "faq":{
+      "jcr:primaryType":"cq:Tag",
+      "jcr:createdBy":"admin",
+      "jcr:title":"FAQ",
+      "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+      "jcr:description":"Frequently Asked Question Tags",
+      "sling:resourceType":"cq/tagging/components/tag",
+      "save-money":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Saving Money",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "retirement-plans":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Retirement Plans",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "investing-work":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"How Investing Works",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "profiling":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Profiling",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "customer-service-care":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Customer Service Care",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "enrollment":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:mixinTypes":[
+            "cq:ReplicationStatus"
+         ],
+         "jcr:createdBy":"admin",
+         "jcr:title":"Enrollment",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"admin",
+         "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+         "cq:lastReplicated":"Fri Feb 14 2020 14:27:07 GMT+0530",
+         "jcr:description":"enrollment procedure",
+         "sling:resourceType":"cq/tagging/components/tag"
+      }
+   }
+}

@@ -1,0 +1,41 @@
+{
+   "jcr:primaryType":"dam:Asset",
+   "jcr:createdBy":"admin",
+   "jcr:created":"Tue May 05 2020 10:33:10 GMT+0530",
+   "jcr:content":{
+      "jcr:primaryType":"dam:AssetContent",
+      "jcr:title":"Fund list tool tip",
+      "cq:lastReplicationAction":"Activate",
+      "cq:lastReplicatedBy":"vmohanam",
+      "jcr:lastModifiedBy":"ctsuser",
+      "cq:lastReplicated":"Thu Apr 16 2020 06:15:17 GMT+0000",
+      "jcr:description":"",
+      "contentFragment":true,
+      "cq:name":"fund-list-tool-tip",
+      "jcr:lastModified":"Thu Apr 16 2020 05:16:06 GMT+0000",
+      "lastFragmentSave":"Thu Apr 16 2020 05:16:06 GMT+0000",
+      "cq:parentPath":"/content/dam/vcm/vcm-content-fragments/pop-up",
+      "renditions":{
+         "jcr:primaryType":"nt:folder",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Tue May 05 2020 10:33:10 GMT+0530"
+      },
+      "related":{
+         "jcr:primaryType":"nt:unstructured"
+      },
+      "data":{
+         "jcr:primaryType":"nt:unstructured",
+         "cq:model":"/conf/vcm/settings/dam/cfm/models/popup-note",
+         "master":{
+            "jcr:primaryType":"nt:unstructured",
+            "continueText@LastModified":"Thu Apr 16 2020 05:16:05 GMT+0000",
+            "popuptext@LastModified":"Thu Apr 16 2020 05:16:05 GMT+0000",
+            "continueText":"OK",
+            "popuptext":"<p>Risk Definition:</p>\n<p><b>&nbsp;&nbsp;&nbsp;&nbsp;Preservation of Capital</b></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;Funds in this risk category may be appropriate for those seeking to preserve their capital and can accept the lower returns in exchange for price stability.</p>\n<p><b>&nbsp;&nbsp;&nbsp;&nbsp;Conservative</b></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;Funds in this risk category may be appropriate for those seeking to minimize fluctuations in the market by taking an income-oriented approach.</p>\n<p><b>&nbsp;&nbsp;&nbsp;&nbsp;Moderately Conservative</b></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;Funds in this risk category may be appropriate for those seeking primarily income and secondarily moderate growth potential.</p>\n<p><b>&nbsp;&nbsp;&nbsp;&nbsp;Moderate</b></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;Funds in this risk category may be appropriate for those seeking total return and long-term growth potential.</p>\n<p><b>&nbsp;&nbsp;&nbsp;&nbsp;Moderately Aggressive</b></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;Funds in this risk category may be appropriate for those seeking growth and can tolerate wide fluctuations in market values, especially over the short term.</p>\n<p><b>&nbsp;&nbsp;&nbsp;&nbsp;Aggressive</b></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;Funds in this risk category may be appropriate for those seeking aggressive growth and can tolerate significant fluctuation in market values.</p>\n<p><b>&nbsp;&nbsp;&nbsp;&nbsp;Very Aggressive</b></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;Funds in this risk category may be appropriate for those seeking very aggressive growth and can tolerate extreme fluctuation in market values.</p>\n",
+            "popuptext@ContentType":"text/html",
+            "popupId":"RiskInfoPopupContent",
+            "popupId@LastModified":"Thu Apr 16 2020 05:16:05 GMT+0000"
+         }
+      }
+   }
+}

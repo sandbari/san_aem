@@ -1,0 +1,70 @@
+{
+  "jcr:primaryType": "cq:Template",
+  "jcr:createdBy": "admin",
+  "allowedPaths": [
+    "/content/entities(/.*)?"
+  ],
+  "jcr:created": "Thu Jun 18 2020 16:35:12 GMT+0530",
+  "ranking": 100,
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Tooltip Model",
+    "jcr:created": "Thu Jun 18 2020 16:35:12 GMT+0530",
+    "cq:lastModified": "Mon Jun 22 2020 10:31:44 GMT+0530",
+    "sling:resourceSuperType": "dam/cfm/models/console/components/data/entity",
+    "jcr:description": "Mode for Tool tip Text",
+    "cq:scaffolding": "/conf/vcm/settings/dam/cfm/models/tooltip-note/jcr:content/model",
+    "cq:templateType": "/libs/settings/dam/cfm/model-types/fragment",
+    "sling:resourceType": "dam/cfm/models/console/components/data/entity/default",
+    "cq:lastModifiedBy": "admin",
+    "model": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Jun 18 2020 16:35:12 GMT+0530",
+      "dataTypesConfig": "/mnt/overlay/settings/dam/cfm/models/formbuilderconfig/datatypes",
+      "sling:resourceType": "wcm/scaffolding/components/scaffolding",
+      "maxGeneratedOrder": "20",
+      "cq:targetPath": "/content/entities",
+      "cq:dialog": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "cq/gui/components/authoring/dialog",
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:lastModified": "Mon Jun 22 2020 10:31:44 GMT+0530",
+          "sling:resourceType": "granite/ui/components/coral/foundation/fixedcolumns",
+          "items": {
+            "jcr:primaryType": "nt:unstructured",
+            "maxGeneratedOrder": "20",
+            "1592478580003": {
+              "jcr:primaryType": "nt:unstructured",
+              "listOrder": "1",
+              "valueType": "string",
+              "showEmptyInReadOnly": "true",
+              "metaType": "text-single",
+              "name": "tooltipId",
+              "maxlength": "255",
+              "fieldLabel": "Tool Tip Type",
+              "sling:resourceType": "granite/ui/components/coral/foundation/form/textfield",
+              "renderReadOnly": "false"
+            },
+            "1592478663897": {
+              "jcr:primaryType": "nt:unstructured",
+              "listOrder": "2",
+              "valueType": "string",
+              "showEmptyInReadOnly": "true",
+              "metaType": "text-multi",
+              "cfm-element": "Tool Tip Content",
+              "name": "tooltipContent",
+              "sling:resourceType": "dam/cfm/admin/components/authoring/contenteditor/multieditor",
+              "renderReadOnly": "false",
+              "fieldDescription": "This is to show tool tip content",
+              "default-mime-type": "text/html"
+            }
+          }
+        }
+      }
+    }
+  }
+}

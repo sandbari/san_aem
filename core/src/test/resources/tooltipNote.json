@@ -1,0 +1,49 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Jun 18 2020 17:05:37 GMT+0530",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:title": "Product Detail Tool Tip",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:description": "",
+    "contentFragment": true,
+    "cq:name": "product-detail-tool-tip",
+    "jcr:lastModified": "Thu Jun 18 2020 17:07:06 GMT+0530",
+    "lastFragmentSave": "Thu Jun 18 2020 17:07:06 GMT+0530",
+    "cq:parentPath": "/content/dam/vcm/vcm-content-fragments/tool-tip",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Jun 18 2020 17:05:37 GMT+0530"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ]
+    },
+    "data": {
+      "jcr:primaryType": "nt:unstructured",
+      "cq:model": "/conf/vcm/settings/dam/cfm/models/tooltip-note",
+      "master": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:Taggable"
+        ],
+        "cancelButtonLabel@LastModified": "Thu Jun 18 2020 17:07:05 GMT+0530",
+        "continueButtonLabel": "Continue",
+        "tooltipContent@LastModified": "Thu Jun 18 2020 17:07:05 GMT+0530",
+        "continueButtonLabel@LastModified": "Thu Jun 18 2020 17:07:05 GMT+0530",
+        "tooltipId": "riskToolTipContent",
+        "tooltipContent@ContentType": "text/html",
+        "cancelButtonLabel": "Cancel",
+        "tooltipId@LastModified": "Thu Jun 18 2020 17:07:05 GMT+0530",
+        "tooltipContent": "This is Tool Tip Content Fragment Sample"
+      }
+    }
+  }
+}

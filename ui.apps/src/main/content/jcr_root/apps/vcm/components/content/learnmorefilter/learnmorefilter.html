@@ -1,0 +1,33 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+Edit ${component.title} Component
+</sly>
+
+<!--Filter Component-->
+<div class="container filter-wrapper">
+    <div class="wrapper-inner">
+		<div class="panel-default accordion-filter">
+			<div class="panel-heading active" id="filterAccordion">
+				<sly data-sly-test="${properties.heading}">
+				<div class="heading-filter down-arrow" role="button" data-toggle="collapse" href="#collapse" aria-expanded="true" aria-controls="collapse" tabindex="0">
+               	 ${properties.heading}
+				</div>
+				</sly>
+			</div>
+			<div id="collapse" class="panel-collapse collapse show" role="tabpanel">
+				<div class="panel-body">
+					<div class="row filter-checkbox justify-content-lg-center m-0" role="list">
+						<!-- Category checkboxes get appended here -->
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!--Category Divs-->
+<div class="default-block">
+    <sly data-sly-use.learnMoreFilterObj="com.vcm.core.models.LearnMoreFilterModel"> 
+    	${learnMoreFilterObj.defaultContent @ context='html'}
+    </sly>
+	<!-- Default HTML gets appended here -->
+</div>

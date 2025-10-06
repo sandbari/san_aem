@@ -1,0 +1,130 @@
+	<sly data-sly-test="${wcmmode.edit}"><h4>Click here to Edit Column Control Component....</h4></sly>
+<sly data-sly-use.model="com.vcm.core.models.ColumnControlModel" >    
+	<sly data-sly-test="${model.columnLayout == '2-column-card-layout'}">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-lg-6">
+				<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-md-6 col-sm-12 col-lg-6">
+				<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+		</div>
+    </sly>
+	<sly data-sly-test="${model.columnLayout == '2-column-strategy-layout'}">
+		<div class="mob-reverse">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-lg-8">
+					<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+				</div>
+				<div class="col-md-12 col-sm-12 col-lg-4">
+					<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>
+				</div>
+			</div>
+		</div>
+	</sly>
+    <sly data-sly-test="${model.columnLayout == '2-column-grid-8x4'}">
+		<div class="row mx-sm-ctrl-0">
+			<div class="col-sm-12 col-md-6 col-lg-8">
+				<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>	
+			</div>
+		</div>
+    </sly>
+        <sly data-sly-test="${model.columnLayout == '2-column-grid-4x8'}">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-8">
+				<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>	
+			</div>
+		</div>
+    </sly>
+	<sly data-sly-test="${model.columnLayout == '2-column-grid-7x5'}">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-7">
+				<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-5">
+				<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>	
+			</div>
+		</div>
+    </sly>
+    <sly data-sly-test="${model.columnLayout == '2-column-grid-9x3'}">
+		<div class="row mx-sm-ctrl-0">
+			<div class="col-lg-9">
+				<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-lg-3">
+				<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+		</div>
+    </sly>
+	<sly data-sly-test="${model.columnLayout == '2-column-grid-3x9'}">
+		<div class="row">
+			<div class="col-lg-3">
+				<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-lg-9">
+				<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+		</div>
+    </sly>
+    <sly data-sly-test="${model.columnLayout == '3-column-grid-4x4x4'}">
+		<div class="row three-column-layout">
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<sly data-sly-resource="${'content3' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+		</div>
+    </sly>
+    <sly data-sly-test="${model.columnLayout == '3-column-grid-3x3x6'}">
+		<div class="row">
+			<div class="col-lg-3">
+				<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-lg-3">
+				<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-lg-6">
+				<sly data-sly-resource="${'content3' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+		</div>
+    </sly>
+    <sly data-sly-test="${model.columnLayout == '3-column-grid-6x3x3'}">
+		<div class="row">
+			<div class="col-lg-6">
+				<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-lg-3">
+				<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-lg-3">
+				<sly data-sly-resource="${'content3' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+		</div>
+    </sly>
+    <sly data-sly-test="${model.columnLayout == '4-column-grid-3x3x3x3'}">
+		<div class="row">
+			<div class="col-lg-3">
+				<sly data-sly-resource="${'content1' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-lg-3">
+				<sly data-sly-resource="${'content2' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-lg-3">
+				<sly data-sly-resource="${'content3' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+			<div class="col-lg-3">
+				<sly data-sly-resource="${'content4' @ resourceType='wcm/foundation/components/parsys'}"/>
+			</div>
+		</div>
+    </sly>
+</sly>

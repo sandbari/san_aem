@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2020-03-12T11:57:30.010Z"
+        cq:lastModifiedBy="naggarwal@vcm.com"
+        cq:lastReplicated="{Date}2020-04-19T07:17:00.239Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:templateType="/conf/vcm/settings/wcm/template-types/content-page"
+        jcr:description="Template for creating AboutVictory, LeadershipTeam, LeaderBio, &#x9;InvestmentFranchises and InvestmentFranchise Detail pages"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Corporate Pages Template"
+        fileReference="/content/dam/vcm/templates/corporate-pages-small.png"
+        status="enabled"/>
+</jcr:root>

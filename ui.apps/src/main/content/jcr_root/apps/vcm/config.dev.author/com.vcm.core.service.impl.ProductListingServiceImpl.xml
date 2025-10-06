@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+   getMembersPageRootPath="/content/vcm/us/en/products/mutual-funds/mutual-funds-list"
+   getFundListEndPoint="https://dev.investorapi.vcm.com/search/products/FUND"
+   getFundApiKey="XHo3l4WRyY8yh3n7DJYJJ4BOepk64vuP8Y5bBGfh"
+   getStrategyPageRootPath="/content/vcm/us/en/solutions/strategies"
+   getStrategyListEndPoint="https://dev.investorapi.vcm.com/search/institutionalStrategy"
+   getProductApiKey="XHo3l4WRyY8yh3n7DJYJJ4BOepk64vuP8Y5bBGfh"
+   getHighestIndexEndPoint="https://dev.investorapi.vcm.com/search/products/INDEX/DailyHighestValue"
+   getETFPageRootPath="/content/vcm/us/en/products/victoryshares-etfs/victoryshares-etfs-list"
+   getETFListEndPoint="https://dev.investorapi.vcm.com/search/products/ETF"/>

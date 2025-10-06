@@ -1,0 +1,65 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    data-sly-call="${clientlib.all @ categories='vcm.insightlisting'}"/>
+<sly data-sly-use.insight="com.vcm.core.models.InsightListingModel"/>
+<!-- AEM Authoring can be done below -- starts-->
+<!--Filter Component-->
+<div class="container filter-wrapper ${insight.hideTopicFilter==true?'hide-filter' : ''}">
+   <div class="wrapper-inner">
+      <div class="panel-default accordion-filter">
+         <div class="panel-heading" id="headingThree">
+            <div class="heading-filter down-arrow" role="button" data-toggle="collapse" href="#collapse" tabindex="0" aria-expanded="true" aria-controls="collapse">
+               ${insight.topicFilterLabel || 'filterbytopic' @i18n}
+            </div>
+         </div>
+         <div id="collapse" class="panel-collapse collapse show" aria-labelledby="headingThree">
+            <div class="panel-body">
+               <div class="row filter-checkbox justify-content-center m-0" role="list">
+                  <sly data-sly-list.topicItems="${insight.topicList}">
+                     <div class="container-checkbox" role="listitem">
+                        <label for="filterTopic${topicItemsList.index}">
+							<input type="checkbox" tabindex="0" id="filterTopic${topicItemsList.index}"value="${topicItems}" class="check_box">
+                           <span class="checkmark" aria-hidden="true"></span>
+                           <span class="ax_inlinblock">${topicItems}</span>
+                        </label>
+                     </div>
+                  </sly>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!--Search component-->
+<div class="container" data-sly-test.showSearch	="${!insight.hideSearchBox}">
+   <div class="wrapper-inner">
+      <label for="blog-search" class="search-label">${insight.searchLabel || 'search' @i18n}</label>
+      <div class="search-container">
+         <span class="search-icon"></span>
+         <input id="blog-search" type="text" class="search-input-field" placeholder="${insight.searchBoxText || 'searchInsightsPosts' @i18n}">
+      </div>
+       <div id="errorMsg" class="no-search-result"> ${insight.noResultFound || 'No Result Found'} </div>
+   </div>
+</div>
+<!-- Blog items container-->
+<div class="wrapper-inner">
+   <div id="blogContainer" data-resource-path="${resource.path}.insightlisting.json">
+   </div>
+   <div id="blog-load-more" class="row blog-button-container">
+      <button class="blog-button position-relative mx-auto" tabindex="0" aria-label="Load more blogs">${'Load More'}</button>
+   </div>
+</div>
+<!-- AEM Authoring can be done below -- ends -->
+<!-- Template used .. Dont change .. -->
+<div id="blog-row" style="display: none;">
+   <div class="row">
+   </div>
+</div>
+<div id="blog-col8" style="display: none;">
+   <div class="col-lg-8 col-md-8 col-sm-12">
+   </div>
+</div>
+<div id="blog-col-def" style="display: none;">
+   <div class="col-lg-4 col-md-4 col-sm-12">
+   </div>
+</div>
+<!-- Template to be used .. Dont change .. -->

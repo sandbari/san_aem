@@ -1,0 +1,35 @@
+<template data-sly-template.textcardtemplate="${@ model}">
+<sly data-sly-test="${(model.variation=='cardWithTextView') || (model.variation=='cardWithoutImage') || (model.variation=='cardWithHeading') || (model.variation=='colorCardWithGreenButton')}">
+		<div class="${model.variation == 'cardWithHeading'? '':(model.variation == 'colorCardWithGreenButton'?'':'about--block')}" data-audiencetype="${model.allowedAudience}">
+			<div class="${model.variation == 'cardWithHeading'? 'row mt-5':(model.variation == 'colorCardWithGreenButton'?'row mt-5':'row')}">
+				<div class="col-12 rte-desc">
+                    <div class="${model.variation == 'cardWithTextView' ? 'card-triangle-hdng-cont-cta' :''}${model.variation == 'cardWithoutImage' ? 'card-no-triangle-hdng-cont-cta' :''}${model.variation == 'cardWithHeading' ? 'card-triangle-hdng-cta' :''}${model.variation == 'colorCardWithGreenButton' ? 'card-doubleshade card-triangle-hdng-cont-cta' :''}${model.cardShadow == 'true' ? ' shadow-md-1-sm-0' :''} ${model.backgroundStyle}">
+                        <span class="${model.variation == 'cardWithHeading' ? 'shape-triangle-small-lt' :'shape-triangle-mid-lt'}" style="border-top-color: ${model.sectionStyle @context='styleToken'}"></span>
+						<sly data-sly-test="${model.heading}">
+						<sly data-sly-test="${model.variation != 'cardWithHeading'}">
+						<h3 class="${model.greenUnderline == 'true' ? 'blueHdng-multiLine-greenBorder' :'blueHdng-without-greenBorder'}" data-sly-text="${model.heading}"></h3>
+						</sly>
+						<sly data-sly-test="${model.variation=='cardWithHeading'}">
+						<p class="bold-text">${model.heading}</p>
+						</sly>
+						</sly>
+						<sly data-sly-test="${model.variation != 'cardWithHeading'}">
+						<p class="small-white-text"><span>${model.note}</span></p>
+                        <sly data-sly-test="${model.description}">${model.description @context='html'}</sly>
+						</sly>
+						<sly data-sly-test.linkUrl="${model.linkUrl == ''? '#': model.linkUrl}">
+							<a data-sly-test="${model.linkText}" href="${linkUrl}" target="${model.tabSelect}" aria-label="${model.variation == 'cardWithTextView'? model.linkAriaLabel : ''}" data-experience-popup="${model.experiencePopupPath}" data-popup="${model.popupId}" class="${model.buttonStyle == 'true' ? 'btn-primary' :''}${model.variation == 'colorCardWithGreenButton' ? ' green__btn' :''} ${model.tabSelect == '_blank' && model.buttonStyle == 'true' ? 'external-link' : ''} ${model.tabSelect == '_blank' && model.buttonStyle != 'true' ? 'inline-external-link' : ''}">
+								<span>${model.linkText}</span>
+								<sly data-sly-test="${model.experiencePopupPath}"><span class="sr-only">Opens a New Popup</span></sly>
+								<sly data-sly-test="${model.tabSelect == '_blank' && !model.experiencePopupPath}">
+									<span class="sr-only">Opens a New Window</span><span class="external-icon" aria-hidden="true"></span>
+								</sly>
+								<span class="${model.buttonStyle == 'true' ? 'btn-triangle-rt' :''}" aria-hidden="true"></span>
+							</a>
+						</sly>
+                    </div>
+				</div>
+			</div>
+        </div>
+</sly>
+</template>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product Management Authoring Dialog "
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                        fieldDescription="To author the details of the team in the organization "
+                        fieldLabel="Profile Description"
+                        name="./description"
+                        useFixedInlineToolbar="{Boolean}true">
+                        <rtePlugins
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                        <uiSettings
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                    </description>
+                    <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Heading"
+                        name="./heading"/>
+                    <linktext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        description="To author link text for Learn More or View Team link. "
+                        fieldLabel="link text"
+                        name="./linkText"/>
+                    <teams
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Investment Teams">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./teamsLeaderBio">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <leaderurl
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldDescription="to author link of the leader bio page"
+                                            fieldLabel="Leader Bio URL"
+                                            name="./leaderUrl"
+                                            required="true"
+                                            rootPath="/content/vcm"/>
+                                        <pictureview
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            fieldLabel="Leader with Picture View?"
+                                            name="./pictureview"
+                                            text="Leader with Picture View?"
+                                            uncheckedValue="false"
+                                            value="true"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </teams>
+                    <teamLinktext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author link text for 'See full Teams' in the Investment team. "
+                        fieldLabel="Team Link Text"
+                        name="./teamLinkText"/>
+                    <teamLinkurl
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="to author the link of the team"
+                        fieldLabel="Team Link URL"
+                        name="./teamLinkUrl"
+                        rootPath="/content/vcm"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,167 @@
+
+/*vcmdatatables.css is the global file*/ 
+/* which overwrites the styles of Jquery datatabels plugin as per VCM visual design*/
+/*include the class="vcm-datatable-container" as parent */
+/*where datatable need to be included as its child*/ 
+/*Recommended : not to overwrite the styles below*/
+.vcm-datatable-container{
+    display: none;
+}
+.vcm-datatable-container table.dataTable thead th {
+    border-bottom: 2px solid #8BC105;
+    vertical-align: middle;
+    color: #004A98;
+    font-family: benton-sans, sans-serif;
+    width: 20%;
+    text-transform: capitalize;
+}
+
+.vcm-datatable-container table.dataTable thead th span{
+	display:table-cell;
+}
+
+.vcm-datatable-container .dataTables_wrapper.no-footer .dataTables_scroll .dataTables_scrollBody, 
+.vcm-datatable-container table.dataTable thead td {
+    border-bottom: none;
+}
+
+.vcm-datatable-container table.dataTable tbody td {
+    font-family: benton-sans, sans-serif;
+    color: #49494A;
+    font-size: 14px;
+    line-height: 1.4;
+    box-sizing: border-box;
+    padding: 15px 10px;
+}
+
+.vcm-datatable-container table.dataTable.row-border tbody th, 
+.vcm-datatable-container table.dataTable.row-border tbody td, 
+.vcm-datatable-container table.dataTable.display tbody th, 
+.vcm-datatable-container table.dataTable.display tbody td {
+    border-top: none;
+}
+
+.vcm-datatable-container table.dataTable.stripe tbody tr.odd, 
+.vcm-datatable-container table.dataTable.display tbody tr.odd, 
+.vcm-datatable-container table.dataTable.display tbody tr.odd>.sorting_1, 
+.vcm-datatable-container table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
+    background-color: #ffffff;
+}
+
+.vcm-datatable-container table.dataTable.stripe tbody tr.even, 
+.vcm-datatable-container table.dataTable.display tbody tr.even, 
+.vcm-datatable-container table.dataTable.display tbody tr.even>.sorting_1, 
+.vcm-datatable-container table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
+    background-color: #f7f7f7;
+}
+
+.vcm-datatable-container table.dataTable thead .sorting_asc {
+    background-image: url(../resources/sort-icon-asc.png);
+}
+
+.vcm-datatable-container table.dataTable thead .sorting_desc {
+    background-image: url(../resources/sort-icon.svg);
+}
+
+.vcm-datatable-container table.dataTable thead th.sorting:focus {
+    outline: none;
+}
+.vcm-datatable-container table.dataTable thead .sorting {
+  background-image: url("../resources/sort_both.png");
+}
+
+.vcm-datatable-container table.dataTable thead th span:focus {
+    outline: 2px solid #000 !important;
+    outline-offset: 0 !important;
+    transition: none;
+}
+
+body.using-mouse .vcm-datatable-container table.dataTable thead th span:focus {
+    outline: none !important;
+}
+
+/*dt-button styles*/
+button.dt-button.buttons-csv.buttons-html5.ow-dt-buttons {
+    padding:14px 28px;
+    position: relative;    
+    background-color: #486d90;
+    background-image: none;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    color: #fff !important;
+    border: 0;
+    font-family: benton-sans,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+button.dt-button.buttons-csv.buttons-html5.ow-dt-buttons::after{
+    content: "";
+    border-left: 19px solid transparent;
+    border-top: 19px solid #8BC105;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+button.dt-button.buttons-csv.buttons-html5.ow-dt-buttons:hover, button.dt-button.buttons-csv.buttons-html5.ow-dt-buttons:focus {
+    background-color: #004a98;
+    border-color: #0062cc;
+}
+
+
+button.dt-button.ow-dt-buttons:active:not(.disabled):hover:not(.disabled), button.dt-button.ow-dt-buttons.active:not(.disabled):hover:not(.disabled), div.dt-button.ow-dt-buttons:active:not(.disabled):hover:not(.disabled), div.dt-button.ow-dt-buttons.active:not(.disabled):hover:not(.disabled), a.dt-button.ow-dt-buttons:active:not(.disabled):hover:not(.disabled), a.dt-button.ow-dt-buttons.active:not(.disabled):hover:not(.disabled) {
+    background-color: #004a98;
+    border-color: #0062cc;
+    box-shadow: none;
+    background-image: none;
+}
+.highestindextable .content {
+    width: 100% !important;
+}
+
+#dataHighIndexTable tr td:first-child{
+	text-align : left;
+}
+@media screen and (max-width: 768px) {
+    #dataHighIndexTable_wrapper {
+        overflow-x: scroll;
+    }
+    div.dt-buttons {
+        position: sticky;
+        left: 0;
+        /*from the below added for table scroll shadow; */
+        background-color: #ffffff;
+        z-index: 1024;
+    }
+    .table-shadowsLR-onScrollX-sm {
+        position: relative;
+    }
+    .tableShadowRight {
+        position: absolute;
+        right: 0;
+        width: 14px;
+        height: 100%;
+        top: 0;
+        z-index: 999;
+    }
+    .tableShadowLeft {
+        position: absolute;
+        width: 14px;
+        height: 100%;
+        top: 0;
+        z-index: 999;
+    }
+    .tableShadowRight .actualShadow,
+    .tableShadowLeft .actualShadow {
+        background: transparent linear-gradient(270deg, #00000038 0, #00000000 100%) 0 0 no-repeat padding-box;
+        opacity: 1;
+        height: 100%;
+    }
+    .tableShadowLeft .actualShadow {
+        background: transparent linear-gradient(90deg, #00000038 0, #00000000 100%) 0 0 no-repeat padding-box;
+    }
+}
+

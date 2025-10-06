@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="nt:folder">
+    <allholdings
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="allHoldings"
+        sling:message="All Holdings"/>
+    <backtext
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="backtext"
+        sling:message="Back"/>
+    <factsheet
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="factsheet"
+        sling:message="Fact Sheet"/>
+    <prospectusandfillings
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="prospectusandfillings"
+        sling:message="Prospectus &amp; Fillings"/>
+    <prospectus
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="prospectus"
+        sling:message="Prospectus"/>
+    <historicalinformation
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="historicalInformation"
+        sling:message="Historical Information"/>
+    <managercommentary
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="managerCommentary"
+        sling:message="Manager Commentary"/>
+    <premiumdiscount
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="premiumDiscount"
+        sling:message="Premium Discount"/>
+    <buy
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="buy"
+        sling:message="Buy"/>
+    <subscribe
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="subscribe"
+        sling:message="Subscribe"/>
+    <gipsComplianceUrl
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="gipsComplianceUrl"
+        sling:message="GIPS Compliant Presentation"/>
+    <victorycapitalmanagement
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="victoryCapitalManagement"
+        sling:message="Victory Capital"/>
+    <viewallholdings
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="viewallholdings"
+        sling:message="View All Holdings"/>
+</jcr:root>

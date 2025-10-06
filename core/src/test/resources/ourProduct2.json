@@ -1,0 +1,54 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "admin",
+	"jcr:lastModifiedBy": "admin",
+	"contentType": "titledescription",
+	"jcr:created": "Mon Mar 09 2020 18:20:27 GMT+0530",
+	"title": "Our Products",
+	"jcr:lastModified": "Tue Mar 10 2020 11:16:39 GMT+0530",
+	"sling:resourceType": "vcm/components/content/ourproducts",
+	"textIsRich": ["true", "true", "true", "true"],
+	"productList": {
+		"jcr:primaryType": "nt:unstructured",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productDescription": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod leo at ultricies sodales. Donec neque.</p>\r\n",
+			"productButtonLink": "/content/vcm/us/en/products/mutual-funds",
+			"productHeading": "USAA Mutual<br>Funds",
+			"tabSelect": "_self",
+			"desktopButtonText": "See More",
+			"tabletButtonText": "Overview",
+			"buttonLinkDesc": "Button Link"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productDescription": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod leo at ultricies sodales. Donec neque.</p>\r\n",
+			"productHeading": "VictoryShares®<br>ETFs",
+			"tabSelect": "_self",
+			"desktopButtonText": "See More",
+			"tabletButtonText": "Overview"
+		},
+		"item2": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productDescription": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod leo at ultricies sodales. Donec neque.</p>\r\n",
+			"productButtonLink": "/content/vcm/language-masters/en/products/retirement",
+			"productHeading": "Retirement<br>Products",
+			"tabSelect": "_self",
+			"desktopButtonText": "See More",
+			"tabletButtonText": "Overview"
+		},
+		"item3": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productDescription": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod leo at ultricies sodales. Donec neque.</p>\r\n",
+			"productButtonLink": "/content/vcm/language-masters/en/products/usaa-529-education-savings-plan",
+			"productHeading": "USAA 529<br>College Savings<br>Plan",
+			"tabSelect": "_self",
+			"desktopButtonText": "See More",
+			"tabletButtonText": "Overview"
+		}
+	}
+}

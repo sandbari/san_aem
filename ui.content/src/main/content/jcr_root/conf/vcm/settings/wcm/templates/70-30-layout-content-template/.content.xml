@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2020-04-16T13:54:17.552Z"
+        cq:lastModifiedBy="ctsuser"
+        cq:lastReplicated="{Date}2020-04-19T07:17:00.644Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:templateType="/conf/vcm/settings/wcm/template-types/content-page"
+        jcr:description="Article content template for pages with 8 X 4 grid layout display"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Article Content Template"
+        fileReference="/content/dam/vcm/templates/70-30-content.png"
+        status="enabled"/>
+</jcr:root>

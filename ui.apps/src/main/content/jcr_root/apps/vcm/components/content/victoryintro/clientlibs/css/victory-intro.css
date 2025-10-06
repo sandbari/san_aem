@@ -1,0 +1,145 @@
+.aboutVC__freetxtone {
+    padding-bottom: 34px;
+}
+
+.aboutVC__number strong {
+    font-size: 26px;
+    line-height: 28px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+p.aboutVC__number {
+    margin-bottom: 0;
+}
+
+.aboutVC h3.blueHdng-multiLine-greenBorder {
+    padding-bottom: 10px;
+}
+
+.aboutVC__numbertxt,
+.aboutVC__numbertxt--date {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 20px;
+    background: transparent;
+    padding-top: 5px;
+    width: 71%;
+    margin: 0;
+}
+
+.aboutVC__numbertxt--date {
+    width: 93%;
+}
+
+.aboutVC__datetxt {
+    font-size: 12px;
+    margin: 0;
+    line-height: 14px;
+    padding-top: 5px;
+}
+
+.aboutVC__paddingtxt--two {
+    padding-top: 30px;
+}
+
+.aboutVC .navigation-right {
+    display: block;
+    margin-top: 28px;
+}
+
+.aboutVC .show-in-mobile {
+    display: none
+}
+
+.aboutVC__paddingtxt--one:nth-last-child(-n+2) {
+    margin-top: 20px;
+}
+
+.aboutVC {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+}
+
+@media screen and (min-width:768px) {
+    .aboutVC__numbertxt {
+        width: 34%;
+    }
+    .aboutVC__numbertxt--date {
+        width: 68%;
+    }
+    .aboutVC h3.blueHdng-multiLine-greenBorder {
+        padding-bottom: 10px;
+    }
+    .aboutVC {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 30px;
+    }
+	.aboutVC__paddingtxt--one:nth-last-child(-n+2) {
+		margin-top: 0px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+    .aboutVC__paddingtxt--one:nth-last-child(-n+2) {
+        margin-top: 0;
+    }
+    .aboutVC__freetxtone {
+        padding-bottom: 0px;
+    }
+    .aboutVC__paddingtxt--one {
+        padding-top: 15px;
+    }
+    .aboutVC__paddingtxt--two {
+        padding-top: 56px;
+    }
+    .aboutVC__number strong {
+        font-size: 32px;
+        line-height: 24px;
+    }
+    .aboutVC__numbertxt {
+        width: 84%;
+        padding-top: 4px;
+    }
+    .aboutVC .navigation-right {
+        margin-top: 43px;
+    }
+    .aboutVC__numbertxt--date {
+        width: 93%;
+    }
+    .aboutVC {
+        margin-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width:1278px) {
+    .aboutVC__freetxtone {
+        padding-left: 0px;
+    }
+    .aboutVC__paddingtxt--one {
+        padding-top: 15px;
+    }
+    .aboutVC__numbertxt {
+        width: 78%;
+    }
+    .aboutVC__paddingtxt--two {
+        padding-top: 49px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .aboutVC .show-in-desktop {
+        display: none
+    }
+    .aboutVC .show-in-mobile {
+        display: block
+    }
+    .aboutVC {
+        margin-top: 30px;
+    }
+}

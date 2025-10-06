@@ -1,0 +1,100 @@
+{
+   "jcr:primaryType":"cq:Page",
+   "jcr:createdBy":"admin",
+   "jcr:created":"Mon Apr 06 2020 14:59:27 GMT+0530",
+   "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"signin",
+      "triangleColor":"#0B3B60",
+      "cq:template":"/conf/vcm/settings/wcm/templates/vcm-static-page",
+      "institutionalinvestorsType":"false",
+      "financialAdvisorsType":"false",
+      "isCorpHomePage":"false",
+      "jcr:created":"Mon Apr 06 2020 14:59:27 GMT+0530",
+      "cq:lastModified":"Mon Apr 06 2020 15:30:47 GMT+0530",
+      "useImageInHeaderNav":"false",
+      "secondLevelNavOnly":"false",
+      "sling:resourceType":"vcm/components/structure/page",
+      "membersType":"false",
+      "cq:lastModifiedBy":"admin",
+      "isActiveFundPage":"true",
+      "root":{
+         "jcr:primaryType":"nt:unstructured",
+         "sling:resourceType":"wcm/foundation/components/responsivegrid",
+         "experiencefragment":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:createdBy":"naggarwal@vcm.com",
+            "jcr:lastModifiedBy":"naggarwal@vcm.com",
+            "jcr:created":"Mon Mar 09 2020 06:47:56 GMT+0000",
+            "text":"USSA Member Investor relations Contact US SigninSignin/Register Signin × close Menu About Victory Capital Back About Victory Capital About Victory Capital Leadership Team Corporate Responsibility Products Back Products Mutual Funds Mutual Funds List Victory Shares ETFs Victory Shares ETFs List USAA 529 Education Savings Plan USAA 529 Education Savings Plan Details Retirement Investment Franchise Back Investment Franchise Investment Franchise Integrity Asset Management Munder NewBridge Asset Management RS Investments Sophus Capital Sycamore Capital Trivalent Investments USAA Mutual Funds Munder Investment Franchise Advice & Tools Back Advice & Tools Investor Learning Center All About Mutual Funds All About ETFs All About College Savings Plans Planning For Retirement Military Financial Readiness Investment Planning Tools Investment Goals FAQ Insights Back Insights Insights Insight FAQ Investor type USSA Member USSA Member Financial Professionals Institutional Investors What type of investor are you? USSA Member Financial Professionals Institutional Investors Investor relations Contact US × Financial Professionals Institutional Investors",
+            "jcr:lastModified":"Mon Mar 09 2020 06:51:40 GMT+0000",
+            "sling:resourceType":"cq/experience-fragments/editor/components/experiencefragment",
+            "fragmentPath":"/content/experience-fragments/vcm-experience-fragments/vcm-header/master"
+         },
+         "experiencefragment_1872930695":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:createdBy":"naggarwal@vcm.com",
+            "jcr:lastModifiedBy":"naggarwal@vcm.com",
+            "jcr:created":"Mon Mar 09 2020 06:48:07 GMT+0000",
+            "text":"Investing involves risk including loss of principal. Victory Mutual Funds and USAA Mutual Funds are distributed by Victory Capital Advisers, Inc. (VCA). VictoryShares ETFs and VictoryShares USAA ETFs are distributed by Foreside Fund Services, LLC (Foreside). VCA and Foreside are members of FINRA and SIPC. Victory Capital Management Inc. (VCM) is the investment adviser to the Victory Mutual Funds, USAA Mutual Funds, VictoryShares ETFs and VictoryShares USAA ETFs. VCA and VCM are not affiliated with Foreside. USAA is not affiliated with Foreside, VCM, or VCA. USAA and the USAA logos are registered trademarks and the USAA Mutual Funds and USAA Investments logos are trademarks of United Services Automobile Association and are being used by Victory Capital and its affiliates under license. Victory Capital means Victory Capital Management Inc., the investment manager of the USAA 529 College Savings Plan (Plan). The Plan is distributed by Victory Capital Advisers, Inc., a broker dealer registered with FINRA and an affiliate of Victory Capital. Victory Capital and its affiliates are not affiliated with United Services Automobile Association or its affiliates. USAA and the USAA logo are registered trademarks and the USAA 529 College Savings Plan logo is a trademark of United Services Automobile Association and are being used by Victory Capital and its affiliates under license. News Policies Careers User Agreement Events Fund Literature Blog Connect with us ©2020 Victory Capital Management Inc.",
+            "jcr:lastModified":"Mon Mar 09 2020 06:51:48 GMT+0000",
+            "sling:resourceType":"cq/experience-fragments/editor/components/experiencefragment",
+            "fragmentPath":"/content/experience-fragments/vcm-experience-fragments/vcm-footer/master"
+         },
+         "responsivegrid":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:createdBy":"naggarwal@vcm.com",
+            "jcr:lastModifiedBy":"naggarwal@vcm.com",
+            "jcr:created":"Mon Mar 09 2020 06:49:34 GMT+0000",
+            "jcr:lastModified":"Mon Mar 09 2020 10:08:18 GMT+0000",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "signin":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:createdBy":"admin",
+               "signUpText":"New to Victory Capital ? New to Victory Capital ? New to Victory Capital ?",
+               "jcr:lastModifiedBy":"admin",
+               "jcr:created":"Mon Apr 06 2020 15:00:14 GMT+0530",
+               "newUserLabel":"New to Victory Capital ?",
+               "jcr:lastModified":"Mon Apr 06 2020 15:02:36 GMT+0530",
+               "signInUrl":"vcm.com",
+               "sling:resourceType":"vcm/components/content/signin",
+               "ussaMemberTitle":"USAA Member",
+               "signInButton":"Sign In",
+               "textIsRich":"true",
+               "tabSelect":"_blank"
+            },
+            "herobanner":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:createdBy":"admin",
+               "jcr:lastModifiedBy":"admin",
+               "jcr:created":"Mon Apr 06 2020 15:13:41 GMT+0530",
+               "jcr:lastModified":"Mon Apr 06 2020 15:13:41 GMT+0530",
+               "sling:resourceType":"vcm/components/content/herobanner"
+            },
+            "video":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:createdBy":"admin",
+               "description":"<p>We understand that this is a challenging time, but together we will get through it. </p>\r\n",
+               "videoTitle":"A message from CEO",
+               "youtubeHeight":"446",
+               "jcr:lastModifiedBy":"admin",
+               "jcr:created":"Mon Apr 06 2020 18:49:46 GMT+0530",
+               "youtubeVideoId":"70bqoVZQdcY",
+               "heading":"A message from CEO",
+               "transcriptDescription":"<p>We understand that this is a challenging time, but together we will get through it. </p>\r\n",
+               "jcr:lastModified":"Mon Apr 06 2020 19:28:47 GMT+0530",
+               "transcriptText":"watch now",
+               "sling:resourceType":"vcm/components/content/video",
+               "videoFile":"70bqoVZQdcY",
+               "textIsRich":[
+                  "true",
+                  "true"
+               ],
+               "youtubeWidth":"789",
+               "videoDuration":"20"
+            }
+         }
+      }
+   }
+}

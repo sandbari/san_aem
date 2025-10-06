@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+   jcr:primaryType="oak:QueryIndexDefinition"
+   async="[async,nrt]"
+   compatVersion="{Long}2"
+   evaluatePathRestrictions="{Boolean}true"
+   excludedPaths="[/var,/etc/replication,/etc/workflow/instances,/jcr:system]"
+   name="vcmFullTextIndex"
+   queryPaths="[/content/vcm]"
+   reindex="{Boolean}false"
+   reindexCount="{Long}26"
+   seed="{Long}2722459235190784723"
+   type="lucene">
+        <aggregates jcr:primaryType="nt:unstructured">
+            <cq:Page jcr:primaryType="nt:unstructured">
+                <include0
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content"
+                    relativeNode="{Boolean}true"/>
+            </cq:Page>
+            <nt:file jcr:primaryType="nt:unstructured">
+                <include0
+                    jcr:primaryType="nt:unstructured"
+                    path="jcr:content"/>
+            </nt:file>
+            <cq:PageContent jcr:primaryType="nt:unstructured">
+                <include0
+                    jcr:primaryType="nt:unstructured"
+                    path="*"/>
+                <include1
+                    jcr:primaryType="nt:unstructured"
+                    path="*/*/*"/>
+                <include2
+                    jcr:primaryType="nt:unstructured"
+                    path="*/*/*/*"/>
+            </cq:PageContent>
+        </aggregates>
+        <indexRules jcr:primaryType="nt:unstructured">
+            <cq:Page jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <jcrTitle
+                        jcr:primaryType="nt:unstructured"
+                        analyzed="{Boolean}true"
+                        name="jcr:content/jcr:title"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        type="String"/>
+                    <pageTitle
+                        jcr:primaryType="nt:unstructured"
+                        analyzed="{Boolean}true"
+                        name="jcr:content/pageTitle"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        type="String"/>
+                    <navTitle
+                        jcr:primaryType="nt:unstructured"
+                        analyzed="{Boolean}true"
+                        name="jcr:content/navTitle"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        type="String"/>
+                    <metaTitle
+                        jcr:primaryType="nt:unstructured"
+                        analyzed="{Boolean}true"
+                        name="jcr:content/pageTitle"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        type="String"/>
+                    <metaDescription
+                        jcr:primaryType="nt:unstructured"
+                        analyzed="{Boolean}true"
+                        name="jcr:content/metaDescription"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        type="String"/>
+                    <metaKeyword
+                        jcr:primaryType="nt:unstructured"
+                        analyzed="{Boolean}true"
+                        name="jcr:content/metaKeyword"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        type="String"/>
+                </properties>
+            </cq:Page>
+        </indexRules>
+</jcr:root>

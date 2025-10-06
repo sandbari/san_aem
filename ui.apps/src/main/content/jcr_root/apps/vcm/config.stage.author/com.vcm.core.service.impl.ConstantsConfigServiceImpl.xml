@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    applicationName="VCM"
+    websiteName="vcm.com"
+    websiteLocale="en"
+    cookieDomain="author-vcm-stage-aem65.adobecqms.net"
+    memberSigninServiceURL="no-url-available"
+    analyticsEndPoint="//assets.adobedtm.com/9038a1739344/e69bdabe1962/launch-15c65aff4b9c-development.min.js"
+	purchaseFundUrl="https://stage.mysecure.vcm.com/transactionPurchases"
+    getPopupContentFragmentPage="/content/vcm/us/en/popup-content-page"
+	getTokenAPIEndPoint="https://login.usw2.pure.cloud/oauth/token"
+	getTokenAPIUserId="08551d14-9fcd-41fe-8252-78b928cb5e5a"
+	getTokenAPIPwd="St5UHUySQbjJghtGr49UyxnOsJt04ketQnLjwFlmhho"
+	ussa529PerformanceFundEndPoint="https://stage.investorapi.vcm.com/search/products/USAA529"
+	ussa529PerformanceFundKey="zm4LSWbDrt94MufZwTfAry5kHkdfSnp9TWIyOfke"
+	bugHerdUrl="https://www.bugherd.com/sidebarv2.js?apikey=eju377gn1cmtwpbzgtgk8q"
+	vcmConfigPagePath="/content/vcm/us/vcm-site-configurations"/>

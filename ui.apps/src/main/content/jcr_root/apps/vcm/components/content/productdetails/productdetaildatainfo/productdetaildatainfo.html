@@ -1,0 +1,228 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+    <div>Add urls to the page property to configure Product Detail Data Info</div>
+</sly>
+<sly data-sly-use.model="com.vcm.core.models.ProductDetailsPageModel"/>
+<sly data-sly-test="${pageProperties.productdetaildatainfo}">
+    <div class="container product-details-component product-details" id="main-content">
+        <!-- fund details section starts-->
+        <div class="fund-details">
+            <input type="hidden" id="fund-category" value="${pageProperties.productCategory}"/>
+            <input type="hidden" id="api-data-title" value="${model.titleFromApiData}"/>
+            <div class="fundname-container content-wrapper">
+
+                <div class="fundName col-sm-12 col-md-7  col-lg-8">
+                    <sly data-sly-test.mutual="${pageProperties.productCategory=='MF'}">
+                        <span class="fund-ticker"></span>
+                    </sly>
+                    <sly data-sly-test.etf="${pageProperties.productCategory=='ETF'}">
+                        <span class="fund-ticker-etf"><img src="${properties.tickerImage}"/></span>
+                    </sly>
+                    <span class="fund-name">${currentPage.title}</span>
+                </div>
+                <sly data-sly-test="${etf}">
+                    <div class="logoContainer col-sm-12 col-md-5 col-lg-3">
+                        <img src="${model.victorySharesImage}"/>
+                    </div>
+                </sly>
+                <sly data-sly-test="${mutual}">
+                    <div class="productSelectBox col-sm-12 col-md-5 col-lg-3">
+                        <select class="fundDropDown" aria-label="select fund option"></select>
+                    </div>
+                </sly>
+            </div>
+            <sly data-sly-test="${etf}">
+                <input type="hidden" class="theme-color-code" value="${model.themeColor}">
+            </sly>
+            <div class="fund-data-container">
+                <sly data-sly-test="${etf}">
+                    <span class="left-bar"></span>
+                </sly>
+                <div class="row fund-description-container content-wrapper">
+                    <div class="dynamic-loader-productoverview">
+                        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif"
+                             class="img-responsive"/>
+                    </div>
+                    <sly data-sly-test.strategy="${pageProperties.productCategory !='ST'}">
+                        <div class="col-sm-12 col-md-12 col-lg-8 lft-content">
+                            <sly data-sly-test.mutual="${pageProperties.productCategory=='MF'}">
+                                <div class="fund-data normal-fund-data row" style="display: none;">
+                                    <div class="col-lg-8 col-sm-8 col-12 fund-data-rating-box">
+                                        <div class=" col-12 col-md-6 col-lg-6 fund-data-nav">
+                                            <p class="nav-asof">&nbsp;<span class="nav-asof-value"></span></p>
+                                            <p class="nav-change">$<span class="nav-change-lable"></span> <span
+                                                    class="nav-change-value"></span></p>
+                                            <p class="nav-range"><span class="sr-only">52 Weeks</span>&nbsp;<span
+                                                    class="nav-range-value"></span><span
+                                                    class="sr-only ax-nav-range-value"></span></p>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6 fund-data-rating">
+                                            <sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+                                            <p class=""><span class="populinkaxreader">${overlayModel.overlayTextPrefix}&nbsp;</span>
+                                                <span class="dotted-text populinkaxreader"><a
+                                                        class="vcm-morningstar-rating" href="#" id="morningstar-popup"
+                                                        role="button" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span
+                                                        class="sr-only"> opens a popup</span></a></span></p>
+                                            <div style="clear: both;"></div>
+                                            <p class="rating-stars-container"><span class="rating-stars"></span></p>
+                                            <p class="category">&nbsp;<span class="category-value"></span></p>
+                                            <!--<p class="mobileShow">${model.morningStarText}</p>-->
+                                        </div>
+                                        <p class="itlicText">${model.morningStarText}</p>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-lg-4 fund-data-links">
+
+                                        <sly data-sly-test.memFactSheetUrl="${model.factsheetUrl}">
+                                            <a href="${memFactSheetUrl}" target="_blank" rel="noopener noreferrer"
+                                               class="fact-sheet pdf-icon mem-factsheet">${'factsheet' @i18n}<span
+                                                    class="sr-only">Open PDF in new window</span></a></sly>
+                                        <sly data-sly-test.adFactSheetUrl="${model.advisorFactSheetUrl}">
+                                            <a href="${adFactSheetUrl}" target="_blank" rel="noopener noreferrer"
+                                               class="fact-sheet pdf-icon advisor-factsheet" style="display: none;">${'factsheet'
+                                                @i18n}<span class="sr-only">Open PDF in new window</span></a></sly>
+                                        <sly data-sly-test.managerCommentaryUrl="${model.managerCommentaryUrl}">
+                                            <a href="${managerCommentaryUrl}" target="_blank" rel="noopener noreferrer"
+                                               class="advisor-commentary manager-commentary pdf-icon">${'managerCommentary'
+                                                @i18n}<span class="sr-only">Open PDF in new window</span></a></sly>
+                                        <sly data-sly-test.memberManagerCommentaryUrl="${pageProperties.memberManagerCommentaryUrl}">
+                                            <a href="${memberManagerCommentaryUrl}" target="_blank"
+                                               rel="noopener noreferrer"
+                                               class="mem-commentary manager-commentary pdf-icon">${'managerCommentary'
+                                                @i18n}<span class="sr-only">Open PDF in new window</span></a></sly>
+                                        <sly data-sly-test.allholdings="${model.allHoldingsUrl}">
+                                            <a href="${allholdings}" target="_blank" rel="noopener noreferrer"
+                                               class="all-holdings pdf-icon vcm-nrf1">${'allHoldings' @i18n}<span
+                                                    class="sr-only">Open PDF in new window</span></a></sly>
+                                        <sly data-sly-test.historicalInformationUrl="${model.historicalInformationUrl}">
+                                            <a href="${historicalInformationUrl}" target="_blank"
+                                               rel="noopener noreferrer" class="manager-commentary pdf-icon">${'historicalInformation'
+                                                @i18n}<span class="sr-only">Open PDF in new window</span></a></sly>
+                                        <sly data-sly-test.prospectusUrl="${model.prospectusUrl}">
+                                            <a href="${prospectusUrl}" target="_blank" rel="noopener noreferrer"
+                                               class="prospectus mem-prospectus">${'prospectus' @i18n}<span
+                                                    class="sr-only">Open PDF in new window</span></a></sly>
+                                        <sly data-sly-test.advisorprospectusUrl="${model.advisorprospectusUrl}">
+                                            <a href="${advisorprospectusUrl}" target="_blank" rel="noopener noreferrer"
+                                               class="prospectus advisor-prospectus">${'prospectus' @i18n}<span
+                                                    class="sr-only">Open PDF in new window</span></a></sly>
+                                    </div>
+                                </div>
+                            </sly>
+                            <sly data-sly-test.etf="${pageProperties.productCategory=='ETF'}">
+                                <div class="fund-data etf-fund-data row" style="display: none;"
+                                     data-active-etf-template="${model.activeFixedIncomeTemplate}">
+                                    <div class="col-12 col-md-4 col-lg-4 fund-data-rating">
+                                        <sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+                                        <p class=""><span class="populinkaxreader">${overlayModel.overlayTextPrefix}&nbsp;</span>
+                                            <span class="dotted-text populinkaxreader"><a href="#"
+                                                                                          id="morningstar-popup"
+                                                                                          role="button"
+                                                                                          data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span
+                                                    class="sr-only"> opens a popup</span></a></span></p>
+                                        <div style="clear: both;"></div>
+                                        <p class="etf-morning-star-asof"><span class="morning-star-asof-value"></span>
+                                        </p>
+                                        <p class="rating-stars-container"><span class="rating-stars"></span></p>
+                                        <p class="category">&nbsp;<span class="category-value"></span></p>
+                                        <!--<p class="mobileShow">${model.morningStarText}-->
+                                        <p class="itlicText textShowinMobile">${model.morningStarText}</p>
+                                    </div>
+                                    <div class=" col-12 col-sm-4 col-lg-4 fund-data-links">
+                                        <sly data-sly-test.factSheetUrl="${model.factsheetUrl}">
+                                            <a href="${factSheetUrl}" target="_blank" rel="noopener noreferrer"
+                                               class="fact-sheet pdf-icon">${'factsheet' @i18n}<span class="sr-only">Opens a PDF in new window</span></a>
+                                        </sly>
+                                        <a href="" class="fact-sheet pdf-icon csv-icon" id="allholdingsCSVExport">${'allHoldings'
+                                            @i18n}</a>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-lg-4 fund-data-links">
+                                        <sly data-sly-test.prospectusUrl="${model.prospectusUrl}">
+                                            <span style="display: none" id="prospectus-external-link">Opens a PDF in new window </span>
+                                            <a aria-describedby="prospectus-external-link" href="${prospectusUrl}"
+                                               target="_blank" rel="noopener noreferrer" class="prospectus">${'prospectus'
+                                                @i18n}</a></sly>
+                                        <sly data-sly-test.premiumDiscountReport="${model.premiumDiscountReport}">
+                                            <a href="${premiumDiscountReport}" target="_blank" rel="noopener noreferrer"
+                                               class="premium-discount pdf-icon">${'premiumDiscount' @i18n}<span
+                                                    class="sr-only">Opens a PDF in new window</span></a></sly>
+                                        <sly data-sly-test.managerCommentaryUrl="${model.managerCommentaryUrl}">
+                                            <a href="${managerCommentaryUrl}" target="_blank" rel="noopener noreferrer"
+                                               class="manager-commentary pdf-icon vcm-nrf1">${'managerCommentary' @i18n}<span
+                                                    class="sr-only">Open PDF in new window</span></a></sly>
+                                    </div>
+                                    <p class="itlicText textHideinMobile">${model.morningStarText}</p>
+                                </div>
+                            </sly>
+                            <sly data-sly-test.desc=${model.fundDescription}>
+                                <div class="row fund-description rte-desc">
+                                    ${model.fundDescription @ context='html'}
+                                </div>
+                            </sly>
+                        </div>
+                    </sly>
+                    <sly data-sly-test.strategy="${pageProperties.productCategory=='ST'}">
+                        <div class="col-sm-12 col-md-12 col-lg-10 lft-content">
+                            <div class="fund-data normal-fund-data row">
+                                <sly data-sly-test.factSheetUrl="${model.factsheetUrl}">
+                                    <div class="col-12 col-sm-4 col-lg-3 fund-data-links">
+                                        <a href="${factSheetUrl}" target="_blank" rel="noopener noreferrer"
+                                           class="fact-sheet pdf-icon">${'factsheet' @i18n}<span class="sr-only">Opens a PDF in new window</span></a>
+                                    </div>
+                                </sly>
+                                <sly data-sly-test.managerCommentaryUrl="${model.managerCommentaryUrl}">
+                                    <div class="col-12 col-sm-4 col-lg-4 fund-data-links">
+                                        <a href="${managerCommentaryUrl}" target="_blank" rel="noopener noreferrer"
+                                           class="manager-commentary pdf-icon">${'managerCommentary' @i18n}<span
+                                                class="sr-only">Opens a PDF in new window</span></a>
+                                    </div>
+                                </sly>
+                                <sly data-sly-test.gipsComplainceUrl="${model.gipsComplainceUrl}">
+                                    <div class="col-12 col-sm-4 col-lg-4 fund-data-links">
+                                        <a href="${gipsComplainceUrl}" target="_blank" rel="noopener noreferrer"
+                                           class="manager-commentary pdf-icon">${'gipsComplianceUrl' @i18n}<span
+                                                class="sr-only">Opens a PDF in new window</span></a>
+                                    </div>
+                                </sly>
+                                <p class="itlicText">${model.morningStarText}</p>
+                            </div>
+                            <sly data-sly-test.desc=${model.fundDescription}>
+                                <div class="row fund-description rte-desc">${model.fundDescription @ context='html'}
+                                </div>
+                            </sly>
+                        </div>
+                    </sly>
+                    <sly data-sly-test="${mutual}">
+                        <div class="col-sm-12 col-md-12 col-lg-3 rgt-content">
+                            <div class="fund-buttons mf-buy-btn" style="display: none;">
+                                <sly data-sly-test.purchaseUrl="${model.purchaseFundUrl}">
+                                    <span style="display: none" id="buy-external-link"> Opens in new window </span>
+                                    <a aria-describedby="buy-external-link" href="${purchaseUrl}" target="_self"
+                                       class="btn-primary purchase-fund-btn">
+                                        ${'buy' @i18n}<span class="btn-triangle-rt" aria-hidden="true"></span></a>
+                                </sly>
+                            </div>
+                        </div>
+                    </sly>
+                    <sly data-sly-test="${etf}">
+                        <div class="col-sm-12 col-md-12 col-lg-3 rgt-content">
+                            <div class="fund-buttons">
+                                <sly data-sly-test.purchaseUrl="${model.purchaseFundUrl}">
+                                    <span style="display: none" id="buy-external-link"> Opens in new window </span>
+                                    <a aria-describedby="buy-external-link" href="${purchaseUrl}" target="_self"
+                                       class="btn-primary purchase-fund-btn">
+                                        ${'buy' @i18n}<span class="btn-triangle-rt" aria-hidden="true"></span></a>
+                                </sly>
+                            </div>
+                        </div>
+                    </sly>
+                </div>
+                <sly data-sly-test="${etf}">
+                    <span class="right-bar"></span>
+                </sly>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-details-error-message error-message-productoverview">
+        <p></p>
+    </div>
+</sly>

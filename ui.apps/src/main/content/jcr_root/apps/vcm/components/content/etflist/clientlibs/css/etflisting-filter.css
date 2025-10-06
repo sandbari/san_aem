@@ -1,0 +1,272 @@
+  /*filter section starts*/
+
+  .filter-sidebar-collapse.filter-width {
+    width: 200px;
+    box-sizing: border-box;
+  }
+  .filter-sidebar-collapse {
+    width: 110px;
+    min-height: 593px;
+    float: left;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+border: 1px solid #E2E2E2;
+  }
+  .mutualfunds-container .content {
+    width: -webkit-calc(100% - 130px);
+    width: -moz-calc(100% - 130px);
+    width: calc(100% - 130px);
+    min-height: 700px;
+    height: auto;
+    display: inline-block;
+  }
+  .mutualfunds-container .content.mobile-content-width {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .mutualfunds-container .content.pc-content-width {
+    width: -webkit-calc(100% - 200px);
+    width: -moz-calc(100% - 200px);
+    width: calc(100% - 200px);
+  }
+  .sticky-footer {
+    display: none;
+  }
+.filter-sidebar-collapse .arrow-container {
+    padding: 18px 2px 0;
+    position: relative;
+  }
+  .filter-sidebar-collapse .arrow-container span {
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    padding: 6px;
+    background: #00000000 no-repeat;
+    color: #004a98;
+    border-radius: 50%;
+    border:1px solid #00000000;
+  }
+
+  .filter-sidebar-collapse .arrow-container span:hover {
+    border:1px solid #004A98;
+  }
+
+  span.arrow-nav-right:before,
+  span.arrow-nav-left:before{
+     font-family: FontAwesome;
+     display: inline-block;
+     vertical-align: middle;
+     padding-right: 5px;
+  }
+
+span.arrow-nav-left:before {
+	content: "\f053";
+	position: relative;
+	left: 1px;
+}
+
+span.arrow-nav-right:before {
+     content: "\f054";
+     position: relative;
+     left: 3px;
+  }
+
+  .filter-sidebar-collapse .fund-title {
+    font-family: yorkten-slab-normal, sans-serif;
+    font-size: 18px;
+    color: #004A98;
+    font-weight: bold;
+    position: relative;
+    top: 2px;
+    padding: 5px;
+  }
+  .filter-sidebar-collapse .accordion {
+    padding: 0 10px 10px;
+}
+  .filter-header {
+    margin-top: 30px;
+}
+
+ body.using-mouse .fund-title.lblFilter:focus,
+ body.using-mouse .funds-list *:focus {
+	outline: 0 !important;
+}
+  .fund-title.lblFilter:focus{
+	outline: 2px solid #000 !important;
+	outline-offset: 0 !important;
+	transition: none;
+}
+
+body.using-mouse .filter-header:focus{
+	  outline: none!important;
+  }
+  .filter-title {
+    font-weight: 600;
+    color: #004A98;
+    padding-right: 20px;
+    font-size: 14px;
+}
+.accordion .filter-header .filter-title span:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: right;
+    position: relative;
+    color: #004a98;
+    right:-10px;
+}
+.accordion .filter-header .filter-title.collapsed span:after {
+    content: "\f067";
+}
+.filter-list {
+    padding-top: 10px;
+    font-size: 13px;
+}
+.filter-text {
+    border: 2px solid transparent;
+    padding: 8px 0;
+}
+.filter-sidebar-collapse #share_class .filter-text {
+  padding: 2px 0;
+}
+.styled-checkbox + label{
+	padding-left:26px;
+	padding-top:5px;
+}
+.styled-checkbox + label:before {
+    content: '';
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid #004A98;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+
+@media screen and (max-width:768px) {
+/* filter-mobile view*/
+.mutualfunds-container .sticky-footer {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 7;
+}
+.mutualfunds-container .panel {
+    padding: 20px 68px 80px 68px;
+    background-color: white;
+    text-align: left;
+    overflow: scroll;
+    display: none;
+}
+
+.mutualfunds-container .sticky-footer .panel-header {
+  font-family: yorkten-slab-normal, sans-serif;
+  font-size: 18px;
+  color: #49494a;
+  font-weight: bold;
+  /*position: relative;
+  top: 2px;*/
+}
+.mutualfunds-container .buttons-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.mutualfunds-container .footer-button {
+    height: 54px;
+    background-color: #486D90;
+    text-align: center;
+    padding: 16px;
+    /* position: absolute; */
+    width: 85%;
+    /* bottom: 0; */
+    float: left;
+}
+.mutualfunds-container .to-top {
+    color: #ffffff;
+    width: 14%;
+    float: right;
+    background: #486D90;
+    height: 54px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.mutualfunds-container .footer-button-text {
+    font-family: yorkten-slab-normal, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.mutualfunds-container .open-filter-icon {
+    background-image: url(../resources/Button__open-dropdown.svg);
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: sub;
+}
+.mutualfunds-container .top-up-icon {
+    background: url(../resources/top-up.svg) 8px -9px no-repeat;
+    height: 30px;
+    transform: rotate(180deg);
+    margin-bottom: 5px;
+}
+
+.mutualfunds-container .close-filter:after {
+  content: '';
+  background-image: url(../resources/accordian_close.svg);
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  margin: 0 0 0 5px;
+  vertical-align: sub;
+}
+.mutualfunds-container .filter-list .radio-label {
+  padding-left: 5px;
+}
+}
+
+/* */
+.DTFC_LeftBodyLiner {
+  overflow-y: hidden !important;
+}
+
+.fundslistTableHeading {
+  font-size: 13px;
+}
+
+ tr.fundslistTableHeading.sr-only {
+      position: static;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      overflow: visible;
+      clip: auto;
+      white-space: normal;
+      -webkit-clip-path: none;
+      clip-path: none;
+      border: 0;
+  }
+
+/*mobile Fixed Columns*/
+
+@media screen and (max-width:600px) {
+  .dataTables_scrollBody table.fundslistTable td:nth-child(1),table.fundslistTable th:nth-child(1)  {
+     position: sticky;
+     background: #fff !important;
+     z-index: 5;
+     left:0;
+  }
+
+  .dataTables_scrollBody table.fundslistTable td:nth-child(2),table.fundslistTable th:nth-child(2)  {
+     position: sticky;
+     background: #fff !important;
+     z-index: 5;
+     left: 100px;
+     box-shadow: rgba(0, 0, 0, 0.26) 5px 4px 6px 0px;
+  }
+}

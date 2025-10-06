@@ -1,0 +1,31 @@
+.distribution-table-data {
+    position: relative;
+}
+
+.product-details .distribution-table-data {
+    display: block;
+}
+
+.product-details .table.distributions-table th:first-child {
+    min-width: auto;
+    text-align: left;
+}
+
+.product-details table tfoot tr {
+    background-color: #D2D2D2;
+}
+
+.product-details table tfoot th {
+    border: none;
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (min-width:1024px) {
+    .product-details .distribution-table-data {
+        display: block;
+    }
+}

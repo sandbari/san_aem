@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          survivorRelationRequestEndPoint="https://stage.investorapi.vcm.com/services/survivors/srt/request"
+          xApiKey = "PXr6Vzz4Fy7SnA6voPnCPaub6ARAdyz32pDM0ATK"
+          gReCaptchaSitekey="6LcJra8ZAAAAAPoiTL-xxAAabtZvamH6aFlaFHH5"
+          survivorRelationConfirmationEndpoint="https://stage.investor.vcm.com/et-confirmation"/>

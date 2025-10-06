@@ -1,0 +1,1273 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+  "jcr:content":{
+    "jcr:primaryType":"cq:PageContent",
+    "jcr:createdBy":"admin",
+    "jcr:title":"English",
+    "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+    "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+    "cq:lastModified":"Fri Jan 31 2020 14:29:18 GMT+0530",
+    "sling:resourceType":"vcm/components/structure/page",
+    "cq:lastModifiedBy":"admin",
+    "root":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:lastModifiedBy":"admin",
+      "jcr:lastModified":"Thu Jan 30 2020 12:01:22 GMT+0530",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "responsivegrid":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "cq:responsive":{
+          "jcr:primaryType":"nt:unstructured"
+        }
+      }
+    }
+  },
+  "home":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Home",
+      "cq:template":"/conf/vcm/settings/wcm/templates/homepage-template",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "cq:lastModified":"Mon Feb 03 2020 15:15:51 GMT+0530",
+      "hideInNav":"true",
+      "sling:resourceType":"vcm/components/structure/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:lastModified":"Thu Jan 30 2020 12:03:20 GMT+0530",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "member":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Member",
+        "cq:template":"/conf/vcm/settings/wcm/templates/homepage-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 14:52:07 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:03:20 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "financial-professional":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Financial Professional",
+        "cq:template":"/conf/vcm/settings/wcm/templates/homepage-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 14:52:35 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:03:20 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "institutional-investor":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Institutional Investor",
+        "cq:template":"/conf/vcm/settings/wcm/templates/homepage-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 14:53:04 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:03:20 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    }
+  },
+  "about-victory":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"About Victory Capital",
+      "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "cq:lastModified":"Fri Jan 31 2020 14:53:56 GMT+0530",
+      "sling:resourceType":"vcm/components/structure/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "leadership-team":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Leadership Team",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:01:16 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "corporate-responsibility":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Corporate Responsibility",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:08:09 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    }
+  },
+  "products":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Products",
+      "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+      "institutionalinvestorsType":"false",
+      "financialAdvisorsType":"false",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "cq:lastModified":"Mon Feb 03 2020 15:50:46 GMT+0530",
+      "useImageInHeaderNav":"false",
+      "pageTitle":"Our Products",
+      "sling:resourceType":"vcm/components/structure/page",
+      "membersType":"false",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "mutual-funds":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Mutual Funds",
+        "cq:template":"/conf/vcm/settings/wcm/templates/product-landing-page-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:09:49 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      },
+      "mutual-funds-list":{
+        "jcr:primaryType":"cq:Page",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "jcr:content":{
+          "jcr:primaryType":"cq:PageContent",
+          "jcr:createdBy":"admin",
+          "jcr:title":"Mutual Funds List",
+          "cq:template":"/conf/vcm/settings/wcm/templates/product-landing-page-template",
+          "institutionalinvestorsType":"false",
+          "financialAdvisorsType":"false",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "cq:lastModified":"Mon Feb 03 2020 15:52:38 GMT+0530",
+          "useImageInHeaderNav":"false",
+          "hideInNav":"true",
+          "sling:resourceType":"vcm/components/structure/page",
+          "membersType":"false",
+          "cq:lastModifiedBy":"admin",
+          "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "victory-shares-etfs":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Victory Shares ETFs",
+        "cq:template":"/conf/vcm/settings/wcm/templates/product-landing-page-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:10:28 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      },
+      "victory-shares-etfs-list":{
+        "jcr:primaryType":"cq:Page",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "jcr:content":{
+          "jcr:primaryType":"cq:PageContent",
+          "jcr:createdBy":"admin",
+          "jcr:title":"Victory Shares ETFs List",
+          "cq:template":"/conf/vcm/settings/wcm/templates/product-landing-page-template",
+          "institutionalinvestorsType":"false",
+          "financialAdvisorsType":"false",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "cq:lastModified":"Mon Feb 03 2020 15:52:45 GMT+0530",
+          "useImageInHeaderNav":"false",
+          "hideInNav":"true",
+          "sling:resourceType":"vcm/components/structure/page",
+          "membersType":"false",
+          "cq:lastModifiedBy":"admin",
+          "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "usaa-529-education-savings-plan":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"USAA 529 Education Savings Plan",
+        "cq:template":"/conf/vcm/settings/wcm/templates/product-landing-page-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:11:13 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      },
+      "usaa-529-education-savings-plan-details":{
+        "jcr:primaryType":"cq:Page",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "jcr:content":{
+          "jcr:primaryType":"cq:PageContent",
+          "jcr:createdBy":"admin",
+          "jcr:title":"USAA 529 Education Savings Plan Details",
+          "cq:template":"/conf/vcm/settings/wcm/templates/product-landing-page-template",
+          "institutionalinvestorsType":"false",
+          "financialAdvisorsType":"false",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "cq:lastModified":"Mon Feb 03 2020 15:52:50 GMT+0530",
+          "useImageInHeaderNav":"false",
+          "hideInNav":"true",
+          "sling:resourceType":"vcm/components/structure/page",
+          "membersType":"false",
+          "cq:lastModifiedBy":"admin",
+          "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid"
+          }
+        },
+        "usaa-529-education-savings-plan-performance":{
+          "jcr:primaryType":"cq:Page",
+          "jcr:createdBy":"admin",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "jcr:content":{
+            "jcr:primaryType":"cq:PageContent",
+            "jcr:createdBy":"admin",
+            "jcr:title":"USAA 529 Education Savings Plan Performance",
+            "cq:template":"/conf/vcm/settings/wcm/templates/product-landing-page-template",
+            "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+            "cq:lastModified":"Fri Jan 31 2020 15:15:46 GMT+0530",
+            "sling:resourceType":"vcm/components/structure/page",
+            "cq:lastModifiedBy":"admin",
+            "root":{
+              "jcr:primaryType":"nt:unstructured",
+              "jcr:lastModifiedBy":"admin",
+              "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+              "sling:resourceType":"wcm/foundation/components/responsivegrid"
+            }
+          }
+        }
+      }
+    },
+    "retirement":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Retirement",
+        "cq:template":"/conf/vcm/settings/wcm/templates/product-landing-page-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:11:44 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    }
+  },
+  "investment-franchises":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Investment Franchises",
+      "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+      "institutionalinvestorsType":"false",
+      "financialAdvisorsType":"false",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "cq:lastModified":"Mon Feb 03 2020 15:50:38 GMT+0530",
+      "useImageInHeaderNav":"true",
+      "pageTitle":"Our Investment Franchises",
+      "sling:resourceType":"vcm/components/structure/page",
+      "membersType":"false",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "incore-capital-management":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"INCORE Capital Management",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "institutionalinvestorsType":"false",
+        "financialAdvisorsType":"false",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Mon Feb 03 2020 16:14:16 GMT+0530",
+        "useImageInHeaderNav":"false",
+        "sling:resourceType":"vcm/components/structure/page",
+        "membersType":"false",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        },
+        "image":{
+          "jcr:primaryType":"nt:unstructured",
+          "fileReference":"/content/dam/vcm/basic/Incore.Logo.svg"
+        }
+      },
+      "edward-goard-cfa":{
+        "jcr:primaryType":"cq:Page",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "jcr:content":{
+          "jcr:primaryType":"cq:PageContent",
+          "jcr:createdBy":"admin",
+          "jcr:title":"Edward Goard, CFA",
+          "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "cq:lastModified":"Fri Jan 31 2020 15:23:01 GMT+0530",
+          "sling:resourceType":"vcm/components/structure/page",
+          "cq:lastModifiedBy":"admin",
+          "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "integrity-asset-management":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Integrity Asset Management",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "institutionalinvestorsType":"false",
+        "financialAdvisorsType":"false",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Mon Feb 03 2020 16:14:43 GMT+0530",
+        "useImageInHeaderNav":"false",
+        "sling:resourceType":"vcm/components/structure/page",
+        "membersType":"false",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        },
+        "image":{
+          "jcr:primaryType":"nt:unstructured",
+          "fileReference":"/content/dam/vcm/basic/Integrity.AM.Logo.svg"
+        }
+      }
+    },
+    "munder-capital-management":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Munder Capital Management",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "institutionalinvestorsType":"false",
+        "financialAdvisorsType":"false",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Mon Feb 03 2020 16:14:57 GMT+0530",
+        "useImageInHeaderNav":"false",
+        "sling:resourceType":"vcm/components/structure/page",
+        "membersType":"false",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        },
+        "image":{
+          "jcr:primaryType":"nt:unstructured",
+          "fileReference":"/content/dam/vcm/basic/Munder.logo.svg"
+        }
+      }
+    },
+    "newbridge-asset-management":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"NewBridge Asset Management",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "institutionalinvestorsType":"false",
+        "financialAdvisorsType":"false",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Mon Feb 03 2020 16:15:09 GMT+0530",
+        "useImageInHeaderNav":"false",
+        "sling:resourceType":"vcm/components/structure/page",
+        "membersType":"false",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        },
+        "image":{
+          "jcr:primaryType":"nt:unstructured",
+          "fileReference":"/content/dam/vcm/basic/Newbridge.logo.svg"
+        }
+      }
+    },
+    "rs-investments":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"RS Investments",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "institutionalinvestorsType":"false",
+        "financialAdvisorsType":"false",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Mon Feb 03 2020 16:15:21 GMT+0530",
+        "useImageInHeaderNav":"false",
+        "sling:resourceType":"vcm/components/structure/page",
+        "membersType":"false",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        },
+        "image":{
+          "jcr:primaryType":"nt:unstructured",
+          "fileReference":"/content/dam/vcm/basic/RS-logo.svg"
+        }
+      }
+    },
+    "sophus-capital":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Sophus Capital",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "institutionalinvestorsType":"false",
+        "financialAdvisorsType":"false",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Mon Feb 03 2020 16:15:32 GMT+0530",
+        "useImageInHeaderNav":"false",
+        "sling:resourceType":"vcm/components/structure/page",
+        "membersType":"false",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        },
+        "image":{
+          "jcr:primaryType":"nt:unstructured",
+          "fileReference":"/content/dam/vcm/basic/sophuscapital.logo.png"
+        }
+      }
+    },
+    "sycamore-capital":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Sycamore Capital",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "institutionalinvestorsType":"false",
+        "financialAdvisorsType":"false",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Mon Feb 03 2020 16:15:51 GMT+0530",
+        "useImageInHeaderNav":"false",
+        "sling:resourceType":"vcm/components/structure/page",
+        "membersType":"false",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        },
+        "image":{
+          "jcr:primaryType":"nt:unstructured",
+          "fileReference":"/content/dam/vcm/basic/sycamore.logo.svg"
+        }
+      }
+    },
+    "trivalent-investments":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Trivalent Investments",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "institutionalinvestorsType":"false",
+        "financialAdvisorsType":"false",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Mon Feb 03 2020 16:16:01 GMT+0530",
+        "useImageInHeaderNav":"false",
+        "sling:resourceType":"vcm/components/structure/page",
+        "membersType":"false",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        },
+        "image":{
+          "jcr:primaryType":"nt:unstructured",
+          "fileReference":"/content/dam/vcm/basic/Trivalent.logo.svg"
+        }
+      }
+    },
+    "usaa-mutual-funds":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"USAA Mutual Funds",
+        "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+        "institutionalinvestorsType":"false",
+        "financialAdvisorsType":"false",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Mon Feb 03 2020 16:16:10 GMT+0530",
+        "useImageInHeaderNav":"false",
+        "sling:resourceType":"vcm/components/structure/page",
+        "membersType":"false",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        },
+        "image":{
+          "jcr:primaryType":"nt:unstructured",
+          "fileReference":"/content/dam/vcm/basic/usaa.Logo.png"
+        }
+      }
+    }
+  },
+  "advice-tools":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Advice & Tools",
+      "cq:template":"/conf/vcm/settings/wcm/templates/advice-and-tools-template",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "cq:lastModified":"Fri Jan 31 2020 14:57:57 GMT+0530",
+      "sling:resourceType":"vcm/components/structure/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:lastModified":"Thu Jan 30 2020 11:52:15 GMT+0530",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "investor-learning-center":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Investor Learning Center",
+        "cq:template":"/conf/vcm/settings/wcm/templates/advice-and-tools-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:32:13 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:52:15 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      },
+      "all-about-mutual-funds":{
+        "jcr:primaryType":"cq:Page",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "jcr:content":{
+          "jcr:primaryType":"cq:PageContent",
+          "jcr:createdBy":"admin",
+          "jcr:title":"All About Mutual Funds",
+          "cq:template":"/conf/vcm/settings/wcm/templates/70-30-layout-content-template",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "cq:lastModified":"Fri Jan 31 2020 15:35:25 GMT+0530",
+          "sling:resourceType":"vcm/components/structure/page",
+          "cq:lastModifiedBy":"admin",
+          "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:lastModified":"Thu Jan 30 2020 11:51:54 GMT+0530",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid"
+          }
+        }
+      },
+      "all-about-etfs":{
+        "jcr:primaryType":"cq:Page",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "jcr:content":{
+          "jcr:primaryType":"cq:PageContent",
+          "jcr:createdBy":"admin",
+          "jcr:title":"All About ETFs",
+          "cq:template":"/conf/vcm/settings/wcm/templates/70-30-layout-content-template",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "cq:lastModified":"Fri Jan 31 2020 15:35:48 GMT+0530",
+          "sling:resourceType":"vcm/components/structure/page",
+          "cq:lastModifiedBy":"admin",
+          "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:lastModified":"Thu Jan 30 2020 11:51:54 GMT+0530",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid"
+          }
+        }
+      },
+      "all-about-college-savings-plans":{
+        "jcr:primaryType":"cq:Page",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "jcr:content":{
+          "jcr:primaryType":"cq:PageContent",
+          "jcr:createdBy":"admin",
+          "jcr:title":"All About College Savings Plans",
+          "cq:template":"/conf/vcm/settings/wcm/templates/70-30-layout-content-template",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "cq:lastModified":"Fri Jan 31 2020 15:36:16 GMT+0530",
+          "sling:resourceType":"vcm/components/structure/page",
+          "cq:lastModifiedBy":"admin",
+          "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:lastModified":"Thu Jan 30 2020 11:51:54 GMT+0530",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid"
+          }
+        }
+      },
+      "planning-for-retirement":{
+        "jcr:primaryType":"cq:Page",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "jcr:content":{
+          "jcr:primaryType":"cq:PageContent",
+          "jcr:createdBy":"admin",
+          "jcr:title":"Planning For Retirement",
+          "cq:template":"/conf/vcm/settings/wcm/templates/70-30-layout-content-template",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "cq:lastModified":"Fri Jan 31 2020 15:36:40 GMT+0530",
+          "sling:resourceType":"vcm/components/structure/page",
+          "cq:lastModifiedBy":"admin",
+          "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:lastModified":"Thu Jan 30 2020 11:51:54 GMT+0530",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid"
+          }
+        }
+      }
+    },
+    "military-financial-readiness":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Military Financial Readiness",
+        "cq:template":"/conf/vcm/settings/wcm/templates/70-30-layout-content-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:33:31 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:51:54 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      },
+      "investment-planning-tools":{
+        "jcr:primaryType":"cq:Page",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "jcr:content":{
+          "jcr:primaryType":"cq:PageContent",
+          "jcr:createdBy":"admin",
+          "jcr:title":"Investment Planning Tools",
+          "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "cq:lastModified":"Fri Jan 31 2020 15:37:53 GMT+0530",
+          "sling:resourceType":"vcm/components/structure/page",
+          "cq:lastModifiedBy":"admin",
+          "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:lastModified":"Thu Jan 30 2020 12:01:22 GMT+0530",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+              "jcr:primaryType":"nt:unstructured",
+              "sling:resourceType":"wcm/foundation/components/responsivegrid",
+              "cq:responsive":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            }
+          }
+        }
+      },
+      "investment-goals":{
+        "jcr:primaryType":"cq:Page",
+        "jcr:createdBy":"admin",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "jcr:content":{
+          "jcr:primaryType":"cq:PageContent",
+          "jcr:createdBy":"admin",
+          "jcr:title":"Investment Goals",
+          "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+          "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+          "cq:lastModified":"Fri Jan 31 2020 15:38:13 GMT+0530",
+          "sling:resourceType":"vcm/components/structure/page",
+          "cq:lastModifiedBy":"admin",
+          "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:lastModified":"Thu Jan 30 2020 12:01:22 GMT+0530",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+              "jcr:primaryType":"nt:unstructured",
+              "sling:resourceType":"wcm/foundation/components/responsivegrid",
+              "cq:responsive":{
+                "jcr:primaryType":"nt:unstructured"
+              }
+            }
+          }
+        }
+      }
+    },
+    "faq":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"FAQ",
+        "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:34:00 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:01:22 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid",
+          "responsivegrid":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "cq:responsive":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          }
+        }
+      }
+    }
+  },
+  "insights":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Insights",
+      "cq:template":"/conf/vcm/settings/wcm/templates/advice-and-tools-template",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "cq:lastModified":"Mon Feb 03 2020 15:16:43 GMT+0530",
+      "hideInNav":"true",
+      "sling:resourceType":"vcm/components/structure/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:lastModified":"Thu Jan 30 2020 11:52:15 GMT+0530",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "insight":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Insight",
+        "cq:template":"/conf/vcm/settings/wcm/templates/advice-and-tools-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:39:16 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:52:15 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "faq":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"FAQ",
+        "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:45:00 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:01:22 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid",
+          "responsivegrid":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "cq:responsive":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          }
+        }
+      }
+    }
+  },
+  "resources":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Resources",
+      "cq:template":"/conf/vcm/settings/wcm/templates/advice-and-tools-template",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "cq:lastModified":"Mon Feb 03 2020 15:16:38 GMT+0530",
+      "hideInNav":"true",
+      "sling:resourceType":"vcm/components/structure/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:lastModified":"Thu Jan 30 2020 11:52:15 GMT+0530",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "planning-tools":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Planning Tools",
+        "cq:template":"/conf/vcm/settings/wcm/templates/advice-and-tools-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:40:03 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:52:15 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "practice-management":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Practice Management",
+        "cq:template":"/conf/vcm/settings/wcm/templates/advice-and-tools-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:40:29 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:52:15 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "retirement-resources":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Retirement Resources",
+        "cq:template":"/conf/vcm/settings/wcm/templates/advice-and-tools-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:40:50 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 11:52:15 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "fund-literature":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Fund Literature",
+        "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:41:12 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:01:22 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid",
+          "responsivegrid":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "cq:responsive":{
+              "jcr:primaryType":"nt:unstructured"
+            }
+          }
+        }
+      }
+    }
+  },
+  "solutions":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Solutions",
+      "cq:template":"/conf/vcm/settings/wcm/templates/corporate-pages-template",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "cq:lastModified":"Mon Feb 03 2020 15:16:34 GMT+0530",
+      "hideInNav":"true",
+      "sling:resourceType":"vcm/components/structure/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "jcr:lastModifiedBy":"admin",
+        "jcr:lastModified":"Thu Jan 30 2020 11:59:10 GMT+0530",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid"
+      }
+    },
+    "institutional-strategies":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Institutional Strategies",
+        "cq:template":"/conf/vcm/settings/wcm/templates/product-landing-page-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:29:40 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "strategic-beta":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:createdBy":"admin",
+        "jcr:title":"Strategic Beta",
+        "cq:template":"/conf/vcm/settings/wcm/templates/product-landing-page-template",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jan 31 2020 15:30:14 GMT+0530",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "jcr:lastModifiedBy":"admin",
+          "jcr:lastModified":"Thu Jan 30 2020 12:04:08 GMT+0530",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    }
+  },
+  "errors":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:mixinTypes":[
+        "mix:versionable"
+      ],
+      "jcr:createdBy":"admin",
+      "jcr:title":"errors",
+      "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "cq:lastModified":"Mon Feb 03 2020 15:16:28 GMT+0530",
+      "hideInNav":"true",
+      "jcr:uuid":"1c4f0419-b704-4f3f-b8ad-08a5ef7a7ea6",
+      "sling:resourceType":"vcm/components/structure/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "sling:resourceType":"wcm/foundation/components/responsivegrid",
+        "responsivegrid":{
+          "jcr:primaryType":"nt:unstructured",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid"
+        }
+      }
+    },
+    "404":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:mixinTypes":[
+          "mix:versionable"
+        ],
+        "jcr:createdBy":"admin",
+        "jcr:title":"404",
+        "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jun 21 2019 14:07:39 GMT+0530",
+        "jcr:uuid":"723c236b-6f2a-4051-be59-2bb6d1620cf9",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid",
+          "responsivegrid":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "title":{
+              "jcr:primaryType":"nt:unstructured",
+              "jcr:createdBy":"admin",
+              "jcr:title":"This is custom 404 error page",
+              "jcr:lastModifiedBy":"admin",
+              "jcr:created":"Fri Jun 21 2019 13:58:58 GMT+0530",
+              "jcr:lastModified":"Fri Jun 21 2019 13:59:22 GMT+0530",
+              "sling:resourceType":"vcm/components/content/title"
+            }
+          }
+        }
+      }
+    },
+    "default":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+      "jcr:content":{
+        "jcr:primaryType":"cq:PageContent",
+        "jcr:mixinTypes":[
+          "mix:versionable"
+        ],
+        "jcr:createdBy":"admin",
+        "jcr:title":"default",
+        "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+        "jcr:created":"Mon Feb 03 2020 15:13:25 GMT+0530",
+        "cq:lastModified":"Fri Jun 21 2019 14:00:38 GMT+0530",
+        "jcr:uuid":"0b5c4b4b-1aaf-44eb-becc-f1e88cd2406a",
+        "sling:resourceType":"vcm/components/structure/page",
+        "cq:lastModifiedBy":"admin",
+        "root":{
+          "jcr:primaryType":"nt:unstructured",
+          "sling:resourceType":"wcm/foundation/components/responsivegrid",
+          "responsivegrid":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "title":{
+              "jcr:primaryType":"nt:unstructured",
+              "jcr:createdBy":"admin",
+              "jcr:title":"This is custom 500 error page",
+              "jcr:lastModifiedBy":"admin",
+              "jcr:created":"Fri Jun 21 2019 14:00:08 GMT+0530",
+              "type":"h1",
+              "jcr:lastModified":"Fri Jun 21 2019 14:00:38 GMT+0530",
+              "sling:resourceType":"vcm/components/content/title"
+            }
+          }
+        }
+      }
+    }
+  }
+}

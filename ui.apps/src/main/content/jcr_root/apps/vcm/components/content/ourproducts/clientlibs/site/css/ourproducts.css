@@ -1,0 +1,784 @@
+.products-block {
+    margin-top: 30px;
+}
+
+.products-block img {
+    position: absolute;
+    bottom: 0;
+}
+
+.our--Products__member img {
+    height: 100%;
+}
+
+.no-corner-img img {
+    visibility: hidden;
+}
+
+.productHeading h3 {
+    color: #fff;
+    margin-top: 46px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.productsBaner {
+    background-image: url("../resources/Corporate-products-MOB-414x720.jpg");
+    height: auto;
+    padding-bottom: 105px;
+}
+
+.productsBaner.productsBaner-listbox {
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.product-list-container .col-12.col-md-12.col-sm-12 {
+    padding: 0;
+}
+
+.Our--Products__products .productsBaner {
+    background-image: url("../resources/our_products_bg.png");
+    background-size: cover;
+}
+
+.our--Products__member .productsBaner {
+    background-image: url("../resources/Member%20home-products%20414x624.svg");
+	background-size: cover;
+}
+
+.navigationLinksButton.product-list {
+    background: #fff;
+    padding: 16px 10px;
+    height: 85px;
+    margin-bottom: 20px;
+    text-align: left;
+    display: table;
+    width: 100%;
+}
+
+.ourproducts.Our--Products__products .list-item-flex {
+    display: inline-block;
+}
+
+.product-list a {
+    color: #486D90;
+    font-size: 20px;
+    padding-right: 40px;
+    line-height: 24px;
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.our--Products__member .product-list-container a {
+    font-size: 19px;
+}
+
+.product-list-container a {
+    color: #486D90;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.product-list.navigationLinksButton a::after {
+    right: 3px;
+    top: 50%;
+    transform: translate(-10px, -50%);
+}
+
+.products-block.col-12.col-md-12.col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.product-list-container .col-md-3 {
+    max-width: 100%;
+}
+
+.Our--Products__corporate .productsBaner::after,
+.our--Products__member .productsBaner::after {
+    content: "";
+    background-image: url('../resources/rightTriangleProducts.svg');
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.products .container {
+    max-width: 1366px;
+    padding: 0;
+    width: 100%;
+}
+
+.product-list-container .col-lg-12.col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.product-list.navigationLinksButton{
+	word-break: break-word;
+}
+
+/*for Products__mutualfund  */
+
+.Our--Products__mutualfund .card-hdng-cnt-navarw:after {
+    border-right: 26px solid transparent;
+    border-top: 26px solid #8bc105;
+    top: -1px;
+    left: -1px;
+    content: "";
+    position: absolute;
+}
+
+.Our--Products__mutualfund .productsBaner {
+    background-image: url(../resources/dark-bg.png);
+}
+
+.Our--Products__mutualfund .card-hdng-cnt-navarw .heading-absolute {
+    margin-bottom: 0px;
+}
+
+.Our--Products__mutualfund .card-hdng-cnt-navarw h3 {
+    font-size: 19px;
+    line-height: 22px;
+    display: inline-block;
+}
+
+.Our--Products__mutualfund .card-hdng-cnt-navarw .desc-absolute p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    display: inline-block;
+}
+
+.Our--Products__mutualfund .product-list-container a {
+    padding: 24px 18px 17px 18px;
+    min-height: 164px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.Our--Products__mutualfund .product-list-container .card-hdng-cnt-navarw
+	{
+	padding: 24px 18px 48px 18px;
+	width: 100%;
+}
+
+/*for retirement product  */
+.Our--Products__productsretirement .card-hdng-cnt-link {
+    padding: 15px 20px 20px;
+    position: static;
+    height: auto;
+    width: 100%;
+}
+
+.Our--Products__productsmutualfunds .card-hdng-cnt-link:hover,
+.Our--Products__productsretirement .card-hdng-cnt-link:hover {
+    background: none;
+}
+
+.Our--Products__productsretirement .cta-imgtxt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Our--Products__productsretirement img.cta-box-img {
+    position: static;
+    width: 51px;
+    height: 51px;
+}
+
+.Our--Products__productsretirement h4 {
+    font: Bold 20px/22px benton-sans, sans-serif;
+    color: #49494a;
+}
+
+.Our--Products__productsretirement .cta-txt {
+    margin-top: 25px;
+}
+
+.Our--Products__productsretirement .productsBaner-listbox .productHeading h3 {
+    color: #486d90;
+}
+
+.Our--Products__productsretirement .productsBaner {
+    background: none;
+}
+
+
+/*for Mutual fund  product  */
+
+.Our--Products__productsmutualfunds .productsBaner-listbox .productHeading h3 {
+    color: #486d90;
+}
+
+.Our--Products__productsmutualfunds .card-hdng-cnt-link {
+    max-width: 100%;
+    max-height: 260px;
+    border: 1px solid #d2d2d2;
+    padding: 19px 25px 12px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.Our--Products__productsmutualfunds .productsBaner {
+    background: none;
+}
+
+.Our--Products__productsmutualfunds .cta-fundtxt {
+    margin-top: 25px;
+    min-height: 73px;
+}
+
+.Our--Products__productsmutualfunds .cta-fundtxt p {
+    font: 700 18px/22px benton-sans, sans-serif;
+    text-align: center;
+}
+
+.Our--Products__productsmutualfunds img.cta-box-img {
+    position: static;
+    width: 133px;
+    height: 64px;
+}
+
+.Our--Products__productsmutualfunds .cta-imgtxt {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*for share product  */
+
+.Our--Products__productsshare .card-hdng-cnt-link {
+    padding: 15px 20px 20px;
+    position: static;
+    height: auto;
+    width: 100%;
+}
+
+.Our--Products__productsshare .cta-imgtxt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Our--Products__productsshare img.cta-box-img {
+    position: static;
+    width: 51px;
+    height: 51px;
+}
+
+.Our--Products__productsshare .cta-txt {
+    margin-top: 25px;
+}
+
+.Our--Products__productsshare h4 {
+    font: Bold 20px/22px benton-sans, sans-serif;
+    color: #49494a;
+}
+
+.Our--Products__productsshare .productsBaner {
+    background-image: url(../resources/dark-bg.png);
+}
+
+
+/*for saving product  */
+
+.Our--Products__productssavings .card-hdng-cnt-link {
+    padding: 15px 20px 20px;
+    position: static;
+    height: auto;
+}
+
+.Our--Products__productssavings .cta-imgtxt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Our--Products__productssavings img.cta-box-img {
+    position: static;
+    width: 51px;
+    height: 51px;
+}
+
+.Our--Products__productssavings h4 {
+    font: Bold 20px/22px benton-sans, sans-serif;
+    color: #49494a;
+}
+
+.Our--Products__productssavings .cta-txt {
+    margin-top: 25px;
+}
+
+.Our--Products__productssavings .productsBaner {
+    background-image: url(../resources/dark-bg.png);
+}
+
+
+/* our product retirement*/
+
+.Our--Products__member-products-retirement .productHeading p {
+    color: #fff;
+}
+
+.Our--Products__member-products-retirement .st-product-box {
+    background: #fff;
+    padding: 40px 25px 32px 25px;
+    position: relative;
+    margin-bottom: 24px;
+    font-family: yorkten-slab-normal, sans-serif;
+    cursor: pointer;
+}
+
+.Our--Products__member-products-retirement .st-product-box:focus {
+    outline: 2px solid #000  !important;
+    outline-offset: 2px !important;
+    transition: none;
+}
+
+.Our--Products__member-products-retirement .st-product-box::before {
+    content: "";
+    background: #8bc105 url("../resources/rightArrow.png") no-repeat 8px;
+    right: -40px;
+    background-size: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    right: 10px;
+    top: 35px;
+}
+
+.Our--Products__member-products-retirement .st-product-grey-text {
+    color: #49494a;
+    font-size: 18px;
+    font-family: benton-sans, sans-serif;
+    line-height: 26px;
+}
+
+.Our--Products__member-products-retirement .st-product-blue-text {
+    color: #486d90;
+    font-size: 22px;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.Our--Products__member-products-retirement .st-box-border-green-left {
+    text-align: left;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.Our--Products__member-products-retirement .st-box-border-green-left:after {
+    border-right: 26px solid transparent;
+    border-top: 26px solid #8bc105;
+    top: 0px;
+    left: 0px;
+    content: "";
+    position: absolute;
+}
+
+.Our--Products__member-products-retirement .st-retirement-overlay {
+    background: #fff;
+    max-width: 955px;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 28px;
+    display: none;
+}
+
+.Our--Products__member-products-retirement .productHeading.col-md-12 {
+    max-width: 485px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.Our--Products__member-products-retirement .st-product-wrapper {
+    padding: 0 15px;
+    max-width: 485px;
+    margin: 0 auto !important;
+}
+
+.Our--Products__member-products-retirement .st-retirement-overlay h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.Our--Products__member-products-retirement .st-section-heading:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #8bc105;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 0;
+}
+
+.Our--Products__member-products-retirement .st-teaser-desc:first-of-type {
+    margin-top: 31px;
+    margin-bottom: 7px;
+}
+
+.Our--Products__member-products-retirement .st-retirement-overlay h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+    line-height: 28px;
+}
+
+.Our--Products__member-products-retirement .st-overlay-right-content {
+    margin-top: 20px;
+}
+
+.Our--Products__member-products-retirement .st-overlay-right-content p {
+    line-height: 20px;
+    margin: 11px 0 21px 0;
+}
+
+.Our--Products__member-products-retirement .st-cmp-wrapper p {
+    color: #49494a;
+    font-size: 16px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 400;
+}
+
+.Our--Products__member-products-retirement .st-page-member-products-retirement.st-cmp-wrapper a {
+    line-height: 18px;
+    margin-top: 6px;
+}
+
+.Our--Products__member-products-retirement .st-button {
+    background: #486d90;
+    padding: 15px 31px 15px 30px;
+    min-height: 50px;
+}
+
+.Our--Products__member-products-retirement a {
+    color: #fff;
+    line-height: 18px;
+    margin-top: 6px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Our--Products__member-products-retirement .st-badge-btn {
+    position: relative;
+}
+
+.Our--Products__member-products-retirement .st-badge-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    border-right-color: #8bc105;
+    border-top-color: #8bc105;
+}
+
+.Our--Products__member-products-retirement .st-overlay-close {
+    float: right;
+    color: #004a98;
+    font: 50px Benton sans-serif;
+    cursor: pointer;
+    line-height: 21px;
+    padding: 0px 0px 12px 0px;
+}
+
+.Our--Products__member-products-retirement .st-overlay-close::before {
+    content: 'Close';
+    position: absolute;
+    color: #004a98;
+    font: 10px yorkten-slab-normal, sans-serif;
+    top: 22px;
+}
+
+.Our--Products__member-products-retirement .st-product-box.st-box-border-green-left {
+    min-height: auto;
+    padding: 18px 25px 18px 31px;
+    margin-top: 4px;
+}
+
+.Our--Products__member-products-retirement .productsBaner {
+    background-image: url(../resources/dark-bg.png);
+}
+
+.Our--Products__mutualfund .col-lg-3.col-md-6.col-sm-12,
+.ourproducts.Our--Products__productsshare .list-item-flex,
+.Our--Products__productssavings .col-lg-4.col-md-6.col-sm-12,
+.Our--Products__productsretirement .list-item-flex,
+.Our--Products__productsshare .list-item-flex {
+    display: flex;
+}
+
+.Our--Products__productsshare .products-block {
+    margin-top: 0;
+}
+
+.card-hdng-cnt-navarw .desc-absolute a.navg-right-arw-link{
+    position: absolute;
+    padding: 16px;
+    bottom: 16px;
+    background-position: right center;
+    right: 12px;
+    min-height: auto;
+    width: auto;
+    pointer-events: auto;
+    line-height: 0px;
+    font-family: yorkten-slab-normal,sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 40px;
+    color: #004a98;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card-hdng-cnt-navarw:hover{
+    cursor: pointer
+}
+
+@media screen and (min-width: 768px) {
+    .ourproducts.Our--Products__productsmutualfunds .list-item-flex {
+        display: block;
+    }
+    .Our--Products__member-products-retirement .st-product-box.st-box-border-green-left {
+        padding: 40px 25px 32px 25px;
+        width: 100%;
+    }
+    .Our--Products__member-products-retirement .st-teaser-desc:first-of-type {
+        margin-top: 0;
+    }
+    .Our--Products__member-products-retirement .st-overlay-left-content h3 {
+        margin-top: 0;
+    }
+    .Our--Products__productsmutualfunds .card-hdng-cnt-link,
+    .Our--Products__productsshare .card-hdng-cnt-link {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ourproducts .list-item-flex {
+        display: flex;
+    }
+    .Our--Products__productsmutualfunds .card-hdng-cnt-link {
+        max-width: 255px;
+        width: 100%;
+        height: 100%;
+        margin:0 auto;
+    }
+    .Our--Products__member-products-retirement .productHeading.col-md-12 {
+        max-width: 830px;
+    }
+    .Our--Products__member-products-retirement .st-product-wrapper {
+        min-height: 280px;
+        max-width: 830px;
+    }
+    .Our--Products__member-products-retirement .product-list-container a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Our--Products__productssavings .card-hdng-cnt-link:hover,
+    .Our--Products__productsshare .card-hdng-cnt-link:hover {
+        background-color: #FFF;
+        border: 1px solid #d2d2d2;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .ourproducts .list-item-flex {
+        display: flex;
+    }
+    .product-list-container .col-md-3,
+    .product-list-container .col-md-4 {
+        display: inline-block;
+        text-align: left;
+    }
+    .our--Products__member .product-list-container a {
+        font-size: 19px;
+    }
+    .product-list-container a {
+        font-size: 20px;
+    }
+    .Our--Products__corporate img {
+        height: 303px;
+        position: absolute;
+        bottom: 0;
+        z-index: 999;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1199px) {
+    .product-list-container .col-md-3,
+    .product-list-container .col-md-4 {
+        display: inline-block;
+        text-align: left;
+    }
+    .our--Products__member .product-list-container a {
+        font-size: 19px;
+    }
+    .product-list-container a {
+        font-size: 22px;
+    }
+    .product-list {
+        min-height: 85px;
+    }
+    .product-list-container {
+        text-align: center;
+    }
+    .container {
+        max-width: 100% !important;
+    }
+    .products .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    .ourproducts .list-item-flex {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .ourproducts .list-item-flex {
+        display: flex;
+    }
+    .marT20 {
+        margin-top: 20px;
+    }
+    .product-list-container .col-md-3 {
+        max-width: 21%;
+    }
+    .product-list-container .col-12.col-md-12.col-sm-12 {
+        padding-right: 0;
+        float: none;
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+    .product-list-container .col-12.col-md-12.col-sm-12 .col-md-3 {
+        float: none;
+        padding-right: 10px;
+    }
+    .productsBaner::after {
+        content: "";
+        height: 70px;
+        width: 70px;
+    }
+    .our--Products__member img {
+        height: 193px;
+        position: absolute;
+        bottom: 0;
+    }
+    .productsBaner {
+        background-image: url("../resources/Corporate-product-banner-1920x458.jpg");
+    }
+    .Our--Products__products .productsBaner {
+        background-image: url("../resources/our_products_bg.png");
+        background-size: cover;
+    }
+    .our--Products__member .productsBaner {
+        background-image: url("../resources/Member-home-productsw-1920x390.jpg");
+    }
+    .our--Products__member .col-12.col-lg-3.col-sm-6.productsBox {
+        max-width: 21%;
+    }
+    .col-12.col-lg-3.col-sm-6.productsBox {
+        display: inline-block;
+    }
+    .product-list-container {
+        text-align: center
+    }
+    .productHeading h3 {
+        color: #fff;
+        margin-top: 45px;
+        /*74px;*/
+        margin-bottom: 55px;
+        display: inline-block;
+    }
+    .productsBaner-listbox .productHeading h3 {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .products .container {
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .productsBaner::after {
+        content: "";
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .productsBaner {
+        position: relative;
+    }
+    .product-list-container .col-lg-12.col-md-12 .col-12.col-md-12.col-sm-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .col-12.col-lg-3.col-sm-6.productsBox {
+        display: inline-block;
+        width: 45%;
+        max-width: 45%;
+    }
+    .product-list-container {
+        text-align: center
+    }
+    .our--Products__member img {
+        height: 140px;
+        position: absolute;
+        bottom: 0;
+        z-index: 999;
+    }
+    .Our--Products__corporate .productsBaner.productsBaner-listbox {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .products-block img {
+        height: 179px;
+    }
+    .Our--Products__products .productsBaner {
+        background-image: url("../resources/Corporate-products-MOB-414x720.jpg");
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+    .productsBaner .col-sm-6 {
+        max-width: 49%;
+        display: inline-block;
+    }
+    .product-list-container {
+        text-align: center;
+    }
+}

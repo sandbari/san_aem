@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-02-21T13:29:36.910Z"
+        cq:lastModifiedBy="ctsuser"
+        cq:lastReplicated="{Date}2020-04-19T07:17:00.239Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/vcm/settings/wcm/templates/homepage-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:uuid="b5973ae2-9e33-4a43-aaf4-90b43f5c8007"
+        sling:resourceType="vcm/components/structure/page">
+        <root
+            jcr:lastModified="{Date}2020-02-21T13:30:05.249Z"
+            jcr:lastModifiedBy="ctsuser"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2020-02-21T08:50:39.067Z"
+                jcr:createdBy="vmohanam@vcm.com"
+                jcr:lastModified="{Date}2020-02-21T13:31:33.825Z"
+                jcr:lastModifiedBy="ctsuser"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <experiencefragment
+                jcr:created="{Date}2020-02-21T08:49:34.765Z"
+                jcr:createdBy="vmohanam@vcm.com"
+                jcr:lastModified="{Date}2020-02-24T07:08:54.227Z"
+                jcr:lastModifiedBy="naggarwal@vcm.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                fragmentPath="/content/experience-fragments/vcm-experience-fragments/vcm-header/master"
+                text="USSA Member Investor relations Contact US SigninSignin/Register Signin × close Menu Member Back Member Member Financial Professional Back Financial Professional Financial Professional Institutional Investor Back Institutional Investor Institutional Investor Investment Franchise Back Investment Franchise Investment Franchise About Victory Capital Back About Victory Capital About Victory Capital Products Back Products Products Advice &amp; Tools Back Advice &amp; Tools Advice &amp; Tools Insights Back Insights Insights Resources Back Resources Resources Solutions Back Solutions Solutions errors Back errors errors Contact US Back Contact US Contact US News Back News News Policies Back Policies Policies Careers Back Careers Careers User Agreement Back User Agreement User Agreement Events Back Events Events Blog Back Blog Blog Home Back Home Home Investor type USSA Member USAA Member Financial Professionals Institutional Investors What type of investor are you? USSA Member Financial Professionals Institutional Investors Investor relations Contact US × Financial Professionals Institutional Investors"/>
+            <experiencefragment_90625225
+                jcr:created="{Date}2020-02-21T08:50:46.986Z"
+                jcr:createdBy="vmohanam@vcm.com"
+                jcr:lastModified="{Date}2020-02-24T07:15:07.922Z"
+                jcr:lastModifiedBy="naggarwal@vcm.com"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                fragmentPath="/content/experience-fragments/vcm-experience-fragments/vcm-footer/master"
+                text="Investing involves risk including loss of principal. Victory Mutual Funds and USAA Mutual Funds are distributed by Victory Capital Advisers, Inc. (VCA). VictoryShares ETFs and VictoryShares USAA ETFs are distributed by Foreside Fund Services, LLC (Foreside). VCA and Foreside are members of FINRA and SIPC. Victory Capital Management Inc. (VCM) is the investment adviser to the Victory Mutual Funds, USAA Mutual Funds, VictoryShares ETFs and VictoryShares USAA ETFs. VCA and VCM are not affiliated with Foreside. USAA is not affiliated with Foreside, VCM, or VCA. USAA and the USAA logos are registered trademarks and the USAA Mutual Funds and USAA Investments logos are trademarks of United Services Automobile Association and are being used by Victory Capital and its affiliates under license. Victory Capital means Victory Capital Management Inc., the investment manager of the USAA 529 College Savings Plan (Plan). The Plan is distributed by Victory Capital Advisers, Inc., a broker dealer registered with FINRA and an affiliate of Victory Capital. Victory Capital and its affiliates are not affiliated with United Services Automobile Association or its affiliates. USAA and the USAA logo are registered trademarks and the USAA 529 College Savings Plan logo is a trademark of United Services Automobile Association and are being used by Victory Capital and its affiliates under license. News Policies Careers User Agreement Events Fund Literature Blog Connect with us Copyright Victory Capital Management Inc. ©2020"/>
+        </root>
+    </jcr:content>
+</jcr:root>

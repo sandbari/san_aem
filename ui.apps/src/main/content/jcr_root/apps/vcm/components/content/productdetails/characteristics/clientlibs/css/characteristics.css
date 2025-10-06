@@ -1,0 +1,87 @@
+.characteristics-table-data,
+.characteristicsvariant-two-table-data,
+.characteristicsvariant-three-table-data,
+.characteristicsvariant-four-table-data,
+.characteristicsvariant-five-table-data {
+    position: relative;
+}
+
+.product-details .characteristics-table-data,
+.product-details .characteristicsvariant-two-table-data,
+.product-details .characteristicsvariant-three-table-data,
+.product-details .characteristicsvariant-four-table-data,
+.product-details .characteristicsvariant-five-table-data {
+    display: block;
+}
+
+.product-details .table.characteristics-table thead th,
+.product-details .table.characteristicsvariant-four-table thead th,
+.product-details .table.characteristicsvariant-five-table thead th{
+	 min-width: 220px;
+}
+
+.product-details .table.characteristicsvariant-three-table thead th{
+	 min-width: 230px;
+}
+
+.product-details .table.characteristicsvariant-two-table thead th{
+	 min-width: 250px;
+}
+
+.product-details table.characteristics-table th:first-child, .product-details table.characteristics-table tbody tr td:first-child,
+.product-details table.characteristicsvariant-two-table th:first-child, .product-details table.characteristicsvariant-two-table tbody tr td:first-child,
+.product-details table.characteristicsvariant-three-table th:first-child, .product-details table.characteristicsvariant-three-table tbody tr td:first-child,
+.product-details table.characteristicsvariant-four-table th:first-child, .product-details table.characteristicsvariant-four-table tbody tr td:first-child,
+.product-details table.characteristicsvariant-five-table th:first-child, .product-details table.characteristicsvariant-five-table tbody tr td:first-child{
+    min-width: 170px;
+    text-align: left;
+}
+
+.product-details .table.characteristics-table thead tr th:nth-child(2),
+.product-details .table.characteristicsvariant-two-table  thead tr th:nth-child(2),
+.product-details .table.characteristicsvariant-four-table  thead tr th:nth-child(2),
+.product-details .table.characteristicsvariant-five-table  thead tr th:nth-child(2) {
+    min-width: 90px;
+}
+
+.characteristics .heading {
+    margin: 15px 0 0;
+}
+
+.characteristics {
+    position: relative;
+}
+
+.dynamic-loader-charone {
+    position: absolute;
+    left: 45%;
+    top: 15%;
+}
+
+@media screen and (min-width:1024px) {
+
+    .product-details .characteristics-table-data,
+    .product-details .characteristicsvariant-two-table-data,
+    .product-details .characteristicsvariant-three-table-data,
+    .product-details .characteristicsvariant-four-table-data,
+    .product-details .characteristicsvariant-five-table-data {
+        display: block;
+    }
+    .product-details table.characteristics-table th:first-child,
+    .product-details table.characteristics-table tbody tr td:first-child {
+        min-width: 206px;
+    }
+    .product-details .table.characteristicsvariant-two-table thead th{
+    	 min-width: 200px;
+    }
+    .product-details .table.characteristicsvariant-three-table thead th,
+    .product-details .table.characteristicsvariant-four-table thead th{
+    	 min-width: 150px;
+    }
+    .product-details .table.characteristicsvariant-five-table thead th{
+    	 min-width: 235px;
+    }
+    .characteristics .heading {
+        margin: 0 0 15px;
+    }
+}

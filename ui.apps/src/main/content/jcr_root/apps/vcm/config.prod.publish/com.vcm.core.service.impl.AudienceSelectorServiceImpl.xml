@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    getFinancialAudienceTypeKey="financial_professional"
+    getInvestorAudienceTypeKey="institutional_investor"
+    getMemberAudienceTypeKey="usaa_member"
+    vcmcorpHome="https://www.vcm.com/"
+    vcmFinancialPath="https://advisor.vcm.com/financial-professional"
+    vcmInstitutionalInvestorPath="https://institutional.vcm.com/institutional-investor"
+    vcmMemberHome="https://investor.vcm.com/member"
+    vcmMemberDomainKey="investor"
+    vcmFinancialDomainKey="advisor"
+    vcmInstitutionalInvestorDomainKey="institutional"/>

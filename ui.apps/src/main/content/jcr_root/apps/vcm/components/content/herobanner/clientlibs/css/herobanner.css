@@ -1,0 +1,510 @@
+body {
+    margin: 0;
+}
+
+.bannerSection {
+    margin-bottom: 30px;
+}
+
+.bannerWrapper {
+    background: none;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.banner-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.bannerWrapper.franchise-banner .banner-container {
+    text-align: center;
+    float: none;
+    max-height: 150px;
+}
+
+.bannerWrapper .banner-container img {
+    max-height: 110px;
+    width: auto;
+    margin-right: 0px;
+    float: right;
+}
+
+.bannerWrapper.franchise-banner .banner-container img {
+    margin: 0;
+    width: 100%;
+}
+
+.bannerWrapper.homepage-banner .banner-container img {
+    max-height: 160px;
+    width: auto;
+    margin: 0;
+}
+
+.bannerWrapper.small-banner .banner-container img {
+    max-height: 70px;
+    width: auto;
+    margin-right: -50px;
+}
+
+.bannerWrapper .banner-container .imageBox {
+    float: left;
+}
+
+.bannerWrapper .banner-container span.bottom-triangle::after {
+    content: "";
+    border-left: 21px solid transparent;
+    border-right: 21px solid transparent;
+    border-top: 21px solid #8bc105;
+    position: absolute;
+    right: 117px;
+    top: 0;
+    z-index: 1;
+}
+
+.bottom-triangle {
+    float: left;
+}
+
+.bnr-content {
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bnr-content h1 {
+    font-family: yorkten-slab-normal, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+    cursor: initial;
+}
+
+.bnr-content .sub-hdng {
+    display: none;
+}
+
+.bnr-content .sub-hdng p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.banner-text {
+    width: 60%;
+}
+
+.banner-text p,
+.banner-text div {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    /* margin-top: 20px; */
+}
+
+.banner-container .focusarea {
+    background: url(../images/corporate_big.png) no-repeat right top;
+    /* background-size: cover; */
+    position: absolute;
+    background-position: right 120px top 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.imageBox~.banner-text h1 {
+    display: none;
+}
+
+.imageBox~.banner-text {
+    width: 50%;
+}
+
+.imageBox {
+    float: left;
+    margin-right: 50px;
+}
+
+.homepage-banner .loginBox {
+    display: none;
+    position: absolute;
+}
+
+.homepage-banner .loginBox.activeLogin {
+    position: fixed;
+    top: 10%;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.homepage-banner .signinBox .close {
+    position: absolute;
+    right: 25px;
+    top: 12px;
+    height: 22px;
+    width: 22px;
+    display: block;
+    cursor: pointer;
+    background-image: url('/apps/vcm/clientlibs/clientlib-site/resources/close-icon.png');
+}
+
+.investorLinks {
+    width: 100%;
+}
+
+.homepage-banner .investorLinks p {
+    padding-right: 85px;
+}
+
+@media screen and (min-width: 768px) {
+    .bnr-content .sub-hdng,
+    .bannerWrapper .navigation-right.desktopShow {
+        display: block;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .bnr-content h1 {
+        font-size: 30px;
+        cursor: initial;
+    }
+    .investorLinks.investortype.mobileShow {
+        display: none;
+    }
+    .bannerWrapper .navigation-right a {
+        color: #fff;
+    }
+    .homepage-banner .investorLinks.desktopShow {
+        display: block;
+    }
+    .homepage-banner .investorLinks {
+        margin: 0;
+    }
+    .homepage-banner .banner-text {
+        float: left;
+    }
+    .banner-container .focusarea {
+        background-position: right 167px top 0;
+    }
+    .homepage-banner .banner-container .focusarea {
+        background-position: right 190px top 0;
+    }
+    .small-banner .banner-container .focusarea {
+        background-position: right 285px top 0;
+    }
+    .bannerWrapper .banner-container span.bottom-triangle::after {
+        right: 164px;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid #8bc105;
+    }
+    .bannerWrapper.small-banner .banner-container span.bottom-triangle::after {
+        right: 282px;
+    }
+    .banner-text {
+        width: 50%;
+    }
+    .bannerWrapper .banner-container img {
+        max-height: 259px;
+        width: auto;
+        margin-right: -130px;
+        float: right;
+    }
+    .bannerWrapper.homepage-banner .banner-container img {
+        max-height: 430px;
+        width: auto;
+        margin-right: 0px;
+        float: right;
+    }
+    .bannerWrapper.franchise-banner .banner-container img {
+        width: auto;
+        float: none;
+    }
+    .bannerWrapper.small-banner .banner-container img {
+        max-height: 150px;
+        margin-right: -100px;
+    }
+    .bnr-content .imageBox~.banner-text .sub-hdng {
+        float: left;
+    }
+    .bannerWrapper .banner-container .imageBox img {
+        max-height: 66px;
+    }
+    .homepage-banner .loginBox.activeLogin {
+        top: 10%;
+        left: 50%;
+        margin-left: -175px;
+        width: 350px;
+    }
+    .bannerWrapper .sub-hdng.desktopShow p {
+        display: block;
+        color: #fff;
+    }
+    .bannerWrapper .freeTextMobile {
+        display: none;
+    }
+    .freeText .desktopShow {
+        display: block;
+    }
+    .investorLinks,
+    .loginBox {
+        left: 0;
+        width: auto;
+        position: relative;
+    }
+    .loginBox {
+        display: none;
+    }
+    .investorLinks {
+        width: 293px;
+        float: right;
+        padding: 25px 21px;
+    }
+    .investorLinks p {
+        padding-right: 85px;
+    }
+    .bannerWrapper .content-wrapper.contactus-wrapper {
+        width: 100%!important;
+        padding-left: 15px;
+    }
+    .breadcrumb .freeTextMobile.mobileShow {
+        display: none;
+    }
+    #navbarToggleExternalContent .investorLinks{
+        width: auto;
+        float: none;
+        padding: 25px 26px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bnr-content .sub-hdng,
+    .bannerWrapper .navigation-right.desktopShow {
+        margin-top: 20px;
+    }
+    .bnr-content h1 {
+        font-size: 38px;
+        line-height: 44px;
+        cursor: initial;
+    }
+    .bannerWrapper .focusarea {
+        background-position: right 285px top 0;
+    }
+    .small-banner .banner-container .focusarea {
+        background-position: right 385px top 0;
+    }
+    .bannerWrapper .banner-container img {
+        max-height: 300px;
+        width: auto;
+        margin-right: -100px;
+        float: right;
+    }
+    .bannerWrapper.small-banner .banner-container img {
+        margin-right: 0px;
+    }
+    .bannerWrapper.homepage-banner .banner-container img {
+        min-height: 430px;
+    }
+    .bannerWrapper .banner-container span.bottom-triangle::after {
+        right: 282px;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid #8bc105;
+    }
+    .imageBox-description .banner-text {
+        width: 59%;
+    }
+    .bnr-content h1 {
+        font-size: 38px;
+        line-height: 44px;
+    	cursor: initial;
+    }
+    .bannerWrapper.small-banner .banner-container span.bottom-triangle::after {
+        right: 382px;
+    }
+    .banner-text {
+        width: 50%;
+    }
+    .bannerWrapper .banner-container .imageBox,
+    .bannerWrapper .banner-container .imageBox img {
+        float: none;
+    }
+    .imageBox~.banner-text {
+        width: 45%;
+    }
+    .bnr-content .imageBox~.banner-text .sub-hdng {
+        display: block;
+    }
+    .corporatebanner .investorLinks {
+        width: 380px;
+        float: right;
+        position: relative;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .bannerWrapper.homepage-banner .banner-container img {
+        max-height: 430px;
+    }
+    .bannerWrapper .banner-container img {
+        max-height: 300px;
+        margin-right: 0px;
+    }
+    .bannerWrapper .banner-container .imageBox {
+        margin-right: 50px;
+        float: left;
+    }
+    .bannerWrapper .banner-container .imageBox img {
+        max-height: 300px;
+    }
+    .bannerWrapper.franchise-banner .banner-container img {
+        width: auto;
+        float: none;
+    }
+    .bannerWrapper .banner-container span.bottom-triangle::after {
+        right: 382px;
+    }
+    .banner-text {
+        width: 52%;
+        padding-left: 0;
+    }
+    .bannerWrapper.homepage-banner .banner-text {
+        width: 65%;
+    }
+    .bannerWrapper.homepage-banner .loginBox+.banner-text,
+    .bannerWrapper.homepage-banner .investorLinks+.banner-text {
+        width: 52%;
+    }
+    .bannerWrapper.homepage-banner .banner-text {
+        float: left;
+    }
+    .bannerWrapper .focusarea {
+        background-position: right 385px top 0;
+    }
+    .loginBox {
+        display: block;
+    }
+    .imageBox {
+        float: left;
+    }
+    .imageBox~.banner-text {
+        width: 35%;
+        float: left;
+    }
+    .homepage-banner .loginBox {
+        float: left;
+        display: block;
+        position: relative;
+        padding-bottom: 15px;
+        margin-right: 30px;
+        width: 342px;
+    }
+    .homepage-banner .signinBox .close {
+        display: none;
+    }
+    .investorLinks {
+        width: 380px;
+        float: right;
+        position: relative;
+        margin-right: 80px;
+    }
+    .bannerWrapper .content-wrapper.contactus-wrapper {
+        width: 1100px!important;
+    }
+}
+
+
+/* Focus Banner Starts*/
+
+@media screen and (max-width: 767px) and (orientation:landscape) {
+    .bannerWrapper.homepage-banner .banner-container .focusarea {
+        background-size: con tain;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bannerWrapper.homepage-banner .banner-text {
+        width: 66%;
+    }
+    .banner-text {
+        padding-left: 15px;
+    }
+    .banner-container .focusarea {
+        background-size: cover;
+    }
+    .bannerWrapper.homepage-banner .banner-container .focusarea {
+        background-position: right 50px top 0;
+    }
+    .banner-container.left .focusarea,
+    .banner-container.right .focusarea,
+    .banner-container.center .focusarea {
+        background-position: right 31px top 0;
+    }
+    .small-banner .banner-container.left .focusarea,
+    .small-banner .banner-container.right .focusarea,
+    .small-banner .banner-container.center .focusarea {
+        background-position: right 81px top 0
+    }
+    .bannerWrapper .banner-container.left span.bottom-triangle::after,
+    .bannerWrapper .banner-container.right span.bottom-triangle::after,
+    .bannerWrapper .banner-container.center span.bottom-triangle::after {
+        right: 30px;
+    }
+    .bannerWrapper.small-banner .banner-container.left span.bottom-triangle::after,
+    .bannerWrapper.small-banner .banner-container.right span.bottom-triangle::after,
+    .bannerWrapper.small-banner .banner-container.center span.bottom-triangle::after {
+        right: 80px;
+    }
+    .bannerWrapper .banner-container.center img {
+        margin-right: -50px;
+    }
+    .bannerWrapper .banner-container.left img {
+        margin-right: -100px;
+    }
+    .bannerWrapper .banner-container.right img {
+        margin-right: 0px;
+    }
+    .imageBox img {
+        max-width: 136px;
+        max-height: 66px;
+        margin-left: 15px;
+    }
+    .bannerWrapper.small-banner .banner-container img {
+        max-height: 85px;
+    }
+    .bannerWrapper.small-banner .banner-container .banner-text h1 {
+        font-size: 16px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (min-width: 442px) {
+    .bannerWrapper.franchise-banner .banner-container img {
+        width: auto;
+        float: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .bannerWrapper .banner-container .imageBox img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width:440px) and (max-width:767px){
+    .bannerWrapper.franchise-banner .banner-container {
+        max-height:110px;
+    }
+}
+
+@media screen and (max-width:767px) and (orientation:landscape) {
+    .bannerWrapper .banner-container .imageBox img {
+        max-width: 300px;
+    }
+}

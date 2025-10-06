@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+		  jcr:primaryType="sling:OsgiConfig"
+		  applicationName="VCM"
+		  websiteName="vcm.com"
+		  websiteLocale="en"
+		  cookieDomain=".vcm.com"
+		  memberSigninServiceURL="no-url-available"
+		  analyticsEndPoint="//assets.adobedtm.com/9038a1739344/e69bdabe1962/launch-15c65aff4b9c-development.min.js"
+		  getPopupContentFragmentPage="/content/vcm/us/en/popup-content-page"
+		  purchaseFundUrl="https://qa.mysecure.vcm.com/transactionPurchases"
+		  ussa529PerformanceFundEndPoint="https://qa.investorapi.vcm.com/search/products/USAA529"
+		  ussa529PerformanceFundKey="gq2BA7h7VA7tuqkEtiWP57ILRY0COdUr7qgoARW0"
+		  bugHerdUrl="https://www.bugherd.com/sidebarv2.js?apikey=fuvxxthhukh8vnauvyl8xw"
+		  vcmConfigPagePath="/content/vcm/us/vcm-site-configurations"/>

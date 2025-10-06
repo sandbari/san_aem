@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    cssLinks="[https://use.typekit.net/vpy3cvs.css,https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css]"
+    clientLibsCategories="[vcm.headless.main]"
+    productPageClientLibCategories="[vcm.headless.productdetailbase]"
+    filterClientlibsCategories="[search/vcmSearchClientLib,/libs/cq/experience-fragments/components/xfpage,/etc.clientlibs/vcm/clientlibs/clientlib-base,/etc.clientlibs/vcm/clientlibs/clientlib-productdetailbase]"
+    filterComponents="[breadcrumb,header,footer]"
+    getHostPatternRequiredElements="[popupContentPage,suggestionsUrl,searchResultsPagePath,currentPagePath]"/>

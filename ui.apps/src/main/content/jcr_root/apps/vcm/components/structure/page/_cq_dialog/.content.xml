@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Page"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties]"
+          helpPath="https://www.adobe.com/go/aem_cmp_page_v2"
+          mode="edit"
+          trackingFeature="core-components:page:v2">
+    <content
+            granite:class="cq-dialog-content-page"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    granite:class="cq-siteadmin-admin-properties-tabs"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    size="L">
+                <items jcr:primaryType="nt:unstructured">
+                    <errorpage
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Error Page"
+                            sling:orderBefore=""
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <errorPages
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldLabel="Enter error page path for site"
+                                            name="./errorPages"
+                                            rootPath="/content/vcm/"
+                                            text="Enter error page path for site"/>
+                                </items>
+                            </column>
+                        </items>
+                    </errorpage>
+                    <permissions
+                            jcr:primaryType="nt:unstructured"
+                            sling:hideResource="{Boolean}true"/>
+                    <personalization
+                            jcr:primaryType="nt:unstructured"
+                            sling:hideResource="{Boolean}true"/>
+                    <vcmproperties
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="VCM Properties"
+                            sling:orderBefore="errorpage"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <hideInBreadCrumb
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            fieldLabel="Hide in BreadCrumb"
+                                            name="./isHideinBreadCrumb"
+                                            text="Hide in BreadCrumb"
+                                            uncheckedValue="false"
+                                            value="true"/>
+                                    <showinpostlogin
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            fieldLabel="Show in Postlogin"
+                                            name="./showInPostlogin"
+                                            text="Show in Postlogin"
+                                            uncheckedValue="false"
+                                            value="true"/>
+                                    <audienceselector
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Audience Selector"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <usertype
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/field"
+                                                    fieldDescription="It is applicable for all audiences if none selected."
+                                                    fieldLabel="Choose applicable audience type for this page "
+                                                    name="./usertypeselect"
+                                                    text="Choose applicable audience type for this page "/>
+                                            <members
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Members"
+                                                    name="./membersType"
+                                                    text="Members"
+                                                    uncheckedValue="false"
+                                                    value="true"/>
+                                            <financialadvisors
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Financial Advisors"
+                                                    name="./financialAdvisorsType"
+                                                    text="Financial Advisors"
+                                                    uncheckedValue="false"
+                                                    value="true"/>
+                                            <institutionalinvestors
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Institutional Investors"
+                                                    name="./institutionalinvestorsType"
+                                                    text="Institutional Investors"
+                                                    uncheckedValue="false"
+                                                    value="true"/>
+                                        </items>
+                                    </audienceselector>
+                                    <headermenuproperty
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Header Menu Property"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <usethumnailimage
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Use Thumbnail Image"
+                                                    name="./useImageInHeaderNav"
+                                                    text="Use Thumbnail image for header nav menu"
+                                                    uncheckedValue="false"
+                                                    value="true"/>
+                                            <seondlevelnav
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Show only Second level links with arrows"
+                                                    name="./secondLevelNavOnly"
+                                                    text="Show only Second level links with arrows"
+                                                    uncheckedValue="false"
+                                                    value="true"/>
+                                        </items>
+                                    </headermenuproperty>
+                                    <franchisestyling
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Franchise Styling"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <trianglecolor
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Add color code of the color which display on the Franchise Top Right corner"
+                                                    fieldLabel="Franchise Top Right Color"
+                                                    name="./triangleColor"
+                                                    value="#0B3B60"/>
+                                        </items>
+                                    </franchisestyling>
+                                    <isCorpHomePage
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Corporate Home Page Property"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <isCorpHomePageProp
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldLabel="Is this Corporate home page?"
+                                                    name="./isCorpHomePage"
+                                                    text="Is Corporate home Page"
+                                                    uncheckedValue="false"
+                                                    value="true"/>
+                                        </items>
+                                    </isCorpHomePage>
+                                    <seodetails
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="SEO Details"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <metatitle
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="This meta title will be shown in the browser as page title. Please enter it in this format(Primary Keyword | Secondary Keyword - Brand Name)"
+                                                    fieldLabel="Meta Title"
+                                                    name="./metaTitle"/>
+                                            <metadescription
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldDescription="Enter the description that needs to be appeared as meta property"
+                                                    fieldLabel="Meta Description"
+                                                    name="./metaDescription"/>
+                                            <metakeyword
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldDescription="Enter the description that needs to be appeared as meta property"
+                                                    fieldLabel="Meta Keyword"
+                                                    name="./metaKeyword"/>
+                                        </items>
+                                    </seodetails>
+                                    <canonical
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Canonical"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <canonicalurl
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="This field is used to update the custom canonical url to the page"
+                                                    fieldLabel="Canonical URL"
+                                                    name="./canonicalUrl"/>
+                                        </items>
+                                    </canonical>
+                                    <opengraph
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Open Graph"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <ogimage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="OpenGraph image"
+                                                    name="./ogImage"
+                                                    rootPath="/content/dam/vcm"
+                                                    fieldDescription="This field is used to author the og:image"/>
+                                        </items>
+                                    </opengraph>
+                                    <articletype
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Article Type"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <articletype
+                                                    cq:showOnCreate="{Boolean}true"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                    fieldDescription="Please select type of fund"
+                                                    fieldLabel="Select Article Fund Type"
+                                                    name="./vcmTags"
+                                                    rootPath="/content/cq:tags/vcm/blogs"/>
+                                        </items>
+                                    </articletype>
+                                    <postloginurl
+                                            cq:showOnCreate="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Post-login URLs"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <postloginmemberurl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Enter page path for post login member url"
+                                                    name="./postloginMemberUrl"
+                                                    rootPath="/content/vcm/"
+                                                    text="Enter error page path for site"/>
+                                            <postloginguesturl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Enter page path for post login guest url"
+                                                    name="./postloginGuestUrl"
+                                                    rootPath="/content/vcm/"
+                                                    text="Enter error page path for site"/>
+                                        </items>
+                                    </postloginurl>
+                                </items>
+                            </column>
+                        </items>
+                    </vcmproperties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

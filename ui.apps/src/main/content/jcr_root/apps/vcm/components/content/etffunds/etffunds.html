@@ -1,0 +1,206 @@
+<sly data-sly-use.etfListObj="com.vcm.core.models.EtfListModel">
+    <input type="hidden" id="etfListEndpoint" value="${etfListObj.etfListEndpoint}"/>
+    <input type="hidden" id="etfListApiKey" value="${etfListObj.etfListApiKey}"/>
+</sly>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='vcm.etffunds'}" xmlns:fontWeight="http://www.w3.org/1999/xhtml"/>
+<script type="application/json" id="etfListData">
+    ${etfListObj.etfList.toString @ context="unsafe"}
+</script>
+<div class="container">
+    <div class="content-wrapper etf-tab-section">
+        <div id="content" class="tab-content">
+            <div
+                    aria-controls="solution-type-content"
+                    role="tabpanel"
+                    aria-labelledby="asset-button"
+                    id="link-asset-content"
+                    class="tab-pane show active"
+            >
+                <div id="" class="card tab-pane">
+                    <div class="card-header" role="tab" id="hdng-active-fixed-income">
+                        <h5 class="mb-0">
+                            <a
+                                    class="collapsed"
+                                    data-toggle="collapse"
+                                    href="#active-fixed-income-section"
+                                    data-parent="#content"
+                                    aria-expanded="false"
+                                    aria-controls="active-fixed-income-section"
+                            >
+                                U.S. EQUITY - LARGE CAP
+                                <span class="icon-wrapper"
+                                ><i class="fa fa-chevron-down fa-1" aria-hidden="true"></i
+                                ></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="active-fixed-income-section" class="collapse">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="etf-table-advisor-large-cap" class="table table-striped">
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="" class="card tab-pane">
+                    <div class="card-header" id="heading-core-broad-market">
+                        <h5 class="mb-0">
+                            <a
+                                    class="collapsed"
+                                    data-toggle="collapse"
+                                    href="#core-broad-market-section"
+                                    data-parent="#content"
+                                    tabindex="-1"
+                                    role="presentation"
+                            >
+                                U.S. EQUITY - MID CAP
+                                <span class="icon-wrapper"
+                                ><i class="fa fa-chevron-down fa-1" aria-hidden="true"></i
+                                ></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="core-broad-market-section" class="collapse">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="etf-table-advisor-mid-cap" class="table table-striped">
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="" class="card tab-pane">
+                    <div
+                            class="card-header"
+                            role="tab"
+                            id="hdng-dividend-growth-income"
+                    >
+                        <h5 class="mb-0">
+                            <a
+                                    class="collapsed"
+                                    data-toggle="collapse"
+                                    href="#dividend-growth-income-section"
+                                    data-parent="#content"
+                                    aria-expanded="false"
+                                    aria-controls="dividend-growth-income-section"
+                            >
+                                U.S. EQUITY - SMALL CAP
+                                <span class="icon-wrapper"
+                                ><i class="fa fa-chevron-down fa-1" aria-hidden="true"></i
+                                ></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="dividend-growth-income-section" class="collapse">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="etf-table-advisor-small-cap" class="table table-striped">
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="" class="card tab-pane">
+                    <div class="card-header" role="tab" id="hdng-bear-market">
+                        <h5 class="mb-0">
+                            <a
+                                    class="collapsed"
+                                    data-toggle="collapse"
+                                    href="#long-cash-section"
+                                    data-parent="#content"
+                                    aria-expanded="false"
+                                    aria-controls="long-cash-section"
+                            >
+                                INTERNATIONAL EQUITY
+                                <span class="icon-wrapper"
+                                ><i class="fa fa-chevron-down fa-1" aria-hidden="true"></i
+                                ></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="long-cash-section" class="collapse">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="etf-table-advisor-inter-equity" class="table table-striped">
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="" class="card tab-pane">
+                    <div class="card-header" role="tab" id="hdng-multi-factor">
+                        <h5 class="mb-0">
+                            <a
+                                    class="collapsed"
+                                    data-toggle="collapse"
+                                    href="#multi-factor-section"
+                                    data-parent="#content"
+                                    aria-expanded="false"
+                                    aria-controls="multi-factor-section"
+                            >
+                                EMERGING MARKETS
+                                <span class="icon-wrapper"
+                                ><i class="fa fa-chevron-down fa-1" aria-hidden="true"></i
+                                ></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="multi-factor-section" class="collapse">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="etf-table-advisor-emrg-mrkt" class="table table-striped">
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="" class="card tab-pane">
+                    <div
+                            class="card-header"
+                            role="tab"
+                            id="hdng-active-thematic-income"
+                    >
+                        <h5 class="mb-0">
+                            <a
+                                    class="collapsed"
+                                    data-toggle="collapse"
+                                    href="#active-thematic-section"
+                                    data-parent="#content"
+                                    aria-expanded="false"
+                                    aria-controls="active-thematic-section"
+                            >
+                                FIXED INCOME
+                                <span class="icon-wrapper"
+                                ><i class="fa fa-chevron-down fa-1" aria-hidden="true"></i
+                                ></span>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="active-thematic-section" class="collapse">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="etf-table-advisor-fixed" class="table table-striped">
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

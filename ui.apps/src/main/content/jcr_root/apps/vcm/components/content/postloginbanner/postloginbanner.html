@@ -1,0 +1,31 @@
+<sly data-sly-test="${wcmmode.edit && !properties.message}"><div class="cq-placeholder" data-emptyText="${component.title}"/></sly>
+<sly data-sly-test="${wcmmode.edit && properties.message}">
+    <div>Enabled : ${properties.enabledBanner}</div></br>
+    <!--<div>Start Date : ${'yyyy-MM-dd hh:mm a' @ format=properties.startDate}</div></br>
+    <div>End Date : ${'yyyy-MM-dd hh:mm a' @ format=properties.endDate}</div></br>-->
+    <div>Start Date : ${properties.startDate}</div></br>
+    <div>End Date : ${properties.endDate}</div></br>
+    <div>Caption : ${properties.caption}</div></br>
+    <div>Message : ${properties.message}</div></br>
+    <div>Type : ${properties.type}</div></br>
+    <div>Usertype : ${properties.usertype}</div></br>
+    <div>Priority : ${properties.priority}</div></br>
+    <div>Banner : ${properties.banners}</div></br>
+    <div>Desktop Heading : ${properties.desktopHeading}</div></br>
+    <div>Desktop Message : ${properties.desktopMessage}</div></br>
+    <div>mobile Heading : ${properties.mobileHeading}</div></br>
+    <div>Mobile Message : ${properties.mobileMessage}</div></br>
+    <div>Mobile App Heading: ${properties.mobileHeadingApp}</div></br>
+    <div>Mobile App Message : ${properties.mobileAppMessage}</div></br>
+    <div>Time Duration : ${properties.timeDuration}</div></br>
+    <div>IconUrl: ${properties.iconUrl}</div></br>
+    <div>Background Texture Image URL : ${properties.bgTextureImageURL}</div></br>
+    <div>Background Image URL : ${properties.bgImageURl}</div></br>
+    <div>Mobile Background Texture Image URL : ${properties.mobileBgTextureImageURL}</div></br>
+    <div>Mobile Background Image URL : ${properties.mobileBgImageURl}</div></br>
+    <div>Button Text : ${properties.btnText}</div></br>
+    <div>Button ActionLink : ${properties.btnActionLink}</div></br>
+    <div>Link Type : ${properties.linkType}</div></br>
+    <div>Mobile Dashboard Screen : ${properties.mobileDashboardScreen}</div></br>
+    <div>Create/Update Reason : ${properties.bannerReason}</div></br>
+</sly>

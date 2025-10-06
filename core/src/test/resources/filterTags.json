@@ -1,0 +1,483 @@
+{
+   "jcr:primaryType":"cq:Tag",
+   "jcr:createdBy":"admin",
+   "jcr:title":"VCM",
+   "cq:lastReplicationAction":"Activate",
+   "cq:lastReplicatedBy":"vmohanam",
+   "jcr:created":"Fri Feb 28 2020 16:08:30 GMT+0530",
+   "cq:lastReplicated":"Mon Mar 30 2020 10:19:17 GMT+0000",
+   "jcr:description":"",
+   "sling:resourceType":"cq/tagging/components/tag",
+   "search-tabs":{
+      "jcr:primaryType":"cq:Tag",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Search Tabs",
+      "cq:lastReplicationAction":"Activate",
+      "cq:lastReplicatedBy":"vmohanam",
+      "jcr:created":"Tue Jun 16 2020 12:06:13 GMT+0530",
+      "cq:lastReplicated":"Mon Mar 30 2020 10:19:23 GMT+0000",
+      "jcr:description":"",
+      "sling:resourceType":"cq/tagging/components/tag",
+      "products":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Products",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "jcr:lastModifiedBy":"ctsuser",
+         "jcr:created":"Tue Jun 16 2020 12:06:13 GMT+0530",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:19:26 GMT+0000",
+         "jcr:lastModified":"Thu Mar 19 2020 06:12:15 GMT+0000",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "general":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"General",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "jcr:lastModifiedBy":"ctsuser",
+         "jcr:created":"Tue Jun 16 2020 12:06:13 GMT+0530",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:19:29 GMT+0000",
+         "jcr:lastModified":"Thu Mar 19 2020 06:12:34 GMT+0000",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "advicetools":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Advice  & Tools",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "jcr:lastModifiedBy":"ctsuser",
+         "jcr:created":"Tue Jun 16 2020 12:06:13 GMT+0530",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:19:32 GMT+0000",
+         "jcr:lastModified":"Thu Mar 19 2020 06:12:49 GMT+0000",
+         "sling:resourceType":"cq/tagging/components/tag"
+      }
+   },
+   "faq":{
+      "jcr:primaryType":"cq:Tag",
+      "jcr:createdBy":"admin",
+      "jcr:title":"FAQ",
+      "cq:lastReplicationAction":"Activate",
+      "cq:lastReplicatedBy":"vmohanam",
+      "jcr:created":"Tue Jun 16 2020 12:06:13 GMT+0530",
+      "cq:lastReplicated":"Mon Mar 30 2020 10:19:36 GMT+0000",
+      "jcr:description":"Frequently Asked Question Tags",
+      "sling:resourceType":"cq/tagging/components/tag",
+      "save-money":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Saving Money",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "jcr:created":"Tue Jun 16 2020 12:06:13 GMT+0530",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:19:39 GMT+0000",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "retirement-plans":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Retirement Plans",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "jcr:created":"Tue Jun 16 2020 12:06:13 GMT+0530",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:19:41 GMT+0000",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "investing-work":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"How Investing Works",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "jcr:created":"Tue Jun 16 2020 12:06:13 GMT+0530",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:19:44 GMT+0000",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "profiling":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Profiling",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "jcr:created":"Tue Jun 16 2020 12:06:13 GMT+0530",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:19:46 GMT+0000",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "customer-service-care":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Customer Service Care",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:19:48 GMT+0000",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "enrollment":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Enrollment",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"vmohanam",
+         "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+         "cq:lastReplicated":"Mon Mar 30 2020 10:19:50 GMT+0000",
+         "jcr:description":"enrollment procedure",
+         "sling:resourceType":"cq/tagging/components/tag"
+      }
+   },
+   "page-category":{
+      "jcr:primaryType":"cq:Tag",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Page Category",
+      "cq:lastReplicationAction":"Activate",
+      "cq:lastReplicatedBy":"admin",
+      "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+      "cq:lastReplicated":"Wed Apr 15 2020 15:21:28 GMT+0530",
+      "jcr:description":"",
+      "sling:resourceType":"cq/tagging/components/tag",
+      "general":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"General",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"admin",
+         "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+         "cq:lastReplicated":"Wed Apr 15 2020 15:21:38 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "about-victory-capital":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"About Victory Capital",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"admin",
+         "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+         "cq:lastReplicated":"Wed Apr 15 2020 15:21:39 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "products":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Products",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"admin",
+         "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+         "cq:lastReplicated":"Wed Apr 15 2020 15:21:42 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "investment-franchise":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Investment Franchise",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"admin",
+         "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+         "cq:lastReplicated":"Wed Apr 15 2020 15:21:46 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "advice-and-tools":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Advice and Tools",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"admin",
+         "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+         "cq:lastReplicated":"Wed Apr 15 2020 15:21:47 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      }
+   },
+   "product-menu-funds":{
+      "jcr:primaryType":"cq:Tag",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Product Menu Funds",
+      "cq:lastReplicationAction":"Activate",
+      "cq:lastReplicatedBy":"ctsuser",
+      "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+      "cq:lastReplicated":"Thu Jun 18 2020 13:24:05 GMT+0000",
+      "jcr:description":"",
+      "sling:resourceType":"cq/tagging/components/tag",
+      "mutual-funds":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Mutual Funds",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"naggarwal@vcm.com",
+         "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+         "cq:lastReplicated":"Thu Jun 18 2020 14:50:53 GMT+0000",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag",
+         "us-equity":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"US Equity",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:04 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "non-us-equity":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"NON-US Equity",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:04 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "fixed-income":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Fixed Income",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:04 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "mixed-asset-class":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Mixed Asset Class",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:04 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "alternatives":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Alternatives",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:04 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         }
+      },
+      "victory-shares-etfs":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Victory Shares ETFs",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"naggarwal@vcm.com",
+         "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+         "cq:lastReplicated":"Thu Jun 18 2020 14:50:53 GMT+0000",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag",
+         "core-broad-market":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Core Broad Market",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:14 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "divident-growth-&-income":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Divident Growth & Income",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:14 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "volatility":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Volatility",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:14 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "bear-market":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:mixinTypes":[
+               "cq:ReplicationStatus"
+            ],
+            "jcr:createdBy":"admin",
+            "jcr:title":"Bear Market",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:14 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "multi-factor":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Multi-Factor",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:14 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "active-fixed-income":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Active Fixed Income",
+            "cq:lastReplicationAction":"Activate",
+            "cq:lastReplicatedBy":"naggarwal@vcm.com",
+            "jcr:created":"Tue Jun 16 2020 12:06:14 GMT+0530",
+            "cq:lastReplicated":"Thu Jun 18 2020 14:51:14 GMT+0000",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         }
+      }
+   },
+   "blogs":{
+      "jcr:primaryType":"cq:Tag",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Blogs",
+      "cq:lastReplicationAction":"Activate",
+      "cq:lastReplicatedBy":"ctsuser",
+      "jcr:created":"Wed Jun 10 2020 10:52:26 GMT+0530",
+      "cq:lastReplicated":"Thu Jun 18 2020 05:25:54 GMT+0000",
+      "jcr:description":"",
+      "sling:resourceType":"cq/tagging/components/tag",
+      "investing":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Investing",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"ctsuser",
+         "jcr:created":"Wed Jun 10 2020 10:52:26 GMT+0530",
+         "cq:lastReplicated":"Thu Jun 18 2020 05:26:16 GMT+0000",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "etfs":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"ETFs",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"ctsuser",
+         "jcr:created":"Wed Jun 10 2020 10:52:26 GMT+0530",
+         "cq:lastReplicated":"Thu Jun 18 2020 05:26:16 GMT+0000",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "retirement":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Retirement",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"ctsuser",
+         "jcr:created":"Wed Jun 10 2020 10:52:26 GMT+0530",
+         "cq:lastReplicated":"Thu Jun 18 2020 05:26:16 GMT+0000",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "practice-management":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Practice Management",
+         "cq:lastReplicationAction":"Activate",
+         "cq:lastReplicatedBy":"ctsuser",
+         "jcr:created":"Wed Jun 10 2020 10:52:26 GMT+0530",
+         "cq:lastReplicated":"Thu Jun 18 2020 05:26:16 GMT+0000",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      }
+   },
+   "investment-franchise":{
+      "jcr:primaryType":"cq:Tag",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Investment Franchise",
+      "jcr:created":"Mon Jul 06 2020 15:11:41 GMT+0530",
+      "jcr:description":"",
+      "sling:resourceType":"cq/tagging/components/tag",
+      "rs-investments":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"RS Investments",
+         "jcr:created":"Mon Jul 06 2020 15:11:56 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "trivalent-investments":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Trivalent Investments",
+         "jcr:created":"Mon Jul 06 2020 15:12:05 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "integrity-asset-management":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Integrity Asset Management",
+         "jcr:created":"Mon Jul 06 2020 15:12:13 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "munder-capital-management":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Munder Capital Management",
+         "jcr:created":"Mon Jul 06 2020 15:12:20 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "incore-capital-management":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"INCORE Capital Management",
+         "jcr:created":"Mon Jul 06 2020 15:12:30 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "sycamore-capital":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Sycamore Capital",
+         "jcr:created":"Mon Jul 06 2020 15:12:38 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "sophus-capital":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Sophus Capital",
+         "jcr:created":"Mon Jul 06 2020 15:12:46 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "newbridge-asset-management":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"NewBridge Asset Management",
+         "jcr:created":"Mon Jul 06 2020 15:13:09 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      }
+   }
+}

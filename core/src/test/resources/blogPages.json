@@ -1,0 +1,1503 @@
+{
+   "jcr:primaryType":"cq:Page",
+   "jcr:createdBy":"admin",
+   "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+   "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Blogs",
+      "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+      "institutionalinvestorsType":"false",
+      "financialAdvisorsType":"false",
+      "isCorpHomePage":"false",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "cq:lastModified":"Fri Mar 06 2020 12:03:45 GMT+0530",
+      "useImageInHeaderNav":"false",
+      "pageTitle":"Blogs",
+      "sling:resourceType":"vcm/components/structure/page",
+      "membersType":"false",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+         "jcr:primaryType":"nt:unstructured",
+         "sling:resourceType":"wcm/foundation/components/responsivegrid",
+         "responsivegrid":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "bloglisting":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:createdBy":"admin",
+               "jcr:lastModifiedBy":"admin",
+               "topicFilter":[
+                  "vcm:blogs/investing",
+                  "vcm:blogs/etfs",
+                  "vcm:blogs/retirement",
+                  "vcm:blogs/practice-management"
+               ],
+               "jcr:created":"Thu Feb 20 2020 14:43:40 GMT+0530",
+               "rootPath":"/content/vcm/us/en/blog",
+               "itemsOnLoadMore":"9",
+               "jcr:lastModified":"Fri Mar 06 2020 12:03:45 GMT+0530",
+               "sling:resourceType":"vcm/components/content/bloglisting"
+            }
+         }
+      }
+   },
+   "incore":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Is the party over?",
+         "triangleColor":"#F26929",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "isCorpHomePage":"false",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "cq:lastModified":"Thu May 07 2020 14:52:10 GMT+0530",
+         "jcr:description":"Nobody knows when the Bull will stumble, but as investors charge into 2020 they should not ignore lofty stock valuations.\r\n\r\n",
+         "useImageInHeaderNav":"false",
+         "pageTitle":"Is the party over?",
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "herobanner":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "heroImage":"/content/dam/vcm/herobanner/Member-Img-Desktop.png",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:25:10 GMT+0530",
+                  "requirementItems":"none",
+                  "heading":"Investment Franchise",
+                  "jcr:lastModified":"Thu May 07 2020 11:25:43 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/herobanner",
+                  "textIsRich":"true",
+                  "tabSelect":"_self",
+                  "cq:styleIds":[
+                     "1582904335556"
+                  ]
+               },
+               "breadcrumb":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:27:26 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:27:26 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/breadcrumb"
+               },
+               "backgroundcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/backgroundcontainer",
+                  "content-bg":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "columncontrol":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "jcr:createdBy":"admin",
+                        "jcr:lastModifiedBy":"admin",
+                        "columnLayout":"2-column-grid-8x4",
+                        "jcr:created":"Thu Feb 20 2020 14:24:40 GMT+0530",
+                        "jcr:lastModified":"Thu Feb 20 2020 14:25:08 GMT+0530",
+                        "sling:resourceType":"vcm/components/content/columncontrol",
+                        "content1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "blogarticle":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "blogHeading":"Lower oil prices necessitate capex cuts, productivity gains",
+                              "jcr:lastModifiedBy":"admin",
+                              "blogContent":"<p>We recently met with senior managements of a wide range of companies in the energy industry, and came away with a consistent theme: Lower prices for oil, natural gas and natural gas liquids are spurring spending cuts for exploration and production (E&amp;P) as companies continue in their efforts to meet investor expectations for free cash flow generation.</p>\r\n<p>Lower spending by E&amp;P companies on drilling and well completion stands to have a downstream impact on other segments of the energy sector. Oil field service companies, for instance, will likely see reduced demand for their work, and pipeline operators can be expected to lower their capital expenditures in anticipation of flat to declining future production.</p>\r\n<p>As a result of budget cuts, E&amp;P companies are “high grading” their capital spending – focusing on projects expected to earn the highest near-term returns, or on quick wins, such as bolt-on acquisitions.</p>\r\n<p>Other anticipated moves include a redoubled effort to generate free cash flow (cash flow from operations less capital spending and dividends) and acreage swaps between companies to concentrate their infrastructure footprint and allow for larger unconventional well designs. Further industry consolidation is a likely response.</p>\r\n<p>Companies are also trying to extract greater efficiencies from existing infrastructure. This includes drilling new wells faster, using existing offshore facilities to reduce production costs, and a broad initiative to introduce automation to decrease labor costs and enable more centralized control over often far-flung operations.</p>\r\n<p>Many of these moves appear to be showing up in higher productivity in the U.S. The weekly Baker Hughes oil rig count has fallen by nearly a quarter over the past year (887 to 668 at the end of November), while daily production has increased from 11.7 million barrels to an estimated 12.9 million barrels over the same period.</p>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>\r\n",
+                              "blogHeadImage":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png",
+                              "jcr:created":"Wed May 06 2020 17:36:59 GMT+0530",
+                              "timeTaken":"Time to read :<span> 2 minutes</span>",
+                              "isFeaturedBlog":"true",
+                              "jcr:lastModified":"Thu May 07 2020 14:52:10 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/blogs/blogarticle",
+                              "textIsRich":"true"
+                           }
+                        },
+                        "content2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "socialsharepage":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "twitter":"true",
+                              "jcr:created":"Thu May 07 2020 11:19:58 GMT+0530",
+                              "email":"true",
+                              "facebook":"true",
+                              "heading":"Social Share",
+                              "jcr:lastModified":"Thu May 07 2020 11:20:12 GMT+0530",
+                              "linkedin":"true",
+                              "sling:resourceType":"vcm/components/content/socialsharepage"
+                           },
+                           "relatedarticles":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "jcr:created":"Thu May 07 2020 11:20:24 GMT+0530",
+                              "heading":"Related Article",
+                              "jcr:lastModified":"Thu May 07 2020 11:24:48 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/relatedarticles",
+                              "articlePoints":{
+                                 "jcr:primaryType":"nt:unstructured",
+                                 "item0":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item1":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item2":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item3":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "integrity-asset-management":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Think big, act small",
+         "triangleColor":"#0B3B60",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "isCorpHomePage":"false",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "cq:lastModified":"Wed Mar 04 2020 14:06:41 GMT+0530",
+         "vcmTags":"vcm:blogs/etfs",
+         "jcr:description":"Integrity Asset Management, based in Rocky River, Ohio, has been managing value-oriented equity strategies for institutional clients since 2003. Integrity, led by Chief Investment ",
+         "useImageInHeaderNav":"false",
+         "pageTitle":"Think big, act small",
+         "cq:tags":[
+            "vcm:blogs/etfs"
+         ],
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "backgroundcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/backgroundcontainer",
+                  "content-bg":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "columncontrol":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "jcr:createdBy":"admin",
+                        "jcr:lastModifiedBy":"admin",
+                        "columnLayout":"2-column-grid-8x4",
+                        "jcr:created":"Thu Feb 20 2020 14:24:40 GMT+0530",
+                        "jcr:lastModified":"Thu Feb 20 2020 14:25:08 GMT+0530",
+                        "sling:resourceType":"vcm/components/content/columncontrol",
+                        "content1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "blogarticle":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "authorDate":"Tue May 05 2020 00:00:00 GMT+0530",
+                              "authorName":[
+                                  "Benarld Netson|CTA",
+                                  "Benarld Netson|CTA",
+                                  "Benarld Netson|CTA",
+                                  "BRIAN JACOBS, CFA",
+                                  "Benarld Netson|CTA"
+                               ],
+                              "blogHeading":"Lower oil prices necessitate capex cuts, productivity gains",
+                              "jcr:lastModifiedBy":"admin",
+                              "blogContent":"<p>We recently met with senior managements of a wide range of companies in the energy industry, and came away with a consistent theme: Lower prices for oil, natural gas and natural gas liquids are spurring spending cuts for exploration and production (E&amp;P) as companies continue in their efforts to meet investor expectations for free cash flow generation.</p>\r\n<p>Lower spending by E&amp;P companies on drilling and well completion stands to have a downstream impact on other segments of the energy sector. Oil field service companies, for instance, will likely see reduced demand for their work, and pipeline operators can be expected to lower their capital expenditures in anticipation of flat to declining future production.</p>\r\n<p>As a result of budget cuts, E&amp;P companies are “high grading” their capital spending – focusing on projects expected to earn the highest near-term returns, or on quick wins, such as bolt-on acquisitions.</p>\r\n<p>Other anticipated moves include a redoubled effort to generate free cash flow (cash flow from operations less capital spending and dividends) and acreage swaps between companies to concentrate their infrastructure footprint and allow for larger unconventional well designs. Further industry consolidation is a likely response.</p>\r\n<p>Companies are also trying to extract greater efficiencies from existing infrastructure. This includes drilling new wells faster, using existing offshore facilities to reduce production costs, and a broad initiative to introduce automation to decrease labor costs and enable more centralized control over often far-flung operations.</p>\r\n<p>Many of these moves appear to be showing up in higher productivity in the U.S. The weekly Baker Hughes oil rig count has fallen by nearly a quarter over the past year (887 to 668 at the end of November), while daily production has increased from 11.7 million barrels to an estimated 12.9 million barrels over the same period.</p>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>\r\n",
+                              "blogHeadImage":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png",
+                              "jcr:created":"Wed May 06 2020 17:36:59 GMT+0530",
+                              "timeTaken":"Time to read :<span> 2 minutes</span>",
+                              "jcr:lastModified":"Thu May 07 2020 14:52:10 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/blogs/blogarticle",
+                              "textIsRich":"true"
+                           }
+                        },
+                        "content2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "socialsharepage":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "twitter":"true",
+                              "jcr:created":"Thu May 07 2020 11:19:58 GMT+0530",
+                              "email":"true",
+                              "facebook":"true",
+                              "heading":"Social Share",
+                              "jcr:lastModified":"Thu May 07 2020 11:20:12 GMT+0530",
+                              "linkedin":"true",
+                              "sling:resourceType":"vcm/components/content/socialsharepage"
+                           },
+                           "relatedarticles":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "jcr:created":"Thu May 07 2020 11:20:24 GMT+0530",
+                              "heading":"Related Article",
+                              "jcr:lastModified":"Thu May 07 2020 11:24:48 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/relatedarticles",
+                              "articlePoints":{
+                                 "jcr:primaryType":"nt:unstructured",
+                                 "item0":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item1":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item2":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item3":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "image":{
+            "jcr:primaryType":"nt:unstructured"
+         }
+      }
+   },
+   "munder":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Nirvana or not?",
+         "triangleColor":"#0B3B60",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "isCorpHomePage":"false",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "cq:lastModified":"Wed Mar 04 2020 14:06:53 GMT+0530",
+         "vcmTags":"vcm:blogs/retirement",
+         "jcr:description":"The Modi government appears serious about reinjecting growth—and earnings potential—into the second largest emerging market economy.",
+         "useImageInHeaderNav":"false",
+         "pageTitle":"Nirvana or not?",
+         "cq:tags":[
+            "vcm:blogs/retirement"
+         ],
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "backgroundcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/backgroundcontainer",
+                  "content-bg":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "columncontrol":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "jcr:createdBy":"admin",
+                        "jcr:lastModifiedBy":"admin",
+                        "columnLayout":"2-column-grid-8x4",
+                        "jcr:created":"Thu Feb 20 2020 14:24:40 GMT+0530",
+                        "jcr:lastModified":"Thu Feb 20 2020 14:25:08 GMT+0530",
+                        "sling:resourceType":"vcm/components/content/columncontrol",
+                        "content1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "blogarticle":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "authorDate":"Tue May 05 2020 00:00:00 GMT+0530",
+                              "authorName":"Author Name ",
+                              "blogHeading":"Lower oil prices necessitate capex cuts, productivity gains",
+                              "blogTileHeading":"Lower oil prices necessitate capex ",
+                              "earMarkColor":"#000fff",
+                              "blogTileDescription":"Lower oil prices necessitate ca",
+                              "jcr:lastModifiedBy":"admin",
+                              "blogContent":"<p>We recently met with senior managements of a wide range of companies in the energy industry, and came away with a consistent theme: Lower prices for oil, natural gas and natural gas liquids are spurring spending cuts for exploration and production (E&amp;P) as companies continue in their efforts to meet investor expectations for free cash flow generation.</p>\r\n<p>Lower spending by E&amp;P companies on drilling and well completion stands to have a downstream impact on other segments of the energy sector. Oil field service companies, for instance, will likely see reduced demand for their work, and pipeline operators can be expected to lower their capital expenditures in anticipation of flat to declining future production.</p>\r\n<p>As a result of budget cuts, E&amp;P companies are “high grading” their capital spending – focusing on projects expected to earn the highest near-term returns, or on quick wins, such as bolt-on acquisitions.</p>\r\n<p>Other anticipated moves include a redoubled effort to generate free cash flow (cash flow from operations less capital spending and dividends) and acreage swaps between companies to concentrate their infrastructure footprint and allow for larger unconventional well designs. Further industry consolidation is a likely response.</p>\r\n<p>Companies are also trying to extract greater efficiencies from existing infrastructure. This includes drilling new wells faster, using existing offshore facilities to reduce production costs, and a broad initiative to introduce automation to decrease labor costs and enable more centralized control over often far-flung operations.</p>\r\n<p>Many of these moves appear to be showing up in higher productivity in the U.S. The weekly Baker Hughes oil rig count has fallen by nearly a quarter over the past year (887 to 668 at the end of November), while daily production has increased from 11.7 million barrels to an estimated 12.9 million barrels over the same period.</p>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>\r\n",
+                              "jcr:created":"Wed May 06 2020 17:36:59 GMT+0530",
+                              "timeTaken":"Time to read :<span> 2 minutes</span>",
+                              "jcr:lastModified":"Thu May 07 2020 14:52:10 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/blogs/blogarticle",
+                              "textIsRich":"true"
+                           }
+                        },
+                        "content2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "socialsharepage":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "twitter":"true",
+                              "jcr:created":"Thu May 07 2020 11:19:58 GMT+0530",
+                              "email":"true",
+                              "facebook":"true",
+                              "heading":"Social Share",
+                              "jcr:lastModified":"Thu May 07 2020 11:20:12 GMT+0530",
+                              "linkedin":"true",
+                              "sling:resourceType":"vcm/components/content/socialsharepage"
+                           },
+                           "relatedarticles":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "jcr:created":"Thu May 07 2020 11:20:24 GMT+0530",
+                              "heading":"Related Article",
+                              "jcr:lastModified":"Thu May 07 2020 11:24:48 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/relatedarticles",
+                              "articlePoints":{
+                                 "jcr:primaryType":"nt:unstructured",
+                                 "item0":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item1":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item2":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item3":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "fileReference":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png"
+            
+         }
+      }
+   },
+   "author":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Tue Jun 16 2020 18:53:26 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Author",
+         "triangleColor":"#0B3B60",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "jcr:predecessors":[
+            "be3d26d9-a694-4398-a69b-5f6f2576415d"
+         ],
+         "isCorpHomePage":"false",
+         "jcr:created":"Tue Jun 16 2020 18:53:26 GMT+0530",
+         "cq:lastReplicated":"Tue Jun 16 2020 18:56:15 GMT+0530",
+         "cq:lastModified":"Tue Jun 16 2020 20:17:44 GMT+0530",
+         "useImageInHeaderNav":"false",
+         "secondLevelNavOnly":"false",
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "isActiveFundPage":"true",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:lastModifiedBy":"ctsuser",
+            "jcr:lastModified":"Sat Apr 11 2020 13:20:43 GMT+0000",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:createdBy":"ctsuser",
+               "jcr:lastModifiedBy":"ctsuser",
+               "jcr:created":"Fri Feb 21 2020 12:28:09 GMT+0000",
+               "jcr:lastModified":"Sat Apr 11 2020 13:39:18 GMT+0000",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "bloglisting":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "authorPagePath":"#",
+                  "topicFilter":[
+                     "vcm:blogs/investing",
+                     "vcm:blogs/etfs",
+                     "vcm:blogs/retirement",
+                     "vcm:blogs/practice-management"
+                  ],
+                  "jcr:created":"Tue Jun 16 2020 20:17:09 GMT+0530",
+                  "rootPath":"/content/vcm/us/en/blog",
+                  "itemsOnLoadMore":"9",
+                  "jcr:lastModified":"Tue Jun 16 2020 20:17:44 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/blogs/bloglisting"
+               }
+            },
+            "experiencefragment":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:createdBy":"ctsuser",
+               "jcr:lastModifiedBy":"ctsuser",
+               "jcr:created":"Fri Feb 21 2020 12:28:04 GMT+0000",
+               "text":"USAA Member Financial Professionals Institutional Investors Investor relations Contact US SigninSignin/Register Signin × close Menu About Victory Capital Back About Victory Capital About Victory Capital Leadership Team Corporate Responsibility Products Back Products Our Products Mutual Funds Victory Shares Etfs Usaa 529 Education Savings Plan Retirement Usaa 529 Education Savings Plan Our Approach Back Our Approach Our Approach Solutions Back Solutions Solutions Institutional Strategies Strategic Beta Investment Franchise Back Investment Franchise Investment Franchise Incore Integrity Asset Management Munder NewBridge Asset Management RS Investments Sophus Capital Sycamore Capital Trivalent Investments USAA Mutual Funds Victory Capital Solutions Investment Franchise Advice & Tools Back Advice & Tools Investor Learning Center Military Financial Readiness FAQ Resources Back Resources Resources Planning Tools Practice Management Retirement Resources Fund Literature Insights Index Daily Highest Value Insights Back Insights Insights Insight Conferences FAQ Investor type USAA Member USAA Member Financial Professionals Institutional Investors What type of investor are you? USAA Member Financial Professionals Institutional Investors Investor relations Contact US ×",
+               "jcr:lastModified":"Sat Apr 11 2020 13:51:22 GMT+0000",
+               "sling:resourceType":"cq/experience-fragments/editor/components/experiencefragment",
+               "fragmentPath":"/content/experience-fragments/vcm-experience-fragments/vcm-header/master"
+            },
+            "experiencefragment_1818277927":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:createdBy":"ctsuser",
+               "jcr:lastModifiedBy":"ctsuser",
+               "jcr:created":"Fri Feb 21 2020 12:28:14 GMT+0000",
+               "text":"News Policies Careers User Agreement Mutual Fund Prospectuses ETF Prospectuses Blog Connect with us ©2020 Victory Capital Management Inc.",
+               "jcr:lastModified":"Sat Apr 11 2020 13:51:39 GMT+0000",
+               "sling:resourceType":"cq/experience-fragments/editor/components/experiencefragment",
+               "fragmentPath":"/content/experience-fragments/vcm-experience-fragments/vcm-footer/master"
+            }
+         }
+      }
+   },
+   "newbridge-asset-management":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Recent rate cuts could put Fed in a box",
+         "triangleColor":"#0070BA",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "isCorpHomePage":"false",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "cq:lastModified":"Wed Mar 04 2020 14:07:08 GMT+0530",
+         "vcmTags":"vcm:blogs/retirement",
+         "jcr:description":"NewBridge Asset Management, based in New York, New York has been managing concentrated, high conviction large-cap portfolios since 1996.",
+         "useImageInHeaderNav":"false",
+         "pageTitle":"Recent rate cuts could put Fed in a box",
+         "cq:tags":[
+            "vcm:blogs/practice-management"
+         ],
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "backgroundcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/backgroundcontainer",
+                  "content-bg":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "columncontrol":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "jcr:createdBy":"admin",
+                        "jcr:lastModifiedBy":"admin",
+                        "columnLayout":"2-column-grid-8x4",
+                        "jcr:created":"Thu Feb 20 2020 14:24:40 GMT+0530",
+                        "jcr:lastModified":"Thu Feb 20 2020 14:25:08 GMT+0530",
+                        "sling:resourceType":"vcm/components/content/columncontrol",
+                        "content1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "blogarticle":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "authorDate":"Tue May 05 2020 00:00:00 GMT+0530",
+                              "authorName":"Author Name ",
+                              "blogHeading":"Lower oil prices necessitate capex cuts, productivity gains",
+                              "jcr:lastModifiedBy":"admin",
+                              "blogContent":"<p>We recently met with senior managements of a wide range of companies in the energy industry, and came away with a consistent theme: Lower prices for oil, natural gas and natural gas liquids are spurring spending cuts for exploration and production (E&amp;P) as companies continue in their efforts to meet investor expectations for free cash flow generation.</p>\r\n<p>Lower spending by E&amp;P companies on drilling and well completion stands to have a downstream impact on other segments of the energy sector. Oil field service companies, for instance, will likely see reduced demand for their work, and pipeline operators can be expected to lower their capital expenditures in anticipation of flat to declining future production.</p>\r\n<p>As a result of budget cuts, E&amp;P companies are “high grading” their capital spending – focusing on projects expected to earn the highest near-term returns, or on quick wins, such as bolt-on acquisitions.</p>\r\n<p>Other anticipated moves include a redoubled effort to generate free cash flow (cash flow from operations less capital spending and dividends) and acreage swaps between companies to concentrate their infrastructure footprint and allow for larger unconventional well designs. Further industry consolidation is a likely response.</p>\r\n<p>Companies are also trying to extract greater efficiencies from existing infrastructure. This includes drilling new wells faster, using existing offshore facilities to reduce production costs, and a broad initiative to introduce automation to decrease labor costs and enable more centralized control over often far-flung operations.</p>\r\n<p>Many of these moves appear to be showing up in higher productivity in the U.S. The weekly Baker Hughes oil rig count has fallen by nearly a quarter over the past year (887 to 668 at the end of November), while daily production has increased from 11.7 million barrels to an estimated 12.9 million barrels over the same period.</p>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>\r\n",
+                              "blogHeadImage":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png",
+                              "jcr:created":"Wed May 06 2020 17:36:59 GMT+0530",
+                              "timeTaken":"Time to read :<span> 2 minutes</span>",
+                              "jcr:lastModified":"Thu May 07 2020 14:52:10 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/blogs/blogarticle",
+                              "textIsRich":"true"
+                           }
+                        },
+                        "content2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "socialsharepage":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "twitter":"true",
+                              "jcr:created":"Thu May 07 2020 11:19:58 GMT+0530",
+                              "email":"true",
+                              "facebook":"true",
+                              "heading":"Social Share",
+                              "jcr:lastModified":"Thu May 07 2020 11:20:12 GMT+0530",
+                              "linkedin":"true",
+                              "sling:resourceType":"vcm/components/content/socialsharepage"
+                           },
+                           "relatedarticles":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "jcr:created":"Thu May 07 2020 11:20:24 GMT+0530",
+                              "heading":"Related Article",
+                              "jcr:lastModified":"Thu May 07 2020 11:24:48 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/relatedarticles",
+                              "articlePoints":{
+                                 "jcr:primaryType":"nt:unstructured",
+                                 "item0":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item1":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item2":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item3":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "fileReference":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png"
+         }
+      }
+   },
+   "rs-investments":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Grow your practice by narrowing your client base",
+         "triangleColor":"#50a684",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "isCorpHomePage":"false",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "cq:lastModified":"Wed Mar 04 2020 14:07:18 GMT+0530",
+         "vcmTags":"vcm:blogs/retirement",
+         "jcr:description":"Here are three questions every financial advisor should consider when defining his or her ideal client.",
+         "useImageInHeaderNav":"false",
+         "pageTitle":"Grow your practice by narrowing your client base",
+         "cq:tags":[
+            "vcm:blogs/retirement"
+         ],
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "backgroundcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/backgroundcontainer",
+                  "content-bg":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "columncontrol":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "jcr:createdBy":"admin",
+                        "jcr:lastModifiedBy":"admin",
+                        "columnLayout":"2-column-grid-8x4",
+                        "jcr:created":"Thu Feb 20 2020 14:24:40 GMT+0530",
+                        "jcr:lastModified":"Thu Feb 20 2020 14:25:08 GMT+0530",
+                        "sling:resourceType":"vcm/components/content/columncontrol",
+                        "content1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "blogarticle":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "authorDate":"Tue May 05 2020 00:00:00 GMT+0530",
+                              "authorName":"Author Name ",
+                              "blogHeading":"Lower oil prices necessitate capex cuts, productivity gains",
+                              "jcr:lastModifiedBy":"admin",
+                              "blogContent":"<p>We recently met with senior managements of a wide range of companies in the energy industry, and came away with a consistent theme: Lower prices for oil, natural gas and natural gas liquids are spurring spending cuts for exploration and production (E&amp;P) as companies continue in their efforts to meet investor expectations for free cash flow generation.</p>\r\n<p>Lower spending by E&amp;P companies on drilling and well completion stands to have a downstream impact on other segments of the energy sector. Oil field service companies, for instance, will likely see reduced demand for their work, and pipeline operators can be expected to lower their capital expenditures in anticipation of flat to declining future production.</p>\r\n<p>As a result of budget cuts, E&amp;P companies are “high grading” their capital spending – focusing on projects expected to earn the highest near-term returns, or on quick wins, such as bolt-on acquisitions.</p>\r\n<p>Other anticipated moves include a redoubled effort to generate free cash flow (cash flow from operations less capital spending and dividends) and acreage swaps between companies to concentrate their infrastructure footprint and allow for larger unconventional well designs. Further industry consolidation is a likely response.</p>\r\n<p>Companies are also trying to extract greater efficiencies from existing infrastructure. This includes drilling new wells faster, using existing offshore facilities to reduce production costs, and a broad initiative to introduce automation to decrease labor costs and enable more centralized control over often far-flung operations.</p>\r\n<p>Many of these moves appear to be showing up in higher productivity in the U.S. The weekly Baker Hughes oil rig count has fallen by nearly a quarter over the past year (887 to 668 at the end of November), while daily production has increased from 11.7 million barrels to an estimated 12.9 million barrels over the same period.</p>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>\r\n",
+                              "blogHeadImage":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png",
+                              "jcr:created":"Wed May 06 2020 17:36:59 GMT+0530",
+                              "timeTaken":"Time to read :<span> 2 minutes</span>",
+                              "jcr:lastModified":"Thu May 07 2020 14:52:10 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/blogs/blogarticle",
+                              "textIsRich":"true"
+                           }
+                        },
+                        "content2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "socialsharepage":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "twitter":"true",
+                              "jcr:created":"Thu May 07 2020 11:19:58 GMT+0530",
+                              "email":"true",
+                              "facebook":"true",
+                              "heading":"Social Share",
+                              "jcr:lastModified":"Thu May 07 2020 11:20:12 GMT+0530",
+                              "linkedin":"true",
+                              "sling:resourceType":"vcm/components/content/socialsharepage"
+                           },
+                           "relatedarticles":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "jcr:created":"Thu May 07 2020 11:20:24 GMT+0530",
+                              "heading":"Related Article",
+                              "jcr:lastModified":"Thu May 07 2020 11:24:48 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/relatedarticles",
+                              "articlePoints":{
+                                 "jcr:primaryType":"nt:unstructured",
+                                 "item0":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item1":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item2":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item3":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "fileReference":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png"
+         }
+      }
+   },
+   "sophus-capital":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Ten questions to ask small business owners",
+         "triangleColor":"#9CBED6",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "isCorpHomePage":"false",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "cq:lastModified":"Wed Mar 04 2020 14:07:35 GMT+0530",
+         "vcmTags":"vcm:blogs/investing",
+         "jcr:description":"Small business owners are the backbone of the U.S. economy—and as financial professionals we can help them achieve their goals. Here are 10 questions to uncover their needs.",
+         "useImageInHeaderNav":"false",
+         "pageTitle":"Ten questions to ask small business owners",
+         "cq:tags":[
+            "vcm:blogs/investing"
+         ],
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "backgroundcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/backgroundcontainer",
+                  "content-bg":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "columncontrol":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "jcr:createdBy":"admin",
+                        "jcr:lastModifiedBy":"admin",
+                        "columnLayout":"2-column-grid-8x4",
+                        "jcr:created":"Thu Feb 20 2020 14:24:40 GMT+0530",
+                        "jcr:lastModified":"Thu Feb 20 2020 14:25:08 GMT+0530",
+                        "sling:resourceType":"vcm/components/content/columncontrol",
+                        "content1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "blogarticle":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "authorDate":"Tue May 05 2020 00:00:00 GMT+0530",
+                              "authorName":"Author Name ",
+                              "blogHeading":"Lower oil prices necessitate capex cuts, productivity gains",
+                              "jcr:lastModifiedBy":"admin",
+                              "blogContent":"<p>We recently met with senior managements of a wide range of companies in the energy industry, and came away with a consistent theme: Lower prices for oil, natural gas and natural gas liquids are spurring spending cuts for exploration and production (E&amp;P) as companies continue in their efforts to meet investor expectations for free cash flow generation.</p>\r\n<p>Lower spending by E&amp;P companies on drilling and well completion stands to have a downstream impact on other segments of the energy sector. Oil field service companies, for instance, will likely see reduced demand for their work, and pipeline operators can be expected to lower their capital expenditures in anticipation of flat to declining future production.</p>\r\n<p>As a result of budget cuts, E&amp;P companies are “high grading” their capital spending – focusing on projects expected to earn the highest near-term returns, or on quick wins, such as bolt-on acquisitions.</p>\r\n<p>Other anticipated moves include a redoubled effort to generate free cash flow (cash flow from operations less capital spending and dividends) and acreage swaps between companies to concentrate their infrastructure footprint and allow for larger unconventional well designs. Further industry consolidation is a likely response.</p>\r\n<p>Companies are also trying to extract greater efficiencies from existing infrastructure. This includes drilling new wells faster, using existing offshore facilities to reduce production costs, and a broad initiative to introduce automation to decrease labor costs and enable more centralized control over often far-flung operations.</p>\r\n<p>Many of these moves appear to be showing up in higher productivity in the U.S. The weekly Baker Hughes oil rig count has fallen by nearly a quarter over the past year (887 to 668 at the end of November), while daily production has increased from 11.7 million barrels to an estimated 12.9 million barrels over the same period.</p>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>\r\n",
+                              "blogHeadImage":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png",
+                              "jcr:created":"Wed May 06 2020 17:36:59 GMT+0530",
+                              "timeTaken":"Time to read :<span> 2 minutes</span>",
+                              "jcr:lastModified":"Thu May 07 2020 14:52:10 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/blogs/blogarticle",
+                              "textIsRich":"true"
+                           }
+                        },
+                        "content2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "socialsharepage":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "twitter":"true",
+                              "jcr:created":"Thu May 07 2020 11:19:58 GMT+0530",
+                              "email":"true",
+                              "facebook":"true",
+                              "heading":"Social Share",
+                              "jcr:lastModified":"Thu May 07 2020 11:20:12 GMT+0530",
+                              "linkedin":"true",
+                              "sling:resourceType":"vcm/components/content/socialsharepage"
+                           },
+                           "relatedarticles":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "jcr:created":"Thu May 07 2020 11:20:24 GMT+0530",
+                              "heading":"Related Article",
+                              "jcr:lastModified":"Thu May 07 2020 11:24:48 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/relatedarticles",
+                              "articlePoints":{
+                                 "jcr:primaryType":"nt:unstructured",
+                                 "item0":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item1":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item2":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item3":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "fileReference":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png"
+         }
+      }
+   },
+   "sycamore-capital":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Invite only",
+         "triangleColor":"#9CBED6",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "isCorpHomePage":"false",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "cq:lastModified":"Wed Mar 04 2020 14:07:45 GMT+0530",
+         "vcmTags":"vcm:blogs/investing",
+         "jcr:description":"The days of direct mail and cold-calling are gone. To truly connect with clients and prospects, financial advisors should focus on seminars and events, which are superior marketing tools.",
+         "useImageInHeaderNav":"false",
+         "pageTitle":"Invite only",
+         "cq:tags":[
+            "vcm:blogs/investing"
+         ],
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "backgroundcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/backgroundcontainer",
+                  "content-bg":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "columncontrol":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "jcr:createdBy":"admin",
+                        "jcr:lastModifiedBy":"admin",
+                        "columnLayout":"2-column-grid-8x4",
+                        "jcr:created":"Thu Feb 20 2020 14:24:40 GMT+0530",
+                        "jcr:lastModified":"Thu Feb 20 2020 14:25:08 GMT+0530",
+                        "sling:resourceType":"vcm/components/content/columncontrol",
+                        "content1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "blogarticle":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "authorDate":"Tue May 05 2020 00:00:00 GMT+0530",
+                              "authorName":"Author Name ",
+                              "blogHeading":"Lower oil prices necessitate capex cuts, productivity gains",
+                              "jcr:lastModifiedBy":"admin",
+                              "blogContent":"<p>We recently met with senior managements of a wide range of companies in the energy industry, and came away with a consistent theme: Lower prices for oil, natural gas and natural gas liquids are spurring spending cuts for exploration and production (E&amp;P) as companies continue in their efforts to meet investor expectations for free cash flow generation.</p>\r\n<p>Lower spending by E&amp;P companies on drilling and well completion stands to have a downstream impact on other segments of the energy sector. Oil field service companies, for instance, will likely see reduced demand for their work, and pipeline operators can be expected to lower their capital expenditures in anticipation of flat to declining future production.</p>\r\n<p>As a result of budget cuts, E&amp;P companies are “high grading” their capital spending – focusing on projects expected to earn the highest near-term returns, or on quick wins, such as bolt-on acquisitions.</p>\r\n<p>Other anticipated moves include a redoubled effort to generate free cash flow (cash flow from operations less capital spending and dividends) and acreage swaps between companies to concentrate their infrastructure footprint and allow for larger unconventional well designs. Further industry consolidation is a likely response.</p>\r\n<p>Companies are also trying to extract greater efficiencies from existing infrastructure. This includes drilling new wells faster, using existing offshore facilities to reduce production costs, and a broad initiative to introduce automation to decrease labor costs and enable more centralized control over often far-flung operations.</p>\r\n<p>Many of these moves appear to be showing up in higher productivity in the U.S. The weekly Baker Hughes oil rig count has fallen by nearly a quarter over the past year (887 to 668 at the end of November), while daily production has increased from 11.7 million barrels to an estimated 12.9 million barrels over the same period.</p>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>\r\n",
+                              "blogHeadImage":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png",
+                              "jcr:created":"Wed May 06 2020 17:36:59 GMT+0530",
+                              "timeTaken":"Time to read :<span> 2 minutes</span>",
+                              "jcr:lastModified":"Thu May 07 2020 14:52:10 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/blogs/blogarticle",
+                              "textIsRich":"true"
+                           }
+                        },
+                        "content2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "socialsharepage":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "twitter":"true",
+                              "jcr:created":"Thu May 07 2020 11:19:58 GMT+0530",
+                              "email":"true",
+                              "facebook":"true",
+                              "heading":"Social Share",
+                              "jcr:lastModified":"Thu May 07 2020 11:20:12 GMT+0530",
+                              "linkedin":"true",
+                              "sling:resourceType":"vcm/components/content/socialsharepage"
+                           },
+                           "relatedarticles":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "jcr:created":"Thu May 07 2020 11:20:24 GMT+0530",
+                              "heading":"Related Article",
+                              "jcr:lastModified":"Thu May 07 2020 11:24:48 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/relatedarticles",
+                              "articlePoints":{
+                                 "jcr:primaryType":"nt:unstructured",
+                                 "item0":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item1":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item2":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item3":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "fileReference":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png"
+         }
+      }
+   },
+   "investment-franchises":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Send in the clones",
+         "triangleColor":"#00AEEF",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "isCorpHomePage":"false",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "cq:lastModified":"Wed Mar 04 2020 14:07:54 GMT+0530",
+         "vcmTags":"vcm:blogs/investing",
+         "jcr:description":"As a financial advisor, creating additional top client relationships may be easier than you think. Here’s how you can duplicate those households and build your business.",
+         "useImageInHeaderNav":"false",
+         "pageTitle":"Send in the clones",
+         "cq:tags":[
+            "vcm:blogs/etfs"
+         ],
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "backgroundcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/backgroundcontainer",
+                  "content-bg":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "columncontrol":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "jcr:createdBy":"admin",
+                        "jcr:lastModifiedBy":"admin",
+                        "columnLayout":"2-column-grid-8x4",
+                        "jcr:created":"Thu Feb 20 2020 14:24:40 GMT+0530",
+                        "jcr:lastModified":"Thu Feb 20 2020 14:25:08 GMT+0530",
+                        "sling:resourceType":"vcm/components/content/columncontrol",
+                        "content1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "blogarticle":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "authorDate":"Tue May 05 2020 00:00:00 GMT+0530",
+                              "authorName":"Author Name ",
+                              "blogHeading":"Lower oil prices necessitate capex cuts, productivity gains",
+                              "jcr:lastModifiedBy":"admin",
+                              "blogContent":"<p>We recently met with senior managements of a wide range of companies in the energy industry, and came away with a consistent theme: Lower prices for oil, natural gas and natural gas liquids are spurring spending cuts for exploration and production (E&amp;P) as companies continue in their efforts to meet investor expectations for free cash flow generation.</p>\r\n<p>Lower spending by E&amp;P companies on drilling and well completion stands to have a downstream impact on other segments of the energy sector. Oil field service companies, for instance, will likely see reduced demand for their work, and pipeline operators can be expected to lower their capital expenditures in anticipation of flat to declining future production.</p>\r\n<p>As a result of budget cuts, E&amp;P companies are “high grading” their capital spending – focusing on projects expected to earn the highest near-term returns, or on quick wins, such as bolt-on acquisitions.</p>\r\n<p>Other anticipated moves include a redoubled effort to generate free cash flow (cash flow from operations less capital spending and dividends) and acreage swaps between companies to concentrate their infrastructure footprint and allow for larger unconventional well designs. Further industry consolidation is a likely response.</p>\r\n<p>Companies are also trying to extract greater efficiencies from existing infrastructure. This includes drilling new wells faster, using existing offshore facilities to reduce production costs, and a broad initiative to introduce automation to decrease labor costs and enable more centralized control over often far-flung operations.</p>\r\n<p>Many of these moves appear to be showing up in higher productivity in the U.S. The weekly Baker Hughes oil rig count has fallen by nearly a quarter over the past year (887 to 668 at the end of November), while daily production has increased from 11.7 million barrels to an estimated 12.9 million barrels over the same period.</p>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>\r\n",
+                              "blogHeadImage":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png",
+                              "jcr:created":"Wed May 06 2020 17:36:59 GMT+0530",
+                              "timeTaken":"Time to read :<span> 2 minutes</span>",
+                              "jcr:lastModified":"Thu May 07 2020 14:52:10 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/blogs/blogarticle",
+                              "textIsRich":"true"
+                           }
+                        },
+                        "content2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "socialsharepage":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "twitter":"true",
+                              "jcr:created":"Thu May 07 2020 11:19:58 GMT+0530",
+                              "email":"true",
+                              "facebook":"true",
+                              "heading":"Social Share",
+                              "jcr:lastModified":"Thu May 07 2020 11:20:12 GMT+0530",
+                              "linkedin":"true",
+                              "sling:resourceType":"vcm/components/content/socialsharepage"
+                           },
+                           "relatedarticles":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "jcr:created":"Thu May 07 2020 11:20:24 GMT+0530",
+                              "heading":"Related Article",
+                              "jcr:lastModified":"Thu May 07 2020 11:24:48 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/relatedarticles",
+                              "articlePoints":{
+                                 "jcr:primaryType":"nt:unstructured",
+                                 "item0":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item1":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item2":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item3":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "fileReference":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png"
+         }
+      }
+   },
+   "usaa-mutual-funds":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Time flies",
+         "triangleColor":"#8bc105",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "isCorpHomePage":"false",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "cq:lastModified":"Wed Mar 04 2020 14:08:07 GMT+0530",
+         "vcmTags":"vcm:blogs/retirement",
+         "jcr:description":"There just aren’t enough hours in the day to get it all done. If you’re constantly in search of that elusive 25th hour, perhaps you should consider time blocking.",
+         "useImageInHeaderNav":"false",
+         "pageTitle":"Time flies",
+         "cq:tags":[
+            "vcm:blogs/retirement"
+         ],
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "backgroundcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/backgroundcontainer",
+                  "content-bg":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "columncontrol":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "jcr:createdBy":"admin",
+                        "jcr:lastModifiedBy":"admin",
+                        "columnLayout":"2-column-grid-8x4",
+                        "jcr:created":"Thu Feb 20 2020 14:24:40 GMT+0530",
+                        "jcr:lastModified":"Thu Feb 20 2020 14:25:08 GMT+0530",
+                        "sling:resourceType":"vcm/components/content/columncontrol",
+                        "content1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "blogarticle":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "authorDate":"Tue May 05 2020 00:00:00 GMT+0530",
+                              "authorName":"Author Name ",
+                              "blogHeading":"Lower oil prices necessitate capex cuts, productivity gains",
+                              "jcr:lastModifiedBy":"admin",
+                              "blogContent":"<p>We recently met with senior managements of a wide range of companies in the energy industry, and came away with a consistent theme: Lower prices for oil, natural gas and natural gas liquids are spurring spending cuts for exploration and production (E&amp;P) as companies continue in their efforts to meet investor expectations for free cash flow generation.</p>\r\n<p>Lower spending by E&amp;P companies on drilling and well completion stands to have a downstream impact on other segments of the energy sector. Oil field service companies, for instance, will likely see reduced demand for their work, and pipeline operators can be expected to lower their capital expenditures in anticipation of flat to declining future production.</p>\r\n<p>As a result of budget cuts, E&amp;P companies are “high grading” their capital spending – focusing on projects expected to earn the highest near-term returns, or on quick wins, such as bolt-on acquisitions.</p>\r\n<p>Other anticipated moves include a redoubled effort to generate free cash flow (cash flow from operations less capital spending and dividends) and acreage swaps between companies to concentrate their infrastructure footprint and allow for larger unconventional well designs. Further industry consolidation is a likely response.</p>\r\n<p>Companies are also trying to extract greater efficiencies from existing infrastructure. This includes drilling new wells faster, using existing offshore facilities to reduce production costs, and a broad initiative to introduce automation to decrease labor costs and enable more centralized control over often far-flung operations.</p>\r\n<p>Many of these moves appear to be showing up in higher productivity in the U.S. The weekly Baker Hughes oil rig count has fallen by nearly a quarter over the past year (887 to 668 at the end of November), while daily production has increased from 11.7 million barrels to an estimated 12.9 million barrels over the same period.</p>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>\r\n",
+                              "blogHeadImage":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png",
+                              "jcr:created":"Wed May 06 2020 17:36:59 GMT+0530",
+                              "timeTaken":"Time to read :<span> 2 minutes</span>",
+                              "jcr:lastModified":"Thu May 07 2020 14:52:10 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/blogs/blogarticle",
+                              "textIsRich":"true"
+                           }
+                        },
+                        "content2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "socialsharepage":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "twitter":"true",
+                              "jcr:created":"Thu May 07 2020 11:19:58 GMT+0530",
+                              "email":"true",
+                              "facebook":"true",
+                              "heading":"Social Share",
+                              "jcr:lastModified":"Thu May 07 2020 11:20:12 GMT+0530",
+                              "linkedin":"true",
+                              "sling:resourceType":"vcm/components/content/socialsharepage"
+                           },
+                           "relatedarticles":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "jcr:created":"Thu May 07 2020 11:20:24 GMT+0530",
+                              "heading":"Related Article",
+                              "jcr:lastModified":"Thu May 07 2020 11:24:48 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/relatedarticles",
+                              "articlePoints":{
+                                 "jcr:primaryType":"nt:unstructured",
+                                 "item0":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item1":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item2":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item3":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "fileReference":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png"
+         }
+      }
+   },
+   "munder8":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"How am I doing?",
+         "cq:template":"/conf/vcm/settings/wcm/templates/content-page",
+         "institutionalinvestorsType":"false",
+         "financialAdvisorsType":"false",
+         "isCorpHomePage":"false",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "cq:lastModified":"Thu May 07 2020 19:20:16 GMT+0530",
+         "vcmTags": "vcm:blogs/retirement", 
+         "jcr:description":"You can build more meaningful relationships by asking clients to give you an annual review. Ask these five questions to learn what a client thinks of you and your team.",
+         "useImageInHeaderNav":"false",
+         "pageTitle":"How am I doing?",
+         "cq:tags":[
+            "vcm:blogs/retirement"
+         ],
+         "sling:resourceType":"vcm/components/structure/page",
+         "membersType":"false",
+         "cq:lastModifiedBy":"admin",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"wcm/foundation/components/responsivegrid",
+            "responsivegrid":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"wcm/foundation/components/responsivegrid",
+               "franchiseintro":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu Feb 20 2020 14:47:29 GMT+0530",
+                  "jcr:lastModified":"Thu Feb 20 2020 14:47:29 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/franchiseintro"
+               },
+               "backgroundcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "jcr:createdBy":"admin",
+                  "jcr:lastModifiedBy":"admin",
+                  "jcr:created":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "jcr:lastModified":"Thu May 07 2020 11:26:22 GMT+0530",
+                  "sling:resourceType":"vcm/components/content/backgroundcontainer",
+                  "content-bg":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "columncontrol":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "jcr:createdBy":"admin",
+                        "jcr:lastModifiedBy":"admin",
+                        "columnLayout":"2-column-grid-8x4",
+                        "jcr:created":"Thu Feb 20 2020 14:24:40 GMT+0530",
+                        "jcr:lastModified":"Thu Feb 20 2020 14:25:08 GMT+0530",
+                        "sling:resourceType":"vcm/components/content/columncontrol",
+                        "content1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "blogarticle":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "authorDate":"Tue May 05 2020 00:00:00 GMT+0530",
+                              "authorName":"Author Name ",
+                              "blogHeading":"Lower oil prices necessitate capex cuts, productivity gains",
+                              "jcr:lastModifiedBy":"admin",
+                              "blogContent":"<p>We recently met with senior managements of a wide range of companies in the energy industry, and came away with a consistent theme: Lower prices for oil, natural gas and natural gas liquids are spurring spending cuts for exploration and production (E&amp;P) as companies continue in their efforts to meet investor expectations for free cash flow generation.</p>\r\n<p>Lower spending by E&amp;P companies on drilling and well completion stands to have a downstream impact on other segments of the energy sector. Oil field service companies, for instance, will likely see reduced demand for their work, and pipeline operators can be expected to lower their capital expenditures in anticipation of flat to declining future production.</p>\r\n<p>As a result of budget cuts, E&amp;P companies are “high grading” their capital spending – focusing on projects expected to earn the highest near-term returns, or on quick wins, such as bolt-on acquisitions.</p>\r\n<p>Other anticipated moves include a redoubled effort to generate free cash flow (cash flow from operations less capital spending and dividends) and acreage swaps between companies to concentrate their infrastructure footprint and allow for larger unconventional well designs. Further industry consolidation is a likely response.</p>\r\n<p>Companies are also trying to extract greater efficiencies from existing infrastructure. This includes drilling new wells faster, using existing offshore facilities to reduce production costs, and a broad initiative to introduce automation to decrease labor costs and enable more centralized control over often far-flung operations.</p>\r\n<p>Many of these moves appear to be showing up in higher productivity in the U.S. The weekly Baker Hughes oil rig count has fallen by nearly a quarter over the past year (887 to 668 at the end of November), while daily production has increased from 11.7 million barrels to an estimated 12.9 million barrels over the same period.</p>\r\n<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>\r\n",
+                              "blogHeadImage":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png",
+                              "jcr:created":"Wed May 06 2020 17:36:59 GMT+0530",
+                              "timeTaken":"Time to read :<span> 2 minutes</span>",
+                              "jcr:lastModified":"Thu May 07 2020 19:20:16 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/blogs/blogarticle",
+                              "textIsRich":"true"
+                           }
+                        },
+                        "content2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "sling:resourceType":"wcm/foundation/components/parsys",
+                           "socialsharepage":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "twitter":"true",
+                              "jcr:created":"Thu May 07 2020 11:19:58 GMT+0530",
+                              "email":"true",
+                              "facebook":"true",
+                              "heading":"Social Share",
+                              "jcr:lastModified":"Thu May 07 2020 11:20:12 GMT+0530",
+                              "linkedin":"true",
+                              "sling:resourceType":"vcm/components/content/socialsharepage"
+                           },
+                           "relatedarticles":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "jcr:createdBy":"admin",
+                              "jcr:lastModifiedBy":"admin",
+                              "jcr:created":"Thu May 07 2020 11:20:24 GMT+0530",
+                              "heading":"Related Article",
+                              "jcr:lastModified":"Thu May 07 2020 11:24:48 GMT+0530",
+                              "sling:resourceType":"vcm/components/content/relatedarticles",
+                              "articlePoints":{
+                                 "jcr:primaryType":"nt:unstructured",
+                                 "item0":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item1":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item2":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 },
+                                 "item3":{
+                                    "jcr:primaryType":"nt:unstructured",
+                                    "linkUrl":"#",
+                                    "thumbnailImage":"/content/dam/vcm/rapid/all-about-mutual-fund/all-about-mutual-fund-banner-sm.png",
+                                    "articleText":" What is a mutual fund?",
+                                    "tabSelect":"_self"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "image":{
+            "jcr:primaryType":"nt:unstructured",
+            "fileReference":"/content/dam/vcm/blog/China_iStock-1073899598@2x.png"
+         }
+      }
+   }
+}	

@@ -1,0 +1,33 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+Edit Victory Intro Component
+</sly>
+<sly data-sly-use.model="com.vcm.core.models.VictoryIntroModel"/>
+<div class="container">
+   <div class="content-wrapper">
+       <div class="aboutVC">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4  aboutVC__freetxtone">
+                    <h3 data-sly-test="${model.heading}" class="blueHdng-multiLine-greenBorder">${model.heading}</h3>
+                    <div class="navigation-right show-in-desktop">
+                        <a data-audiencepopup="true" class="audienceSelector" data-sly-test="${model.linkText}" href="${model.linkUrl}" target="${model.tabSelect}" rel="${model.tabSelect == '_blank' ? 'noopener noreferrer' : ''}">${model.linkText}<span aria-hidden="true" class="right--arrow"></span></a>
+                    </div>
+                </div>
+				
+				<sly data-sly-test="${model.introPoints}">
+					<sly data-sly-list.introPoints="${model.introPoints}">
+						<div class="col-6 col-md-3 col-lg-2 aboutVC__paddingtxt--one">
+							<p class="aboutVC__number"><strong><span data-sly-test="${introPoints.includeDollar}">$</span>${introPoints.numberValue}</strong></p>
+							<p data-sly-test="${introPoints.description}" class="aboutVC__numbertxt--date">
+								${introPoints.description}
+							</p>
+							<p class="aboutVC__datetxt" data-sly-test="${introPoints.asofdate}">${introPoints.asofdate @ context='html'}</p>
+						</div>
+					</sly>
+				</sly>
+            </div>
+            <div class="navigation-right show-in-mobile">
+                <a data-audiencepopup="true" class="audienceSelector" data-sly-test="${model.linkText}" href="${model.linkUrl}" target="${model.tabSelect}" rel="${model.tabSelect == '_blank' ? 'noopener noreferrer' : ''}">${model.linkText}<span aria-hidden="true" class="right--arrow"></span></a>
+            </div>
+        </div>
+   </div>
+</div>

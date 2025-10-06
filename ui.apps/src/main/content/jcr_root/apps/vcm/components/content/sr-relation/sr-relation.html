@@ -1,0 +1,379 @@
+<sly data-sly-use.survivorRelationModelObj="com.vcm.core.models.SurvivorRelationModel">
+    <input type="hidden" id="srSaveDetailsEndPoint" value="${survivorRelationModelObj.srSaveDetailsEndPoint}"/>
+    <input type="hidden" id="xApiKeyId" value="${survivorRelationModelObj.apiKey}"/>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='vcm.estatetransition'}" xmlns:fontWeight="http://www.w3.org/1999/xhtml"/>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<div class="container">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-xl-12 col-sm-12 col-md-12 col-xs-12">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-xs-12 content_heading">
+                        <h1>Tell us about yourself</h1>
+                        <p>*All fields required, unless noted otherwise.</p>
+                    </div>
+                </div>
+                <div class="p30">
+                    <div class="row pb10 alignItemCenter">
+                        <div class="col-sm-2 col-xl-3 col-md-2 col-xs-12 txtRight padFieldName">
+                            <h6 class="font-weight-bold padT15 fnt15">Your name</h6>
+                        </div>
+                        <div class="col-sm-10 col-xl-9 col-md-10 col-xs-12 pad5">
+                            <div class="row pb10 alignItemCenter">
+                                <div class="col-sm-3 col-xl-3 col-md-3 col-xs-12 pad5">
+
+                                    <label class="mb10">First</label>
+
+                                    <input class="inputField inner-text" type="text" name="r_firstName" id="p_firstName" />
+                                </div>
+                                <div class="col-sm-3 col-xl-3 col-md-3 col-xs-12 pad5">
+                                    <label class="mb10">Middle(optional)</label>
+
+                                    <input class="inputField inner-text" type="text" name="r_middleName" id="p_middleName" />
+                                </div>
+                                <div class="col-sm-3 col-xl-3 col-md-3 col-xs-12 pad5">
+                                    <label class="mb10">Last</label>
+                                    <input class="inputField inner-text" type="text" name="r_lastName" id="p_lastName"/>
+                                </div>
+                            </div>
+                            <div class="row pb10 alignItemCenter">
+                                <span class="analytics-error-field Input_errMsg__1inyU" style="display:none" aria-live="assertive" aria-atomic="true" id="yourName_error">
+                                <span class="sr-only">Error:</span>${properties.warningEmailEmpty}</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row pb10 alignItemCenter">
+                        <div class="col-xl-3 col-sm-2 col-md-2 col-xs-12 txtRight padFieldName">
+                            <h6 class="font-weight-bold fnt15">Phone number</h6>
+                        </div>
+                        <div class="col-xl-9 col-sm-10 col-md-10 col-xs-12 txtLeft">
+                            <div class="row pb10 alignItemCenter">
+                                <div class="col-sm-3 col-xl-2 col-md-3 col-xs-12 pad5">
+
+                                    <input class="inputField phone-inner-text" maxlength="4" type="text" id="p_coutryCode" onkeyup="return IsNumeric3(event);" style="border: 1px solid rgb(210, 210, 210);"/>
+                                    <label class="phoneNumber">Country </label>
+                                </div>
+
+                                <div class="col-sm-4 col-xl-4 col-md-4 col-xs-12 pad5 card-link">
+                                    <input class="inputField phone-inner-text" type="text" required maxlength="10" id="p_phoneNumber" onkeypress="return /\d/.test(String.fromCharCode(event.keyCode || event.which))"/>
+                                    <label class="phoneNumber">(000) 000-0000</label>
+                                </div>
+                            </div>
+                            <div class="row pb10 alignItemCenter">
+                                <div class="">
+                                        <span class="analytics-error-field phone_country_error" style="display:none" aria-live="assertive" aria-atomic="true" id="countryCode_error">
+                                        <span class="sr-only">Error:</span>${properties.warningEmailEmpty}</span>
+
+                                </div>
+                                <div class="">
+                                        <span class="analytics-error-field phone_country_error" style="display:none" aria-live="assertive" aria-atomic="true" id="phoneNumber_error">
+                                        <span class="sr-only">Error:</span>${properties.warningEmailEmpty}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row pb10 alignItemCenter">
+                        <div class="col-xl-3 col-sm-2 col-md-2 col-xs-12 padFieldName txtRight">
+                            <h6 class="font-weight-bold fnt15">Email</h6>
+                        </div>
+                        <div class="col-xl-9 col-sm-10 col-md-10 col-xs-12 txtLeft">
+                            <div class="row pb10 alignItemCenter">
+                                <div class="col-xl-5 col-sm-5 col-md-5 col-xs-12 pad5">
+                                    <input class="inputField inner-text" type="text" name="email" id="email" />
+                                </div>
+                            </div>
+                            <div class="row pb10 alignItemCenter">
+                                <div class="">
+                                        <span class="analytics-error-field phone_country_error" style="display:none" aria-live="assertive" aria-atomic="true" id="email_error">
+                                            <span class="sr-only">Error:</span>${properties.warningEmailEmpty}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row pb10">
+                        <div class="col-xl-3 col-sm-2 col-md-2 col-xs-12 txtRight pl0">
+
+                            <h6 class="font-weight-bold txtRight fnt15 padt5">
+                                How are you related to the person who passed away?
+                            </h6>
+                        </div>
+                        <div class="col-xl-3 col-sm-3 col-md-3 col-xs-12 pad5 padt5">
+
+                            <div class="realationRadio">
+                                <input type="radio" id="spouse" name="related_person" value="Spouse" checked />
+                                <label class="pl5" for="spouse">
+                                    Spouse
+                                </label>
+                            </div>
+                            <div class="realationRadio">
+                                <input type="radio" id="someoneElse" name="related_person" value="Someone else" />
+                                <label class="pl5" for="someoneElse">
+                                    Someone else
+                                </label>
+                            </div>
+                            <div class="realationRadio">
+                                <input type="radio" id="entity" name="related_person" value="Entity" />
+                                <label class="pl5" for="entity">
+                                    Entity
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-sm-12 col-md-12 col-xs-12">
+
+                            <p class="text-center">
+                                An entity (such as a charity or other organization), an estate, or a trust as the
+                                account's beneficiary.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr></hr>
+        <div class="row">
+            <div class="col-xl-12 col-sm-12 col-md-12 col-xs-12">
+
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12 col-md-12 col-xs-12 content_heading">
+
+                        <h1>Tell us about the person who passed away</h1>
+                        <p>Please provide us details for the deceased member. We will limit account access.</p>
+                    </div>
+                </div>
+                <div class="p30">
+                    <div class="row pb10 alignItemCenter">
+                        <div class="col-xl-3 col-sm-2 col-md-2 col-xs-12 padFieldName txtRight">
+
+                            <h6 class="font-weight-bold padT15 fnt15">Name</h6>
+                        </div>
+                        <div class="col-sm-10 col-xl-9 col-md-10 col-xs-12 pad5">
+                            <div class="row pb10 alignItemCenter">
+                                <div class="col-xl-3 col-sm-3 col-md-3 col-xs-12 pad5">
+
+                                    <label class="mb10">First</label>
+                                    <input class="inputField inner-text" type="text"0 name="m_firstName" id="d_firstName"/>
+                                </div>
+                                <div class="col-xl-3 col-sm-3 col-md-3 col-xs-12 pad5">
+
+                                    <label class="mb10">Middle(optional)</label>
+                                    <input class="inputField inner-text" type="text" name="m_middleName" id="m_middleName"/>
+                                </div>
+                                <div class="col-xl-3 col-sm-3 col-md-3 col-xs-12 pad5">
+
+                                    <label class="mb10">Last</label>
+
+                                    <input class="inputField inner-text" type="text" name="m_lastName" id="d_lastName"/>
+                                </div>
+                            </div>
+                            <div class="row pb10 alignItemCenter">
+                                      <span class="analytics-error-field Input_errMsg__1inyU" style="display:none" aria-live="assertive" aria-atomic="true" id="name_error">
+                                      <span class="sr-only">Error:</span>${properties.warningEmailEmpty}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Date of Birth Optional -->
+                    <div class="row pb10 alignItemCenter">
+                        <div class="col-xl-3 col-sm-2 col-md-2 col-xs-12 padFieldName txtRight">
+                            <h6 class="font-weight-bold padT15 fnt15">Date of Birth (Optional)</h6>
+                        </div>
+                        <div class="col-sm-10 col-xl-9 col-md-10 col-xs-12 pad5">
+                            <div class="row pb10 alignItemCenter">
+                                <div class="col-xl-3 col-sm-3 col-md-3 col-xs-3 datePad">
+
+                                    <label class="mb10">Month</label>
+
+                                    <select name="month" id="b_month" class="pad10 wid100 border inner-text">
+                                        <option value="select">Select</option>
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-1 col-sm-2 col-md-2 col-xs-3 datePad">
+
+                                    <label class="mb10">Day</label>
+                                    <input class="DobInput inner-text" type="text" maxlength="2" id="b_day"/>
+                                </div>
+                                <div class="col-xl-2 col-sm-2 col-md-2 col-xs-3 datePad">
+
+                                    <label class="mb10">Year</label>
+                                    <input class="DobInput inner-text" type="text" maxlength="4" id="b_year" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Date of death-->
+                    <div class="row pb10 alignItemCenter">
+                        <div class="col-xl-3 col-sm-2 col-md-2 col-xs-12 padFieldName txtRight">
+                            <h6 class="font-weight-bold padT15 fnt15">Date of death</h6>
+                        </div>
+                        <div class="col-sm-10 col-xl-9 col-md-10 col-xs-12 pad5">
+                            <div class="row pb10 alignItemCenter">
+
+                                <div class="col-xl-3 col-sm-3 col-md-3 col-xs-3 datePad">
+
+                                    <label class="mb10">Month</label>
+
+                                    <select name="month" id="month" class="pad10 wid100 border inner-text" onchange="onchangeMonth()">
+                                        <option value="select">Select</option>
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-1 col-sm-2 col-md-2 col-xs-3 datePad">
+
+                                    <label class="mb10">Day</label>
+                                    <input class="DobInput inner-text" type="text" numeric maxlength="2" id="day"/>
+                                </div>
+                                <div class="col-xl-2 col-sm-2 col-md-2 col-xs-3 datePad">
+
+                                    <label class="mb10">Year</label>
+                                    <input class="DobInput inner-text" type="text" maxlength="4" id="year" />
+                                </div>
+                            </div>
+                            <div class="row pb10 alignItemCenter">
+                            <span class="analytics-error-field Input_errMsg__1inyU" style="display:none" aria-live="assertive" aria-atomic="true" id="date_error">
+                            <span class="sr-only">Error:</span>${properties.warningEmailEmpty}</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row pb10 alignItemCenter">
+                        <div class="col-xl-3 col-sm-2 col-md-2 col-xs-12 padFieldName txtRight">
+                            <h6 class="font-weight-bold padT15 fnt15">SSN (or) Member ID</h6>
+                        </div>
+                        <div class="col-sm-10 col-xl-9 col-md-10 col-xs-12 pad5">
+                            <div class="row pb10 alignItemCenter">
+                                <div class="col-xl-4 col-sm-12 col-md-4 col-xs-12 pad5">
+                                    <label class="mb10">Social Security Number</label>
+                                    <div class="ssnDiv">
+                                        <div class="col-xl-3 col-sm-4 col-md-3 col-xs-3 pad5">
+                                            <input class="DobInput inner-text" type="text" maxlength="3" id="ssn_first" />
+                                        </div> -
+                                        <div class="col-xl-3 col-sm-4 col-md-3 col-xs-3 pad5">
+                                            <input class="DobInput inner-text" type="text" maxlength="2" id="ssn_second" />
+                                        </div> -
+                                        <div class="col-xl-3 col-sm-4 col-md-3 col-xs-3 pad5">
+                                            <input class="DobInput inner-text" type="text" maxlength="4" id="ssn_third"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-1 col-sm-12 col-md-2 col-xs-12" >
+                                    <label class="padt-member">or</label>
+                                </div>
+
+                                <div class="col-xl-4 col-sm-4 col-md-4 col-xs-12 pad5">
+                                    <label class="mb10">Member ID</label>
+                                    <input class="DobInput inner-text" type="text" maxlength="9" id="memberId" onkeypress="return /\d/.test(String.fromCharCode(event.keyCode || event.which))"/>
+                                </div>
+                            </div>
+                            <div class="row pb10 alignItemCenter">
+                                <span class="analytics-error-field Input_errMsg__1inyU" style="display:none" aria-live="assertive" aria-atomic="true" id="ssnormember_error">
+                                <span class="sr-only">Error:</span>${properties.warningEmailEmpty}</span>
+                            </div>
+
+                        </div>
+                        <div class="row pb10 alignItemCenter">
+                            <span class="analytics-error-field Input_errMsg__1inyU" style="display:none" aria-live="assertive" aria-atomic="true" id="ssn_error">
+                             <span class="sr-only">Error:</span>${properties.warningEmailEmpty}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-sm-12 col-md-12 col-xs-12">
+
+                            <p class="text-center padt25">
+                                Certain states require additional documentation when transferring inherited assests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr></hr>
+        <div class="row">
+            <div class="col-xl-12 col-sm-12 col-md-12 col-xs-12 content_heading">
+
+                <h1>If you have a death certificate, please attach it</h1>
+                <p>
+                    For a quicker account transition process, we recommend uploading a legible copy or photo of the
+                    death certificate if you have one.
+                </p>
+            </div>
+        </div>
+        <div class="">
+            <div class="row attach_file_body" style="overflow-x:auto;">
+                <table  style="overflow-x:auto; width: 100%;">
+                    <thead>
+                    <tr>
+                        <th class="attach_file_content"><p class="text-center" style={fontWeight:'bolder' }>File name</p></th>
+                        <th class="attach_file_content"><p class="text-center" style={fontWeight:'bolder' }>File size</p></th>
+                        <th class="attach_file_content"><p class="text-center" style={fontWeight:'bolder' }>Delete</p></th>
+                    </tr>
+                    </thead>
+                    <tbody id="uploadIdList"></tbody>
+                </table>
+            </div>
+
+            <div class="row attach_btn_body">
+                <button class="attach_btn" id="fileUploadBtn">
+                    <img class="" src={attach} alt="" /> <span>Attach File </span>
+
+                </button>
+                <input id='F_Id' type='file' multiple style="display: none"/>
+
+            </div>
+            <div class="Input_field_file__2Mqft">
+                	<span class="analytics-error-field Input_file_errMsg__1inyU" style="display:none" aria-live="assertive" aria-atomic="true" id="fileUpload_error">
+                	<span class="sr-only">Error:</span>${properties.warningEmailEmpty}</span>
+            </div>
+            <div class="row reCaptcha-sty">
+                <div class="col-xl-12 col-sm-12 col-md-12 col-xs-12">
+                    <div class="g-recaptcha" data-sitekey="${survivorRelationModelObj.googleReCaptchaSiteKey}"></div>
+                </div>
+            </div>
+
+            <div class="row blog-button-container">
+                <div class="col-xl-12 col-sm-12 col-md-12 col-xs-12">
+                    <button class="btn-blog position-relative mx-auto"
+                            id="submitId" tabindex="0" aria-label="Submit Notification">${'Submit Notification'}<span id="btnSp" aria-hidden="true"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,604 @@
+/* stickytab.css */
+
+
+.sticky-tab-container .sticky-tabs {
+    display: none;
+}
+/*.sticky-tab-container .sticky-tabs .nav-tabs {
+    border: 0;
+     margin: 0 0 25px 0;
+}*/
+.sticky-tab-container .sticky-tabs .nav-item {
+    padding: 25px 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #D2D2D2;
+    position: relative;
+    height: 80px;
+}
+.sticky-tab-container .sticky-tabs .nav-item:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+.sticky-tab-container .sticky-tabs .active.nav-item:after {
+    left: 50%;
+    top: 85%;
+    transform: rotate(45deg);
+    box-shadow: 4px 4px 6px -3px #00000066;
+    background-color: #fff;
+    margin-left: -10px;
+}
+.sticky-tab-container .sticky-tabs .nav-link {
+    color: #486D90;
+    font-size: 22px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+.sticky-tab-container .sticky-tabs .nav-link.active {
+    color: #49494A;
+    border-bottom: 2px solid #486D90;
+}
+.sticky-tab-container .accordion-icon {
+    background: url(../resources/accordian_open.svg) no-repeat;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.sticky-tab-container .accordion-icon.accordion-close {
+    background: url(../resources/accordian_closed.svg) no-repeat;
+}
+.sticky-tab-container .card {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0;
+}
+.sticky-tab-container .card-header {
+    background-color: #fff;
+    padding: 35px 18px;
+}
+.sticky-tab-container .card-header.active {
+    box-shadow: 0px 2px 12px #00000066;
+}
+.sticky-tab-container .card-header.active:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: rotate(45deg);
+    box-shadow: 4px 4px 6px -3px #00000066;
+    background-color: #fff;
+    margin-left: -10px;
+}
+.sticky-tab-container .card-header a {
+    font-size: 22px;
+    position: relative;
+    display: block;
+}
+
+/* For PC */
+@media screen and (min-width: 768px) {
+    .sticky-tab-container .fix-container {
+        box-sizing: border-box;
+    }
+    .sticky-tab-container .sticky-tabs {
+        display: block;
+        background-color: #fff;
+        box-shadow: 0 2px 12px #00000066;
+       /* box-shadow: 0px 2px 12px #00000066;
+         margin: 10px 0 25px 0; */
+    }
+    /* .sticky-tab-container .card {
+        margin-top: 25px;
+    } */
+    .sticky-tab-container .card-header {
+        display: block;
+    }
+    .sticky-tab-container .fixed-tabs {
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        /* background-color: #fff; */
+    }
+}
+
+
+/* to be removed  */
+footer {
+    height: 500px;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+/*#performance {
+    height: 500px;
+    border: 1px solid green;
+}
+#portfolio {
+    height: 200px;
+    border: 1px solid green;
+}
+#management {
+    height: 400px;
+    border: 1px solid green;
+} */
+
+
+/* tabs.css*/
+
+
+.hidden {
+    display: none;
+}
+
+.fix-container.fixed-tabs .nav-tabs {
+    margin-top: 15px;
+}
+.sticky-tabs .nav-item {
+    padding: 25px 20px;
+    position: relative;
+    border-right: 1px solid #D2D2D2;
+    margin: 0;
+}
+.sticky-tabs .nav-link {
+    font-family: yorkten-slab-normal, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #486D90;
+    padding: 0;
+    border: none;
+}
+.sticky-tabs .nav-link:hover {
+    border: none;
+}
+.sticky-tabs .nav-link.active {
+    border: none;
+    border-bottom: 2px solid #8BC105;
+    color: #49494A;
+    padding-bottom: 5px;
+}
+.tab-pane .card-header.active:after,
+.tab-pane .card-header.active:before,
+.sticky-tabs li.active:after,
+.sticky-tabs li.active:before {
+    top: 96%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 10px;
+    margin-left: -13px;
+}
+
+.tab-pane .card-header.active:after,
+.tab-pane .card-header.active:before {
+    top: 88%;
+}
+
+.tab-pane .card-header.active:after,
+.sticky-tabs li.active:after {
+    border-color: #88b7d500;
+    border-top-color: #ffffff;
+}
+
+.tab-pane .card-header.active:before,
+.sticky-tabs li.active:before {
+    border-color: transparent;
+    /*border-top-color: #00000066;*/
+}
+
+.fixed-tabs {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    overflow: visible;
+    background: #fff;
+    width: 100%;
+}
+.tab-pane {
+    height: auto;
+    width: 100%;
+    border-radius: 0;
+    background-color: #fff;
+    margin: 0;
+}
+.sticky-tab-container .fix-container {
+    display: none;
+}
+.sticky-tab-container .card-header {
+    padding: 35px 18px;
+    border-top: 1px solid #D2D2D2;
+    border-bottom: none;
+    background-color: #fff;
+}
+.sticky-tab-container .card-header.active {
+    box-shadow: 0px 2px 12px #00000066;
+    position: relative;
+}
+.sticky-tab-container .card-header a {
+    font-family: yorkten-slab-normal, sans-serif;
+    outline: none;
+    color: #486D90;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+.funddetail-tabs .accordion-icon {
+    background: url(../resources/accordian_open.svg) no-repeat;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.funddetail-tabs .accordion-icon.accordion-close {
+    background: url(../resources/accordian_closed.svg) no-repeat;
+}
+
+.tabrightcontent {
+    display: none;
+}
+
+/* Performance section styles starts here */
+.heading {
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #49494A
+}
+.heading span {
+    font-size: 14px;
+    font-weight: 100;
+}
+.tab-pane .heading {
+    margin: 15px 0;
+}
+.tab-pane .description {
+    margin-bottom: 25px;
+}
+.calendar-list-view, .calendar-chart-view,
+.list-view, .chart-view {
+    width: 33px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.annual-data-container .tab-pane {
+    height: auto;
+}
+.icon-tooltip {
+    background: url(../images/icon__tooltip.svg) no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0px 5px -6px 5px;
+}
+.annual-time-tabs ul, .risk-time-tabs ul {
+    margin: 20px 0;
+}
+.annual-time-tabs li, .risk-time-tabs li {
+    font-family: benton-sans, sans-serif;
+    font-size: 16px;
+    color: #004A98;
+    width: 160px;
+    margin-right: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    font-weight: 600;
+    position: relative;
+}
+.risk-time-tabs li {
+    width: 100px;
+}
+.annual-time-tabs li.active, .risk-time-tabs li.active {
+    color: #49494A;
+    border: 1px solid #75757A;
+    box-shadow: 0px 2px 8px #00000034;
+}
+.annual-time-tabs li:after,
+.annual-time-tabs li:before, .risk-time-tabs li:after, .risk-time-tabs li:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 15px;
+    margin-left: -18px;
+}
+.annual-time-tabs li.active:after, .risk-time-tabs li.active:after {
+    border-color: #88b7d500;
+    border-top-color: #ffffff;
+}
+
+.annual-time-tabs li.active:before, .risk-time-tabs li.active:before {
+    border-color: transparent;
+    border-top-color: #000;
+}
+
+
+/* investment minimus section styles stats*/
+.investment-minimum {
+    width: auto;
+    border: 1px solid #D2D2D2;
+}
+.investment-minimum p {
+    font-size: 14px;
+    padding: 5px 20px;
+    line-height: 1;
+}
+.investment-minimum .heading {
+    padding: 10px 20px;
+    line-height: 1;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #8BC105;
+}
+.investment-minimum .heading .terms-link {
+    color: #49494A;
+    border-bottom: 1px dotted #004A98;
+    font-size: 14px;
+    font-family: benton-sans, sans-serif;
+}
+.fund-literature {
+    width: 325px;
+}
+.fund-literature h3 {
+    background: url(../images/icon__external-link.svg) no-repeat;
+    font-size: 16px;
+    padding-left: 30px;
+    background-position: left 100%;
+    margin: 15px 0px 5px 0;
+    line-height: 20px;
+}
+.fund-literature p {
+    font-size: 14px;
+    padding-left: 30px;
+}
+.align-right {
+    float: right;
+    clear: both;
+    font-size: 14px;
+}
+.text-bold {
+    font-weight: 600;
+}
+.annual-data-container .fund-yield-fixed {
+    position: fixed;
+    top: 120px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.annual-data-container .fund-yield-absolute {
+    position: absolute;
+    top: 3550px;
+    z-index: 1;
+    background-color: #fff;
+}
+/* investment minimus section styles ends*/
+.performance-disclouse-text {
+    font-size: 14px;
+    margin: 0 0 25px 0;
+}
+/* Performance section styles ends here */
+
+/*Portfolio section styles starts here */
+.tab-pane th {
+    border: none;
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    vertical-align: bottom;
+    border-bottom: 2px solid #8BC105;
+}
+
+.tab-pane td {
+    border: none;
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+    padding: 16px;
+}
+
+.tab-pane table tr:nth-child(even) {
+    background-color: #F7F7F7;
+}
+
+.row.table-responsive {
+    margin: 0;
+}
+.text-left {
+    text-align: left;
+}
+.all-holdings {
+    background: url(../images/icon__pdf.svg) no-repeat;
+    width: 100%;
+    height: 30px;
+    padding-left: 30px;
+    display: inline-block;
+}
+/*Portfolio section styles ends here */
+
+/*Management styles starts here */
+.management-container img {
+    width: 160px;
+    height: 160px;
+}
+.management-container .heading {
+    margin-bottom: 21px;
+}
+.triangle-orange::after {
+    content: "";
+    border-left: 0px solid transparent;
+    border-right: 28px solid transparent;
+    border-top: 28px solid #FF671D;
+    position: absolute;
+    top: 0;
+}
+.management-team .triangle-orange::after {
+    left: 0;
+}
+.management-container .name {
+    font-size: 18px;
+    color: #49494A;
+    margin-top: 30px;
+}
+.management-team {
+    width: 350px;
+    min-height: 116px;
+    display: block;
+    position: relative;
+    padding: 25px 60px 25px 25px;
+    border: 1px solid #D2D2D2;
+    background-color: #ffffff;
+    margin: 35px 0 26px 0;
+}
+.management-member-name {
+    font-size: 18px;
+    color: #49494A;
+}
+.management-team.navg-arw-rv-center {
+    cursor: pointer;
+}
+.disclaimer-container {
+    margin-top: 30px;
+    padding: 15px;
+}
+.disclaimer-placeholder {
+    margin-bottom: 15px;
+}
+/*Management styles ends here */
+
+
+
+/* For PC */
+@media screen and (min-width: 1024px) {
+    .sticky-tab-container .card {
+        width: 67%;
+        float: left;
+        padding-right: 30px;
+    }
+    /*.sticky-tabs .nav-tabs {
+        padding: 0 9%;
+    }*/
+    .fix-container.fixed-tabs{
+        box-shadow: 0 2px 12px #00000066;
+    }
+    #tabrightcontent {
+        width: 33%;
+        display: inline-block;
+    }
+    .sticky-tab-container {
+        width: 100%;
+        float: left;
+    }
+    .tab-pane {
+        padding: 0;
+        min-height: 50px;
+        border: 0;
+        margin-bottom: 20px;
+    }
+    .sticky-tab-container .card-header {
+        display: none;
+    }
+    .sticky-tab-container .card-body {
+        padding: 0;
+    }
+    .sticky-tab-container .fix-container {
+        display: block;
+    	margin-bottom: 30px;
+    }
+    .investment-minimum {
+        width: 325px;
+    }
+    .disclaimer-container {
+        margin-top: 65px;
+        padding: 0;
+    }
+
+    /* adding */
+    .tabrightcontent {
+        display: block;
+        position: absolute;
+        top: 625px;
+        left: 900px;
+    	width: 420px;
+    }
+    .sticky-tabs {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        overflow: visible;
+        background: #fff;
+        width: 100%;
+    }
+    .sticky-tab-container, .purchase-fund-btn{
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .fixed-tabright {
+        position: fixed;
+        top: 120px;
+        z-index: 101;
+        right: 30px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .sticky-tab-container .card {
+        width: 70%;
+        float: left;
+        padding-right: 30px;
+    }
+    #tabrightcontent {
+        width: 30%;
+        display: inline-block;
+    }
+    .sticky-tab-container {
+        width: 100%;
+        float: left;
+    }
+    .sticky-tabs .nav-tabs {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width:1024px) and (orientation: landscape) {
+    .sticky-tab-container .card .collapse:not(.show) {
+        display: block;
+    }
+}
+@media only screen and (min-width:1024px) {
+     .sticky-tab-container .card .collapse:not(.show) {
+        display:block
+     }
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    #tabrightcontent{
+        display: none;
+    }
+}
+

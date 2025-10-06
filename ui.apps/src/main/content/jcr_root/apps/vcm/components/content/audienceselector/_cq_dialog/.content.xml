@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Audience Selection"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Background Container Tabs"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <Audienceselector
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Audience Selector"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <headingtext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Heading Text"
+                                                    fieldLabel="Heading"
+                                                    name="./headingText"
+                                                    required="{Boolean}true"/>
+                                            <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Description"
+                                                    fieldLabel="Description"
+                                                    name="./desc"/>
+                                            <individualinvestorsdescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Description for Individual Investor"
+                                                    fieldLabel="Description for Individual Investor"
+                                                    name="./individualInvestordesc"/>
+                                            <mempagelinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Members page link text"
+                                                    fieldLabel="Members page link text"
+                                                    name="./memPageLinkText"
+                                                    required="{Boolean}true"/>
+                                            <mempagelinkurl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Enter Members page link URL"
+                                                    fieldLabel="Members page link URL"
+                                                    name="./memPageLinkUrl"
+                                                    required="{Boolean}true"
+                                                    rootPath="/content/vcm"/>
+                                            <tabselect
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="To author target for link to be open in same tab or new tab"
+                                                    fieldLabel="Target"
+                                                    name="./tabSelect">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Same tab"
+                                                            value="_self"/>
+                                                    <newtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="New tab"
+                                                            value="_blank"/>
+                                                </items>
+                                            </tabselect>
+                                            <individualinvestorlinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Individual Investor link text"
+                                                    fieldLabel="Individual Investor link text"
+                                                    name="./individualInvestorLinkText"/>
+                                            <victoryinvestorlinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Victory Fund Investor page link text"
+                                                    fieldLabel="Victory Fund Investor page link text"
+                                                    name="./victoryFundLinkText"/>
+                                            <finprofpagelinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Financial Professional page link text"
+                                                    fieldLabel="Financial Professional page link text"
+                                                    name="./finProfPageLinkText"
+                                                    required="{Boolean}true"/>
+                                            <finprofpagelinkurl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Enter Financial Professional page Link URL"
+                                                    fieldLabel="Financial Professional page Link URL"
+                                                    name="./finProfPageLinkUrl"
+                                                    required="{Boolean}true"
+                                                    rootPath="/content/vcm"/>
+                                            <tabselectfinprofpage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="To author target for link to be open in same tab or new tab"
+                                                    fieldLabel="Target"
+                                                    name="./tabselectFinprof">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Same tab"
+                                                            value="_self"/>
+                                                    <newtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="New tab"
+                                                            value="_blank"/>
+                                                </items>
+                                            </tabselectfinprofpage>
+                                            <instinvpagelinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Institutional Investor page link text"
+                                                    fieldLabel="Institutional Investor page link text"
+                                                    name="./instInvPageLinkText"
+                                                    required="{Boolean}true"/>
+                                            <instinvpagelinkurl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Enter Institutional Investor page Link URL"
+                                                    fieldLabel="Institutional Investor page Link URL"
+                                                    name="./instInvPageLinkUrl"
+                                                    required="{Boolean}true"
+                                                    rootPath="/content/vcm"/>
+                                            <tabselectinstinvpage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="To author target for link to be open in same tab or new tab"
+                                                    fieldLabel="Target"
+                                                    name="./tabselectInstinv">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Same tab"
+                                                            value="_self"/>
+                                                    <newtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="New tab"
+                                                            value="_blank"/>
+                                                </items>
+                                            </tabselectinstinvpage>
+                                            <overlaylinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter text for overlay"
+                                                    fieldLabel="Overlay Text"
+                                                    name="./overlayText">
+                                            </overlaylinktext>
+                                            <overlaycontent
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldDescription="Choose overlay information from Content Fragments"
+                                                    fieldLabel="Attach Info overlay content"
+                                                    name="./overlayContentPath"
+                                                    rootPath="/content/dam/"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </Audienceselector>
+                    <individualinvestors
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Individual Investors Popup"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <usaafundslinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="USAA funds investor link text"
+                                                    fieldLabel="USAA funds investor link text"
+                                                    name="./usaafundsInvestorLinkText"/>
+                                            <usaafundslinkurl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Enter USAA funds investor link URL"
+                                                    fieldLabel="USAA funds investor link URL"
+                                                    name="./usaafundsInvestorLinkUrl"
+                                                    rootPath="/content/vcm"/>
+                                            <victoryfundslinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Victory funds investor link text"
+                                                    fieldLabel="Victory funds investor link text"
+                                                    name="./victoryfundsInvestorLinkText"/>
+                                            <finadvlinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Enter Financial advisor link text"
+                                                    fieldLabel="Financial advisor link text"
+                                                    name="./finadvLinkText"/>
+                                            <victoryfinadvlinkurl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Enter Victory Funds and Financial advisor link URL"
+                                                    fieldLabel="Victory Funds and Financial advisor link URL"
+                                                    name="./victoryFinadvLinkUrl"
+                                                    rootPath="/content/vcm"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </individualinvestors>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

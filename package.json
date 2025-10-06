@@ -1,0 +1,31 @@
+{
+  "name": "vcm",
+  "version": "1.0.0",
+  "description": "This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.",
+  "main": "index.js",
+  "dependencies": {
+    "aws-amplify": "^4.3.22",
+    "aws4": "^1.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.2",
+    "eslint-plugin-promise": "^6.0.0"
+  },
+  "scripts": {
+    "lint": "npx eslint **/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorycapital/vcm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorycapital/vcm/issues"
+  },
+  "homepage": "https://github.com/victorycapital/vcm#readme"
+}

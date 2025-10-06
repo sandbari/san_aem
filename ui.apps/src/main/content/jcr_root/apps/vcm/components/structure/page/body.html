@@ -1,0 +1,5 @@
+<sly data-sly-include="customPageProperties.html"></sly>
+<sly data-sly-include="customPageProductProperties.html"></sly>
+<sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+     data-sly-repeat.child="${templatedContainer.structureResources}"
+     data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>

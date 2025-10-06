@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+   jcr:description="Breadcrumb Dialog"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Breadcrumb"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_breadcrumb_v1"
+    trackingFeature="core-components:breadcrumb:v1"
+    extraClientlibs="[acs-commons.widgets.showhidedialogfields]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/tabs"
+              maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Breadcrumb Configs"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                       	 <type
+                             jcr:primaryType="nt:unstructured"
+                             granite:class="cq-dialog-dropdown-showhide"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                             fieldLabel="Breadcrumb Type"
+                             name="./breadCrumbType">
+                             <granite:data
+                           		 jcr:primaryType="nt:unstructured"
+                           		 acs-cq-dialog-dropdown-checkbox-showhide=""
+                            	 acs-cq-dialog-dropdown-checkbox-showhide-target=".breadCrumb-container-showhide-target"/>
+	                              <items jcr:primaryType="nt:unstructured">
+	                                  <dynamic
+	                                      jcr:primaryType="nt:unstructured"
+	                                      text="Dynamic"
+	                                      value="dynamic"/>
+	                                  <static
+	                                      jcr:primaryType="nt:unstructured"
+	                                      text="Static"
+	                                      value="static"/>
+	                              </items>
+                            </type>
+                           <dynamicConfig
+                              jcr:primaryType="nt:unstructured"
+                              granite:class="hide breadCrumb-container-showhide-target"
+                              jcr:title="Dynamic configurations"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                               <granite:data
+                                  jcr:primaryType="nt:unstructured"
+                                  acs-dropdownshowhidetargetvalue="dynamic"/>
+                                  <items jcr:primaryType="nt:unstructured">
+		                            <startLevel
+		                                jcr:primaryType="nt:unstructured"
+		                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+		                                fieldDescription="(eg: 1 for /content/site)"
+		                                fieldLabel="Navigation-Level to start"
+		                                max="100"
+		                                min="1"
+		                                name="./startLevel"
+		                                step="1"
+		                                value="${not empty cqDesign.startLevel ? cqDesign.startLevel : 2}"/>
+		                            <showHidden
+		                                jcr:primaryType="nt:unstructured"
+		                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+		                                checked="${not empty cqDesign.showHidden ? cqDesign.showHidden : false}"
+		                                fieldDescription="Show hidden navigation items in breadcrumb"
+		                                name="./showHidden"
+		                                text="Show Hidden"
+		                                uncheckedValue="false"
+		                                value="true"/>
+		                            <hideCurrent
+		                                jcr:primaryType="nt:unstructured"
+		                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+		                                checked="${not empty cqDesign.hideCurrent ? cqDesign.hideCurrent : false}"
+		                                fieldDescription="Don't display current page in breadcrumb"
+		                                name="./hideCurrent"
+		                                text="Hide Current"
+		                                uncheckedValue="false"
+		                                value="true"/>
+		                          </items>
+								</dynamicConfig>
+								<staticConfig
+		                              jcr:primaryType="nt:unstructured"
+		                              granite:class="hide breadCrumb-container-showhide-target"
+		                              jcr:title="Static configurations"
+		                              sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+		                               <granite:data
+		                                  jcr:primaryType="nt:unstructured"
+		                                  acs-dropdownshowhidetargetvalue="static"/>
+		                                  <items jcr:primaryType="nt:unstructured">	
+		                                  	<breadcrumbList
+						                        jcr:primaryType="nt:unstructured"
+						                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+						                        allowBlank="false"
+						                        composite="{Boolean}true"
+						                        fieldLabel="Nav items">
+						                        <field
+						                            jcr:primaryType="nt:unstructured"
+						                            sling:resourceType="granite/ui/components/coral/foundation/container"
+						                            name="./staticItems">
+						                            <items jcr:primaryType="nt:unstructured">
+						                                <column
+						                                    jcr:primaryType="nt:unstructured"
+						                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+						                                    <items jcr:primaryType="nt:unstructured">
+					                                            <navItem
+					                                                jcr:primaryType="nt:unstructured"
+					                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+					                                                fieldDescription="Select page to display in navigation"
+					                                                fieldLabel="Nav Item"
+					                                                name="./navItem"
+					                                                rootPath="/content/vcm"/>
+					                                         </items>
+					                                    </column>
+					                                </items>
+					                             </field>
+					                         </breadcrumbList>
+		                                  </items>
+								</staticConfig>			
+                        </items>
+                    </properties>
+                    
+            <Audienceselector
+                      jcr:primaryType="nt:unstructured"
+                      jcr:title="Audience Selector"
+                      sling:resourceType="granite/ui/components/coral/foundation/container"
+                      margin="{Boolean}true">
+                      <items jcr:primaryType="nt:unstructured">
+                          <columns
+                              jcr:primaryType="nt:unstructured"
+                              sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                              margin="{Boolean}true">
+                              <items jcr:primaryType="nt:unstructured">
+                                  <column
+                                      jcr:primaryType="nt:unstructured"
+                                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                                      <items jcr:primaryType="nt:unstructured">
+                                          <usertype
+                                              jcr:primaryType="nt:unstructured"
+                                              sling:resourceType="granite/ui/components/foundation/include"
+                                              path="vcm/components/content/common/audienceselector"/>
+                                      </items>
+                                  </column>
+                              </items>
+                          </columns>
+                      </items>
+                  </Audienceselector>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

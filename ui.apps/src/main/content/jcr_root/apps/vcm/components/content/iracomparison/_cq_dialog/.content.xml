@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="IRAComparison Authoring Dialog "
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <sectionheading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author the IRA heading"
+                        fieldLabel="IRA Heading"
+                        name="./sectionHeading"/>
+                    <sectiondescription
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldDescription="To author the text about IRA description"
+                        fieldLabel="IRA Description"
+                        name="./sectionDescription"/>
+                    <iratitleone
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author the title of the left side IRA"
+                        fieldLabel="IRA Title One"
+                        name="./iraTitleOne"/>
+                    <iratitletwo
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author the title of the right side IRA"
+                        fieldLabel="IRA Title Two"
+                        name="./iraTitleTwo"/>
+                    <iracomparison
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldDescription="To author the IRA comparison Description that appears above the table"
+                        fieldLabel="IRA Comparison Text"
+                        name="./iraComparisonText"/>
+                    <iratable
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="IRA Comparison Table"
+                        required="true">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./iraTable">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <iradetailone
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                            fieldDescription="To author the details of the left side IRA"
+                                            fieldLabel="Comparison Text One"
+                                            name="./iraDetailOne"
+                                            required="true"/>
+                                        <iradetailtwo
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                            fieldDescription="To author the details of the right side IRA"
+                                            fieldLabel="Comparison Text Two"
+                                            name="./iraDetailsTwo"
+                                            required="true"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </iratable>
+                    <buttondescription
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldDescription="To author the text above the button"
+                        fieldLabel="Button Description"
+                        name="./buttonDescription"/>
+                    <linktext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author text that appears in the Button."
+                        fieldLabel="Button Text"
+                        name="./linkText"/>
+                    <linkurl
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="to author the link of the Button"
+                        fieldLabel="Button URL"
+                        name="./linkUrl"
+                        rootPath="/content/vcm"/>
+                    <linkdescription
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author the aria-label or link description of the link. "
+                        fieldLabel="Link Description"
+                        name="./linkDescription"/>
+                    <tabselect
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldDescription="To author target for link to be open in same tab or new tab"
+                        fieldLabel="Target"
+                        name="./linkTarget">
+                        <items jcr:primaryType="nt:unstructured">
+                            <sametab
+                                jcr:primaryType="nt:unstructured"
+                                text="Same tab"
+                                value="_self"/>
+                            <newtab
+                                jcr:primaryType="nt:unstructured"
+                                text="New tab"
+                                value="_blank"/>
+                        </items>
+                    </tabselect>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

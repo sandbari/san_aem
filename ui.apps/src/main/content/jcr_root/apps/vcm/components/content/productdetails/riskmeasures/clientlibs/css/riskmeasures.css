@@ -1,0 +1,126 @@
+.risk-time-tabs ul {
+    margin: 19px 0;
+}
+
+.align-right {
+    text-align: right;
+    clear: both;
+    font-size: 14px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dotted-text {
+    color: #004A98;
+    border-bottom: 1px dotted #004A98;
+}
+
+.risk-time-tabs li {
+    font-family: benton-sans, sans-serif;
+    font-size: 16px;
+    color: #004A98;
+    width: 160px;
+    margin-right: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 12px;
+    font-weight: 600;
+    position: relative;
+    width: 90px;
+    cursor: pointer;
+}
+.riskmeasures .heading {
+	margin: 15px 0 0;
+}
+
+.risk-time-tabs li.active {
+    color: #49494A;
+    border: 1px solid #75757A;
+    box-shadow: 0px 2px 8px #00000034;
+    cursor:default;
+}
+
+.risk-time-tabs li:after,
+.risk-time-tabs li:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.risk-time-tabs li.active:after {
+    border-color: #88b7d500;
+    border-top-color: #ffffff;
+}
+
+.risk-time-tabs li.active:before {
+    border-color: transparent;
+    border-top-color: #75757A;
+    border-width: 12px;
+    margin-left: -12px;
+}
+
+
+.risk-table-data {
+    position: relative;
+}
+.product-details table.risk-table th{
+    padding: 20px 6px;
+}
+.product-details .risk-table tbody td {
+    padding: 20px 6px;
+    vertical-align: middle;
+}
+.risk-measures-component .heading {
+	margin: 15px 0 0;
+}
+
+.product-details .heading  .risk-measures-title {
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #49494A;
+}
+.product-details .table.risk-table thead th{
+	 min-width: 110px;
+ }
+  .product-details .table.risk-table thead tr th:nth-child(2), .product-details .table.risk-table thead tr th:nth-child(3) {
+     min-width: 80px;
+
+ }
+  .product-details table.risk-table th:first-child, .product-details table.risk-table tbody tr td:first-child {
+     min-width: 133px;
+     text-align: left;
+  }
+
+.riskmeasures {
+	position: relative;
+}
+
+.dynamic-loader-riskmeasures {
+	position: absolute;
+	left: 45%;
+	top: 20%;
+}
+
+/* table style ends */
+@media screen and (max-width: 768px) {
+   .align-right {
+    text-align: left;
+    padding-top:10px;
+}
+
+}
+@media screen and (min-width: 1024px) {
+    .riskmeasures .heading {
+        margin: 0 0 5px;
+    }
+}

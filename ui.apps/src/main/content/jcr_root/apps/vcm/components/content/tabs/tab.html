@@ -1,0 +1,26 @@
+<template data-sly-template.tab="${@ customTabs}">
+<div id="performance-tabs">
+         <ul class="tablist" role="tablist" aria-label="tab detail">
+            <sly data-sly-list.resTab="${customTabs.tabResourceList}">
+               <li><a aria-selected="false" aria-controls="performance-tabs-${resTabList.index}" role="tab" tabindex="-1" href="#performance-tabs-${resTabList.index}">${resTab.tabTitle}</a></li>
+            </sly>
+         </ul>
+         <sly data-sly-list.resTab="${customTabs.tabResourceList}">
+            <div class="tabCont" id="performance-tabs-${resTabList.index}">
+               <div class="tab-content">
+                  <sly data-sly-resource="${resTab.resourcePath @ resourceType=resTab.resourceType}"></sly>
+               </div>
+            </div>
+         </sly>
+      </div>
+      <div class="accordion">
+         <sly data-sly-list.resTab="${customTabs.tabResourceList}">
+            <div class="tab-acrdion-hdng">
+               <p><a href="">${resTab.tabTitle}</a> </p>
+            </div>
+            <div class="tab-acrdion-body">
+               <sly data-sly-resource="${resTab.resourcePath @ resourceType=resTab.resourceType}"></sly>
+            </div>
+         </sly>
+      </div>
+</template>

@@ -1,0 +1,23 @@
+{
+"jcr:primaryType": "nt:unstructured",
+"jcr:createdBy": "admin",
+"jcr:lastModifiedBy": "admin",
+"jcr:created": "Fri Mar 06 2020 12:07:08 GMT+0530",
+"heading": "Mutual Funds",
+"jcr:lastModified": "Fri Mar 06 2020 12:07:53 GMT+0530",
+"sling:resourceType": "vcm/components/content/productAccordion",
+"productPages": {
+"jcr:primaryType": "nt:unstructured",
+"linkUrl": "/content/vcm/us/en/about-victory",
+"item0": {
+"jcr:primaryType": "nt:unstructured",
+"linkUrl": "/content/vcm/us/en/about-victory",
+"tabSelect": "_self"
+},
+"item1": {
+"jcr:primaryType": "nt:unstructured",
+"linkUrl": "/content/vcm/en/CorporateHome-Demo",
+"tabSelect": "_self"
+}
+}
+}

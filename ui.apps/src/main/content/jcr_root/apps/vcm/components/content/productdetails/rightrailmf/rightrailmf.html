@@ -1,0 +1,48 @@
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-test="${pageProperties.rightrailmf}">
+    <div class="product-details rightrail-mf">
+        <div class="fundyield-container">
+            <div id="mf" class="fund-information">
+                <div class="inv_min_div">
+                    <h3 class="heading investMinHeader"></h3>
+                    <p><span class="text-bold init_invest_min"></span><span class='align-right'><span class='invest_init'></span></span></p>
+                    <p class="initauto"><span class="text-bold init_auto_invest autonvt_lbl"></span><span class='align-right'><span class='invest_init_auto'></span></span></p>
+                    <p><span class="text-bold auto_invest_label lbl_name"></span><span class='align-right'><span class='auto_invest_min'></span></span></p>
+                    <p class="line-space-6"></p>
+                </div>
+                <div class="fund_fact_div">
+                    <h3 class="heading fund_fact_header ff_div"><span class='align-right'><span class="ax_display">${overlayModel.overlayTextPrefix} </span><span class="ax_display ax-ml-5"><span class="popup-modal popup-link"><a href="#" role="button" data-popup="${overlayModel.overlayId}" ><span aria-hidden="true">${overlayModel.overlayLinkText}</span><span class="sr-only">Fund facts terms</span><span class="sr-only">Opens a popup</span></a></span></h3>
+                    <p class="line-space"></p>
+                    <p class="line-space-2 ff_div"><span class="aum_label_wrapper"><span class="text-bold total_aum_label"></span><span>(As of <span class='mf_as_of'></span>)</span></span><span class='align-right aum_value'><span class='aum'></span></span></p>
+                    <!--<p class="line-space-0 ff_div dateSpan">-->
+                    <p class="line-space-6 ff_div"></p>
+                    <p class="line-space-2 ff_div ff_volatity"><span class="text-bold volatility_label"></span><span class='align-right'><span class="riskGraph"></span></span></p>
+                    <p class="line-space-0 ff_div ff_volatity"><span class='volatility'></span></p>
+                    <p class="line-space-2 ff_div"></p>
+                    <p><span class="fee_mflabel_asof"></span><span class="align-right"></span></p>
+                    <p><span class="text-bold gross_exp_label ff_div"></span><span class='align-right'><span class='mf_gross_expense_ratio'></span></span></p>
+                    <p><span class="text-bold net_exp_label ff_div"></span><span class='align-right'><span class='mf_net_expense_ratio'></span></span></p>
+                    <hr>
+                    <p><span class="text-bold category_label ff_div"></span><span class='align-right'><span class='categorymf-value'></span></span></p>
+                    <p><span class="text-bold incept_Date_label ff_div"></span><span class='align-right'><span class='inception_date'></span></span></p>
+                    <p><span class="text-bold cusip_label ff_div"></span><span class='align-right'><span class='category-cusip'></span></span></p>
+                    <p class="line-space"></p>
+                </div>
+            </div>
+            <sly data-sly-test="${model.tileContent}">
+                <div class="fund-literature">
+                    <span style="display: none" id="fund-literature-external-link">Opens a PDF in new window </span>
+                    <a href="${properties.linkUrl @ extension='html'}" target="_blank"><h3>${properties.linkText}</h3><span class="sr-only"> Opens a new window </span></a>
+                    <p>${properties.linkDescription}</p>
+                </div>
+            </sly>
+        </div>
+    </div>
+<div class="dynamic-loader-rightrailmf">
+	<img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+</div>
+<div class="product-details-error-message error-message-rightrailmf">
+	<p></p>
+</div>
+
+</sly>

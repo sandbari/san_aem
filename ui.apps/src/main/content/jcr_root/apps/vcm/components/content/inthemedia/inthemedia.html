@@ -1,0 +1,22 @@
+<sly data-sly-use.newsModel="com.vcm.core.models.NewsModel"/>
+<sly data-sly-test.author="${wcmmode.edit}">
+   <h4>Edit ${component.title} Component</h4>
+</sly>
+<sly data-sly-test.previewMode = "${!wcmmode.edit && newsModel.mediaTitle ? 'inmedia-card' : 'inmedia-card invisible'}"/>
+
+
+    <div class="row no-gutter ${wcmmode.edit && newsModel.mediaTitle ? 'inmedia-card-author-mode' : previewMode}">
+        <div class="col-6 news-source">
+            <a href="#">
+                <img src="${newsModel.mediaIcon}" alt="${newsModel.altText || true}"/>
+                <span>${newsModel.mediaSource}</span>
+            </a>
+        </div>
+        <div class="col-6 news-date">
+            <p>${newsModel.mediaDate}</p>
+        </div>
+        <div class="col-12 news-details">
+            <h3>${newsModel.mediaTitle}</h3>
+            ${newsModel.mediaDescription @context = 'html'}
+        </div>
+    </div>

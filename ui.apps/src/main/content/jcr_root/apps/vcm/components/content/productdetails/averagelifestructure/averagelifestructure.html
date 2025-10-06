@@ -1,0 +1,38 @@
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-test="${pageProperties.averagelifestructure}">
+    <div class="product-details average-life-structure">
+        <div class="row pdg-24">
+            <h3 class="heading col-lg-8 averageClassHead">
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                        <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Average Life Structure" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                        <span class="sr-only tooltip-content" aria-live="polite"></span>
+                    </sly>
+                </sly>
+                <span>(As of <span class="averagelife-asof"></span>)</span>
+            </h3>
+            <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                    <p class="align-right col-lg-4">
+                        <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+                    </p>
+                </sly>
+            </sly>
+        </div>
+        <div class="visual-container average-life-chart-wrapper">
+            <div class="average-asset-data" aria-hidden="true">
+                <div id="average-chart"></div>
+            </div>
+            <div class="average-life-table-wrapper">
+                <table class="table average-life-table"><caption class="sr-only">${component.title}</caption></table>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-averagelife">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message error-message-averagelife">
+        <p></p>
+    </div>
+    
+</sly>

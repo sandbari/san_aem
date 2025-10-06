@@ -1,0 +1,141 @@
+@media(min-width : 768px) {
+	.donutChart {
+		width: 95%;
+		margin: 0 auto;
+	}
+   .piechart .highcharts-container {
+   	 height:465px !important;
+	}
+	#descp{
+		float:left;
+		width: 40%;
+		padding: 18% 3%;
+	}
+	#donut_container{
+		width:60%;
+	}
+	.donut_descp{
+		bottom: -4px;
+		z-index: 99;
+		position: inherit;
+		right: 0;
+		left: 28px;
+		font-size:16px;
+		text-align:center !important;
+	}
+    .viewDonut .donut_header{
+        float:left;
+        font-size:18px;
+    }
+	.viewDonut .donut_header{
+        float:left;
+        font-size:18px;
+    }
+	.donut_header{
+		font-size:22px;
+	}
+	.donut_age{
+		font-size:16px;
+	}
+	.donut_content{
+		border-bottom:none;
+	}
+	.descp_0 .donut_descp{
+		clear:both;
+		/* position:absolute;
+		bottom:0; */
+	}
+	.viewcolumn {
+		flex: 0 0 46%;
+		max-width: 46%;
+	}
+	.donut_header, .donut_age{
+		font-size:18px;
+        float:left;
+        margin:0;
+	}
+.withSlider .donut_header,.withSlider .donut_age{
+ float:none;
+            }
+
+    .donut_age{
+		font-size:15px;
+        float:right;
+	}
+	.piechart .highcharts-container {
+		height:auto !important;
+	}
+	.viewData{
+		color: #004A98;
+		font-size: 16px;
+		position: relative;
+		font-family: yorkten-slab-normal, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		padding-top:25px;
+	}
+	.viewData:after {
+		content: "";
+		background-image : url('../resources/right-arrow.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 32px;
+		height: 32px;
+		position: absolute;
+		right: -40px;
+		opacity: 1;
+		border-radius: 20px;
+		top: 19px;   
+	}
+.donutChart p.donut_descp{
+    text-align:left !important;
+}
+.centerDiv{
+   justify-content: center;
+    }
+.oneTile{
+    padding-left:27%;
+    }
+    .twoTile{
+    padding-left:3%;
+    }
+
+}
+@media(min-width : 992px) {
+	.viewcolumn {
+		flex: 0 0 30.333333%;
+		max-width: 30.333333%;
+	}
+
+	.viewDonut p.donut_header{
+		font-size:18px;
+	}
+	 .donut_age{
+		font-size:16px;
+        font-weight:400;
+	}
+    .withSlider .donut_age{
+    font-weight:700;
+}
+.oneTile{
+    padding-left:35%;
+    }
+ .twoTile{
+    padding-left:18%;
+    }
+}
+
+@media(max-width:767px){
+    #donut_container .highcharts-root{
+        width:315px;
+        height:315px!important;
+    }
+    #donut_wrapper .st-teaser-link .st-arrow-link::after{
+        top:0;
+    }
+}
+@media(min-width : 768px) and (max-width : 1024px){
+    .viewDonut h5.donut_header{
+        font-size:16px;
+    }
+}

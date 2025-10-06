@@ -1,0 +1,9 @@
+<template data-sly-template.leader="${@ leaderbio,teamDisplayStyle}">
+	<div class="${teamDisplayStyle == 'shortInfo'? 'col-lg-4 col-md-12 col-sm-12 mt-30': 'col-lg-6 col-md-12 col-sm-12 mb-20 mb-sm-30'}">
+		<a class="link-card navg-arw-rv-center ${teamDisplayStyle == 'shortInfo'? 'cnr-triangle-left-sm-skyblue shadow-md-1-sm-0': 'cnr-triangle-left-sm-blue'} ui-link" href="${leaderbio.pagePath @ extension='html'}">
+			<h4 class="txt-black bioTitleDescription" role="presentation">${leaderbio.fullname}<sly data-sly-test="${leaderbio.titleAbbreviation}">, ${leaderbio.titleAbbreviation} </sly></h4>
+			<sly data-sly-test="${leaderbio.titleDescription}"><p class="desc">${leaderbio.titleDescription}</p></sly>
+			<sly data-sly-test="${leaderbio.designation}"><p class="desc bioTitleDescription">${leaderbio.designation}</p></sly>
+		</a>
+	</div>
+</template>

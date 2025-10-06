@@ -1,0 +1,41 @@
+.st-cmp-social-media {
+    border-bottom: 1px solid #D2D2D2;
+    max-width: 1366px;
+    padding-bottom: 30px;
+    margin-bottom: 42px;
+}
+
+.st-cmp-wrapper.st-cmp-social-media ul li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.st-cmp-wrapper.st-cmp-social-media ul li:last-child {
+    margin-right: 0
+}
+
+
+
+.st-cmp-social-media.st-all-about-mutual-fund img {
+    height: 37px;
+}
+
+/***************** TABLET STYLES  ****************/
+
+@media screen and (max-width:1024px) {
+    .mail-icon{
+        width:43px;
+    }
+    .st-cmp-social-media img {
+        height: 37px;
+    }
+}
+
+@media screen and (max-width:991px) {
+	.st-cmp-social-media.st-all-about-mutual-fund {
+        margin-top: 40px;
+    }
+}
+/***************** MOBILE STYLES *****************/
+
+@media screen and (max-width:767px) {}

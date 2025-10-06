@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+	debug.email="{Boolean}false"
+	smtp.host="vpce-04d0fdcc4aae929d7-gvakac7c.email-smtp.us-east-1.vpce.amazonaws.com"
+	smtp.password="BNyKbAMwLwpq59+u5vgy7Gu3xZOJfRoEnf64uzPU8JJq"
+	smtp.port="25"
+	smtp.port="587"
+	smtp.ssl="{Boolean}false"
+	smtp.starttls="{Boolean}true"
+	smtp.user="AKIAU7ZTI2FE36AEECEK"/>

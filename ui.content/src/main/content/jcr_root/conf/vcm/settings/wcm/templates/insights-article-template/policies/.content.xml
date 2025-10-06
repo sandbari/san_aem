@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-03-07T21:49:03.579+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-03-07T21:50:07.452+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:uuid="0d495fd4-9764-44aa-9f88-d5eb213b8d26"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="wcm/foundation/components/responsivegrid/policy_1580365835970"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <responsivegrid
+                cq:policy="wcm/foundation/components/responsivegrid/policy_1580365835970"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+            <backgroundcontainer
+                cq:policy="vcm/components/content/backgroundcontainer/policy_18853941951401686"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <content-bg jcr:primaryType="nt:unstructured">
+                    <columncontrol jcr:primaryType="nt:unstructured">
+                        <content2
+                            cq:policy="wcm/foundation/components/parsys/policy_1591953940723"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                        <content1
+                            cq:policy="wcm/foundation/components/parsys/policy_1591954009748"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </columncontrol>
+                </content-bg>
+            </backgroundcontainer>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,313 @@
+.asteriskColor {
+     color: red;
+}
+ .displayInlineBlock {
+     display: inline-block;
+}
+
+ .marginBottom10 {
+     margin-bottom: 10px;
+}
+ .marginBottom5 {
+     margin-bottom: 5px;
+}
+ .marginTop10 {
+     margin-top: 10px;
+}
+ .marginTop5 {
+     margin-top: 5px;
+}
+ .pdngleft35 {
+     padding-left: 40px !important;
+}
+ .faqdetails h2.blueHdng-greenBorder {
+     font-size: 22px;
+     color: #486D90;
+     padding-bottom: 10px;
+     border-bottom: 2px solid #8BC105;
+     display: inline-block;
+     font-family: yorkten-slab-normal, sans-serif;
+     font-weight: 800;
+     font-style: normal;
+     margin-left: 8px !important;
+}
+ .faqdetails .card-header.collapsed .blueHdng-greenBorder {
+     padding-bottom: 0px;
+     border:none;
+}
+ .mid-icon[aria-expanded='false']:first-child .accordionPlusIcon {
+     position: relative;
+     top: 4px;
+}
+ .mid-icon[aria-expanded='true']:first-child .accordionPlusIcon {
+     position: relative;
+     top: 4px;
+}
+ .card-triangle-hdng-cont-cta p {
+     margin-top: 30px !IMPORTANT;
+}
+ .acc-padtp {
+     padding-top: 1.25rem !important;
+}
+ .acc-segregation {
+     margin-top: 50px;
+     float: left;
+}
+ .card-header:first-child {
+     border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+     border: none;
+}
+ .allfaqs {
+     background: #F7F7F7 0% 0% no-repeat padding-box;
+     box-shadow: 0px 0px 25px #00000029;
+     padding-left: 11px;
+}
+ .allfaqs p:first-child {
+     padding: 2px 0 35px 0 !important;
+}
+ .allfaqs p {
+     padding: 0 0 35px 0 !important;
+}
+ .accordionContainer .card-link {
+     font-family: benton-sans, sans-serif;
+     font-size: 18px;
+     color: #54565A;
+	  line-height: 24px;
+     width: 86%;
+     font-weight: 600;
+     float: left;
+     padding: 0 !important;
+     margin: 0 !important;
+}
+ .noContent {
+     color: #000 !important;
+     background-color: transparent !important;
+     pointer-events: none;
+}
+ .seeall-nocontent {
+     background: none !important;
+     width: 100% !important;
+     text-align: center;
+     font-family: yorkten-slab-normal, sans-serif;
+     font-size: 16px;
+}
+.faqdetails .accordionContainer .acc-segregation .first-card{
+ border-top : none !important;
+}
+ .faqdetails .accordionContainer .card {
+    border-top: 1px solid #d8d8d8 !important;
+    border-bottom: none !important;
+    border: 0;
+    cursor: auto;
+    width: 99% !important;
+    height: auto !important;
+    display: block;
+    float: left;
+    background: #fff;
+}
+ .faqdetails .accordionContainer .card-body {
+     color: #54565A;
+     background: #fff;
+     padding-top: 0;
+     font-size: 16px;
+     font-family: benton-sans, sans-serif;
+     padding-bottom: 10px;
+     line-height: 24px;
+}
+ .card-body p a {
+     font-family: benton-sans, sans-serif;
+     font-size: 16px;
+     font-weight: 600;
+}
+ .faqdetails .accordionContainer .card-header.collapsed, .accordionContainer .card-header {
+     background-color: #fff;
+}
+ .accordionContainer .card-header {
+     border-bottom: none;
+}
+ .faqdetails .card-header{
+    padding-left: 10px;
+    padding-right: 36px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    cursor:pointer;
+    overflow:hidden;
+}
+ .faqdetails .accordionContainer .card {
+     margin-top:0;
+}
+ .faqdetails .loadMore {
+     font-weight: 800;
+     font-size: 16px;
+     font-family: yorkten-slab-normal, sans-serif;
+     background: url(../images/seeall-ar.svg) 60px 0 no-repeat;
+     color: #004A98;
+     width: 98px;
+     height: 30px;
+     margin: 12px !important;
+}
+  .faqdetails .card-header[aria-expanded='true'] .accordionPlusIcon {
+     background: url(../resources/acc-closed.svg) no-repeat !important;
+     width: 26px;
+     height: 20px;
+     float: right;
+     position: relative;
+     bottom: 0px;
+     right:3px;
+}
+  .faqdetails .card-header[aria-expanded='false'] .accordionPlusIcon {
+     background: url(../resources/acc-open.svg) no-repeat;
+     width: 26px;
+     height: 20px;
+     position: relative;
+     bottom: 0;
+     float: right;
+     right:3px;
+}
+ .acc-title {
+     padding: 23.5px 10px;
+     margin-top: 5px;
+     margin-bottom: 8px;
+     background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0 2px 16px #0000002B !important;
+}
+ #showallfaq .card-body {
+     padding: 1.25rem;
+}
+ .faqdetails #accordion .card-body {
+     border-bottom: none;
+     padding: 6px 36px 30px 10px;
+}
+ .faqdetails #accordion .card-body p{
+	 margin-top:10px;
+ }
+.faqdetails #accordion .card-body p:first-child{
+	 margin-top:0;
+ }
+ .acc-title.card-header {
+     cursor: pointer;
+}
+ @media (min-width: 768px){
+     .faq-wrapper .col-lg-3{
+         margin-top:0px;
+    }
+     .asteriskColor {
+         color: red;
+    }
+     .displayInlineBlock {
+         display: inline-block;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+		   .mid-icon[aria-expanded='true']:first-child .accordionPlusIcon {
+        position: absolute;
+        top: 30px;
+        right:38px;
+      }
+       .mid-icon[aria-expanded='false']:first-child .accordionPlusIcon {
+          position: absolute;
+          top: 30px;
+          right: 38px;
+}
+         .accordionContainer .card {
+             display: none;
+        }
+
+         .accordionContainer .card-link {
+             width: 90%;
+        }
+        .faqdetails .acc-segregation {
+             margin-top: 30px;
+             margin-bottom:20px;
+        }
+        .faqdetails h3.blueHdng-greenBorder {
+             font-size: 22px;
+        }
+       .faqdetails .loadMore {
+             display: block;
+             font-weight: 800;
+             font-size: 16px;
+             font-family: yorkten-slab-normal, sans-serif;
+             background: url(/content/dam/vcm/faqdetails/images/seeall-ar.svg) 60px 0 no-repeat !important;
+             color: #004A98;
+             width: 98px;
+             height: 30px;
+             margin: 12px 0 0 0 !important;
+             float:left;
+        }
+         .faq-wrapper .row{
+             margin:0;
+        }
+         .faq-wrapper .col-lg-3{
+             margin-top:50px;
+        }
+         .faq-wrapper .st-box-border-green-left{
+             margin:0 15px;
+        }
+         .faq-wrapper .pl-0{
+             padding-left: 0 !important;
+             padding-right: 0!important;
+        }
+     		.faqdetails .card-header {
+         padding-left: 10px;
+         padding-right: 36px;
+         padding-top: 24px;
+         padding-bottom: 14px;
+         cursor: pointer;
+         overflow: hidden;
+       }
+      		.faq-wrapper .card-body {
+          border-bottom: none;
+          padding: 6px 36px 10px 10px !important;
+      }
+    .faqdetails  .acc-content-s-h  .card-link{
+		padding-left:8px;
+	}
+    .faqdetails h2.blueHdng-greenBorder {
+     width:auto;
+     max-width:250px;
+	 display: inline;
+		position: relative;
+		font-size: 22px!important;
+		line-height: 24px!important;
+		color: #486d90;
+		font-family: yorkten-slab-normal,sans-serif;
+		padding-bottom: 10px;
+		margin-left:0!important;
+		border-bottom:0!important;
+	}
+	.faqdetails .card-header.collapsed h2.blueHdng-greenBorder::after{
+		border:0;
+	}
+	.faqdetails h2.blueHdng-greenBorder::after{
+		position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px solid #8bc105;
+    content: "";
+	}
+	.faqdetails h3.blueHdng-greenBorder{
+		
+	}
+ }
+  @media (min-width: 768px){
+         .faq-wrapper .col-lg-3{
+             margin-top:0px;
+        }
+         .faq-wrapper .row {
+             margin-right: -15px;
+             margin-left: -15px;
+        }
+        .asteriskColor {
+            color: red;
+        }
+       .displayInlineBlock {
+           display: inline-block;
+      }
+   }
+     .faqdetails  .json-data {
+       display: none;
+    }

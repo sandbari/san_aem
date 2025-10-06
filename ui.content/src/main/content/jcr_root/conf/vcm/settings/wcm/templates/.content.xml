@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    cq:lastReplicated="{Date}2020-04-19T07:16:59.790Z"
+    cq:lastReplicatedBy="vmohanam"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus,rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <corporate-pages-template/>
+    <homepage-template/>
+    <_x0037_0-30-layout-content-template/>
+    <content-page/>
+    <content-fragment-template/>
+    <vcm-xf-template/>
+    <vcm-static-page/>
+    <rep:policy/>
+</jcr:root>

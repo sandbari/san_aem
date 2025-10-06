@@ -1,0 +1,284 @@
+<sly data-sly-use.postloginheader="com.vcm.core.models.PostloginHeader"/>
+<div class="header">
+   <header class="container member">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light" role="presentation">
+         <div class="logo">
+            <a class="navbar-brand postlogin-logo" data-memberurl="${postloginheader.homeMemberUrl}" data-guesturl="${postloginheader.homeGuestUrl}" href="${postloginheader.homeMemberUrl}">
+               <img class="home-logo" src="/content/dam/vcm/basic/VCM-logo.svg" alt=""></a>
+         </div>
+         <div class="mobileCls" role="navigation">
+            <div class='top_menu_cont'>
+               <ul class="showinDesktop toplinks">
+                  <li>
+                     <div class="pl-dropdown-wrap">
+                        <button aria-expanded="false" aria-haspopup="true" aria-label="More Options" class="sc-iAyFgw cslLqb menuDropIcon"></button>
+                        <span class="user-icon">
+                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16 fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" alt="User Profile Image" style="margin: 0px 20px 0px 15px; color: rgb(255, 255, 255); width: 30px; height: 30px;"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
+                        </span>
+                        <ul role="menu" class="sc-hSdWYo godZyJ post-dropMenu" style="">
+                           <sly data-sly-list.dropdownLinks="${postloginheader.dropdownLinks}">
+                              <sly data-sly-test="${!dropdownLinksList.last}">
+                                 <sly data-sly-test.linkurl="${dropdownLinks.dropdownLinkUrl}"/>
+                                 <li role="menuitem" aria-labelledby="vcm-menu-item-${dropdownLinksList.index}" aria-disabled="false" tabindex="-1" class="sc-eHgmQL dwgpNb ${dropdownLinks.guestuserDropdown == 'true' ? '' : 'non-guest-user'}">
+                                    <a href="${linkurl}" target="${dropdownLinks.dropdowntabSelect}"> <span id="vcm-menu-item-${dropdownLinksList.index}" class="sc-cvbbAY aHflZ">${dropdownLinks.dropdownLinkText}</span></a>
+                                 </li>
+                              </sly>
+                              <sly data-sly-test="${dropdownLinksList.last}">
+                                 <li role="menuitem" aria-labelledby="vcm-menu-item-Sign-Out" aria-disabled="false" tabindex="-1" class="sc-eHgmQL dwgpNb ${dropdownLinks.guestuserDropdown == 'true' ? '' : 'non-guest-user'}">
+                                    <a href="${dropdownLinks.dropdownLinkUrl}" target="${dropdownLinks.dropdowntabSelect}">
+                                       <span id="vcm-menu-item-Sign-Out" class="sc-cvbbAY aHflZ signout">${dropdownLinks.dropdownLinkText}</span>
+                                    </a>
+                                 </li>
+                              </sly>
+                           </sly>
+                        </ul>
+                     </div>
+                  </li>
+                  <li tabindex="0" class="headerUpperRowIcons">
+                  </li>
+                  <!--<li tabindex="0" class="headerUpperRowIcons user-info-icon"><a data-memberurl="${postloginheader.basicinfoUrl}" data-guesturl="${postloginheader.basicinfoUrlGuest}" href="${postloginheader.basicinfoUrl}"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16 fa-2x " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"  style="margin: 16px 20px 0px 15px; color: rgb(255, 255, 255); width: 30px; height: 30px;"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg></a></li>-->
+                  <li tabindex="0" class="headerUpperRowIcons non-guest-user">
+                     <div style="color: rgb(255, 255, 255);">
+                        <div data-testid="MessageIconComponent" role="presentation">
+                           <div data-testid="message-icon-component" tabindex="-1" src="/content/dam/vcm/basic/Icon_Mail_White.65155839.svg" badge="[object Object]"  fontawesomestyle="[object Object]" icon="[object Object]" arialabel="" style="cursor: pointer;">
+                              <a href="${postloginheader.messageCenterUrl}">
+                                 <div>
+                                    <span data-testid="Badge" class="badge badge-info">1</span>
+                                 </div>
+                                 <img src="/content/dam/vcm/basic/Icon_Mail_White.svg" alt="" data-testid="message-icon-component"  badge="[object Object]" fontawesomestyle="[object Object]" icon="[object Object]" arialabel="" class="" style="line-height: unset; color: green; width: 31px; height: 16px; margin: 24px 19px 0px;"></a>
+                           </div>
+                           <div data-testid="message-list-popover"></div>
+                        </div>
+                     </div>
+                  </li>
+                  <li><span class="showinDesktop searchIcon"><img class="call-image" src="/content/dam/vcm/basic/searchicon.svg" alt="search"></span></li>
+               </ul>
+               <div class='right_menu_cont hide-desktop'>
+                  <a class="user-info-icon" data-memberurl="${postloginheader.basicinfoUrl}" data-guesturl="${postloginheader.basicinfoUrlGuest}" href="${postloginheader.basicinfoUrl}"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16 fa-2x "  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"  style="margin: 0px 20px 14px 15px; color: rgb(255, 255, 255); width: 30px; height: 30px;"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg></a>
+                  <div class="pl-dropdown-wrap">
+                     <button aria-expanded="false" aria-haspopup="true" aria-label="More Options" class="sc-iAyFgw cslLqb menuDropIcon"></button>
+                     <ul role="menu" class="sc-hSdWYo godZyJ" style="">
+                        <sly data-sly-list.dropdownLinks="${postloginheader.dropdownLinks}">
+                           <sly data-sly-test="${!dropdownLinksList.last}">
+                              <sly data-sly-test.linkurl="${dropdownLinks.dropdownLinkUrl}"/>
+                              <li role="menuitem" aria-labelledby="vcm-menu-item-${dropdownLinksList.index}-mbl" aria-disabled="false" tabindex="-1" class="sc-eHgmQL dwgpNb ${dropdownLinks.guestuserDropdown == 'true' ? '' : 'non-guest-user'}">
+                                 <a href="${linkurl}" target="${dropdownLinks.dropdowntabSelect}"> <span id="vcm-menu-item-${dropdownLinksList.index}-mbl" class="sc-cvbbAY aHflZ">${dropdownLinks.dropdownLinkText}</span></a>
+                              </li>
+                           </sly>
+                           <sly data-sly-test="${dropdownLinksList.last}">
+                              <li role="menuitem" aria-labelledby="vcm-menu-item-Sign-Out-mbl" aria-disabled="false" tabindex="-1" class="sc-eHgmQL dwgpNb ${dropdownLinks.guestuserDropdown == 'true' ? '' : 'non-guest-user'}">
+                                 <a href="${dropdownLinks.dropdownLinkUrl}" target="${dropdownLinks.dropdowntabSelect}">
+                                    <span id="vcm-menu-item-Sign-Out-mbl" class="sc-cvbbAY aHflZ signout">${dropdownLinks.dropdownLinkText}</span>
+                                 </a>
+                              </li>
+                           </sly>
+                        </sly>
+                     </ul>
+                  </div>
+                  <div  class="msg-icon-wrap non-guest-user">
+                     <div data-testid="MessageIconComponent" role="presentation">
+                        <div data-testid="message-icon-component" tabindex="-1" src="/content/dam/vcm/basic/Icon_Mail_White.65155839.svg"  badge="[object Object]"  fontawesomestyle="[object Object]" icon="[object Object]" arialabel="" style="cursor: pointer;">
+                           <a href="${postloginheader.messageCenterUrl}">
+                              <div>
+                                 <span data-testid="Badge" class="badge badge-info">1</span>
+                              </div>
+                              <img src="/content/dam/vcm/basic/Icon_Mail_White.svg" alt="" data-testid="message-icon-component"  badge="[object Object]" fontawesomestyle="[object Object]" icon="[object Object]" arialabel="" class="" style="line-height: unset; color: green; width: 31px; height: 16px; margin: 24px 19px 0px;"></a>
+                        </div>
+                        <div data-testid="message-list-popover"></div>
+                     </div>
+                  </div>
+                  <!--<span class="showinDesktop searchIcon">
+                  <img class="call-image" src="images/searchicon.svg" alt="search">
+                  </span>-->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent-PreLog" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Menu">
+                     <span class="my-1 mx-2 close">&times;</span>
+                     <span class="my-1 mx-2 close-btn">close</span>
+                     <span class="navbar-toggler-icon hamburger-menu pull-left"><span class="icon-bar"></span><span class="icon-bar sec-bar"></span><span class="icon-bar thr-bar"></span><span class="mobile-menu-button">Menu</span></span>
+                  </button>
+               </div>
+            </div>
+            <div class="collapse navbar-collapse btm-links" id="navbarToggleExternalContent-PreLog">
+               <form class="hide-desktop form-inline my-lg-0">
+                  <p class="searchLabel">Search</p>
+                  <input class="form-control mr-sm-2" type="search" placeholder="How can we help you today?" aria-label="Search" onclick="javascript:sharedJS.openSearchNav()">
+                  <button class="searchButton" type="button">
+                     <i class="fa fa-search search-icon-green"></i>
+                  </button>
+               </form>
+               <ul class="navbar-nav mr-auto listCont">
+                   <li class="nav-item" data-show-this-menu-for="ALL">
+                       <a class="nav-link target-link home-url" data-memberurl="${postloginheader.homeMemberUrl}" data-guesturl="${postloginheader.homeGuestUrl}" href="${postloginheader.homeMemberUrl}" target="${postloginheader.homeTabSelect}">${postloginheader.homeLinkText}  <img class="rightArrow" src="/content/dam/vcm/basic/right-arrow.svg" alt="aboutvictorydropdown"/></a>
+                   </li>
+                  <sly data-sly-list.levelOnePage="${postloginheader.beanList}">
+                     <li class="nav-item" data-show-this-menu-for="${levelOnePage.entityType}">
+                        <a class="nav-link subnav"  href="#">${levelOnePage.linkText}<img class="rightArrow" alt="" src="/content/dam/vcm/basic/right-arrow.svg" alt="dropdown"/></a>
+                        <div class="myNav overlay">
+                           <a href="javascript:void(0)" class="hide-desktop lft-arrow" aria-label="back">${header.backText}</a>
+                           <div class="showinDesktop innerlogo">
+                              <sly data-sly-test="${levelOnePageList.first}">
+                                 <h3 class="logo-content blueHdng-multiLine-greenBorder" role="heading" aria-level="2">${levelOnePage.linkText}</h3>
+                              </sly>
+                              <sly data-sly-test="${!levelOnePageList.first}">
+                                 <h3 class="logo-content blueHdng-multiLine-greenBorder d-none d-lg-block d-md-none d-sm-none">${levelOnePage.linkText}</h3>
+                              </sly>
+                           </div>
+                           <sly data-sly-test.hasThirdLevel="false"/>
+                           <sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+                              <sly data-sly-test.size="${levelTwoPageList.count}"/>
+                              <sly data-sly-test.index="${levelTwoPageList.index}"/>
+                              <sly data-sly-test.image="${levelTwoPage.imagePath}"/>
+                              <sly data-sly-list.thirdLevel="${levelTwoPage.ListBean}">
+                                 <sly data-sly-test="${thirdLevelList.count > 0}">
+                                    <sly data-sly-test.hasThirdLevel="true"/>
+                                 </sly>
+                              </sly>
+                           </sly>
+                           <sly data-sly-test.childPageCount="${levelOnePage.childCount}"/>
+                           <sly data-sly-test.secondLevelNavOnly="${levelOnePage.secondLevelOnly}"/>
+                           <sly data-sly-test="${!image}">
+                              <div class="overlay-content" role=" list">
+                                 <sly data-sly-test= "${!hasThirdLevel && !secondLevelNavOnly}">
+                                    <div class="row overly-row">
+                                       <div class="col-6 col-12">
+                                          <ul role="presentation">
+                                             <li role="listitem"> <a href="${levelOnePage.linkUrl}" class="text-rightArrow">${levelOnePage.navText}</a></li>
+                                             <sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+                                                <sly data-sly-test="${levelTwoPageList.index < childPageCount}">
+                                                   <li role="listitem"><a href="${levelTwoPage.linkUrl}">${levelTwoPage.linkText}</a></li>
+                                                </sly>
+                                             </sly>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="row overly-row">
+                                       <div class="col-6 col-12">
+                                          <ul>
+                                             <sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+                                                <sly data-sly-test="${levelTwoPageList.index >= childPageCount}">
+                                                   <li><a href="${levelTwoPage.linkUrl}">${levelTwoPage.linkText}</a></li>
+                                                </sly>
+                                             </sly>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </sly>
+                                 <sly data-sly-test= "${!hasThirdLevel && secondLevelNavOnly}">
+                                    <ul class="splitul">
+                                       <sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+                                          <li><a href="${levelTwoPage.linkUrl}" class="text-rightArrow">${levelTwoPage.linkText}</a></li>
+                                       </sly>
+                                    </ul>
+                                 </sly>
+                                 <sly data-sly-test= "${hasThirdLevel}">
+                                    <ul class="splitul">
+                                       <sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+                                          <li><a href="${levelTwoPage.linkUrl}" class="text-rightArrow">${levelTwoPage.linkText}</a></li>
+                                          <sly data-sly-list.levelThreePage="${levelTwoPage.ListBean}">
+                                             <li><a class="nav-child" href="${levelThreePage.linkUrl}">${levelThreePage.linkText}</a></li>
+                                          </sly>
+                                       </sly>
+                                    </ul>
+                                 </sly>
+                              </div>
+                           </sly>
+                           <sly data-sly-test="${image}">
+                              <div class="overlay-content hide-desktop" role=" list">
+                                 <div class="row overly-row">
+                                    <div class="col-6 col-12">
+                                       <ul role="presentation">
+                                          <li role="listitem"> <a href="${levelOnePage.linkUrl}" class="text-rightArrow">${levelOnePage.navText}</a></li>
+                                          <sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+                                             <li role="listitem"><a href="${levelTwoPage.linkUrl}">${levelTwoPage.linkText}</a></li>
+                                          </sly>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="overlay-content investment-overlay showinDesktop" role=" list">
+                                 <div class="investment container">
+                                    <sly data-sly-test="${levelOnePageList.first}">
+                                       <a href="${levelOnePage.linkUrl}" class="d-none d-lg-block d-md-none d-sm-none text-rightArrow">${levelOnePage.navText}</a>
+                                    </sly>
+                                    <sly data-sly-test="${!levelOnePageList.first}">
+                                       <a href="${levelOnePage.linkUrl}" class="text-rightArrow">${levelOnePage.navText}</a>
+                                    </sly>
+                                    <div class="row" role="list">
+                                       <sly data-sly-list.levelTwoPage="${levelOnePage.ListBean}">
+                                          <div class="col-sm-3" role="listitem">
+                                             <div class="image-wrapper paddingTop-30-Bottom-30">
+                                                <a href="${levelTwoPage.linkUrl}">
+                                                   <img src="${levelTwoPage.imagePath}" class="img-responsive content-center" alt="${levelTwoPage.imageAlt} logo">
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </sly>
+                                    </div>
+                                 </div>
+                              </div>
+                           </sly>
+                        </div>
+                     </li>
+                  </sly>
+                  <sly data-sly-list.firstlevelLinks="${postloginheader.firstlevelLinks}">
+                     <sly data-sly-test="${!firstlevelLinks.secondlevelLinks}">
+                        <li class="nav-item ${firstlevelLinks.guestuser == 'true' ? '' : 'non-guest-user'}" data-show-this-menu-for="ALL">
+                           <a class="nav-link target-link" href="${firstlevelLinks.firstLinkUrl} " target="${firstlevelLinks.firstlevelTabSelect}">${firstlevelLinks.firstLinkText}  <img class="rightArrow" src="/content/dam/vcm/basic/right-arrow.svg" alt="aboutvictorydropdown"/></a>
+                        </li>
+                     </sly>
+                     <sly data-sly-test="${firstlevelLinks.secondlevelLinks}">
+                        <li class="nav-item ${firstlevelLinks.guestuser == 'true' ? '' : 'non-guest-user'}" data-show-this-menu-for="ALL">
+                           <a class="nav-link nav-link1" href="#">${firstlevelLinks.firstLinkText}<img class="rightArrow" src="/content/dam/vcm/basic/right-arrow.svg" alt="productsdropdown"/></a>
+                           <div class="myNav overlay">
+                              <a href="javascript:void(0)" class="hide-desktop lft-arrow">Back</a>
+                              <div class="showinDesktop innerlogo">
+                                 <h3 aria-level="3" class="logo-content d-none d-lg-block d-md-none d-sm-none blueHdng-multiLine-greenBorder">${firstlevelLinks.firstLinkText}</h3>
+                              </div>
+                              <div class="overlay-content" role=" list">
+                                 <sly data-sly-test.secondLevelNavOnly="${firstlevelLinks.secondLevelOnly}"/>
+                                 <sly data-sly-test= "${!secondLevelNavOnly}">
+                                    <div class="row overly-row">
+                                       <div class="col-6 col-12">
+                                          <ul role="presentation">
+                                             <li role="listitem"> <a href="${firstlevelLinks.firstLinkUrl}" class="text-rightArrow" target="${firstlevelLinks.firstlevelTabSelect}">${firstlevelLinks.firstLinkText}</a></li>
+                                             <sly data-sly-list.secondlevelLinks="${firstlevelLinks.secondlevelLinks}">
+                                                <sly data-sly-test="${secondlevelLinksList.odd}">
+                                                   <li role="listitem"><a href="${secondlevelLinks.secondLinkUrl}" target="${secondlevelLinks.secondlevelTabSelect}">${secondlevelLinks.secondLinkText}</a></li>
+                                                </sly>
+                                             </sly>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="row overly-row">
+                                       <div class="col-6 col-12">
+                                          <ul role="presentation">
+                                             <sly data-sly-list.secondlevelLinks="${firstlevelLinks.secondlevelLinks}">
+                                                <sly data-sly-test="${secondlevelLinksList.even}">
+                                                   <li role="listitem"><a href="${secondlevelLinks.secondLinkUrl}" target="${secondlevelLinks.secondlevelTabSelect}">${secondlevelLinks.secondLinkText}</a></li>
+                                                </sly>
+                                             </sly>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </sly>
+                                 <sly data-sly-test= "${secondLevelNavOnly}">
+                                    <ul class="splitul" role="presentation">
+                                       <sly data-sly-list.secondlevelLinks="${firstlevelLinks.secondlevelLinks}">
+                                          <li role="listitem"><a href="${secondlevelLinks.secondLinkUrl}" class="text-rightArrow" target="${secondlevelLinks.secondlevelTabSelect}">${secondlevelLinks.secondLinkText}</a></li>
+                                       </sly>
+                                    </ul>
+                                 </sly>
+                              </div>
+                           </div>
+                        </li>
+                     </sly>
+                  </sly>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <div class="mask">
+      <div class="greymask"></div>
+   </div>
+</div>

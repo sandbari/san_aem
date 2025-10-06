@@ -1,0 +1,35 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:mixinTypes": ["cq:ReplicationStatus"],
+	"jcr:createdBy": "admin",
+	"cq:lastReplicationAction": "Activate",
+	"cq:lastReplicatedBy": "admin",
+	"jcr:lastModifiedBy": "admin",
+	"placeHolderText": "Enter ticker, fund name, keyword.",
+	"jcr:created": "Wed Feb 26 2020 15:49:11 GMT+0530",
+	"cq:lastReplicated": "Thu Feb 27 2020 12:17:11 GMT+0530",
+	"jcr:lastModified": "Thu Feb 27 2020 15:31:00 GMT+0530",
+	"errorMessage": "No matches found",
+	"sling:resourceType": "vcm/components/content/productmenu",
+	"productMenuItems": {
+		"jcr:primaryType": "nt:unstructured",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"tabLink": "/content/vcm/language-masters/en",
+			"tabTitle": "Mutual Fund",
+			"tagPathList": ["/content/cq:tags/vcm/all-funds/mutual-funds/us-equity", "/content/cq:tags/vcm/all-funds/mutual-funds/non-us-equity", "/content/cq:tags/vcm/all-funds/mutual-funds/fixed-income", "/content/cq:tags/vcm/all-funds/mutual-funds/mixed-asset-class", "/content/cq:tags/vcm/all-funds/mutual-funds/alternatives"],
+			"buttonLink": "/content/vcm/en/vcm-content-page-template-test",
+			"buttonText": "View All Mutual Funds",
+			"rootPagePath": "/content/vcm/language-masters/en/products"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured",
+			"tabLink": "/content/vcm/language-masters/en",
+			"tabTitle": "Victory Shares",
+			"tagPathList": ["/content/cq:tags/vcm/all-funds/victory-shares-etfs/core-broad-market", "/content/cq:tags/vcm/all-funds/victory-shares-etfs/divident-growth-and-income", "/content/cq:tags/vcm/all-funds/victory-shares-etfs/volatility-reduction", "/content/cq:tags/vcm/all-funds/victory-shares-etfs/bear-market", "/content/cq:tags/vcm/all-funds/victory-shares-etfs/multi-factor", "/content/cq:tags/vcm/all-funds/victory-shares-etfs/active-fixed-income"],
+			"buttonLink": "/content/vcm/language-masters/en",
+			"buttonText": "learn more about Victory Shares",
+			"rootPagePath": "/content/vcm/language-masters/en/products"
+		}
+	}
+}

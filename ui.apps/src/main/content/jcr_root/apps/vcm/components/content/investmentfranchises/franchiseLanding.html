@@ -1,0 +1,38 @@
+<sly data-sly-template.model="${@ model}">
+	<div class="container">
+		<div class="content-wrapper">
+			<div class="investment-block">
+				<div class="investment-text">
+					<sly data-sly-test.heading="${model.heading}">
+						<h3 class="blueHdng-multiLine-greenBorder">${heading}</h3>
+					</sly>
+					<sly data-sly-test.description="${model.description}">${description @ context="html"}</sly>
+				</div>
+				<div class="row wrap">
+					<sly data-sly-list.child="${model.franchiseList}">
+						<sly data-sly-test.franchiseIntro="${child.franchiseIntroModel}">
+							<div class="threeColCmpnt-block cardLink">
+								<div>
+									<sly data-sly-test.imagefileurl="${child.fileReference}">
+										<div class="blockimage-wrapper paddingTop-30-Bottom-30"><span class="franchise-traiangle" style="border-top: 40px solid ${child.triangleColor @context='html'};"></span>
+											<img src="${imagefileurl}" class="img-responsive" alt="${child.franchiseIntroModel.altText || true}">
+										</div>
+									</sly>
+									<sly data-sly-test.introDesc="${child.introDescription}">
+										<p class="block-txt">
+											${child.introDescription @ context="html"}
+										</p>
+									</sly>
+									${child.pagePathInfo}
+									<div class="bottom-txt">
+										<a class="arrowtext-rightArrow blue-txt" href="${child.pagePath @extension='html'}" aria-label="${child.franchiseIntroModel.linkAriaLabel}">${model.viewDetail}</a>
+									</div>
+								</div>
+							</div>
+						</sly>
+					</sly>
+				</div>
+			</div>
+		</div>
+	</div>
+</sly>

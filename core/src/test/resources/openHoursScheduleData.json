@@ -1,0 +1,127 @@
+{
+  "open_hours_data": [
+    {
+      "id": "65b1a60a-eba6-4d76-bebd-bc82cab522ed",
+      "name": "Open Hours - All Skills - Mon-Fri - except 403B Service",
+      "state": "active",
+      "start": "2020-01-03T07:30:00.000",
+      "end": "2020-01-03T20:00:00.000",
+      "rrule": "FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,TU,WE,TH,FR",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/65b1a60a-eba6-4d76-bebd-bc82cab522ed"
+    }
+  ],
+  "holiday_schedule_data": [
+    {
+      "id": "b7d7c409-c361-4c40-aa6b-a65b79f17b29",
+      "name": "Christmas",
+      "state": "active",
+      "start": "2020-12-25T00:00:00.000",
+      "end": "2020-12-25T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=12;BYMONTHDAY=25",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/b7d7c409-c361-4c40-aa6b-a65b79f17b29"
+    },
+    {
+      "id": "2d924555-56b0-4d5b-a676-8049da3dc4b6",
+      "name": "Independence Day",
+      "state": "active",
+      "start": "2020-07-03T00:00:00.000",
+      "end": "2020-07-03T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=7;BYMONTHDAY=3",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/2d924555-56b0-4d5b-a676-8049da3dc4b6"
+    },
+    {
+      "id": "caf5344e-7385-461d-b29a-b4ebd35159e2",
+      "name": "Labor Day",
+      "state": "active",
+      "start": "2020-09-07T00:00:00.000",
+      "end": "2020-09-07T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=9;BYDAY=MO;BYSETPOS=1",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/caf5344e-7385-461d-b29a-b4ebd35159e2"
+    },
+    {
+      "id": "8c85bbdb-acaf-4d66-ab3a-62cf5d85ddc5",
+      "name": "New Year Day",
+      "state": "active",
+      "start": "2021-01-01T00:00:00.000",
+      "end": "2021-01-01T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=1;BYMONTHDAY=1",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/8c85bbdb-acaf-4d66-ab3a-62cf5d85ddc5"
+    },
+    {
+      "id": "716457f2-b4c8-4beb-aec6-de81bf4806f7",
+      "name": "Memorial Day",
+      "state": "active",
+      "start": "2020-05-25T00:00:00.000",
+      "end": "2020-05-25T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=5;BYDAY=MO;BYSETPOS=-1",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/716457f2-b4c8-4beb-aec6-de81bf4806f7"
+    },
+    {
+      "id": "6fad717b-7349-4e1e-bf70-6845ab1e2968",
+      "name": "Thanksgiving",
+      "state": "active",
+      "start": "2020-11-26T00:00:00.000",
+      "end": "2020-11-26T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=11;BYDAY=TH;BYSETPOS=4",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/6fad717b-7349-4e1e-bf70-6845ab1e2968"
+    },
+    {
+      "id": "57427a1d-4b6e-4967-b136-83f319113ac8",
+      "name": "Christmas Eve - Closing Early - 5:00 PM CST",
+      "state": "active",
+      "start": "2020-12-24T17:00:00.000",
+      "end": "2020-12-24T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=12;BYMONTHDAY=24",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/57427a1d-4b6e-4967-b136-83f319113ac8"
+    },
+    {
+      "id": "02ea8e3c-e8ed-4a9b-8444-a85a53d8b20c",
+      "name": "Day after Christmas - Closing Early - 3:00 PM CST",
+      "state": "active",
+      "start": "2020-12-26T15:00:00.000",
+      "end": "2020-12-26T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=12;BYMONTHDAY=26",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/02ea8e3c-e8ed-4a9b-8444-a85a53d8b20c"
+    },
+    {
+      "id": "49eb10d9-a7e2-4710-b054-8f4731afab72",
+      "name": "Day after Thanksgiving - Closing Early - 6:00 PM CST",
+      "state": "active",
+      "start": "2020-11-27T18:00:00.000",
+      "end": "2020-11-27T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=11;BYMONTHDAY=27",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/49eb10d9-a7e2-4710-b054-8f4731afab72"
+    },
+    {
+      "id": "f381876d-2de8-4a7b-bbe6-8d4fe105c938",
+      "name": "Day before Thanksgiving - Closing Early - 6:00 PM CST",
+      "state": "active",
+      "start": "2020-11-25T18:00:00.000",
+      "end": "2020-11-25T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=11;BYMONTHDAY=25",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/f381876d-2de8-4a7b-bbe6-8d4fe105c938"
+    },
+    {
+      "id": "0e94fb54-be84-43e2-980a-fa20fdcfa2b6",
+      "name": "New Year’s Eve - Closing Early - 6:00 PM CST",
+      "state": "active",
+      "start": "2020-12-31T18:00:00.000",
+      "end": "2020-12-31T23:59:59.000",
+      "rrule": "FREQ=YEARLY;INTERVAL=1;BYMONTH=12;BYMONTHDAY=31",
+      "keywords": [],
+      "selfUri": "/api/v2/architect/schedules/0e94fb54-be84-43e2-980a-fa20fdcfa2b6"
+    }
+  ],
+  "createdTimeStamp": "2020-07-28T00:00:02.854Z[UTC]"
+}

@@ -1,0 +1,100 @@
+.inmedia-card{
+    margin:15px 0;
+    border: 1px solid #D2D2D2;
+    padding: 27px 27px 35px 27px;
+    min-height: 190px;
+   	display: none;
+}
+
+.inmedia-card-author-mode{
+    margin:15px 0;
+    border: 1px solid #D2D2D2;
+    padding: 27px 27px 35px 27px;
+    min-height: 190px;
+}
+
+.inmedia-card::before, .inmedia-card-author-mode::before {
+    position: absolute;
+    top: 15px;
+    right:15px;
+    border-width: 32px 0 0 32px;
+    border-color: transparent;
+    border-top-color: #8BC105;
+    border-style: solid;
+    content: "";
+}
+.inmedia-card .news-source a, .inmedia-card .news-date p{
+    font-family: benton-sans, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    color: #49494A;
+}
+
+.inmedia-card .news-source a span {
+    position: relative;
+    bottom: 3px;
+}
+
+.inmedia-card .news-source img {
+    margin-right: 10px;
+}
+.inmedia-card .news-date p{
+    text-align:right;
+    margin:0;
+}
+
+.inmedia-card .news-details h3{
+    padding: 15px 0 20px 0;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.inthemedia-loadmore-btn-block{
+    margin-top: 1.5rem!important;
+    text-align: center;
+}
+.inthemedia-loadmore-btn-block a.btn-clk-loadmr {
+    display: none;
+    position: relative;
+    border: none;
+    padding: 15px 54px;
+    background-color: #486D90;
+    color: #fff;
+    min-width: 190px;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.inthemedia-loadmore-btn-block a.btn-clk-loadmr:hover {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+.inthemedia-loadmore-btn-block a.btn-clk-loadmr::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 20px 0 0 20px;
+    border-color: transparent;
+    border-top-color: #8BC105;
+    border-style: solid;
+    content: "";    
+}
+
+.news-details p {
+	display: inline !important;
+}
+
+/* for mobile */
+@media screen and (max-width: 600px) {
+    /*.inmedia-card{
+        margin:15px;
+	}
+    .inmedia-card::before {
+		right: 30px;
+    }*/
+
+    .inmedia-card.invisible {
+		display: none !important;
+    }
+}

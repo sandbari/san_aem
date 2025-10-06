@@ -1,0 +1,19 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+<center>Edit Pie Chart Component</center>
+</sly>
+<sly data-sly-use.model="com.vcm.core.models.PiechartTile"/>
+	<div class="piechart-wrapper">
+		<div class="st-view-chart-wrap"
+			data-jsonstr='${model.json}'>
+			<div id="">
+				<div class="donut_content st-chart-header">
+					<h5 class="donut_header st-ptext-heading">${model.heading}</h5>
+					<span class="donut_age">${model.age}</span>
+					<div class="st-donut-desc-wrap">
+						<p class="donut_descp">${model.description}</p>
+					</div>
+				</div>
+				<div class="borderGreen"></div>
+			</div>
+		</div>
+        </div>

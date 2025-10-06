@@ -1,0 +1,38 @@
+<sly data-sly-test.author="${wcmmode.edit}">Edit TextImageCTA Component</sly>
+<sly data-sly-use.model="com.vcm.core.models.TextImageCTAModel" data-sly-use.variationTemplate="textview.html" data-sly-use.variationTemplate1="textimagecard.html" data-sly-use.variationTemplate2="textcard.html"> 
+
+<sly data-sly-call="${variationTemplate.textviewtemplate @ model=model}"></sly>
+<sly data-sly-call="${variationTemplate1.textimagecardtemplate @ model=model}"></sly>
+<sly data-sly-call="${variationTemplate2.textcardtemplate @ model=model}"></sly>
+<sly data-sly-test="${(model.variation=='cardImageWithBigHeading') || (model.variation=='cardImageWithContent') || (model.variation=='cardImageWithMidHeading')}">
+		<div class="about--block rte-desc" data-audiencetype="${model.allowedAudience}">
+			<div class="row">
+				<div class="col-12">
+                    	<div class="${model.variation == 'cardImageWithBigHeading' ? 'card-image-hdng-big' :''}${model.variation == 'cardImageWithContent' ? 'card-triangle-image-hdng-cta-big' :''}${model.variation == 'cardImageWithMidHeading' ? 'card-image-hdng-mid mb-5' :''}${model.cardShadow == 'true' ? ' shadow-md-1-sm-0' :''}">  
+                        <p class="card__img__title" style="background:${model.sectionStyle @context='styleToken'}">
+                           ${model.sectionTitle}<span class="shape-triangle" style="border-top-color: ${model.sectionStyle @context='styleToken'}"></span>
+                        </p>
+                        <span class="shape-triangle-mid-lt" style="border-top-color: ${model.sectionStyle @context='styleToken'}"></span>
+                        <sly data-sly-test="${model.backgroundImage}">
+								<img class=" img-fluid" src="${model.backgroundImage}"
+								alt="${model.altText || true}" /></sly>
+						<div class = "lead-msg">
+                        <sly data-sly-test="${model.heading}">
+						<h3 data-sly-text="${model.heading}"></h3>
+						</sly>
+                        <sly data-sly-test="${model.description}">${model.description @context='html'}</sly>
+                        <sly data-sly-test.linkUrl="${model.linkUrl == ''? '#': model.linkUrl}">
+						<div class="navigation-right">
+							<a data-sly-test="${model.linkText}" href="${linkUrl}" target="${model.tabSelect}" aria-label="${model.linkAriaLabel}" data-experience-popup="${model.experiencePopupPath}" data-popup="${model.popupId}">${model.linkText}<sly data-sly-test="${model.experiencePopupPath}"><span class="sr-only">Opens a New Popup</span></sly><sly data-sly-test="${model.tabSelect == '_blank' && !model.experiencePopupPath}"><span class="sr-only">Opens a New Window</span></sly>
+							<span aria-hidden="true" class="right--arrow"></span></a>
+						</div>
+						</sly>
+						<a data-sly-test="${model.variation=='cardImageWithContent'}" href="${linkUrl}" target="${model.tabSelect}" aria-label="${model.linkAriaLabel}" data-experience-popup="${model.experiencePopupPath}" data-popup="${model.popupId}" class="${model.buttonStyle == 'true' ? 'white-focus btn-primary' :''} ${model.tabSelect == '_blank' && model.buttonStyle == 'true' ? 'external-link' : ''} ${model.tabSelect == '_blank' && model.buttonStyle != 'true' ? 'inline-external-link' : ''}">${model.linkText}<sly data-sly-test="${model.experiencePopupPath}"><span class="sr-only">Opens a New Popup</span></sly><sly data-sly-test="${model.tabSelect == '_blank' && !model.experiencePopupPath}"><span class="sr-only">Opens a New Window</span><span class="external-icon" aria-hidden="true"></span></sly><span class="${model.buttonStyle == 'true' ? 'btn-triangle-rt' :''}" aria-hidden="true"></span></a>
+						<a data-sly-test="${model.variation!='cardImageWithContent'}" href="${linkUrl}" target="${model.tabSelect}" aria-label="${model.linkAriaLabel}" data-experience-popup="${model.experiencePopupPath}" data-popup="${model.popupId}" class="btn-primary ${model.tabSelect == '_blank' ? 'external-link' : ''}">${model.linkText}<sly data-sly-test="${model.experiencePopupPath}"><span class="sr-only">Opens a New Popup</span></sly><sly data-sly-test="${model.tabSelect == '_blank' && !model.experiencePopupPath}"><span class="sr-only">Opens a New Window</span><span class="external-icon" aria-hidden="true"></span></sly><span class="btn-triangle-rt" aria-hidden="true"></span></a>
+                    </div>
+				</div>
+                </div>
+			</div>
+		</div>
+</sly>
+</sly>

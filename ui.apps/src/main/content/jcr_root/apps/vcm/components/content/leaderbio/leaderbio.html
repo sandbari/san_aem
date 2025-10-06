@@ -1,0 +1,29 @@
+<sly data-sly-use.leaderbio="com.vcm.core.models.LeaderBio"/>
+<sly data-sly-test.notempty="${leaderbio.profileDescription}"/>
+<sly data-sly-test="${wcmmode.edit && !notempty}"><div class="cq-placeholder" data-emptyText="${component.title}"/></sly>
+<sly data-sly-test="${notempty}">
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="lead-detail-block px-sm-0">
+                <div class="title-desc-default mb-30 mb-sm-20">
+                    <h3>${leaderbio.fullname}<sly data-sly-test="${leaderbio.titleAbbreviation}">, ${leaderbio.titleAbbreviation}</sly></h3>
+                    <sly data-sly-test="${leaderbio.titleDescription}"><p>${leaderbio.titleDescription}</p></sly>
+                    <sly data-sly-test="${leaderbio.designation}"><p>${leaderbio.designation}</p></sly>
+                </div>
+                <div class="image-content-block mb-0 mb-20">
+                    <sly data-sly-test="${leaderbio.bioPicture}">
+                        <div class="image-block">
+                            <img src="${leaderbio.bioPicture}" alt="${leaderbio.altText || true}">
+                        </div>
+                    </sly>
+                    <div class="content-block ${!leaderbio.bioPicture ? 'fullwidth-content-block': ''}">
+                        ${leaderbio.profileDescription @ context ='html'}
+                        <sly data-sly-test="${leaderbio.linkText}">
+                            <a href="${leaderbio.backPage @ extension='html'}" aria-label="${'backtext' @i18n} to ${currentPage.parent.title}" class="navg-lft-arw-link">${'backtext' @i18n}</a>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

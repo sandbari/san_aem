@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-04-11T13:51:39.764Z"
+        cq:lastModifiedBy="ctsuser"
+        cq:lastReplicated="{Date}2020-04-19T07:17:01.126Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/vcm/settings/wcm/templates/content-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:uuid="bf804b58-6ddb-4e80-aa0b-b96271e090b8"
+        sling:resourceType="vcm/components/structure/page">
+        <root
+            jcr:lastModified="{Date}2020-04-11T13:20:43.099Z"
+            jcr:lastModifiedBy="ctsuser"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2020-02-21T12:28:09.860Z"
+                jcr:createdBy="ctsuser"
+                jcr:lastModified="{Date}2020-04-11T13:39:18.075Z"
+                jcr:lastModifiedBy="ctsuser"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <experiencefragment
+                jcr:created="{Date}2020-02-21T12:28:04.199Z"
+                jcr:createdBy="ctsuser"
+                jcr:lastModified="{Date}2020-04-11T13:51:22.428Z"
+                jcr:lastModifiedBy="ctsuser"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                fragmentPath="/content/experience-fragments/vcm-experience-fragments/vcm-header/master"
+                text="USAA Member Investor Relations Contact Us SigninSignin/Register Signin × close Menu About Victory Capital Back About Victory Capital About Victory Capital Leadership Team Corporate Responsibility test003 Victory Capital Serves Environmental, Social and Governance Products Back Products Our Products Mutual Funds Victory Shares ETFs USAA 529 Education Savings Plan Retirement Investment Franchise Back Investment Franchise Investment Franchise Integrity Asset Management Munder NewBridge Asset Management RS Investments Sophus Capital Sycamore Capital Trivalent Investments USAA Mutual Funds Victory Capital Solutions Investment Franchise Advice &amp; Tools Back Advice &amp; Tools Investor Learning Center Military Financial Readiness FAQ Insights Back Insights Insights Insight FAQ Investor type USAA Member USAA Member Financial Professionals Institutional Investors What type of investor are you? USAA Member Financial Professionals Institutional Investors Investor Relations Contact Us × Financial Professionals Institutional Investors"/>
+            <experiencefragment_1818277927
+                jcr:created="{Date}2020-02-21T12:28:14.860Z"
+                jcr:createdBy="ctsuser"
+                jcr:lastModified="{Date}2020-04-11T13:51:39.728Z"
+                jcr:lastModifiedBy="ctsuser"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/experience-fragments/editor/components/experiencefragment"
+                fragmentPath="/content/experience-fragments/vcm-experience-fragments/vcm-footer/master"
+                text="News Policies Careers User Agreement Mutual Fund Prospectuses ETF Prospectuses Blog Connect with us ©2020 Victory Capital Management Inc."/>
+        </root>
+    </jcr:content>
+</jcr:root>

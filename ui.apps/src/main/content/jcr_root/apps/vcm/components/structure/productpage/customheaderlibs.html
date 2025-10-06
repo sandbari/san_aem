@@ -1,0 +1,129 @@
+<!--<link rel="stylesheet" href="https://use.typekit.net/xeb3orm.css">-->
+<link rel="stylesheet" href="https://use.typekit.net/vpy3cvs.css" integrity="sha384-qXwH73nLWVq/XDedCRvInUdYwFM/BcGLJTmcfnZAFuuH7/mba1XzgEToBhX/3ccM" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+	<!--  Loading Dependencies Client Libs-->
+	<sly data-sly-call="${clientlib.all @ categories='vcm.dependencies'}"></sly>
+	<!--  Loading Analytics Dependencies -->
+	<sly data-sly-call="${clientlib.js @ categories='vcm.analytics'}"></sly>
+	<sly data-sly-use.pageObject="com.vcm.core.models.VCMPageModel">
+		<input id="vcmcorpHome" name="vcmcorpHome" type="hidden" value="${pageObject.vcmcorpHome}"/>
+		<meta property="og:title" content="${pageObject.ogTitle} - ${'victoryCapitalManagement' @i18n}" />
+		<meta data-sly-test.ogimage="${pageObject.ogImagePath}" property="og:image" content="${ogimage}" />
+		<meta property="og:description" content="${properties['jcr:description']}" />
+		<meta property="og:url" content="${pageObject.currentPageCanonicalUrl}" />
+		<meta name="facebook-domain-verification" content="vnq3abe0hyitkb315jf4m3mgpb3b86"/>
+
+		<sly data-sly-test="${pageObject.customCanonicalUrl}">
+			<link rel="canonical" href="${pageObject.customCanonicalUrl}"/>
+		</sly>
+		<sly data-sly-test="${!pageObject.customCanonicalUrl}">
+			<link data-sly-test.canonicalUrl="${pageObject.currentPageCanonicalUrl}" rel="canonical" href="${canonicalUrl}"/>
+		</sly>
+
+		<script src="${pageObject.analyticsEndPoint @ context='uri'}" async></script>
+		<sly data-sly-test="${pageObject.bugHerdUrl}">
+			<script type="text/javascript" src="${pageObject.bugHerdUrl @ context='uri'}" async="true"></script>
+		</sly>
+		<sly data-sly-test="${pageObject.vcmcorpHome == 'https://qa.vcm.com/'}">
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDG48YKQLS"></script>
+			<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'G-WDG48YKQLS');
+				</script>
+
+			<!-- Google Tag Manager -->
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+					new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+					j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+					'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+					})(window,document,'script','dataLayer','GTM-KQML4G3');
+				</script>
+			<!-- End Google Tag Manager -->
+		</sly>
+		<sly data-sly-test="${pageObject.vcmcorpHome == 'https://stage.vcm.com/'}">
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDG48YKQLS"></script>
+			<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'G-WDG48YKQLS');
+				</script>
+			<!-- Google Tag Manager -->
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+					new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+					j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+					'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+					})(window,document,'script','dataLayer','GTM-KQML4G3');
+				</script>
+			<!-- End Google Tag Manager -->
+		</sly>
+		<sly data-sly-test="${pageObject.vcmcorpHome == 'https://www.vcm.com/'}">
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43226027-1"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'UA-43226027-1'); </script>
+
+			<!-- Google Tag Manager -->
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-PMXQQS');</script>
+			<!-- End Google Tag Manager -->
+		</sly>
+		<!-- Start Linkedin Pixel Code -->
+		<script type="text/javascript">
+				_linkedin_partner_id = "2267082";
+				window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+				window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+				</script><script type="text/javascript">
+				(function(l) {
+				if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+				window.lintrk.q=[]}
+				var s = document.getElementsByTagName("script")[0];
+				var b = document.createElement("script");
+				b.type = "text/javascript";b.async = true;
+				b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+				s.parentNode.insertBefore(b, s);})(window.lintrk);
+			</script>
+		<noscript>
+			<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2267082&fmt=gif" />
+		</noscript>
+		<!-- End Linkedin Pixel Code -->
+
+		<sly data-sly-test="${'investor' in request.serverName}">
+			<!-- Facebook Pixel Code -->
+
+			<script>
+					!function(f,b,e,v,n,t,s)
+					{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+					n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+					if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+					n.queue=[];t=b.createElement(e);t.async=!0;
+					t.src=v;s=b.getElementsByTagName(e)[0];
+					s.parentNode.insertBefore(t,s)}(window,document,'script',
+					'https://connect.facebook.net/en_US/fbevents.js');
+					fbq('init', '949579658911008');
+					fbq('track', 'PageView');
+				</script>
+
+			<noscript>
+				<img height="1" width="1"
+					 src="https://www.facebook.com/tr?id=949579658911008&ev=PageView
+					&noscript=1"/>
+			</noscript>
+
+			<!-- End Facebook Pixel Code -->
+		</sly>
+	</sly>
+	<!-- Loading CSS VCM Base -->
+	<sly data-sly-call="${clientlib.css @ categories='vcm.productdetailbase'}"></sly>
+</sly>
