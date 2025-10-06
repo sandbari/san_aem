@@ -1,0 +1,32 @@
+.Country-Diversification-table-data {
+    position: relative;
+}
+
+.product-details .Country-Diversification-table-data {
+    display: block;
+}
+
+.product-details .table.Country-Diversification-table thead th{
+	 min-width: 170px; 
+ }
+ 
+.product-details table.Country-Diversification-table th:first-child, .product-details table.Country-Diversification-table tbody tr td:first-child {
+    min-width: 170px;
+    text-align: left;
+}
+
+.countrydiversification .heading {
+    margin: 15px 0 0;
+}
+
+@media screen and (min-width:1024px) {
+    .product-details .Country-Diversification-table-data {
+        display: block;
+    }
+    .countrydiversification .heading {
+    	margin: 0px 0 15px;
+	}
+	.product-details .table.Country-Diversification-table thead th{
+	 min-width: 100px;
+	}
+}

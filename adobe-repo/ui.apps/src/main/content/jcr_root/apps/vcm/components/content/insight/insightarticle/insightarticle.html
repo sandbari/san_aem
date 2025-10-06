@@ -1,0 +1,28 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+    <div>Edit ${component.title} Component</div>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='vcm.insightarticle'}"/>
+<sly data-sly-use.model="com.vcm.core.models.InsightArticleModel"/>
+<div class="container blog-post-content-wrapper" data-sly-test.heading="${model.insightHeading}"
+     data-blog-path="${currentPage.parent.path}">
+    <div class="wrapper-inner">
+        <input type='hidden' id="blogUrl" value="/content/vcm/prelogin.bloglisting.json"/>
+        <h1 class="page-heading">${heading}</h1>
+        <p class="read-time blue-color">
+            <sly data-sly-list.author="${model.authorList}">
+                <span style="font-weight: 700;">${author}</span>
+            </sly>
+            <sly data-sly-test="${!model.hideAuthorDate && model.authorDate}">
+                <span>${model.authorDateString}</span>
+            </sly>
+        </p>
+        <p class="read-time">${model.timeTaken @context='html'}</p>
+        <div class="blog-post-img float-left">
+            <img src="${model.insightImage}" alt="${model.altText || true}">
+        </div>
+        <div class="blog-article">
+            ${model.insightContent @context='html'}
+        </div>
+    </div>
+</div>

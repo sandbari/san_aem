@@ -1,0 +1,101 @@
+.management .lead-bio-block .image-content-block .image-block {
+	flex: 0 0 24%;
+    position: relative;
+}
+
+.management .title-desc-default h3 {
+	color: #49494A;
+    font-size: 18px;
+}
+
+.management .image-content-block {
+	align-items: center;
+}
+
+.management .investment-team-list .image-content-block h5 {
+	color: #49494A;
+}
+
+.management .navg-right-arw-link {
+	font-weight: bold;
+}
+
+.management .triangle-left-corner {
+	width: 0px;
+    height: 0px;
+    border-width: 25px 25px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+}
+
+.management .img-triangle-left-corner {
+	width: 0px;
+    height: 0px;
+    border-width: 25px 25px 0 0;
+    position: absolute;
+    left: 0;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+}
+.management .lead-bio-block .image-content-block .image-block img {
+	width: 160px;
+	height: 160px;
+}
+.management .title-desc-default ul li {
+    line-height: initial;
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 0px 12px 8px 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .management .image-content-block {
+        align-items: flex-start;
+        display: block;
+    }
+    .management .lead-bio-block .image-content-block .image-block {
+        display: inline-block;
+    }
+    .management .lead-bio-block .image-content-block .content-block {
+        display: inline-block;
+    	position: absolute;
+    }
+	.management .investment-team-list .image-content-block img {
+		margin-right: 30px;
+	}
+}
+@media screen and (max-width: 767px) {
+    .management .image-content-block {
+        align-items: flex-start;
+        display: block;
+    }
+    .management .lead-bio-block .image-content-block .image-block {
+        display: inline-block;
+    }
+    .management .lead-bio-block .image-content-block .content-block {
+        display: inline-block;
+    	position: absolute;
+    }
+
+    .management .investment-team-list .image-content-block img {
+		margin-right: 30px;
+	}
+	.management .investment-team-list .leadname-desg-block p {
+		margin-bottom: 0;
+	}
+    .management .leadname-desg-block {
+		    margin-bottom: 0px;
+    }
+    .management .investment-team-list {
+            padding: 0;
+    }
+}
+
+.vcm-leadershipname{
+	display: inline-block !important;
+} 

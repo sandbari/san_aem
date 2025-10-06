@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product Menu"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <tags
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product Menu"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <searchplaceholdertext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter search placeholder text"
+                                                fieldLabel="Enter search placeholder text"
+                                                name="./placeHolderText"/>
+                                            <errorMessage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter error message to display when no pages available for the search."
+                                                fieldLabel="Enter error message"
+                                                name="./errorMessage"/>
+                                            <variant
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Please select type of the variant (link/panel)"
+                                                fieldLabel="Tab Variant"
+                                                name="./tabVariant">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <paneltab
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Panel Tab"
+                                                        value="paneltab"/>
+                                                    <linktab
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Link Tab"
+                                                        value="linktab"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".producttabs-dropdown-showhide"/>
+                                            </variant>
+                                            <tabpanel
+                                                granite:class="producttabs-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                allowBlank="false"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Products Panel Menu Items">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./productMenuItems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <tagPathList
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                    fieldDescription="Add Tags of which tag title and respective tagged pages to be displayed"
+                                                                    fieldLabel="Tags to be displayed"
+                                                                    multiple="{Boolean}true"
+                                                                    name="./tagPathList"
+                                                                    rootPath="/content/cq:tags/vcm"/>
+                                                                <rootPagePath
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                    fieldLabel="Root path of the Tagged pages"
+                                                                    name="./rootPagePath"
+                                                                    rootPath="/content/vcm"
+                                                                    title="Root path of the tag"/>
+                                                                <buttonText
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Button Text"
+                                                                    name="./buttonText"/>
+                                                                <buttonLink
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                    fieldLabel="Button Link"
+                                                                    name="./buttonLink"
+                                                                    rootPath="/content/vcm"/>
+                                                                <tabTitle
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Add tab title to be displayed "
+                                                                    fieldLabel="Tab Title"
+                                                                    name="./tabTitle"/>
+                                                                <tabLink
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                    fieldDescription="Add link path of the tab to redirect"
+                                                                    fieldLabel="Link path of the tab"
+                                                                    name="./tabLink"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="paneltab"/>
+                                            </tabpanel>
+                                            <tablink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                allowBlank="false"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Tab Link Items">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./tabLinkItems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <tabTitle
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Add tab title to be displayed "
+                                                                    fieldLabel="Tab Title"
+                                                                    name="./tabTitle"/>
+                                                                <tabLink
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                    fieldDescription="Add link path of the tab to redirect"
+                                                                    fieldLabel="Link path of the tab"
+                                                                    name="./tabLink"
+                                                                    rootPath="/content/vcm"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="linktab"/>
+                                            </tablink>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tags>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

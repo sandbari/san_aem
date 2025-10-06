@@ -1,0 +1,12 @@
+.sectorallocation span.date-text {
+	display: inline-block;
+}
+.sectorallocation .heading {
+     margin: 15px 0 0;
+}
+
+@media screen and (min-width:1024px) {
+    .sectorallocation .heading {
+    	margin: 0px 0 15px;
+	}
+}

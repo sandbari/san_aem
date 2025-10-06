@@ -1,0 +1,582 @@
+/* Theme Class Starts here*/
+.fund-data-container {
+    position: relative;
+}
+.left-bar, .right-bar{
+        background: transparent;
+        height: 100%;
+        position: absolute;
+        z-index: 99;
+        width: 12px;
+        left:0;
+        top:0;
+}
+.right-bar{
+    left:auto;
+    right:0;
+    top:0;
+}
+/* Theme Class Ends here*/
+.populinkaxreader {
+	display: block;
+    float:left;
+}
+
+.fund-details .fundname-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.fund-details .fundname-container {
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.fundname-container .fund-ticker {
+    font-family: benton-sans, sans-serif;
+    width: auto;
+    height: 64px;
+    color: #fff;
+    background: #004A98;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    word-break: break-word;
+    padding: 24px 5px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.fundName {
+    display: flex;
+}
+
+.productSelectBox select {
+    font-size: 16px;
+    line-height: 13px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #486D90;
+    padding: 10px 20px;
+}
+
+.productSelectBox select option {
+    padding: 10px 20px !important;
+    border: none !important;
+    display: inline;
+}
+
+.fundname-container .fund-name {
+    font-family: yorkten-slab-normal, sans-serif;
+    font-size: 22px;
+    color: #486D90;
+    font-weight: 700;
+    font-style: normal;
+    width: calc(100% - 80px);
+    height: 60px;
+    display: flex;
+}
+
+.fund-description-container {
+    padding: 20px 15px;
+}
+
+.fund-data-container {
+    background-color: #F7F7F7;
+}
+
+.fund-description-container .fund-data>div,
+.fund-description-container .fund-data>div {
+    box-shadow: none;
+}
+
+.rating-stars-container .rating-count {
+    margin-left: 7px;
+}
+
+.fund-data p {
+    font-size: 14px;
+}
+
+.fund-description-container .etf-fund-data .prospectus {
+    margin-right: 15px;
+}
+
+.fund-description-container .etf-fund-data .fact-sheet {
+    margin-right: 17px;
+}
+
+.fund-data .nav-change {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fund-data .nav-change-value {
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.memberUsers .dotted-text {
+    color: #004A98;
+    border-bottom: 1px dotted #004A98;
+}
+
+.fund-data-container .dotted-text {
+	display: block;
+}
+/* Star ratings section style starts*/
+
+.rating-stars-container .fa {
+    color: #00000066;
+    margin-right: 1px;
+    font-style: normal !important;
+}
+
+.rating-stars-container .fa.fa-star.active {
+    color: #c68600;
+}
+/* Star ratings section style starts*/
+
+.fund-data-container .desktopShow {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.fund-description-container .itlicText {
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.fund-description-container .fund-data-links a {
+    font-family: benton-sans, sans-serif;
+    font-weight: 600;
+    margin: 0 0 15px 0!important;
+    display: block;
+	float: left;
+}
+
+.fund-description-container .pdf-icon {
+    background: url(../resources/pdf_icon.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 30px;
+    line-height: 25px;
+    margin-bottom: 8px;
+    display: inline-block;
+    padding-right: 20px;
+}
+.fund-description-container .csv-icon {
+    background: url(../resources/csv_icon.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 30px;
+    line-height: 25px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+            
+.fund-description-container .fact-sheet {
+    margin-right: 14px;
+}
+
+.prospectus {
+    background: url(../resources/icon__external-link.svg);
+    background-repeat: no-repeat;
+    background-position: left 0;
+    padding-left: 30px;
+    line-height: 25px
+}
+
+.fund-data .category {
+    font-weight: 600;
+}
+
+.fund-data .category-value {
+    font-weight: normal;
+}
+
+.fund-buttons {
+    margin: 30px 0;
+}
+
+.fund-buttons .btn-primary {
+    font-size: 16px;
+    font-family: yorkten-slab-normal, sans-serif;
+    height: 50px;
+    width: 100%;
+}
+
+.fund-buttons .purchase-fund-btn {
+    margin-top: 0;
+}
+
+.fund-description {
+    border-top: 2px solid #E6E6E6;
+    padding: 15px 0px;
+}
+
+.rgt-content {
+    padding: 15px 0px;
+}
+
+.fund-description li {
+    font-family: benton-sans, sans-serif;
+    font-size: 14px;
+    list-style-type: disc;
+    line-height: 30px;
+    margin-left: 15px;
+    color: #49494A;
+}
+
+.fixed-button {
+    position: fixed;
+    top: 25px;
+    z-index: 3;
+}
+
+.productSelectBox .fundDropDown {
+    padding: 15px;
+    width: 255px;
+    height: auto;
+    max-height: 250px;
+    overflow-y: auto;
+    background: #fff;
+    box-shadow: 0px 2px 16px #0000002B;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    color: #486D90 !important;
+    border: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 10px;
+    margin-left: 8px;
+    line-height: 18px;
+    position: relative;
+}
+
+.productSelectBox::after {
+    background-image: url(../resources/Button__closed-dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    position: absolute;
+    content: '';
+    right: 10px;
+    width: 30px;
+    height: 20px;
+    top: 15px;
+    transform: rotate(360deg);
+    pointer-events: none;
+}
+
+.productSelectBox.menuExpanded::after {
+    content: '';
+    transform: rotate(180deg);
+    right: 17px;
+}
+
+.dynamic-loader-productoverview {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+.dynamic-loader-productoverview img {
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+.error-message-productoverview{
+	display:none;
+}
+.downArrow {
+    color: #e60000;
+}
+
+.productSelectBox select option {
+    list-style-type: none;
+    margin-bottom: 34px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #004A98;
+    font-size: 16px;
+    background: #F7F7F7
+}
+
+.memberUsers .productSelectBox::after {
+    display: none;
+}
+
+.product-details .memberUsers .icon-tooltip {
+    display: none;
+}
+
+.memberUsers .productSelectBox .fundDropDown {
+    box-shadow: none;
+    padding: 13px 20px;
+    border:1px solid #e6e6e6;
+}
+
+.fund-data-rating .fa-star-o,
+.fund-data-rating .fa-star:before {
+    color: unset;
+}
+
+.fundname-container .fund-ticker-etf {
+	margin-right: 10px;
+}
+
+.fund-ticker-etf img {
+	width: auto;
+	height: 60px;
+}
+
+.fundname-container .logoContainer img {
+	display: none;
+}
+
+.nav-change .nav-change-value i {
+    font-style: normal !important;
+    padding-right: 3px;
+}
+.fund-buttons{
+    display:none;
+}
+.fund-data-rating a {
+    font-size: 14px;
+    font-family: benton-sans, sans-serif;
+}
+
+.fund-details .dynamic-loader-productoverview {
+	position: relative;
+}
+
+.fund-details .dynamic-loader-productoverview img {
+	position: relative;
+	left: 50%;
+}
+
+.dotted-text.noData {
+	border: none;
+	color: #49494A;
+}
+
+.dotted-text.noData a, .dotted-text.noData a:focus, .dotted-text.noData a:visited
+	{
+	border-bottom: none;
+	color: #49494A;
+}
+
+.textShowinMobile {
+	display: none;
+}
+
+.textHideinMobile {
+	display: none;
+}
+
+.fund-details .productSelectBox {
+    display: none;
+}
+
+.fund-data .nav-change-value.upArrow {
+    color:#0D823C;
+}
+
+/* For PC */
+@media screen and (min-width: 1024px) {
+    .fundName {
+        padding: 0;
+        margin-right: 40px;
+    }
+    .fund-details .fundname-container .productSelectBox {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fund-description {
+        padding: 15px 0;
+    }
+    .fund-data-container .col-sm-12.col-md-12.col-lg-8.lft-content {
+        margin-right: 34px;
+    }
+    .fundname-container .desktopShow {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    .fund-description-container .pdf-icon ,.fund-description-container .csv-icon {
+        margin-bottom: 14px;
+        padding-right: 0;
+    }
+    .fund-details .fundname-container {
+        margin: 30px auto;
+        padding: 0;
+    }
+    .fundname-container .fund-ticker {
+        margin-right: 21px;
+        white-space: nowrap;
+    }
+    .fundname-container .fund-name {
+        font-size: 30px;
+        width: auto;
+    }
+    .fund-description-container .fund-data>div,
+    .fund-description-container .fund-data>div {
+        margin-bottom: 0;
+    }
+    .fund-description-container {
+        padding: 23px 0px;
+    }
+    .fund-description-container .fund-data-nav,
+    .fund-description-container .fund-data-rating {
+        padding-left: 0;
+    }
+    .fund-buttons {
+        margin: 0;
+    }
+    .fund-buttons .btn-primary {
+        width: 142px;
+    }
+    .etf-fund-data .pdf-icon, .etf-fund-data .csv-icon {
+        margin-top: 20px;
+    }
+    .etf-fund-data .fact-sheet {
+        margin: 0;
+    }
+    .etf-fund-data .desktopShow {
+        margin: 10px 0;
+    }
+    .productSelectBox select {
+        width: 255px;
+        height: 40px;
+    }
+    .rgt-content {
+        padding: 0px 15px;
+    }
+    .fund-description-container .itlicText {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    
+    .fundname-container .fund-ticker-etf {
+    	margin-right: 21px;
+    }
+    
+    .fund-ticker-etf img{
+    	width: auto;
+    	height: 60px;
+    }
+	.fundname-container .logoContainer img {
+		display: block;
+	}
+    .productdetaildatainfo .error-message-productoverview p{
+        padding-left: 400px;
+    }
+}
+@media screen and (max-width: 1024px) and (orientation: portrait){
+    .fund-details .fundname-container{
+        padding: 0 15px;
+    }
+    .fund-description-container{
+        padding: 23px 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .fund-description ul {
+        padding-left: 15px;
+    }
+    .fund-description-container .fund-data .fund-data-nav p:last-of-type,
+    .fund-description-container .fund-data .fund-data-rating p:last-of-type {
+        margin-bottom: 20px;
+    }
+    .fund-details .fundname-container {
+        display: block;
+    }
+    .fund-details .fundname-container .fundName {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fund-details .fundname-container .productSelectBox {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+    .row.fund-description-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fund-description-container .fund-data>div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .textShowinMobile {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 991px) {
+    .fund-description-container .itlicText {
+        margin-top: 20px
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .productSelectBox .fundDropDown {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) and (orientation: landscape) {
+    .fund-description-container .itlicText {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and ( max-width:991px) and (orientation: portrait) {
+    .fund-description-container .itlicText {
+        padding-left: 15px;
+    }
+    
+    .fundname-container .logoContainer img {
+		display: block;
+	}
+}
+
+.vcm-nrf1 {
+	display: block !important;
+    float: left !important;
+}
+
+.vcm-morningstar-rating {
+	display: block !important;
+}
+
+@media screen and (min-width: 768px) {
+	.fund-data-rating-box {
+		padding: 0;
+	}
+	.fund-data-nav {
+		float: left;
+	}
+	.fund-data-rating {
+		float: right;
+	}
+	.fund-data.normal-fund-data {
+		margin-bottom: 10px;
+	}
+	.fund-description-container .itlicText {
+		float: left;
+	}
+	.textHideinMobile {
+		display: block;
+	}
+}

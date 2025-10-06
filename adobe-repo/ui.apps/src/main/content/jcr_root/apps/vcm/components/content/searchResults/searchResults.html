@@ -1,0 +1,79 @@
+<style>
+.hide_tab{
+	display:none !important;
+}
+</style>
+
+<sly data-sly-test.author="${wcmmode.edit}">
+	${'Edit Search Results Component'}
+</sly>
+<input type='hidden' id="searchUrl" value="/content/vcm/prelogin.sitesearch.json"/>
+<input type='hidden' id="suggestionsUrl" value="/content/dam/vcm/configs/suggestionIndexFiles/"/>
+
+<sly data-sly-use.searchObj="com.vcm.core.models.SearchResultsModel">
+	<input type='hidden' id="searchIgnoreTag" value="${searchObj.searchIgnoreTag}"/>
+	<input type='hidden' id="searchLimit" value="${searchObj.searchLimit}"/>
+	<sly data-sly-list.tagValue="${searchObj.tabList}">
+		<input name="tabTypes" type="hidden" value="${tagValue.getTagID}"/>
+	</sly>
+<div class="container">
+      <div class="row m-0 borderContainer">
+        <div class="content-wrapper search_data">
+            <p class="searchLabel">Search:</p>
+          <div id="vcm-search-box" class="search-form-group form-group has-search">
+            <i class="fa fa-search icon-green"></i>
+            <input   type="text"
+					 role="combobox"
+					 aria-expanded="false"
+					 aria-owns="search-listbox"
+					 aria-haspopup="listbox"
+					 aria-autocomplete="list"
+					 aria-controls="search-listbox"
+         			 onpaste="return false;"
+         			 onDrag="return false" 
+         			 onDrop="return false"
+         			 class="form-control shadow-sm" 
+         			 id="txt-search" 
+         			 placeholder="Search"
+         			 for="vcm-search-box">
+         			 
+            <button class="btn border-0 btn-pos clear_search" type="button">
+             ${searchObj.clearSearchLabel}
+            </button>
+            <div class="search-suggession-menu" id="autcomplete_list">
+            	<ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front tt-empty"></ul>
+            </div>
+          </div> 
+          <div class="no-results-set" style="display:none;">
+          	<p>No Results Found</p>
+          </div>
+          <div class="planTableLoader"></div>
+          <div class="searchResultsWrapper hide">      
+	          <div class="result_keyword">
+	            <p class="my-sm-7">${searchObj.resultsForText} '<span id="search-term"></span>'</p>
+	          </div>
+	          <div class="dropdown">
+	            <a class="btn btn-default btn-lg dropdown-toggle" href="#" role="button" id="LinkDropdownDemo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	              <span>Filter</span>
+	              <i class="fa fa-chevron-circle-down py-1" aria-hidden="true"></i>
+	            </a>
+	            <ul class="dropdown-menu ul_list" aria-labelledby="LinkDropdownDemo" role="tablist">
+	              <li class="active"><a class="dropdown-item all-tab" tabindex="0" href="#" role="tab" aria-controls="all" data-selected="all">All</a></li>
+					<sly data-sly-list.tagValue="${searchObj.tabList}">
+						<li class="hide_tab"><a class="dropdown-item" tabindex="-1" href="#" role="tab" aria-controls="${tagValue.getTitle}" data-selected="${tagValue.getTagID}">${tagValue.getTitle} <span class="count ${tagValue.getTagID}"></a></li>
+					</sly>
+	            </ul>
+	          </div>
+	          <sly data-sly-list.tagValue="${searchObj.tabList}">
+		          <div class="hide_tab" data-tab="${tagValue.getTagID}" class="data_list" role="tabpanel">
+		            <h4>${tagValue.getTitle} <span class="count"></h4>
+		            <div class="list_content" role="list"></div>
+		          </div>
+		       </sly>
+	       </div>
+        </div>
+      </div>         
+  </div> 
+  <input type="hidden" id="SeeAllText" value="${searchObj.SeeAllText}"/>
+  <input type="hidden" id="seeAllLinkDescription" value="${searchObj.seeAllLinkDescription}"/>
+</sly>

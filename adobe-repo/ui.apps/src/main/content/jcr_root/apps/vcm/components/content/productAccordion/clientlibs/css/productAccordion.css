@@ -1,0 +1,260 @@
+/* Styles for USAA Mutual Funds Overview */
+
+.mfoverview__header {
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 23px;
+    color: #486D90;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.underline-h3 {
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgb(139, 193, 5);
+}
+
+.card-header {
+    padding: 24px;
+    width: 100%;
+    background: #fff;
+    height: auto;
+    /*box-shadow: 0px 2px 16px #0000002B;*/
+    box-shadow: 0px 9px 16px -15px #0000002b;
+}
+
+.card-header.collapsed {
+    box-shadow: none;
+}
+.generic-accordion .card-body, #accordion .card-body {
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.generic-accordion.accordion , #accordion.accordion {
+    box-shadow: 0px 2px 16px #0000002B;
+}
+
+.generic-accordion.accordion>.card>.card-header , #accordion.accordion>.card>.card-header {
+    margin-bottom: 0;
+}
+
+.mfoverview__para {
+    font-family: benton-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.row.mfoverview__row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.card-header.collapsed .card-title {
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 22px;
+    color: #486D90 !important;
+    border-bottom: none;
+}
+
+.card-title:hover {
+    text-decoration: none;
+}
+
+.generic-accordion.accordion , #accordion.accordion {
+    margin-bottom: 15px;
+}
+
+.mf-ul {
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    background: #F7F7F7;
+    color: #486D90 !important;
+    font-weight: 800;
+    padding-left: 30px;
+    margin-top: 15px;
+}
+
+.productAccordion .card-body {
+    padding: 0px;
+}
+
+.mf-ul li {
+    list-style-type: none;
+    margin-bottom: 34px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #004A98;
+    font-size: 16px;
+    margin-top:5px;
+}
+
+.generic-accordion .card-body, #accordion .card-body {
+    padding: 0px;
+}
+
+
+/* .mfoverview__col .card{
+  border:0px
+} */
+
+.accordion .card-header:after {
+    content: "";
+    background: url(../resources/Button__closed-dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-left: 26px;
+    padding-bottom: 16px;
+    padding-top: 20px;
+    display: inline;
+    cursor: pointer;
+    float: right;
+    transform: rotate(180deg);
+}
+
+.accordion .card-header.collapsed:after {
+    content: "";
+    background: url(../resources/Button__closed-dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-bottom: 16px;
+    padding-top: 20px;
+    display: inline;
+    cursor: pointer;
+    float: right;
+    transform: rotate(360deg);
+}
+
+.accordion>.card {
+    border: 0px;
+    overflow: unset;
+    width: 100%;
+    height: auto;
+}
+
+.productAccordion .card-header .card-title {
+    padding-bottom: 0;
+    line-height: 30px;
+}
+
+.accordion .productAccordion .card-header .collapsed:after {
+    height: 40px;
+}
+
+.productAccordion .card-header {
+    padding: 24px 15px 24px 15px;
+}
+
+.mf-ul::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+}
+
+.mf-ul::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.container.mfoverview {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.mf-ul::-webkit-scrollbar-thumb {
+    background-color: #D2D2D2;
+    border-radius: 8px;
+}
+
+.center-align {
+    position: absolute;
+    top: 80%;
+    transform: translate(0, -50%);
+    left: 5%;
+}
+
+.center-align p {
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 22px;
+    color: #fff;
+}
+
+.center-align a {
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+}
+
+.center-align a:hover {
+    text-decoration: none;
+}
+
+.text-rightArrow::after {
+    content: "";
+    background: url(../resources/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-left: 45px;
+    padding-bottom: 16px;
+    padding-top: 20px;
+    display: inline;
+}
+
+.mfoverview__img {
+    padding-bottom: 20px;
+}
+
+.mfoverview__col.mfoverview-badge {
+    position: absolute;
+    padding: 18px 80px;
+    color: #fff;
+    border-top: 40px solid #004A98;
+    border-right: 40px solid transparent;
+}
+
+.badge-text {
+    position: absolute;
+    left: 10px;
+    top: -32px;
+    color: #fff;
+    font-size: 16px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.generic-accordion .card-body , #accordion .card-body {
+    min-height: auto;
+    width: 100%;
+}
+
+.card-header .card-title {
+    color: #49494A;
+    font-size: 22px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    border-bottom: 2px solid #8BC105;
+    padding-bottom: 10px;
+}
+
+.productAccordion .card-header:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+@media screen and (min-width: 1024px) {
+    .col-sm-12.col-lg-8.mfoverview__col.mf-left {
+        padding-right: 120px;
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "ctsuser",
+  "bgImageDesktopShow": "/content/dam/vcm/contact-victory/contact-us-image.png",
+  "description": "Our specialized investment experts will work with you to create specialized investment strategies designed to drive better client outcomes.",
+  "bgImageMobileShow": "/content/dam/vcm/contact-victory/contact-us-image.png",
+  "institutionalinvestorsType": "false",
+  "jcr:lastModifiedBy": "ctsuser",
+  "financialAdvisorsType": "false",
+  "jcr:created": "Fri Jun 26 2020 07:25:47 GMT+0000",
+  "linkUrl": "/content/vcm/language-masters/en/financial-professional/contact-us",
+  "heading": "Connect with Victory Capital",
+  "jcr:lastModified": "Thu Jul 23 2020 08:55:15 GMT+0000",
+  "linkDescription": "contact financial professional",
+  "linkText": "Contact Victory Capital",
+  "sling:resourceType": "vcm/components/content/contactvictory",
+  "membersType": "false",
+  "textIsRich": "true",
+  "tabSelect": "_self"
+}

@@ -1,0 +1,175 @@
+.planTable {
+    overflow: hidden;
+}
+.planTable caption {
+    caption-side: top;
+    color: #000;
+}
+.planTableShadowRight {
+    position: absolute;
+    right: 0;
+    width: 14px;
+    height: 100%;
+    top: 0;
+    z-index: 999;
+    padding: 75px 0px 15px 0px;
+}
+
+.planTableShadowLeft {
+    position: absolute;
+    width: 14px;
+    height: 100%;
+    top: 0;
+    z-index: 999;
+    padding: 75px 0px 15px 0px;
+}
+
+.planTableShadowRight .actualShadow,
+.planTableShadowLeft .actualShadow {
+    background: transparent linear-gradient(270deg, #00000038 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 100%;
+}
+
+.planTable .content-wrapper {
+    padding: 0 15px;
+}
+
+.planTable .content-wrapper>div {
+    position: relative;
+}
+
+.planTable .table {
+    width: 768px;
+}
+
+.planTable-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.planTable .table td,
+.planTable .table th {
+    border-top: 0px;
+}
+
+.planTable .table th {
+    text-align: right;
+    font: Bold 14px/20px benton-sans, sans-serif;
+    letter-spacing: 0;
+    color: #49494A;
+}
+
+.planTable .table th:first-child {
+    width: 40%
+}
+
+.planTable .table th:first-child,
+.planTable .table td:first-child {
+    text-align: left;
+}
+
+.planTable .table td,
+.planTable .table th div:last-child {
+    text-align: right;
+    font: normal 14px/20px benton-sans, sans-serif;
+    letter-spacing: 0;
+    color: #49494A;
+}
+
+.planTable .table th div:last-child {
+    text-align: left;
+}
+
+.planTable .table thead th {
+    border-bottom: 2px solid #8BC105;
+}
+
+.planTable .table-striped tbody tr:nth-of-type(odd) {
+    background-color: unset;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.planTable .table-striped tbody tr:nth-of-type(even) {
+    background-color: unset;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+}
+
+.planTableHeading {
+    margin: 40px 0px 30px 0px;
+    font: Bold 18px/22px benton-sans, sans-serif;
+}
+
+.planTableHeading span {
+    font: normal 14px/22px benton-sans, sans-serif;
+}
+
+.quarterly,
+.monthly,
+.fee {
+    margin-bottom: 40px;
+}
+
+.planTableLoader {
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url('/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif') center no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+.planTableLoader.hide {
+    display: none;
+}
+
+.planTable-wrap {
+    overflow: scroll;
+    -ms-overflow-style: none;
+}
+
+.planTable table p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.planTable table p sup {
+    font-size: smaller;
+    font-weight: 100;
+}
+
+@media screen and (min-width: 768px) {
+    .planTable .table {
+        width: 100%;
+    }
+    .planTable-wrap {
+        overflow: hidden;
+    }
+    .planTableShadowRight,
+    .planTableShadowLeft {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .planTable .content-wrapper {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .planTable .content-wrapper {
+        padding: 0 0;
+    }
+    .planTable .table th:first-child {
+        width: 30%;
+    }
+    .planTable .content-wrapper>div {
+        overflow-y: scroll;
+    }
+    /*remove th and td scrol not required*/
+    .planTable th:first-child,
+    .planTable td:first-child,
+    .planTableHeading {
+        position: sticky;
+        left: -1px;
+        background: #fff;
+        z-index: 1024;
+    }
+}

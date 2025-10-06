@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="FAQ list dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <headtext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author faq list heading"
+                        fieldLabel="Heading"
+                        name="./headText"/>
+                    <multi
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        fieldDescription="To author FAQ"
+                        fieldLabel="FAQ"
+                        required="true">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                            name="./pages"
+                            rootPath="/content/dam/vcm"/>
+                    </multi>
+                    <seealltext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author text for see all field"
+                        fieldLabel="See All text"
+                        name="./seeAllText"/>
+                    <seeallurl
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="Author link of the contact us page "
+                        fieldLabel="Link Url"
+                        name="./seeAllUrl"
+                        rootPath="/content/vcm"
+                        wrapperClass="cmp-image--editor-link"/>
+                    <linkdescription
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="To author the aria-label or link description of the link. "
+                        fieldLabel="Link Description"
+                        name="./linkDescription"/>
+                    <tabselect
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldDescription="To author target for link to be open in same tab or new tab"
+                        fieldLabel="Target"
+                        name="./tabSelect">
+                        <items jcr:primaryType="nt:unstructured">
+                            <sametab
+                                jcr:primaryType="nt:unstructured"
+                                text="Same tab"
+                                value="_self"/>
+                            <newtab
+                                jcr:primaryType="nt:unstructured"
+                                text="New tab"
+                                value="_blank"/>
+                        </items>
+                    </tabselect>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

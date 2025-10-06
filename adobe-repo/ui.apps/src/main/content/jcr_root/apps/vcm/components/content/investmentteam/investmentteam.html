@@ -1,0 +1,69 @@
+<sly data-sly-use.investmentTeam="com.vcm.core.models.InvestmentTeams"
+	 data-sly-use.leaderTemplate="leaderinfo.html">
+</sly>
+<sly data-sly-test.notempty="${investmentTeam.list}"/>
+<sly data-sly-test="${wcmmode.edit && !notempty}"><div class="cq-placeholder" data-emptyText="${component.title}"/></sly>
+<sly data-sly-test="${notempty}">
+	<sly data-sly-test.teamDisplayStyle="${investmentTeam.teamDisplayStyle}"/>
+	<sly data-sly-test.cPage="${currentPage.path @ extension='html'}"/>
+	<div class="container">
+		<div class="dummy-block__container px-0 pb-0 mx-0 mt-0 mb-0 position-relative bg-grey">
+			<span class="shape-triangle-lg-right-top" style="border-right-color: ${inheritedPageProperties.triangleColor @ context='styleToken'};"></span>
+			<div class="content-wrapper">
+				<!-- Investment Team list -->
+				<div class="investment-team-list py-5">
+					<sly data-sly-test="${investmentTeam.heading}">
+						<div class="title-desc-default mb-40 mb-sm-40">
+							<h3 class="uln-green">${investmentTeam.heading}</h3>
+						</div>
+					</sly>
+					<sly data-sly-test="${teamDisplayStyle != 'halfWidth'}">
+						<sly data-sly-list.leaderbio ="${investmentTeam.list}">
+							<sly data-sly-test="${leaderbioList.first}">
+								<div class="lead-bio-block mb-5">
+									<div class="image-content-block">
+										<sly data-sly-test="${leaderbio.bioPicture}">
+											<div class="image-block">
+												<img src="${leaderbio.bioPicture}" alt="">
+											</div>
+										</sly>
+										<div class="content-block">
+											<sly data-sly-test="${currentPage.properties.subtitle && teamDisplayStyle == 'halfWidthWithLeader'}">
+												<h4 class="mb-30 show-md">${currentPage.properties.subtitle}</h4>
+											</sly>
+											<div class="leadname-desg-block mb-20">
+												
+													<h5 class="txt-skyblue">${leaderbio.fullname}</h5>
+												
+												<p class="desc"><sly data-sly-test="${leaderbio.titleDescription}">${leaderbio.titleDescription}</sly></p>
+												<p class="desc"><sly data-sly-test="${leaderbio.designation}">${leaderbio.designation}</sly></p>
+											</div>
+											${leaderbio.shortDescription @ context ='html'}
+											<a class="navg-right-arw-link" href="${leaderbio.pagePath @ extension='html'}" aria-label="${investmentTeam.linkText} about ${leaderbio.fullname}">${investmentTeam.linkText}</a>
+										</div>
+									</div>
+								</div>
+							</sly>
+						</sly>
+						<div class="row row-flex investment-list ${teamDisplayStyle == 'shortInfo'? 'mb-sm-4 mt--30': 'halfwidth mb-2'}">
+							<sly data-sly-list.leaderbio ="${investmentTeam.list}">
+								<sly data-sly-test="${!leaderbioList.first}">
+									<sly data-sly-call="${leaderTemplate.leader @ leaderbio=leaderbio, teamDisplayStyle=teamDisplayStyle}"></sly>
+								</sly>
+							</sly>
+						</div>
+					</sly>
+					<sly data-sly-test="${teamDisplayStyle == 'halfWidth'}">
+						<div class="row row-flex investment-list halfwidth mb-30 mb-0">
+							<sly data-sly-list.leaderbio ="${investmentTeam.list}">
+								<sly data-sly-test="${investmentTeam.mappedCurrentPage != leaderbio.pagePath}">
+									<sly data-sly-call="${leaderTemplate.leader @ leaderbio=leaderbio, teamDisplayStyle=teamDisplayStyle}"></sly>
+								</sly>
+							</sly>
+						</div>
+					</sly>
+				</div>
+			</div>
+		</div>
+	</div>
+</sly>

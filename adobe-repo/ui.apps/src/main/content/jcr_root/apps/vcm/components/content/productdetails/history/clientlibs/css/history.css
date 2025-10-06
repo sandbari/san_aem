@@ -1,0 +1,48 @@
+.product-details .history-table .table thead th {
+    text-align: center;
+    min-width: auto;
+    color: #49494A;
+    padding:10px 9px;
+}
+.product-details .history-table .table tbody td {
+    color: #49494A;
+    padding: 12px 10px;
+}
+.product-details .history-table .table tbody tr:nth-child(1) td {
+    font-weight: 700;
+}
+.product-details .history-table .table tbody td {
+    text-align: center;
+    min-width: auto;
+    padding:10px 9px;
+}
+
+.history-table .history-alltime-table tbody td:nth-child(2),
+.history-table .history-best-worst-table tbody td:nth-child(even) {
+    border-right: 1px solid  #ccc;
+}
+.history-table .history-best-worst-table tbody td:last-child {
+    border-right: none;
+}
+.history-table .history-best-worst-table thead th,
+.history-table .history-best-worst-table tbody td {
+    font-size: 14px;
+}
+.history-table .alltime_container {
+    margin-bottom: 50px;
+}
+
+.history-best-worst-table_wrapper {
+    position: relative;
+}
+.history-alltime-table_wrapper {
+    position: relative;
+}
+.history .heading {
+    margin: 15px 0 0;
+}
+@media screen and (min-width:1024px) {
+    .history .heading {
+        margin: 0 0 15px;
+    }
+}

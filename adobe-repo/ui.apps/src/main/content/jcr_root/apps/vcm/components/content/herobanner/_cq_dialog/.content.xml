@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Hero Banner Authoring Dialog  "
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                jcr:title="HeroBanner Configuration Tabs"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <bannertype
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Choose banner type"
+                                                fieldLabel="Banner Type"
+                                                name="./bannerType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Default"
+                                                        value=""/>
+                                                    <home
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Homepage Banner"
+                                                        value="homepage-banner"/>
+                                                    <small
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Small Banner"
+                                                        value="small-banner"/>
+                                                    <franchise
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Franchise Banner"
+                                                        value="franchise-banner"/>
+                                                </items>
+                                            </bannertype>
+                                            <heroImage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                allowUpload="{Boolean}false"
+                                                autoStart="{Boolean}false"
+                                                class="cq-droptarget"
+                                                fieldDescription="Please choose Hero Image"
+                                                fieldLabel="Hero Image"
+                                                fileReferenceParameter="./heroImage"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                                multiple="{Boolean}false"
+                                                name="./vcmHeroImage"
+                                                uploadUrl="${suffix.path}"
+                                                useHTML5="{Boolean}true"/>
+                                            <heroBackgroundImage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                allowUpload="{Boolean}false"
+                                                autoStart="{Boolean}false"
+                                                class="cq-droptarget"
+                                                fieldDescription="Please choose Hero Background Image"
+                                                fieldLabel="Hero Background Image"
+                                                fileReferenceParameter="./heroBackgroundImage"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                                multiple="{Boolean}false"
+                                                name="./vcmHeroBackgroundImage"
+                                                uploadUrl="${suffix.path}"
+                                                useHTML5="{Boolean}true"/>
+                                            <alttext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Please add alt text for then banner"
+                                                fieldLabel="Alt Text"
+                                                name="./altText"/>
+                                            <herobgcolor
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/vcm/components/content/custom-colorpicker"
+                                                fieldDescription="Please choose Hero Background Color"
+                                                fieldLabel="Hero Background Color"
+                                                name="./heroBackgroundColor"/>
+                                            <imagefocusarea
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Choose image focus area for Mobile view"
+                                                fieldLabel="Image Focus Area (Mobile)"
+                                                name="./imageFocusArea">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <responsive
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Default"
+                                                        value="responsive"/>
+                                                    <left
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Left"
+                                                        value="left"/>
+                                                    <center
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Center"
+                                                        value="center"/>
+                                                    <right
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Right"
+                                                        value="right"/>
+                                                </items>
+                                            </imagefocusarea>
+                                            <greentriangle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Choose if green triangle to be added"
+                                                fieldLabel="Add Green Triangle"
+                                                name="./addGreenTriangle">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <yes
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Yes"
+                                                        value="yes"/>
+                                                    <no
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="No"
+                                                        value="no"/>
+                                                </items>
+                                            </greentriangle>
+                                            <mainheading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Please add the Hero Banner Heading."
+                                                fieldLabel="Hero Banner Heading"
+                                                name="./heading"/>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/vcm/components/content/common"
+                                                sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="Please enter Hero Banner Description"
+                                                fieldLabel="Hero Banner Description"
+                                                name="./description"
+                                                removeSingleParagraphContainer="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <linktext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Please add Link Text"
+                                                fieldLabel="Enter Link text"
+                                                name="./linkText"/>
+                                            <linkurl
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Enter Link Url"
+                                                fieldLabel="Link Url"
+                                                name="./linkUrl"
+                                                rootPath="/content/vcm"/>
+                                            <linkdescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author the aria-label or link description of the link. "
+                                                fieldLabel="Link Description"
+                                                name="./linkDescription"/>
+                                            <tabselect
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="To author target for link to be open in same tab or new tab"
+                                                fieldLabel="Target"
+                                                name="./tabSelect">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Same tab"
+                                                        value="_self"/>
+                                                    <newtab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="New tab"
+                                                        value="_blank"/>
+                                                </items>
+                                            </tabselect>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <addtional
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Additional Component on Banner"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <type
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel=" Variant Type"
+                                                name="./requirementItems">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="None"
+                                                        text="None"
+                                                        value="none"/>
+                                                    <loginbox
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Add Login Component"
+                                                        value="loginBox"/>
+                                                    <usertype
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Usertype"
+                                                        text="Add User Type"
+                                                        value="userTypeSelection"/>
+                                                    <imagecomp
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Add Image Component"
+                                                        value="imageBox"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".image-showhide-target"/>
+                                            </type>
+                                            <togglefields
+                                                granite:class="hide image-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <imagepath
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldDescription="To author image path"
+                                                        fieldLabel="Image Path"
+                                                        name="./imagePath"
+                                                        rootPath="/content/dam/"/>
+                                                    <imgalttext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Please add alt text for the overlay image on banner"
+                                                        fieldLabel="ImagePath Alt Text"
+                                                        name="./imagePathAltText"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="imageBox"/>
+                                            </togglefields>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </addtional>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

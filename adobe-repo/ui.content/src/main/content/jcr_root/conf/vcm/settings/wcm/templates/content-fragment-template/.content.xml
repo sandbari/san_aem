@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2020-02-19T04:14:04.225Z"
+        cq:lastModifiedBy="vmohanam@vcm.com"
+        cq:lastReplicated="{Date}2020-04-19T07:17:01.126Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:templateType="/conf/vcm/settings/wcm/template-types/content-page"
+        jcr:description="Template for creating content fragments "
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Content Fragment Template"
+        fileReference="/content/dam/vcm/templates/Content-fragment.png"
+        status="enabled"/>
+</jcr:root>

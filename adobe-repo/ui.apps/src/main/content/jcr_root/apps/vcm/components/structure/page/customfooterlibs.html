@@ -1,0 +1,6 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+	<sly data-sly-call="${clientlib.js @ categories='vcm.base'}"></sly>
+</sly>
+<img src="https://d21y75miwcfqoq.cloudfront.net/5b658c87" style="position: absolute"
+	 referrerpolicy="no-referrer-when-downgrade">
+<sly data-sly-test="${wcmmode.preview || wcmmode.edit}" data-sly-call="${clientLib.js @ categories='vcm.authoring'}"></sly>

@@ -1,0 +1,36 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+   <div>Edit ${component.title} Component</div>
+</sly>
+<div class="container">
+   <sly data-sly-use.model="com.vcm.core.models.OurProductsModel" data-sly-use.titleTemplate="titleTemplate.html" data-sly-use.titleDescTemplate="titleDescTemplate.html" data-sly-use.titleDescIconTemplate="titleDescIconTemplate.html" data-sly-use.descLinkTemplate="descLinkTemplate.html"/>
+   <div data-sly-test.title ="${model.title}" class="products-block productsCorporateHome col-md-12 col-sm-12 col-12">
+      <sly data-sly-test.image="${model.desktopImage}">
+		<img src="${model.desktopImage}" alt="" class="desktopShow"/>
+      </sly>
+      <sly data-sly-test.title="${model.contentType=='title' @i18n}">
+         <div data-sly-include="titleTemplate.html" data-sly-unwrap="${!(wcmmode.edit || wcmmode.design)}"></div>
+         <sly data-sly-call="${titleTemplate.model @ model=model}"></sly>
+      </sly>
+      <sly data-sly-test.titeDescription="${model.contentType=='titledescription' @i18n}">
+         <div data-sly-include="titleDescTemplate.html" data-sly-unwrap="${!(wcmmode.edit || wcmmode.design)}"></div>
+         <sly data-sly-call="${titleDescTemplate.model @ model=model}"></sly>
+      </sly>
+      <sly data-sly-test.titeDescriptionIcon="${model.contentType=='titledescriptionicon' @i18n}">
+         <div data-sly-include="titleDescIconTemplate.html" data-sly-unwrap="${!(wcmmode.edit || wcmmode.design)}"></div>
+         <sly data-sly-call="${titleDescIconTemplate.model @ model=model}"></sly>
+      </sly>
+	  <sly data-sly-test.descriptionLink="${model.contentType=='descriptionlink' @i18n}">
+         <div data-sly-include="descLinkTemplate.html" data-sly-unwrap="${!(wcmmode.edit || wcmmode.design)}"></div>
+         <sly data-sly-call="${descLinkTemplate.model @ model=model}"></sly>
+      </sly>
+   </div>
+</div>
+<sly data-sly-test="${!author}">
+   <div id="institutionalInvestor-selector-popup" class="investorLinks popup institutionalInvestor">
+      <span class="close">&times;</span>
+      <p>Are you a institutional investor?</p>
+      <center><button class="accept btn btn-info nBold md-lt-g-triangle" type="button">OK</button></center>
+   </div>
+   <div class="popup-mask">
+   </div>
+</sly>

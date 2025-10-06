@@ -1,0 +1,37 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+   Edit Social Share Component
+</sly>
+<sly data-sly-use.socialmodel="com.vcm.core.models.SocialSharePageModel" />
+<div class="st-cmp-wrapper st-cmp-social-media st-all-about-mutual-fund">
+   <sly data-sly-test="${socialmodel.heading}">
+      <span class="st-subheading">${socialmodel.heading}</span>
+   </sly>
+	<ul>
+	   <sly data-sly-test="${socialmodel.facebook == 'true'}">
+			 <li><a href="#" class="fb-share-social" tabindex="0"><img src="/content/dam/vcm/rapid/icons/facebook-icon.svg" alt=" Share in Facebook"/><span class="sr-only">Opens a new window</span></a></li>
+	   </sly>
+		<sly data-sly-test="${socialmodel.linkedin == 'true'}">
+			 <li><a href="#" class="linkedIn-share-social" tabindex="0">
+				<img src="/content/dam/vcm/rapid/icons/linkedInlogo.png" alt="Share in linkedin" class="st-desktop-view"/>
+				<img src="/content/dam/vcm/rapid/icons/linkedInlogo@2x.png" alt="Share in linkedin" class="st-mobile-view"/>
+				<span class="sr-only">Opens a new window</span>
+			</a></li>
+	   </sly>
+		<sly data-sly-test="${socialmodel.twitter == 'true'}">
+			 <li><a href="#" class="twitter-share-social" tabindex="0">
+				<img src="/content/dam/vcm/rapid/icons/twitter-logo.png" alt="Share in twitter" class="st-desktop-view"/>
+				 <img src="/content/dam/vcm/rapid/icons/twitter-logo@2x.png" alt="Share in twitter" class="st-mobile-view"/>
+				 <span class="sr-only">Opens a new window</span>
+			</a></li>
+	   </sly>
+		<sly data-sly-test="${socialmodel.email == 'true'}">
+			 <li>
+				<a href="#" class="mail-share-social" tabindex="0">
+					<img src="/content/dam/vcm/rapid/icons/mailicon.png" alt="Share in mail" class="st-desktop-view mail-icon"/>
+					<img src="/content/dam/vcm/rapid/icons/mailicon@2x.png" alt="Share in mail" class="st-mobile-view mail-icon"/>
+					<span class="sr-only">Opens a new window</span>
+				</a>
+			</li>
+	   </sly>
+	</ul>
+</div>

@@ -1,0 +1,8 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "admin",
+	"jcr:lastModifiedBy": "admin",
+	"jcr:created": "Thu Feb 27 2020 18:45:01 GMT+0530",
+	"jcr:lastModified": "Thu Feb 27 2020 18:45:01 GMT+0530",
+	"sling:resourceType": "vcm/components/content/productmenu"
+}

@@ -1,0 +1,45 @@
+<sly data-sly-use.model="com.vcm.core.models.InvestmentOptionsModel"/>
+<sly data-sly-test.notempty="${model.headingOption1}"/>
+<sly data-sly-test="${wcmmode.edit && !notempty}"><div class="cq-placeholder" data-emptyText="${component.title}"/></sly>
+<sly data-sly-test="${notempty}">
+	<div class="st-page-wrapper st-cmp-wrapper st-wrapper-inner st-page-mutual-funds-landing">
+		<div class="row st-investment-options-wrap">
+			<div class="st-investment-box-left st-investment-box col-lg-4 col-sm-12">
+				<h3 class="st-section-heading st-heading-blue"> ${model.heading}</h3>
+				${model.description @context='html'}
+				<a href="${model.linkUrl}" aria-label="${model.linkAriaLabel}" class="st-arrow-link st-arrow-link-blue st-arrow-right" target="${model.linkTarget}" rel="${model.linkTarget == '_blank' ? 'noopener noreferrer' : ''}"><span aria-hidden="true">${model.linkText}</span></a>
+			</div>
+			<div class="st-investment-box-right st-investment-box col-lg-8 col-sm-12">
+				<div class="st-intial-invest-box">
+					<sly data-sly-test="${model.imageOption1}">
+						<div class="st-intial-invest-img">
+							<img src="${model.imageOption1}" alt="${model.imgAltText1 || true}">
+						</div>
+					</sly>
+					<div class="st-intial-invest-text">
+						<span class="font-weight-bold"><sup>$</sup>${model.headingOption1}</span>
+						<sly data-sly-test="${model.descriptionOption1}">${model.descriptionOption1 @context='html'}</sly>
+					</div>
+				</div>
+
+				<sly data-sly-test="${model.optionsSeparator}">
+					<div class="st-or-divider">
+						<span>${model.optionsSeparator}</span>
+					</div>
+				</sly>
+
+				<div class="st-intial-invest-box">
+					<sly data-sly-test="${model.imageOption2}">
+						<div class="st-intial-invest-img">
+							<img src="${model.imageOption2}" alt="${model.imgAltText2 || true}">
+						</div>
+					</sly>
+					<div class="st-intial-invest-text">
+						<span class="font-weight-bold"><sup>$</sup>${model.headingOption2}</span>
+						<sly data-sly-test="${model.descriptionOption2}">${model.descriptionOption2 @context='html'}</sly>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</sly>

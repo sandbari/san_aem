@@ -1,0 +1,179 @@
+{
+   "jcr:primaryType":"cq:Tag",
+   "jcr:createdBy":"admin",
+   "jcr:title":"VCM",
+   "jcr:created":"Fri Feb 28 2020 16:08:30 GMT+0530",
+   "rootPath":"/content/cq:tags/vcm",
+   "jcr:description":"",
+   "sling:resourceType":"cq/tagging/components/tag",
+   "all-funds":{
+      "jcr:primaryType":"cq:Tag",
+      "jcr:createdBy":"admin",
+      "jcr:title":"All Funds",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:description":"",
+      "sling:resourceType":"cq/tagging/components/tag",
+      "mutual-funds":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Mutual Funds",
+         "tagPath":"/content/cq:tags/vcm/all-funds/mutual-funds",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag",
+         "us-equity":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"US Equity",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "non-us-equity":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Non-US Equity",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:lastModified":"Fri Jan 10 2020 15:38:58 GMT+0530",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "fixed-income":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Fixed Income",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "mixed-asset-class":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Mixed Asset Class",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "alternatives":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Alternatives",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         }
+      },
+      "victory-shares-etfs":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Victory Shares ETFs",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag",
+         "core-broad-market":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Core Broad Market",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "divident-growth-and-income":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Divident Growth & Income",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "volatility-reduction":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Volatility Reduction",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "bear-market":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Bear Market",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "multi-factor":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Multi-Factor",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         },
+         "active-fixed-income":{
+            "jcr:primaryType":"cq:Tag",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Active Fixed Income",
+            "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+            "jcr:description":"",
+            "sling:resourceType":"cq/tagging/components/tag"
+         }
+      },
+      "indexes":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Indexes",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "institutional-strategies":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Institutional Strategies",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      }
+   },
+   "blogs":{
+      "jcr:primaryType":"cq:Tag",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Blogs",
+      "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+      "jcr:description":"",
+      "sling:resourceType":"cq/tagging/components/tag",
+      "investing":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Investing",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "etfs":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"ETFs",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "retirement":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Retirement",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      },
+      "practice-management":{
+         "jcr:primaryType":"cq:Tag",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Practice Management",
+         "jcr:created":"Mon May 04 2020 18:32:56 GMT+0530",
+         "jcr:description":"",
+         "sling:resourceType":"cq/tagging/components/tag"
+      }
+   }
+}

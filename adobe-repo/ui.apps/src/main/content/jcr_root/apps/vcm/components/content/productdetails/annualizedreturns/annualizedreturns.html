@@ -1,0 +1,73 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+    Edit ${component.title} Component
+</sly>
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-use.modelObj="com.vcm.core.models.AnnualizedReturns">
+    <sly data-sly-test="${pageProperties.annualizedreturns}">
+        <div class="product-details annual-returns-component">
+            <div class="row pdg-24">
+                <sly data-sly-test="${overlayModel.isEnablingOverlay && overlayModel.overlayType == 'popup'}">
+                    <div class="annualized-popup col-lg-6 col-md-6">
+                        <sly data-sly-test="${modelObj.heading}">
+                            <h3 class="heading"><span class="annualized-returns-title"></span>
+                                <span>(<span class="annualized-returns-asof-label"></span> <span class="annualized-returns-asof-value"></span>)</span>
+                            </h3>
+                        </sly>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="row">
+                            <p class="align-right overlay-text-content col-lg-8">
+                                <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+                            </p>
+                            <div class="align-right icon-content col-lg-4" role="group" aria-label="Select the option to view the Annualized Returns data">
+                                <a role="radio" id="annualizedReturnsradiogroup" tabindex="-1" aria-checked="false" aria-label="List View" class="list-view annual-toggle-view"><span class="sr-only"> List View</span></a>
+                                <a role="radio" id="annualizedReturnsradiogroup1" tabindex="0" aria-checked="true" aria-label="Chart View" class="chart-view annual-toggle-view active"><span class="sr-only"> Chart View </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </sly>
+                <sly data-sly-test="${!overlayModel.isEnablingOverlay || overlayModel.isEnablingOverlay && overlayModel.overlayType == 'tooltip'}">
+                    <h3 class="heading col-lg-9 col-md-9"><span class="annualized-returns-title"></span>
+                        <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                            <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                                <a href="javascript:void(0)" class="icon-tooltip know-about-tooltip" tabindex="0" aria-label="Know more about Annualized returns" data-toggle="tooltip" data-placement="right" role="button" data-title="${overlayModel.overlayContent @ context='html'}"></a>
+                                <span class="sr-only tooltip-content" aria-live="polite"></span>
+                            </sly>
+                        </sly>
+                        <span>(<span class="annualized-returns-asof-label"></span> <span class="annualized-returns-asof-value"></span>)</span>
+                    </h3>
+                    <div class="col-lg-3 col-md-3 text-right" role="group" aria-label="Select the option to view the Annualized Returns data">
+                        <a role="radio" id="annualizedReturnsradiogroup2" tabindex="-1" aria-checked="false" aria-label="List View" class="list-view annual-toggle-view"><span class="sr-only"> List View</span></a>
+                        <a role="radio" id="annualizedReturnsradiogroup3" tabindex="0" aria-checked="true" aria-label="Chart View" class="chart-view annual-toggle-view active"><span class="sr-only"> Chart View </span></a>
+                    </div>
+                </sly>
+            </div>
+            <sly data-sly-test="${(modelObj.monthlyLabel) || (modelObj.quarterlyLabel)}">
+                <div class="visual-container annual-returns-data">
+                    <div class="annual-time-tabs">
+                        <ul role="tablist">
+                            <li class="annualized-time-tabs monthly-tab active"><a href="#/" aria-selected="true" role="tab"></a></li>
+                            <li class="annualized-time-tabs quarterly-tab"><a href="#/" aria-selected="false" role="tab"></a></li>
+                        </ul>
+                    </div>
+                    <div class="annual-time-tabs-data" role="tabpanel">
+                        <div class="annual-chart-data" aria-hidden="true">
+                            <div id="product-chart-annual"></div>
+                        </div>
+                        <div class="annual-list-data table-responsive hidden">
+                            <div class="table-wrap">
+                                <table class="table annualized-table" summary="${component.title}"><caption class="sr-only">${component.title}</caption></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+        </div>
+<div class="dynamic-loader-annualreturns">
+	<img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+</div>
+<div class="product-details-error-message error-message-annualreturns">
+	<p></p>
+</div>
+</sly>
+</sly>

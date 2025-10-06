@@ -1,0 +1,86 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+	${'Edit Search Overlay Component'}
+</sly>
+
+<sly data-sly-use.searchOverlay="com.vcm.core.models.SearchOverlayModel">	
+   <sly data-sly-test="${searchOverlay.displaySearchOverlay}">
+		<input type='hidden' id="searchUrl" value="/content/vcm/prelogin.sitesearch.json"/>
+		<input type='hidden' id="suggestionsUrl" value="/content/dam/vcm/configs/suggestionIndexFiles/"/>
+		<input type='hidden' id="suggestionsLimit" value="${searchOverlay.suggestionsLimit}"/>
+		<input type='hidden' id="suggestionsRootPath" value="${searchOverlay.suggestionsPath}"/>
+		<input type='hidden' id="searchResultsPagePath" value="${searchOverlay.searchResultsPage}"/>
+		<sly data-sly-test.searchOverlayOnly="searchOverlayOnly"></sly>
+	</sly>
+	<div class="container searchContainer ${searchOverlayOnly}">
+	  <sly data-sly-test="${searchOverlay.displaySearchBar}">
+	      <div class="content-wrapper">
+	      	<label for="${searchOverlay.searchLabel}">${searchOverlay.searchLabel}</label>
+	        <div class="search-form-group form-group">
+	          <i class="fa fa-search icon-green"></i>
+	          <input type="text"
+					 	 role="combobox"
+						 aria-expanded="false"
+						 aria-owns="search-listbox"
+						 aria-haspopup="listbox"
+					 	 aria-autocomplete="list"
+					 	 aria-controls="search-listbox"
+					     id="Search"
+	          			 onDrag="return false" 
+	          			 onDrop="return false" 
+	          			 placeholder="${searchOverlay.searchText}" 
+	          			 onclick="javascript:sharedJS.openSearchNav()">
+	        </div>     
+	      </div>
+	   </sly>
+	    <sly data-sly-test="${searchOverlay.displaySearchOverlay}">
+	      <div id="overlayNav" class="overlay-search" role="dialog" aria-label="Search" aria-modal="true">
+	        <div class="inner-overlay">
+	          <div class="overlay-header pt-3 pb-3">
+	            <a href="${searchOverlay.indexUrl}" class="logoLink">
+	            	<img class="homelogo" src="${searchOverlay.vcmLogoImage}" alt="">
+	            </a>
+	            <a role="button" aria-label="close" href="javascript:void(0)"  class="closebtn" onclick="javascript:sharedJS.closeSearchNav()">
+	              <span>&times;</span>
+	              <span>${searchOverlay.closebottontext}<span>
+	            </a>
+	          </div>
+	           <div class="hrTag"></div>
+	          <div class="overlay-content mt-3">
+	            <div class="form-group has-search">
+	              <h3 aria-level="1" role="heading" id="vcm-nav-txt-search">${searchOverlay.searchLabel}</h3>
+	              <i class="fa fa-search icon-green" aria-hidden="true"></i>
+	              <input
+						 role="combobox"
+						 aria-expanded="false"
+						 aria-owns="search-listbox"
+						 aria-haspopup="listbox"
+						 aria-autocomplete="list"
+						 aria-controls="search-listbox"
+						 aria-labelledby="vcm-nav-txt-search"
+	              		 data-provide="typeahead"
+	          			 onDrag="return false" 
+	          			 onDrop="return false" 
+	          			 type="text" 
+	          			 class="form-control shadow-sm ui-autocomplete-input" 
+	          			 id="nav-txt-search" 
+	          			 placeholder="${searchOverlay.searchText}" 
+	          			 autocomplete="off" 
+	          			 autofocus>
+	          			 
+	              <button class="btn border-0 btn-pos clear_search" type="button" style="display: none;">
+	             	${searchOverlay.clearsearchlabel}
+	              </button>
+				<div class="overlay-sugessions-menu" id="autcomplete_list">
+					<ul class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front tt-empty" role="listbox" id="search-listbox"></ul></div>
+	            </div>
+	            <div class="recentSearch_wrapper">
+	              <h5>${searchOverlay.recentsearchlabel}</h5>
+	              <div class="hrTag"></div>
+	              <div id="searchHistory"></div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </sly>
+	</div>
+</sly>

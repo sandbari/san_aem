@@ -1,0 +1,89 @@
+<sly data-sly-test="${wcmmode.edit}">
+    <h4>Click here to Edit Quality Structure Component....</h4>
+</sly>
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-test="${properties.type == 'Quality-Structure' && pageProperties.qualitystructureone}">
+    <div class="product-details qualitystructure-one">
+        <div class="row pdg-24">
+            <h3 class="heading col-lg-8"><span class="quality-header-label"></span>
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                        <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Quality Structure" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                        <span class="sr-only tooltip-content" aria-live="polite"></span>
+                    </sly>
+                </sly>
+                <span>(As of <span class="Quality-Structure-asof"></span>)</span>
+            </h3>
+            <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                    <p class="align-right col-lg-4">
+                        <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}</a></span>
+                    </p>
+                </sly>
+            </sly>
+        </div>
+        <div class="visual-container">
+            <div class="Quality-Structure-table-data">
+                <div class="table-wrap">
+                    <table class="table Quality-Structure-table"><caption class="sr-only">${component.title}</caption></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-qualitystructureone">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message error-message-qualitystructureone">
+        <p></p>
+    </div>
+</sly>
+<sly data-sly-test="${properties.type == 'Qualitystructurevariant-two' && pageProperties.qualitystructuretwo}">
+    <sly data-sly-use.qualityModel="com.vcm.core.models.QualityStructure"/>
+    <div class="product-details">
+        <div class="row pdg-24">
+            <h3 class="heading col-lg-8">${qualityModel.heading}
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                        <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Quality Structure" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                        <span class="sr-only tooltip-content" aria-live="polite"></span>
+                    </sly>
+                </sly>
+                <span>( As of <span class="Qualitystructurevariant-two-asof">${qualityModel.asOfDate}</span>)</span>
+            </h3>
+            <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                    <p class="align-right col-lg-4">
+                        <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+                    </p>
+                </sly>
+            </sly>
+        </div>
+        <div class="visual-container">
+            <div class="Qualitystructurevariant-two-table-data">
+                <div class="table-wrap">
+                    <table class="table Qualitystructurevariant-two-table">
+                    	<caption class="sr-only">${component.title}</caption>
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>${qualityModel.headLabel}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <sly data-sly-list.tableBodyContent="${qualityModel.tableBodyContent}">
+                            <tr>
+                                <td class="text-left">${tableBodyContent.bodyHeading}
+                                    <div class="disclaimerTxt">
+                                        ${tableBodyContent.bodyDescription @ context="html"}
+                                    </div>
+                                </td>
+                                <td>${tableBodyContent.fundValue}</td>
+                            </tr>
+                        </sly>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

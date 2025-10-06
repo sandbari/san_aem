@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-03-18T11:43:11.141+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-04-19T07:17:00.239Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:uuid="d52e3b1b-4bdd-4bea-89a2-50a0a3f5139c"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="wcm/foundation/components/responsivegrid/policy_1580365685619"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <vcm jcr:primaryType="nt:unstructured">
+                <components jcr:primaryType="nt:unstructured">
+                    <content jcr:primaryType="nt:unstructured">
+                        <backgroundcontainer
+                            cq:policy="vcm/components/content/backgroundcontainer/policy_1581508316380"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </content>
+                </components>
+            </vcm>
+            <responsivegrid
+                cq:policy="wcm/foundation/components/responsivegrid/policy_1580365685619"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <vcm jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <content jcr:primaryType="nt:unstructured">
+                            <herobanner
+                                cq:policy="vcm/components/content/herobanner/policy_12901912514042373"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <ourproducts
+                                cq:policy="vcm/components/content/ourproducts/policy_1583240134057"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <textimageCTA
+                                cq:policy="vcm/components/content/textimageCTA/policy_678788480054000"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                        </content>
+                    </components>
+                </vcm>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

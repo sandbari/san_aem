@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2020-04-19T07:10:38.558Z"
+        cq:lastModifiedBy="vmohanam"
+        cq:lastReplicated="{Date}2020-04-19T07:17:01.126Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:templateType="/conf/vcm/settings/wcm/template-types/content-page"
+        jcr:description="Content page for VCM"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="VCM Content Page"
+        fileReference="/content/dam/vcm/templates/full-content-page.png"
+        status="enabled"/>
+</jcr:root>

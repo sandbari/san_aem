@@ -1,0 +1,59 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "admin",
+	"institutionalinvestorsType": "false",
+	"jcr:lastModifiedBy": "admin",
+	"financialAdvisorsType": "false",
+	"mailId": "testPrimary@gmail.com",
+	"designation": "Head of dept",
+	"phoneNo": "0978905473556",
+	"jcr:created": "Mon Jun 08 2020 11:25:37 GMT+0530",
+	"name": "TestPrimaryName",
+	"heading": "RelationShip Manager",
+	"jcr:lastModified": "Mon Jun 08 2020 14:23:42 GMT+0530",
+	"profilePhoto": "/content/dam/vcm/basic/contact-icon.svg",
+	"sling:resourceType": "vcm/components/content/contactusmanagers",
+	"membersType": "false",
+	"primaryContactDetails": {
+	    "jcr:primaryType": "nt:unstructured",
+	    "item0": {
+	      "jcr:primaryType": "nt:unstructured",
+	      "primaryContactName": "Paul G. Pasicznyk",
+	      "primaryContactPhoneNo": "216-898-2451",
+	      "primaryContactProfileAltText": "Test Alt Text",
+	      "primaryContactProfilePhoto": "/content/dam/vcm/relationship-manager/Paul G. Pasicznyk.png",
+	      "primaryContactMailId": "pgp@vcm.com",
+	      "primaryContactDesignation": "Head of Institutional"
+	    },
+	    "item1": {
+	      "jcr:primaryType": "nt:unstructured",
+	      "primaryContactName": "Paul G. Pasicznyk",
+	      "primaryContactPhoneNo": "216-898-2452",
+	      "primaryContactProfileAltText": "Test Alt Text",
+	      "primaryContactProfilePhoto": "/content/dam/vcm/relationship-manager/Paul G. Pasicznyk.png",
+	      "primaryContactMailId": "pgp@vcm.com",
+	      "primaryContactDesignation": "Head of Institutional"
+	    }
+	  },
+	"secondaryContactDetails": {
+		"jcr:primaryType": "nt:unstructured",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"secondaryContactPhoneNo": "12334556",
+			"secondaryContactName": "Test 1",
+			"secondaryContactUsMailId": "test1@vcm.com"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured",
+			"secondaryContactPhoneNo": "2131231232",
+			"secondaryContactName": "Test 2",
+			"secondaryContactUsMailId": "test2@vcm.com"
+		},
+		"item2": {
+			"jcr:primaryType": "nt:unstructured",
+			"secondaryContactPhoneNo": "123123343423",
+			"secondaryContactName": "Test 3",
+			"secondaryContactUsMailId": "test3@vcm.com"
+		}
+	}
+}

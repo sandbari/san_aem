@@ -1,0 +1,39 @@
+<template data-sly-template.textimagecardtemplate="${@ model}">
+<sly data-sly-test="${(model.variation=='cardWithTitle') || (model.variation=='cardWithoutTitle') || (model.variation=='cardWithIcon') || (model.variation=='cardWithTitleAndText')}">
+            <div class="row my-4" data-audiencetype="${model.allowedAudience}">
+                <div class="${model.variation == 'cardWithTitleAndText' ? 'card-calculator col-12 rte-desc' :'col-12 rte-desc'}">
+                    <div class="${model.variation == 'cardWithTitle' ? 'card-title-mhdng-cnt-cta' :''}${model.variation == 'cardWithoutTitle' ? 'card-mhdng-cnt-cta' :''}${model.variation == 'cardWithIcon' ? 'card-icon-mhdng-cta' :''}${model.variation == 'cardWithTitleAndText' ? 'card-title-mhdng-cnt-cta' :''}${model.cardShadow == 'true' ? ' shadow-md-1-sm-0' :''}${model.headingAlignment == 'true' ? ' hdng-on-img-topalign' :''} ${model.backgroundStyle}">  
+                        <p class="card__img__title" style="background:${model.sectionStyle @context='styleToken'}">
+                           ${model.sectionTitle}<span class="shape-triangle" style="border-top-color: ${model.sectionStyle @context='styleToken'}"></span>
+                        </p>
+						<sly data-sly-test="${model.variation != 'cardWithTitleAndText'}">
+							<div class="card__img__wrapper">
+							<sly data-sly-test="${model.backgroundImage}">
+								<img class=" img-fluid w-100" src="${model.backgroundImage}"
+								alt="${model.altText || true}" /></sly>
+								<div class="card__image__content">
+								<sly data-sly-test="${model.heading}">
+									<h3 class="${model.greenUnderline == 'true' ? 'blueHdng-multiLine-greenBorder' : ''}" data-sly-text="${model.heading}"></h3></sly>
+									<p class="small-white-text"><span>${model.note}</span></p>
+								</div>
+							</div>
+						</sly>
+                        <div class="card__content">
+						<sly data-sly-test="${model.variation == 'cardWithTitleAndText'}">
+						<sly data-sly-test="${model.heading}"><h3 class="blueHdng-without-greenBorder" data-sly-text="${model.heading}"></h3></sly>
+						</sly>
+                        <sly data-sly-test="${model.description}">${model.description @context='html'}</sly>
+						<sly data-sly-test.linkUrl="${model.linkUrl == ''? '#': model.linkUrl}">
+						<a data-sly-test="${model.linkText}" href="${linkUrl}" target="${model.tabSelect}" data-experience-popup="${model.experiencePopupPath}" data-popup="${model.popupId}" class="${model.buttonStyle == 'true' ? 'btn-primary' :''} ${model.tabSelect == '_blank' && model.buttonStyle == 'true' ? 'external-link' : ''} ${model.tabSelect == '_blank' && model.buttonStyle != 'true' ? 'inline-external-link' : ''}">${model.linkText}<sly data-sly-test="${model.experiencePopupPath}"><span class="sr-only">Opens a New Popup</span></sly><sly data-sly-test="${model.tabSelect == '_blank' && !model.experiencePopupPath}"><span class="sr-only">Opens a New Window</span><span class="external-icon" aria-hidden="true"></span></sly><span class="${model.buttonStyle == 'true' ? 'btn-triangle-rt' :''}" aria-hidden="true"></span></a>
+						</sly>
+						<sly data-sly-test="${model.noOfLinks=='true'}">
+						<sly data-sly-test.secondLinkUrl="${model.secondLinkUrl == ''? '#': model.secondLinkUrl}">
+						<a data-sly-test="${model.secondLinkText}" href="${secondLinkUrl}" target="${model.tabSelectForScndLink}" data-popup="${model.popupIdForScndLink}" class="${model.buttonStyleForScndLink == 'true' ? 'btn-primary' :''} ${model.tabSelect == '_blank' && model.buttonStyle == 'true' ? 'external-link' : ''} ${model.tabSelect == '_blank' && model.buttonStyle != 'true' ? 'inline-external-link' : ''}">${model.secondLinkText}<sly data-sly-test="${model.experiencePopupPath}"><span class="sr-only">Opens a New Popup</span></sly><sly data-sly-test="${model.tabSelect == '_blank' && !model.experiencePopupPath}"><span class="sr-only">Opens a New Window</span><span class="external-icon" aria-hidden="true"></span></sly><span class="${model.buttonStyleForScndLink == 'true' ? 'btn-triangle-rt' :''}" aria-hidden="true"></span></a>
+						</sly>
+						</sly>
+                        </div>
+                    </div>
+                </div>
+           </div>
+</sly>
+</template>

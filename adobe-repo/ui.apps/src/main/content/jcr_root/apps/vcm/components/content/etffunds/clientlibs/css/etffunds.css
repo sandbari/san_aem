@@ -1,0 +1,154 @@
+/* table th widths*/
+.card.tab-pane table th:nth-child(1) {
+    width: 100px;
+}
+.tab-pane th, .tab-pane td {
+text-align:left;
+}
+.card.tab-pane table th:nth-child(2) {
+    width: 300px;
+}
+
+.card.tab-pane table th:nth-child(3) {
+    width: 110px;
+}
+
+.card.tab-pane table th:nth-child(4) {
+    width: 110px;
+}
+
+.card.tab-pane table th:nth-child(5), .card.tab-pane table th:nth-child(6) {
+    width: 120px;
+}
+    .etf-tab-section .card{
+        height: auto;
+        width: auto;
+        margin: 0;
+        background: #ededed;
+        border: 0;
+        border-bottom: 1px solid #fff;
+        border-radius: 0;
+        background:#ffffff;
+    }
+    .etf-tab-section .card .card-header{
+        padding: 0;
+        border-radius: 0;
+        border-bottom: 0;
+    }
+    .etf-tab-section .card h5{
+
+        cursor: pointer;
+        position: relative;
+    }
+    .etf-tab-section .card .card-header a{
+    padding: 20px 30px;
+        display: block;
+        min-height: 60px;
+    }
+    .etf-tab-section .card-body{
+    padding:32px;
+    }
+
+    h5.mb-0 {
+    background: #19bdc2;
+    }
+
+    .etf-tab-section .card .card-header a .icon-wrapper{
+        float: right;
+        background: #19bdc2;
+        color: #fff;
+        height: 40px;
+        position: relative;
+        width: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 5px;
+        top: -10px;
+    }
+
+    .etf-tab-section .card .card-header a .icon-wrapper .fa {
+        line-height: 37px;
+        transform: rotate(180deg);
+    }
+    .etf-tab-section .card .card-header a.collapsed .icon-wrapper .fa{
+        transform: rotate(0deg);
+    }
+    .etf-tab-section .nav-pills  .nav-item .nav-link.activee{
+            background-color: #f69b31;
+            border:0;
+        }
+        .etf-tab-section  .nav-pills  .nav-item .nav-link.activee::after{
+            content: "";
+            display: block;
+            height: 20px;
+            width: 20px;
+            border: 10px solid transparent;
+            border-top: 10px solid #f69b31;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -10px;
+        }
+        .etf-tab-section .nav-pills .nav-item .nav-link {
+            border-radius: .25rem;
+            border:1px solid #999;
+            position: relative;
+            line-height:20px;
+
+            text-align:center;
+            font-size: 16px;
+            width: 155px;
+            height: 40px;
+            padding: 9px;
+
+
+        }
+        .etf-tab-section  .nav-pills .nav-item:last-child .nav-link{
+            border-radius:0;
+            border-top-right-radius:5px;
+            border-bottom-right-radius:5px;
+            border-left:none;
+        }
+        .etf-tab-section   .nav-pills .nav-item:first-child .nav-link{
+            border-radius:0;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-right:none;
+        }
+        .victory-share-list-item{
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            margin-bottom:10px;
+        }
+        .victory-share-list-item img{
+            float: left;
+            width:64px;
+            margin-right:10px;
+        }
+        .victory-share-list-item i {
+            color:#f69b31;
+            font-size:12px;
+        }
+        .victory-share-list-item a{
+            display: flex;
+            align-items: center
+        }
+        .etf-tab-section .card-header a{
+            color: #fff;
+            font-weight: bold;
+        }
+        .etf-tab-section{
+        padding-top:30px;
+        }
+        .etf-tab-section .tab-content{
+        padding:0;
+        }
+
+
+    @media (max-width: 767px) {
+        .tab-pane {
+            disp lay: block !important;
+            opacity: 1;
+       }
+    }

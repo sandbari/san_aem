@@ -1,0 +1,61 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+Edit Slider Container
+</sly>
+<sly data-sly-use.model="com.vcm.core.models.SliderContainer"/>
+<div class="st-graph-slider-wrap product-details"  data-includeSlider="true">
+	<input type="hidden" id="collegeDetailLabels" value="${model.collegeDetailLabels}"/>
+			<div class="row justify-content-center m-0">
+				<div class="col-12">
+					<div class="st-portfolio-box st-text-center">
+						<h3 class="st-section-heading st-heading-blue">${model.heading}</h3>
+						<p class="donutHeader">${model.description}</p>
+						<div class="text-right product-icons" id="sliderChartTableIcon" role="radiogroup" aria-label="Select the view option for Portfolio">
+							<a href="#/" role="radio" id="performanceGroupradio1" aria-label="Table View" tabindex="-1" aria-checked="false" class="table-view  college-toggle-view "></a>
+							<a  href="#/" role="radio" id="performanceGroupradio2" aria-label="Slider View" tabindex="0" aria-checked="true" class="chart-view  college-toggle-view active"></a>
+						</div>
+					</div>
+                    <a class="view-plan-perfo-link" href="${model.performanceUrl}">${model.viewPlanPerformanceText || 'View Plan Performance'}</a>
+					<div id="donut-container" class="st-donut-container">	
+                        <div class="donutChart st-donut-chart">
+							<div id="slider_wrap" class="st-slider-wrap">
+								<div class="slider_nav">
+									<span class="float-left">- ${model.sliderMin}</span> <span
+										class="float-right">${model.sliderMax} +</span>
+								</div>
+								<div id="slider-range"></div>
+							</div>
+							<div class="st-chart-container" id="donut_wrapper">
+								<div id="descp" class="st-chart-info-wrap"></div>
+								<div id="donut_container"></div>
+							</div>
+							<div class="st-table-container" id="donut-table">
+								<div class="donut-table-container table-wrap">
+									<table class="table donut-table">
+										<caption class="sr-only">Portfolio options</caption>
+										<tbody class="donut-table-body"></tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+							<sly data-sly-test="${author}">
+								<div class="parsys-container-author">
+									<sly data-sly-resource="${'parsys' @ resourceType='wcm/foundation/components/parsys'}" />
+								</div>
+							</sly>
+							<sly data-sly-test="${!author}">
+								<div class="parsys-container">
+									<sly data-sly-resource="${'parsys' @ resourceType='wcm/foundation/components/parsys'}" />
+								</div>
+							</sly>
+
+
+								<div class="st-teaser-link st-graph-view-link">
+                                     <a href="javascript:void(0)" role="button" aria-label="View all portfolio options" class="st-arrow-link st-arrow-link-blue view_all">${model.viewAll || 'View All'}</a>
+								</div>
+								<div class="col-12 st-view-slider-click"><a href="javascript:void(0)" role="button" title="go back to slider" class="st-arrow-link st-arrow-link-blue goback-slider">${model.viewSlider || 'View Slider'}</a></div>
+								<div class="viewDonut row col-sm-12"></div>
+
+					</div>
+				</div>
+			</div>
+		</div>

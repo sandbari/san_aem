@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2020-02-21T08:44:09.462Z"
+        cq:lastModifiedBy="vmohanam@vcm.com"
+        cq:lastReplicated="{Date}2020-04-19T07:17:01.718Z"
+        cq:lastReplicatedBy="vmohanam"
+        cq:lastReplicationAction="Activate"
+        cq:templateType="/conf/vcm/settings/wcm/template-types/empty-experience-fragment"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="VCM XF Template"
+        fileReference="/content/dam/vcm/templates/content-xf-page.png"
+        status="enabled"/>
+</jcr:root>

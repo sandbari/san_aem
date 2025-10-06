@@ -1,0 +1,43 @@
+<sly data-sly-use.investmentTeamIntro="com.vcm.core.models.InvestmentTeamsIntro"/>
+<sly data-sly-test.notempty="${investmentTeamIntro.teamsLeaderBio}"/>
+<sly data-sly-test="${wcmmode.edit && !notempty}"><div class="cq-placeholder" data-emptyText="${component.title}"/></sly>
+<sly data-sly-test="${notempty}">
+    <div class="container">
+        <div class="dummy-block__container px-0 pb-0 mx-0 mt-0 mb-0 position-relative bg-grey">
+            <span class="shape-triangle-lg-right-top" style="border-right-color: ${inheritedPageProperties.triangleColor @ context='styleToken'}"></span>
+            <div class="content-wrapper">
+                <!-- Investment Team list -->
+                <div class="investment-team-list lead-intro pt-5">
+                    <sly data-sly-test="${investmentTeamIntro.heading}">
+                        <div class="title-desc-default mb-40 mb-sm-40">
+                            <h3 class="uln-green">${investmentTeamIntro.heading}</h3>
+                        </div>
+                    </sly>
+                    <sly data-sly-list.leaderTeams="${investmentTeamIntro.teamsLeaderBio}">
+                        <div class="lead-bio-block">
+                            <div class="image-content-block">
+                                <h4 class="mb-20 show-sm">${leaderTeams.teamName}</h4>
+                                <sly data-sly-test="${leaderTeams.bioPicture}">
+                                    <div class="image-block">
+                                        <img src="${leaderTeams.bioPicture}" alt="${leaderTeams.altText || true}">
+                                    </div>
+                                </sly>
+                                <div class="content-block">
+                                    <h4 class="mb-30 show-md">${leaderTeams.teamName}</h4>
+                                    <div class="leadname-desg-block mb-20">
+                                        <a href="${leaderTeams.leaderUrl @ extension='html'}">
+                                            <h5 class="txt-skyblue" role="presentation">${leaderTeams.fullname}</h5>
+                                        </a>
+                                        <p class="desc">${leaderTeams.designation}</p>
+                                    </div>
+                                    ${leaderTeams.profileDescription @ context ='html'}
+                                    <a class="navg-right-arw-link" href="${leaderTeams.linkUrl @ extension='html'}" aria-label="${leaderTeams.linkAriaLabel}" target="${leaderTeams.linkTarget}">${leaderTeams.linkText}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

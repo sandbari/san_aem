@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-05-13T19:39:05.890Z"
+        cq:lastModifiedBy="wsingh@vcm.com"
+        cq:lastReplicated="{Date}2020-05-14T18:32:44.007Z"
+        cq:lastReplicatedBy="cjunk@vcm.com"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Adobe Launch Configuration"
+        jcr:uuid="13eb0c2e-8761-46c4-be72-7fc8cbf2a7f6"
+        sling:resourceType="cq/dtm-reactor/components/conf/page"
+        company="CO0d1a7a253c01444d9f7b0eb503080e1b"
+        companyLabel="VICTORY CAPITAL MGMT INC"
+        imsConfigId="Adobe Launch"
+        includeProdOnAuthor="{Boolean}false"
+        property="PRbaed78413665446cbbfd7bbe3d720576"
+        propertyLabel="VCM Dev"
+        tagComponentFooter="cq/dtm-reactor/components/scripttag/footer"
+        tagComponentFooterRank="{Long}100"
+        tagComponentHeader="cq/dtm-reactor/components/scripttag/header"
+        tagComponentHeaderRank="{Long}100">
+        <development
+            jcr:primaryType="nt:unstructured"
+            environment="EN5975d942a41e4408a9d9775a396d9810"/>
+        <staging
+            jcr:primaryType="nt:unstructured"
+            archive="false"
+            archiveEncrypted="false"
+            async="{Boolean}false"
+            enablePollingImporter="false"
+            environment="ENfff1f1731a604db895bf4bc556cf618a"
+            libraryUri="//assets.adobedtm.com/9038a1739344/e69bdabe1962/launch-b9abaf2ace1a-staging.min.js"
+            useMinified="false"
+            workflow="/var/workflow/models/cloudconfigs/dtm-reactor/library-download"/>
+        <production
+            jcr:primaryType="nt:unstructured"
+            archive="false"
+            archiveEncrypted="false"
+            async="{Boolean}false"
+            enablePollingImporter="false"
+            environment="EN9e0634fc86e04228b5cb57853bbb8a12"
+            libraryUri="//assets.adobedtm.com/9038a1739344/e69bdabe1962/launch-b239cd802470.min.js"
+            useMinified="false"
+            workflow="/var/workflow/models/cloudconfigs/dtm-reactor/library-download"/>
+    </jcr:content>
+</jcr:root>

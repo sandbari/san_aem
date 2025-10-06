@@ -1,0 +1,45 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "item0": {
+    "jcr:primaryType": "nt:unstructured",
+    "footerLinkUrl": "/content/vcm/language-masters/en/news",
+    "footerLinkText": "News",
+    "tabSelect": "_self"
+  },
+  "item1": {
+    "jcr:primaryType": "nt:unstructured",
+    "footerLinkUrl": "/content/vcm/language-masters/en/policies",
+    "footerLinkText": "Policies",
+    "tabSelect": "_self"
+  },
+  "item2": {
+    "jcr:primaryType": "nt:unstructured",
+    "footerLinkUrl": "/content/vcm/language-masters/en/careers",
+    "footerLinkText": "Careers",
+    "tabSelect": "_self"
+  },
+  "item3": {
+    "jcr:primaryType": "nt:unstructured",
+    "footerLinkUrl": "/content/vcm/language-masters/en/user-agreement",
+    "footerLinkText": "User Agreement",
+    "tabSelect": "_self"
+  },
+  "item4": {
+    "jcr:primaryType": "nt:unstructured",
+    "footerLinkUrl": "/content/vcm/language-masters/en/events",
+    "footerLinkText": "Events",
+    "tabSelect": "_self"
+  },
+  "item5": {
+    "jcr:primaryType": "nt:unstructured",
+    "footerLinkUrl": "https://vcm.onlineprospectus.net/vcm/victoryfunds/",
+    "footerLinkText": "Fund Literature",
+    "tabSelect": "_self"
+  },
+  "item6": {
+    "jcr:primaryType": "nt:unstructured",
+    "footerLinkUrl": "/content/vcm/language-masters/en/blog",
+    "footerLinkText": "Blog",
+    "tabSelect": "_self"
+  }
+}

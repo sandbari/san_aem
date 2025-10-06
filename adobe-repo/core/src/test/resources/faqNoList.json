@@ -1,0 +1,15 @@
+{
+   "jcr:primaryType":"sling:OrderedFolder",
+   "jcr:createdBy":"admin",
+   "jcr:created":"Thu Apr 02 2020 14:11:06 GMT+0530",
+   "jcr:content":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:title":"FAQdetails",
+      "cq:lastReplicationAction":"Activate",
+      "dam:noThumbnail":true,
+      "cq:lastReplicatedBy":"vmohanam",
+      "cq:lastReplicated":"Mon Mar 30 2020 10:12:58 GMT+0000",
+      "cq:conf":"/conf/vcm",
+      "sourcing":"false"
+   }
+}

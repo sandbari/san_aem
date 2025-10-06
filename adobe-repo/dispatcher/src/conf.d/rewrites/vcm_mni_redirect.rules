@@ -1,0 +1,3 @@
+##Rewrite rules for all the old legacy URL to new platform
+
+RewriteRule ^/?$ https://${VCM_ADVISOR_HOSTNAME}/mni [L,R=301]

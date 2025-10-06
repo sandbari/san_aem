@@ -1,0 +1,7 @@
+#base=js
+
+characteristics.js
+characteristics-two.js
+characteristics-three.js
+//characteristics-four.js
+//characteristics-five.js

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Automatic Investment Plan (AIP)"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[vcm.widgets.restrictenabled]">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+
+                    <webContent
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                            fieldDescription="Characters allowed including spaces"
+                            fieldLabel="Web AIP Content"
+                            name="./webContent"
+                            useFixedInlineToolbar="{Boolean}true">
+                        <rtePlugins
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                        <uiSettings
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                    </webContent>
+                    <mobcontent
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                            fieldDescription="Characters allowed including spaces"
+                            fieldLabel="Mobile AIP Content"
+                            name="./mobContent"
+                            useFixedInlineToolbar="{Boolean}true">
+                        <rtePlugins
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                        <uiSettings
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                    </mobcontent>
+                    <mobLink
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Mention the link to redirect"
+                            fieldLabel="Mobile Link"
+                            name="./mobLink"/>
+
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

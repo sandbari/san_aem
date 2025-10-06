@@ -1,0 +1,456 @@
+.content_heading {
+    text-align: center;
+}
+.content_heading h1 {
+    font: 800 30px / 36px yorkten-slab-normal,sans-serif;
+    margin: 30px;
+    color: rgb(72, 109, 144);
+    display: inline-block;
+    border-bottom: 3px solid rgb(140, 191, 38);
+    padding-bottom: 10px;
+    text-align: center;
+}
+.content_heading p {
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+.attach_file_body {
+    padding: 30px;
+    background-color: #f5f5f5;
+}
+.attach_file_body_value {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.attach_btn_body {
+    padding: 0px;
+    background-color: #f5f5f5;
+}
+.attach_file_content {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 8px;
+}
+.attach_btn {
+    padding: 10px 0px;
+    margin: 30px 0px;
+    border: none;
+    background-color: #f5f5f5;
+    margin-left: 50px;
+}
+.attach_btn img{
+    padding-top: 5px;
+    width: 20px;
+}
+.attach_btn span{
+    font: 800 20px / 36px yorkten-slab-normal,sans-serif;
+    color: rgb(72, 109, 144);
+}
+.submit_btn{
+    padding: 10px 0px;
+    margin: 10px 0px;
+    text-align: right;
+}
+.submit_btn button{
+    width: 250px !important;
+}
+.border{
+    border: 1px solid gainsboro;
+}
+.select {
+    width: 100% !important;
+    padding: 5px !important;
+}
+.realationRadio {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.realationRadio input:hover {
+    cursor: pointer;
+}
+.realationRadio label:hover {
+    cursor: pointer;
+}
+.padtb10 {
+    padding: 10px 0px;
+}
+
+.attachButtonStyle {
+    background-image: url(https://www.gstatic.com/images/icons/material/system_gm/1x/attach_file_black_20dp.png);
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: darkgray;
+}
+
+.pad10 {
+    padding: 10px;
+}
+.padt5 {
+    padding-top: 5px;
+}
+.wid100 {
+    width: 100%;
+}
+.padT15 {
+    padding-top: 15px;
+}
+.DobInput {
+    padding: 10px !important;
+    height: unset !important;
+    border-radius: 4px !important;
+}
+.phone-inputField{height:40px !important;border-radius:4px !important;padding:15px !important}
+
+
+.inputField {
+    height: 40px !important;
+    border-radius: 4px !important;
+    padding: 15px !important;
+}
+.fnt18 {
+    font-size: 18px;
+}
+.fnt15 {
+    font-size: 15px !important;
+    font-family: benton-sans,sans-serif;
+}
+.fnt13 {
+    font-size: 13px !important;
+}
+.txtRight {
+    text-align: right;
+}
+.realationRadio input[type='radio'] {
+    width: 20px;
+    height: 20px;
+}
+.rightSideHeading {
+    padding-bottom: 25px;
+}
+.pb10 {
+    padding-bottom: 10px;
+}
+.alignItemCenter {
+    align-items: center;
+}
+.pad5 {
+    padding: 5px !important;
+    font-family: benton-sans,sans-serif;
+}
+.padt25 {
+    padding-top: 25px;
+}
+.rightSideHeading h2 {
+    font-size: 25px !important;
+    color: #000;
+}
+.hrLine {
+    display: none;
+}
+.p30 {
+    padding: 30px;
+}
+.padT30 {
+    padding-top: 30px;
+}
+.pl5 {
+    padding-left: 5px;
+}
+.pl0 {
+    padding-left: 0px !important;
+}
+
+.padFieldName{
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 400px) {
+      .padFieldName{
+        padding-bottom: 30px;
+    }
+
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 767px) {
+    .txtRight {
+        text-align: left;
+        padding: 3px !important;
+    }
+    .rightSideHeading h3 {
+        width: 100%;
+    }
+    .rightSideHeading {
+        padding: unset;
+        text-align: center;
+    }
+    .hrLine {
+        display: block;
+    }
+    .attach_file_body {
+        padding: 20px;
+        background-color: gainsboro;
+    }
+
+ .btn_body {
+        padding: 10px;
+        background-color: gainsboro;
+    }
+
+}
+
+.phoneNumber{
+    text-align: left;
+    }
+
+
+
+.Input_fieldCoutryCode__2Mqft {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+    padding-left: 285px;
+    color:#ff0000;
+}
+
+.Input_errMsg__1inyU {
+    vertical-align: top;
+    margin: 0;
+
+    color: #e60000;
+    display: inline-block;
+    font: 700 12px/22px padding-top: 1px;;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 568px) {
+  .Input_errMsg__1inyU {
+        vertical-align: top;
+        margin: 0;
+        padding-left: 0px;
+        color: #e60000;
+        display: inline-block;
+        font: 700 12px/22px padding-top: 1px;;
+        flex-grow: 1;
+	}
+}
+    .phone_country_error{
+
+            color: #e60000;
+        }
+
+.Input_fieldPhoneNumber__2Mqft{
+	display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+    padding-left: 20px;
+    color:#ff0000;
+   }
+
+.Input_fieldEmail__2Mqft{
+	display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+    padding-left: 270px;
+    color:#ff0000;
+   }
+
+.Input_field_ssn__2Mqft{
+	display: flex;
+    justify-content: flex-end;
+    margin-top: -29px;
+    padding-left: 139px;
+    color:#ff0000;
+   }
+
+.Input_field_file__2Mqft{
+	display: flex;
+    justify-content: flex-end;
+    margin-top: -29px;
+    padding-left: 0px;
+    color:#ff0000;
+   }
+.Input_file_errMsg__1inyU {
+    vertical-align: top;
+    margin: 0;
+
+    padding-left: 55px;
+    color: #e60000;
+    display: inline-block;
+    font: 700 12px/22px padding-top: 1px;;
+    flex-grow: 1;
+}
+
+
+.blog-button-container {
+    margin-top: 50px;
+    text-align: right;
+}
+
+
+.btn-blog{
+    border: 0;
+    font-size: 16px;
+    font-family: yorkten-slab-normal,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background: #d2d2d2;
+    padding: 15px 40px 15px 40px;
+    min-height: 50px;
+    color: #49494a;
+    margin-bottom: 50px;
+}
+
+.phone-inner-text {
+    width: 100%;
+    padding-left: 15px !important;
+    background: #fff 0 0 no-repeat;
+    border: 1px solid #d2d2d2;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.reCaptcha-sty {
+    padding: 50px 0px !important;
+    margin: 10px 0px;
+    text-align: right
+}
+
+
+.keywords{
+    text-align: center !important;
+}
+
+@media only screen and (max-width: 568px) {
+  .keywords{
+    text-align: left !important;
+  }
+}
+
+.table_content{
+    text-align: center !important;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 568px) {
+  .table_content{
+    text-align: left !important;
+    padding: 20px;
+  }
+}
+
+.datePad {
+    padding: 5px !important;
+}
+
+@media only screen and (max-width: 568px) {
+  .datePad{
+    padding: 5px !important;
+    width:30%;
+  }
+}
+
+.ssnDiv {
+    display: flex;
+    align-items: baseline;
+}
+
+    .Input_fieldAlignHorizontal__2Mqft {
+        margin-left: 160px;
+}
+
+@media only screen and (max-width: 568px) {
+  .Input_fieldAlignHorizontal__2Mqft{
+    	margin-left: -97px;
+  }
+}
+
+.vcmSpinner > div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.popup-mask-spin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 999;
+  background-color: rgba(0,0,0,.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+
+.loader-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    line-height: 30px;
+
+    z-index: 9999;
+    padding: 1rem;
+    height: auto;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-top: 5px solid #0062cc;
+  border-right: 5px solid #efefef;
+  border-bottom: 5px solid #efefef;
+  border-left: 5px solid #efefef;
+  border-radius: 100px;
+  animation: spin 1s infinite linear;
+}
+
+
+
+.popup-mask-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    z-index: 999;
+    background-color: rgba(0,0,0,.1);
+
+}
+
+.popUpErrorMsg{
+    color:red;
+    font-family: yorkten-slab-normal,sans-serif;
+    }
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+.estatetransition label {
+    font-size: 12px;
+}
+}

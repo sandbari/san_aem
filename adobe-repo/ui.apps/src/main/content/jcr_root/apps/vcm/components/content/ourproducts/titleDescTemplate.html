@@ -1,0 +1,42 @@
+<sly data-sly-template.model="${@ model}">
+   <div class="productsBaner productsBaner-listbox">
+      <div class="product-list-container ">
+         <div class="productHeading col-md-12">
+            <h3 aria-level="3" class="blueHdng-greenBorder">${model.title @context='html'}</h3>
+         </div>
+         <div class="content-wrapper mbl-container-w100-px15">
+            <div class="row" role="list">
+               <sly data-sly-list.productItems="${model.productList}">
+                  <sly data-sly-test.heading="${productItems.productHeading}">
+                     <div class="col-lg-3 col-md-6 col-sm-12" role="listitem">
+                        <sly data-sly-test.nolink="${model.linkVariant=='nolinktext'}">
+                           <div class="card-hdng-cnt-navarw" data-fund-type="${productItems.fundType}">
+                              <div class="heading-absolute">
+                                 <h3 aria-level="3">${heading  @context='html'}</h3>
+                              </div>
+                              <div class="desc-absolute">
+                                 ${productItems.productDescription @context='html'}
+                                 <a class="navg-right-arw-link" href="${model.listingPageLink}" target="_self" aria-label="Learn more about ${heading  @context='html'}">Learn More</a>
+                                 <span class="btn-primary"></span>
+                              </div>
+                           </div>
+                        </sly>
+                        <sly data-sly-test.link="${!nolink}">
+                           <div class="card-hdng-cnt-link cardLink" >
+                              <div class="heading-absolute">
+                                 <h3 aria-level="3" class="blueHdng-multiLine-greenBorder">${heading  @context='html'}</h3>
+                              </div>
+                              <div class="desc-absolute">
+                                 ${productItems.productDescription @context='html'}
+                                 <a class="navg-right-arw-link" href="${productItems.productButtonLink}" aria-label="${productItems.buttonLinkDesc}" target="${productItems.descTabSelect}">${productItems.desktopButtonText}</a><span class="btn-primary">${productItems.tabletButtonText}</span>
+                              </div>
+                           </div>
+                        </sly>
+                     </div>
+                  </sly>
+               </sly>
+            </div>
+         </div>
+      </div>
+   </div>
+</sly>

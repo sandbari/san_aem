@@ -1,0 +1,55 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design}">Edit Investment Franchises Component.</sly>
+<sly data-sly-use.model="com.vcm.core.models.InvestmentFranchisesModel" 
+data-sly-use.landingTemplate="franchiseLanding.html"></sly>
+	<sly data-sly-test.franchiseListing="${properties.contentType == 'franchiseListing'}"> 
+	<div class="container">
+		<div class="franchiseBlock ${model.displayStyle}">
+			<div class="content-wrapper">
+				<div class="section-text">
+					<sly data-sly-test.heading="${model.heading}">
+						<h3 class="blueHdng-multiLine-greenBorder">${heading}</h3>
+					</sly>
+					<sly data-sly-test.description="${model.description}">${description @ context="html"}</sly>
+				</div>
+				<sly data-sly-test.item="${model.franchiseList}">
+					<div class="franschise">
+						<div class="row">
+							<sly data-sly-list.child="${model.franchiseList}">
+								<sly data-sly-test.franchiseIntro="${child.franchiseIntroModel}">
+								<div class="franchise-wrap ${model.tileDisplay}">
+									<sly data-sly-test.imagefileurl="${child.fileReference}">
+										<div class="image-wrapper paddingTop-30-Bottom-30" role="button"  tabindex="0" aria-expanded="false"><span class="left-tgl" style="border-top:20px solid ${child.triangleColor @context='html'};"></span>
+											<img src="${imagefileurl}" class="img-responsive content-center" alt="${child.franchiseIntroModel.altText || true}">
+										</div>
+									</sly>
+									<div class="heightcontainer">
+										<div class="inner-block">
+											<div class="intro-bg-content-wrapper">
+												<h3>${child.franchiseIntroModel.strategyHeading}</h3>${child.franchiseIntroModel.strategyDescription @ context="html"}
+												<sly data-sly-test.linkUrl="${child.franchiseIntroModel.strategyLinkUrl}">
+<a data-audiencepopup="true" data-sly-test.viewdetail="${child.franchiseIntroModel.strategyViewDetail}" href="${child.franchiseIntroModel.strategyLinkUrl}" aria-label="${child.franchiseIntroModel.linkAriaLabel}" target="${model.tabSelect}" rel="${model.tabSelect == '_blank' ? 'noopener noreferrer' : ''}" class="btn btn-info nBold md-lt-g-triangle">${child.franchiseIntroModel.strategyViewDetail}</a>
+												</sly>
+											</div>
+	
+										</div>
+									</div>
+								</div>
+								</sly>
+							</sly>
+						</div>
+					</div>
+				</sly>
+				<sly data-sly-test.linkUrl="${model.linkUrl == ''? '#': model.linkUrl}">
+					<div class="navigation-right">
+					   <a data-audiencepopup="true" data-sly-test="${model.viewDetail}" href="${model.linkUrl}" aria-label="${model.linkAriaLabel}">${model.viewDetail}<span class="right--arrow" aria-hidden="true"></span></a>
+					</div>
+				</sly>
+			</div>
+		</div>
+	</div>
+	</sly>
+	<sly data-sly-test="${!franchiseListing}"> 
+    <div data-sly-include="franchiseLanding.html" data-sly-unwrap="${!(wcmmode.edit || wcmmode.design)}"></div>
+     <sly data-sly-call="${landingTemplate.model @ model=model}"></sly>
+    </sly>
+</sly>

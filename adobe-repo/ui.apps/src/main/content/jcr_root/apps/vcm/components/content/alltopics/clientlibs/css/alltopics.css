@@ -1,0 +1,28 @@
+.article-filter-list h6 {
+    margin-top: .5rem;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: benton-sans, sans-serif;
+}
+
+.article-filter-list .list-group-item {
+    border: 0;
+    padding: .5rem 0;
+    font-weight: 600;
+}
+
+.article-filter-list .list-group-item a {
+    color: #004A98;
+    text-decoration: none;
+    font-family: benton-sans, sans-serif;
+}
+
+.article-filter-list .list-group-item a:focus,
+.article-filter-list .list-group-item a:hover {
+    color: #007bff;
+}
+
+.article-filter-list {
+    margin-top: 50px;
+}

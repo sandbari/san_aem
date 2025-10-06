@@ -1,0 +1,44 @@
+<sly data-sly-use.calculator="com.vcm.core.models.CalculatorModel"/>
+<sly data-sly-test.notempty="${calculator.calculatorType}"/>
+<sly data-sly-test="${wcmmode.edit && !notempty}"><div class="cq-placeholder" data-emptyText="${component.title}"/></sly>
+<sly data-sly-test="${notempty}">
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     	data-sly-call="${clientlib.css @ categories='vcm.calc.global'}"/>
+
+<div id="KJEAllContent"></div>
+
+<sly data-sly-test.calc="${calculator.calculatorType == 'collegesavings'}">
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    	 data-sly-call="${clientlib.js @ categories='vcm.calc.global,vcm.calc.collegesavings'}"/>
+	</sly>	
+</sly>
+<sly data-sly-test.calc="${calculator.calculatorType == 'rmd-distribution'}">
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    	 data-sly-call="${clientlib.js @ categories='vcm.calc.global,vcm.calc.rmd'}"/>
+	</sly>	
+</sly>
+<sly data-sly-test.calc="${calculator.calculatorType == 'retiredistrib'}">
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    	 data-sly-call="${clientlib.js @ categories='vcm.calc.global,vcm.calc.retireddistrib'}"/>
+	</sly>	
+</sly>
+<sly data-sly-test.calc="${calculator.calculatorType == 'retirementnestegg'}">
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    	 data-sly-call="${clientlib.js @ categories='vcm.calc.global,vcm.calc.retirementnestegg'}"/>
+	</sly>	
+</sly>
+<sly data-sly-test.calc="${calculator.calculatorType == 'retirementplan'}">
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    	 data-sly-call="${clientlib.js @ categories='vcm.calc.global,vcm.calc.retirementplan'}"/>
+	</sly>	
+</sly>
+<sly data-sly-test.calc="${calculator.calculatorType == 'regularIRA'}">
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+    	 data-sly-call="${clientlib.js @ categories='vcm.calc.global,vcm.calc.regularIRA'}"/>
+	</sly>	
+</sly>
+</sly>
+
+
+

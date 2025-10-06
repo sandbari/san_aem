@@ -1,0 +1,41 @@
+
+
+<input id="isCorpHome" name="isCorpHome" type="hidden" value="${pageProperties.isCorpHomePage @ context='html'}"/>
+<input id="isAuthor" name="isAuthor" type="hidden" value="${wcmmode.edit @ context='html'}"/>
+<input id="currentPageName" name="currentPageName" type="hidden" value="${currentPage.name}"/>
+<input id="currentPageParentName" name="currentPageParentName" type="hidden" value="${currentPage.parent.name}"/>
+<input id="currentPageParentPath" name="currentPageParentPath" type="hidden" value="${currentPage.parent.path}"/>
+<input id="currentPageTitle" name="currentPageTitle" type="hidden" value="${currentPage.title}"/>
+
+<sly data-sly-use.pageObject="com.vcm.core.models.VCMPageModel">
+    <sly data-sly-test="${pageObject.vcmcorpHome == 'https://stage.vcm.com/'}">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-KQML4G3
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    </sly>
+    <sly data-sly-test="${pageObject.vcmcorpHome == 'https://qa.vcm.com/'}">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-KQML4G3
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    </sly>
+    <sly data-sly-test="${pageObject.vcmcorpHome == 'https://www.vcm.com/'}">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMXQQS"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    </sly>
+    <input id="vcmcorpHome" name="vcmcorpHome" type="hidden" value="${pageObject.vcmcorpHome}"/>
+    <input id="popupContentPage" name="popupContentPage" type="hidden" value="${pageObject.popupContentPage}"/>
+    <input id="pageHeirarchy" name="pageHeirarchy" type="hidden" value="${pageObject.pageHeirarchy}"/>
+    <input id="currentPagePath" name="currentPagePath" type="hidden" value="${pageObject.currentPagePath}"/>
+    <input id="pageType" name="pageType" type="hidden" value="${pageObject.pageType}"/>
+    <input id="eftPageList" name="eftPageList" type="hidden" data-value="${pageObject.etfPagePatterns}">
+    <input id="homePageConfig" name="homePageConfig" type="hidden" value="${pageObject.homePageConfig}"/>
+    <input id="domainKeyConfig" name="homePageConfig" type="hidden" value="${pageObject.domainKeyConfig}"/>
+    <input id="allowedAudience" name="allowedAudience" type="hidden" value="${pageObject.allowedAudience}"/>
+    <input id="userTypeCookieConfig" name="userTypeCookieConfig" type="hidden" value="${pageObject.cookieKeyConfig}"/>
+    <input id="cookieDomain" name="cookieDomain" type="hidden" value="${pageObject.cookieDomain}"/>
+    <input id="404Page" name="404Page" type="hidden" value="/content/vcm/us/en/pagenotfound.html"/>
+</sly>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Yields Authoring Dialog "
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cfoverlay.showhidefields]">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Annualized Returns Tabs"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <overlayproperties
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/include"
+                            path="/apps/vcm/components/content/productdetails/configureoverlay/overlayproperties"/>
+                    <Advanced
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Advanced"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <variants
+                                                    granite:class="cq-dialog-dropdown-showhide"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Variant"
+                                                    name="./type"
+                                                    required="true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <variationtype
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Select Variant Type"
+                                                            value=""/>
+                                                    <yields
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Variant 1"
+                                                            value="yields_fixed-income"/>
+                                                    <yields-two
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Variant 2"
+                                                            value="yields_money-market"/>
+                                                    <yields-three
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Variant 3"
+                                                            value="yields_taxable-equivalent"/>
+                                                </items>
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-dialog-dropdown-showhide-target=".type-showhide-target"/>
+                                            </variants>
+                                            <yieldthree
+                                                    granite:class="hide type-showhide-target"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <customJson
+                                                            granite:class="hide type-showhide-target"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldLabel="Enable Custom JSON"
+                                                            name="./customJson"
+                                                            text="Enable Custom JSON"
+                                                            uncheckedValue="false"
+                                                            value="true">
+                                                        <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                showhidetargetvalue="yields_taxable-equivalent"/>
+                                                    </customJson>
+                                                    <jsonPath
+                                                            granite:class="hide type-showhide-target"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldDescription="Provide the Custom Json Path for Taxable Equivalent Yield Variant"
+                                                            fieldLabel="JSON Path"
+                                                            name="./jsonPath"
+                                                            rootPath="/content/dam">
+                                                        <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                showhidetargetvalue="yields_taxable-equivalent"/>
+                                                    </jsonPath>
+                                                </items>
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        showhidetargetvalue="yields_taxable-equivalent"/>
+                                            </yieldthree>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </Advanced>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

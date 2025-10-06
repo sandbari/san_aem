@@ -1,0 +1,141 @@
+##Rewrite rules for sitemap.xml, robots.txt and favicon
+	RewriteRule ^/robots.txt$ /content/dam/vcm/configs/robots.txt [NC,PT]
+	RewriteRule ^/favicon.ico$ /content/dam/vcm/configs/favicon.ico [NC,PT]
+	RewriteRule ^/sitemap.xml$ /content/dam/vcm/configs/sitemap.xml [NC,PT]
+
+##Added default headers for Post Login Integration
+		#SetEnvIf Origin ^(https?://(?:.+\.)?(msweb\.vcm\.com|mysecure.vcm.com|postlogin.vcm.com|memberapi.vcm.com|investorapi.vcm.com)(?::\d{1,5})?)$   CORS_ALLOW_ORIGIN=$1
+		SetEnvIf Origin ^(https?://(?:.+\.)?(msweb\.vcm\.com|mysecure.vcm.com|postlogin.vcm.com|memberapi.vcm.com|investorapi.vcm.com|vcm.com)(?::\d{1,5})?)$   CORS_ALLOW_ORIGIN=$1
+		Header append Access-Control-Allow-Origin  %{CORS_ALLOW_ORIGIN}e   env=CORS_ALLOW_ORIGIN
+		Header merge  Vary "Origin"
+        Header always set Access-Control-Allow-Headers "Authorization"
+        Header always set Access-Control-Allow-Methods "GET"
+        Header always set Access-Control-Expose-Headers "Content-Security-Policy, Location"
+        Header always set Access-Control-Max-Age "600"
+		Header always set Access-Control-Allow-Credentials "true"
+        <If "%{REQUEST_METHOD} = 'OPTIONS'">
+        Header always set Access-Control-Allow-Origin "*"
+        </If>
+        RewriteCond %{REQUEST_METHOD} OPTIONS
+        RewriteRule ^(.*)$ $1 [R=200,L]
+
+
+##Remove .html if it comes in the url - excluding experience fragment urls
+	RewriteCond %{REQUEST_URI} !^/vcm-experience-fragments/
+	RewriteRule "^/(.*).html$" "https://%{SERVER_NAME}/$1" [L,R=301]
+
+##Cookie based Home page redirections
+	RewriteCond %{HTTP_COOKIE} ^.*user_entity_type=usaa_member.*$
+	RewriteRule ^/?$ https://${VCM_INVESTOR_HOSTNAME}/member [L,R]
+
+	RewriteCond %{HTTP_COOKIE} ^.*user_entity_type=financial_professional.*$
+	RewriteRule ^/?$ https://${VCM_ADVISOR_HOSTNAME}/financial-professional [L,R]
+
+	RewriteCond %{HTTP_COOKIE} ^.*user_entity_type=institutional_investor.*$
+	RewriteRule ^/?$ https://${VCM_INSTITUTIONAL_HOSTNAME}/institutional-investor [L,R]
+
+	RewriteCond %{HTTP_COOKIE} !^.*user_entity_type.*$
+	RewriteRule ^/?$ /content/vcm/us/en.html [L,PT]
+
+##Remove Trailing slash
+	RewriteRule ^(.*)/+$ https://%{SERVER_NAME}$1 [L,R=301]
+
+##Rewrite rule for experience fragments
+    RewriteRule ^/vcm-experience-fragments/(.*)$  /content/experience-fragments/vcm-experience-fragments/$1 [L,PT]
+    RewriteRule ^/content/experience-fragments/(.*)$  /content/experience-fragments/$1.html [L,PT]
+    RewriteRule ^/content/experience-fragments/(.*)/~$  /content/experience-fragments/$1.html [L,R=301]
+
+##vcm rewrites for pdf urls
+	RewriteRule ^/assets/(.*)\.pdf$  /content/dam/vcm/$1.pdf [L,PT]
+
+##vcm rewrites for other than /
+
+    RewriteCond %{REQUEST_URI} !^$
+    RewriteCond %{REQUEST_URI} !^/$
+    RewriteCond %{REQUEST_URI} !^dispatcher/invalidate.cache$
+    RewriteCond %{REQUEST_URI} !^/apps
+    RewriteCond %{REQUEST_URI} !^/content
+    RewriteCond %{REQUEST_URI} !^/etc
+    RewriteCond %{REQUEST_URI} !^/libs
+    RewriteCond %{REQUEST_URI} !^/tmp
+    RewriteCond %{REQUEST_URI} !^/bin
+    RewriteCond %{REQUEST_URI} !^/var
+    RewriteCond %{REQUEST_URI} !^/system
+    RewriteCond %{REQUEST_URI} !^/sitemap
+    RewriteRule "^/(.*)$" "/content/vcm/us/en/$1.html" [L,PT]
+
+##Investor Mutual Fund USAA TO VICTORY start here RiverWalk changes
+
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-500-index-fund-member-shares$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-500-index-fund-member-shares [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-500-index-fund-member-shares$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-500-index-fund-member-shares [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-aggressive-growth-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-aggressive-growth-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-california-bond-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-california-bond-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-capital-growth-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-capital-growth-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-cornerstone-aggressive-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-cornerstone-aggressive-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-cornerstone-conservative-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-cornerstone-conservative-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-cornerstone-equity-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-cornerstone-equity-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-cornerstone-moderate-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-cornerstone-moderate-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-cornerstone-moderately-aggressive-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-cornerstone-moderately-aggressive-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-cornerstone-moderately-conservative-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-cornerstone-moderately-conservative-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-emerging-markets-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-emerging-markets-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-extended-market-index-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-extended-market-index-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-global-equity-income-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-global-equity-income-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-global-managed-volatility-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-global-managed-volatility-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-government-securities-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-government-securities-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-growth-income-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-growth-income-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-growth-and-tax-strategy-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-growth-and-tax-strategy-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-growth-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-growth-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-high-income-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-high-income-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-income-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-income-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-income-stock-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-income-stock-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-intermediate-term-bond-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-intermediate-term-bond-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-international-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-international-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-money-market-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-money-market-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-nasdaq-100-index-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-nasdaq-100-index-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-new-york-bond-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-new-york-bond-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-precious-metals-and-minerals-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-precious-metals-and-minerals-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-science-technology-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-science-technology-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-short-term-bond-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-short-term-bond-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-small-cap-stock-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-small-cap-stock-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-sustainable-world-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-sustainable-world-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-target-retirement-2030-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-target-retirement-2030-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-target-retirement-2040-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-target-retirement-2040-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-target-retirement-2050-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-target-retirement-2050-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-target-retirement-2060-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-target-retirement-2060-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-target-retirement-income-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-target-retirement-income-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-tax-exempt-intermediate-term-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-tax-exempt-intermediate-term-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-tax-exempt-long-term-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-tax-exempt-long-term-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-tax-exempt-money-market-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-tax-exempt-money-market-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-tax-exempt-short-term-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-tax-exempt-short-term-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-treasury-money-market-trust$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-treasury-money-market-trust [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-ultra-short-term-bond-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-ultra-short-term-bond-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-value-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-value-fund [L,R=301]
+RewriteRule ^/products/mutual-funds/mutual-funds-list/usaa-virginia-bond-fund$ https://${VCM_INVESTOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-virginia-bond-fund [L,R=301]
+
+## Investor Mutual Fund USAA TO VICTORY RiverWalk changes end here
+
+## Investor ETF USAA TO VICTORY RiverWalk changes start here
+
+RewriteRule ^/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-usaa-core-intermediate-term-bond-etf$ https://${VCM_INVESTOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-core-intermediate-bond-etf [L,R=301]
+RewriteRule ^/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-usaa-core-short-term-bond-etf$  https://${VCM_INVESTOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-short-term-bond-etf [L,R=301]
+RewriteRule ^/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-esg-core-plus-bond-etf$  https://${VCM_INVESTOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-core-plus-intermediate-bond-etf [L,R=301]
+RewriteRule ^/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-esg-corporate-bond-etf$  https://${VCM_INVESTOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-corporate-bond-etf [L,R=301]
+
+## Investor ETF USAA TO VICTORY RiverWalk changes end here
+
+## INSTITUTIONAL Strategies USAA TO VICTORY RiverWalk changes start here
+
+RewriteRule ^/solutions/strategies/usaa-government-securities-strategy$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/victory-government-securities-strategy [L,R=301]
+RewriteRule ^/solutions/strategies/usaa-high-income-strategy$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/victory-high-income-strategy [L,R=301]
+RewriteRule ^/solutions/strategies/usaa-income-strategy$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/victory-income-strategy [L,R=301]
+RewriteRule ^/solutions/strategies/core-plus-fixed-income-strategy$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/victory-core-plus-fixed-income-strategy [L,R=301]
+RewriteRule ^/solutions/strategies/usaa-short-term-bond-strategy$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/victory-short-term-fixed-income-strategy [L,R=301]
+RewriteRule ^/solutions/strategies/usaa-ultra-short-term-bond-strategy$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/victory-ultra-short-term-fixed-income-strategy [L,R=301]
+
+## INSTITUTIONAL Strategies USAA TO VICTORY RiverWalk changes end here
+
+RewriteCond %{HTTP_COOKIE} ^.*user_entity_type=usaa_member.*$
+RewriteRule ^/mobile$ https://${VCM_INVESTOR_HOSTNAME}/mobile-app [L,R=301]
+
+RewriteCond %{HTTP_COOKIE} ^.*user_entity_type=financial_professional.*$
+RewriteRule ^/mobile$ https://${VCM_ADVISOR_HOSTNAME}/mobile-app [L,R=301]

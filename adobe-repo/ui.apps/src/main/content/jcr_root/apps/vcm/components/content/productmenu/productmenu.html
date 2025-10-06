@@ -1,0 +1,52 @@
+<sly data-sly-test="${wcmmode.edit}">
+    Edit Product Menu Component.
+</sly>
+ <div class="container productmenu-comp" data-resource-path="${resource.path}.funds.json">
+<sly data-sly-use.productMenu="com.vcm.core.models.ProductMenuModel"/>
+		<sly data-sly-test.linkvariant="${productMenu.tabVariant=='linktab'}">
+        <div class="row productmenu-headers" id="linkTabs">
+        <sly data-sly-list.linktab="${productMenu.tabLinkItems}">
+           <div>
+                <a class="productmenu-header-link" href="${linktab.tabLink}">${linktab.tabTitle}</a>
+            </div>
+        </sly>
+        </div>
+        </sly>
+        <sly data-sly-test.linktab="${productMenu.tabVariant=='paneltab'}">
+        <div class="row productmenu-headers" id="tabs">
+            <sly data-sly-list.linktab="${productMenu.tabLinkItems}">
+                <div class="panelTabsLinks">
+                    <a class="productmenu-header-link" href="${linktab.tabLink}">${linktab.tabTitle}</a>
+                </div>
+            </sly>
+        </div>
+        <div class="row productmenu-content" id="subMenu">
+            <div class="col-md-3 mf-lt-col" id="tags">
+            </div>
+            <div class="col-md-9 mf-rt-col">
+                <div class="search-wrapper"> 
+                    <form class="form-inline active-purple-2">
+                        <i class="fa fa-search icon-green"></i>
+                        <input id="search" class="form-control form-control-sm" type="text"
+							placeholder="${productMenu.placeHolderText @context='html'}" aria-describedby="placeholder-text" aria-label="Search">
+                        <span class="sr-only" id="placeholder-text">${productMenu.placeHolderText @context='html'}</span>
+                    </form>
+					<div id="errorMsg">${productMenu.errorMessage || 'No matches Found' @context='html'}</div>
+                </div>
+                <div class="page-title row" id="childTags">
+
+                    <ul class="list-group serach-result" id="childTags1">
+                    </ul>
+                    <ul class="list-group serach-result" id="childTags2">
+                    </ul>
+                    <ul id="searchResults">
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+        </div>
+		</sly>
+    </div>

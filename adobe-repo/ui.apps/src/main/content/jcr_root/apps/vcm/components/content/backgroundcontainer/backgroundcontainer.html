@@ -1,0 +1,77 @@
+<sly data-sly-test="${wcmmode.edit}">
+	<h4>Click here to Edit Background Container Component....</h4>
+</sly>
+<sly data-sly-use.model="com.vcm.core.models.BackgroundContainer">
+	<sly data-sly-test="${model.backgroundStyle == 'greybackground' || model.backgroundStyle == 'whitebackground' || !model.backgroundStyle}">
+		<sly data-sly-test.bgStyle="${model.backgroundStyle == 'greybackground'? 'bg-grey':'bg-white'}">
+			<sly data-sly-test.headingStyle="${model.headingAlignment == 'leftaligned'? 'text-left':(model.headingAlignment == 'rightaligned'?'text-right':'text-center')}">
+				<div data-audiencetype="${model.allowedAudience}" class="container ${bgStyle} ${model.ilcAlignment == 'true' ? 'vcm-bg-wrapper' :''} ${bgStyle =='bg-white' ? '' :'pb-3'}">
+				   <sly data-sly-test="${model.filterViewType}"><div class="filter-type" style="display: none;">${model.filterViewType}</div></sly>
+				   <sly data-sly-test="${currentPage.title}"><div class="lob-title" style="display: none;">${currentPage.title}</div></sly>
+				   <sly data-sly-test="${currentPage.name}"><div class="lob-name" style="display: none;">${currentPage.name}</div></sly>
+					  <div class="position-relative">
+						<sly data-sly-test="${model.cornerTriangle == 'true'}">
+				<span
+						class="shape-triangle-mid-right-btm"
+						style="border-right-color: #8BC105;"></span>
+						</sly>
+						<div class="content-wrapper mbl-container-w100-px15">
+							<sly data-sly-test="${model.headingText}">
+								<div class="${headingStyle}">
+									<h3 data-sly-test="${model.headingText}"
+										class="blueHdng-greenBorder">${model.headingText}</h3>
+								</div>
+							</sly>
+			</sly>
+			<sly data-sly-resource="${'content-bg' @ resourceType='wcm/foundation/components/parsys'}" />
+			<sly data-sly-test="${(model.leftLinkText) || (model.rightLinkText)}">
+				<div class="row m-0 mt-4">
+					<sly data-sly-test.leftLinkUrl="${model.leftLinkUrl == ''? '#': model.leftLinkUrl}">
+						<div class="col-8 text-left">
+							<a data-sly-test="${model.leftLinkText}" aria-label="View ${model.leftPageTitle}"
+							   href="${leftLinkUrl}" class="navg-lft-arw-link">${model.leftLinkText}</a>
+						</div>
+					</sly>
+					<sly data-sly-test.rightLinkUrl="${model.rightLinkUrl == ''? '#': model.rightLinkUrl}">
+						<div class="col-4 text-right">
+							<a data-sly-test="${model.rightLinkText}" aria-label="View ${model.rightPageTitle}"
+							   href="${rightLinkUrl}"
+							   class="navg-right-arw-link">${model.rightLinkText}</a>
+						</div>
+					</sly>
+				</div>
+			</sly>
+			</div>
+			</div>
+				<sly data-sly-test="${model.seeAllLink}">
+					<div class="content-wrapper">
+						<div class="see-all-row"> 
+							<a class="see-all-link blue-arrow-link" href="">${model.seeAllLabel}</a> 
+						 </div>
+				    </div>
+				 </sly>
+			</div>
+		</sly>
+	</sly>
+	<sly data-sly-test="${model.backgroundStyle == 'newscontainer'}">
+		<div data-audiencetype="${model.allowedAudience}" class="container ${bgStyle}">
+			<div class="position-relative">
+				<div class="content-wrapper">
+					<div class="news-media-block">
+						<div class="row">
+							<sly data-sly-resource="${'content-bg' @ resourceType='wcm/foundation/components/parsys'}" />
+						</div>
+						<div class="inthemedia-loadmore-btn-block">
+							<a class="btn-clk-loadmr" tabindex="0" id="loadMoreInTheMedia">${model.loadMoreButtonLabel}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</sly>
+	<sly data-sly-test="${model.backgroundStyle == 'stickytabcontainer'}">
+		<div data-audiencetype="${model.allowedAudience}" class="container ${bgStyle}">
+			<sly data-sly-resource="${'content-bg' @ resourceType='wcm/foundation/components/parsys'}" />
+		</div>
+	</sly>
+</sly>

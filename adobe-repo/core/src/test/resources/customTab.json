@@ -1,0 +1,84 @@
+{
+   "jcr:primaryType":"nt:unstructured",
+   "jcr:createdBy":"admin",
+   "jcr:lastModifiedBy":"admin",
+   "jcr:created":"Tue Mar 31 2020 11:00:55 GMT+0530",
+   "jcr:lastModified":"Tue Mar 31 2020 15:52:30 GMT+0530",
+   "sling:resourceType":"vcm/components/content/tabs",
+   "activeItem":"item_3",
+   "item_1":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:title":"Tab 1",
+      "cq:panelTitle":"Social Press",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "ourproducts":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:createdBy":"admin",
+         "jcr:lastModifiedBy":"admin",
+         "contentType":"title",
+         "jcr:created":"Tue Mar 31 2020 11:03:09 GMT+0530",
+         "title":"Our Products",
+         "variant":"linktext",
+         "jcr:lastModified":"Tue Mar 31 2020 11:03:38 GMT+0530",
+         "sling:resourceType":"vcm/components/content/ourproducts",
+         "productList":{
+            "jcr:primaryType":"nt:unstructured",
+            "item0":{
+               "jcr:primaryType":"nt:unstructured",
+               "productLink":"#",
+               "audienceType":"usaa_member, financial_professional, institutional_investor",
+               "productTitle":"Mutual Funds",
+               "tabSelect":"_self"
+            },
+            "item1":{
+               "jcr:primaryType":"nt:unstructured",
+               "productLink":"#",
+               "audienceType":"usaa_member, financial_professional, institutional_investor",
+               "productTitle":"VictoryShares® <br>ETFs",
+               "tabSelect":"_self"
+            },
+            "item2":{
+               "jcr:primaryType":"nt:unstructured",
+               "productLink":"#",
+               "audienceType":"usaa_member, financial_professional, institutional_investor",
+               "productTitle":"Retirement",
+               "tabSelect":"_self"
+            }
+         }
+      }
+   },
+   "item_2":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:title":"Tab 2",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "image":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:createdBy":"admin",
+         "fileReference":"/content/dam/vcm/investment-teams/munder-capital/robert-crosby.png",
+         "jcr:lastModifiedBy":"admin",
+         "jcr:created":"Tue Mar 31 2020 11:03:59 GMT+0530",
+         "displayPopupTitle":"true",
+         "jcr:lastModified":"Tue Mar 31 2020 11:04:06 GMT+0530",
+         "titleValueFromDAM":"true",
+         "sling:resourceType":"vcm/components/content/image",
+         "isDecorative":"false",
+         "altValueFromDAM":"true"
+      }
+   },
+   "item_3":{
+      "jcr:primaryType":"nt:unstructured",
+      "jcr:title":"Tab 3",
+      "cq:panelTitle":"In the media",
+      "sling:resourceType":"wcm/foundation/components/responsivegrid",
+      "text":{
+         "jcr:primaryType":"nt:unstructured",
+         "jcr:createdBy":"admin",
+         "jcr:lastModifiedBy":"admin",
+         "jcr:created":"Tue Mar 31 2020 11:04:39 GMT+0530",
+         "text":"<p>This is media content</p>\n",
+         "jcr:lastModified":"Tue Mar 31 2020 11:04:50 GMT+0530",
+         "sling:resourceType":"vcm/components/content/text",
+         "textIsRich":"true"
+      }
+   }
+}

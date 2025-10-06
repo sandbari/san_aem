@@ -1,0 +1,137 @@
+.investment-block .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.investment-text {
+    margin: 0 14px 30px 14px;
+}
+
+.paddingTop-30-Bottom-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.threeColCmpnt-block {
+    background-color: #FFF;
+    box-shadow: 0px 0px 16px rgba(0,0,0,0.29);
+    padding: 26px 26px 65px 26px;
+    margin: 14px;
+    position: relative;
+    width: 100%;
+    min-height: 338px;
+}
+
+a.arrowtext-rightArrow:after {
+    content: "";
+    background: url("../resources/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-left: 48px;
+    padding-bottom: 16px;
+    padding-top: 20px;
+    display: inline;
+    background-position-y: 10px;
+    background-size:33px 33px;
+}
+
+.bottom-txt {
+    text-align: right;
+    position: absolute;
+    /* top: 0; */
+    bottom: 22px;
+    right: 20px;
+}
+
+.threeColCmpnt-block .blockimage-wrapper.paddingTop-30-Bottom-30 {
+    box-shadow: none;
+    text-align: center;
+    height: 90px;
+    padding: 0;
+    margin: 15px 0 30px 0;    
+    line-height: 135px;
+}
+
+.threeColCmpnt-block .img-responsive {
+    display: inline;
+    max-width: 100%;
+}
+
+.threeColCmpnt-block .bottom-txt {
+    right: 20px;
+}
+
+.investment-block span.franchise-traiangle {
+    width: 0;
+    height: 0;
+    border-left: 27px;
+    border-right: 40px solid transparent;
+    border-top: 40px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: " ";
+    display: none;
+}
+
+.investment-block .threeColCmpnt-block:hover span {
+    display: block;
+}
+
+.investment-block {
+    margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.investment-block a:focus{
+    outline: 2px solid #004a98 !important;
+}
+
+/* TABLET PORTRAIT STYLES
+
+
+
+================================================== */
+
+@media screen and (min-width:768px) {
+    .threeColCmpnt-block {
+       width: 45.8%;
+    }
+    .investment-block .row {
+        margin: 0 auto;
+    }
+}
+
+
+/* TABLET LANDSCAPE STYLES
+
+
+
+================================================== */
+
+@media screen and (min-width:992px) {
+    .threeColCmpnt-block {
+      width: 30.5%;
+    }
+}
+
+
+/* DESKTOP STYLES
+
+ 
+
+================================================== */
+
+@media screen and (min-width:1278px) {
+    .threeColCmpnt-block {
+        width: 30.6%;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .investment-block {
+        margin-top: 50px;
+		margin-bottom:50px;
+    }
+}

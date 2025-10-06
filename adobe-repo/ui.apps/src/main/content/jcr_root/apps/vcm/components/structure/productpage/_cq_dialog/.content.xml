@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties]"
+    helpPath="https://www.adobe.com/go/aem_cmp_page_v2"
+    mode="edit"
+    trackingFeature="core-components:page:v2">
+    <content
+        granite:class="cq-dialog-content-page"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                granite:class="cq-siteadmin-admin-properties-tabs"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                size="L">
+                <items jcr:primaryType="nt:unstructured">
+                    <productdetailcomponents
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product Detail"
+                        sling:orderBefore="errorpage"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <productcategory
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Product Category"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <productcategory
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Add category of the product page"
+                                                fieldLabel="Product Category"
+                                                name="./productCategory">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <mutualfund
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Mutual Fund"
+                                                        value="MF"/>
+                                                    <etf
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="ETF"
+                                                        value="ETF"/>
+                                                    <strategy
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Strategy"
+                                                        value="ST"/>
+                                                </items>
+                                            </productcategory>
+                                        </items>
+                                    </productcategory>
+                                    <fundDetailPageProperties
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Fund Detail Page Property"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <isFundDetailPageAvailable
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}true"
+                                                fieldLabel="Is this Corporate home page?"
+                                                name="./isActiveFundPage"
+                                                text="Is active fund detail page?"
+                                                uncheckedValue="false"
+                                                value="true"/>
+											<isApiDataTitle
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}true"
+                                                fieldLabel="Override page name with API data"
+                                                name="./isApiDataTitle"
+                                                text="Override page name with API data"
+                                                uncheckedValue="false"
+                                                value="true"/>
+											<investmentforfinancial
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}true"
+                                                fieldLabel="Investment Minimum only for financial professional"
+                                                name="./investMinFinancial"
+                                                text="Investment Minimum only for financial professional"
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <fundID
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Add unique Fund ID to page"
+                                                fieldLabel="Fund ID"
+                                                name="./fundID"/>												
+                                            <ticker
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Add unique ticker to page"
+                                                fieldLabel="Ticker"
+                                                name="./ticker"/>
+                                            <factSheetUrl
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldDescription="Please Choose fact sheet URL. This is default for member user"
+                                                        fieldLabel="Fact Sheet URL"
+                                                        name="./factsheeturl"
+                                                        rootPath="/content/dam/vcm"/>
+											<advisorFactSheetUrl
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldDescription="Please Choose Advisor fact sheet URL"
+                                                        fieldLabel="Advisor Fact Sheet URL"
+                                                        name="./advisorFactsheetUrl"
+                                                        rootPath="/content/dam/vcm"/>
+                                            <allholdingsurl
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Please Choose All Holdings URL"
+                                                fieldLabel="All Holdings URL"
+                                                name="./allHoldingsUrl"
+                                                rootPath="/content/dam/vcm"/>
+                                            <membermanagecomurl
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Please Choose Manager Commentary URL for Member user"
+                                                fieldLabel="Member Manager Commentary URL"
+                                                name="./memberManagerCommentaryUrl"
+                                                rootPath="/content/dam/vcm"/>
+                                            <managecomurl
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Please Choose Manager Commentary URL for Financial advisor user"
+                                                fieldLabel="Advisor Manager Commentary URL"
+                                                name="./managerCommentaryUrl"
+                                                rootPath="/content/dam/vcm"/>
+                                            <prospectusurl
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Add Prospectus URL"
+                                                fieldLabel="Member Prospectus URL"
+                                                name="./prospectusUrl"/>
+                                            <advisorprospectusurl
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Add Prospectus URL"
+                                                fieldLabel="Advisor Prospectus URL"
+                                                name="./advisorprospectusUrl"/>
+                                            <historicalinfourl
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Please Choose Historical Information URL"
+                                                fieldLabel="Historical Information URL"
+                                                name="./historicalInformationUrl"
+                                                rootPath="/content/dam/vcm"/>
+                                            <gipscomplainceurl
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Please Choose GIPS Compliance Presentation URL "
+                                                fieldLabel="GIPS Compliance Presentation URL "
+                                                name="./gipsComplainceUrl"
+                                                rootPath="/content/dam/vcm"/>
+                                            <premiumdiscountreport
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Please Choose GIPS Compliance Presentation URL "
+                                                fieldLabel="Premium Discount Report URL"
+                                                name="./premiumDiscountReport"
+                                                rootPath="/content/dam/vcm"/>
+                                            <iraeligible
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}true"
+                                                fieldDescription="Please select If the product is IRA Eligible or not"
+                                                fieldLabel="IRA Eligible"
+                                                name="./iraEligible"
+                                                text="IRA Eligible"
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <fundtype
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                fieldDescription="Please select assert class of the product"
+                                                fieldLabel="Select Asset Class"
+                                                name="./fundType"
+                                                rootPath="/content/cq:tags/vcm/product-menu-funds"/>
+                                            <franchise
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                fieldDescription="Please select appropriate franchise of the product"
+                                                fieldLabel="Select Franchise"
+                                                name="./franchise"
+                                                rootPath="/content/cq:tags/vcm/investment-franchise"/>
+											<solutiontype
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                fieldDescription="Please select Solution Type"
+                                                fieldLabel="Select Solution Type"
+                                                name="./solutionType"
+                                                rootPath="/content/cq:tags/vcm/product-menu-funds/victory-shares-etfs"/>
+                                        </items>
+                                    </fundDetailPageProperties>
+                                    <fundDetailPageComponents
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Module Disable Section"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <productdetaildatainfo
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}true"
+                                                fieldLabel="Product Detail Data Info"
+                                                name="./productdetaildatainfo"
+                                                text="Product Detail Data Info"
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <rightrailstrategy
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}true"
+                                                fieldLabel="Right Rail Strategy"
+                                                name="./rightrailstrategy"
+                                                text="Right Rail Strategy"
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <performancetab
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Performance Tab"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <annualexpense
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Annual Expense"
+                                                        name="./annualexpense"
+                                                        text="Annual Expense"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <annualizedreturns
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Annualized Returns"
+                                                        name="./annualizedreturns"
+                                                        text="Annualized Returns"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <calendarreturns
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Calendar Returns"
+                                                        name="./calendarreturns"
+                                                        text="Calendar Returns"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <distribution
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Distribution"
+                                                        name="./distribution"
+                                                        text="Distribution"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <history
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="History"
+                                                        name="./history"
+                                                        text="History"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <riskmeasures
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Risk Measures"
+                                                        name="./riskmeasures"
+                                                        text="Risk Measures"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <yield-variant1
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Yield Variant 1"
+                                                        name="./yieldsfixedincome"
+                                                        text="Yield Variant 1 - Fixed Income"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <yield-variant2
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Yield Variant 2 - Money Market"
+                                                        name="./yieldsmoneymarket"
+                                                        text="Yield Variant 2 - Money Market"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <yield-variant3
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Yield Variant 3 - Taxable Equivalent"
+                                                        name="./yieldstaxableequivalent"
+                                                        text="Yield Variant 3 - Taxable Equivalent"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <premiumdiscount
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Premium Discount(ETF-6C)"
+                                                        name="./premiumdiscount"
+                                                        text="Premium Discount(ETF-6C)"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                </items>
+                                            </performancetab>
+                                            <portfoliotab
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Portfolio Tab"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <allocationassetclass
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Allocation Asset Class"
+                                                        name="./allocationassetclass"
+                                                        text="Allocation Asset Class"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <assetallocation
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Asset Allocation"
+                                                        name="./assetallocation"
+                                                        text="Asset Allocation"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <bottomtenholdings
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Bottom Ten Holdings"
+                                                        name="./bottomtenholdings"
+                                                        text="Bottom Ten Holdings"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <characteristics-variant1
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Characteristics Variant 1"
+                                                        name="./characteristicsone"
+                                                        text="Characteristics Variant 1"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <characteristics-variant2
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Characteristics Variant 2 - Fund For Income"
+                                                        name="./characteristicstwo"
+                                                        text="Characteristics Variant 2 - Fund For Income"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <characteristics-variant3
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Characteristics Variant 3 - Convertibles Fund"
+                                                        name="./characteristicsthree"
+                                                        text="Characteristics Variant 3 - Convertibles Fund"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <fundstatistics
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Fund Statistics"
+                                                        name="./fundstatistics"
+                                                        text="Fund Statistics"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <countrydiversification
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Country Diversification"
+                                                        name="./countrydiversification"
+                                                        text="Country Diversification"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <durationschedule
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Duration Schedule"
+                                                        name="./durationschedule"
+                                                        text="Duration Schedule"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <fundholding
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Fund Holding"
+                                                        name="./fundholding"
+                                                        text="Fund Holding"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <qualitystructure-variant1
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Quality Structure Variant 1"
+                                                        name="./qualitystructureone"
+                                                        text="Quality Structure Variant 1"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <qualitystructure-variant2
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Quality Structure Variant 2"
+                                                        name="./qualitystructuretwo"
+                                                        text="Quality Structure Variant 2"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <regionaldiversification
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Regional Diversification"
+                                                        name="./regionaldiversification"
+                                                        text="Regional Diversification"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <regionallocation
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Region Allocation"
+                                                        name="./regionallocation"
+                                                        text="Region Allocation"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <sectordiversification
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Sector Diversification"
+                                                        name="./sectordiversification"
+                                                        text="Sector Diversification"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <sectorallocation
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Sector Allocation"
+                                                        name="./sectorallocation"
+                                                        text="Sector Allocation"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <toptenholdings-variant1
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Top Ten Holdings Variant 1 - Four Column"
+                                                        name="./toptenholdingsone"
+                                                        text="Top Ten Holdings Variant 1 - Four Column"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <toptenholdings-variant2
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Top Ten Holdings Variant 2 - Two Column"
+                                                        name="./toptenholdingstwo"
+                                                        text="Top Ten Holdings Variant 2 - Two Column"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <averagelifestructure
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Average Life Structure"
+                                                        name="./averagelifestructure"
+                                                        text="Average Life Structure"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                </items>
+                                            </portfoliotab>
+                                            <managementtab
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Management Tab"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <management
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Management"
+                                                        name="./management"
+                                                        text="Management"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                </items>
+                                            </managementtab>
+                                            <summarytab
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Summary Tab"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <rightrailmf
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Right Rail MF"
+                                                        name="./rightrailmf"
+                                                        text="Right Rail MF"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <rightrailetf
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Right Rail ETF"
+                                                        name="./rightrailetf"
+                                                        text="Right Rail ETF"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                </items>
+                                            </summarytab>
+                                            <recentdistributiontab
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Recent Distribution Tab"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <recentdistribution
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Recent Distributions"
+                                                        name="./recentdistribution"
+                                                        text="Recent Distributions"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                </items>
+                                            </recentdistributiontab>
+                                            <feesandexpensetab
+                                                cq:showOnCreate="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Fees and Expenses Tab"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <fundexpensecalculator
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Fund Expense Calculator"
+                                                        name="./fundexpensecalculator"
+                                                        text="Fund Expense Calculator"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <fundoperatingexpense
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Fund Operating Expense"
+                                                        name="./fundoperatingexpense"
+                                                        text="Fund Operating Expense"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                    <minimuminvestment
+                                                        cq:showOnCreate="{Boolean}true"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        checked="{Boolean}true"
+                                                        fieldLabel="Minimum Investment"
+                                                        name="./minimuminvestment"
+                                                        text="Minimum Investment"
+                                                        uncheckedValue="false"
+                                                        value="true"/>
+                                                </items>
+                                            </feesandexpensetab>
+                                        </items>
+                                    </fundDetailPageComponents>
+                                </items>
+                            </column>
+                        </items>
+                    </productdetailcomponents>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

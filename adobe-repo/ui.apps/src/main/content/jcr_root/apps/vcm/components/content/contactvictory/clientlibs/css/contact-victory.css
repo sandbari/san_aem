@@ -1,0 +1,193 @@
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.contactVC__container {
+    padding: 0;
+}
+
+.contactVictory__img img {
+    width: 164px;
+    height: 164px;
+    position: absolute;
+    right: 0;
+}
+
+.contactVictory__img {
+    position: relative;
+    background-color: #486D90;
+    padding-bottom: 38px;
+    margin-top: 30px;
+}
+
+.contactVC__container .content-wrapper {
+    padding-left: 15px;
+    padding-top: 29px;
+}
+
+.contactVC__freeText {
+    width: 70%;
+}
+
+.contactVC__container h3.blueHdng-multiLine-greenBorder {
+    font-size: 22px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.contact-heading {
+    width: 70%
+}
+
+.contactVC__text {
+    font-size: 16px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    padding-top: 26px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.contactVC__navigationLinksButton a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.contactVC__container .navigation-right {
+    margin-top: 0;
+}
+
+.contactVC__container .navigation-right a {
+    color: #fff;
+}
+
+.contactVC__container .navigation-right a:hover {
+    text-decoration: none;
+}
+
+.investmentfranchises+.contactvictory .contactVictory__img {
+    margin-top: 0!important;
+}
+
+
+/* Ipad  media query starts */
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .contactVC__container h3.blueHdng-multiLine-greenBorder {
+        font-size: 26px;
+        line-height: 28px;
+        color: #fff;
+    }
+    .contactVC__container .content-wrapper {
+        padding-top: 35px;
+        padding-left: 0;
+    }
+    .contactVictory__img {
+        height: auto;
+        min-height: 263px;
+    }
+    .contactVictory__img img {
+        width: 263px;
+        height: 263px;
+    }
+    .contactVC__text {
+        padding-top: 30px;
+        padding-bottom: 26px;
+    }
+}
+
+
+/* Ipad Landscape  media query starts */
+
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape) {
+    .contact-heading {
+        width: 70%;
+    }
+    .contactVictory__img img {
+        width: 288px;
+        height: 288px;
+    }
+    .contactVictory__img {
+        height: 288px!important;
+    }
+    .contactVC__container .content-wrapper {
+        padding-bottom: 30px;
+    }
+}
+
+
+/* Ipad Pro  media query starts */
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) and (orientation: portrait) {
+    .contact-heading {
+        width: 65%;
+    }
+}
+
+
+/* Desktop  media query starts */
+
+@media screen and (min-width:1025px) {
+    .contactVC__container h3.blueHdng-multiLine-greenBorder {
+        font-size: 26px;
+        line-height: 28px;
+        color: #fff;
+    }
+    .contact-heading {
+        width: 85%
+    }
+    .contactVictory__img {
+        height: auto;
+        position: relative;
+        padding-bottom: 42px;
+        margin-top: 50px;
+        min-height: 240px;
+    }
+    .contactVictory__img img {
+        width: 240px;
+        height: 240px;
+        position: absolute;
+        right: 0;
+    }
+    .contactVC__subject {
+        width: 16%;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #8BC105;
+    }
+    .contactVC__text {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .contactVC__freeText {
+        width: 60%;
+    }
+    .contactVC__container .content-wrapper {
+        padding-top: 35px;
+        padding-left: 0px;
+    }
+    .contactVictory__img .lg-rt-green-traingle {
+        float: right;
+    }
+    .contactVictory__img .lg-rt-green-traingle::after {
+        content: "";
+        border-left: 88px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid #8BC105;
+        position: absolute;
+        right: 297px;
+        top: 0;
+        z-index: 1;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .contactVC__container .content-wrapper {
+        padding-left: 30px;
+    }
+}

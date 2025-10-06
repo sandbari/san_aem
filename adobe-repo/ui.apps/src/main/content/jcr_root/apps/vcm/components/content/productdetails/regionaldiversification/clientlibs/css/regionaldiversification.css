@@ -1,0 +1,44 @@
+.Regional-Diversification-table-data {
+    position: relative;
+}
+
+.product-details .Regional-Diversification-table-data {
+    display: block;
+}
+
+.product-details .table.Regional-Diversification-table thead th{
+	 min-width: 170px; 
+ }
+ 
+.product-details table.Regional-Diversification-table th:first-child, .product-details table.Regional-Diversification-table tbody tr td:first-child {
+    min-width: 170px;
+    text-align: left;
+}
+
+span.date-text {
+    display: block;
+    margin-top: 5px;
+}
+
+.regionaldiversification .heading {
+     margin: 15px 0 0;
+}
+
+@media screen and (min-width:768px) {
+	span.date-text {
+		display: inline-block;
+		margin-top: 0px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+    .product-details .Regional-Diversification-table-data {
+        display: block;
+    }
+    .regionaldiversification .heading {
+    	margin: 0px 0 15px;
+	}
+	.product-details .table.Regional-Diversification-table thead th{
+	 min-width: 100px;
+	}
+}

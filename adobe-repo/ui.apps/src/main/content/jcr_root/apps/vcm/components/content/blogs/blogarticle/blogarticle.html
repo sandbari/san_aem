@@ -1,0 +1,30 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+   <div>Edit ${component.title} Component</div>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='vcm.blogarticle'}"/>
+<sly data-sly-use.model="com.vcm.core.models.BlogArticleModel"/>
+<div class="container blog-post-content-wrapper" data-sly-test.heading="${model.blogHeading}" data-blog-path="${currentPage.parent.path}">
+    <div class="wrapper-inner">
+    <input type='hidden' id="blogUrl" value="/content/vcm/prelogin.bloglisting.json"/>
+        <h1 class="page-heading">${heading}</h1>
+        <p class="read-time blue-color">
+        <sly data-sly-list.author="${model.authorList}">
+			<a href="#" class="authorname">${author}</a>
+        </sly>
+        <span >${model.authorDateString}</span></p>
+		<p class="read-time">${model.timeTaken @context='html'}</p>
+        <div class="blog-post-img float-left">
+            <img src="${model.blogHeadImage}" alt="${model.altText || true}">
+        </div>
+		<div class="blog-article">
+        	${model.blogContent @context='html'}
+        </div>
+        <div class="blog-post-arrow-link-wrapper">
+            <div>
+                <div class="float-left"><a href="#" aria-label="Previous Blog post" class="blog-post-arrow-link  blog-post-arrow-left">${'Previous' @i18n}</a></div>
+                <div class="float-right"><a href="#" aria-label="Next Blog post" class="blog-post-arrow-link  blog-post-arrow-right">${'Next' @i18n}</a> </div>
+            </div>
+        </div>
+    </div>    
+</div>

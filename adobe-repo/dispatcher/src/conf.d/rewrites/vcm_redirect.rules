@@ -1,0 +1,152 @@
+##Rewrite rules for all the old legacy URL to new platform
+##VCM_HOSTNAME="dev.vcm.com"
+##VCM_INVESTOR_HOSTNAME="dev.investor.vcm.com"
+##VCM_ADVISOR_HOSTNAME="dev.advisor.vcm.com"
+##VCM_INSTITUTIONAL_HOSTNAME="dev.institutional.vcm.com"
+## THB_HOSTNAME="thbinc.com"
+
+## BNB start here
+
+RewriteRule ^/the-firm$ https://${VCM_INSTITUTIONAL_HOSTNAME}/investment-franchises/thb-asset-management [L,R=301]
+RewriteRule ^/the-firm/esg-investment-policy-statement$ https://${VCM_INSTITUTIONAL_HOSTNAME}/investment-franchises/thb-asset-management [L,R=301]
+RewriteRule ^/strategies-micro-cap$ https://${VCM_INSTITUTIONAL_HOSTNAME}/strategies-micro-cap [L,R=301]
+RewriteRule ^/strategies-mid-cap$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/thb-mid-cap-strategy [L,R=301]
+RewriteRule ^/strategies-small-cap-core$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/thb-small-cap-strategy [L,R=301]
+RewriteRule ^/strategies-international$ https://${VCM_INSTITUTIONAL_HOSTNAME}/solutions/strategies/thb-international-opportunities [L,R=301]
+RewriteRule ^/research$ https://${VCM_INSTITUTIONAL_HOSTNAME}/blog-and-insights/insights [L,R=301]
+RewriteRule ^/category/news-and-insights$ https://${VCM_INSTITUTIONAL_HOSTNAME}/news [L,R=301]
+RewriteRule ^/contact-us$ https://${VCM_INSTITUTIONAL_HOSTNAME}/institutional-investor/contact-us [L,R=301]
+RewriteRule ^/strategies-mutual-fund$ https://${VCM_ADVISOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-thb-us-small-opportunities-fund [L,R=301]
+
+## BNB end here
+
+RewriteRule ^/about-us$ https://${VCM_INVESTOR_HOSTNAME}/about-victory [L,R=301]
+RewriteRule ^/blog$ https://${VCM_ADVISOR_HOSTNAME}/blog [L,R=301]
+RewriteRule ^/careers$ https://${VCM_INVESTOR_HOSTNAME}/careers [L,R=301]
+RewriteRule ^/contact-us$ https://${VCM_INVESTOR_HOSTNAME}/contact-us [L,R=301]
+RewriteRule ^/institutional-investors$ https://${VCM_INSTITUTIONAL_HOSTNAME}/institutional-investor [L,R=301]
+RewriteRule ^/investment-franchises$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises [L,R=301]
+RewriteRule ^/investment-franchises/detail/incore-capital-management$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/incore [L,R=301]
+RewriteRule ^/investment-franchises/detail/integrity-asset-management$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/integrity-asset-management [L,R=301]
+RewriteRule ^/investment-franchises/detail/munder-capital-management$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/munder [L,R=301]
+RewriteRule ^/investment-franchises/detail/newbridge-asset-management$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/newbridge-asset-management [L,R=301]
+RewriteRule ^/investment-franchises/detail/rs-investments$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/rs-investments [L,R=301]
+RewriteRule ^/investment-franchises/detail/sophus-capital$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/sophus-capital [L,R=301]
+RewriteRule ^/investment-franchises/detail/sycamore-capital$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/sycamore-capital [L,R=301]
+RewriteRule ^/investment-franchises/detail/trivalent-investments$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/trivalent-investments [L,R=301]
+RewriteRule ^/investment-franchises/detail/usaa-mutual-funds$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/usaa-investments [L,R=301]
+RewriteRule ^/investment-professionals$ https://${VCM_ADVISOR_HOSTNAME}/financial-professional [L,R=301]
+RewriteRule ^/investment-professionals/mutual-funds-documents/$ https://${VCM_ADVISOR_HOSTNAME}/literature/mutual-fund-documents [L,R=301]
+
+RewriteRule ^/investment-professionals/our-funds$ https://${VCM_ADVISOR_HOSTNAME}/products-fa/mutual-funds [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^(.*)(franchise=usaa-mutual-funds)(.*)$
+RewriteCond %{QUERY_STRING} ^(.*)(team=usaa-investments-a-victory-capital-investment-franchise)(.*)$
+RewriteRule ^/investment-franchises/detail/team/?$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/usaa-investments [L,R=301]
+RewriteCond %{QUERY_STRING} ^(.*)(franchise=usaa-mutual-funds)(.*)$
+RewriteCond %{QUERY_STRING} ^(.*)(team=victory-capital-solutions)(.*)$
+RewriteRule ^/investment-franchises/detail/team/?$ https://${VCM_INVESTOR_HOSTNAME}/investment-franchises/victory-capital-solutions [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=FD4INCFD$
+RewriteRule ^/investment-professionals/our-funds/detail/incore-capital-management/victory-fund-for-income-fund$ https://${VCM_ADVISOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-incore-fund-for-income [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=9057$
+RewriteRule ^/investment-professionals/our-funds/detail/integrity-asset-management/victory-integrity-small-cap-value-fund$ https://${VCM_ADVISOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-integrity-small-cap-value-fund [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=1046200$
+RewriteRule ^/investment-professionals/our-funds/detail/munder-capital-management/victory-diversified-stock-fund$ https://${VCM_ADVISOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-diversified-stock-fund [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=EGF$
+RewriteRule ^/investment-professionals/our-funds/detail/rs-investments/victory-rs-small-cap-growth-fund$ https://${VCM_ADVISOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-rs-small-cap-growth-fund [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=0523760$
+RewriteRule ^/investment-professionals/our-funds/detail/sycamore-capital/victory-sycamore-established-value-fund$ https://${VCM_ADVISOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-sycamore-established-value-fund [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=1046420$
+RewriteRule ^/investment-professionals/our-funds/detail/sycamore-capital/victory-sycamore-small-company-opportunity-fund$ https://${VCM_ADVISOR_HOSTNAME}/products/mutual-funds/mutual-funds-list/victory-sycamore-small-company-opportunity-fund [L,R=301]
+
+RewriteRule ^/investment-professionals/our-indexes$ https://${VCM_ADVISOR_HOSTNAME}/blog-and-resources/index-daily-highest-value [L,R=301]
+RewriteRule ^/investment-professionals/our-indexes/index-daily-highest-value$ https://${VCM_ADVISOR_HOSTNAME}/blog-and-resources/index-daily-highest-value [L,R=301]
+RewriteRule ^/investment-professionals/victoryshares-etfs$ https://${VCM_ADVISOR_HOSTNAME}/products-fa/victoryshares-etfs [L,R=301]
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/$ https://${VCM_ADVISOR_HOSTNAME}/products-fa/victoryshares-etfs/victoryshares-etfs-list [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=VSDA$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-dividend-accelerator-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-dividend-accelerator-etf [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=CFO$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-us-500-enhanced-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-us-500-enhanced-volatility-wtd-etf [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=CFA$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-us-500-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-us-500-volatility-wtd-etf [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=UITB$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-usaa-core-intermediate-term-bond-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-usaa-core-intermediate-term-bond-etf [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=USTB$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-usaa-core-short-term-bond-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-usaa-core-short-term-bond-etf [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=UEVM$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-usaa-msci-emerging-markets-value-momentum-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-usaa-msci-emerging-markets-value-momentum-etf [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=USVM$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-usaa-msci-usa-small-cap-value-momentum-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-usaa-msci-usa-small-cap-value-momentum-etf [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=ULVM$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-usaa-msci-usa-value-momentum-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-usaa-msci-usa-value-momentum-etf [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=CDC$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-us-eq-income-enhanced-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-us-eq-income-enhanced-volatility-wtd-etf [L,R=301]
+RewriteCond %{QUERY_STRING} ^fund=CDL$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-us-large-cap-high-div-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-us-large-cap-high-div-volatility-wtd-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=CIZ$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-developed-enhanced-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-developed-enhanced-volatility-wtd-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=CEY$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-emerging-market-high-div-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-emerging-market-high-div-volatility-wtd-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=CEZ$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-emerging-market-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-emerging-market-volatility-wtd-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=CEZ$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-emerging-market-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-emerging-market-volatility-wtd-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=CID$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-international-high-div-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-international-high-div-volatility-wtd-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=CIL$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-international-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-international-volatility-wtd-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=QQQN$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-nasdaq-next-50-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-nasdaq-next-50-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=SHLD$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-protect-america-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-protect-america-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=VTRN$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-top-veteran-employers-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-top-veteran-employers-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=CSF$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-us-discovery-enhanced-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-us-discovery-enhanced-volatility-wtd-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=VSMV$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-us-multi-factor-minimum-volatility-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-us-multi-factor-minimum-volatility-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=CSB$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-us-small-cap-high-div-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-us-small-cap-high-div-volatility-wtd-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=CSA$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-us-small-cap-volatility-wtd-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-us-small-cap-volatility-wtd-etf [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^fund=UIVM$
+RewriteRule ^/investment-professionals/victoryshares-etfs/our-victoryshares-etfs/detail/victoryshares-usaa-msci-international-value-momentum-etf$ https://${VCM_ADVISOR_HOSTNAME}/products/victoryshares-etfs/victoryshares-etfs-list/victoryshares-usaa-msci-international-value-momentum-etf [L,R=301]
+
+RewriteRule ^/leadership-team$ https://${VCM_INVESTOR_HOSTNAME}/about-victory/leadership-team [L,R=301]
+RewriteRule ^/message-from-the-ceo$ https://${VCM_INVESTOR_HOSTNAME}/about-victory [L,R=301]
+
+RewriteRule ^/shareholder-login$ https://mysecure.vcm.com [L,R=301]
+RewriteRule ^/529$ https://${VCM_INVESTOR_HOSTNAME}/products/usaa-529-college-savings-plan [L,R=301]
+RewriteRule ^/index/nqvwldct$ https://indexes.nasdaqomx.com/Index/Overview/NQVWLDCT [L,R=301]
+RewriteRule ^/index/nqvwscct$ https://indexes.nasdaqomx.com/Index/Overview/NQVWSCCT [L,R=301]
+RewriteRule ^/index/nqvwilcn$ https://indexes.nasdaqomx.com/Index/Overview/NQVWILCN [L,R=301]
+RewriteRule ^/index/nqvwlcct$ https://indexes.nasdaqomx.com/Index/Overview/NQVWLCCT [L,R=301]
+RewriteRule ^/military$ https://${VCM_INVESTOR_HOSTNAME}/tools-resources/military-financial-readiness [L,R=301]
+RewriteRule ^/blog/posts$ https://${VCM_ADVISOR_HOSTNAME}/blog-and-resources/blog [L,R=301]
+RewriteRule ^/investment-professionals/our-insights$ https://${VCM_ADVISOR_HOSTNAME}/blog-and-resources/blog [L,R=301]
+RewriteRule ^/social$ https://${VCM_INVESTOR_HOSTNAME}/social-media-guidelines-and-disclosures [L,R=301]
+RewriteRule ^/user-agreement$ https://${VCM_INVESTOR_HOSTNAME}/terms-conditions [L,R=301]
+RewriteRule ^/about-us/esg$ https://${VCM_INVESTOR_HOSTNAME}/about-victory/environmental-social-and-governance [L,R=301]
+RewriteRule ^/community$ https://${VCM_INVESTOR_HOSTNAME}/about-victory/victory-capital-serves [L,R=301]
+RewriteRule ^/investment-professionals/retirement-resources$ https://${VCM_ADVISOR_HOSTNAME}/blog-and-resources/retirement-resources [L,R=301]
+RewriteRule ^/investment-professionals/retirement-resources/top-five-most-commonly-asked-401k-fee-questions$ https://${VCM_ADVISOR_HOSTNAME}/blog-and-resources/retirement-resources/top-five-most-commonly-asked-401k-fee-questions [L,R=301]
+RewriteRule ^/investment-professionals/retirement-resources/a-guide-to-understanding-your-401k-fee-statement$ https://${VCM_ADVISOR_HOSTNAME}/blog-and-resources/retirement-resources/a-guide-to-understanding-your-401k-fee-statement1 [L,R=301]
+RewriteRule ^/investment-professionals/retirement-resources/are-401k-plans-free$ https://${VCM_ADVISOR_HOSTNAME}/blog-and-resources/retirement-resources/are-401k-plans-free [L,R=301]
+
+

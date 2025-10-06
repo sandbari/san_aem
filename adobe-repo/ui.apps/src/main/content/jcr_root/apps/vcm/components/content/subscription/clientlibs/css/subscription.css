@@ -1,0 +1,34 @@
+.subscribe-details {
+    margin: 15px;
+}
+
+.subscribe-details h3{
+    color:#49494A;
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+.input-text {
+    margin-top: 15px;
+}
+.input-text label {
+ font-family: benton-sans, sans-serif;
+ font-weight: 600;
+ font-style: normal;
+ font-size: 14px;
+}
+.inner-text {
+  width: 100%;
+  padding: 10px;
+  background: #ffffff 0% 0% no-repeat;
+  border: 1px solid #D2D2D2;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.input-text .btn-primary {
+    margin-top: 0px;
+    width: 100%;
+}

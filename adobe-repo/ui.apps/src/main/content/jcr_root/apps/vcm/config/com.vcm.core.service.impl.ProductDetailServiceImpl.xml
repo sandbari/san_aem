@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    applicationName="VCM"
+    productDetailEndPointDomain="https://sit.memberapi.vcm.com/"
+    productDetailEndPoint="search/product/"
+    strategyDetailEndPoint="search/institutionalStrategy/"
+    indexDetailEndPoint="search/index/"
+    productDetailAPIKey="gq2BA7h7VA7tuqkEtiWP57ILRY0COdUr7qgoARW0"
+    productsServiceUrl="[annualreturns:AnnualReturns,assetallocation:AssetAllocation,allocationassetclass:AssetClassAllocation,bottomtenholdings:BottomHoldings,calendarreturns:CalendarYearReturns,characteristics:Characteristics,countrydiversification:CountryDiversification,distribution:Distributions,qualitystructure:QualityStructure,regionaldiversification:RegionDiversification,riskmeasures:RiskMeasures,sectordiversification:SectorDiversification,toptenholdings:TopHoldings,minimuminvestment:Investment,characteristicsvariant-four:Characteristics_Fund_For_Income_Variant,characteristicsvariant-five:Characteristics_Convertibles_variant,annualexpense:AnnualExpenses,durationschedule:DurationSchedule,summary:Summary,funddetails:FundDetails,yields:Yields,fees:Fees,investment:Investment,productdetaildatainfo:Overview,averagelifestructure:AverageLife,fundholding:FundHoldings,history:History,yieldstaxable:Yields,allholdings:AllHoldings,fundstatistics:FundStatistics,sectorallocation:SectorAllocation,regionallocation:RegionAllocation]"
+    fundListEndPoint="https://sit.memberapi.vcm.com/search/products/FUND"
+    fundApiKey="gq2BA7h7VA7tuqkEtiWP57ILRY0COdUr7qgoARW0"
+/>
