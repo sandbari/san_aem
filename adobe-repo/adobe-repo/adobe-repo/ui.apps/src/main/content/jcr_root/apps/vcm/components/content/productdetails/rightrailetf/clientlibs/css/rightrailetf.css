@@ -1,0 +1,145 @@
+/******fund-information*******/
+    .rightrail-etf .fund-information {
+        width: 100%;
+    }
+
+    .rightrail-etf .fund-information {
+        /*width: auto;*/
+        border: 1px solid #D2D2D2;
+    }
+    .rightrail-etf .fund-information .heading {
+        padding: 11px 20px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #8BC105;
+    }
+    
+    .rightrail-etf .fund-information p {
+        font-size: 14px;
+        padding: 8px 20px;
+        line-height: 1.5;
+    }
+
+    .rightrail-etf .fund-information a {
+        font-family: benton-sans, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .rightrail-etf .fund-information .popup-link a span{
+        font-weight: 600;
+    }
+
+    .rightrail-etf .fund-information p.line-space {
+        padding-top: 8px !important;
+    }
+    .rightrail-etf .fund-information p.line-space-0 {
+        padding-top: 0 !important;
+    }
+    .rightrail-etf .fund-information p.line-space-6{
+        padding: 3px 20px !important;
+    }
+    .rightrail-etf .fund-information p.line-space-2{
+        padding: 1px 20px !important;
+    }
+    .rightrail-etf .fund-information .line-divider {
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+        border: 0;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+    .rightrail-etf .fund-information .popup-link{
+        cursor: pointer;
+        color: #004A98;
+        border-bottom: 1px dotted #004A98;
+    }
+    .rightrail-etf .fund-information .text-bold {
+        font-weight: 600;
+    }
+    .rightrail-etf .fund-information .align-right {
+        float: right;
+        clear: both;
+        font-size: 14px;
+        padding-top:0px;
+    }
+
+    .rightrail-etf .fund-literature {
+        width: 325px;
+    }
+
+    .rightrail-etf .fund-literature h3 {
+        background: url(../resources/icon-external-link.svg) no-repeat;
+        font-size: 16px;
+        padding-left: 40px;
+        background-position: left 100%;
+        margin: 15px 0px 0px 0;
+        line-height: 20px;
+        height: 35px;
+        line-height: 35px;
+        background-position: 8px center;
+    }
+    .rightrail-etf .fund-literature a:hover h3 {
+        background: url(../resources/icon-external-link-hover-blue.svg) no-repeat left center;
+    }
+    .rightrail-etf .fund-literature p {
+        font-size: 14px;
+        padding-left: 40px;
+    }
+
+/******fund-information*******/
+
+/*popup*/
+.rightrail-etf .explain-popup .modal-content {
+    border-radius: 0px;
+    border: none;
+    padding: 18px;
+}
+.rightrail-etf .explain-popup .modal-header {
+    display: block;
+    border: none;
+    padding: 1.3rem;
+}
+.explain-popup .modal-header .close {
+    top: 0px;
+    position: absolute;
+    font-size: 65px;
+    right: 30px;
+    color: #8BC105;
+    opacity: 1;
+}
+.image-right {
+    position: relative;
+    right: 8px;
+    bottom: 5px;
+}
+.image-left {
+    bottom: 5px;
+    left: 32px;
+    position: relative;
+}
+.rightrail-etf .explain-popup .modal-header .close-link {
+    top: 56px;
+    position: absolute;
+    right: 34px;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+}
+
+
+
+.rightrail-etf .risk-field {
+    background-color: #8C8C8C;
+    margin: 2px;
+    padding: 2px 3px 2px 2px;
+    box-sizing: border-box;
+}
+
+.rightrail-etf .risk-field.active {
+    background-color: #004A98;
+}
+
+@media screen and (min-width:1024px) {
+    .rightrail-etf .fund-information {
+      width: 325px;
+    }
+}

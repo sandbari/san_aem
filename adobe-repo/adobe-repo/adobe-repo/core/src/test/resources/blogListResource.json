@@ -1,0 +1,17 @@
+{
+   "jcr:primaryType":"nt:unstructured",
+   "jcr:createdBy":"admin",
+   "jcr:lastModifiedBy":"admin",
+   "topicFilter":[
+      "vcm:blogs/investing",
+      "vcm:blogs/etfs",
+      "vcm:blogs/retirement",
+      "vcm:blogs/practice-management"
+   ],
+   "jcr:created":"Thu Feb 20 2020 14:43:40 GMT+0530",
+   "rootPath":"/content/vcm/us/en/blog",
+   "itemsOnLoadMore":"9",
+   "authorPagePath":"/content/vcm/en/blog/author",
+   "jcr:lastModified":"Fri Mar 06 2020 12:03:45 GMT+0530",
+   "sling:resourceType":"vcm/components/content/blogs/bloglisting"
+}

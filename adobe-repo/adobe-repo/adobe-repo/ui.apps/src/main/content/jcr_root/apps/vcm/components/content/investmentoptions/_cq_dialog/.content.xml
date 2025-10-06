@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Investment Options"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_search_v1">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <leftproperties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Text CTA Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author heading text."
+                                                fieldLabel="Heading"
+                                                name="./heading"
+                                                required="{Boolean}true"/>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="To author description text for investment option 1 "
+                                                fieldLabel="Description"
+                                                name="./description"
+                                                required="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </description>
+                                            <linktext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Author the link text that appear on the page"
+                                                fieldLabel="Link text"
+                                                name="./linkText"
+                                                required="true"/>
+                                            <linkDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Author the link description."
+                                                fieldLabel="Link description"
+                                                name="./linkDescription"/>
+                                            <linkUrl
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Link to view all mutual fund page"
+                                                fieldLabel="Link URL"
+                                                name="./linkUrl"
+                                                required="true"
+                                                rootPath="/content/vcm"/>
+                                            <tabselect
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="To author target for link to be open in same tab or new tab"
+                                                fieldLabel="Target"
+                                                name="./linkTarget">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Same tab"
+                                                        value="_self"/>
+                                                    <newtab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="New tab"
+                                                        value="_blank"/>
+                                                </items>
+                                            </tabselect>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </leftproperties>
+                    <rightproperties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Investment option Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <imageOption1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="To upload DAM image for investment option 1 "
+                                                fieldLabel="Image Option 1"
+                                                name="./imageOption1"
+                                                required="{Boolean}true"
+                                                rootPath="/content/dam/vcm"
+                                                wrapperClass="cmp-image--editor-link"/>
+                                            <imageAltText1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author Alt text for image."
+                                                fieldLabel="Image Alt Text 1"
+                                                name="./imgAltText1"/>
+                                            <headingOption1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author heading text for investment option 1."
+                                                fieldLabel="Heading Option1"
+                                                name="./headingOption1"
+                                                required="{Boolean}true"/>
+                                            <descriptionOption1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="To author description text for investment option 1 "
+                                                fieldLabel="Description Option1"
+                                                name="./descriptionOption1"
+                                                required="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </descriptionOption1>
+                                            <imageOption2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="To upload DAM image for investment option 2"
+                                                fieldLabel="Image Option 2"
+                                                name="./imageOption2"
+                                                required="{Boolean}true"
+                                                rootPath="/content/dam/vcm"
+                                                wrapperClass="cmp-image--editor-link"/>
+                                            <imageAltText2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author Alt text for image."
+                                                fieldLabel="Image Alt Text 2"
+                                                name="./imgAltText2"/>
+                                            <headingOption2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To upload DAM image for investment option 2 "
+                                                fieldLabel="Heading Option2"
+                                                name="./headingOption2"
+                                                required="{Boolean}true"/>
+                                            <descriptionOption2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="To author description text investment option 2 "
+                                                fieldLabel="Description Option2"
+                                                name="./descriptionOption2"
+                                                required="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                            </descriptionOption2>
+                                            <OptionsSeparator
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To upload separator 'OR' to be shown in between option1 and option2 "
+                                                fieldLabel="Options separator"
+                                                name="./optionsSeparator"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </rightproperties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,18 @@
+table.table.fund-holding-table-data {
+    margin-bottom: 0;
+}
+
+/* table style ends */
+
+@media screen and (min-width:1024px) {
+    .row.bottom-row {
+        margin: 0;
+    }
+    .bottom-row .heading span {
+        right: 30px;
+    }
+    
+    .fundholding .heading {
+    	margin: 5px 0 15px;
+	}
+}

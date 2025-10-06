@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Overlay Properties"
+    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <enableoverlay
+                    granite:class="cq-dialog-checkbox-showhide"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldLabel="Enable Overlay"
+                    name="./isEnablingOverlay"
+                    text="Enable Overlay"
+                    uncheckedValue="false"
+                    value="true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-dialog-checkbox-showhide-target=".enable-overlay-showhide-target"/>
+                </enableoverlay>
+                <togglefields
+                    granite:class="enable-overlay-showhide-target"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                        <overlaytype
+                            granite:class="cq-dialog-dropdown-showhide"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="Choose information overlay type"
+                            fieldLabel="Info Overlay Type"
+                            name="./overlayType">
+                            <items jcr:primaryType="nt:unstructured">
+                                <tooltip
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Tool Tip"
+                                    value="tooltip"/>
+                                <overlay
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Popup"
+                                    value="popup"/>
+                            </items>
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-dialog-dropdown-showhide-target=".overlaytext-showhide-target"/>
+                        </overlaytype>
+                        <overlaycontent
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                            fieldDescription="Choose overlay information from Content Fragments"
+                            fieldLabel="Attach Info overlay content"
+                            name="./overlayContentPath"
+                            rootPath="/content/dam/"/>
+                        <toggleoverlayfields
+                            granite:class="hide overlaytext-showhide-target"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                            <items jcr:primaryType="nt:unstructured">
+                                <overlaytextprefix
+                                    granite:class="hide overlaytext-showhide-target"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Enter text for overlay prefix"
+                                    fieldLabel="Overlay Text Prefix"
+                                    name="./overlayTextPrefix">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        showhidetargetvalue="popup"/>
+                                </overlaytextprefix>
+                                <overlaylinktext
+                                    granite:class="hide overlaytext-showhide-target"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Enter link text for overlay"
+                                    fieldLabel="Overlay Link Text"
+                                    name="./overlayLinkText">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        showhidetargetvalue="popup"/>
+                                </overlaylinktext>
+                            </items>
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="popup"/>
+                        </toggleoverlayfields>
+                    </items>
+                </togglefields>
+            </items>
+        </column>
+    </items>
+</jcr:root>

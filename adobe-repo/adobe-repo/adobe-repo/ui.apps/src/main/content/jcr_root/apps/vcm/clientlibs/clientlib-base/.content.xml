@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[vcm.base,dam.cfm.authoring.contenteditor.v2]"
+    jsProcessor="[default:none,min:gcc;languageIn=ECMASCRIPT_2015]"
+    embed="[vcm.site,vcm.header,vcm.components.audienceselector,vcm.herobanner,vcm.textimagecta,vcm.ourproducts,vcm.victory-intro,vcm.investoptions,vcm.components.franchises,vcm.learningresource,vcm.contact-victory,vcm.socialsitelinks,vcm.leaderbio,vcm.investmentteam,vcm.investmentteamsintro,vcm.breadcrumb,vcm.disclaimertext,vcm.productAccordion,vcm.video,vcm.leadershipteam,vcm.search,vcm.separator,core.wcm.components.tabs.v1,vcm.tabs,vcm.signin,vcm.news,vcm.strategyList,vcm.highestindex,vcm.ussa529Funds,vcm.blogarticle,vcm.bloglisting,vcm.insightlisting,vcm.insightarticle,vcm.alltopics,vcm.subscription,vcm.productmenu,vcm.footer,vcm.contactusmanagers,vcm.relatedarticles,vcm.socialsharepage,vcm.learnMoreFilter,vcm.slider,vcm.iracomparison,vcm.featured-funds,vcm.contactdetails,vcm.timelinecomponent,vcm.faqlist,vcm.faqdetails,vcm.text,vcm.forms,vcm.phone-details]"/>

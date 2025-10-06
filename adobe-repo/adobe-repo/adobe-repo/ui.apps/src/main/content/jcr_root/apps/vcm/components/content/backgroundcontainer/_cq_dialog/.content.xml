@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Background Container"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[variations.showhidefields]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Background Container Tabs"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <background
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Background Container"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <backgroundstyle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Choose Background Style"
+                                                fieldLabel="Background Style"
+                                                name="./backgroundStyle">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <whitebackground
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="White Background"
+                                                        value="whitebackground"/>
+                                                    <greybackground
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Grey Background"
+                                                        value="greybackground"/>
+                                                    <newsconainier
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="News Container"
+                                                        value="newscontainer"/>
+                                                    <stickytabcontainer
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Sticky Tab Container"
+                                                        value="stickytabcontainer"/>
+                                                </items>
+                                            </backgroundstyle>
+                                            <loadmore
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="This button is used only in the News Container layout"
+                                                fieldLabel="Load More Button Label"
+                                                name="./loadMoreButtonLabel"/>
+                                            <heading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Heading Text"
+                                                fieldLabel="Heading Text"
+                                                name="./headingText"/>
+                                            <headingalignment
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Heading Alignment"
+                                                name="./headingAlignment">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <leftaligned
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Left Aligned"
+                                                        value="leftaligned"/>
+                                                    <rightaligned
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Right Aligned"
+                                                        value="rightaligned"/>
+                                                     <centeraligned
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Center Aligned"
+                                                        value="centeraligned"/>
+                                                </items>
+                                            </headingalignment>
+                                            <leftlinktext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Left Aligned Link Text"
+                                                fieldLabel="Left Aligned Link Text"
+                                                name="./leftLinkText"/>
+                                            <leftlinkurl
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Choose Left Aligned Link Url"
+                                                fieldLabel="Left Aligned Link Url"
+                                                name="./leftLinkUrl"
+                                                rootPath="/content/vcm"/>
+                                            <rightlinktext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Right Aligned Link Text"
+                                                fieldLabel="Right Aligned Link Text"
+                                                name="./rightLinkText"/>
+                                            <rightlinkurl
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Choose Right Aligned Link Url"
+                                                fieldLabel="Right Aligned Link Url"
+                                                name="./rightLinkUrl"
+                                                rootPath="/content/vcm"/>
+                                            <cornertriangle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                fieldLabel="Enable Corner Green Triangle?"
+                                                name="./cornerTriangle"
+                                                text="Enable Corner Green Triangle?"
+                                                uncheckedValue="false"
+                                                value="true"/>
+				                            <seeAllLink
+				                                granite:class="cq-dialog-checkbox-showhide"
+				                                jcr:primaryType="nt:unstructured"
+				                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+				                                fieldDescription="To author whether to enable see all link"
+				                                fieldLabel="Enable see all link?"
+				                                name="./seeAllLink"
+				                                text="Enable See All link?"
+				                                uncheckedValue="false"
+				                                value="true">
+				                                <granite:data
+				                                    jcr:primaryType="nt:unstructured"
+				                                    cq-dialog-checkbox-showhide-target=".togglefield"/>
+				                              </seeAllLink>                  
+				                              <togglefields
+							                        granite:class="togglefield"
+							                        jcr:primaryType="nt:unstructured"
+							                        sling:resourceType="granite/ui/components/coral/foundation/container">
+							                        <items jcr:primaryType="nt:unstructured">
+										                  <seeAllLabel
+							                                jcr:primaryType="nt:unstructured"
+							                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+							                                fieldDescription="To author text for the  see all"
+							                                fieldLabel="See All Label"
+							                                name="./seeAllLabel"/>
+							                        </items>
+							                 </togglefields>
+							                 <ilcAlignment
+				                                jcr:primaryType="nt:unstructured"
+				                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+				                                fieldDescription="To author Alignment For Investor learning center"
+				                                fieldLabel="Align Investor Learning Center?"
+				                                name="./ilcAlignment"
+				                                text="Align Investor Learning Center?"
+				                                uncheckedValue="false"
+				                                value="true">
+				                              </ilcAlignment>   
+                                             <filterviewtype
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Chose Display Type to display the section by default or on click of See More"
+                                                fieldLabel="Learning Center Display Type"
+                                                name="./filterViewType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Default"
+                                                        value="default"/>
+                                                    <detailed
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Detailed"
+                                                        value="detailed"/>
+                                                </items>
+                                            </filterviewtype>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </background>
+                     <Audienceselector
+		                        jcr:primaryType="nt:unstructured"
+		                        jcr:title="Audience Selector"
+		                        sling:resourceType="granite/ui/components/coral/foundation/container"
+		                        margin="{Boolean}true">
+		                        <items jcr:primaryType="nt:unstructured">
+		                            <columns
+		                                jcr:primaryType="nt:unstructured"
+		                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+		                                margin="{Boolean}true">
+		                                <items jcr:primaryType="nt:unstructured">
+		                                    <column
+		                                        jcr:primaryType="nt:unstructured"
+		                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+		                                        <items jcr:primaryType="nt:unstructured">
+		                                            <usertype
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/foundation/include"
+		                                                path="vcm/components/content/common/audienceselector"/>
+		                                        </items>
+		                                    </column>
+		                                </items>
+		                            </columns>
+		                        </items>
+		                    </Audienceselector>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

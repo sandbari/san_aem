@@ -1,0 +1,31 @@
+<sly data-sly-use.model="com.vcm.core.models.FeaturedFundsModel"/>
+<sly data-sly-test.notempty="${model.multiContent}"/>
+<sly data-sly-test="${wcmmode.edit && !notempty}"><div class="cq-placeholder" data-emptyText="${component.title}"/></sly>
+<sly data-sly-test="${notempty}">
+<div class="st-page-wrapper st-cmp-wrapper st-wrapper-inner st-page-mutual-funds-landing st-ff">
+    <div class="row st-featured-box">
+        <div class="col-lg-4 col-sm-12 st-featured-box-left-content">
+            <h3 class="st-section-heading st-heading-blue">${model.heading}</h3>
+            ${model.description @context='html'}
+            <a href="${model.linkUrl}" class="st-arrow-link st-arrow-link-blue st-arrow-right" target="${model.linkTarget}" rel="${model.linkTarget == '_blank' ? 'noopener noreferrer' : ''}">${model.linkText}</a>
+        </div>
+        <div class="col-lg-8 col-sm-12 st-featured-box-right-content">
+            <div class="st-ff-box" role="list">
+                <sly data-sly-test="${model.multiContent}">
+                    <sly data-sly-list.multiContents="${model.multiContent}">
+                            <div class="st-star-rating-box" role="listitem">
+                                <a href="${multiContents.fundUrl}">
+                                    <span class="st-grey-left-box mutualfund_greybox">${multiContents.ticker}</span>
+                                    <span class="st-star-rating-wrap">
+                                        <span class="st-star-text mutualfund_greybox">${multiContents.fundName}</span>
+                                    </span>
+                                    <div class="st-clear-both " aria-hidden="true"></div>
+                                </a>
+                            </div>
+                    </sly>
+                </sly>
+            </div>
+        </div>
+    </div>
+</div>
+</sly>

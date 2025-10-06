@@ -1,0 +1,46 @@
+.qualitystructure .heading span.quality-header-label {
+	font-family: benton-sans,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #49494a;
+}
+
+.Quality-Structure-table-data,
+.Qualitystructurevariant-two-table-data {
+    position: relative;
+}
+
+.product-details .Quality-Structure-table-data,
+.product-details .Qualitystructurevariant-two-table-data {
+    display: block;
+}
+
+.product-details .table.Quality-Structure-table th:first-child,
+.product-details .table.Qualitystructurevariant-two-table th:first-child {
+    min-width: 150px;
+    text-align: left;
+}
+
+.qualitystructure .heading {
+    margin: 15px 0 0;
+}
+
+.Qualitystructurevariant-two-table .text-left {
+	font-weight: 700;
+}
+
+.product-details .Qualitystructurevariant-two-table-data table tbody td {
+    vertical-align: middle;
+}
+
+@media screen and (min-width:1024px) {
+    .product-details .Quality-Structure-table-data,
+    .product-details .Qualitystructurevariant-two-table-data {
+        display: block;
+    }
+
+    .qualitystructure .heading {
+        margin: 0 0 15px;
+    }
+}

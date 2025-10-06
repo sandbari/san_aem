@@ -1,0 +1,311 @@
+.product-details .heading {
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #49494A
+}
+.product-details .heading span.header-label {
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #49494A
+}
+
+.product-details .heading span {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.product-details .list-view,
+.product-details .table-view,
+.product-details .chart-view {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    border: 1px solid transparent;
+    border-radius: 46px;
+    padding: 7px;
+}
+
+.product-details .list-view.active,
+.product-details .table-view.active,
+.product-details .chart-view.active {
+	border: 1px solid #004a98;
+	cursor: default;
+}
+
+.product-details .list-view::after,
+.product-details .table-view::after {
+	background: url(../resources/icon__list.PNG) 100% 100% no-repeat;
+    background-size: 100% 100%;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+.product-details .chart-view::after {
+    background: url(../resources/icon__chart.png) no-repeat;
+    background-size: 100% 100%;
+	content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.product-disclosure {
+    color: #49494A;
+    font-size: 14px;
+    line-height:20px;
+}
+
+/* tooltip styles starts here */
+
+.product-details .heading .icon-tooltip {
+    background: url(../resources/icon__tooltip.svg) no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.product-details .icon-tooltip:focus {
+    outline: 2px solid #000!important;
+    outline-offset: -2px!important;
+}
+
+body.using-mouse .product-details .icon-tooltip:focus{
+    outline: none!important;
+}
+
+.tooltip .tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: black;
+    text-align: left;
+    border-radius: 0;
+    background-color: white;
+    border: 1px solid #D2D2D2;
+    box-shadow: 0px 2px 8px #00000034;
+    font-size: 12px;
+}
+
+.tooltip .arrow:before {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 1px solid #D2D2D2;
+    border-top: 0;
+    border-right: 0;
+    transform: rotate(45deg);
+    margin-right: -6px;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+
+/* tooltip styles ends here */
+
+
+/* table style starts */
+
+.product-details table thead th {
+    border: none;
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    color: #49494A;
+    word-wrap: break-word;
+    vertical-align: bottom;
+    border-bottom: 3px solid #8BC105;
+    padding: 20px 10px;
+    text-transform: capitalize;
+}
+
+.product-details table tbody td {
+    border: none;
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 500;
+    word-wrap: break-word;
+    padding: 20px 10px;
+    vertical-align: bottom;
+}
+
+.product-details table tbody tr:nth-child(even) {
+    background-color: #F7F7F7;
+}
+
+.product-details table {
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.tableShadowRight {
+    position: absolute;
+    right: 0;
+    width: 14px;
+    height: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.tableShadowLeft {
+    position: absolute;
+    width: 14px;
+    height: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.tableShadowRight .actualShadow,
+.tableShadowLeft .actualShadow {
+    background: transparent linear-gradient(270deg, #00000038 0, #00000000 100%) 0 0 no-repeat padding-box;
+    opacity: 1;
+    height: 100%;
+}
+
+.tableShadowLeft .actualShadow {
+    background: transparent linear-gradient(90deg, #00000038 0, #00000000 100%) 0 0 no-repeat padding-box;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.product-details .content-wrapper.row {
+    margin: 0px;
+}
+
+
+.product-details .table th:first-child {
+    min-width: 200px;
+    text-align: left;
+}
+
+.product-details .pdg-24 {
+    padding: 24px 0px 0;
+}
+
+.product-details .product-icons {
+    display: none;
+}
+.product-details table th:first-child,
+	    .product-details table tbody tr td:first-child {
+	        max-width: 200px;
+	    }
+
+.product-details-error-message {
+	display: none;
+	padding: 0;
+}
+
+.product-details-error-message p {
+	font-size: 18px;
+	font-family: benton-sans, sans-serif;
+	color: #004A98;
+	line-height: 32px;
+	font-weight:700px;
+}
+
+.investment-team-list .title-desc-default p b {
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+.card-body p span.dotted-text a{font-size: 14px;}
+
+.highcharts-legend-item{
+    font-family: benton-sans, sans-serif;
+
+}
+.highcharts-legend-item tspan{
+    font-size:14px!important;
+    line-height: 20px;
+}
+
+.product-details .ax_display {
+    display: block;
+    float: left;
+}
+
+.product-details .ax-ml-5 {
+     margin-left: 5px;
+}
+
+.product-details .ax_align_right {
+    margin-left: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    /* styles for product tables */
+	    
+    .product-details .product-icons {
+        display: block;
+    }
+    .table-wrap {
+        overflow-x: auto;
+        margin-bottom: 30px;
+    }
+    .table-wrap::-webkit-scrollbar {
+        width: 3px;
+        /* width of the entire scrollbar */
+    }
+    .table-wrap::-webkit-scrollbar-track {
+        background: #F7F7F7;
+        /* color of the tracking area */
+    }
+    .table-wrap::-webkit-scrollbar-thumb {
+        background-color: #D2D2D2;
+        /* color of the scroll thumb */
+        border-radius: 10px;
+        /* roundness of the scroll thumb */
+        border: 3px solid #F7F7F7;
+        /* creates padding around scroll thumb */
+    }
+    .product-details .ax_align_right {
+        margin-left: 26%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Styles for Product Detials page */
+    .product-details .content-wrapper.row {
+        margin: 0 auto;
+    }
+    .product-details table {
+        width: 100%
+    }
+    .tableShadowRight,
+    .tableShadowLeft,
+    .actualShadow {
+        display: none
+    }
+    .product-details table tbody td {
+        padding: 10px 10px;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.bs-tooltip-bottom .arrow {
+		display: none;
+	}
+	.fund-description-container .fund-data-links a {
+		width: auto;
+	}
+}

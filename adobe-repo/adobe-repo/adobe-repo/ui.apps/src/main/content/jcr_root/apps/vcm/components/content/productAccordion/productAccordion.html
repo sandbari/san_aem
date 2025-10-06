@@ -1,0 +1,24 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+Edit ${component.title} Component
+</sly>
+<sly data-sly-use.productAccordionObj="com.vcm.core.models.ProductsAccordionModel"> 
+	  <div role="button" tabindex="0" class="card-header collapsed" data-toggle="collapse" data-audiencetype="${productAccordionObj.allowedAudience}" href="#${productAccordionObj.id}" aria-expanded="false">
+	      <a role="presentation" tabindex="-1" class="card-title"> ${productAccordionObj.heading} </a>
+	  </div>
+	  <div id="${productAccordionObj.id}" class="card-body collapse" data-parent="">
+	     <ul class="mf-ul">
+	     	<sly data-sly-list.productBeans="${productAccordionObj.productPagesList}">
+		       		<li>
+		         		<a target="${productBeans.target}" href="${productBeans.productPageUrl == null ? 'javascript:void(0)' : productBeans.productPageUrl}">
+		         			<sly data-sly-test.isExternalUrl="${productBeans.isExternalUrl}">
+		         				${productBeans.linkTitle}
+		         			</sly>
+		         			<sly data-sly-test="${!isExternalUrl}">
+		         				${productBeans.linkTitle ? productBeans.linkTitle : productBeans.page.title }
+		         			</sly>
+		         		</a>
+	         		</li>
+	        </sly>
+	     </ul>
+	  </div>
+ </sly>

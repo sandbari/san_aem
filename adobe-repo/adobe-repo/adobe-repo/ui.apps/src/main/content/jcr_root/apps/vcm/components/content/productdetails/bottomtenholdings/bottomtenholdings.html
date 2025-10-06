@@ -1,0 +1,41 @@
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-test="${pageProperties.bottomtenholdings}">
+    <div class="product-details bottom-holding-component">
+        <div class="row pdg-24">
+            <h3 class="	heading col-lg-8 bottom-head-label">
+            	<sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                  <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                     <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Bottom Ten Holdings" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                      <span class="sr-only tooltip-content" aria-live="polite"></span>
+                  </sly>
+				</sly>
+                <span>(As of <span class="bottom-ten-holdings-asof"></span>)</span>
+            </h3>
+            <sly data-sly-test="${overlayModel.isEnablingOverlay}"> 
+			<sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+				<p class="align-right col-lg-4">
+                    <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+				</p>
+			</sly> 
+		</sly>
+        </div>
+        <div class="visual-container">
+            <div class="bottom-ten-holdings-table-data">
+                <div class="table-wrap">
+                    <table class="table bottom-ten-holdings-table tableSort"><caption class="sr-only">${component.title}</caption></table>
+                </div>
+            </div>
+            <div class="row bottom-row">
+                        <h3 class="heading">
+                            <p><span class="bottomten-holdings-portfolio-label"></span> <span class="bottomten-holdings-portfolio-value text-right"></span></p>
+                        </h3>
+                    </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-bottomHoldings">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message error-message-bottomHoldings">
+        <p></p>
+    </div>
+</sly>

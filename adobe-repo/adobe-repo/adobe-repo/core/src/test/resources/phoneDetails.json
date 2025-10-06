@@ -1,0 +1,92 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "phoneConfig": "<p style=\"text-align: left;\"><b>Talk to Us123</b></p>\r\n<p style=\"text-align: left;\">For U.S. Customers123</p>\r\n<p style=\"text-align: left;\">1800-235-8396123</p>\r\n",
+  "jcr:lastModifiedBy": "admin",
+  "phoneLink": "<p><a href=\"#\">View international toll free Authorbale numbers</a></p>\r\n",
+  "jcr:created": "Mon Mar 08 2021 10:43:34 GMT-0800",
+  "jcr:lastModified": "Mon Mar 22 2021 11:16:08 GMT-0700",
+  "sling:resourceType": "vcm/components/content/phonedetails",
+  "textIsRich": [
+    "true",
+    "true",
+    "true",
+    "true",
+    "true"
+  ],
+  "displayMode": "tfn",
+  "backToContactLink": "<p><a href=\"#\">Contact Us</a></p>\r\n",
+  "phoneList": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "(123) 456-7890",
+      "staticOpenText": "United States"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "(123)456-7890",
+      "staticOpenText": "Germany"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "123-456-7890",
+      "staticOpenText": "United Kingdom"
+    },
+    "item3": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "123.456.7890",
+      "staticOpenText": "South Korea"
+    },
+    "item4": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "1234567890",
+      "staticOpenText": "Japan"
+    },
+    "item5": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "+31636363634",
+      "staticOpenText": "Italy"
+    },
+    "item6": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "075-63546725",
+      "staticOpenText": "Belgium"
+    },
+    "item7": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "12 3456 7890",
+      "staticOpenText": "Australia"
+    },
+    "item8": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "(123) 456-7890",
+      "staticOpenText": "France"
+    },
+    "item9": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "(123 456-7890",
+      "staticOpenText": "Netherlands"
+    },
+    "item10": {
+      "jcr:primaryType": "nt:unstructured",
+      "staticPhoneNumber": "(123 456-7890",
+      "staticOpenText": "New Zealand"
+    }
+  },
+  "segmentList": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "segmentConfig": "<p><b>E-mail US123</b></p>\r\n<p><b><a href=\"https://www.google.com\" target=\"_blank\">usaamutualfunds@vcm.com</a>123</b></p>\r\n"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "segmentConfig": "<p><b>Send us a Fax:123</b></p>\r\n<p>833-934-1608123</p>\r\n"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "segmentConfig": "<p><b>USAA Mutual Funds Mailing Address:123</b></p>\r\n<p>USAA Mutual Funds123</p>\r\n<p>P.O. Box 182903123</p>\r\n<p>Columbus, OH 43218-2903123</p>\r\n<p><a href=\"/content/vcm/language-masters/en/search-results.html\" target=\"_blank\">Mailing a check? Click here to see how.</a>13</p>\r\n"
+    }
+  }
+}

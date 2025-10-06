@@ -1,0 +1,43 @@
+<sly data-sly-template.model="${@ model}">
+   <div class="productsBaner">
+      <div class="product-list-container">
+         <div class="productHeading col-md-12">
+            <h3 class="blueHdng-greenBorder">${model.title @context='html'}</h3>
+         </div>
+         <div class="col-12 col-md-12 col-sm-12" role="list">
+            <sly data-sly-list.productItems="${model.productList}">
+               <sly data-sly-test.title="${model.contentType=='title' @i18n}">
+                  <sly data-sly-test="${productItems.productTitle @context='html'}">
+                     <div class="col-12 col-lg-3 col-sm-6 productsBox" role="listitem">
+                        <div class="product-list navigationLinksButton">
+                        	<sly data-sly-test.ismultiTargetLink="${productItems.ismultiTargetLink}">
+	                           	<sly data-sly-test.memberUrl="${productItems.memberProductLink == ''? '#': productItems.memberProductLink}"></sly>
+								<sly data-sly-test.financialUrl="${productItems.financialProductlink == ''? '#': productItems.financialProductlink}"></sly>
+								<sly data-sly-test.iiUrl="${productItems.iiProductlink == ''? '#': productItems.iiProductlink}"></sly>
+                                <sly data-sly-test.hrefUrl="${!productItems.memberProductLink ? productItems.financialProductlink : productItems.memberProductLink}"></sly>
+                              <a    data-usaa_member-url="${memberUrl}" 
+									data-financial_professional-url="${financialUrl}" 
+									data-institutional_investor-url="${iiUrl}" 
+									data-audiencepopup="true"
+								    data-audiencePopUpTarget="${productItems.audienceType}"
+								    href="${hrefUrl}"
+								    target="${productItems.tabSelect}">${productItems.productTitle @context='html'}</a>
+                           </sly>
+                           
+                           <sly data-sly-test="${!ismultiTargetLink}">
+                           	  <sly data-sly-test.productLink="${productItems.productLink == ''? '#': productItems.productLink}"></sly>
+                           	  <a   
+									data-audiencepopup="true"
+								    data-audiencePopUpTarget="${productItems.audienceType}"
+								    href="${productLink}"
+								    target="${productItems.tabSelect}">${productItems.productTitle @context='html'}</a>
+                           </sly>
+                        </div>
+                     </div>
+                  </sly>
+               </sly>
+            </sly>
+         </div>
+      </div>
+   </div>
+</sly>

@@ -1,0 +1,46 @@
+<template data-sly-template.stickytab="${@ customTabs}">
+    <div class="fix-container">
+        <div class="sticky-tabs">
+            <!--<div class="content-wrapper">-->
+            <ul class="nav nav-tabs" id="funddetail-tabs-container">
+                <sly data-sly-list.resTab="${customTabs.tabResourceList}">
+                    <li class="nav-item">
+                        <a class="nav-link" id="${resTab.tabReference}-tab" data-toggle="tab" href="#${resTab.tabReference}">${resTab.tabTitle}</a>
+                    </li>
+                </sly>
+            </ul>
+            <!--</div>-->
+        </div>
+    </div>
+    <!-- sticky tab data starts-->
+    <div id="content" class="content-wrapper">
+        <sly data-sly-list.resTab="${customTabs.tabResourceList}">
+            <div class="tab-pane card" id="${resTab.tabReference}">
+                <div class="card-header" id="heading-${resTab.tabReference}">
+                    <a class="collapsed" data-toggle="collapse" href="#collapse-${resTab.tabReference}" aria-expanded="true">
+                        ${resTab.tabTitle} <span class="accordion-icon"></span>
+                    </a>
+                </div>
+                <div id="collapse-${resTab.tabReference}" class="collapse show" data-parent="#content">
+                    <div class="card-body">
+                        <div class="row">
+                            <sly data-sly-test="${resTabList.first}">
+                                <div class="col-lg-12">
+                                    <sly data-sly-resource="${resTab.resourcePath @ resourceType=resTab.resourceType}"></sly>
+                                </div>
+                            </sly>
+                            <sly data-sly-test="${!resTabList.first}">
+                                <div class="col-lg-12">
+                                    <sly data-sly-resource="${resTab.resourcePath @ resourceType=resTab.resourceType}"></sly>
+                                </div>
+                            </sly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </sly>
+    </div>
+    <!-- sticky tab data ends-->
+    </div>
+
+</template>

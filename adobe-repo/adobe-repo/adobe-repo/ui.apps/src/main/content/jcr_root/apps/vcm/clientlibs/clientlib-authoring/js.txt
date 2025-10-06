@@ -1,0 +1,1 @@
+js/vcm-authoring.js

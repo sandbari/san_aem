@@ -1,0 +1,17 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "admin",
+	"jcr:lastModifiedBy": "admin",
+	"headText": "Test",
+	"jcr:created": "Mon Mar 09 2020 12:25:02 GMT+0530",
+	"jcr:lastModified": "Mon Mar 09 2020 12:51:32 GMT+0530",
+	"sling:resourceType": "vcm/components/content/disclaimertext",
+	"disclaimerTextList": {
+		"jcr:primaryType": "nt:unstructured",
+		"disclaimerText": "/content/dam/vcm/disclaimer-text/test-disclaimer",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"disclaimerText": "/content/dam/vcm/disclaimer-text/test-disclaimer"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+Edit ${component.title} Component
+</sly>
+<sly data-sly-use.pageObject="com.vcm.core.models.USSA529PerformanceFundModel">
+	<input id="ussa529PerformanceFundEndPoint" name="ussa529PerformanceFundEndPoint" type="hidden" value="${pageObject.ussa529PerformanceFundEndPoint}"/>
+	<input id="ussa529PerformanceFundKey" name="ussa529PerformanceFundKey" type="hidden" value="${pageObject.ussa529PerformanceFundKey}"/>
+	
+</sly>
+<div class="container planTable">
+	<div class="content-wrapper">
+		 <div class="planTableLoader"></div>
+          <div class="quarterly" id="monthlyTableContainer"></div>
+          <div data-sly-resource="${'text1' @ resourceType='vcm/components/content/text'}"></div>           
+          <div class="monthly" id="quarterlyTableContainer"></div>
+          <div data-sly-resource="${'text2' @ resourceType='vcm/components/content/text'}"></div>         
+          <div class="ytd" id="dailyTableContainer"></div>  
+          <div data-sly-resource="${'text3' @ resourceType='vcm/components/content/text'}"></div>          
+          <div class="fee" id="feeTableContainer"></div>  
+	</div>
+</div>

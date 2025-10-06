@@ -1,0 +1,60 @@
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-test="${pageProperties.calendarreturns}">
+    <div class="product-details calendar-returns-component">
+        <div class="row pdg-24">
+            <sly data-sly-test="${overlayModel.isEnablingOverlay && overlayModel.overlayType == 'popup'}">
+                <div class="calendar-popup col-lg-6">
+                    <h3 class="heading">
+                        <span class="calendar-returns header-label"></span>
+                        <span>(<span class="calender-returns-asof-label"></span> <span class="calender-returns-asof-value"></span>)</span>
+                    </h3>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <p class="align-right overlay-text-content col-lg-8">
+                            <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+                        </p>
+                        <div class="align-right icon-content col-lg-4" role="group" aria-label="Select the option to view the Calendar Year data">
+                            <a role="radio" id="calendarReturnsradiogroup" tabindex="-1" aria-checked="false" aria-label="List View" class="table-view calendar-toggle-view"><span class="sr-only"> List View</span></a>
+                            <a role="radio" id="calendarReturnsradiogroup1" tabindex="0" aria-checked="true" aria-label="Chart View" class="chart-view calendar-toggle-view active"><span class="sr-only"> Chart View </span></a>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+            <sly data-sly-test="${!overlayModel.isEnablingOverlay || overlayModel.isEnablingOverlay && overlayModel.overlayType == 'tooltip'}">
+                <h3 class="heading col-md-9">
+                	<span class="calendar-returns header-label"></span>
+                    <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                        <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                            <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Calendar Returns" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                            <span class="sr-only tooltip-content" aria-live="polite"></span>
+                        </sly>
+                    </sly>
+                    <span>(<span class="calender-returns-asof-label"></span> <span class="calender-returns-asof-value"></span>)</span>
+                </h3>
+                <div class="col-lg-3 col-md-3 text-right product-icons" role="group" aria-label="Select the option to view the Calendar Year data">
+                    <a role="radio" id="calendarReturnsradiogroup2" tabindex="-1" aria-checked="false" aria-label="List View" class="table-view calendar-toggle-view"><span class="sr-only"> List View</span></a>
+                    <a role="radio" id="calendarReturnsradiogroup3" tabindex="0" aria-checked="true" aria-label="Chart View" class="chart-view calendar-toggle-view active"><span class="sr-only"> Chart View </span></a>
+                </div>
+            </sly>
+        </div>
+        <div class="visual-container">
+            <div class="calendar-time-tabs-data">
+                <div class="calendar-chart-data" aria-hidden="true">
+                    <div id="product-chart-calender"></div>
+                </div>
+                <div class="calendar-list-data hidden">
+                    <div class="table-wrap">
+                        <table class="table calendar-table" summary="${component.title}"><caption class="sr-only">${component.title}</caption></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-calenderreturns">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message error-message-calenderreturns">
+        <p></p>
+    </div>
+</sly>

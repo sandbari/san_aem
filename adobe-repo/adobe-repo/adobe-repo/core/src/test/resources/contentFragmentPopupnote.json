@@ -1,0 +1,82 @@
+{
+   "jcr:primaryType":"cq:Template",
+   "jcr:createdBy":"admin",
+   "allowedPaths":[
+      "/content/entities(/.*)?"
+   ],
+   "jcr:created":"Tue Apr 28 2020 12:33:02 GMT+0530",
+   "ranking":100,
+   "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Popup Model",
+      "cq:lastReplicationAction":"Activate",
+      "cq:lastReplicatedBy":"vmohanam",
+      "jcr:created":"Tue Apr 28 2020 12:33:02 GMT+0530",
+      "cq:lastReplicated":"Thu Apr 16 2020 06:15:17 GMT+0000",
+      "sling:resourceSuperType":"dam/cfm/models/console/components/data/entity",
+      "jcr:description":"Mode for Popup Text",
+      "cq:scaffolding":"/conf/vcm/settings/dam/cfm/models/popup-note/jcr:content/model",
+      "cq:templateType":"/libs/settings/dam/cfm/model-types/fragment",
+      "sling:resourceType":"dam/cfm/models/console/components/data/entity/default",
+      "model":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Tue Apr 28 2020 12:33:02 GMT+0530",
+         "dataTypesConfig":"/mnt/overlay/settings/dam/cfm/models/formbuilderconfig/datatypes",
+         "sling:resourceType":"wcm/scaffolding/components/scaffolding",
+         "maxGeneratedOrder":"20",
+         "cq:targetPath":"/content/entities",
+         "cq:dialog":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"cq/gui/components/authoring/dialog",
+            "content":{
+               "jcr:primaryType":"nt:unstructured",
+               "sling:resourceType":"granite/ui/components/coral/foundation/fixedcolumns",
+               "items":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "maxGeneratedOrder":"21",
+                  "1517869262990":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "listOrder":"1",
+                     "valueType":"string",
+                     "showEmptyInReadOnly":"true",
+                     "metaType":"text-single",
+                     "name":"popupId",
+                     "maxlength":"255",
+                     "fieldLabel":"Popup Type",
+                     "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                     "renderReadOnly":"false"
+                  },
+                  "1583406566478":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "listOrder":"21",
+                     "valueType":"string",
+                     "showEmptyInReadOnly":"true",
+                     "metaType":"text-multi",
+                     "cfm-element":"Pop up",
+                     "name":"popuptext",
+                     "fieldLabel":"Pop up content",
+                     "sling:resourceType":"dam/cfm/admin/components/authoring/contenteditor/multieditor",
+                     "renderReadOnly":"false",
+                     "fieldDescription":"This is to show popup text",
+                     "default-mime-type":"text/html"
+                  },
+                  "1517869262991":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "listOrder":"1",
+                     "valueType":"string",
+                     "showEmptyInReadOnly":"true",
+                     "metaType":"text-single",
+                     "name":"continueText",
+                     "maxlength":"255",
+                     "fieldLabel":"Continue Button Label",
+                     "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                     "renderReadOnly":"false"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

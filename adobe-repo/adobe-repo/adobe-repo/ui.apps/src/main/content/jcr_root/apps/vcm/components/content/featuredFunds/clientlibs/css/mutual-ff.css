@@ -1,0 +1,375 @@
+.st-wrapper-inner {
+    max-width: 1110px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.st-height-full {
+    height: 100%;
+}
+
+.st-cmp-wrapper p {
+    color: #49494A;
+    font-size: 16px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 400;
+}
+
+.st-cmp-wrapper a {
+    color: #004A98;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* Caption Styles*/
+
+.st-ff .st-section-heading {
+    font-size: 26px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+    line-height: 28px;
+}
+
+.st-ff .st-section-heading:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #8BC105;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: none;
+}
+
+.st-ff .st-section-heading.st-border-custom:after {
+    content: none;
+}
+
+.st-ff .st-border-custom .underline:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #8BC105;
+    width: 100%;
+    bottom: -12px;
+    left: 0;
+    border-bottom: none;
+}
+
+.st-ff span.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.st-ff .st-featured-box  .st-grey-left-box, .st-ff .st-featured-box .st-star-rating-wrap{
+    float:none;
+}
+.featuredFunds .st-ff .st-star-text{
+    transform: translateY(0px)!important;
+}
+
+.st-arrow-link,
+.st-arrow-link:hover {
+    font-size: 16px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+}
+
+.st-arrow-link::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+a.st-arrow-link-white,
+a.st-arrow-link-white:hover {
+    color: #fff;
+}
+
+.st-arrow-link-blue,
+.st-arrow-link-blue:hover {
+    color: #004A98;
+}
+
+.st-arrow-right::after {
+    background: #8BC105 url("../resources/rightArrow.png") no-repeat 8px;
+    right: -40px;
+    background-size: 50%;
+}
+
+
+
+.st-arrow-right:hover::after,
+.st-arrow-left:hover::after {
+    background-color: #004A98;
+}
+
+
+
+.st-align-arrow {
+    right: 30px;
+}
+
+
+/********************* Mutual Feature Funds ************************/
+
+.st-ff .st-star-rating-box {
+    max-width: 337px;
+    max-height: 89px;
+    display: block;
+    float: left;
+}
+
+.st-ff .st-ff-box .st-star-rating-box{
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.st-ff .st-grey-left-box {
+    text-align: center;
+    min-width: 51px;
+    background: #004a98;
+    color: #fff;
+    padding: 15px 7px;
+    float: left;
+    margin-right: 14px;
+    font: 700 12px/26px benton-sans, sans-serif;
+	margin-bottom: 30px;
+}
+
+.st-ff .st-star-rating-wrap {
+    float: left;
+	height: 51px;
+	display: inline-block;
+}
+
+.st-ff .st-star-rating {
+    margin-bottom: 9px;
+}
+
+.st-ff .star-i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.fa-star-o,
+.fa-star:before {
+    color: #C3821A;
+}
+
+.st-info-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.st-ff .st-info-icon img {
+    vertical-align: bottom;
+    margin-left: 2px;
+}
+
+.st-ff .st-star-text {
+    color: #004A98;
+    font: 600 16px/20px benton-sans, sans-serif;
+    display: inline-block;
+    width: 260px;
+    vertical-align: middle;
+}
+
+.featuredFunds .st-ff .st-star-text{
+    display: block;
+    transform: translateY(16px);
+    line-height: 16px;
+}
+
+.st-ff .st-featured-box .st-star-rating-box {
+    margin-bottom: 26px;
+}
+
+.st-ff .st-featured-box .st-star-rating-box:nth-of-type(2n+1) {
+    margin-right: 30px;
+}
+
+.st-ff .st-featured-box .st-star-rating-box:nth-child(n+3) {
+    border-bottom: 0;
+}
+
+.st-ff .st-featured-box-left-content p {
+    margin: 32px 0 14px 0;
+    line-height: 24px;
+}
+
+.st-ff .st-featured-box-right-content {
+    margin-top: 60px;
+    padding-left: 27px;
+    display:inline-block;
+}
+
+.st-ff .st-divider-box {
+    float: left;
+    width: 100%;
+}
+
+
+ .st-ff .st-featured-box {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.st-heading-blue {
+    color: #486D90;
+}
+
+.st-clear-both {
+    clear: both;
+}
+
+
+
+/***************** SMALL DESKTOPS/LAPTOPS ****************/
+
+@media screen and (max-width:1200px) {
+    .st-wrapper-inner {
+        max-width: 1024px;
+        padding: 0 15px;
+    }
+    .st-star-text{
+        width:220px
+    }
+}
+
+/***************** TABLET STYLES  ****************/
+
+@media screen and (max-width:1024px) {
+    .st-wrapper-inner {
+        max-width: 992px;
+        padding: 0 15px;
+    }
+	  .st-ff .st-featured-box .st-star-rating-box:nth-of-type(2n+1) {
+        margin-right: 20px;
+    }
+   .st-ff .st-featured-box-right-content {
+        padding-left: 15px;
+    	display:inline-block;
+    }
+    .st-ff .st-star-text{
+        width:212px
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .st-wrapper-inner {
+        max-width: 690px;
+        padding: 0;
+    }
+    .st-banner-text {
+        display: none;
+    }
+	    .st-grey-left-box{
+        margin-left: 12px;
+    }
+	.st-featured-box-right-content{
+		margin-top: 15px;
+	}
+    .st-ff .st-featured-box-right-content {
+        padding-left: 6px;
+        margin-top: 44px;
+	}
+	.st-ff .st-featured-box {
+    	margin-top: 50px;
+	}
+	
+	.st-ff .st-featured-box-right-content{
+        padding-left: 0;
+        padding-right: 0;
+    	display:inline-block;
+    }
+    /* .st-ff-box .st-star-text {
+    width: 260px;
+  } */
+}
+/***************** MOBILE STYLES *****************/
+
+@media screen and (max-width:767px) {
+    .st-wrapper-inner {
+        padding: 0 15px;
+    }
+    .st-mobile-only-view {
+        display: block;
+    }
+ 	.st-section-heading {
+        font-size: 22px;
+        padding-bottom: 8px;
+        line-height: 26px;
+    }
+   .st-cmp-wrapper .h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .st-ff .st-ff-box {
+        width: 100%;
+		float: left;
+    }
+
+   .st-featured-box-left-content p {
+        margin-bottom: 8px;
+    }
+   .st-ff .st-star-rating-box {
+        display: block;
+		width: 100%;
+		max-width: unset;
+		border-bottom: 1px solid #D2D2D2;
+    	margin-bottom: 30px;
+    }
+	.st-ff .st-featured-box-right-content {
+        margin-top: 12px;
+        padding-left: 0px;
+    	display:inline-block;
+	}
+	.st-ff .st-featured-box {
+    	margin-top: 50px;
+	}
+    .row.st-featured-box {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+	}
+  	.st-ff-box a{
+    width: 100%;
+  	}
+  	.st-ff-box .st-star-text {
+    width: 250px;
+  	}
+  	.st-ff .st-featured-box-right-content{
+      padding-right: 0;
+      margin-top: 35px;
+  	}
+  	.st-ff .st-featured-box .st-star-rating-box:nth-child(3) {
+        border-bottom: 1px solid #D2D2D2;
+    }
+    .st-ff .st-featured-box .st-star-rating-box:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+.mutualfund_greybox{
+		display: inline-block !important;
+	}
+
+@media screen and (min-width:768px)and (max-width:1024px) {
+	.row.st-featured-box {
+		padding: 0 15px
+	}
+}

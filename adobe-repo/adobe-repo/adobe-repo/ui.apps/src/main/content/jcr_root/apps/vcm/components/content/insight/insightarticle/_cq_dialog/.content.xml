@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Insight Article Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <tabs
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Blog Article Configuration Tabs"
+                        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                        <items jcr:primaryType="nt:unstructured">
+                            <articlecontent
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Article Page Content"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <columns
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <heading
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Add Insight Heading"
+                                                        fieldLabel="Heading"
+                                                        name="./insightHeading"
+                                                        required="{Boolean}true"/>
+                                                    <authorname
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        fieldDescription="To add name of the author of the page"
+                                                        fieldLabel="Author Name">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            name="./authorName"/>
+                                                    </authorname>
+                                                    <authordate
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                        fieldDescription="Add date when the blog post is authored or modified"
+                                                        fieldLabel="Author Date"
+                                                        maxDate="today"
+                                                        name="./authorDate"
+                                                        value="today"
+                                                        variant="default"/>
+                                                    <hideauthordate
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        fieldDescription="Check if the Author Date has to be hidden"
+                                                        fieldLabel="Hide Author Date"
+                                                        name="./hideAuthorDate"
+                                                        text="Hide Author Date"
+                                                        value="true"/>
+                                                    <insightImage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldDescription="To author Insight landing Image"
+                                                        fieldLabel="Insight Image"
+                                                        name="./insightImage"
+                                                        rootPath="/content/dam/"/>
+                                                    <altText
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Author alt text for insight image"
+                                                        fieldLabel="Alt Text"
+                                                        name="./altText"/>
+                                                    <content
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                        fieldDescription="Enter content for the insight post"
+                                                        fieldLabel="Content"
+                                                        name="./insightContent"
+                                                        required="{Boolean}true"
+                                                        useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins jcr:primaryType="nt:unstructured">
+                                                            <format
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="bold,italic"/>
+                                                            <justify
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*"/>
+                                                            <links
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="modifylink,unlink"/>
+                                                            <lists
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*"/>
+                                                            <misctools
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*">
+                                                                <specialCharsConfig jcr:primaryType="nt:unstructured">
+                                                                    <chars jcr:primaryType="nt:unstructured">
+                                                                        <default_copyright
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;copy;"
+                                                                            name="copyright"/>
+                                                                        <default_euro
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;euro;"
+                                                                            name="euro"/>
+                                                                        <default_registered
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;reg;"
+                                                                            name="registered"/>
+                                                                        <default_trademark
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;trade;"
+                                                                            name="trademark"/>
+                                                                        <pound
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;#163;"
+                                                                            name="pound"/>
+                                                                        <nbsp
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;#160;"
+                                                                            name="pound"/>
+                                                                        <emDash
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;#8212;"
+                                                                            name="pound"/>
+                                                                        <default_dagger
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;dagger;"
+                                                                            name="dagger"/>
+                                                                    </chars>
+                                                                </specialCharsConfig>
+                                                            </misctools>
+                                                            <paraformat
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*">
+                                                                <formats jcr:primaryType="nt:unstructured">
+                                                                    <default_p
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Paragraph"
+                                                                        tag="p"/>
+                                                                    <default_h1
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 1"
+                                                                        tag="h1"/>
+                                                                    <default_h2
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 2"
+                                                                        tag="h2"/>
+                                                                    <default_h3
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 3"
+                                                                        tag="h3"/>
+                                                                    <default_h4
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 4"
+                                                                        tag="h4"/>
+                                                                    <default_h5
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 5"
+                                                                        tag="h5"/>
+                                                                    <default_h6
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 6"
+                                                                        tag="h6"/>
+                                                                    <default_blockquote
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Quote"
+                                                                        tag="blockquote"/>
+                                                                    <default_pre
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Preformatted"
+                                                                        tag="pre"/>
+                                                                </formats>
+                                                            </paraformat>
+                                                            <table
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*">
+                                                                <hiddenHeaderConfig
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                                                    hiddenHeaderEditingCSS="cq-RichText-hiddenHeader--editing"/>
+                                                            </table>
+                                                            <tracklinks
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*"/>
+                                                            <edit
+                                                                jcr:primaryType="nt:unstructured"
+                                                                defaultPasteMode="plaintext"
+                                                                stripHtmlTags="{Boolean}true"/>
+                                                            <spellcheck
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*"/>
+                                                            <subsuperscript
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*"/>
+                                                            <styles
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*">
+                                                                <styles jcr:primaryType="cq:WidgetCollection">
+                                                                    <default
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="&quot;&quot;"
+                                                                        text="Default"/>
+                                                                    <cpromo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cash-save-magic-text2"
+                                                                        text="cpromo"/>
+                                                                    <stuff-sub-head
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="stuff-sub-head"
+                                                                        text="Apy Card Numbers"/>
+                                                                    <suff-wrap
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="suff-wrap"
+                                                                        text="APY Card Text"/>
+                                                                    <cashback-sub-copy
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cashback-sub-copy"
+                                                                        text="Intro description"/>
+                                                                    <sub-copy
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="sub-copy"
+                                                                        text="APY Card Description"/>
+                                                                    <text-credit-1
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="text-credit-1"
+                                                                        text="Intro Numbers"/>
+                                                                    <form-login
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="log-in"
+                                                                        text="Login"/>
+                                                                    <tab1-style
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="tab-card-1"
+                                                                        text="tab-card-style-1"/>
+                                                                    <tab2-style
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="tab-card-2"
+                                                                        text="tab-card-style-2"/>
+                                                                    <tab3-style
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="tab-card-para"
+                                                                        text="tab-card-para-style"/>
+                                                                    <tab4-style
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="tab-card-3"
+                                                                        text="tab-card-style-3"/>
+                                                                    <contact-mail-address
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="contact-mail-address"
+                                                                        text="Contact mail Address"/>
+                                                                    <introduction-head
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="introduction-head"
+                                                                        text="IntroductionHead"/>
+                                                                    <introduction-sub-head
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="introduction-sub-head"
+                                                                        text="IntroductionSubHead"/>
+                                                                    <cd-rate
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate"
+                                                                        text="CdRate"/>
+                                                                    <apy
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="apy"
+                                                                        text="CardApy"/>
+                                                                    <apy-rate
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="apy-rate"
+                                                                        text="Apy-Rate"/>
+                                                                    <chase-dis
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="chase-dis"
+                                                                        text="Chase-dis"/>
+                                                                    <mm-apr-below
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="mmAPR"
+                                                                        text="Money Market Below "/>
+                                                                    <mm-apr-above
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="mmAPR1"
+                                                                        text="Money Market Above"/>
+                                                                    <cd-apr-min
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cdAPRmin"
+                                                                        text="CD 12 Month"/>
+                                                                    <ira-cd-apr-min
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="iracdAPRmin"
+                                                                        text="IRA CD 24 Mon"/>
+                                                                    <show-month
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="showMonth "
+                                                                        text="Show Month"/>
+                                                                    <reflect-apy
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="reflectApy"
+                                                                        text="Reflect APY"/>
+                                                                    <apy-val-under
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="apyValUnder"
+                                                                        text="APY Value Under"/>
+                                                                    <apy-val-above
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="apyValOver"
+                                                                        text="APY Value Over"/>
+                                                                    <home-saving-apy
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="savingPageReflectApy"
+                                                                        text="Home Saving APY"/>
+                                                                    <home-cd-apy-12mo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cdPageApy"
+                                                                        text="Hom CD APY 12MO"/>
+                                                                    <reflect-date
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="reflectDate "
+                                                                        text="Current Date"/>
+                                                                    <cd-apy-12-mo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cdApy12Mo"
+                                                                        text="CD APY 12 MO"/>
+                                                                    <cd-apy-24-mo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cdApy24Mo"
+                                                                        text="CD APY 24 MO"/>
+                                                                    <cd-apy-5-yr
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cdApy5yr"
+                                                                        text="CD APY 5 YR"/>
+                                                                    <ira-cd-apy-12-mo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="iraCdApy12Mo"
+                                                                        text="IRA CD APY 12 MO"/>
+                                                                    <ira-cd-apy-24-mo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="iraCdApy24Mo"
+                                                                        text="IRA CD APY 24 MO"/>
+                                                                    <ira-cd-apy-5-yr
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="iraCdApy5Yr"
+                                                                        text="IRA CD APY 5 YR"/>
+                                                                    <cd-rate-3-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-3-mon"
+                                                                        text="CD Rate 3 Mon"/>
+                                                                    <cd-rate-9-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-9-mon"
+                                                                        text="CD Rate 9 Mon"/>
+                                                                    <cd-rate-12-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-12-mon"
+                                                                        text="CD Rate 12 Mon"/>
+                                                                    <cd-rate-18-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-18-mon"
+                                                                        text="CD Rate 18 Mon"/>
+                                                                    <cd-rate-24-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-24-mon"
+                                                                        text="CD Rate 24 Mon"/>
+                                                                    <cd-rate-30-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-30-mon"
+                                                                        text="CD Rate 30 Mon"/>
+                                                                    <cd-rate-48-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-48-mon"
+                                                                        text="CD Rate 48 Mon"/>
+                                                                    <cd-rate-60-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-60-mon"
+                                                                        text="CD Rate 60 Mon"/>
+                                                                    <cd-rate-84-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-84-mon"
+                                                                        text="CD Rate 84 Mon"/>
+                                                                    <cd-rate-120-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-120-mon"
+                                                                        text="CD Rate 120 Mon"/>
+                                                                </styles>
+                                                            </styles>
+                                                        </rtePlugins>
+                                                        <uiSettings jcr:primaryType="nt:unstructured">
+                                                            <cui jcr:primaryType="nt:unstructured">
+                                                                <inline
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    toolbar="[format#bold,format#italic,format#underline,#justify,#lists,links#modifylink,links#unlink,#paraformat,table#createoredit,subsuperscript#subscript,subsuperscript#superscript,spellcheck#checktext,misctools#specialchars,#styles,misctools#sourceedit]">
+                                                                    <popovers jcr:primaryType="nt:unstructured">
+                                                                        <justify
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                                                            ref="justify"/>
+                                                                        <lists
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                                            ref="lists"/>
+                                                                        <paraformat
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="paraformat:getFormats:paraformat-pulldown"
+                                                                            ref="paraformat"/>
+                                                                        <styles
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="styles:getStyles:styles-pulldown"
+                                                                            ref="styles"/>
+                                                                    </popovers>
+                                                                </inline>
+                                                                <dialogFullScreen
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    toolbar="[format#bold,format#italic,format#underline,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,links#modifylink,links#unlink,table#createoredit,#paraformat,image#imageProps,#styles,misctools#specialchars]">
+                                                                    <popovers jcr:primaryType="nt:unstructured">
+                                                                        <paraformat
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="paraformat:getFormats:paraformat-pulldown"
+                                                                            ref="paraformat"/>
+                                                                        <styles
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="styles:getStyles:styles-pulldown"
+                                                                            ref="styles"/>
+                                                                    </popovers>
+                                                                </dialogFullScreen>
+                                                                <tableEditOptions
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    toolbar="[table#insertcolumn-before,table#insertcolumn-after,table#removecolumn,-,table#insertrow-before,table#insertrow-after,table#removerow,-,table#mergecells-right,table#mergecells-down,table#mergecells,table#splitcell-horizontal,table#splitcell-vertical,-,table#selectrow,table#selectcolumn,-,table#ensureparagraph,-,table#modifytableandcell,table#removetable,-,undo#undo,undo#redo,-,table#exitTableEditing,-]"/>
+                                                            </cui>
+                                                        </uiSettings>
+                                                        <htmlRules jcr:primaryType="nt:unstructured">
+                                                            <blockHandling
+                                                                jcr:primaryType="nt:unstructured"
+                                                                removeSingleParagraphContainer="{Boolean}true"/>
+                                                        </htmlRules>
+                                                    </content>
+                                                </items>
+                                            </column>
+                                        </items>
+                                    </columns>
+                                </items>
+                            </articlecontent>
+                            <landingtilecontent
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Landing Tile Content"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <columns
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <titleheading
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Add Insight Tile Heading to display in Insight Listing page"
+                                                        fieldLabel="Tile Heading"
+                                                        name="./tileHeading"
+                                                        required="{Boolean}true"/>
+                                                    <tiledescription
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                        fieldDescription="Enter content for the insight post"
+                                                        fieldLabel="Tile Description"
+                                                        name="./tileDescription"
+                                                        required="{Boolean}true"
+                                                        useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins jcr:primaryType="nt:unstructured">
+                                                            <format
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="bold,italic"/>
+                                                            <justify
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*"/>
+                                                            <links
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="modifylink,unlink"/>
+                                                            <lists
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*"/>
+                                                            <misctools
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*">
+                                                                <specialCharsConfig jcr:primaryType="nt:unstructured">
+                                                                    <chars jcr:primaryType="nt:unstructured">
+                                                                        <default_copyright
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;copy;"
+                                                                            name="copyright"/>
+                                                                        <default_euro
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;euro;"
+                                                                            name="euro"/>
+                                                                        <default_registered
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;reg;"
+                                                                            name="registered"/>
+                                                                        <default_trademark
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;trade;"
+                                                                            name="trademark"/>
+                                                                        <pound
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;#163;"
+                                                                            name="pound"/>
+                                                                        <nbsp
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;#160;"
+                                                                            name="pound"/>
+                                                                        <emDash
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;#8212;"
+                                                                            name="pound"/>
+                                                                        <default_dagger
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            entity="&amp;dagger;"
+                                                                            name="dagger"/>
+                                                                    </chars>
+                                                                </specialCharsConfig>
+                                                            </misctools>
+                                                            <paraformat
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*">
+                                                                <formats jcr:primaryType="nt:unstructured">
+                                                                    <default_p
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Paragraph"
+                                                                        tag="p"/>
+                                                                    <default_h1
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 1"
+                                                                        tag="h1"/>
+                                                                    <default_h2
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 2"
+                                                                        tag="h2"/>
+                                                                    <default_h3
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 3"
+                                                                        tag="h3"/>
+                                                                    <default_h4
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 4"
+                                                                        tag="h4"/>
+                                                                    <default_h5
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 5"
+                                                                        tag="h5"/>
+                                                                    <default_h6
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Heading 6"
+                                                                        tag="h6"/>
+                                                                    <default_blockquote
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Quote"
+                                                                        tag="blockquote"/>
+                                                                    <default_pre
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        description="Preformatted"
+                                                                        tag="pre"/>
+                                                                </formats>
+                                                            </paraformat>
+                                                            <table
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*">
+                                                                <hiddenHeaderConfig
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                                                    hiddenHeaderEditingCSS="cq-RichText-hiddenHeader--editing"/>
+                                                            </table>
+                                                            <tracklinks
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*"/>
+                                                            <edit
+                                                                jcr:primaryType="nt:unstructured"
+                                                                defaultPasteMode="plaintext"
+                                                                stripHtmlTags="{Boolean}true"/>
+                                                            <spellcheck
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*"/>
+                                                            <subsuperscript
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*"/>
+                                                            <styles
+                                                                jcr:primaryType="nt:unstructured"
+                                                                features="*">
+                                                                <styles jcr:primaryType="cq:WidgetCollection">
+                                                                    <default
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="&quot;&quot;"
+                                                                        text="Default"/>
+                                                                    <cpromo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cash-save-magic-text2"
+                                                                        text="cpromo"/>
+                                                                    <stuff-sub-head
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="stuff-sub-head"
+                                                                        text="Apy Card Numbers"/>
+                                                                    <suff-wrap
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="suff-wrap"
+                                                                        text="APY Card Text"/>
+                                                                    <cashback-sub-copy
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cashback-sub-copy"
+                                                                        text="Intro description"/>
+                                                                    <sub-copy
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="sub-copy"
+                                                                        text="APY Card Description"/>
+                                                                    <text-credit-1
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="text-credit-1"
+                                                                        text="Intro Numbers"/>
+                                                                    <form-login
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="log-in"
+                                                                        text="Login"/>
+                                                                    <tab1-style
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="tab-card-1"
+                                                                        text="tab-card-style-1"/>
+                                                                    <tab2-style
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="tab-card-2"
+                                                                        text="tab-card-style-2"/>
+                                                                    <tab3-style
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="tab-card-para"
+                                                                        text="tab-card-para-style"/>
+                                                                    <tab4-style
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="tab-card-3"
+                                                                        text="tab-card-style-3"/>
+                                                                    <contact-mail-address
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="contact-mail-address"
+                                                                        text="Contact mail Address"/>
+                                                                    <introduction-head
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="introduction-head"
+                                                                        text="IntroductionHead"/>
+                                                                    <introduction-sub-head
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="introduction-sub-head"
+                                                                        text="IntroductionSubHead"/>
+                                                                    <cd-rate
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate"
+                                                                        text="CdRate"/>
+                                                                    <apy
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="apy"
+                                                                        text="CardApy"/>
+                                                                    <apy-rate
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="apy-rate"
+                                                                        text="Apy-Rate"/>
+                                                                    <chase-dis
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="chase-dis"
+                                                                        text="Chase-dis"/>
+                                                                    <mm-apr-below
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="mmAPR"
+                                                                        text="Money Market Below "/>
+                                                                    <mm-apr-above
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="mmAPR1"
+                                                                        text="Money Market Above"/>
+                                                                    <cd-apr-min
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cdAPRmin"
+                                                                        text="CD 12 Month"/>
+                                                                    <ira-cd-apr-min
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="iracdAPRmin"
+                                                                        text="IRA CD 24 Mon"/>
+                                                                    <show-month
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="showMonth "
+                                                                        text="Show Month"/>
+                                                                    <reflect-apy
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="reflectApy"
+                                                                        text="Reflect APY"/>
+                                                                    <apy-val-under
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="apyValUnder"
+                                                                        text="APY Value Under"/>
+                                                                    <apy-val-above
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="apyValOver"
+                                                                        text="APY Value Over"/>
+                                                                    <home-saving-apy
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="savingPageReflectApy"
+                                                                        text="Home Saving APY"/>
+                                                                    <home-cd-apy-12mo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cdPageApy"
+                                                                        text="Hom CD APY 12MO"/>
+                                                                    <reflect-date
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="reflectDate "
+                                                                        text="Current Date"/>
+                                                                    <cd-apy-12-mo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cdApy12Mo"
+                                                                        text="CD APY 12 MO"/>
+                                                                    <cd-apy-24-mo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cdApy24Mo"
+                                                                        text="CD APY 24 MO"/>
+                                                                    <cd-apy-5-yr
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cdApy5yr"
+                                                                        text="CD APY 5 YR"/>
+                                                                    <ira-cd-apy-12-mo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="iraCdApy12Mo"
+                                                                        text="IRA CD APY 12 MO"/>
+                                                                    <ira-cd-apy-24-mo
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="iraCdApy24Mo"
+                                                                        text="IRA CD APY 24 MO"/>
+                                                                    <ira-cd-apy-5-yr
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="iraCdApy5Yr"
+                                                                        text="IRA CD APY 5 YR"/>
+                                                                    <cd-rate-3-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-3-mon"
+                                                                        text="CD Rate 3 Mon"/>
+                                                                    <cd-rate-9-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-9-mon"
+                                                                        text="CD Rate 9 Mon"/>
+                                                                    <cd-rate-12-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-12-mon"
+                                                                        text="CD Rate 12 Mon"/>
+                                                                    <cd-rate-18-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-18-mon"
+                                                                        text="CD Rate 18 Mon"/>
+                                                                    <cd-rate-24-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-24-mon"
+                                                                        text="CD Rate 24 Mon"/>
+                                                                    <cd-rate-30-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-30-mon"
+                                                                        text="CD Rate 30 Mon"/>
+                                                                    <cd-rate-48-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-48-mon"
+                                                                        text="CD Rate 48 Mon"/>
+                                                                    <cd-rate-60-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-60-mon"
+                                                                        text="CD Rate 60 Mon"/>
+                                                                    <cd-rate-84-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-84-mon"
+                                                                        text="CD Rate 84 Mon"/>
+                                                                    <cd-rate-120-mon
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        cssName="cd-rate-120-mon"
+                                                                        text="CD Rate 120 Mon"/>
+                                                                </styles>
+                                                            </styles>
+                                                        </rtePlugins>
+                                                        <uiSettings jcr:primaryType="nt:unstructured">
+                                                            <cui jcr:primaryType="nt:unstructured">
+                                                                <inline
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    toolbar="[format#bold,format#italic,format#underline,#justify,#lists,links#modifylink,links#unlink,#paraformat,table#createoredit,subsuperscript#subscript,subsuperscript#superscript,spellcheck#checktext,misctools#specialchars,#styles,misctools#sourceedit]">
+                                                                    <popovers jcr:primaryType="nt:unstructured">
+                                                                        <justify
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                                                            ref="justify"/>
+                                                                        <lists
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                                            ref="lists"/>
+                                                                        <paraformat
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="paraformat:getFormats:paraformat-pulldown"
+                                                                            ref="paraformat"/>
+                                                                        <styles
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="styles:getStyles:styles-pulldown"
+                                                                            ref="styles"/>
+                                                                    </popovers>
+                                                                </inline>
+                                                                <dialogFullScreen
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    toolbar="[format#bold,format#italic,format#underline,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,links#modifylink,links#unlink,table#createoredit,#paraformat,image#imageProps,#styles,misctools#specialchars]">
+                                                                    <popovers jcr:primaryType="nt:unstructured">
+                                                                        <paraformat
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="paraformat:getFormats:paraformat-pulldown"
+                                                                            ref="paraformat"/>
+                                                                        <styles
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            items="styles:getStyles:styles-pulldown"
+                                                                            ref="styles"/>
+                                                                    </popovers>
+                                                                </dialogFullScreen>
+                                                                <tableEditOptions
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    toolbar="[table#insertcolumn-before,table#insertcolumn-after,table#removecolumn,-,table#insertrow-before,table#insertrow-after,table#removerow,-,table#mergecells-right,table#mergecells-down,table#mergecells,table#splitcell-horizontal,table#splitcell-vertical,-,table#selectrow,table#selectcolumn,-,table#ensureparagraph,-,table#modifytableandcell,table#removetable,-,undo#undo,undo#redo,-,table#exitTableEditing,-]"/>
+                                                            </cui>
+                                                        </uiSettings>
+                                                        <htmlRules jcr:primaryType="nt:unstructured">
+                                                            <blockHandling
+                                                                jcr:primaryType="nt:unstructured"
+                                                                removeSingleParagraphContainer="{Boolean}true"/>
+                                                        </htmlRules>
+                                                    </tiledescription>
+                                                    <isfeaturedinsight
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        fieldDescription="Check if the Insight is a Featured Insight"
+                                                        fieldLabel="Is Featured Insight"
+                                                        name="./isFeaturedInsight"
+                                                        text="Check if the Insight is a Featured Insight"
+                                                        value="true"/>
+                                                    <earmarkcolor
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/apps/vcm/components/content/custom-colorpicker"
+                                                        fieldDescription="Please add color code of the earmark in each of the insight tile"
+                                                        fieldLabel="Ear Mark Color"
+                                                        name="./earMarkColor"/>
+                                                    <timetoreadtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Enter the time taken to read the article"
+                                                        fieldLabel="Time Taken Text"
+                                                        name="./timeTaken"/>
+                                                    <landingImage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldDescription="To author landing Image"
+                                                        fieldLabel="Landing Image"
+                                                        name="./landingImage"
+                                                        rootPath="/content/dam/"/>
+                                                    <altText
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Author alt text fr head image"
+                                                        fieldLabel="Alt Text"
+                                                        name="./altTextLanding"/>
+                                                </items>
+                                            </column>
+                                        </items>
+                                    </columns>
+                                </items>
+                            </landingtilecontent>
+                        </items>
+                    </tabs>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,52 @@
+<template data-sly-template.textviewtemplate="${@ model}">
+<sly data-sly-test="${model.variation=='textView'}">
+<div class="container" data-audiencetype="${model.allowedAudience}">
+	<div class="content-wrapper">
+		<div class="about--block rte-desc textView">
+			<div class="row m-0 mbl-no-gutter">
+				<div class="col-12 p-0 mb-3 mb-sm-0">
+					<sly data-sly-test="${model.heading}">
+					<h3 class="${model.greenUnderline == 'true' ? 'blueHdng-multiLine-greenBorder' :'blueHdng-without-greenBorder'}" data-sly-text="${model.heading}"></h3></sly>
+					<div class = "mt-4"><sly data-sly-test="${model.description}">${model.description @context='html'}</sly>
+					<div class="float-btn-wrapper">
+					<sly data-sly-test.linkUrl="${model.linkUrl == ''? '#': model.linkUrl}">
+					<sly data-sly-test="${model.buttonStyle=='true'}">
+						<a data-sly-test="${model.linkText}" href="${linkUrl}" class="${model.buttonStyle == 'true' ? 'btn-primary btn-bg' :''} ${model.tabSelect == '_blank' ? 'external-link' : ''}" target="${model.tabSelect}" data-experience-popup="${model.experiencePopupPath}" data-popup="${model.popupId}"><span>${model.linkText}</span><sly data-sly-test="${model.experiencePopupPath}"><span class="sr-only">Opens a New Popup</span></sly><sly data-sly-test="${model.tabSelect == '_blank' && !model.experiencePopupPath}"><span class="sr-only">Opens a New Window</span><span class="external-icon" aria-hidden="true"></span></sly><span class="${model.buttonStyle == 'true' ? 'btn-triangle-rt' :''}" aria-hidden="true"></span></a>
+					</sly>
+					<sly data-sly-test="${model.buttonStyle!='true'}">
+						<a data-sly-test="${model.linkText}" href="${linkUrl}" class="${model.linkStyle == 'forwardArrow' ? 'navg-right-arw-link mt-4 mb-4' : 'navg-lft-arw-link mt-4 mb-4'} ${model.tabSelect == '_blank' ? 'inline-external-link' : ''}" target="${model.tabSelect}" data-experience-popup="${model.experiencePopupPath}" data-popup="${model.popupId}"><span>${model.linkText}</span><sly data-sly-test="${model.experiencePopupPath}"><span class="sr-only">Opens a New Popup</span></sly><sly data-sly-test="${model.tabSelect == '_blank' && !model.experiencePopupPath}"><span class="sr-only">Opens a New Window</span><span class="external-icon" aria-hidden="true"></span></sly></a>
+					</sly>
+					</sly>
+					<sly data-sly-test="${model.noOfLinks=='true'}">
+                    <sly data-sly-test.secondLinkUrl="${model.secondLinkUrl == ''? '#': model.secondLinkUrl}">
+					<sly data-sly-test="${model.buttonStyleForScndLink=='true'}">
+						<a data-sly-test="${model.secondLinkText}" href="${secondLinkUrl}" class="${model.buttonStyleForScndLink == 'true' ? 'btn-primary btn-bg second-link-btn' :''} ${model.tabSelect == '_blank' ? 'external-link' : ''}" target="${model.tabSelectForScndLink}" data-popup="${model.popupIdForScndLink}"><span>${model.secondLinkText}</span><sly data-sly-test="${model.experiencePopupPath}"><span class="sr-only">Opens a New Popup</span></sly><sly data-sly-test="${model.tabSelect == '_blank' && !model.experiencePopupPath}"><span class="sr-only">Opens a New Window</span><span class="external-icon" aria-hidden="true"></span></sly><span class="${model.buttonStyleForScndLink == 'true' ? 'btn-triangle-rt' :''}" aria-hidden="true"></span></a>
+					</sly>
+					<sly data-sly-test="${model.buttonStyleForScndLink!='true'}">
+						<a data-sly-test="${model.secondLinkText}" href="${secondLinkUrl}" class="${model.linkStyleForScndLink == 'forwardArrow' ? 'navg-right-arw-link second-link-btn mt-4 mb-4 ml-md-5' : 'navg-lft-arw-link second-link-btn mt-4 mb-4'} ${model.tabSelect == '_blank' ? 'inline-external-link' : ''}" target="${model.tabSelectForScndLink}" data-popup="${model.popupIdForScndLink}"><span>${model.secondLinkText}</span><sly data-sly-test="${model.experiencePopupPath}"><span class="sr-only">Opens a New Popup</span></sly><sly data-sly-test="${model.tabSelect == '_blank' && !model.experiencePopupPath}"><span class="sr-only">Opens a New Window</span><span class="external-icon" aria-hidden="true"></span></sly></a>
+					</sly>
+					</sly>
+					</sly>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</sly>
+<sly data-sly-test="${model.variation=='fullpagetext'}">
+<div class="container" data-audiencetype="${model.allowedAudience}">
+	<div class="content-wrapper">
+		<div class="full-page-text">
+			<sly data-sly-test="${model.heading}">
+				<div class="fpgtxt-title"><h1 data-sly-text="${model.heading}"></h1></div>
+			</sly>
+			<sly data-sly-test="${model.description}">
+				<div class="fpgtxt-rte-desc">${model.description @context='html'}</div>
+			</sly>
+		</div>
+	</div>
+</div>
+</sly>
+</template>

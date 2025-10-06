@@ -1,0 +1,47 @@
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-test="${pageProperties.riskmeasures}">
+<div class="product-details risk-measures-component">
+	<div class="row pdg-24">
+		<h3 class="heading col-lg-8">
+			<span class="risk-measures-title"></span> 
+			<sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                  <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                     <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Risk Measures" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+					 <span class="sr-only tooltip-content" aria-live="polite"></span>
+				  </sly>
+			</sly>
+			<span>(<span class="risk-measures-asof-label"></span> <span class="risk-measures-asof-value"></span>) </span>
+		</h3>
+		<sly data-sly-test="${overlayModel.isEnablingOverlay}"> 
+			<sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+				<p class="align-right col-lg-4">
+					<span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" role="button" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+				</p>
+			</sly> 
+		</sly>
+	</div>
+	<div class="visual-container risk-measures-data">
+		<div class="risk-time-tabs">
+			<ul role="tablist">
+				<li class="time-tabs one-year-tab"><a href="#/" role="tab"></a></li>
+				<li class="time-tabs three-year-tab active"><a href="#/" role="tab"></a></li>
+				<li class="time-tabs five-year-tab"><a href="#/" role="tab"></a></li>
+				<li class="time-tabs ten-year-tab"><a href="#/" role="tab"></a></li>
+			</ul>
+		</div>
+		<div class="risk-time-tabs-data" role="tabpanel">
+			<div class="risk-table-data">
+				<div class="table-wrap">
+					<table class="table risk-table" summary="${component.title}"><caption class="sr-only">${component.title}</caption></table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="dynamic-loader-riskmeasures">
+	<img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+</div>
+<div class="product-details-error-message error-message-riskmeasures">
+	<p></p>
+</div>
+</sly>

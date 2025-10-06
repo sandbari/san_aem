@@ -1,0 +1,177 @@
+<sly data-sly-test="${wcmmode.edit}">
+    <h4>Click here to Edit Characteristics Component....</h4>
+</sly>
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-test="${properties.type == 'characteristics' && pageProperties.characteristicsone}">
+    <div class="product-details characterstics-table">
+        <div class="row pdg-24">
+            <h3 class="heading col-lg-8 charOneHead">
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                        <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Characteristics" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                        <span class="sr-only tooltip-content" aria-live="polite"></span>
+                    </sly>
+                </sly>
+                <span>(As of <span class="characteristics-asof"></span>)</span>
+            </h3>
+            <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                    <p class="align-right col-lg-4">
+                        <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+                    </p>
+                </sly>
+            </sly>
+        </div>
+        <div class="visual-container">
+            <div class="characteristics-table-data">
+                <div class="table-wrap">
+                    <table class="table characteristics-table tableSort"><caption class="sr-only">${component.title}</caption></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-charone">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message  error-message-charone">
+     <p></p>
+    </div>
+</sly>
+<sly data-sly-test="${properties.type == 'characteristicsvariant-two' && pageProperties.characteristicstwo}">
+    <div class="product-details charvar-two">
+        <div class="row pdg-24">
+            <h3 class="heading col-lg-8 charTwoHead">
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                        <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Characteristics" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                        <span class="sr-only tooltip-content" aria-live="polite"></span>
+                    </sly>
+                </sly>
+                <span>(As of <span class="characteristicsvariant-two-asof"></span>)</span>
+            </h3>
+            <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                    <p class="align-right col-lg-4">
+                        <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+                    </p>
+                </sly>
+            </sly>
+        </div>
+        <div class="visual-container">
+            <div class="characteristicsvariant-two-table-data">
+                <div class="table-wrap">
+                    <table class="table characteristicsvariant-two-table tableSort"><caption class="sr-only">${component.title}</caption></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-charVarTwo">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message  error-message-charVarTwo">
+     <p></p>
+    </div>
+</sly>
+<sly data-sly-test="${properties.type == 'characteristicsvariant-three' && pageProperties.characteristicsthree}">
+    <div class="product-details charvar-three">
+        <div class="row pdg-24">
+            <h3 class="heading col-lg-8 charThreeHead">
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                        <a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Characteristics" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+                        <span class="sr-only tooltip-content" aria-live="polite"></span>
+                    </sly>
+                </sly>
+                <span>(As of <span class="characteristicsvariant-three-asof"></span>)</span>
+            </h3>
+            <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                    <p class="align-right col-lg-4">
+                        <span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+                    </p>
+                </sly>
+            </sly>
+        </div>
+        <div class="visual-container">
+            <div class="characteristicsvariant-three-table-data">
+                <div class="table-wrap">
+                    <table class="table characteristicsvariant-three-table tableSort"><caption class="sr-only">${component.title}</caption></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-charVarThree">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message  error-message-charVarThree">
+     <p></p>
+    </div>
+</sly>
+<!--<sly data-sly-test="${properties.type == 'characteristicsvariant-four' && pageProperties.characteristicsfour}">
+    <div class="product-details charvar-four">
+        <div class="row pdg-24">
+            <h3 class="heading col-lg-8 charFourHead">
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                        <span class="icon-tooltip" data-toggle="tooltip" data-placement="right" title="${overlayModel.overlayContent @ context='html'}"></span>
+                    </sly>
+                </sly>
+                <span>( As of <span class="characteristicsvariant-four-asof"></span>)</span>
+            </h3>
+            <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                    <p class="align-right col-lg-4">
+                        ${overlayModel.overlayTextPrefix}<span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}</a></span>
+                    </p>
+                </sly>
+            </sly>
+        </div>
+        <div class="visual-container">
+            <div class="characteristicsvariant-four-table-data">
+                <div class="table-wrap">
+                    <table class="table characteristicsvariant-four-table"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-charVarFour">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="error-message-charVarFour">
+     <p> Oops, something went wrong please try after sometime</p>
+    </div>
+</sly>
+<sly data-sly-test="${properties.type == 'characteristicsvariant-five' && pageProperties.characteristicsfive}">
+    <div class="product-details charvar-five">
+        <div class="row pdg-24">
+            <h3 class="heading col-lg-8 charFiveHead">
+                <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                    <sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+                        <span class="icon-tooltip" data-toggle="tooltip" data-placement="right" title="${overlayModel.overlayContent @ context='html'}"></span>
+                    </sly>
+                </sly>
+                <span>( As of <span class="characteristicsvariant-five-asof"></span>)</span>
+            </h3>
+            <sly data-sly-test="${overlayModel.isEnablingOverlay}">
+                <sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+                    <p class="align-right col-lg-4">
+                        ${overlayModel.overlayTextPrefix}<span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}</a></span>
+                    </p>
+                </sly>
+            </sly>
+        </div>
+        <div class="visual-container">
+            <div class="characteristicsvariant-five-table-data">
+                <div class="table-wrap">
+                    <table class="table characteristicsvariant-five-table"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic-loader-charVarFive">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="error-message-charVarFive">
+     <p> Oops, something went wrong please try after sometime</p>
+    </div>
+</sly>-->

@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Header Authoring Dialog "
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Reusable Footer Configuration Tabs"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <logo
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Logo"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldDescription="DAM image upload for logo"
+                                                    fieldLabel="Image"
+                                                    name="./logoImage"
+                                                    required="true"
+                                                    rootPath="/content/"/>
+                                            <alttext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Image alt text"
+                                                    fieldLabel="Alt Text"
+                                                    name="./logoAltText"/>
+                                            <linkUrl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to homepage"
+                                                    fieldLabel="Link Url"
+                                                    name="./logoLinkUrl"/>
+                                            <imageInvestor
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldDescription="DAM image upload for Investor logo"
+                                                    fieldLabel="Investor Image"
+                                                    name="./logoImageInvestor"
+                                                    rootPath="/content/"/>
+                                            <alttextInvestor
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Investor Image alt text"
+                                                    fieldLabel="Investor Alt Text"
+                                                    name="./logoAltTextInvestor"/>
+                                            <linkUrlInvestor
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to Investor homepage"
+                                                    fieldLabel="Investor Link Url"
+                                                    name="./logoLinkUrlInvestor"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </logo>
+                    <topnavigation
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Top Navigation"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <memberslinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Link to ‘USAA Members’ homepage"
+                                                    fieldLabel="Members link text"
+                                                    name="./membersLinkText"
+                                                    required="true"/>
+                                            <memberLinkDescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Author the link description."
+                                                    fieldLabel="Link description"
+                                                    name="./memberLinkDescription"/>
+                                            <memberslinkUrl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘USAA Members’ homepage"
+                                                    fieldLabel="Members link URL"
+                                                    name="./membersLinkUrl"
+                                                    required="true"/>
+                                            <financialLinkText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Text field to author ‘Financial Professionals’ text"
+                                                    fieldLabel="Financial Professtional link text"
+                                                    name="./financialLinkText"
+                                                    required="true"/>
+                                            <financialLinkDescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Author the link description."
+                                                    fieldLabel="Link description"
+                                                    name="./financialLinkDescription"/>
+                                            <financialLinkUrl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Financial Professionals’ homepage"
+                                                    fieldLabel="Financial Professtional link URL"
+                                                    name="./financialLinkUrl"
+                                                    required="true"/>
+                                            <institutionalLinkText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Text field to author ‘Institutional Investors’ text"
+                                                    fieldLabel="Institutional Investors link text"
+                                                    name="./institutionalLinkText"
+                                                    required="true"/>
+                                            <institutionalLinkDescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Author the link description."
+                                                    fieldLabel="Link description"
+                                                    name="./institutionalLinkDescription"/>
+                                            <institutionalLinkUrl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Institutional Investors’ homepage"
+                                                    fieldLabel="Institutional Investors  link URL"
+                                                    name="./institutionalLinkUrl"
+                                                    required="true"/>
+                                            <investorLinkText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Text field to author ‘Investor Relations’ text"
+                                                    fieldLabel="Investor Relations link text"
+                                                    name="./investorLinkText"
+                                                    required="true"/>
+                                            <investorLinkDescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Author the link description."
+                                                    fieldLabel="Link description"
+                                                    name="./investorLinkDescription"/>
+                                            <investorLinkUrl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Investor Relations’ page"
+                                                    fieldLabel="Investor Relations link URL"
+                                                    name="./investorLinkUrl"
+                                                    required="true"/>
+                                            <investortabselect
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="To author target for link to be open in same tab or new tab"
+                                                    fieldLabel="Target"
+                                                    name="./investorLinkTarget">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Same tab"
+                                                            value="_self"/>
+                                                    <newtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="New tab"
+                                                            value="_blank"/>
+                                                </items>
+                                            </investortabselect>
+                                            <corporateHomeLinkText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Text field to author ‘Corporate Home’ text"
+                                                    fieldLabel="Corporate Home link text"
+                                                    name="./corporateHomeLinkText"
+                                                    required="true"/>
+                                            <corporateHomeLinkDescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Author the link description."
+                                                    fieldLabel="Link description"
+                                                    name="./corporateHomeLinkDescription"/>
+                                            <corporateHomeLinkUrl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Corporate’ homepage"
+                                                    fieldLabel="Corporate Home link URL"
+                                                    name="./corporateHomeLinkUrl"
+                                                    required="true"/>
+                                            <corporatehomeselect
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="To author target for link to be open in same tab or new tab"
+                                                    fieldLabel="Target"
+                                                    name="./corporateHomeLinkTarget">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Same tab"
+                                                            value="_self"/>
+                                                    <newtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="New tab"
+                                                            value="_blank"/>
+                                                </items>
+                                            </corporatehomeselect>
+                                            <iscorphomepage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="To author target for link to be open in same tab or new tab"
+                                                    fieldLabel="Is Corp Homepage"
+                                                    name="./isCorpHomepage"
+                                            >
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <true
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="True"
+                                                            value="true"/>
+                                                    <false
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="False"
+                                                            value="false"/>
+                                                </items>
+                                            </iscorphomepage>
+                                            <contactImage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldDescription="DAM image upload for logo"
+                                                    fieldLabel="Contact icon image"
+                                                    name="./contactImage"
+                                                    rootPath="/content/"/>
+                                            <contactLinkText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Text field to author ‘Contact Us’ text"
+                                                    fieldLabel="Contact link text"
+                                                    name="./contactLinkText"
+                                                    required="true"/>
+                                            <contactLinkDescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Author the link description."
+                                                    fieldLabel="Link description"
+                                                    name="./contactLinkDescription"/>
+                                            <contactLinkUrl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Contact Us’ page"
+                                                    fieldLabel="Contact link URL For Member user"
+                                                    name="./contactLinkUrl"
+                                                    required="true"/>
+                                            <contactLinkUrlFinancial
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Contact Us’ page"
+                                                    fieldLabel="Contact link URL for Financial Advisor"
+                                                    name="./contactLinkUrlFinancial"
+                                                    required="true"/>
+                                            <contactLinkUrlII
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Contact Us’ page"
+                                                    fieldLabel="Contact link URL for institutional investor"
+                                                    name="./contactLinkUrlII"
+                                                    required="true"/>
+                                            <contacttabselect
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="To author target for link to be open in same tab or new tab"
+                                                    fieldLabel="Target"
+                                                    name="./contactLinkTarget">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Same tab"
+                                                            value="_self"/>
+                                                    <newtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="New tab"
+                                                            value="_blank"/>
+                                                </items>
+                                            </contacttabselect>
+                                            <registerLinkText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Text field to author ‘Signin/Register’ text"
+                                                    fieldLabel="Signin/Register link text"
+                                                    name="./registerLinkText"
+                                                    required="true"/>
+                                            <registerLinkDescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Author the link description."
+                                                    fieldLabel="Link description"
+                                                    name="./registerLinkDescription"/>
+                                            <registerLinkUrl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Signin/Register’ page in the members portal"
+                                                    fieldLabel="Signin/Register link URL"
+                                                    name="./registerLinkUrl"
+                                                    required="true"/>
+                                            <signintabselect
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="To author target for link to be open in same tab or new tab"
+                                                    fieldLabel="Target"
+                                                    name="./signinLinkTarget">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Same tab"
+                                                            value="_self"/>
+                                                    <newtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="New tab"
+                                                            value="_blank"/>
+                                                </items>
+                                            </signintabselect>
+                                            <searchplaceholder
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="To author the placeholder text that should appear in search box"
+                                                    fieldLabel="Search Place Holder Text"
+                                                    name="./searchPlaceHolder"
+                                                    required="true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </topnavigation>
+                    <levelnavigation
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Level 1 Navigation"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <navrootpath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to the root page of the level 1 navigation"
+                                                    fieldLabel="Navigation Root path"
+                                                    name="./navRootPath"
+                                                    required="true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </levelnavigation>
+                    <mobile
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Mobile Fields"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <backtext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="To author Back text in mobile"
+                                                    fieldLabel="Back Text"
+                                                    name="./backText"/>
+                                            <signintext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="To author Signin text in mobile"
+                                                    fieldLabel="Signin Text"
+                                                    name="./mobileSigninLinkText"/>
+                                            <investortext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="To author Investor Type text in mobile which is applicable for corporate homepage"
+                                                    fieldLabel="Investor Type Mobile Text"
+                                                    name="./mobileInvestorText"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </mobile>
+                    <postloginlinks
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Post Login Links"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <dropdownlinks
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    allowBlank="false"
+                                                    composite="{Boolean}true"
+                                                    fieldLabel="Dropdown Links">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./dropdownLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <guestuser
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                        checked="${not empty cqDesign.guestuserDropdown ? cqDesign.guestuserDropdown : false}"
+                                                                        fieldDescription="Check if the navigation is applicable for guest user"
+                                                                        name="./guestuserDropdown"
+                                                                        text="Applicable for Guest User"
+                                                                        uncheckedValue="false"
+                                                                        value="true"/>
+                                                                <linktext
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="To author link text"
+                                                                        fieldLabel="Link text"
+                                                                        name="./dropdownLinkText"/>
+                                                                <linkurl
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldDescription="To author link url"
+                                                                        fieldLabel="Link Url"
+                                                                        name="./dropdownLinkUrl"/>
+                                                                <tabselect
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                        fieldDescription="To author target for link to be open in same tab or new tab"
+                                                                        fieldLabel="Target"
+                                                                        name="./dropdowntabSelect">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <sametab
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                text="Same tab"
+                                                                                value="_self"/>
+                                                                        <newtab
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                text="New tab"
+                                                                                value="_blank"/>
+                                                                    </items>
+                                                                </tabselect>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </dropdownlinks>
+                                            <basicinfourlmember
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Basic info’ page in postlogin"
+                                                    fieldLabel="Basic info link URL"
+                                                    name="./basicinfoUrl"/>
+                                            <basicinfourlguest
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Basic info’ for Guest User"
+                                                    fieldLabel="Basic info link Guest URL"
+                                                    name="./basicinfoUrlGuest"/>
+                                            <messageCenterUrl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="Link to ‘Message Center’ page in postlogin"
+                                                    fieldLabel="Message Center link URL"
+                                                    name="./messageCenterUrl"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </postloginlinks>
+                    <postloginnavigation
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Postlogin Navigation"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <homelinktext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="To author Home link text"
+                                                    fieldLabel="Home Link text"
+                                                    name="./homeLinkText"/>
+                                            <homememberurl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="To author Home Member link url"
+                                                    fieldLabel="Home Member Link Url"
+                                                    name="./homeMemberUrl"/>
+                                            <homeguesturl
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldDescription="To author Home Guest link url"
+                                                    fieldLabel="Home Guest Link Url"
+                                                    name="./homeGuestUrl"/>
+                                            <hometabselect
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="To author target for link to be open in same tab or new tab"
+                                                    fieldLabel="Target"
+                                                    name="./homeTabSelect">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Same tab"
+                                                            value="_self"/>
+                                                    <newtab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="New tab"
+                                                            value="_blank"/>
+                                                </items>
+                                            </hometabselect>
+                                            <firstlevellinks
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    allowBlank="false"
+                                                    composite="{Boolean}true"
+                                                    fieldLabel="First Level Links">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./firstlevelLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <guestuser
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                        checked="${not empty cqDesign.guestuser ? cqDesign.guestuser : false}"
+                                                                        fieldDescription="Check if the navigation is applicable for guest user"
+                                                                        name="./guestuser"
+                                                                        text="Applicable for Guest User"
+                                                                        uncheckedValue="false"
+                                                                        value="true"/>
+                                                                <firstlevellinktext
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="To author link text"
+                                                                        fieldLabel="First Level Link text"
+                                                                        name="./firstLinkText"/>
+                                                                <firstlevellinkurl
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldDescription="To author link url"
+                                                                        fieldLabel="First Level Link Url"
+                                                                        name="./firstLinkUrl"/>
+                                                                <secondLevelOnly
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                        checked="${not empty cqDesign.secondLevelOnly ? cqDesign.secondLevelOnly : false}"
+                                                                        fieldDescription="Second level menu items will be shown with arrows"
+                                                                        name="./secondLevelOnly"
+                                                                        text="Second level with arrows"
+                                                                        uncheckedValue="false"
+                                                                        value="true"/>
+                                                                <firstleveltabselect
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                        fieldDescription="To author target for link to be open in same tab or new tab"
+                                                                        fieldLabel="Target"
+                                                                        name="./firstlevelTabSelect">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <sametab
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                text="Same tab"
+                                                                                value="_self"/>
+                                                                        <newtab
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                text="New tab"
+                                                                                value="_blank"/>
+                                                                    </items>
+                                                                </firstleveltabselect>
+                                                                <secondlevellinks
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                        allowBlank="false"
+                                                                        composite="{Boolean}true"
+                                                                        fieldLabel="Second Level Links">
+                                                                    <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                            name="./secondlevelLinks">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <column
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                    <secondlevellinktext
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                            fieldDescription="To author link text"
+                                                                                            fieldLabel="Second Level Link text"
+                                                                                            name="./secondLinkText"/>
+                                                                                    <secondlevellinkurl
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                            fieldDescription="To author link url"
+                                                                                            fieldLabel="Second Level Link Url"
+                                                                                            name="./secondLinkUrl"/>
+                                                                                    <secondleveltabselect
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                                            fieldDescription="To author target for link to be open in same tab or new tab"
+                                                                                            fieldLabel="Target"
+                                                                                            name="./secondlevelTabSelect">
+                                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                                            <sametab
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    text="Same tab"
+                                                                                                    value="_self"/>
+                                                                                            <newtab
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    text="New tab"
+                                                                                                    value="_blank"/>
+                                                                                        </items>
+                                                                                    </secondleveltabselect>
+                                                                                </items>
+                                                                            </column>
+                                                                        </items>
+                                                                    </field>
+                                                                </secondlevellinks>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </firstlevellinks>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </postloginnavigation>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

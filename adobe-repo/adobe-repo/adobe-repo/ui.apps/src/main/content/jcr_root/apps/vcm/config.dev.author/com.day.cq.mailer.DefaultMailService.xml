@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+	debug.email="{Boolean}false"
+	from.address="aem-workflow@notification.vcm.com"
+	smtp.host="vpce-0b9bed651b265a394-tle0gxj4.email-smtp.us-east-1.vpce.amazonaws.com"
+	smtp.password="BMzNqLrSc8RYFiluzjHHRG82Smv8GZodm+Wt/D9PbJlk"
+	smtp.port="25"
+	smtp.ssl="{Boolean}false"
+	smtp.starttls="{Boolean}true"
+	smtp.user="AKIAY7REG6LVSBAINOO4"/>

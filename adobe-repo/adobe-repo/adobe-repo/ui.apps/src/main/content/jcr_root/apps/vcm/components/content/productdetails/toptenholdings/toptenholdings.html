@@ -1,0 +1,88 @@
+<sly data-sly-test="${wcmmode.edit}">
+	<h4>Click here to Edit Top Holdings Component....</h4>
+</sly>
+<sly data-sly-use.overlayModel="com.vcm.core.models.ProductDetailConfigureOverlayModel"/>
+<sly data-sly-test="${properties.type == 'four-column' && pageProperties.toptenholdingsone}">
+	<div class="product-details topten-holdings-variant-two-component">
+		<div class="row pdg-24">
+			<h3 class="heading col-lg-8">
+				<span class="topten-holdings-title"></span>
+				<sly data-sly-test="${overlayModel.isEnablingOverlay}">
+					<sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+						<a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Top Ten Holdings" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+						<span class="sr-only tooltip-content" aria-live="polite"></span>
+					</sly>
+				</sly>
+				<span>(<span class="topten-holdings-asof-label"></span> <span class="topten-holdings-variant-two-asof-value"></span>)</span>
+			</h3>
+			<sly data-sly-test="${overlayModel.isEnablingOverlay}">
+				<sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+					<p class="align-right col-lg-4">
+						<span aria-hidden="true">${overlayModel.overlayTextPrefix}</span><span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}">${overlayModel.overlayLinkText}<span class="sr-only">opens a popup</span></a></span>
+					</p>
+				</sly>
+			</sly>
+		</div>
+		<div class="visual-container">
+			<div class="top-10-table-data-4col">
+				<div class="table-wrap">
+					<table class="table top-10-4col-holdings-table tableSort"><caption class="sr-only">${component.title}</caption></table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dynamic-loader-toptenholdingtwo">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message error-message-toptenholdingtwo">
+        <p></p>
+    </div>
+</sly>
+<sly data-sly-test="${properties.type == 'two-column' && pageProperties.toptenholdingstwo}">
+	<div class="product-details topten-holdings-variant-one-component">
+		<div class="row pdg-24">
+			<h3 class="heading col-lg-8">
+				<span class="topten-holdings-title"></span>
+				<sly data-sly-test="${overlayModel.isEnablingOverlay}">
+					<sly data-sly-test="${overlayModel.overlayType == 'tooltip'}">
+						<a href="javascript:void(0)" class="icon-tooltip" tabindex="0" aria-label="Know more about Top Ten Holdings" data-toggle="tooltip" data-placement="right" role="button" title="${overlayModel.overlayContent @ context='html'}"></a>
+						<span class="sr-only tooltip-content" aria-live="polite"></span>
+					</sly>
+				</sly>
+				<span>(<span class="topten-holdings-asof-label"></span> <span class="topten-holdings-asof-value"></span>)</span>
+			</h3>
+			<sly data-sly-test="${overlayModel.isEnablingOverlay}">
+				<sly data-sly-test="${overlayModel.overlayType == 'popup'}">
+					<p class="align-right col-lg-4">
+						${overlayModel.overlayTextPrefix}<span class="dotted-text"> <a href="#" data-popup="${overlayModel.overlayId}"><span class="sr-only">opens a popup</span></a></span>
+					</p>
+				</sly>
+			</sly>
+
+		</div>
+		<div class="visual-container toptenholdingone">
+			<div class="top-10-table-data">
+				<div class="table-wrap">
+					<table class="table top-10-holdings-table tableSort"><caption class="sr-only">${component.title}</caption></table>
+				</div>
+			</div>
+			<div class="row bottom-row">
+				<h3 class="heading">
+					<span class="topten-holdings-portfolio-label"></span> <span class="topten-holdings-portfolio-value text-right"></span>
+				</h3>
+			</div>
+			<div class="holding-page-icon">
+				<sly data-sly-test.holdingspdfUrl="${pageProperties.allHoldingsUrl}"><a href="${holdingspdfUrl}" class="pdf-icon" target="_blank">
+				<sly data-sly-test.pdfHoldingsText="${properties.pdfHoldingsText}">${properties.pdfHoldingsText}</sly>
+                    	<sly data-sly-test="${!pdfHoldingsText}">${'viewallholdings' @i18n}</sly>
+				</a></sly>
+			</div>
+		</div>
+	</div>
+	<div class="dynamic-loader-toptenholdingone">
+        <img src="/content/dam/vcm/common/loader-animation/VCM_LoadingAnimation.gif" class="img-responsive" />
+    </div>
+    <div class="product-details-error-message error-message-toptenholdingone">
+        <p></p>
+    </div>
+</sly>

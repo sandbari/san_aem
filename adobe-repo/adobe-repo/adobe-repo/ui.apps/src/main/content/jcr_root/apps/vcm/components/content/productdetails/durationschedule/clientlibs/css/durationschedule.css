@@ -1,0 +1,25 @@
+.Duration-Schedule-table-data {
+    position: relative;
+}
+
+.product-details .Duration-Schedule-table-data {
+    display: block;
+}
+
+.product-details .table.Duration-Schedule-table th:first-child {
+    min-width: 150px;
+    text-align: left;
+}
+
+.durationschedule .heading {
+    margin: 15px 0 0;
+}
+
+@media screen and (min-width:1024px) {
+    .product-details .Duration-Schedule-table-data {
+        display: block;
+    }
+    .durationschedule .heading {
+    margin: 5px 0 0;
+	}
+}

@@ -1,0 +1,13 @@
+<sly data-sly-use.prdPageObject="com.vcm.core.models.ProductDetailsModel">
+    <sly data-sly-test="${prdPageObject.configJson != null}">
+        <input type="hidden" id="productDetailConfigJson" value="${prdPageObject.configJson}"/>
+        <input type="hidden" id="productDetailKey" value="${prdPageObject.productDetailAPIKey}"/>
+        <input type="hidden" id="strategyEndPoint" value="${prdPageObject.strategyDetailEndPoint}"/>
+        <input type="hidden" id="indexEndPoint" value="${prdPageObject.indexDetailEndPoint}"/>
+        <input type="hidden" id="productLabels" value="${prdPageObject.labelsJson}"/>
+        <input type="hidden" id="fundID" value="${pageProperties.fundID}"/>
+        <input type="hidden" id="chartColor" value="${prdPageObject.colorArray}"/>
+        <input type="hidden" id="fundListEndpoint" value="${prdPageObject.fundListEndpoint}"/>
+        <input type="hidden" id="fundApiKey" value="${prdPageObject.fundListApiKey}"/>
+    </sly>
+</sly>

@@ -1,0 +1,149 @@
+.annual-time-tabs ul {
+    margin: 19px 0;
+}
+
+.annual-time-tabs li {
+    font-family: benton-sans, sans-serif;
+    font-size: 16px;
+    color: #004A98;
+    width: 146px;
+    margin-right: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 12px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+.annual-time-tabs li.active {
+    color: #49494A;
+    border: 1px solid #75757A;
+    box-shadow: 0px 2px 8px #00000034;
+    cursor: default;
+}
+
+.annual-time-tabs li:after,
+.annual-time-tabs li:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.annual-time-tabs li.active:after {
+    border-color: #88b7d500;
+    border-top-color: #ffffff;
+}
+
+.annual-time-tabs li.active:before {
+    border-color: transparent;
+    border-top-color: #000;
+    border-top-color: #75757A;
+    border-width: 12px;
+    margin-left: -12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.annualizedreturns .annualized-popup .heading {
+	margin: 15px 0 0;
+}
+
+.product-details .heading  .annualized-returns-title {
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #49494A;
+}
+
+/* tooltip styles starts here */
+
+.product-details .pdg-24 .text-right,
+.annualizedreturns .product-details .pdg-24 .icon-content {
+    display: none;
+}
+.annual-time-tabs-data {
+    position: relative;
+}
+
+.annual-returns-component .annualized-table tbody tr td:first-child {
+    min-width: 230px;
+    text-align: left;
+}
+
+.annual-returns-component .annualized-table th:last-child {
+    width: 85px;
+    text-align: right;
+}
+
+.annual-returns-component .annual-chart-data {
+    display: none;
+}
+
+.annual-returns-component .annual-list-data {
+    display: block;
+}
+
+.highcharts-container tspan {
+    font-weight: normal;
+}
+
+.dynamic-loader-annualreturns {
+    position: absolute;
+    left: 45%;
+    top: 5%;
+}
+
+/* Pc styles */
+@media screen and (min-width:768px) {
+    .product-details .pdg-24 .text-right {
+        display: block;
+    }
+    .annual-returns-component .annual-chart-data {
+        display: block;
+    }
+    .annual-returns-component .annual-list-data {
+        display: block;
+    }
+    .annual-returns-component .annual-list-data.hidden {
+        display: none;
+    }
+    .annual-returns-component .annual-chart-data.hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .product-details .pdg-24 .text-right,
+	.annualizedreturns .product-details .pdg-24 .icon-content {
+        display: block;
+    }
+    .annual-time-tabs ul {
+        margin: 11px 0 20px 0;
+    }
+    .annualizedreturns .overlay-text-content {
+	    margin: 15px 0;
+    }
+    .annualizedreturns .icon-content {
+         margin: 9px 0;
+    }
+    .annualized-table tbody tr td:first-child {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .product-details .annualized-table thead th {
+        padding: 20px 4px;
+    }
+}

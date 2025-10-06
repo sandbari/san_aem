@@ -1,0 +1,21 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+Edit Contact Victory Component
+</sly>
+<div data-sly-use.model="com.vcm.core.models.ContactVictoryModel" data-sly-unwrap></div>
+<div data-audiencetype="${model.allowedAudience}" class="container">
+	<div class="contactVictory__img">
+	<img src="${model.bgImageDesktopShow}" alt="${model.altText || true}"/>
+
+		<div class="contactVC__container">
+		<div class="content-wrapper">	
+				<div data-sly-test="${model.heading}" class="contact-heading"><h3 class="blueHdng-multiLine-greenBorder ">${model.heading}</h3></div>
+				<div class="contactVC__freeText">
+				<p data-sly-test="${model.description}" class="contactVC__text">${model.description}</p>
+				<div class="navigation-right">
+					<a data-usaa_member-url="${model.linkUrl}" data-financial_professional-url="${model.contactLinkUrlFinancial}" data-institutional_investor-url="${model.contactLinkUrlII}" data-audiencepopup="true" data-sly-test="${model.linkText}" href="${model.linkUrl}" target="${model.tabSelect}" rel="${model.tabSelect == '_blank' ? 'noopener noreferrer' : ''}">${model.linkText}<span aria-hidden="true" class="right--arrow"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>

@@ -1,0 +1,47 @@
+@media screen and (min-width: 1024px) {
+    .funds-list.header-sticky {
+        background: #ffffff;
+    }
+    .funds-list.header-sticky .fixedTabs {
+        position: fixed;
+        top: 0;
+        margin-left: 0 !important;
+        width: 100%;
+        background: #fff;
+        z-index: 9;
+        max-width: 1366px;
+    }
+    .funds-list.header-sticky ul.nav.nav-tabs {
+        position: absolute;
+        background: #fff;
+    }
+    .funds-list.header-sticky .dataTables_scrollHeadInner {
+        position: fixed;
+        top: 49px;
+        z-index: 6;
+        background: #fff;
+    }
+    .funds-list.header-sticky .dataTables_scrollBody.dragscroll {
+        top: 38px;
+    }
+    .funds-list.header-sticky table.DTFC_Cloned thead {
+        display: none;
+    }
+    .funds-list.header-sticky .tab-content .DTFC_LeftBodyWrapper {
+        top: 38px !important;
+    }
+    .funds-list.header-sticky .filter-sidebar-collapse {
+        position: relative;
+        z-index: 99;
+    }
+	.funds-list.header-sticky td.fundscount-width {
+		box-shadow: rgba(0, 0, 0, 0.36) 6px 0 5px -4px;
+		z-index: 99;
+		position: relative;
+	}
+	.funds-list.header-sticky th.etf-assetclass.assetclass.sorting_disabled {
+		box-shadow: rgba(0, 0, 0, 0.36) 6px 3px 6px -4px;
+		z-index: 99;
+		position: relative;
+	}
+}

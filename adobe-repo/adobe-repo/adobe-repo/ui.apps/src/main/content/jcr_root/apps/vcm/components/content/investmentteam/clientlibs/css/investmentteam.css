@@ -1,0 +1,251 @@
+/*corner triangles*/
+
+
+.cnr-triangle-left-lg-skyblue::before,
+.cnr-triangle-left-lg-grey::before,
+.cnr-triangle-left-lg-green::before,
+.cnr-triangle-left-lg-blue::before,
+.cnr-triangle-left-md-skyblue::before,
+.cnr-triangle-left-md-grey::before,
+.cnr-triangle-left-md-green::before,
+.cnr-triangle-left-md-blue::before,
+.cnr-triangle-left-sm-skyblue::before,
+.cnr-triangle-left-sm-grey::before,
+.cnr-triangle-left-sm-green::before,
+.cnr-triangle-left-sm-blue::before,
+.cnr-triangle-left-xs-skyblue::before,
+.cnr-triangle-left-xs-grey::before,
+.cnr-triangle-left-xs-green::before,
+.cnr-triangle-left-xs-blue::before,
+.cnr-triangle-left-sm1-skyblue::before,
+.cnr-triangle-left-sm1-grey::before,
+.cnr-triangle-left-sm1-green::before,
+.cnr-triangle-left-sm1-blue::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+}
+
+.cnr-triangle-left-lg-blue::before,
+.cnr-triangle-left-md-blue::before,
+.cnr-triangle-left-sm-blue::before,
+.cnr-triangle-left-sm1-blue::before,
+.cnr-triangle-left-xs-blue::before,
+.cnr-triangle-right-lg-blue::before,
+.cnr-triangle-right-md-blue::before,
+.cnr-triangle-right-sm-blue::before,
+.cnr-triangle-right-sm1-blue::before,
+.cnr-triangle-right-xs-blue::before {
+    border-top-color: #486D90;
+}
+
+.cnr-triangle-left-lg-skyblue::before,
+.cnr-triangle-left-md-skyblue::before,
+.cnr-triangle-left-sm-skyblue::before,
+.cnr-triangle-right-lg-skyblue::before,
+.cnr-triangle-right-md-skyblue::before,
+.cnr-triangle-right-sm-skyblue::before,
+.cnr-triangle-left-sm1-skyblue::before,
+.cnr-triangle-left-xs-skyblue::before,
+.cnr-triangle-right-sm1-skyblue::before,
+.cnr-triangle-right-xs-skyblue::before {
+    border-top-color: #0070BA;
+}
+
+.cnr-triangle-left-lg-green::before,
+.cnr-triangle-left-md-green::before,
+.cnr-triangle-left-sm-green::before,
+.cnr-triangle-right-lg-green::before,
+.cnr-triangle-right-md-green::before,
+.cnr-triangle-right-sm-green::before,
+.cnr-triangle-left-sm1-green::before,
+.cnr-triangle-left-xs-green::before,
+.cnr-triangle-right-sm1-green::before,
+.cnr-triangle-right-xs-green::before {
+    border-top-color: #8BC105;
+}
+
+.cnr-triangle-left-lg-grey::before,
+.cnr-triangle-left-md-grey::before,
+.cnr-triangle-left-sm-grey::before,
+.cnr-triangle-right-lg-grey::before,
+.cnr-triangle-right-md-grey::before,
+.cnr-triangle-right-sm-grey::before,
+.cnr-triangle-left-sm1-grey::before,
+.cnr-triangle-left-xs-grey::before,
+.cnr-triangle-right-sm1-grey::before,
+.cnr-triangle-right-xs-grey::before {
+    border-top-color: #78818c;
+}
+
+.cnr-triangle-left-xs-skyblue::before,
+.cnr-triangle-left-xs-grey::before,
+.cnr-triangle-left-xs-green::before,
+.cnr-triangle-left-xs-blue::before {
+    border-width: 20px 20px 0 0;
+}
+
+.cnr-triangle-left-sm-skyblue::before,
+.cnr-triangle-left-sm-grey::before,
+.cnr-triangle-left-sm-green::before,
+.cnr-triangle-left-sm-blue::before {
+    border-width: 25px 25px 0 0;
+}
+
+.cnr-triangle-left-sm1-skyblue::before,
+.cnr-triangle-left-sm1-grey::before,
+.cnr-triangle-left-sm1-green::before,
+.cnr-triangle-left-sm1-blue::before {
+    border-width: 32px 32px 0 0;
+}
+
+.cnr-triangle-left-md-skyblue::before,
+.cnr-triangle-left-md-grey::before,
+.cnr-triangle-left-md-green::before,
+.cnr-triangle-left-md-blue::before {
+    border-width: 44px 44px 0 0;
+}
+
+.cnr-triangle-left-lg-skyblue::before,
+.cnr-triangle-left-lg-grey::before,
+.cnr-triangle-left-lg-green::before,
+.cnr-triangle-left-lg-blue::before {
+    border-width: 88px 88px 0 0;
+}
+
+
+
+/*.investment-team-list {
+    position: relative;
+    padding-top: 50px;
+    padding-right: 128px;
+    padding-left: 128px;
+    background-color: #f7f7f7;
+}*/
+
+.lead-bio-block .image-content-block .image-block {
+    -ms-flex: 0 0 26%;
+    flex: 0 0 26%;
+    max-width: 26%;
+}
+
+.lead-bio-block .image-content-block .image-block img{
+    width:227px;
+}
+
+.lead-bio-block .image-content-block .content-block {
+    -ms-flex: 0 0 74%;
+    flex: 0 0 74%;
+    max-width: 74%;
+}
+
+.dummy-block__container.position-relative,
+.investment-team-list {
+    margin-top: 30px !important;
+}
+
+.investment-team-list .link-card .desc {
+    display: inline-block;
+}
+/*content_block*/
+
+.investment-team-list .lead-bio-block .image-content-block h4 {
+    font-family: yorkten-slab-normal, sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 24px;
+    text-align: left;
+    color: #486D90;
+}
+
+.investment-team-list .image-content-block h5 {
+    font-family: benton-sans, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 18px;
+    text-align: left;
+    /*color: #004A98;*/
+}
+
+.investment-team-list .leadname-desg-block h5 {
+    margin-bottom: 10px;
+}
+
+.investment-team-list .leadname-desg-block p {
+    margin: 0;
+}
+
+.bioTitleDescription {
+    display: inline-block !important;
+}
+
+.mt--30{
+    margin-top:-30px;
+}
+.mt-30{
+    margin-top:30px;
+}
+
+/*Tablet only*/
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .lead-bio-block .image-content-block .image-block {
+        -ms-flex: 0 0 32%;
+        flex: 0 0 32%;
+        max-width: 32%;
+    }
+    .lead-bio-block .image-content-block .image-block img {
+        width: 190px;
+    }
+    .lead-bio-block .image-content-block .content-block {
+        -ms-flex: 0 0 68%;
+        flex: 0 0 68%;
+        max-width: 68%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+
+/*mobile only*/
+
+@media screen and (max-width: 767px) {
+    .investment-team-list {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .lead-bio-block .image-content-block .image-block img {
+        width:202px;
+    }
+    .investment-team-list .image-content-block img {
+        margin-bottom: 30px;
+    }
+	.investment-list.halfwidth div:last-child{
+        margin-bottom:7px;
+    }
+	.image-content-block .image-block,
+    .image-content-block .content-block {
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .image-content-block .image-block img {
+        width: 202px;
+    }
+    .image-content-block .content-block p:nth-last-of-type(1) {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .dummy-block__container.position-relative,
+    .investment-team-list {
+        margin-top: 30px;
+    }
+}

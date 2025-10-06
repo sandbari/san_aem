@@ -1,0 +1,223 @@
+.IRM-bio h3.title {
+    font-family: benton-sans, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #49494A;
+    font-weight: 800;
+}
+
+.IRM-bio p a {
+    text-decoration: underline;
+    font: 18px/24px benton-sans, sans-serif;
+    letter-spacing: 0px;
+    color: #004A98;
+	font-weight: 600;
+    word-break: break-all;
+}
+
+.IRM-bio .tit-pad {
+    padding-top: 10px;
+}
+
+.IRM-profile-bio {
+    margin-bottom: 15px;
+    clear: both;
+    min-height: 160px;
+}
+
+.IRM-profile-bio img {
+    margin-right: 30px;
+    width: 160px;
+}
+
+.IRM-profile-bio p {
+    font-family: benton-sans, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #49494A;
+}
+
+.IRM-bio p.phoneno {
+    color: #49494A;
+    margin: 0;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.IRM-contct {
+    padding: 0 25px 0px 25px;
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+    height: 100%;
+    min-height: 116px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.no-undrline {
+    text-decoration: none;
+}
+
+.IRM-contct p {
+    font-weight: normal;
+}
+
+.IRM-profile-bio .image-block {
+    float: left;
+}
+
+.IRM-profile-bio .content-block {
+    display: inline-block;
+    width: 55%;
+}
+
+.IRM-profile-bio:first-of-type {
+    margin-top: 64px;
+}
+
+.IRM-contct h3 {
+    padding-top: 25px;
+}
+
+.IRM-bio p.phoneno {
+    margin-top: 20px;
+}
+
+.IRM-contct p.phoneno {
+    margin-top: 0;
+}
+
+.IRM-bio {
+    margin: 0 auto;
+    width: 455px;
+}
+
+.content-wrapper.contactus-wrapper .text {
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width:991px) {
+    .IRM-contct {
+        width: 100%;
+    }
+    .IRM-profile-bio .content-block {
+        margin-top: 15px;
+    }
+    .IRM-bio p.phoneno {
+        margin-top: 0;
+    }
+    .IRM-profile-bio .content-block p.mb-4 {
+        margin-bottom: 10px !important;
+    }
+    .IRM-bio {
+        width: 100%;
+        margin: 0;
+    }
+    .content-wrapper.contactus-wrapper .st-contact-container {
+        width: 100%;
+        padding-top: 0;
+        clear: both;
+    }
+    .content-wrapper.contactus-wrapper .text {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .IRM-bio .tit-pad {
+        padding-top: 0px;
+    }
+    .IRM-profile-bio img {
+        margin-right: 15px;
+    }
+    .IRM-profile-bio {
+        padding-bottom: 15px;
+    }
+    .IRM-bio p.phoneno {
+        color: #004A98;
+        ;
+        margin: 12px 0;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    .no-undrline {
+        text-decoration: none !important;
+    }
+    .IRM-contct {
+        width: 100%;
+        min-height: 142px;
+    }
+    .IRM-profile-bio:first-of-type {
+        margin-bottom: 41px;
+    }
+    .content-wrapper.contactus-wrapper .st-contact-container {
+        width: 100%;
+        padding-top: 0;
+    }
+    .content-wrapper.contactus-wrapper .text {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+    }
+	.IRM-profile-bio .content-block {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width:991px) {
+    .content-wrapper  .st-contact-container {
+        float:left !important;
+    }
+    .content-wrapper.contactus-wrapper  .st-contact-container {
+        width: 440px;
+        padding-top: 0;
+        float:left !important;
+    }
+    .contactusmanagers{
+        clear: both;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .content-wrapper.contactus-wrapper .text {
+        width: 550px;
+        margin-right: 88px;
+        float: right;
+    }
+	.IRM-profile-bio .content-block {
+        width: 55%;
+    }
+         .content-wrapper.contactus-wrapper  .st-contact-container {
+        width: 440px;
+        padding-top: 0;
+        float:right !important;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .content-wrapper.contactus-wrapper {
+        margin: 0 auto !important;
+        max-width: 1366px !important;
+        width: 100%!Important;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    /*.content-wrapper {
+        width: 100%;
+    }*/
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    .content-wrapper.contactus-wrapper .text {
+        width: auto;
+        margin-right: 0;
+        float: none;
+    }
+	.IRM-profile-bio .content-block {
+        width: 42%;
+    }
+}

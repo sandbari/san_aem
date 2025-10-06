@@ -1,0 +1,33 @@
+<sly data-sly-test.author="${wcmmode.edit}"> Edit FAQ list Component </sly>
+
+<sly data-sly-use.faqmodel="com.vcm.core.models.FaqListModel"></sly>
+
+<div class="col-sm-12 col-md-12 col-lg-12 faq-ver" id="accordion">
+	<div class="acc-content-s-h">
+		<div class="col-xs-12 col-md-12 accordionContainer">
+			<div>
+				<h3 class="blueHdng-greenBorder">${faqmodel.headText}</h3>
+
+				<sly data-sly-list="${faqModel.FAQs}">
+					<div class="card ">
+						<div class="card-header collapsed" data-toggle="collapse" href="#faqElement-${itemList.count}" role="button" tabindex="0" aria-expanded="false">
+							<div class="card-link" style="display: inline-block;">
+								${item.question}  
+								<p class="underline-black-2 mt-1"></p>
+							</div>
+							<div class="accordionIconMain accordionPlusIcon" style="display: inline-block;"></div>
+						</div>
+						<div id="faqElement-${itemList.count}" class="collapse" data-parent="#accordion" style="">
+							<div class="card-body">${item.answer}</div>
+						</div>
+					</div>
+				</sly>
+
+					<a data-sly-test="${faqmodel.seeAllText}" href="${faqmodel.seeAllUrl}" aria-label="${faqmodel.linkAriaLabel}" target="${faqmodel.tabSelect}" rel="${faqmodel.tabSelect == '_blank' ? 'noopener noreferrer' : ''}" class="loadMore"><p class="viewall"> ${faqmodel.seeAllText} </p>
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+

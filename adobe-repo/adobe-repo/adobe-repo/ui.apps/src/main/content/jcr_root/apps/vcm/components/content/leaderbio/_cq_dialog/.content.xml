@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="LeaderBioComponent Authoring Dialog "
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Reusable Footer Configuration Tabs"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <picture
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Picture"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <biopicture
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldDescription="To upload DAM image asset for the bio picture "
+                                                    fieldLabel="Bio Picture"
+                                                    name="./bioPicture"
+                                                    rootPath="/content/"/>
+                                            <alttext
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="To author the alt text for the picture "
+                                                    fieldLabel="Alt Text"
+                                                    name="./altText"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </picture>
+                    <portfolio
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Portfolio Info "
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <fullname
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="To author full name of the leader "
+                                                    fieldLabel="Full Name"
+                                                    name="./fullname"
+                                                    required="true"/>
+                                            <titleabbreviation
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="To author the abbreviated title of the leader (e.g CFA, CAIA)  "
+                                                    fieldLabel="Title Abbreviation"
+                                                    name="./titleAbbreviation"/>
+                                            <titledescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="To author the full text of the title (e.g. Chief Investment Officer - NewBridge Asset Management) "
+                                                    fieldLabel="Title Description"
+                                                    name="./titleDescription"/>
+                                            <designation
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="To author the leader's position in the organization (e.g. Senior Portfolio Manager)"
+                                                    fieldLabel="Designation"
+                                                    name="./designation"/>
+                                            <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="To author the  profile details or job description of the leader in the organization "
+                                                    fieldLabel="Profile Description"
+                                                    name="./profileDescription"
+                                                    required="true"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </description>
+                                            <shortdescription
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="To author the short description of the leader that should appear in the landing page. "
+                                                    fieldLabel="Short Description"
+                                                    name="./shortDescription"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </shortdescription>
+                                            <showback
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    checked="${not empty cqDesign.showback ? cqDesign.showback : false}"
+                                                    fieldDescription="Show Back button"
+                                                    name="./linkText"
+                                                    text="Show Back button"
+                                                    uncheckedValue="false"
+                                                    value="Back"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </portfolio>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

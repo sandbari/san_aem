@@ -1,0 +1,68 @@
+.distribution-table-data {
+    position: relative;
+}
+
+.product-details .distribution-table-data {
+    display: block;
+}
+
+.product-details table tfoot tr {
+    background-color: #D2D2D2;
+}
+
+.product-details table tfoot th {
+    border: none;
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+}
+
+.table.distributions-table tfoot tr td{
+    text-align: end;
+}
+
+.product-details .table.distributions-table thead th{
+	 min-width: 220px;
+
+ }
+.product-details table.distributions-table th:first-child, .product-details table.distributions-table tbody tr td:first-child {
+    min-width: auto;
+    text-align: left;
+}
+
+.distribution .heading {
+    	margin: 5px 0 15px;
+}
+
+.distribution {
+    position: relative;
+}
+
+.dynamic-loader-distribution {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+@media screen and (min-width:1024px) {
+    .product-details .distribution-table-data {
+        display: block;
+    }
+    .product-details .table.distributions-table thead th{
+    	min-width: auto;
+    }
+    .distribution .heading {
+    	margin: 5px 0 15px;
+	}
+	.product-details .table.distributions-table thead th:nth-child(5){
+        min-width: 102px;
+    }
+    .product-details .table.distributions-table thead th:nth-child(6) {
+        min-width: 107px;
+    }
+   .distributions-component .distribution-table-data .table-wrap{
+        overflow-x:visible;
+    }
+}

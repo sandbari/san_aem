@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+  jcr:primaryType="nt:unstructured"
+    jcr:title="Contact Details Authoring Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+     extraClientlibs="[acs-commons.widgets.showhidedialogfields]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <phoneContact
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Phone Contact"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <type
+                                                jcr:primaryType="nt:unstructured"
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="View Type"
+                                                name="./viewType">
+                                                 <granite:data
+		                                            jcr:primaryType="nt:unstructured"
+		                                            acs-cq-dialog-dropdown-checkbox-showhide=""
+		                                            acs-cq-dialog-dropdown-checkbox-showhide-target=".contactus-container-showhide-target"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <full
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Detail View"
+                                                        value="full"/>
+                                                    <short
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Short View"
+                                                        value="short"/>
+                                                    <staticView
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Static View"
+                                                        value="staticView"/>
+                                                </items>
+                                            </type>
+                                            <phonesectionheading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author the section heading &quot;By phone&quot; "
+                                                fieldLabel="Section Heading"
+                                                name="./phoneSectionHeading"/>
+											<hideChart
+												granite:class="hide contactus-container-showhide-target"
+												jcr:primaryType="nt:unstructured"
+												sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+												checked="${not empty cqDesign.hideChart? cqDesign.hideChart: false}"
+												fieldDescription="Hide Chart"
+												name="./hideChart"
+												text="Hide Chart"
+												uncheckedValue="false"
+												value="true">
+												<granite:data
+														jcr:primaryType="nt:unstructured"
+														acs-dropdownshowhidetargetvalue="full"/>
+											</hideChart>
+                                            <phoneConfig
+		                                        jcr:primaryType="nt:unstructured"
+		                                        granite:class="hide contactus-container-showhide-target"
+		                                        jcr:title="Phone config"
+		                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+		                                         <granite:data
+		                                            jcr:primaryType="nt:unstructured"
+		                                            acs-dropdownshowhidetargetvalue="full short"/>
+	                                             <items jcr:primaryType="nt:unstructured">
+		                                            <phoneiconimage
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+		                                                fieldDescription="To upload the phone icon image from DAM"
+		                                                fieldLabel="Phone Icon Image"
+		                                                name="./phoneIconImage"
+		                                                rootPath="/content"/>
+		                                            <alttextphone
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the alt text for phone icon"
+		                                                fieldLabel="alt text for phone icon"
+		                                                name="./altTextPhone"/>
+		                                            <phonenumber
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the phone number"
+		                                                fieldLabel="Phone Number"
+		                                                name="./phoneNumber"/>
+													 <internationaltext
+														 jcr:primaryType="nt:unstructured"
+														 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+														 fieldDescription="To author the international text"
+														 fieldLabel="International Text"
+														 name="./internationalText"/>
+													 <internationalnumber
+														 jcr:primaryType="nt:unstructured"
+														 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+														 fieldDescription="To author the international number"
+														 fieldLabel="International Number"
+														 name="./internationalNumber"/>
+													 <todayopenhourstext
+														 jcr:primaryType="nt:unstructured"
+														 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+														 fieldDescription="To author the text &quot;Today&quot; "
+														 fieldLabel="Today Open Hours Text"
+														 name="./todayOpenHoursText"/>
+		                                           </items>
+		                                     </phoneConfig>
+                                             <phoneStaticConfig
+		                                        jcr:primaryType="nt:unstructured"
+		                                        granite:class="hide contactus-container-showhide-target"
+		                                        jcr:title="Phone config"
+		                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+		                                         <granite:data
+		                                            jcr:primaryType="nt:unstructured"
+		                                            acs-dropdownshowhidetargetvalue="staticView"/>
+	                                             <items jcr:primaryType="nt:unstructured">
+	                                             	<phoneiconimage
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+		                                                fieldDescription="To upload the phone icon image from DAM"
+		                                                fieldLabel="Phone Icon Image"
+		                                                name="./staticPhoneIconImage"
+		                                                rootPath="/content"/>
+		                                            <alttextphone
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the alt text for phone icon"
+		                                                fieldLabel="alt text for phone icon"
+		                                                name="./staticAltTextPhone"/>
+		                                            <phonelist
+								                        jcr:primaryType="nt:unstructured"
+								                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+								                        allowBlank="false"
+								                        composite="{Boolean}true"
+								                        fieldLabel="Contact Number list">
+								                        <field
+								                            jcr:primaryType="nt:unstructured"
+								                            sling:resourceType="granite/ui/components/coral/foundation/container"
+								                            name="./phoneList">
+								                            <items jcr:primaryType="nt:unstructured">
+								                                <column
+								                                    jcr:primaryType="nt:unstructured"
+								                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+								                                    <items jcr:primaryType="nt:unstructured">
+							                                            <phonenumber
+							                                                jcr:primaryType="nt:unstructured"
+							                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+							                                                fieldDescription="To author the phone number"
+							                                                fieldLabel="Phone Number"
+							                                                name="./staticPhoneNumber"/>
+							                                            <openTimeText
+							                                                jcr:primaryType="nt:unstructured"
+							                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+							                                                fieldDescription="To author the phone number"
+							                                                fieldLabel="Open Timing"
+							                                                name="./staticOpenText"/>
+							                                         </items>
+							                                    </column>
+							                                </items>
+							                             </field>
+							                           </phonelist>
+		                                           </items>
+		                                     </phoneStaticConfig>
+                                            <mailConfig
+		                                        jcr:primaryType="nt:unstructured"
+		                                        granite:class="hide contactus-container-showhide-target"
+		                                        jcr:title="Mail config"
+		                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+		                                         <granite:data
+		                                            jcr:primaryType="nt:unstructured"
+		                                            acs-dropdownshowhidetargetvalue="full staticView"/>
+	                                             <items jcr:primaryType="nt:unstructured">
+		                                            <mail
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the Email"
+		                                                fieldLabel="Email"
+		                                                name="./email">
+		                                                <granite:data
+		                                                    jcr:primaryType="nt:unstructured"
+		                                                    cqDialogDropdownShowhideTarget=""/>
+		                                           </mail>
+		                                            <emailiconimage
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+		                                                fieldDescription="To upload the Email icon image from DAM"
+		                                                fieldLabel="Email Icon Image"
+		                                                name="./emailIconImage"
+		                                                rootPath="/content/dam"/>
+		                                            <alttextemail
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the alt text for email icon"
+		                                                fieldLabel="alt text for email icon"
+		                                                name="./altTextEmail"/>
+													 <faxnumber
+														 jcr:primaryType="nt:unstructured"
+														 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+														 fieldDescription="To author the fax number"
+														 fieldLabel="Fax Number"
+														 name="./faxNumber"/>
+		                                          </items>
+	                                       </mailConfig>
+                                           <charLabel
+		                                        jcr:primaryType="nt:unstructured"
+		                                        granite:class="hide contactus-container-showhide-target"
+		                                        jcr:title="Chart view Label config"
+		                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+		                                         <granite:data
+		                                            jcr:primaryType="nt:unstructured"
+		                                            acs-dropdownshowhidetargetvalue="full"/>
+		                                         <items jcr:primaryType="nt:unstructured">
+		                                            <openinfotext
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the info text &quot;Open Now&quot; "
+		                                                fieldLabel="Open Info Text"
+		                                                name="./openInfoText"/>
+		                                            <closedinfotext
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the info text &quot;Closed Now&quot; "
+		                                                fieldLabel="Closed Info Text"
+		                                                name="./closedInfoText"/>
+		                                            <hourstext
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the  text &quot;Hours&quot;"
+		                                                fieldLabel="Hours Text"
+		                                                name="./hoursText"/>
+		                                            <mondaytofridaytext
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the  text &quot;Monday-Friday&quot;"
+		                                                fieldLabel="Monday-Friday Text"
+		                                                name="./mondayToFridayText"/>
+		                                            <mondaytofridayopenhours
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the open hours for Monday-Friday"
+		                                                fieldLabel="Monday-Friday Open Hours"
+		                                                name="./mondayToFridayOpenHours"/>
+		                                            <currentwaittimetext
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="To author the text &quot;Current wait time&quot; "
+		                                                fieldLabel="Current Wait Time Text"
+		                                                name="./currentWaitTimeText"/>
+		                                           </items>
+		                                       </charLabel>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </phoneContact>
+                    <mailContact
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Mail Contact"
+                        granite:class="hide contactus-container-showhide-target"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <granite:data
+                           jcr:primaryType="nt:unstructured"
+                           acs-dropdownshowhidetargetvalue="full staticView"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <mailsectionheading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author the section heading &quot;By mail&quot; "
+                                                fieldLabel="Mail Section Heading"
+                                                name="./mailSectionHeading"/>
+                                            <mailiconimage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="To upload the mail icon image from DAM  "
+                                                fieldLabel="Mail Icon Image"
+                                                name="./mailiconImage"
+                                                rootPath="/content"/>
+                                            <alttextmail
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author the alt text for mail icon"
+                                                fieldLabel="alt text for mail icon"
+                                                name="./altTextMail"/>
+                                            <mailingaddressheading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author the mailing address Heading"
+                                                fieldLabel="Mailing Address Heading"
+                                                name="./mailingAddressHeading"/>
+                                            <mailingaddress
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="To author the mailing address text"
+                                                fieldLabel="Mailing Address"
+                                                name="./mailingAddress"
+                                                useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                            </mailingaddress>
+                                            <linktext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="To author the link text for &quot;Mailing a check? See how&quot; "
+                                                fieldLabel="Link Text"
+                                                name="./linkText"/>
+                                            <linkurl
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="To author page link for the link"
+                                                fieldLabel="Link URL"
+                                                name="./linkURL"
+                                                rootPath="/content/vcm"/>
+                                            <tabselect
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="To author target for link to be open in same tab or new tab"
+                                                fieldLabel="Target"
+                                                name="./tabSelect">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sametab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Same tab"
+                                                        value="_self"/>
+                                                    <newtab
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="New tab"
+                                                        value="_blank"/>
+                                                </items>
+                                            </tabselect>
+                                            <popupoverlaycontent
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="To author popup overlay content"
+                                                fieldLabel="Attach Popup overlay content"
+                                                name="./popupOverlayContentPath"
+                                                rootPath="/content/dam/vcm">
+                                            </popupoverlaycontent>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </mailContact>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

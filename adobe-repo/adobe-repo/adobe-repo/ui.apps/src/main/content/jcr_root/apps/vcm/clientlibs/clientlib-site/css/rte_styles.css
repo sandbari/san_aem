@@ -1,0 +1,52 @@
+.cmp-text table,
+.rte-desc table,
+.rte-table table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.cmp-text table th,
+.rte-desc table th,
+.rte-table table th,
+.cmp-text table td,
+.rte-desc table td,
+.rte-table table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-bottom: 1px solid #dee2e6;
+    letter-spacing: 0;
+    color: #49494A;
+    vertical-align: bottom;
+}
+
+.cmp-text table th,
+.rte-desc table th,
+.rte-table table th {
+    border-bottom: 2px solid #8BC105;
+    font: Bold 14px/20px benton-sans, sans-serif;
+    text-transform: capitalize;
+}
+
+.cmp-text table td,
+.rte-desc table td,
+.rte-table table td {
+    font: normal 14px/20px benton-sans, sans-serif;
+}
+
+.cmp-text table tbody tr:nth-of-type(even),
+.rte-desc table tbody tr:nth-of-type(even),
+.rte-table table tbody tr:nth-of-type(even) {
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+}
+
+.cmp-text caption,
+.rte-desc caption,
+.rte-table caption {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #6c757d;
+    text-align: left;
+    caption-side: bottom;
+}

@@ -1,0 +1,54 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "admin",
+	"jcr:lastModifiedBy": "admin",
+	"contentType": "titledescription",
+	"jcr:created": "Mon Mar 09 2020 18:20:27 GMT+0530",
+	"title": "Our Products",
+	"jcr:lastModified": "Tue Mar 10 2020 11:16:39 GMT+0530",
+	"sling:resourceType": "vcm/components/content/ourproducts",
+	"textIsRich": ["true", "true", "true", "true"],
+	"productList": {
+		"jcr:primaryType": "nt:unstructured",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productDescription": "<p>Your shares in USAA-branded funds still belong to you, and now the funds are run by Victory Capital.</p>\r\n",
+			"productButtonLink": "/content/vcm/us/en/products/mutual-funds",
+			"productHeading": "USAA Mutual<br>Funds",
+			"tabSelect": "_self",
+			"desktopButtonText": "See More",
+			"tabletButtonText": "Overview"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productDescription": "<p>Your shares in USAA-branded funds still belong to you, and now the funds are run by Victory Capital.</p>\r\n",
+			"productButtonLink": "/content/vcm/language-masters/en/products/victory-shares-etfs",
+			"productHeading": "VictoryShares®<br>ETFs",
+			"tabSelect": "_self",
+			"desktopButtonText": "See More",
+			"tabletButtonText": "Overview"
+		},
+		"item2": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productDescription": "<p>Your shares in USAA-branded funds still belong to you, and now the funds are run by Victory Capital.</p>\r\n",
+			"productButtonLink": "/content/vcm/language-masters/en/products/retirement",
+			"productHeading": "Retirement<br>Products",
+			"tabSelect": "_self",
+			"desktopButtonText": "See More",
+			"tabletButtonText": "Overview"
+		},
+		"item3": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productDescription": "<p>Your shares in USAA-branded funds still belong to you, and now the funds are run by Victory Capital.</p>\r\n",
+			"productButtonLink": "/content/vcm/language-masters/en/products/usaa-529-education-savings-plan",
+			"productHeading": "USAA 529<br>College Savings<br>Plan",
+			"tabSelect": "_self",
+			"desktopButtonText": "See More",
+			"tabletButtonText": "Overview"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+"jcr:primaryType": "dam:Asset",
+"jcr:mixinTypes": [
+"mix:referenceable"
+],
+"jcr:createdBy": "admin",
+"jcr:created": "Wed Feb 05 2020 08:00:55 GMT+0530",
+"jcr:uuid": "11ccd0ba-1b88-47ae-a1ac-b3e99e7949da"
+}

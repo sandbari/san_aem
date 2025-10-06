@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	jcr:primaryType="sling:OsgiConfig"
+	linkRewriterValues="[/content/dam/vcm:/assets]"
+	extensionlessDomainValues="[vcm-dev-aem65.adobecqms.net,dev.vcm.com,dev.institutional.vcm.com,dev.advisor.vcm.com,dev.investor.vcm.com,qa.vcm.com,qa.institutional.vcm.com,qa.advisor.vcm.com,qa.investor.vcm.com,stage.vcm.com,stage.vcm.com,stage.institutional.vcm.com,stage.advisor.vcm.com,stage.investor.vcm.com,vcm.com,investor.vcm.com,advisor.vcm.com,institutional.vcm.com]"
+/>

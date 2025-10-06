@@ -1,0 +1,60 @@
+{
+	"jcr:primaryType": "nt:unstructured",
+	"jcr:createdBy": "admin",
+	"mobileImage": "/content/dam/vcm/our-products/OurProductsBg-mobile.png",
+	"itemsInFirstRow": "3",
+	"jcr:lastModifiedBy": "admin",
+	"contentType": "title",
+	"jcr:created": "Mon Feb 10 2020 12:55:56 GMT+0530",
+	"title": "Our Products",
+	"jcr:lastModified": "Tue Mar 03 2020 17:16:30 GMT+0530",
+	"desktopImage": "/content/dam/vcm/ourproducts/OurProductsBg-mobile.png",
+	"sling:resourceType": "vcm/components/content/ourproducts",
+	"cq:styleIds": ["1583216482256"],
+	"productList": {
+		"jcr:primaryType": "nt:unstructured",
+		"item0": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productLink": "/content/vcm/en/investment-franchise",
+			"productTitle": "Mutual Funds",
+			"audienceType":"usaa_member, financial_professional, institutional_investor",
+			"tabSelect": "_self",
+			"ismultiTargetLink": "true",
+			"memberProductLink": "/content/vcm/language-masters/en/member",
+			"financialProductlink": "/content/vcm/language-masters/en/financial-professional",
+			"iiProductlink": "/content/vcm/language-masters/en/institutional-investor",
+			"linkDescription": "Link Desc",
+			"descTabSelect": "Tab Select"
+		},
+		"item1": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productLink": "/content/vcm/en/investment-franchise",
+			"productTitle": "VictoryShares® <br>ETFs",
+			"audienceType":"usaa_member, financial_professional, institutional_investor",
+			"tabSelect": "_self"
+		},
+		"item2": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productTitle": "Retirement",
+			"audienceType":"usaa_member, financial_professional, institutional_investor",
+			"tabSelect": "_self"
+		},
+		"item3": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productTitle": "USA 529 Education<br> Saving Plans",
+			"audienceType":"usaa_member, financial_professional, institutional_investor",
+			"tabSelect": "_self"
+		},
+		"item4": {
+			"jcr:primaryType": "nt:unstructured",
+			"popUpType": "audienceSelector",
+			"productTitle": "Mutual Funds<br> Mutual funds",
+			"audienceType":"usaa_member, financial_professional, institutional_investor",
+			"tabSelect": "_self"
+		}
+	}
+}

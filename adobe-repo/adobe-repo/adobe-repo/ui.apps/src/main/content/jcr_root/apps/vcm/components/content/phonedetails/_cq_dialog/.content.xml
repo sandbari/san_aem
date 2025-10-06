@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Phone Details Authoring Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[acs-commons.widgets.showhidedialogfields,vcm.phone-validation]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <phoneContact
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Phone Contact"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <phoneConfig
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Phone Config"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <rte
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldLabel="Header Text"
+                                                        name="./phoneConfig"
+                                                        useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                        <uiSettings
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                                    </rte>
+                                                    <phoneLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldLabel="Phone Link"
+                                                        name="./phoneLink"
+                                                        useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                        <uiSettings
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                                    </phoneLink>
+                                                </items>
+                                            </phoneConfig>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </phoneContact>
+                    <segment
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Other Segment"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                        <items jcr:primaryType="nt:unstructured">
+                            <configs
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="Define the different options"
+                                fieldLabel="Segments"
+                                renderReadOnly="{Boolean}true">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./segmentList">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <rte
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                            fieldLabel="Segment"
+                                            name="./segmentConfig"
+                                            useFixedInlineToolbar="{Boolean}true">
+                                            <rtePlugins
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                            <uiSettings
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                        </rte>
+                                    </items>
+                                </field>
+                            </configs>
+                        </items>
+                    </segment>
+                    <tfnConfig
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="TFN Config"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <config
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="TFN Config"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <mode
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldDescription="Choose display type"
+                                                        fieldLabel="Display Mode"
+                                                        name="./displayMode">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <contact
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Contact Page"
+                                                                value="contact"/>
+                                                            <tollfree
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Toll Free Page"
+                                                                value="tfn"/>
+                                                        </items>
+                                                    </mode>
+                                                    <backToContactLink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldLabel="Back to Contact Link"
+                                                        name="./backToContactLink"
+                                                        useFixedInlineToolbar="{Boolean}true">
+                                                        <rtePlugins
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/vcm/components/content/common/rtePlugins"/>
+                                                        <uiSettings
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceSuperType="/apps/vcm/components/content/common/uiSettings"/>
+                                                    </backToContactLink>
+                                                    <phones
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        fieldDescription="Define the different options"
+                                                        fieldLabel="Phone Numbers"
+                                                        renderReadOnly="{Boolean}true">
+                                                        <field
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./phoneList">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <country
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Title"
+                                                                    name="./staticOpenText"
+                                                                    required="true"
+                                                                    validation="[country-name-number]">
+                                                                    <granite:data
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        pattern="no-validation"/>
+                                                                </country>
+                                                                <number
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Phone"
+                                                                    name="./staticPhoneNumber"
+                                                                    pattern="numeric"
+                                                                    required="true"
+                                                                    validation="[country-name-number]">
+                                                                    <granite:data
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        pattern="phone"/>
+                                                                </number>
+                                                            </items>
+                                                        </field>
+                                                    </phones>
+                                                </items>
+                                            </config>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </tfnConfig>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

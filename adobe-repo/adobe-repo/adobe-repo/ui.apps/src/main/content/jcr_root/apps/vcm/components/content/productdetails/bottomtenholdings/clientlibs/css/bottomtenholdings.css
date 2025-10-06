@@ -1,0 +1,71 @@
+.row.bottom-row {
+    padding: 15px;
+    background: #4f799f;
+}
+
+.row.bottom-row p {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+}
+
+table.table.bottom-10-holdings-table {
+    margin-bottom: 0;
+}
+
+.bottomtenholdings .heading {
+    margin: 15px 0 0;
+}
+.bottomtenholdings .bottom-row .heading {
+    margin: 0;
+}
+
+.product-details table.table.bottom-ten-holdings-table th:first-child,
+	.product-details table.table.bottom-ten-holdings-table tbody tr td:first-child
+	{
+	max-width: none;
+}
+
+.bottom-holding-component .bottom-row .heading span {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: benton-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+.bottom-row .heading {
+    width: 100%;
+}
+
+.bottomten-holdings-portfolio-label {
+    float: left;
+}
+
+.bottomten-holdings-portfolio-value {
+    float: right;
+}
+
+/* table style ends */
+
+@media screen and (min-width:1024px) {
+	.row.bottom-row {
+		margin: 0;
+	}
+	.bottom-row .heading span {
+		right: 30px;
+	}
+	.bottomtenholdings .heading {
+        margin: 0 0 15px;
+    }
+	.bottomtenholdings .table-wrap {
+            margin-bottom: 0;
+    }
+    .bottomtenholdings .visual-container {
+        margin-bottom: 30px;
+    }
+}

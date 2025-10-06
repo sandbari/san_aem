@@ -1,0 +1,44 @@
+name: Sync to Adobe Git
+
+on:
+  push:
+    branches:
+      - develop   # Only run when develop branch is updated
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout GitHub repo
+      - name: Checkout GitHub repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history needed for pushes
+
+      # Set up Git identity
+      - name: Configure Git
+        run: |
+          git config --global user.name "${{ secrets.ADOBE_GIT_USERNAME }}"
+          git config --global user.email "${{ secrets.ADOBE_GIT_USERNAME }}@gmail.com"
+
+      # Clone Adobe repo with credentials
+      - name: Clone Adobe repo
+        run: |
+          git clone https://${{ secrets.ADOBE_GIT_USERNAME }}:${{ secrets.ADOBE_GIT_PASSWORD }}@${{ secrets.ADOBE_GIT_URL }} adobe-repo
+
+      # Sync develop branch
+      - name: Sync develop branch
+        run: |
+          cd adobe-repo
+          git checkout develop || git checkout -b develop
+          git pull origin develop || true
+          cd ..
+
+          # Copy GitHub repo contents into Adobe repo
+          rsync -av --exclude='.git' ./ ./adobe-repo/
+
+          cd adobe-repo
+          git add .
+          git commit -m "Sync from GitHub develop branch" || echo "No changes to commit"
+          git push origin develop

@@ -1,0 +1,21 @@
+.averagelifestructure .heading {
+    margin: 15px 0 0;
+}
+.average-life-chart-wrapper .average-asset-data {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .product-details .average-asset-data,.averageClassHead,.averagelifestructure .align-right, .average-life-chart-wrapper {
+        display: block;
+    }
+    .averagelifestructure .heading {
+        margin: 5px 0 25px;
+    }
+    .averagelifestructure .product-details .pdg-24 {
+   		padding: 24px 0 0;
+	}
+	.average-life-table-wrapper{
+	    display: none;
+	}
+}

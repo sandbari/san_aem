@@ -1,0 +1,6 @@
+#base=js
+jquery.dataTables.min.js
+dataTables.fixedColumns.min.js
+dataTables.buttons.min.js
+buttons.html5.min.js
+dataTables.pageLoadMore.min.js

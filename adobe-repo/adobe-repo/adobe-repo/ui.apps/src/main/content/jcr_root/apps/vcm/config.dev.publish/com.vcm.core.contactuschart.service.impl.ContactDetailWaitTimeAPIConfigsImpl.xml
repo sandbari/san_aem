@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    WaitTimeHistoryEndpoint="https://api.usw2.pure.cloud/api/v2/analytics/conversations/aggregates/query"
+	WaitTimeHistoryInterval="30"
+	WaitTimeHistoryQueueId="34024a0e-3a6b-40e3-a584-dca72807c6a6"
+	currentWaitTimeEndpoint="https://api.usw2.pure.cloud/api/v2/routing/queues/34024a0e-3a6b-40e3-a584-dca72807c6a6/estimatedwaittime"
+	openHoursScheduleEndpoint="https://api.usw2.pure.cloud/api/v2/architect/schedules/"
+	openHoursScheduleFilePath="/content/dam/vcm/configs/openHours-data.json"
+	openHoursScheduleGroupEndpoint="https://api.usw2.pure.cloud/api/v2/architect/schedulegroups/"
+	scheduleGroupId="ab909f0d-50fe-42d2-a819-7a90194947fb"
+	waitTimeChartFilePath="/content/dam/vcm/configs/chart-data.json"
+	genesysSuccessFromEmailAddress="genesys-api-success@notification.vcm.com"
+	genesysFailureFromEmailAddress="genesys-api-failure@notification.vcm.com"
+	genesysToEmailAddressList="[Venkatesan.Mohanam@cognizant.com,Narinder.Aggarwal@cognizant.com,Vignesh.M2@cognizant.com]"
+	waitTimeEmailTemplatePath="/etc/notification/email/vcm/wait-time-job-status-email.txt"
+	openHoursEmailTemplatePath="/etc/notification/email/vcm/openHours-job-status-email.txt"/>
+	

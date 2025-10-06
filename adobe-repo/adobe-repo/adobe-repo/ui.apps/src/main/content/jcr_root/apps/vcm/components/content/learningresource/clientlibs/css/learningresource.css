@@ -1,0 +1,181 @@
+.advice-tool {
+    margin-top: 30px;
+}
+
+.image-heading-card-small {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 0;
+}
+
+.image-heading-card-small p {
+    position: absolute;
+    bottom: 0px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Yorkten Slab;
+    color: #fff;
+    padding-left: 8px;
+    line-height: 18px;
+    width: 75%;
+}
+
+.advice-tool h3 {
+    color: #486D90;
+    font-size: 22px;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 0;
+    line-height: 32px;
+}
+
+.advice--para {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 27px;
+    margin: 0;
+    padding-right: 15px;
+}
+
+.advice--anchor {
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.text-rightArrow::after {
+    content: "";
+    background: url('/content/dam/vcm/author-able/right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-left: 45px;
+    padding-bottom: 16px;
+    padding-top: 20px;
+    display: inline;
+}
+
+.learningresource .right--arrow {
+	position: absolute;
+}
+
+.advice-tool .row {
+    margin: 0;
+}
+
+.advice-tool .image-heading-card-small:nth-child(even) {
+    padding-right: 0;
+}
+
+.advice-tool {
+    padding-right: 0;
+}
+
+.advice-tool .card-image-hdng-small{
+    margin-bottom: 15px;
+}
+.advice-tool .row .col-6.col-md-4:nth-child(even){padding-left:7px;}
+.advice-tool .row .col-6.col-md-4:nth-child(odd){padding-right:7px;}
+.advice-tool .card-image-hdng-small h3 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 18px;
+    width: 148px;
+}
+
+.advice-tool .card-image-hdng-small img.img-fluid {
+    width: 100%;
+}
+
+.advice-tool .card-image-hdng-small .card__img__wrapper {
+    max-width: 100%;
+}
+
+/* .advice-tool .card-image-hdng-small:hover img {
+    opacity:0.5;
+} */
+.advice-tool .col-12.col-md-12.col-lg-6:nth-child(even) {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media only screen and (min-width: 1025px) {
+    .advice--para {
+        padding-top: 35px;
+    }
+    .advice-tool {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .advice-tool {
+        margin-top: 50px;
+    }
+    .advice-tool h3 {
+        line-height: 28px;
+        font-size: 26px;
+    }
+    .advice--anchor {
+        margin-top: 18px;
+    }
+    .advice-tool .image-heading-card-small:nth-child(even) {
+        padding-right: 15px;
+    }
+    .advice--anchor {
+        margin-bottom: 0;
+    }
+
+    
+    .advice-tool .row .col-6.col-md-4:nth-child(even){ padding-left:7px}
+    .advice-tool .col-6.col-md-4 {
+        padding: 0px 7px;
+    }
+}
+
+@media (min-width: 576px) and (max-width:767px) {
+    .container.advice-tool {
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+.advice-tool .row .col-6.col-md-4:nth-child(even){padding-left:7px;}
+.advice-tool .row .col-6.col-md-4:nth-child(odd){padding-right:7px;}
+.advice-tool .col-6.col-md-4 {
+padding: 0px 7px;}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    /* .advice-tool .row .col-6.col-md-4:nth-child(even) {
+        padding-left: 15px;
+    } */
+    .advice-tool .image-heading-card-small:nth-child(even) {
+        padding-right: 15px;
+    }
+    .advice-tool .card-image-hdng-small img {
+        max-height: auto;
+    }
+    .advice-tool .img-fluid {
+        width: 100%;
+    }
+    .advice-tool .card__img__wrapper {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+    }
+    .advice-tool .col-12.col-md-12.col-lg-6:nth-child(2) {
+        padding-left: 0;
+    }
+    .advice-tool .card-image-hdng-small .card__img__title>span {
+        content: "";
+        border-top-width: 22px;
+        right: -19px;
+    }
+}
+
+@media screen and (min-device-width: 768px)and (orientation: landscape) {
+    .advice-tool .card-image-hdng-small h3 {
+        padding-top: 0;
+    }
+    .advice--anchor {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,9 @@
+.product-details .minimum-investment_table {
+    margin-top: 20px;
+}
+
+@media screen and (min-width:1024px) {
+	.minimuminvestment .heading {
+    	margin: 5px 0 15px;
+	}
+}

@@ -1,0 +1,74 @@
+{
+  "headerContactUs": {
+  	"usaa_member":"/content/vcm/us/en/contact-us.html",
+  	"financial_professional":"https://www.vcm.com/contact-us",
+  	"institutional_investor":"https://www.vcm.com/contact-us"
+  },
+  "aboutVictory": {
+  	"usaa_member":"/content/vcm/language-masters/en/about-victory.html",
+  	"financial_professional":"https://www.vcm.com/about-us",
+  	"institutional_investor":"https://www.vcm.com/about-us"
+  },
+  "ourProductsMutualFunds": {
+  	"usaa_member":"/content/vcm/language-masters/en/products/mutual-funds.html",
+  	"financial_professional":" https://www.vcm.com/investment-professionals/our-funds"
+  },
+  "ourProductsVictoryEtfs": {
+  	"usaa_member":"/content/vcm/language-masters/en/products/victory-shares-etfs.html",
+  	"financial_professional":"https://www.vcm.com/investment-professionals/victoryshares-etfs/"
+  },
+   "ourProductsRetirement": {
+  	"usaa_member":"/content/vcm/language-masters/en/products/retirement.html",
+  	"financial_professional":"https://www.vcm.com/investment-professionals/retirement-resources"
+  },
+   "ourProductsSeparatelyManagedAccounts": {
+  	"financial_professional":"https://www.vcm.com/institutional-investors/our-strategies",
+  	"institutional_investor":"https://www.vcm.com/institutional-investors/our-strategies"
+  },
+  "moreInfoFranchise": {
+  	"usaa_member": "/content/vcm/language-masters/en/investment-franchise.html",
+  	"financial_professional":"https://www.vcm.com/investment-franchises/",
+  	"institutional_investor":"https://www.vcm.com/investment-franchises/"
+  },
+  "viewFranchise": {
+  	"usaa_member": "/content/vcm/language-masters/en/investment-franchise.html",
+  	"financial_professional":"https://www.vcm.com/investment-franchises/",
+  	"institutional_investor":"https://www.vcm.com/investment-franchises/"
+  },
+ "footerNewsPopUp": {
+  	"usaa_member":"/content/vcm/language-masters/en/news.html",
+  	"financial_professional":"https://ir.vcm.com/news/default.aspx",
+  	"institutional_investor":"https://ir.vcm.com/news/default.aspx"
+  },
+  "footerPolicyPopUp": {
+  	"usaa_member":"/content/vcm/language-masters/en/about-victory.html",
+  	"financial_professional":"https://www.vcm.com/about-us",
+  	"institutional_investor":"https://www.vcm.com/about-us"
+  },
+  "footerCareersPopUp": {
+  	"usaa_member":"/content/vcm/language-masters/en/about-victory.html",
+  	"financial_professional":"https://www.vcm.com/about-us",
+  	"institutional_investor":"https://www.vcm.com/about-us"
+  },
+  "footerUserAggrementPopUp": {
+  	"usaa_member":"/content/vcm/language-masters/en/about-victory.html",
+  	"financial_professional":"https://www.vcm.com/about-us",
+  	"institutional_investor":"https://www.vcm.com/about-us"
+  },
+  "footerUserEventsPopUp": {
+  	"usaa_member":"/content/vcm/language-masters/en/about-victory.html",
+  	"financial_professional":"https://www.vcm.com/about-us",
+  	"institutional_investor":"https://www.vcm.com/about-us"
+  },
+  "footerFundLitraturePopUp": {
+  	"usaa_member":"/content/vcm/language-masters/en/about-victory.html",
+  	"financial_professional":"https://www.vcm.com/about-us",
+  	"institutional_investor":"https://www.vcm.com/about-us"
+  },
+  "footerBlogPopUp": {
+  	"usaa_member":"/content/vcm/language-masters/en/about-victory.html",
+  	"financial_professional":"https://www.vcm.com/about-us",
+  	"institutional_investor":"https://www.vcm.com/about-us"
+  }
+
+}

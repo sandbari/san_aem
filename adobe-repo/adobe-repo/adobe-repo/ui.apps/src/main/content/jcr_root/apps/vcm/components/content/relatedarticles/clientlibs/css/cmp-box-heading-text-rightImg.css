@@ -1,0 +1,171 @@
+.st-box-rightImg {
+    max-width: 255px;
+    min-height: 255px;
+    border: 1px solid #D2D2D2;
+    position: relative;
+    padding: 39px 20px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.st-box-header {
+    font: Bold 20px/22px benton-sans, sans-serif;
+    color: #49494A;
+}
+
+.st-box-text {
+    font: 16px/24px benton-sans, sans-serif;
+    color: #49494A;
+    display: block;
+    margin-top: 25px;
+}
+.st-ussa529-edu .st-box-text {
+	margin-top: 20px;
+}
+.st-box-img {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+.st-related-article-wrapper .st-box-img {
+    position: unset;
+}
+
+/************************* Victory share **********************/
+
+.st-victoryshare-item-container {
+    background-color: #FFFFFF;
+    max-width: 100%;
+    /*max-height: 100%;*/
+    padding: 39px 20px 28px 20px;
+    margin-bottom: 0px;
+    margin-top: 42px;
+}
+
+.st-victoryshare-item-container .st-box-header {
+    font: Bold 20px/22px benton-sans, sans-serif;
+}
+
+.st-victoryshare-item-container .st-box-text {
+    font: 16px/24px benton-sans, sans-serif;
+}
+
+.st-victoryshare-item-container-height{
+    min-height: 195px;
+}
+/********************** Mutual Funds Landing *******************/
+
+.st-box-centerImg {
+    max-width: 255px;
+    max-height: 255px;
+    border: 1px solid #D2D2D2;
+    position: relative;
+    padding: 19px 25px 12px;
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.st-box-img-wrap {
+    display: block;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+
+.st-box-centerImg .st-box-img {
+    position: unset;
+    width: 133px;
+    height: 64px;
+    float: none;
+}
+
+.st-box-centerImg .st-box-text {
+    font: 700 18px/22px benton-sans, sans-serif;
+    text-align: center;
+    margin-top: 16px;
+    min-height: 73px;
+    width: 100%;
+    float: left;
+}
+
+/********************** USAA529-Education-plan *******************/
+
+.st-ussa529-edu .st-victoryshare-item-container {
+    margin-top: 26px;
+}
+
+.st-box-rightImg-container {
+    margin-top: 15px;
+}
+
+.st-content-member-products-retirement .st-box-rightImg{
+    padding: 30px 20px 20px;
+    min-height: 315px;
+}
+
+@media screen and (max-width:1200px) {
+    .st-content-member-products-retirement .st-box-rightImg{
+        min-height: 339px;
+    }
+	.st-ussa529-edu .st-box-rightImg.st-victoryshare-item-container {
+		min-height: 280px;
+	}
+}
+/***************** TABLET STYLES *****************/
+
+@media screen and (max-width:1024px) {
+    .st-box-rightImg,
+    .st-box-centerImg {
+        max-width: 100%;
+    }
+    .st-box-rightImg { 
+        min-height: 228px;
+    }
+	
+	.st-victoryshare-item-container-height .st-box-header {
+      font: Bold 19px/21px benton-sans, sans-serif;
+    }
+		
+	.st-content-member-products-retirement .st-box-rightImg{
+        min-height: 363px;
+    }
+	
+}
+
+@media screen and (max-width:991px) {
+	.st-box-rightImg.st-victoryshare-item-container{
+		min-height: auto;
+	}
+	.st-content-member-products-retirement .st-box-rightImg{
+        min-height: 243px;
+    }
+	.st-ussa529-edu .st-box-rightImg.st-victoryshare-item-container {
+		min-height: 255px;
+	}
+}
+/***************** MOBILE STYLES *****************/
+
+@media screen and (max-width:767px) {
+    .st-ETF-retirement-box {
+        margin-top: 5px;
+    }
+    .st-victoryshare-item-container {
+        margin-top: 25px;
+        padding: 39px 23px 18px 20px;
+    }
+	.st-ussa529-edu .st-victoryshare-item-container {
+        margin-top: 20px;
+        padding-left: 25px;
+    }
+    .st-ussa529-edu .st-box-rightImg-container{
+        margin-top: 21px;
+    }
+    .st-box-rightImg { 
+        min-height: auto !important;
+    }
+	.st-content-member-products-retirement .st-box-rightImg{
+        min-height: auto;
+    }
+}

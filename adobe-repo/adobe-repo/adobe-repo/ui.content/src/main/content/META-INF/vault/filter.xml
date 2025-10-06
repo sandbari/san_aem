@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/vcm">
+        <exclude pattern="/conf/vcm/Adobe Launch VCM"/>
+        <exclude pattern="/conf/vcm/AdobeLaunchVCM"/>
+    </filter>
+    <filter root="/conf/global/settings/dam/adminui-extension" mode="merge"/>
+    <!-- <filter root="/content/dam/vcm" mode="merge"/> -->
+</workspaceFilter>

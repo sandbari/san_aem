@@ -1,0 +1,113 @@
+.row.bottom-row {
+    padding: 15px;
+    background: #4f799f;
+}
+
+.bottom-row .heading {
+    width: 100%;
+}
+
+.topten-holdings-variant-one-component .bottom-row .heading span {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: benton-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+.product-details table.top-10-holdings-table th:first-child,
+.product-details table.top-10-holdings-table tbody tr td:first-child,
+.product-details table.top-10-4col-holdings-table th:first-child,
+.product-details table.top-10-4col-holdings-table tbody tr td:first-child{
+    max-width:none;
+}
+
+.topten-holdings-portfolio-label {
+    float: left;
+}
+
+.topten-holdings-portfolio-value {
+    float: right;
+}
+
+.row.bottom-row p {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+}
+
+table.table.top-10-4col-holdings-table,
+table.table.top-10-holdings-table {
+    margin-bottom: 0;
+}
+
+.product-details .heading .topten-holdings-title {
+    font-family: benton-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #49494A;
+}
+
+.toptenholdings .heading {
+    margin: 15px 0 0;
+}
+
+.holding-page-icon a {
+    font-family: benton-sans, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+ .pdf-icon {
+    background-image: url(../resources/pdf_icon.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.product-details .top-10-holdings-table tbody tr td{
+	min-width: 170px;
+}
+.product-details .top-10-holdings-table th:first-child,.product-details .top-10-holdings-table tbody tr td:first-child{
+	min-width: 170px;
+}
+
+.toptenholdings .bottom-row .heading {
+        margin: 0;
+    }
+
+.toptenholdings {
+    position: relative;
+}
+
+.dynamic-loader-toptenholdingone {
+    position: absolute;
+    left: 45%;
+    top: 15%;
+}
+
+/* table style ends */
+
+@media screen and (min-width:1024px) {
+    .row.bottom-row {
+        margin: 0;
+    }
+    .topten-holdings-variant-one-component .bottom-row .heading span {
+        right: 30px;
+    }
+    .toptenholdings .heading {
+        margin: 0 0 15px;
+    }
+    .toptenholdings .table-wrap {
+            margin-bottom: 0;
+    }
+    .toptenholdings .visual-container {
+        margin-bottom: 30px;
+    }
+}

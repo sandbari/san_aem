@@ -1,0 +1,77 @@
+/*cookie banner div css starts */
+	#cookie-compliance{
+		position: fixed;
+		z-index: 9997;
+		background: #56565A;
+		color: #fff;
+		top: auto;
+		bottom: 0px;
+		left: auto;
+		padding: 20px;
+		width: 100%;
+		margin:0 auto;
+	}
+	.cookie_txt p{
+		font-size: 12px;
+		color: #fff;
+		font-family: benton-sans-medium,sans-serif;
+	}
+	.cookie_txt p a{
+		font-size: 12px;
+		color: #fff;
+		text-decoration:underline;
+	}
+	.cookie_btn_wrapper
+	{
+		position:relative;
+	}
+	.cookie_close{
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: right;  
+		cursor:pointer;
+	}
+	@media(max-width : 576px) {
+		.cookie_txt{
+			flex: 0 0 87.333333%;
+			max-width: 87.333333%;
+			padding-right: 0;
+		}
+		.cookie_btn_wrapper{
+			flex: 0 0 12.666667%;
+			max-width: 12.666667%;
+		}
+	}
+	
+	@media(min-width : 576px) {
+		.cookie_txt{
+			padding: 0;
+		}
+		#cookie-compliance{
+			width: 100%;
+			padding: 10px 0px;
+		}
+		.cookie_txt p, .cookie_txt p a{
+			font-size: 14px;
+		}
+	}
+	@media(min-width:768px){
+		.cookie_close{
+			width: 16px;
+			height: 16px;
+		}
+	}
+	@media(min-width : 992px) 
+	{
+		.cookie_close{
+			margin-right:15px;
+		}
+	}
+	
+/*cookie banner div css ends */

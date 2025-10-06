@@ -1,0 +1,73 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+    Edit Footer Component
+</sly>
+
+<sly data-sly-use.footermodel="com.vcm.core.models.FooterModel"></sly>
+
+<div class="container">
+    <div class="content-wrapper">
+        <div class="footer">
+            <input id="insFooterLogo" type="hidden" value="${footermodel.insLogoImagePath}"/>
+            <input id="insFooterMobLogoImg" type="hidden" value="${footermodel.insLogoMobImagePath}"/>
+            <sly data-sly-test="${footermodel.logoImagePath}">
+                <div class="footer__logoContainer">
+                    <a href="${footermodel.logoLinkUrl}" class="mobileShow"><img src="${footermodel.logoMobImagePath}" alt="mobile ${footermodel.logoAltText}" /></a>
+                    <a href="${footermodel.logoLinkUrl}" class="showinline"><img src="${footermodel.logoImagePath}" alt="${footermodel.logoAltText || true}"/></a>
+                </div>
+            </sly>
+           <div class="preLogin-footer" style="display:block">
+            <div class="footer__links row">
+                <sly data-sly-test="${footermodel.updFooterLinks}">
+                    <div class="footer__links--text col-12 col-md-12 col-xl-8">
+                        <ul role= "list">
+                            <sly data-sly-list.multifooterlinks="${footermodel.updFooterLinks}">
+                                <sly data-sly-test="${multifooterlinks.footerLinkText}">
+                                    <sly data-sly-test="${footermodel.mappedCurrentPage == multifooterlinks.footerLinkUrl}">
+                                        <li role="listitem" class="col-6 col-md-3 col-xl-3 footer__textlink footer__active ${multifooterlinks.linkIdentifier}"><a href="${multifooterlinks.footerLinkUrl}" class="${multifooterlinks.tabSelect == '_blank' ? 'inline-external-link' : ''}" target="${multifooterlinks.tabSelect}" rel="${multifooterlinks.tabSelect == '_blank' ? 'noopener noreferrer' : ''}" data-audiencepopup="true" aria-label="${arialabel}">${multifooterlinks.footerLinkText}<sly data-sly-test="${multifooterlinks.tabSelect == '_blank'}"><span class="sr-only">Opens a New Window</span><span class="external-icon-footer"></span></sly></a></li>
+                                    </sly>
+                                    <sly data-sly-test="${footermodel.mappedCurrentPage != multifooterlinks.footerLinkUrl}">
+                                        <li role="listitem" class="col-6 col-md-3 col-xl-3 footer__textlink ${multifooterlinks.linkIdentifier}"><a href="${multifooterlinks.footerLinkUrl}" class="${multifooterlinks.tabSelect == '_blank' ? 'inline-external-link' : ''}" target="${multifooterlinks.tabSelect}" rel="${multifooterlinks.tabSelect == '_blank' ? 'noopener noreferrer' : ''}" data-audiencepopup="true" aria-label="${arialabel}">${multifooterlinks.footerLinkText}<sly data-sly-test="${multifooterlinks.tabSelect == '_blank'}"><span class="sr-only">Opens a New Window</span><span class="external-icon-footer"></span></sly></a></li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                </sly>
+                <sly data-sly-test="${footermodel.incSocShare}">
+                    <sly data-sly-resource="${'sociallinks' @ resourceType='vcm/components/content/socialsitelinks'}"></sly>
+                </sly>
+            </div>
+            </div>
+            <div class="postLogin-footer" style="display:none">
+            <div class="footer__links row">
+                <sly data-sly-test="${footermodel.updPstLoginFooterLinks}">
+                    <div class="footer__links--text col-12 col-md-12 col-xl-8">
+                        <ul role= "list">
+                            <sly data-sly-list.pstLoginfooterlinks="${footermodel.updPstLoginFooterLinks}">
+                                <sly data-sly-test="${pstLoginfooterlinks.footerLinkText}">
+                                    <sly data-sly-test="${footermodel.mappedCurrentPage == pstLoginfooterlinks.footerLinkUrl}">
+                                        <li role="listitem" class="col-6 col-md-3 col-xl-3 footer__textlink footer__active ${pstLoginfooterlinks.linkIdentifier}"><a href="${pstLoginfooterlinks.footerLinkUrl}" class="${pstLoginfooterlinks.tabSelect == '_blank' ? 'inline-external-link' : ''}" target="${pstLoginfooterlinks.tabSelect}" rel="${pstLoginfooterlinks.tabSelect == '_blank' ? 'noopener noreferrer' : ''}" data-audiencepopup="true" aria-label="${arialabel}">${pstLoginfooterlinks.footerLinkText}<sly data-sly-test="${pstLoginfooterlinks.tabSelect == '_blank'}"><span class="sr-only">Opens a New Window</span><span class="external-icon-footer"></span></sly></a></li>
+                                    </sly>
+                                    <sly data-sly-test="${footermodel.mappedCurrentPage != pstLoginfooterlinks.footerLinkUrl}">
+                                        <li role="listitem" class="col-6 col-md-3 col-xl-3 footer__textlink ${pstLoginfooterlinks.linkIdentifier}"><a href="${pstLoginfooterlinks.footerLinkUrl}" class="${pstLoginfooterlinks.tabSelect == '_blank' ? 'inline-external-link' : ''}" target="${pstLoginfooterlinks.tabSelect}" rel="${pstLoginfooterlinks.tabSelect == '_blank' ? 'noopener noreferrer' : ''}" data-audiencepopup="true" aria-label="${arialabel}">${pstLoginfooterlinks.footerLinkText}<sly data-sly-test="${pstLoginfooterlinks.tabSelect == '_blank'}"><span class="sr-only">Opens a New Window</span><span class="external-icon-footer"></span></sly></a></li>
+                                    </sly>
+                                </sly>
+                            </sly>
+                        </ul>
+                    </div>
+                </sly>
+                <sly data-sly-test="${footermodel.incSocShare}">
+                    <sly data-sly-resource="${'sociallinks' @ resourceType='vcm/components/content/socialsitelinks'}"></sly>
+                </sly>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<sly data-sly-test="${footermodel.copyRightText}">
+    <div class="footer__copyright-Container">
+        <div class="content-wrapper">
+            <p class="footer__copyright-Container--info">${footermodel.copyRightText}</p>
+        </div>
+    </div>
+</sly>

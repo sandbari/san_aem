@@ -1,0 +1,98 @@
+{
+   "jcr:primaryType":"cq:Template",
+   "jcr:createdBy":"admin",
+   "allowedPaths":[
+      "/content/entities(/.*)?"
+   ],
+   "jcr:created":"Wed Feb 26 2020 15:13:11 GMT+0530",
+   "ranking":100,
+   "thumbnail.png":{
+      "jcr:primaryType":"nt:file",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Wed Feb 26 2020 15:13:11 GMT+0530",
+      "jcr:content":{
+         "jcr:primaryType":"nt:resource",
+         "jcr:lastModifiedBy":"admin",
+         "jcr:mimeType":"image/png",
+         "jcr:lastModified":"Wed Feb 26 2020 15:13:11 GMT+0530",
+         ":jcr:data":30427,
+         "jcr:uuid":"f4accc3c-0002-4a01-a8d4-cc68b34a3e4f"
+      }
+   },
+   "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"FAQ",
+      "jcr:created":"Wed Feb 26 2020 15:13:11 GMT+0530",
+      "cq:lastModified":"Thu Jan 30 2020 10:15:44 GMT+0530",
+      "sling:resourceSuperType":"dam/cfm/models/console/components/data/entity",
+      "jcr:description":"CF model for FAQ",
+      "cq:scaffolding":"/conf/vcm/settings/dam/cfm/models/faq/jcr:content/model",
+      "cq:templateType":"/libs/settings/dam/cfm/model-types/fragment",
+      "sling:resourceType":"dam/cfm/models/console/components/data/entity/default",
+      "cq:lastModifiedBy":"admin",
+      "model":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:created":"Wed Feb 26 2020 15:13:11 GMT+0530",
+         "dataTypesConfig":"/mnt/overlay/settings/dam/cfm/models/formbuilderconfig/datatypes",
+         "sling:resourceType":"wcm/scaffolding/components/scaffolding",
+         "maxGeneratedOrder":"20",
+         "cq:targetPath":"/content/entities",
+         "cq:dialog":{
+            "jcr:primaryType":"nt:unstructured",
+            "sling:resourceType":"cq/gui/components/authoring/dialog",
+            "content":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:lastModifiedBy":"admin",
+               "jcr:lastModified":"Thu Jan 30 2020 10:15:44 GMT+0530",
+               "sling:resourceType":"granite/ui/components/coral/foundation/fixedcolumns",
+               "items":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "maxGeneratedOrder":"20",
+                  "1580292131784":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "listOrder":"1",
+                     "valueType":"string",
+                     "showEmptyInReadOnly":"true",
+                     "metaType":"text-single",
+                     "required":"on",
+                     "name":"question",
+                     "maxlength":"255",
+                     "fieldLabel":"Question",
+                     "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                     "renderReadOnly":"false"
+                  },
+                  "1580359392742":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "listOrder":"1",
+                     "valueType":"string",
+                     "showEmptyInReadOnly":"true",
+                     "metaType":"text-single",
+                     "name":"faqnumber",
+                     "value":"0",
+                     "maxlength":"255",
+                     "fieldLabel":"FAQ Number",
+                     "sling:resourceType":"granite/ui/components/coral/foundation/form/textfield",
+                     "renderReadOnly":"false",
+                     "fieldDescription":"FAQ Number can be used for sorting the FAQs"
+                  },
+                  "1580292188700":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "listOrder":"7",
+                     "valueType":"string[]",
+                     "showEmptyInReadOnly":"true",
+                     "metaType":"tags",
+                     "rootPath":"/content/cq:tags",
+                     "name":"tags",
+                     "fieldLabel":"Tags",
+                     "multiple":"true",
+                     "sling:resourceType":"cq/gui/components/coral/common/form/tagfield",
+                     "renderReadOnly":"false"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    cq:lastReplicated="{Date}2020-04-19T07:17:02.225Z"
+    cq:lastReplicatedBy="vmohanam"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus,rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <content-default
+                        jcr:description="Policy for editable layout containers"
+                        jcr:lastModified="{Date}2020-02-21T12:58:12.521Z"
+                        jcr:lastModifiedBy="ctsuser"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Common content page policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,group:vcm]"
+                        policyResourceType="wcm/foundation/components/responsivegrid">
+                        <cq:authoring jcr:primaryType="nt:unstructured">
+                            <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                                <image
+                                    jcr:primaryType="nt:unstructured"
+                                    assetGroup="media"
+                                    assetMimetype="image/*"
+                                    droptarget="image"
+                                    resourceType="vcm/components/content/image"
+                                    type="Images"/>
+                            </assetToComponentMapping>
+                        </cq:authoring>
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-21T14:02:09.630Z"
+                            cq:lastReplicatedBy="ctsuser"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"
+                            mergeList="{Boolean}true"/>
+                    </content-default>
+                    <policy_97659680643347
+                        jcr:description="vcm-xf-page-policy"
+                        jcr:lastModified="{Date}2020-02-21T08:44:09.459Z"
+                        jcr:lastModifiedBy="vmohanam@vcm.com"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="vcm-xf-page-policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:vcm]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-21T08:44:25.634Z"
+                            cq:lastReplicatedBy="vmohanam@vcm.com"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_97659680643347>
+                    <policy_1561619782732
+                        jcr:lastModified="{Date}2019-06-27T12:46:41.023+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="rg policy for grid only"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1561619782732>
+                    <policy_1580365466426
+                        jcr:lastModified="{Date}2020-02-21T13:07:52.929Z"
+                        jcr:lastModifiedBy="ctsuser"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Advice and Tools template policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,group:vcm]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-21T14:02:34.868Z"
+                            cq:lastReplicatedBy="ctsuser"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1580365466426>
+                    <policy_1580365561361
+                        jcr:lastModified="{Date}2020-02-21T13:20:19.818Z"
+                        jcr:lastModifiedBy="ctsuser"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Contact us template policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,group:vcm]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-21T14:02:34.868Z"
+                            cq:lastReplicatedBy="ctsuser"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1580365561361>
+                    <policy_1580365625649
+                        jcr:lastModified="{Date}2020-01-30T11:57:50.266+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="content fragment policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="/apps/vcm/components/content/contentfragmentlist">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-21T14:02:34.868Z"
+                            cq:lastReplicatedBy="ctsuser"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1580365625649>
+                    <policy_1580365685619
+                        jcr:lastModified="{Date}2020-02-21T13:26:42.312Z"
+                        jcr:lastModifiedBy="ctsuser"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="corporate page template policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,group:vcm]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-21T14:02:34.868Z"
+                            cq:lastReplicatedBy="ctsuser"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1580365685619>
+                    <policy_1580365780746
+                        jcr:lastModified="{Date}2020-02-21T13:39:34.423Z"
+                        jcr:lastModifiedBy="ctsuser"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="News and Events template policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,group:vcm]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-21T14:02:34.868Z"
+                            cq:lastReplicatedBy="ctsuser"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1580365780746>
+                    <policy_1580365835970
+                        jcr:lastModified="{Date}2020-03-31T11:12:13.969Z"
+                        jcr:lastModifiedBy="vmohanam"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="full page content template policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/foundation/components/external,/libs/wcm/foundation/components/responsivegrid,group:vcm]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-03-31T11:13:37.954Z"
+                            cq:lastReplicatedBy="vmohanam"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1580365835970>
+                    <policy_1580365896280
+                        jcr:lastModified="{Date}2020-03-09T05:01:46.264Z"
+                        jcr:lastModifiedBy="naggarwal@vcm.com"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="full page content template policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,group:vcm]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-03-09T13:35:22.774Z"
+                            cq:lastReplicatedBy="naggarwal@vcm.com"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1580365896280>
+                    <policy_1580366008298
+                        jcr:lastModified="{Date}2020-02-21T08:52:23.509Z"
+                        jcr:lastModifiedBy="vmohanam@vcm.com"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Homepage template policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,/apps/acs-commons/components/content/column-control,group:vcm]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-21T09:12:42.010Z"
+                            cq:lastReplicatedBy="ctsuser"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1580366008298>
+                    <policy_1580366054154
+                        jcr:lastModified="{Date}2020-02-21T13:44:01.891Z"
+                        jcr:lastModifiedBy="ctsuser"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="product landing page template policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,group:vcm]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-21T14:02:34.868Z"
+                            cq:lastReplicatedBy="ctsuser"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1580366054154>
+                    <policy_1580978538271
+                        jcr:lastModified="{Date}2020-02-06T14:12:51.150+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="usaa static html policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/vcm/components/content/header,/apps/vcm/components/content/rawHtmlComponent]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-21T14:02:34.868Z"
+                            cq:lastReplicatedBy="ctsuser"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1580978538271>
+                    <policy_13746606233862179
+                        jcr:lastModified="{Date}2020-03-09T10:17:28.848Z"
+                        jcr:lastModifiedBy="naggarwal@vcm.com"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Static Page Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="group:vcm">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-03-09T13:35:35.325Z"
+                            cq:lastReplicatedBy="naggarwal@vcm.com"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_13746606233862179>
+                    <policy_1591860503726
+                        jcr:lastModified="{Date}2020-06-11T12:59:02.206+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Mutual Fund Product Page Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/foundation/components/external,/libs/wcm/foundation/components/responsivegrid,group:vcm]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-03-09T13:35:35.325Z"
+                            cq:lastReplicatedBy="naggarwal@vcm.com"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1591860503726>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
+    <vcm jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <form jcr:primaryType="nt:unstructured">
+                <container jcr:primaryType="nt:unstructured">
+                    <form-container
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="vcm Form"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/vcm/components/form/button,/apps/vcm/components/form/hidden,/apps/vcm/components/form/options,/apps/vcm/components/form/text]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2019-10-15T06:38:09.481Z"
+                            cq:lastReplicatedBy="vmohanam@vcm.com"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </form-container>
+                </container>
+            </form>
+            <structure jcr:primaryType="nt:unstructured">
+                <page jcr:primaryType="nt:unstructured">
+                    <policy_1561625163041
+                        jcr:description="policy for VCM Base pages"
+                        jcr:lastModified="{Date}2019-06-27T15:33:42.271+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="vcm_page_policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="vcm.basepage">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2019-10-15T06:38:09.481Z"
+                            cq:lastReplicatedBy="vmohanam@vcm.com"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1561625163041>
+                    <policy_13731993105011115
+                        jcr:description="Policy for VCM Static pages"
+                        jcr:lastModified="{Date}2020-04-02T10:16:58.243Z"
+                        jcr:lastModifiedBy="vmohanam"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="vcm_static_page_policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="[vcm.basepage,vcm.rapid]">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-04-02T10:17:58.811Z"
+                            cq:lastReplicatedBy="vmohanam"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_13731993105011115>
+                </page>
+                <xfpage jcr:primaryType="nt:unstructured">
+                    <policy_1561629906038
+                        jcr:lastModified="{Date}2019-06-27T15:36:02.900+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="vcm-xf-page-policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="vcm.base-xf">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1561629906038>
+                </xfpage>
+                <usaaPage jcr:primaryType="nt:unstructured"/>
+            </structure>
+            <content jcr:primaryType="nt:unstructured">
+                <title jcr:primaryType="nt:unstructured">
+                    <policy_1561619680767
+                        jcr:lastModified="{Date}2019-06-27T12:45:05.723+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="title ploicy inside rg"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedTypes="[h3,h4,h5,h6]"
+                        linkDisabled="false"
+                        type="h3">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1561619680767>
+                </title>
+                <contentfragment jcr:primaryType="nt:unstructured"/>
+                <columncontrol jcr:primaryType="nt:unstructured">
+                    <policy_1567815993010700
+                        jcr:lastModified="{Date}2020-08-07T16:27:30.346+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Column Style"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="equal-height"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="equal-height-row"
+                                        cq:styleId="1594628270749"
+                                        cq:styleLabel="equal-height"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="insightsPages"
+                                        cq:styleId="1596794003451"
+                                        cq:styleLabel="Insight-image"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1567815993010700>
+                </columncontrol>
+                <backgroundcontainer jcr:primaryType="nt:unstructured">
+                    <policy_1581508316380
+                        jcr:lastModified="{Date}2020-02-12T17:22:35.322+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="EmbedPolicy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedEmbeddables="core/wcm/components/embed/v1/embed/embeddable/youtube"
+                        embeddablesDisabled="false"
+                        htmlDisabled="true"
+                        urlDisabled="true">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-02-18T12:04:17.322Z"
+                            cq:lastReplicatedBy="vmohanam@vcm.com"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                    </policy_1581508316380>
+                    <policy_18853941951401686
+                        jcr:lastModified="{Date}2020-05-13T08:18:55.902Z"
+                        jcr:lastModifiedBy="ctsuser"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Background Container Styles"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-05-11T12:58:20.632Z"
+                            cq:lastReplicatedBy="ctsuser"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="bgContainer"
+                                        cq:styleId="1588856935794"
+                                        cq:styleLabel="Background Container Spacing"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="bgWhiteContainerSpacing"
+                                        cq:styleId="1589357867078"
+                                        cq:styleLabel="White Background Container Spacing"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_18853941951401686>
+                </backgroundcontainer>
+                <ourproducts jcr:primaryType="nt:unstructured">
+                    <policy_1587625484341
+                        jcr:lastModified="{Date}2020-05-05T18:00:17.772+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="ourProducts"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content
+                            jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="OurProducts"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="Our--Products__corporate"
+                                        cq:styleId="1583240230376"
+                                        cq:styleLabel="CorporateHome"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="Our--Products__productsshare"
+                                        cq:styleId="1587632493502"
+                                        cq:styleLabel="productEtfs"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item2
+                                        cq:styleClasses="Our--Products__products"
+                                        cq:styleId="1587652033643"
+                                        cq:styleLabel="products"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item3
+                                        cq:styleClasses="Our--Products__productsretirement"
+                                        cq:styleId="1587625501821"
+                                        cq:styleLabel="productRetirement"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item4
+                                        cq:styleClasses="Our--Products__productssavings"
+                                        cq:styleId="1587634552348"
+                                        cq:styleLabel="productUsaa"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item5
+                                        cq:styleClasses="Our--Products__member-products-retirement"
+                                        cq:styleId="1587713911123"
+                                        cq:styleLabel="productTargetRetirement"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item6
+                                        cq:styleClasses="our--Products__member"
+                                        cq:styleId="1588091523124"
+                                        cq:styleLabel="memberHome"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item7
+                                        cq:styleClasses="Our--Products__productsmutualfunds"
+                                        cq:styleId="1588156168603"
+                                        cq:styleLabel="productmutualfund"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item8
+                                        cq:styleClasses="Our--Products__mutualfund"
+                                        cq:styleId="1588681787834"
+                                        cq:styleLabel="mutualfund"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1587625484341>
+                </ourproducts>
+                <textimageCTA jcr:primaryType="nt:unstructured">
+                    <policy_1584511886199
+                        jcr:lastModified="{Date}2020-03-18T11:42:00.838+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="textimageCTAStyles"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-03-20T11:59:21.359Z"
+                            cq:lastReplicatedBy="vmohanam"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="noTopSpacing"
+                                        cq:styleId="1584511889674"
+                                        cq:styleLabel="Remove Top Spacing"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1584511886199>
+                    <policy_678788480054000
+                        jcr:lastModified="{Date}2020-03-18T11:43:11.136+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="textimageCTAStyles"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-03-20T11:59:29.602Z"
+                            cq:lastReplicatedBy="vmohanam"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="noTopSpacing"
+                                        cq:styleId="1584511981008"
+                                        cq:styleLabel="Remove Top Spacing"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_678788480054000>
+                    <policy_678827536484600
+                        jcr:lastModified="{Date}2020-04-09T07:00:59.458Z"
+                        jcr:lastModifiedBy="vmohanam"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="textimageCTAStyles"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2020-04-09T10:06:32.473Z"
+                            cq:lastReplicatedBy="jkrishnaswami@vcm.com"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="noTopSpacing"
+                                        cq:styleId="1584512018605"
+                                        cq:styleLabel="Remove Top Spacing"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="noTopSpacingForCard"
+                                        cq:styleId="1586415642693"
+                                        cq:styleLabel="Remove Top spacing for card"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item2
+                                        cq:styleClasses="noTopSpacingForHeadingCard"
+                                        cq:styleId="1591090447208"
+                                        cq:styleLabel="Remove Top spacing for Mobile View"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item3
+                                        cq:styleClasses="removeDesktopTopSpacing"
+                                        cq:styleId="1600096358518"
+                                        cq:styleLabel="Remove Top spacing for Desktop View"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_678827536484600>
+                </textimageCTA>
+                <video jcr:primaryType="nt:unstructured">
+                    <policy_1591258322667
+                        jcr:lastModified="{Date}2020-06-04T13:43:26.445+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="video "
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content
+                            jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="video"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="top-spacing-30"
+                                        cq:styleId="1591258377501"
+                                        cq:styleLabel="Top Spacing 30"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1591258322667>
+                </video>
+                <disclaimertext jcr:primaryType="nt:unstructured">
+                    <policy_1596527550489
+                        jcr:lastModified="{Date}2020-08-04T07:53:27.865Z"
+                        jcr:lastModifiedBy="ctsuser"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="disclaimer"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="disclaimer"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="member-disclaimer"
+                                        cq:styleId="1596527561074"
+                                        cq:styleLabel="member"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="financial-disclaimer"
+                                        cq:styleId="1596527569667"
+                                        cq:styleLabel="financial"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1596527550489>
+                </disclaimertext>
+                <text jcr:primaryType="nt:unstructured">
+                    <policy_1593672839139
+                        jcr:lastModified="{Date}2020-07-03T12:52:58.393+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Inline Image Styles"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Inline Image Group"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="insightsPages"
+                                        cq:styleId="1593760966543"
+                                        cq:styleLabel="Insight-image"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1593672839139>
+                </text>
+            </content>
+        </components>
+    </vcm>
+    <core jcr:primaryType="nt:unstructured">
+        <wcm jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <embed jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <embed jcr:primaryType="nt:unstructured">
+                            <policy_1583765702397
+                                jcr:lastModified="{Date}2020-03-09T14:56:21.695Z"
+                                jcr:lastModifiedBy="jwaikhom"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="vcm-iframe"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                allowedEmbeddables="core/wcm/components/embed/v1/embed/embeddable/youtube"
+                                embeddablesDisabled="false"
+                                htmlDisabled="false"
+                                urlDisabled="false">
+                                <jcr:content
+                                    cq:lastReplicated="{Date}2020-03-09T19:45:17.728Z"
+                                    cq:lastReplicatedBy="jwaikhom"
+                                    cq:lastReplicationAction="Activate"
+                                    jcr:mixinTypes="[cq:ReplicationStatus]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </policy_1583765702397>
+                        </embed>
+                    </v1>
+                </embed>
+            </components>
+        </wcm>
+    </core>
+    <rep:policy/>
+</jcr:root>

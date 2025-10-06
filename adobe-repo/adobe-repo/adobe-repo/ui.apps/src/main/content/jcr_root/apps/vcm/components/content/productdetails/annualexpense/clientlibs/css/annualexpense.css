@@ -1,0 +1,46 @@
+.annual-table-data {
+    position: relative;
+}
+
+.product-details .annual-table-data {
+    display: block;
+}
+
+.product-details .table.annualexpense-table thead th{
+	 min-width: 100px;
+}
+
+.product-details table.annualexpense-table th:first-child, .product-details table.annualexpense-table tbody tr td:first-child {
+    min-width: 210px;
+    text-align: left;
+}
+
+.product-details .table.annualexpense-table  thead tr th:nth-child(2) {
+    min-width: 90px;
+}
+
+.annualexpense .heading {
+    margin: 15px 0 0;
+}
+
+.annualexpense {
+    position: relative;
+}
+
+.dynamic-loader-annualexpense {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+@media screen and (min-width:1024px) {
+    .product-details .annual-table-data {
+        display: block;
+    }
+    .product-details .table.annualexpense-table thead th{
+    	 min-width: 100px;
+    }
+     .annualexpense .heading {
+        margin: 0 0 15px;
+    }
+}
