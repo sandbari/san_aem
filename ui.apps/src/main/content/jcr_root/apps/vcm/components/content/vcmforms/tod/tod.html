@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Funds - Transfer on Death Registration and Beneficiary Designation Form</title>
+    <link rel="stylesheet" href="../../src/styles/material-forms.css">
+    <script src="../../src/js/signature-pad.js"></script>
+    <script src="./common-form-functions.js"></script>
+    <script src="./tod.js"></script>
+    <link rel="stylesheet" href="./tod.css">
+</head>
+<body>
+<div class="form-container">
+    <div class="form-header">
+        <div class="company-info">
+            <h1>Victory Funds</h1>
+            <div class="contact-info">
+                <span>800-235-8396</span>
+                <span>Fax 833-934-1609</span>
+                <span>vcm.com</span>
+            </div>
+            <div class="form-number">98146-0423</div>
+            <div class="address">
+                P.O. Box 182903<br>
+                Columbus, Ohio 43218-2903
+            </div>
+        </div>
+        <div class="form-title">
+            <h2>Transfer on Death Registration and Beneficiary Designation Form</h2>
+        </div>
+    </div>
+
+    <form id="todForm" class="material-form">
+        <!-- Instructions Section -->
+        <div class="form-section">
+            <div class="instructions">
+                <p><strong>STEP 1:</strong> Complete the Transfer on Death (TOD) Registration Form to 1) establish a TOD registration and designate TOD beneficiaries or 2) change your existing TOD beneficiaries for your Victory Funds accounts (TOD accounts).</p>
+                <p><strong>STEP 2:</strong> Complete, sign and date form. Return by mail or fax completed, signed and dated form to 833-934-1609.</p>
+                <p><strong>Note:</strong> This form cannot be used to add, change or delete beneficiary information for an Individual Retirement Account (IRA) or other retirement account.</p>
+            </div>
+        </div>
+
+        <!-- Personal Information Section -->
+        <div class="form-section">
+            <h3>Personal Information</h3>
+
+            <div class="subsection-header">
+                <h4>Account Holder</h4>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="memberNumber">Member Number</label>
+                    <input type="text" id="memberNumber" name="memberNumber" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="socialSecurityNumber">Social Security Number</label>
+                    <input type="text" id="socialSecurityNumber" name="socialSecurityNumber" class="form-control" pattern="[0-9]{3}-?[0-9]{2}-?[0-9]{4}">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="middleInitial">Middle Name</label>
+                    <input type="text" id="middleInitial" name="middleInitial" class="form-control" maxlength="1">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="physicalAddress">Physical Address (P.O. Box cannot be accepted.)</label>
+                    <input type="text" id="physicalAddress" name="physicalAddress" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="zipCode">Zip Code</label>
+                    <input type="text" id="zipCode" name="zipCode" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="mailingAddress">Mailing Address (if different)</label>
+                    <input type="text" id="mailingAddress" name="mailingAddress" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="mailingCity">City</label>
+                    <input type="text" id="mailingCity" name="mailingCity" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="mailingState">State</label>
+                    <input type="text" id="mailingState" name="mailingState" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="mailingZipCode">Zip Code</label>
+                    <input type="text" id="mailingZipCode" name="mailingZipCode" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="residencePhone">Residence Phone Number (include area code)</label>
+                    <input type="tel" id="residencePhone" name="residencePhone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="businessPhone">Business Phone Number (include area code)</label>
+                    <input type="tel" id="businessPhone" name="businessPhone" class="form-control">
+                </div>
+            </div>
+
+            <div class="subsection-header">
+                <h4>Joint Account Holder (if applicable)</h4>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="jointFirstName">First Name</label>
+                    <input type="text" id="jointFirstName" name="jointFirstName" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="jointMiddleInitial">MI</label>
+                    <input type="text" id="jointMiddleInitial" name="jointMiddleInitial" class="form-control" maxlength="1">
+                </div>
+                <div class="form-group">
+                    <label for="jointLastName">Last Name</label>
+                    <input type="text" id="jointLastName" name="jointLastName" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <!-- Account Servicing Instructions Section -->
+        <div class="form-section">
+            <h3>Account Servicing Instructions</h3>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="changeExisting" name="accountServicing" value="changeExisting">
+                    <label for="changeExisting">Change existing account(s) to a TOD registration. NOTE: Account owner must remain unchanged.</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="openNew" name="accountServicing" value="openNew">
+                    <label for="openNew">Open new account(s) with a TOD registration. You must also complete and return a Victory Funds Account Application.</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="changeTOD" name="accountServicing" value="changeTOD">
+                    <label for="changeTOD">Change TOD beneficiary designations for existing TOD account(s).</label>
+                </div>
+            </div>
+
+            <p>Beneficiaries designated according to the Beneficiary Information section will apply to all identically registered account registrations below:</p>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="allAccounts" name="accountScope" value="allAccounts">
+                    <label for="allAccounts">All Victory Funds accounts</label>
+                </div>
+            </div>
+
+            <div class="note">
+                <p><strong>NOTE:</strong> The only accounts eligible for TOD registration are individual accounts or joint tenants with rights of survivorship (JTWROS) accounts registered in the names of two or more individuals. Transfer on death registration is not available in Louisiana, Puerto Rico, or US Virgin Islands.</p>
+            </div>
+        </div>
+
+        <!-- Beneficiary Information Section -->
+        <div class="form-section">
+            <h3>Beneficiary Information</h3>
+
+            <div class="note">
+                <p><strong>NOTE:</strong> If you are married and live in a community property state and your spouse is not named as your sole primary beneficiary, you should consult your legal adviser about how your state's community property law may affect the validity of your beneficiary designation.</p>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="namingTrust" name="namingTrust" value="true">
+                    <label for="namingTrust">Check here if you are naming a trust as a beneficiary. If naming a trust as a beneficiary, you are required to attach the first page and the signature page of the trust agreement.</label>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h4>A. Beneficiary(ies):</h4>
+                <p>I hereby appoint and designate the following beneficiary(ies) for my TOD Account. The TOD Account shall be paid to the beneficiary(ies) who survive you. If you appoint more than one beneficiary, such beneficiaries who survive you shall share in your TOD Account equally, unless you indicate below a specific percentage of distribution to each primary beneficiary. If for any reason the percentages do not total 100%, any remaining assets shall be divided equally among the surviving primary beneficiaries. If one of your primary beneficiaries dies and you want his or her share of the account to pass to someone other than the other primary beneficiaries, you must designate a new beneficiary by completing and returning a new Transfer on Death Registration and Beneficiary Designation Form. If your account is distributable to multiple beneficiaries and, after allocating any remainder in accordance with the preceding sentence, the allocations total at least 99% but less than 100%, the remainder shall be allocated to the first beneficiary designated. If your account is distributable to multiple beneficiaries and, due to rounding or fractional shares, your account cannot be fully allocated to all such beneficiaries, any portion of your account that is not fully allocated due to such rounding or fractional shares shall be allocated to the beneficiary whom you have designated to receive the largest share or, if more than one beneficiary has been designated to receive the same largest share, to the first such beneficiary so designated. Allocation percentages may be specified or established in intervals of no smaller than .01%.</p>
+
+                <div id="primaryBeneficiaries">
+                    <div class="beneficiary-entry" data-beneficiary-type="primary" data-beneficiary-index="1">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="primaryBeneficiary1Name">Beneficiary Name (If trust, provide name of trust and trustee.)</label>
+                                <input type="text" id="primaryBeneficiary1Name" name="primaryBeneficiary1Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="primaryBeneficiary1SSN">Social Security Number (or Tax ID Number)</label>
+                                <input type="text" id="primaryBeneficiary1SSN" name="primaryBeneficiary1SSN" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="primaryBeneficiary1DOB">Date of Birth (mm/dd/yyyy)</label>
+                                <input type="date" id="primaryBeneficiary1DOB" name="primaryBeneficiary1DOB" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="primaryBeneficiary1Relationship">Relationship to TOD Account Owner</label>
+                                <input type="text" id="primaryBeneficiary1Relationship" name="primaryBeneficiary1Relationship" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="primaryBeneficiary1Percentage">% Distribution</label>
+                                <input type="number" id="primaryBeneficiary1Percentage" name="primaryBeneficiary1Percentage" class="form-control" min="0" max="100" step="0.01">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="primary-button">Add Primary Beneficiary</button>
+                </div>
+            </div>
+
+            <!-- Secondary Beneficiaries Section -->
+            <div class="subsection">
+                <h4>B. Secondary (Contingent) Beneficiary(ies):</h4>
+                <p>I hereby appoint and designate the following beneficiary(ies) for my TOD Account. The TOD Account shall be paid to the secondary beneficiary(ies) who survive you only if you survive the primary beneficiary (or all of the primary beneficiaries, if you designate multiple primary beneficiaries). In that event, surviving secondary beneficiary(ies) shall share in the TOD assets equally, unless you state below a specific percentage of distribution to each secondary beneficiary. If for any reason the percentages do not total 100%, any remaining assets shall be divided equally among the surviving secondary beneficiaries. If your account is distributable to multiple beneficiaries and, due to rounding or fractional shares, your account cannot be fully allocated to all such beneficiaries, any portion of your account that is not fully allocated due to such rounding or fractional shares shall be allocated to the beneficiary whom you have designated to receive the largest share or, if more than one beneficiary has been designated to receive the same largest share, to the first such beneficiary so designated. Allocation percentages may be specified or established in intervals of no smaller than .01%.</p>
+
+                <div id="secondaryBeneficiaries">
+                    <div class="beneficiary-entry" data-beneficiary-type="secondary" data-beneficiary-index="1">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="secondaryBeneficiary1Name">Beneficiary Name (If trust, provide name of trust and trustee.)</label>
+                                <input type="text" id="secondaryBeneficiary1Name" name="secondaryBeneficiary1Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="secondaryBeneficiary1SSN">Social Security Number (or Tax ID Number)</label>
+                                <input type="text" id="secondaryBeneficiary1SSN" name="secondaryBeneficiary1SSN" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="secondaryBeneficiary1DOB">Date of Birth (Required) mm/dd/yyyy</label>
+                                <input type="date" id="secondaryBeneficiary1DOB" name="secondaryBeneficiary1DOB" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="secondaryBeneficiary1Relationship">Relationship to TOD Account Owner</label>
+                                <input type="text" id="secondaryBeneficiary1Relationship" name="secondaryBeneficiary1Relationship" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="secondaryBeneficiary1Percentage">% Distribution</label>
+                                <input type="number" id="secondaryBeneficiary1Percentage" name="secondaryBeneficiary1Percentage" class="form-control" min="0" max="100" step="0.01">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="secondary-button">Add Secondary Beneficiary</button>
+                </div>
+
+                <p><strong>Attach an additional sheet of paper if more space is needed. Each additional sheet must be signed and dated.</strong></p>
+            </div>
+        </div>
+
+        <!-- Terms and Conditions Section -->
+        <div class="form-section">
+            <h3>Read and Sign</h3>
+
+            <div class="terms-conditions">
+                <p><strong>The following terms and conditions will apply to your TOD accounts:</strong></p>
+
+                <ul>
+                    <li>If you are establishing a new account, you must also complete and submit a Victory Funds Account Application.</li>
+                    <li>In addition to accounts designated according to this Form that will be TOD accounts, any Victory Funds account that is established by an exchange from such account will be held as TOD registration.</li>
+                    <li>The only accounts eligible for TOD registration are individual accounts or joint tenants with rights of survivorship (JTWROS) accounts registered in the names of two or more individuals (the account owner). (Note that accounts with joint tenants in common registration, retirement accounts, community property accounts, and entity accounts such as trusts, corporations, and partnerships, are not eligible for TOD registration.)</li>
+                    <li>You must name your beneficiaries in this Form or accompanying document.</li>
+                    <li>Eligible beneficiaries include individuals or entities such as trusts. However, the Victory Funds will not accept primary or secondary beneficiary designations of the account owner's lineal descendents unless the descendent is specifically named (i.e., LDPS designations are not acceptable).</li>
+                    <li>For TOD accounts registered to one individual account owner, upon the death of the account owner, the TOD account will be transferred to the beneficiaries according to this Form. For TOD accounts registered as joint tenants with rights of survivorship, upon the death of the last surviving account owner, the TOD account will be transferred to the beneficiaries as according to this Form. Proof of death of the account owner(s) must be presented in a form and manner acceptable to the Victory Funds and must include a certified copy of the death certificate of the account owner(s) and any other documents required by the Victory Funds.</li>
+                    <li>The last designation received and accepted by Victory Capital prior to the death of the account owner or, for TOD accounts registered as joint tenants with rights of survivorship, the last surviving joint account owner (the designation of record) will be controlling and, whether or not it fully disposes of the TOD account, will revoke all other such designations previously accepted by the Victory Funds for the TOD account.</li>
+                    <li>The account owner or, for TOD accounts registered as joint tenants with rights of survivorship, the last surviving joint account owner, may cancel or change the beneficiaries at any time, by providing notice to the Victory Funds in a form and manner acceptable to the Victory Funds. Beneficiaries have no right in or to, and the designation of a beneficiary has no effect on the ownership of, the TOD account while any account owner is living.</li>
+                    <li>If no beneficiaries survive the account owner (or the last surviving joint account owner), then the TOD account will be transferred to the estate of the account owner (or the last surviving joint account owner). If the Victory Funds, in its sole and absolute discretion, cannot reasonably identify the beneficiary of a TOD account or determines that a beneficiary designation is invalid, ineffective, or unclear, then the portion of the TOD account which otherwise would have passed to such beneficiary will instead be transferred to the estate of the account owner (or the last surviving joint account owner).</li>
+                    <li>You should consult your legal or tax advisor to determine whether a TOD registration is appropriate for your specific situation. By accepting a beneficiary designation of record, the Victory Funds will not assume and will have no responsibility or liability with respect to the legal or tax consequences of the designation, including but not limited to the impact on the designation of community property laws or laws governing inheritance of property.</li>
+                    <li>The TOD account owner delegates to the Victory Funds the power to amend at any time, and from time to time, these terms and provisions and consents to such amendments, provided they comply with applicable law. Any such amendments will be effective as of the date specified in a written notice sent by first-class mail to the address of the account owner (or to the beneficiary following the death of the TOD account owner(s)) indicated by the records of the Victory Funds.</li>
+                    <li>The Victory Funds will have the right to rely upon any information furnished by the TOD account owner(s) (or by the beneficiary following the death of the TOD account owner). The TOD account owner agrees that the Victory Funds will not be liable for any loss or expense resulting from any action taken or determination made in reliance upon such information.</li>
+                    <li>All TOD account owners and the TOD account owner's legal representatives (or the beneficiary following the death of the TOD account owner(s), as appropriate, will indemnify the Victory Funds, each applicable Victory Fund, their respective officers, directors, trustees, employees, agents, successors, heirs and assigns and hold each of them harmless from any and all liability which may arise in connection with the establishment and maintenance of the TOD account and the performance of their obligations under this Agreement (including that which arises out of their own negligence or the negligence of their agents).</li>
+                    <li>The TOD account is governed by the Delaware Uniform TOD Security Registration Act and the terms and conditions set forth in this Form, the applicable Victory Fund's prospectus and the Victory Funds Application.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Signature Section -->
+        <div class="form-section">
+            <h3>Signatures</h3>
+
+            <div class="signature-section">
+                <div class="form-row">
+                    <div class="form-group signature-group">
+                        <label for="accountHolderSignature">Signature of Account Holder</label>
+                        <canvas id="accountHolderSignature" class="signature-pad" width="400" height="150"></canvas>
+                        <div class="signature-controls">
+                            <button type="button" class="btn btn-secondary" onclick="clearSignature('accountHolderSignature')">Clear Signature</button>
+                            <button type="button" class="btn btn-secondary" onclick="window.signaturePads['accountHolderSignature'].undo()">Undo</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="accountHolderSignatureDate">Date (mm/dd/yyyy)</label>
+                            <input type="date" id="accountHolderSignatureDate" name="accountHolderSignatureDate" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group signature-group">
+                        <label for="jointAccountHolderSignature">Signature of Joint Account Holder</label>
+                        <canvas id="jointAccountHolderSignature" class="signature-pad" width="400" height="150"></canvas>
+                        <div class="signature-controls">
+                            <button type="button" class="btn btn-secondary" onclick="clearSignature('jointAccountHolderSignature')">Clear Signature</button>
+                            <button type="button" class="btn btn-secondary" onclick="window.signaturePads['jointAccountHolderSignature'].undo()">Undo</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="jointAccountHolderSignatureDate">Date (mm/dd/yyyy)</label>
+                            <input type="date" id="jointAccountHolderSignatureDate" name="jointAccountHolderSignatureDate" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="form-actions">
+            <button type="button" class="btn btn-secondary" onclick="saveFormDraft()">Save Draft</button>
+            <button type="submit" class="btn btn-primary" id="submitBtn" >Submit Form</button>
+        </div>
+    </form>
+
+    <!-- Footer -->
+    <footer class="form-footer">
+        <div class="page-info">
+            <span>Page 4 of 4</span>
+            <span>98146-0423</span>
+        </div>
+        <div class="company-footer">
+            <p>Victory Funds are distributed by Victory Capital Services, Inc.</p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
